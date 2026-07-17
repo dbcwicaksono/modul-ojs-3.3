@@ -1,0 +1,9 @@
+[book]
+authors = ["Penulis"]
+language = "id"
+multilingual = false
+src = "src"
+title = "Buku Panduan OJS 3"
+
+[output.html]
+mathjax-support = true
