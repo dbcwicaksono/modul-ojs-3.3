@@ -38,7 +38,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-fcc30db7.js";
+            window.path_to_searchindex_js = "searchindex-7c001f04.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-2369117d.js"></script>
@@ -1032,51 +1032,61 @@ Dari menu <strong>File</strong>, pilih <strong>Watch Folder</strong>, lalu tentu
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="bab-5-merespons-kiriman-naskah-baru"><a class="header" href="#bab-5-merespons-kiriman-naskah-baru">Bab 5: Merespons Kiriman Naskah Baru</a></h1>
-<p>Bab ini memandu <strong>editor</strong> dalam mengelola naskah yang masuk ke jurnal — mulai dari navigasi dasbor, pemeriksaan awal naskah, penugasan editor bagian, hingga pengambilan keputusan editorial pertama. Tahap <em>Submission</em> adalah gerbang utama di mana editor berperan sebagai kurator awal yang menentukan kelayakan sebuah naskah untuk diproses lebih lanjut.</p>
+<p>Bab ini membahas peran editor dalam mengelola naskah yang masuk ke sistem OJS 3.3, mulai dari navigasi dasbor editorial, pemeriksaan awal naskah, penugasan editor bagian, hingga pengambilan keputusan editorial pertama. Untuk pembahasan tentang proses pengiriman naskah dari sudut pandang penulis, lihat <strong>Bab 4: Panduan Mengirimkan Artikel</strong>.</p>
+<h2 id="tinjauan-awal-meja-desk-review"><a class="header" href="#tinjauan-awal-meja-desk-review">Tinjauan Awal Meja (Desk Review)</a></h2>
+<p>Sebelum sebuah naskah dikirimkan ke proses penelaahan sejawat (<em>peer review</em>), editor terlebih dahulu melakukan tinjauan awal meja (<em>desk review</em>). Tinjauan ini adalah penilaian administratif dan kesesuaian ruang lingkup yang dilakukan oleh editor sebelum melibatkan reviewer. Tujuannya adalah menyaring naskah yang tidak memenuhi syarat minimum sehingga beban reviewer dapat dikelola secara efisien.</p>
+<p>Menurut panduan Directory of Open Access Journals (DOAJ), jurnal yang memenuhi syarat untuk terindeks harus memiliki proses editorial yang terdokumentasi dan dapat diverifikasi, termasuk proses tinjauan awal sebelum peer review (DOAJ, 2024, https://doaj.org/apply/guide/).</p>
+<p>Tinjauan awal meja umumnya mencakup:</p>
+<ol>
+<li>Pemeriksaan kesesuaian topik dengan fokus dan ruang lingkup jurnal.</li>
+<li>Pemeriksaan kepatuhan terhadap panduan penulisan (<em>author guidelines</em>).</li>
+<li>Pemeriksaan kelengkapan administratif (jumlah penulis, afiliasi, pernyataan etika jika diperlukan).</li>
+<li>Pemeriksaan awal kemiripan naskah menggunakan perangkat lunak deteksi plagiasi (lihat <strong>Bab 6: Pemeriksaan Plagiasi</strong>).</li>
+</ol>
 <hr>
 <h2 id="51-peran-editor-dalam-tahap-submission"><a class="header" href="#51-peran-editor-dalam-tahap-submission">5.1 Peran Editor dalam Tahap Submission</a></h2>
 <p>Editor di OJS 3.3 tidak hanya memantau naskah, tetapi memiliki kemampuan teknis untuk:</p>
 <ul>
 <li>Mengelola akun pengguna.</li>
 <li>Masuk sebagai pengguna lain jika diperlukan (<em>login as</em>).</li>
-<li>Mengambil keputusan krusial di setiap tahap.</li>
+<li>Mengambil keputusan editorial di setiap tahap alur kerja.</li>
 </ul>
-<p>OJS 3.3 sangat fleksibel — jurnal dapat dikelola oleh Editor tunggal yang menangani seluruh proses, atau oleh tim besar yang terdiri dari Editor Kepala (<em>Editor-in-Chief</em>), beberapa Section Editor, hingga staf pendukung.</p>
+<p>OJS 3.3 bersifat fleksibel. Jurnal dapat dikelola oleh editor tunggal yang menangani seluruh proses, atau oleh tim yang terdiri dari Editor Kepala (<em>Editor-in-Chief</em>), beberapa Section Editor, hingga staf pendukung.</p>
 <hr>
 <h2 id="52-navigasi-dasbor-editorial"><a class="header" href="#52-navigasi-dasbor-editorial">5.2 Navigasi Dasbor Editorial</a></h2>
-<p>Dasbor editorial adalah <strong>pusat kendali</strong> bagi editor. Untuk manajemen jurnal yang proaktif, pahami fungsi empat tab utama:</p>
+<p>Dasbor editorial adalah antarmuka utama bagi editor untuk memantau seluruh aktivitas naskah. Terdapat empat tab utama yang perlu dipahami:</p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>Tab</th><th>Fungsi</th><th>Tips Penggunaan</th></tr>
+<tr><th>Tab</th><th>Fungsi</th><th>Catatan</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>My Queue</strong></td><td>Naskah yang menjadi tanggung jawab langsung Anda.</td><td>Periksa setiap hari untuk akuntabilitas kerja.</td></tr>
-<tr><td><strong>Unassigned</strong></td><td>Naskah masuk yang <strong>belum ada editornya</strong>.</td><td>⚠️ Area risiko utama! Pantau rutin untuk mencegah naskah “terlantar”.</td></tr>
-<tr><td><strong>All Active</strong></td><td>Seluruh naskah yang sedang diproses di semua tahap.</td><td>Digunakan Editor Kepala untuk memantau beban kerja tim.</td></tr>
-<tr><td><strong>Archives</strong></td><td>Naskah yang telah dipublikasikan atau ditolak.</td><td>Rekam jejak permanen.</td></tr>
+<tr><td><strong>My Queue</strong></td><td>Naskah yang menjadi tanggung jawab langsung editor yang sedang login.</td><td>Periksa setiap hari untuk menjaga akuntabilitas kerja.</td></tr>
+<tr><td><strong>Unassigned</strong></td><td>Naskah masuk yang belum ditugaskan ke editor mana pun.</td><td>Area berisiko tinggi. Pantau secara rutin untuk mencegah naskah tidak tertangani.</td></tr>
+<tr><td><strong>All Active</strong></td><td>Seluruh naskah yang sedang diproses di semua tahap.</td><td>Digunakan Editor Kepala untuk memantau beban kerja tim secara keseluruhan.</td></tr>
+<tr><td><strong>Archives</strong></td><td>Naskah yang telah dipublikasikan atau ditolak.</td><td>Berfungsi sebagai rekam jejak permanen seluruh aktivitas editorial.</td></tr>
 </tbody>
 </table>
 </div>
 <p><strong>Fitur Filter dan Pencarian:</strong></p>
-<p>Manfaatkan filter canggih OJS 3.3 untuk navigasi efisien:</p>
+<p>OJS 3.3 menyediakan filter untuk navigasi yang lebih efisien:</p>
 <ul>
-<li>Cari berdasarkan <strong>nama penulis</strong> atau <strong>kata kunci judul</strong>.</li>
-<li>Filter berdasarkan status <strong>terlambat</strong> (<em>overdue</em>).</li>
-<li>Filter berdasarkan naskah <strong>belum lengkap</strong> (<em>incomplete</em>).</li>
-<li>Filter berdasarkan <strong>tahap proses</strong>, bagian jurnal, atau <strong>Days since last activity</strong> (sangat berguna untuk mengidentifikasi naskah yang stagnan).</li>
+<li>Pencarian berdasarkan nama penulis atau kata kunci judul.</li>
+<li>Filter berdasarkan status terlambat (<em>overdue</em>).</li>
+<li>Filter berdasarkan naskah belum lengkap (<em>incomplete</em>).</li>
+<li>Filter berdasarkan tahap proses, bagian jurnal, atau jumlah hari sejak aktivitas terakhir (<em>Days since last activity</em>). Filter terakhir ini berguna untuk mengidentifikasi naskah yang tidak berkembang dalam waktu lama.</li>
 </ul>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Tampilan dasbor editorial OJS dengan empat tab utama"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Tampilan dasbor editorial OJS dengan empat tab utama"></span></label></p>
 <hr>
-<h2 id="53-membuka-dan-memahami-rekam-naskah-submission-record"><a class="header" href="#53-membuka-dan-memahami-rekam-naskah-submission-record">5.3 Membuka dan Memahami Rekam Naskah (Submission Record)</a></h2>
-<p>Klik tombol <strong>“View”</strong> pada naskah untuk masuk ke halaman detailnya. Halaman ini berisi:</p>
+<h2 id="53-membuka-dan-memahami-rekam-naskah"><a class="header" href="#53-membuka-dan-memahami-rekam-naskah">5.3 Membuka dan Memahami Rekam Naskah</a></h2>
+<p>Klik tombol <strong>“View”</strong> pada naskah untuk masuk ke halaman rekam naskah (<em>submission record</em>). Halaman ini berisi seluruh informasi dan aktivitas terkait naskah tersebut.</p>
 <h3 id="informasi-di-header-rekam-naskah"><a class="header" href="#informasi-di-header-rekam-naskah">Informasi di Header Rekam Naskah</a></h3>
 <ul>
-<li><strong>ID Naskah</strong> — Pengenal unik setiap naskah dalam sistem.</li>
-<li><strong>Nama belakang Penulis</strong> — Informasi cepat untuk identifikasi.</li>
-<li><strong>Judul Naskah</strong> — Judul lengkap artikel.</li>
+<li><strong>ID Naskah</strong>: Pengenal unik setiap naskah dalam sistem.</li>
+<li><strong>Nama Belakang Penulis</strong>: Informasi cepat untuk identifikasi.</li>
+<li><strong>Judul Naskah</strong>: Judul lengkap artikel.</li>
 </ul>
-<h3 id="activity-log-vs-internal-notes"><a class="header" href="#activity-log-vs-internal-notes">Activity Log vs. Internal Notes</a></h3>
+<h3 id="activity-log-dan-internal-notes"><a class="header" href="#activity-log-dan-internal-notes">Activity Log dan Internal Notes</a></h3>
 <p>Penting untuk membedakan dua fitur ini:</p>
 <div class="table-wrapper">
 <table>
@@ -1084,94 +1094,95 @@ Dari menu <strong>File</strong>, pilih <strong>Watch Folder</strong>, lalu tentu
 <tr><th>Fitur</th><th>Fungsi</th><th>Sifat</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Activity Log</strong></td><td>Rekaman otomatis setiap tindakan sistem (upload file, keputusan editor, dll.).</td><td>Tidak dapat diubah (<em>immutable</em>).</td></tr>
-<tr><td><strong>Notes</strong> (tab internal)</td><td>Catatan manual antar-editor untuk hal strategis terkait naskah.</td><td>Dapat ditambah/diedit oleh editor.</td></tr>
+<tr><td><strong>Activity Log</strong></td><td>Rekaman otomatis setiap tindakan sistem: unggah file, keputusan editor, pengiriman email, dan lainnya.</td><td>Tidak dapat diubah (<em>immutable</em>). Berfungsi sebagai jejak audit (<em>audit trail</em>) seluruh aktivitas sistem.</td></tr>
+<tr><td><strong>Notes</strong> (tab internal)</td><td>Catatan manual antar-editor untuk hal-hal strategis terkait naskah yang tidak perlu diketahui penulis.</td><td>Dapat ditambah dan diedit oleh editor.</td></tr>
 </tbody>
 </table>
 </div>
+<p><em>Jejak audit</em> (<em>audit trail</em>) adalah rekaman kronologis yang tidak dapat diubah dari seluruh aktivitas yang terjadi dalam sistem. Fungsinya adalah memastikan akuntabilitas dan transparansi proses editorial.</p>
 <h3 id="submission-library"><a class="header" href="#submission-library">Submission Library</a></h3>
-<p>Tempat berbagi dokumen pendukung (formulir etik, data tambahan) secara efisien dengan penulis dan tim editorial — tanpa melalui prosedur pengiriman formal.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Halaman detail rekam naskah (Submission Record)"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Halaman detail rekam naskah (Submission Record)"></span></label></p>
+<p>Submission Library adalah tempat berbagi dokumen pendukung, seperti formulir etik penelitian atau data tambahan, secara langsung antara editor dan penulis tanpa melalui prosedur unggah formal.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Halaman detail rekam naskah"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Halaman detail rekam naskah"></span></label></p>
 <hr>
 <h2 id="54-manajemen-file-kiriman"><a class="header" href="#54-manajemen-file-kiriman">5.4 Manajemen File Kiriman</a></h2>
-<p>Area <strong>“Submission Files”</strong> menampilkan seluruh berkas digital yang diunggah penulis, beserta komponen naskahnya (<em>Article Text, Research Materials</em>, dll.).</p>
-<p><strong>Tindakan yang dapat dilakukan editor:</strong></p>
+<p>Area <strong>“Submission Files”</strong> menampilkan seluruh berkas digital yang diunggah penulis, beserta keterangan komponen naskahnya (<em>Article Text</em>, <em>Research Materials</em>, dan lainnya).</p>
+<p>Tindakan yang dapat dilakukan editor pada area ini:</p>
 <ol>
-<li><strong>Mengunduh</strong> — Klik judul file untuk mengunduhnya.</li>
-<li><strong>Expansion Arrow</strong> <em>(Pro-Tip)</em> — Klik panah biru kecil di sebelah file untuk mengakses log aktivitas spesifik file dan catatan internal terkait file tersebut.</li>
-<li><strong>Mengedit nama file</strong> atau <strong>menghapus</strong> file yang tidak relevan.</li>
-<li><strong>Upload File</strong> — Menambahkan dokumen baru jika diperlukan.</li>
-<li><strong>Download All Files</strong> — Mengambil seluruh paket dokumen dalam satu klik untuk peninjauan <em>offline</em>.</li>
+<li><strong>Mengunduh</strong>: Klik judul file untuk mengunduhnya ke perangkat lokal.</li>
+<li><strong>Expansion Arrow</strong>: Klik panah kecil di sebelah nama file untuk mengakses log aktivitas spesifik file tersebut beserta catatan internal terkait.</li>
+<li><strong>Mengedit nama file</strong> atau menghapus file yang tidak relevan.</li>
+<li><strong>Upload File</strong>: Menambahkan dokumen baru yang diperlukan untuk proses editorial.</li>
+<li><strong>Download All Files</strong>: Mengunduh seluruh paket dokumen sekaligus untuk peninjauan secara <em>offline</em>.</li>
 </ol>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Area Submission Files dengan berbagai opsi manajemen"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Area Submission Files dengan berbagai opsi manajemen"></span></label></p>
 <hr>
-<h2 id="55-menggunakan-fitur-diskusi-pre-review"><a class="header" href="#55-menggunakan-fitur-diskusi-pre-review">5.5 Menggunakan Fitur Diskusi Pre-Review</a></h2>
-<p>Fitur <strong>Pre-review Discussions</strong> adalah alat komunikasi editorial yang terpusat dan terlacak. Gunakan fitur ini secara strategis — misalnya, untuk meminta klarifikasi atau perbaikan administratif dari penulis <strong>sebelum</strong> memutuskan mengirim naskah ke tahap <em>review</em>.</p>
-<p><strong>Cara Menggunakan Discussion Wizard:</strong></p>
+<h2 id="55-fitur-diskusi-pre-review"><a class="header" href="#55-fitur-diskusi-pre-review">5.5 Fitur Diskusi Pre-Review</a></h2>
+<p>Fitur <strong>Pre-review Discussions</strong> adalah sarana komunikasi editorial yang terpusat dan tercatat dalam sistem. Fitur ini digunakan untuk meminta klarifikasi atau perbaikan administratif dari penulis sebelum naskah dikirimkan ke tahap penelaahan sejawat.</p>
+<p>Seluruh komunikasi yang dilakukan melalui fitur ini tersimpan secara permanen di sistem sebagai bagian dari jejak audit. Penggunaan email eksternal untuk komunikasi editorial tidak dianjurkan karena tidak tercatat dalam sistem dan tidak dapat diverifikasi.</p>
+<p><strong>Prosedur penggunaan:</strong></p>
 <ol>
 <li>Klik <strong>“Add Discussion”</strong> di panel <em>Pre-review Discussions</em>.</li>
-<li><strong>Pilih partisipan</strong> — Penulis, Editor lain, atau keduanya.</li>
-<li>Masukkan <strong>Subjek</strong> dan <strong>Pesan</strong>. Anda dapat melampirkan file di sini.</li>
+<li>Pilih partisipan: penulis, editor lain, atau keduanya.</li>
+<li>Masukkan subjek dan isi pesan. File dapat dilampirkan di sini.</li>
 <li>Klik <strong>“OK”</strong>.</li>
 </ol>
-<p>Selain itu, Editor dapat menggunakan fitur <strong>“Notify”</strong> pada daftar <em>Participants</em> (panel kanan layar) untuk mengirim pesan menggunakan templat email yang tersedia.</p>
-<blockquote>
-<p><strong>Ingat:</strong> Semua diskusi tersimpan permanen di sistem sebagai <em>audit trail</em>. Hindari menggunakan email eksternal untuk komunikasi editorial.</p>
-</blockquote>
+<p>Editor juga dapat menggunakan fitur <strong>“Notify”</strong> pada daftar <em>Participants</em> di panel kanan untuk mengirim pesan menggunakan templat email yang tersedia dalam sistem.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Fitur Pre-review Discussions di halaman submission"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Fitur Pre-review Discussions di halaman submission"></span></label></p>
 <hr>
-<h2 id="56-tiga-keputusan-editorial-utama"><a class="header" href="#56-tiga-keputusan-editorial-utama">5.6 Tiga Keputusan Editorial Utama</a></h2>
-<p>Setelah tinjauan awal selesai, editor mengeksekusi keputusan melalui <strong>Decision Wizard</strong> di panel sebelah kanan:</p>
+<h2 id="56-tiga-keputusan-editorial-pada-tahap-submission"><a class="header" href="#56-tiga-keputusan-editorial-pada-tahap-submission">5.6 Tiga Keputusan Editorial pada Tahap Submission</a></h2>
+<p>Setelah tinjauan awal meja selesai, editor mengambil satu dari tiga keputusan melalui <strong>Decision Wizard</strong> di panel sebelah kanan:</p>
 <h3 id="a-send-to-review"><a class="header" href="#a-send-to-review">A. Send to Review</a></h3>
-<p>Memindahkan naskah ke tahap peninjauan sejawat.</p>
-<blockquote>
-<p><strong>Perhatian Penting (<em>Double Blind Review</em>):</strong> Saat memilih file yang akan dikirim ke reviewer, <strong>pastikan</strong> Anda <strong>menghapus centang (uncheck)</strong> pada file yang mengandung identitas penulis. Ini menjaga integritas proses <em>double-blind review</em>.</p>
-</blockquote>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Jendela Send to Review — pemilihan file yang akan dikirim ke reviewer"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Jendela Send to Review — pemilihan file yang akan dikirim ke reviewer"></span></label></p>
+<p>Naskah dinyatakan memenuhi syarat awal dan dipindahkan ke tahap penelaahan sejawat (<em>peer review</em>).</p>
+<p>Catatan Penting untuk Proses Double-Blind Review: Saat memilih file yang akan dikirim ke reviewer, pastikan file yang mengandung identitas penulis tidak disertakan (hapus tanda centang). Hal ini menjaga integritas proses <em>double-blind review</em> di mana reviewer tidak mengetahui identitas penulis.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Jendela Send to Review: pemilihan file yang akan dikirim ke reviewer"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Jendela Send to Review: pemilihan file yang akan dikirim ke reviewer"></span></label></p>
 <h3 id="b-accept-and-skip-review"><a class="header" href="#b-accept-and-skip-review">B. Accept and Skip Review</a></h3>
-<p>Digunakan untuk kiriman yang <strong>tidak memerlukan peer review formal</strong>, seperti:</p>
+<p>Digunakan untuk kiriman yang tidak memerlukan proses peer review formal, seperti:</p>
 <ul>
 <li>Komentar editorial</li>
 <li>Pengumuman</li>
 <li>Resensi buku</li>
 </ul>
-<p>Naskah langsung masuk ke tahap Copyediting.</p>
+<p>Naskah langsung masuk ke tahap Copyediting tanpa melalui tahap Review.</p>
 <h3 id="c-decline-submission"><a class="header" href="#c-decline-submission">C. Decline Submission</a></h3>
-<p>Menolak naskah yang tidak sesuai standar atau lingkup jurnal.</p>
-<ul>
-<li>Anda dapat memilih untuk mengirim <strong>notifikasi kepada penulis</strong> atau hanya merekam keputusan secara internal.</li>
-<li>Jika terjadi kesalahan, gunakan fitur <strong>“Change Decision”</strong> untuk membatalkan status penolakan.</li>
-</ul>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Panel keputusan editorial (Decision Wizard)"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Panel keputusan editorial (Decision Wizard)"></span></label></p>
+<p>Naskah ditolak karena tidak sesuai standar atau ruang lingkup jurnal.</p>
+<p>Pada opsi ini, editor dapat memilih untuk mengirimkan notifikasi kepada penulis atau hanya merekam keputusan secara internal. Jika terjadi kesalahan dalam pengambilan keputusan, gunakan fitur <strong>“Change Decision”</strong> untuk membatalkan status penolakan.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Panel keputusan editorial"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Panel keputusan editorial"></span></label></p>
 <hr>
 <h2 id="57-penugasan-editor-bagian-section-editor"><a class="header" href="#57-penugasan-editor-bagian-section-editor">5.7 Penugasan Editor Bagian (Section Editor)</a></h2>
-<p>Jika jurnal menggunakan model tim, Editor Kepala dapat menugaskan <strong>Section Editor</strong> melalui tombol <strong>“Assign”</strong> di panel <em>Participants</em>.</p>
-<p><strong>Tiga kontrol perizinan kritis yang harus diatur:</strong></p>
+<p>Pada jurnal yang menggunakan model tim editorial, Editor Kepala dapat menugaskan <strong>Section Editor</strong> melalui tombol <strong>“Assign”</strong> di panel <em>Participants</em>.</p>
+<p>Terdapat tiga tingkat wewenang yang harus ditentukan saat penugasan:</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>Tingkat Wewenang</th><th>Deskripsi</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Hanya Rekomendasi</strong></td><td>Section Editor hanya dapat memberikan saran, tidak bisa mengambil keputusan final atau menghubungi penulis secara mandiri.</td></tr>
-<tr><td><strong>Wewenang Penuh</strong></td><td>Section Editor memiliki kendali penuh atas alur naskah hingga pengambilan keputusan.</td></tr>
-<tr><td><strong>Pembatasan Metadata</strong></td><td>Anda dapat membatasi hak akses Section Editor untuk mengubah metadata naskah — fitur krusial untuk menjaga integritas data bibliografi.</td></tr>
+<tr><td><strong>Hanya Rekomendasi</strong></td><td>Section Editor hanya dapat memberikan saran kepada Editor Kepala, tidak dapat mengambil keputusan final atau menghubungi penulis secara mandiri.</td></tr>
+<tr><td><strong>Wewenang Penuh</strong></td><td>Section Editor memiliki kendali penuh atas alur naskah, termasuk pengambilan keputusan editorial.</td></tr>
+<tr><td><strong>Pembatasan Metadata</strong></td><td>Hak akses Section Editor untuk mengubah metadata naskah dapat dibatasi. Pembatasan ini penting untuk menjaga integritas data bibliografi.</td></tr>
 </tbody>
 </table>
 </div>
-<p>Setelah penugasan dikonfirmasi, sistem otomatis mengirimkan email kepada Section Editor dan memperbarui daftar <em>Participants</em> secara <em>real-time</em>.</p>
+<p>Setelah penugasan dikonfirmasi, sistem secara otomatis mengirimkan email pemberitahuan kepada Section Editor yang ditugaskan.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Jendela penugasan Section Editor dengan pilihan perizinan"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Jendela penugasan Section Editor dengan pilihan perizinan"></span></label></p>
 <hr>
 <h2 id="58-memindahkan-naskah-ke-tahap-review"><a class="header" href="#58-memindahkan-naskah-ke-tahap-review">5.8 Memindahkan Naskah ke Tahap Review</a></h2>
-<p>Setelah keputusan “Send to Review” dikonfirmasi, naskah akan secara otomatis berpindah dari status <em>Submission</em> ke <strong>Review (Round 1)</strong>. File yang dipilih akan tercantum di panel <em>Review Files</em>.</p>
-<p>Pada tahap ini, editor juga dapat:</p>
-<ul>
-<li>Menggunakan <strong>fitur diskusi</strong> untuk mengklarifikasi hal kepada penulis sebelum proses review dimulai.</li>
-<li>Memeriksa kembali kelengkapan file naskah.</li>
-</ul>
-<blockquote>
+<p>Setelah keputusan “Send to Review” dikonfirmasi, naskah berpindah dari status <em>Submission</em> ke <strong>Review (Round 1)</strong>. File yang dipilih akan tercantum secara otomatis di panel <em>Review Files</em> pada tahap Review.</p>
+<p>Pada tahap ini, editor juga dapat menggunakan fitur diskusi untuk mengklarifikasi hal-hal kepada penulis sebelum proses review dimulai, serta memeriksa kembali kelengkapan file naskah.</p>
 <p>Panduan lengkap tentang proses penugasan reviewer dibahas di <strong>Bab 7: Menugaskan Peninjau</strong>.</p>
-</blockquote>
+<hr>
+<h2 id="checklist-bab-5"><a class="header" href="#checklist-bab-5">Checklist Bab 5</a></h2>
+<p>Gunakan daftar berikut sebagai panduan sebelum memindahkan naskah ke tahap berikutnya:</p>
+<ul>
+<li><input disabled="" type="checkbox"> Tab <strong>Unassigned</strong> sudah diperiksa dan tidak ada naskah yang terbengkalai.</li>
+<li><input disabled="" type="checkbox"> Rekam naskah sudah dibuka dan <em>Activity Log</em> sudah dipelajari.</li>
+<li><input disabled="" type="checkbox"> File kiriman sudah diunduh dan diperiksa.</li>
+<li><input disabled="" type="checkbox"> Pemeriksaan kemiripan (<em>similarity check</em>) sudah dilakukan (lihat Bab 6).</li>
+<li><input disabled="" type="checkbox"> <strong>Pre-review Discussions</strong> sudah digunakan untuk komunikasi dengan penulis jika diperlukan.</li>
+<li><input disabled="" type="checkbox"> Section Editor sudah ditugaskan dengan tingkat wewenang yang tepat (jika menggunakan model tim).</li>
+<li><input disabled="" type="checkbox"> Keputusan editorial sudah diambil: <em>Send to Review</em>, <em>Accept and Skip Review</em>, atau <em>Decline Submission</em>.</li>
+<li><input disabled="" type="checkbox"> File sudah dipastikan tidak mengandung identitas penulis sebelum dikirim ke reviewer (untuk <em>double-blind review</em>).</li>
+</ul>
 <hr>
 <h2 id="ringkasan-bab-3"><a class="header" href="#ringkasan-bab-3">Ringkasan Bab</a></h2>
 <div class="table-wrapper">
@@ -1182,11 +1193,11 @@ Dari menu <strong>File</strong>, pilih <strong>Watch Folder</strong>, lalu tentu
 <tbody>
 <tr><td>1</td><td>Pantau tab <strong>Unassigned</strong> secara rutin.</td></tr>
 <tr><td>2</td><td>Buka rekam naskah dan pelajari <em>Activity Log</em>.</td></tr>
-<tr><td>3</td><td>Unduh dan periksa file kiriman secara <em>offline</em> jika perlu.</td></tr>
+<tr><td>3</td><td>Unduh dan periksa file kiriman.</td></tr>
 <tr><td>4</td><td>Gunakan <strong>Pre-review Discussions</strong> untuk komunikasi dengan penulis.</td></tr>
 <tr><td>5</td><td>Tugaskan <strong>Section Editor</strong> dengan wewenang yang tepat (jika ada).</td></tr>
 <tr><td>6</td><td>Ambil keputusan: <em>Send to Review</em>, <em>Accept and Skip Review</em>, atau <em>Decline Submission</em>.</td></tr>
-<tr><td>7</td><td>Pastikan file sudah dianonimkan sebelum dikirim ke reviewer (<em>Send to Review</em>).</td></tr>
+<tr><td>7</td><td>Pastikan file sudah dianonimkan sebelum dikirim ke reviewer.</td></tr>
 </tbody>
 </table>
 </div>
@@ -1463,185 +1474,202 @@ Dari menu <strong>File</strong>, pilih <strong>Watch Folder</strong>, lalu tentu
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="bab-8-panduan-untuk-peninjau-reviewer"><a class="header" href="#bab-8-panduan-untuk-peninjau-reviewer">Bab 8: Panduan untuk Peninjau (Reviewer)</a></h1>
-<p>Bab ini membahas alur kerja dari <strong>sudut pandang reviewer (mitra bestari)</strong>. Proses peninjauan adalah pilar utama integritas ilmiah — reviewer bertanggung jawab memberikan evaluasi yang adil, objektif, dan konstruktif terhadap naskah yang ditugaskan.</p>
-<hr>
-<h2 id="81-peran-reviewer-dalam-ekosistem-jurnal"><a class="header" href="#81-peran-reviewer-dalam-ekosistem-jurnal">8.1 Peran Reviewer dalam Ekosistem Jurnal</a></h2>
-<p>Reviewer adalah pakar di bidangnya yang bertugas mengevaluasi kualitas konten naskah secara objektif. Melalui proses <em>double-blind review</em>, identitas penulis dan reviewer dirahasiakan untuk menjamin independensi penilaian.</p>
-<p><strong>Kontribusi reviewer kepada ekosistem ilmiah:</strong></p>
-<ul>
+<p>Bab ini membahas alur kerja penelaahan sejawat dari sudut pandang reviewer atau mitra bestari. Untuk konteks bagaimana editor menugaskan reviewer, lihat <strong>Bab 7: Menugaskan Peninjau</strong>. Untuk panduan editor dalam merespons hasil ulasan, lihat <strong>Bab 9: Merespons Hasil Ulasan</strong>.</p>
+<h2 id="penelaahan-sejawat-dalam-publikasi-ilmiah"><a class="header" href="#penelaahan-sejawat-dalam-publikasi-ilmiah">Penelaahan Sejawat dalam Publikasi Ilmiah</a></h2>
+<p>Penelaahan sejawat (<em>peer review</em>) adalah proses evaluasi suatu karya ilmiah oleh para ahli yang memiliki kompetensi di bidang yang sama sebelum karya tersebut diterbitkan. Menurut Committee on Publication Ethics (COPE), peer review merupakan metode utama yang digunakan komunitas ilmiah untuk memvalidasi penelitian dan memastikan integritas rekam jejak ilmiah (COPE, 2017, https://publicationethics.org/files/cope-ethical-guidelines-peer-reviewers-v2.pdf).</p>
+<p>Reviewer berkontribusi pada ekosistem ilmiah melalui tiga fungsi utama:</p>
+<ol>
 <li>Menjaga standar kualitas artikel yang dipublikasikan.</li>
 <li>Memberikan umpan balik konstruktif yang membantu penulis memperbaiki naskah.</li>
-<li>Membantu editor mengambil keputusan editorial yang tepat.</li>
-</ul>
+<li>Membantu editor mengambil keputusan editorial yang tepat dan berdasar.</li>
+</ol>
+<hr>
+<h2 id="81-peran-reviewer-dalam-ekosistem-jurnal"><a class="header" href="#81-peran-reviewer-dalam-ekosistem-jurnal">8.1 Peran Reviewer dalam Ekosistem Jurnal</a></h2>
+<p>Reviewer adalah pakar di bidangnya yang bertugas mengevaluasi kualitas konten naskah secara objektif dan independen. Dalam proses <em>double-blind review</em>, identitas penulis dirahasiakan dari reviewer dan identitas reviewer dirahasiakan dari penulis. Mekanisme ini dirancang untuk menjamin independensi penilaian dari pengaruh sosial atau institusional.</p>
 <hr>
 <h2 id="82-menerima-undangan-dan-login-ke-sistem"><a class="header" href="#82-menerima-undangan-dan-login-ke-sistem">8.2 Menerima Undangan dan Login ke Sistem</a></h2>
 <h3 id="memulai-dari-email-undangan"><a class="header" href="#memulai-dari-email-undangan">Memulai dari Email Undangan</a></h3>
-<p>Alur kerja dimulai saat Anda menerima <strong>email undangan otomatis</strong> dari Section Editor. Email ini berisi:</p>
+<p>Alur kerja reviewer dimulai saat menerima email undangan otomatis dari Section Editor. Email ini berisi:</p>
 <ul>
 <li>Judul naskah yang akan ditinjau.</li>
 <li>Tautan untuk menerima atau menolak undangan.</li>
-<li>Tanggal batas konfirmasi (<em>Response Due Date</em>) dan batas ulasan (<em>Review Due Date</em>).</li>
+<li>Tanggal batas konfirmasi (<em>Response Due Date</em>) dan tanggal batas pengiriman ulasan (<em>Review Due Date</em>).</li>
 </ul>
 <h3 id="login-ke-dasbor-reviewer"><a class="header" href="#login-ke-dasbor-reviewer">Login ke Dasbor Reviewer</a></h3>
 <ol>
-<li>Kunjungi website jurnal dan klik <strong>Login</strong>.</li>
-<li>Masukkan <strong>username</strong> dan <strong>password</strong> Anda.</li>
-<li>Jika lupa password, gunakan fitur <strong>“Forgot your password”</strong>.</li>
+<li>Kunjungi situs jurnal dan klik <strong>Login</strong>.</li>
+<li>Masukkan <em>username</em> dan <em>password</em>.</li>
+<li>Jika lupa kata sandi, gunakan fitur <strong>“Forgot your password”</strong>.</li>
 </ol>
-<blockquote>
-<p><strong>Catatan:</strong> Jika lupa username atau email yang terdaftar, Anda harus menghubungi editor jurnal secara langsung.</p>
-</blockquote>
+<p>Catatan: Jika lupa <em>username</em> atau alamat email yang terdaftar, hubungi editor jurnal secara langsung.</p>
 <h3 id="tampilan-dasbor-reviewer"><a class="header" href="#tampilan-dasbor-reviewer">Tampilan Dasbor Reviewer</a></h3>
-<p>Dasbor reviewer dirancang <strong>lebih ringkas</strong> dibanding editor — hanya menampilkan naskah-naskah yang ditugaskan kepada Anda. Perhatikan dua indikator penting:</p>
+<p>Dasbor reviewer menampilkan naskah-naskah yang ditugaskan kepada reviewer yang sedang login. Perhatikan dua indikator berikut:</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>Indikator</th><th>Arti</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Angka notifikasi</strong> (ikon lonceng)</td><td>Jumlah tugas tertunda yang memerlukan perhatian.</td></tr>
-<tr><td><strong>Tanda peringatan</strong> (<em>warning sign</em>)</td><td>Sistem menunggu respons segera dari Anda — apakah bersedia atau tidak untuk meninjau.</td></tr>
+<tr><td>Angka notifikasi pada ikon lonceng</td><td>Jumlah tugas tertunda yang memerlukan perhatian.</td></tr>
+<tr><td>Tanda peringatan (<em>warning sign</em>)</td><td>Sistem menunggu respons segera: apakah reviewer bersedia atau tidak untuk melakukan peninjauan.</td></tr>
 </tbody>
 </table>
 </div>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Dasbor reviewer dengan indikator notifikasi"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Dasbor reviewer dengan indikator notifikasi"></span></label></p>
 <hr>
 <h2 id="83-langkah-1-menerima-atau-menolak-permintaan-review"><a class="header" href="#83-langkah-1-menerima-atau-menolak-permintaan-review">8.3 Langkah 1: Menerima atau Menolak Permintaan Review</a></h2>
-<p>Setelah membuka tugas dari dasbor, Anda masuk ke tahap <strong>Request</strong>.</p>
-<p><strong>Yang tersedia di tahap ini:</strong></p>
+<p>Setelah membuka tugas dari dasbor, reviewer masuk ke tahap <strong>Request</strong>. Tahap ini menyajikan:</p>
 <ul>
-<li><strong>Detail Artikel</strong> — Judul dan abstrak naskah untuk membantu Anda menilai kesesuaian keahlian.</li>
-<li><strong>Jenis Tinjauan</strong> — Ditampilkan secara eksplisit (misal: <em>Double Blind</em>) sehingga Anda tahu tingkat anonimitas yang diharapkan.</li>
-<li><strong>Jadwal Peninjauan:</strong>
+<li><strong>Detail Artikel</strong>: judul dan abstrak naskah sebagai dasar penilaian kesesuaian keahlian.</li>
+<li><strong>Jenis Tinjauan</strong>: ditampilkan secara eksplisit (misalnya: <em>Double Blind</em>) sehingga reviewer mengetahui tingkat anonimitas yang diterapkan.</li>
+<li><strong>Jadwal Peninjauan</strong>:
 <ul>
-<li><em>Response Due Date</em> — Batas waktu konfirmasi kesediaan.</li>
-<li><em>Review Due Date</em> — Batas waktu pengumpulan hasil ulasan lengkap.</li>
+<li><em>Response Due Date</em>: batas waktu konfirmasi kesediaan.</li>
+<li><em>Review Due Date</em>: batas waktu pengiriman hasil ulasan lengkap.</li>
 </ul>
 </li>
 </ul>
-<p><strong>Sebelum menerima, Anda wajib:</strong></p>
+<p>Sebelum menerima penugasan, reviewer wajib:</p>
 <ol>
-<li>Mengisi bagian <strong>kepentingan bersaing</strong> (<em>competing interests</em>) — apakah ada hubungan dengan penulis atau topik yang dapat mempengaruhi objektivitas Anda.</li>
-<li>Menyetujui <strong>pernyataan privasi data</strong>.</li>
+<li>Mengisi bagian <strong>kepentingan bersaing</strong> (<em>competing interests</em>): apakah terdapat hubungan dengan penulis atau topik yang dapat memengaruhi objektivitas penilaian.</li>
+<li>Menyetujui pernyataan privasi data.</li>
 </ol>
-<p>Klik <strong>“Accept Review”</strong> untuk melanjutkan, atau <strong>“Decline Review”</strong> jika Anda tidak dapat atau tidak bersedia meninjau.</p>
-<blockquote>
-<p><strong>Pentingnya transparansi:</strong> Pengungkapan kepentingan bersaing adalah standar etika publikasi global. Jika ada konflik kepentingan, lebih baik menolak penugasan agar integritas proses terjaga.</p>
-</blockquote>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Halaman permintaan review — informasi naskah dan jadwal"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Halaman permintaan review — informasi naskah dan jadwal"></span></label></p>
+<p>Klik <strong>“Accept Review”</strong> untuk melanjutkan, atau <strong>“Decline Review”</strong> jika tidak dapat atau tidak bersedia meninjau.</p>
+<p>Pengungkapan kepentingan bersaing adalah standar etika publikasi yang berlaku secara internasional. Apabila terdapat konflik kepentingan, reviewer sebaiknya menolak penugasan agar integritas proses penelaahan terjaga. Panduan COPE menyatakan bahwa reviewer harus mengungkapkan kepada editor setiap hubungan yang berpotensi menimbulkan konflik kepentingan (COPE, 2017, https://publicationethics.org/files/cope-ethical-guidelines-peer-reviewers-v2.pdf).</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Halaman permintaan review: informasi naskah dan jadwal"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Halaman permintaan review: informasi naskah dan jadwal"></span></label></p>
 <hr>
-<h2 id="84-langkah-2-membaca-pedoman-peninjau-reviewer-guidelines"><a class="header" href="#84-langkah-2-membaca-pedoman-peninjau-reviewer-guidelines">8.4 Langkah 2: Membaca Pedoman Peninjau (Reviewer Guidelines)</a></h2>
-<p>Setelah menerima undangan, Anda masuk ke tahap <strong>Guidelines</strong>. Bagian ini berisi <strong>instruksi khusus</strong> yang disusun oleh pengelola jurnal, mencakup:</p>
+<h2 id="84-langkah-2-membaca-pedoman-peninjau"><a class="header" href="#84-langkah-2-membaca-pedoman-peninjau">8.4 Langkah 2: Membaca Pedoman Peninjau</a></h2>
+<p>Setelah menerima undangan, reviewer masuk ke tahap <strong>Guidelines</strong>. Bagian ini memuat instruksi khusus yang disusun oleh pengelola jurnal, yang mencakup:</p>
 <ul>
 <li>Kriteria penilaian yang diharapkan.</li>
-<li>Standar kualitas yang berlaku di jurnal ini.</li>
-<li>Format atau template ulasan jika ada.</li>
-<li>Kebijakan anonimitas dan etika peer review.</li>
+<li>Standar kualitas yang berlaku di jurnal tersebut.</li>
+<li>Format atau templat ulasan jika tersedia.</li>
+<li>Kebijakan anonimitas dan etika peer review yang berlaku.</li>
 </ul>
-<blockquote>
-<p><strong>Sangat penting</strong> untuk membaca pedoman ini secara seksama karena setiap jurnal memiliki standar yang berbeda.</p>
-</blockquote>
+<p>Pedoman ini perlu dibaca secara saksama karena setiap jurnal dapat memiliki standar dan kriteria penilaian yang berbeda.</p>
 <hr>
 <h2 id="85-langkah-3-mengunduh-file-menilai-dan-memberikan-komentar"><a class="header" href="#85-langkah-3-mengunduh-file-menilai-dan-memberikan-komentar">8.5 Langkah 3: Mengunduh File, Menilai, dan Memberikan Komentar</a></h2>
-<p>Ini adalah <strong>tahap inti</strong> — tempat evaluasi dilakukan secara teknis.</p>
+<p>Tahap ini adalah inti dari proses penelaahan. Di sini evaluasi substantif terhadap naskah dilakukan.</p>
 <h3 id="mengunduh-dan-membaca-naskah"><a class="header" href="#mengunduh-dan-membaca-naskah">Mengunduh dan Membaca Naskah</a></h3>
-<p>Klik tautan naskah di bagian <strong>“Review Files”</strong> untuk mengunduh dokumen ke perangkat Anda. Baca naskah secara menyeluruh sebelum mulai menulis komentar.</p>
-<h3 id="formulir-tinjauan-review-form"><a class="header" href="#formulir-tinjauan-review-form">Formulir Tinjauan (Review Form)</a></h3>
-<p>Bagian ini bersifat kondisional:</p>
+<p>Klik tautan naskah di bagian <strong>“Review Files”</strong> untuk mengunduh dokumen. Baca naskah secara menyeluruh sebelum mulai menulis komentar.</p>
+<h3 id="formulir-tinjauan"><a class="header" href="#formulir-tinjauan">Formulir Tinjauan</a></h3>
+<p>Bagian formulir tinjauan bersifat kondisional:</p>
 <ul>
-<li>Jika editor jurnal telah mengkonfigurasi <strong>formulir penilaian khusus</strong>, formulir tersebut akan muncul di sini.</li>
-<li>Jika tidak ada formulir khusus, Anda menggunakan kotak komentar teks bebas.</li>
+<li>Jika pengelola jurnal telah mengonfigurasi formulir penilaian khusus, formulir tersebut akan muncul di sini.</li>
+<li>Jika tidak ada formulir khusus, reviewer menggunakan kotak komentar teks bebas.</li>
 </ul>
 <h3 id="dua-jenis-kotak-komentar"><a class="header" href="#dua-jenis-kotak-komentar">Dua Jenis Kotak Komentar</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>Jenis Komentar</th><th>Siapa yang Bisa Membaca</th><th>Panduan Pengisian</th></tr>
+<tr><th>Jenis Komentar</th><th>Pihak yang Dapat Membaca</th><th>Panduan Pengisian</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Komentar untuk Penulis &amp; Editor</strong></td><td>Penulis dan Editor</td><td>Masukan teknis tentang naskah. <strong>Jangan</strong> tulis nama atau identitas apa pun di sini.</td></tr>
-<tr><td><strong>Komentar khusus untuk Editor</strong></td><td>Editor saja (penulis tidak bisa melihat)</td><td>Opini jujur yang mungkin terlalu sensitif bagi penulis, seperti penilaian menyeluruh kelayakan naskah.</td></tr>
+<tr><td><strong>Komentar untuk Penulis dan Editor</strong></td><td>Penulis dan Editor</td><td>Masukan teknis tentang naskah. Jangan cantumkan nama atau identitas apa pun di bagian ini.</td></tr>
+<tr><td><strong>Komentar khusus untuk Editor</strong></td><td>Editor saja</td><td>Penilaian menyeluruh yang mungkin terlalu sensitif untuk dikomunikasikan langsung kepada penulis, seperti penilaian tentang kelayakan naskah secara keseluruhan.</td></tr>
 </tbody>
 </table>
 </div>
-<p><strong>Tips menulis komentar yang baik:</strong></p>
+<p>Panduan penulisan komentar yang efektif:</p>
 <ul>
-<li>Berikan komentar yang <strong>spesifik</strong> dan <strong>konstruktif</strong> — bukan hanya mengatakan “buruk” tapi jelaskan mengapa dan bagaimana memperbaikinya.</li>
-<li>Strukturkan komentar: mulai dari poin utama, lalu detail minor.</li>
-<li>Bersikap <strong>profesional dan sopan</strong>, meskipun penilaian Anda kritis.</li>
+<li>Berikan komentar yang spesifik dan konstruktif. Jelaskan mengapa suatu bagian perlu diperbaiki dan bagaimana cara memperbaikinya.</li>
+<li>Strukturkan komentar: mulai dari poin utama, kemudian detail yang lebih kecil.</li>
+<li>Jaga profesionalisme dalam penyampaian, termasuk saat menyampaikan penilaian yang kritis.</li>
 </ul>
 <h3 id="menggunakan-fitur-diskusi"><a class="header" href="#menggunakan-fitur-diskusi">Menggunakan Fitur Diskusi</a></h3>
-<p>Gunakan tombol <strong>“Add Discussion”</strong> jika ingin bertanya atau memberikan catatan kepada editor di luar konteks formulir penilaian formal — misalnya jika menemukan dugaan plagiat atau konflik kepentingan yang perlu dilaporkan.</p>
+<p>Gunakan tombol <strong>“Add Discussion”</strong> untuk menyampaikan pertanyaan atau catatan kepada editor di luar konteks formulir penilaian formal, misalnya jika reviewer menemukan dugaan plagiat atau menyadari adanya konflik kepentingan yang perlu dilaporkan.</p>
 <hr>
 <h3 id="mengunggah-file-dengan-koreksi"><a class="header" href="#mengunggah-file-dengan-koreksi">Mengunggah File dengan Koreksi</a></h3>
-<p>Anda dapat mengunggah file naskah yang telah dikoreksi (misalnya menggunakan fitur <em>Track Changes</em> di Microsoft Word).</p>
-<blockquote>
-<p><strong>⚠️ Expert Tip — Jaga Anonimitas File:</strong><br>Kegagalan menjaga anonimitas file sering kali membatalkan proses <em>double-blind</em>. Sebelum mengunggah, <strong>hapus metadata identitas Anda</strong> dari file. Di Microsoft Word, caranya:</p>
+<p>Reviewer dapat mengunggah file naskah yang telah dikoreksi menggunakan fitur <em>Track Changes</em> di Microsoft Word atau perangkat sejenis.</p>
+<p>Catatan Teknis: Sebelum mengunggah file koreksi, hapus terlebih dahulu metadata identitas dari file tersebut untuk menjaga anonimitas. Di Microsoft Word, caranya adalah:</p>
 <ol>
-<li>Klik <strong>File → Info → Check for Issues → Inspect Document</strong></li>
-<li>Centang <strong>Document Properties and Personal Information</strong></li>
-<li>Klik <strong>Inspect</strong>, lalu <strong>Remove All</strong>.</li>
+<li>Klik <strong>File</strong>, pilih <strong>Info</strong>, kemudian <strong>Check for Issues</strong>, lalu <strong>Inspect Document</strong>.</li>
+<li>Centang <strong>Document Properties and Personal Information</strong>.</li>
+<li>Klik <strong>Inspect</strong>, kemudian <strong>Remove All</strong>.</li>
 </ol>
-</blockquote>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Upload file koreksi dari reviewer"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Upload file koreksi dari reviewer"></span></label></p>
+<p>Kegagalan menghapus metadata identitas dari file yang diunggah dapat membatalkan integritas proses <em>double-blind review</em>.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Unggah file koreksi dari reviewer"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Unggah file koreksi dari reviewer"></span></label></p>
 <hr>
 <h3 id="memberikan-rekomendasi-final"><a class="header" href="#memberikan-rekomendasi-final">Memberikan Rekomendasi Final</a></h3>
-<p>Setelah selesai menilai, pilih <strong>satu rekomendasi final</strong> di bagian bawah halaman sebelum melanjutkan ke Langkah 4:</p>
+<p>Setelah selesai menilai, pilih satu rekomendasi final di bagian bawah halaman sebelum melanjutkan ke Langkah 4:</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>Rekomendasi</th><th>Deskripsi</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Accept Submission</strong></td><td>Naskah diterima tanpa revisi — kondisi yang jarang terjadi.</td></tr>
-<tr><td><strong>Revisions Required</strong></td><td>Diperlukan perbaikan minor; tidak perlu proses review ulang.</td></tr>
-<tr><td><strong>Resubmit for Review</strong></td><td>Diperlukan perubahan besar; naskah harus melalui putaran review kedua.</td></tr>
-<tr><td><strong>Resubmit Elsewhere</strong></td><td>Naskah berkualitas namun tidak sesuai fokus dan ruang lingkup jurnal ini.</td></tr>
+<tr><td><strong>Accept Submission</strong></td><td>Naskah diterima tanpa revisi. Ini adalah kondisi yang jarang terjadi.</td></tr>
+<tr><td><strong>Revisions Required</strong></td><td>Diperlukan perbaikan minor. Tidak perlu melalui proses review ulang.</td></tr>
+<tr><td><strong>Resubmit for Review</strong></td><td>Diperlukan perubahan besar. Naskah harus melalui putaran review kedua.</td></tr>
+<tr><td><strong>Resubmit Elsewhere</strong></td><td>Naskah berkualitas namun tidak sesuai dengan fokus dan ruang lingkup jurnal ini.</td></tr>
 <tr><td><strong>Decline Submission</strong></td><td>Naskah tidak layak terbit karena tidak memenuhi standar kualitas.</td></tr>
-<tr><td><strong>See Comments</strong></td><td>Menyerahkan keputusan sepenuhnya kepada editor berdasarkan komentar yang diberikan.</td></tr>
+<tr><td><strong>See Comments</strong></td><td>Keputusan diserahkan sepenuhnya kepada editor berdasarkan komentar yang telah diberikan.</td></tr>
 </tbody>
 </table>
 </div>
 <hr>
 <h2 id="86-langkah-4-penyelesaian-dan-konfirmasi-akhir"><a class="header" href="#86-langkah-4-penyelesaian-dan-konfirmasi-akhir">8.6 Langkah 4: Penyelesaian dan Konfirmasi Akhir</a></h2>
 <ol>
-<li>Tinjau kembali seluruh isian komentar dan rekomendasi Anda.</li>
+<li>Tinjau kembali seluruh komentar dan rekomendasi yang telah diisi.</li>
 <li>Klik <strong>“Submit Review”</strong>.</li>
-<li>Sistem akan menampilkan jendela <strong>konfirmasi</strong>.</li>
+<li>Sistem menampilkan jendela konfirmasi.</li>
 </ol>
-<blockquote>
-<p><strong>⚠️ Perhatian:</strong> Setelah mengklik konfirmasi, Anda <strong>tidak dapat lagi mengubah</strong> komentar atau rekomendasi Anda. Pastikan semua sudah benar sebelum mengkonfirmasi.</p>
-</blockquote>
+<p>Perhatian: Setelah konfirmasi disetujui, komentar dan rekomendasi tidak dapat lagi diubah. Pastikan semua isian sudah benar sebelum mengonfirmasi.</p>
 <p>Setelah konfirmasi:</p>
 <ul>
-<li>Sistem menampilkan <strong>pesan terima kasih</strong> otomatis.</li>
-<li>Editor mendapatkan <strong>notifikasi</strong> bahwa tugas Anda selesai.</li>
-<li>Naskah hilang dari daftar tugas aktif di dasbor Anda.</li>
+<li>Sistem menampilkan pesan konfirmasi selesai.</li>
+<li>Editor mendapatkan notifikasi bahwa tugas reviewer telah selesai.</li>
+<li>Naskah hilang dari daftar tugas aktif di dasbor reviewer.</li>
 </ul>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Halaman konfirmasi submission review"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Halaman konfirmasi submission review"></span></label></p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Halaman konfirmasi selesai review"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Halaman konfirmasi selesai review"></span></label></p>
 <hr>
 <h2 id="87-etika-peer-review"><a class="header" href="#87-etika-peer-review">8.7 Etika Peer Review</a></h2>
-<p>Sebagai reviewer, Anda berkomitmen pada prinsip-prinsip etika berikut:</p>
+<p>Prinsip-prinsip etika berikut berlaku bagi reviewer berdasarkan panduan COPE Ethical Guidelines for Peer Reviewers (COPE, 2017, https://publicationethics.org/files/cope-ethical-guidelines-peer-reviewers-v2.pdf):</p>
 <ol>
-<li><strong>Kerahasiaan</strong> — Isi naskah yang Anda tinjau adalah rahasia. Jangan mendiskusikannya dengan pihak lain tanpa izin editor.</li>
-<li><strong>Objektivitas</strong> — Evaluasi naskah berdasarkan kualitas ilmiahnya, bukan berdasarkan asal institusi, negara, atau asumsi tentang identitas penulis.</li>
-<li><strong>Ketepatan waktu</strong> — Hormati <em>Review Due Date</em>. Jika tidak bisa menyelesaikan tepat waktu, segera hubungi editor.</li>
-<li><strong>Integritas</strong> — Laporkan jika ada dugaan plagiat, data yang meragukan, atau konflik kepentingan yang baru Anda sadari setelah menerima penugasan.</li>
-<li><strong>Tidak menggunakan naskah untuk kepentingan pribadi</strong> — Dilarang keras mengutip atau menggunakan ide dari naskah yang sedang Anda tinjau sebelum dipublikasikan.</li>
+<li>
+<p><strong>Kerahasiaan</strong>: Isi naskah yang sedang ditinjau adalah informasi rahasia. Reviewer tidak diperbolehkan mendiskusikan naskah dengan pihak lain tanpa izin editor. Naskah yang ditugaskan tidak boleh digunakan untuk kepentingan pribadi sebelum diterbitkan.</p>
+</li>
+<li>
+<p><strong>Objektivitas</strong>: Penilaian harus didasarkan pada kualitas ilmiah naskah, bukan pada asal institusi, negara, atau asumsi tentang identitas penulis. Komentar yang bersifat pribadi atau menyerang penulis tidak dapat dibenarkan.</p>
+</li>
+<li>
+<p><strong>Ketepatan waktu</strong>: Reviewer harus menghormati batas waktu yang ditetapkan (<em>Review Due Date</em>). Apabila reviewer tidak dapat menyelesaikan ulasan tepat waktu, editor harus segera diberitahu agar dapat mengambil tindakan yang diperlukan.</p>
+</li>
+<li>
+<p><strong>Pengungkapan konflik kepentingan</strong>: Reviewer harus mengungkapkan kepada editor setiap hubungan atau situasi yang dapat menimbulkan konflik kepentingan, baik sebelum maupun setelah menerima penugasan. Jika konflik kepentingan ditemukan setelah penugasan diterima, reviewer harus segera melaporkannya kepada editor.</p>
+</li>
+<li>
+<p><strong>Integritas</strong>: Reviewer wajib melaporkan kepada editor jika menemukan dugaan plagiat, ketidakakuratan data, atau pelanggaran etika lain dalam naskah yang sedang ditinjau.</p>
+</li>
+<li>
+<p><strong>Larangan penggunaan naskah untuk kepentingan pribadi</strong>: Reviewer dilarang mengutip, menggunakan, atau mendistribusikan ide, data, atau temuan dari naskah yang sedang ditinjau sebelum naskah tersebut diterbitkan.</p>
+</li>
 </ol>
 <hr>
+<h2 id="checklist-bab-8"><a class="header" href="#checklist-bab-8">Checklist Bab 8</a></h2>
+<ul>
+<li><input disabled="" type="checkbox"> Email undangan sudah dibaca dan jadwal peninjauan sudah dicatat.</li>
+<li><input disabled="" type="checkbox"> Tidak ada konflik kepentingan, atau konflik kepentingan sudah dilaporkan kepada editor.</li>
+<li><input disabled="" type="checkbox"> Pedoman peninjau (<em>Reviewer Guidelines</em>) jurnal sudah dibaca.</li>
+<li><input disabled="" type="checkbox"> Naskah sudah diunduh dan dibaca secara menyeluruh sebelum menulis komentar.</li>
+<li><input disabled="" type="checkbox"> Komentar untuk penulis sudah ditulis secara spesifik dan konstruktif, tanpa mencantumkan identitas.</li>
+<li><input disabled="" type="checkbox"> Komentar khusus untuk editor sudah diisi jika diperlukan.</li>
+<li><input disabled="" type="checkbox"> File koreksi sudah diunggah (jika ada) dengan metadata identitas yang sudah dihapus.</li>
+<li><input disabled="" type="checkbox"> Satu rekomendasi final sudah dipilih.</li>
+<li><input disabled="" type="checkbox"> Seluruh isian sudah diperiksa kembali sebelum konfirmasi akhir.</li>
+</ul>
+<hr>
 <h2 id="ringkasan-bab-6"><a class="header" href="#ringkasan-bab-6">Ringkasan Bab</a></h2>
-<p>Mengikuti langkah-langkah reviewer secara sistematis di OJS 3.3 tidak hanya membantu efisiensi editorial, tetapi juga menjaga standar akademik jurnal.</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>Langkah</th><th>Aksi Reviewer</th></tr>
 </thead>
 <tbody>
-<tr><td>1 — Request</td><td>Baca detail naskah, isi competing interests, terima/tolak undangan.</td></tr>
-<tr><td>2 — Guidelines</td><td>Baca pedoman penilaian jurnal secara seksama.</td></tr>
-<tr><td>3 — Review</td><td>Unduh naskah, isi komentar (untuk penulis dan khusus editor), unggah file koreksi, pilih rekomendasi.</td></tr>
-<tr><td>4 — Completion</td><td>Tinjau ulang, submit review, konfirmasi.</td></tr>
+<tr><td>1 - Request</td><td>Baca detail naskah, isi pernyataan kepentingan bersaing, terima atau tolak undangan.</td></tr>
+<tr><td>2 - Guidelines</td><td>Baca pedoman penilaian jurnal secara saksama.</td></tr>
+<tr><td>3 - Review</td><td>Unduh naskah, isi komentar untuk penulis dan komentar khusus editor, unggah file koreksi jika ada, pilih rekomendasi final.</td></tr>
+<tr><td>4 - Completion</td><td>Tinjau ulang seluruh isian, kirim ulasan, konfirmasi.</td></tr>
 </tbody>
 </table>
 </div>
