@@ -1,139 +1,122 @@
-# Bab 11: Produksi, Tata Letak & Galley
+# Bab 11: Produksi, Tata Letak, dan Galley
 
-Tahap **Produksi** adalah fase keempat dan terakhir dalam alur kerja editorial OJS 3.3. Di sinilah naskah yang telah melalui penyuntingan dikonversi menjadi **format publikasi resmi** yang disebut **Galley** dan dijadwalkan ke dalam edisi (*issue*) tertentu.
+Tahap **Produksi** adalah fase keempat dan terakhir dalam alur kerja editorial OJS 3.3. Pada tahap ini, naskah yang telah melalui proses penyuntingan dikonversi menjadi format publikasi resmi yang disebut **Galley**, kemudian dijadwalkan ke dalam edisi (*issue*) tertentu.
 
-> **Tujuan Tahap Produksi:** Bukan lagi menyunting konten, melainkan memastikan **presentasi teknis** naskah siap untuk dikonsumsi pembaca secara global — dalam format yang profesional dan akurat.
-
----
+Tujuan utama tahap produksi bukan lagi untuk menyunting substansi konten, melainkan memastikan presentasi teknis naskah siap diakses oleh pembaca secara global dalam format yang profesional dan akurat.
 
 ## 11.1 Peran dalam Tahap Produksi
 
 | Aktor | Tanggung Jawab |
 |-------|---------------|
-| **Layout Editor** | Mengubah versi *copyedited* menjadi format siap terbit (PDF, HTML, XML, EPUB). |
-| **Editor / Section Editor** | Manajer alur kerja: menunjuk staf, mengawasi proses, dan memegang otoritas keputusan penjadwalan. |
-| **Author (Penulis)** | Melakukan *proofreading* akhir terhadap file galley yang telah disiapkan. |
-| **Proofreader** | Pemeriksaan akhir pada galley untuk memastikan tidak ada kesalahan tata letak atau visual sebelum publikasi. |
+| **Layout Editor** | Mengubah versi naskah hasil *copyediting* menjadi format siap terbit (PDF, HTML, XML, EPUB). |
+| **Editor / Section Editor** | Mengelola alur kerja produksi dengan menunjuk staf, mengawasi proses, dan menetapkan jadwal terbit. |
+| **Author (Penulis)** | Melakukan pengecekan akhir (*proofreading*) terhadap berkas galley yang telah disiapkan sebelum diterbitkan. |
+| **Proofreader** | Melakukan pemeriksaan akhir pada galley untuk memastikan tidak terdapat kesalahan tata letak atau visual visual. |
 
-> **Catatan fleksibilitas OJS 3.3:** Jika tim terbatas, seorang Editor dapat merangkap peran sebagai Layout Editor dalam sistem — cukup berikan akses peran yang sesuai.
-
----
+Catatan Teknis: OJS 3.3 memberikan fleksibilitas peran. Apabila tim pengelola terbatas, seorang editor dapat merangkap peran sebagai Layout Editor dengan cara memberikan akses peran tambahan di dalam sistem.
 
 ## 11.2 Penugasan Tim Produksi
 
-Langkah pertama adalah menunjuk personel di dalam sistem:
+Langkah pertama pada tahap produksi adalah menunjuk personel pelaksana:
 
-1. Navigasi ke panel **"Participants"** di halaman naskah (tab Production).
+1. Navigasi ke panel **"Participants"** di halaman naskah pada tab *Production*.
 2. Klik tombol **"Assign"**.
-3. Pilih peran yang sesuai: *Layout Editor*, *Proofreader*, atau lainnya.
-4. Cari staf yang tersedia dan pilih.
-5. Sistem membuka draf email notifikasi — sesuaikan jika perlu, lalu klik **"OK"**.
+3. Pilih peran yang ditugaskan, misalnya *Layout Editor* atau *Proofreader*.
+4. Cari dan pilih staf yang tersedia dari daftar pengguna.
+5. Sistem akan membuka draf surel notifikasi. Sesuaikan isi surel jika diperlukan, kemudian klik **"OK"**.
 
 ![Panel Participants di tahap Production](../img/elementor-placeholder-image.png)
 
----
-
 ## 11.3 Pembuatan File Galley
 
-Layout Editor akan mengunduh file *copyedited* dari tahap sebelumnya, mengerjakannya di luar sistem, lalu mengunggahnya kembali sebagai **Galley**.
+Layout Editor akan mengunduh berkas *copyedited* dari tahap sebelumnya, melakukan tata letak menggunakan perangkat lunak eksternal, lalu mengunggahnya kembali sebagai **Galley**.
+
+Pembuatan galley umumnya menggunakan beberapa perangkat lunak, seperti:
+- **Microsoft Word atau LibreOffice**: Digunakan untuk menyusun draf akhir sebelum diekspor menjadi format PDF.
+- **Pandoc** (https://pandoc.org/): Perangkat lunak baris perintah untuk mengonversi dokumen antar berbagai format, sangat berguna untuk membuat HTML atau EPUB dari dokumen teks.
+- **Plugin OJS JATS XML**: Beberapa jurnal menggunakan plugin OJS atau perangkat lunak pihak ketiga seperti Texture untuk menghasilkan dokumen berformat XML JATS secara otomatis.
 
 ### Format File Galley yang Didukung OJS
 
 | Format | Kegunaan Utama |
 |--------|---------------|
-| **PDF** | Standar utama untuk cetak digital dan pembacaan *offline*. Paling umum digunakan. |
-| **HTML** | Tampilan responsif yang dapat dibaca langsung di peramban web. |
-| **XML** | Format terstruktur untuk indeksasi otomatis dan pertukaran data antar mesin. |
-| **EPUB** | Dioptimalkan untuk perangkat pembaca buku elektronik (*e-reader*). |
+| **PDF** | Format standar untuk cetak digital dan pembacaan luring (*offline*). Paling umum digunakan oleh jurnal ilmiah. |
+| **HTML** | Menyediakan tampilan responsif yang dapat dibaca langsung melalui peramban web tanpa perlu mengunduh dokumen. |
+| **XML (JATS)** | Format terstruktur yang esensial untuk indeksasi tingkat lanjut dan pertukaran data antar mesin. |
+| **EPUB** | Format yang dioptimalkan untuk perangkat pembaca buku elektronik (*e-reader*). |
+
+Pentingnya Format XML JATS: *Journal Article Tag Suite* (JATS) adalah format standar internasional untuk mendeskripsikan konten ilmiah. Penyediaan galley dalam format XML JATS merupakan persyaratan penting bagi jurnal yang ingin terindeks di pangkalan data bergengsi seperti PubMed Central dan sangat direkomendasikan untuk indeksasi Scopus. XML JATS memastikan bahwa metadata dan konten teks artikel terstruktur dengan sempurna sehingga dapat dibaca dan diekstraksi oleh mesin pengindeks.
+
+**Studi Kasus**: Banyak jurnal di Indonesia mengalami peningkatan jumlah pembaca (*readership*) dan sitasi yang signifikan setelah beralih dari sekadar menyajikan PDF menjadi juga menyediakan versi HTML dan XML artikelnya. Versi HTML dan XML membuat artikel jauh lebih mudah ditemukan oleh mesin pencari dan lebih nyaman dibaca di perangkat seluler, sehingga meningkatkan visibilitas secara drastis.
 
 ### Cara Mengunggah Galley
 
-1. Di halaman naskah tahap Production, klik **"Add Galley"** di bagian *Galleys*.
-2. Isi **label galley** (mis. "PDF", "HTML").
-3. Pilih bahasa galley.
-4. Klik **"Save"**, lalu unggah file galley yang telah dibuat.
+1. Di halaman naskah pada tahap *Production*, klik **"Add Galley"** di bagian *Galleys*.
+2. Isi label galley (misalnya "PDF" atau "HTML").
+3. Pilih bahasa dari dokumen galley tersebut.
+4. Klik **"Save"**, lalu unggah berkas galley yang telah disiapkan.
 
 ![Tampilan unggah Galley di tahap Production](../img/elementor-placeholder-image.png)
 
----
-
 ## 11.4 Diskusi Produksi dan Proofreading
 
-Gunakan fitur **"Production Discussions"** sebagai pusat komunikasi. 
+Fungsikan fitur **"Production Discussions"** sebagai pusat komunikasi utama selama tahap ini.
 
-**Prosedur proofreading oleh penulis:**
-1. Editor mengunggah file galley di area diskusi.
-2. Mulai diskusi dengan penulis (*Add Discussion*, pilih penulis sebagai partisipan).
-3. Penulis menerima email notifikasi.
-4. Penulis mengunduh file galley dan memeriksa secara menyeluruh:
-   - Apakah tata letak sudah benar?
-   - Apakah ada kesalahan ketik yang terlewat?
-   - Apakah gambar/tabel sudah tampil dengan benar?
-5. Penulis memberikan konfirmasi atau catatan koreksi melalui fitur diskusi di sistem.
+Prosedur proofreading oleh penulis dilakukan sebagai berikut:
+1. Editor mengunggah berkas galley ke area diskusi produksi.
+2. Editor memulai diskusi dengan penulis (*Add Discussion*, dan memilih penulis sebagai partisipan).
+3. Penulis akan menerima surel notifikasi.
+4. Penulis mengunduh berkas galley dan memeriksa beberapa hal teknis:
+   - Apakah tata letak halaman dan tipografi sudah sesuai?
+   - Apakah terdapat kesalahan ketik atau pemotongan kata yang tidak tepat?
+   - Apakah gambar, grafik, dan tabel disajikan dengan jelas?
+5. Penulis menyampaikan konfirmasi atau daftar koreksi melalui fitur diskusi.
 
-> **Semua komunikasi harus melalui *Production Discussions*** — bukan email eksternal. Ini memastikan seluruh jejak audit tersimpan di sistem dan dapat diakses oleh tim editorial lain.
+Seluruh komunikasi harus dilakukan melalui fitur diskusi produksi OJS, bukan melalui surel eksternal pribadi. Praktik ini memastikan seluruh proses revisi tercatat dalam sistem dan dapat diakses oleh tim editorial lainnya.
 
 ![Fitur Production Discussions untuk proofreading](../img/elementor-placeholder-image.png)
 
----
-
 ## 11.5 Finalisasi Metadata di Tab Publication
 
-Sebelum naskah dijadwalkan untuk terbit, pastikan semua metadata sudah benar. Masuk ke tab **"Publication"** pada halaman alur kerja naskah dan verifikasi:
+Sebelum naskah dijadwalkan untuk terbit, pastikan semua metadata sudah terverifikasi. Masuk ke tab **"Publication"** pada halaman alur kerja naskah dan periksa elemen berikut:
 
-| Bagian | Yang Harus Diverifikasi |
+| Bagian | Elemen yang Diverifikasi |
 |--------|------------------------|
-| **Title & Abstract** | Judul dan abstrak bebas dari kesalahan ketik, sesuai dengan file galley. |
-| **Contributors** | Daftar penulis, afiliasi, urutan kontributor sudah benar dan konsisten. |
-| **Metadata** | Kata kunci (*keywords*) sudah dimasukkan dengan multi-tag yang benar. |
-| **References** | Referensi sudah dimasukkan, pisahkan setiap referensi dengan baris kosong. |
-| **Identifiers (DOI)** | Nomor DOI sudah ter-*assign* sesuai pola yang ditetapkan. |
-| **Permissions & Disclosure** | Pemegang hak cipta, lisensi, dan tahun copyright sudah benar. |
-| **Issue & Page Numbers** | Nomor halaman dan edisi target sudah dipilih. |
+| **Title & Abstract** | Judul dan abstrak bebas dari kesalahan ketik dan sesuai secara presisi dengan teks di dalam galley. |
+| **Contributors** | Daftar penulis, nama institusi afiliasi, dan urutan nama penulis sudah benar. |
+| **Metadata** | Kata kunci (*keywords*) telah diinput dengan struktur tag yang tepat. |
+| **References** | Daftar pustaka sudah diinput, dengan setiap referensi dipisahkan oleh satu baris kosong. |
+| **Identifiers (DOI)** | Nomor DOI (*Digital Object Identifier*) telah ditugaskan (*assigned*) sesuai dengan pola registrasi jurnal. |
+| **Permissions & Disclosure** | Informasi pemegang hak cipta, jenis lisensi, dan tahun hak cipta sudah tercatat dengan benar. |
+| **Issue & Page Numbers** | Nomor edisi target dan rentang halaman artikel telah ditetapkan. |
 
-![Tab Publication — verifikasi metadata sebelum publikasi](../img/elementor-placeholder-image.png)
-
----
+![Tab Publication: verifikasi metadata sebelum publikasi](../img/elementor-placeholder-image.png)
 
 ## 11.6 Menjadwalkan Naskah ke Dalam Issue
 
-Setelah galley dan metadata sudah siap:
+Setelah galley dan metadata siap, naskah siap dijadwalkan:
 
-1. Di tab **Publication**, masuk ke submenu **"Issue"**.
-2. Pilih edisi yang sudah dibuat sebagai target publikasi (*Future Issue*).
-3. Isi **nomor halaman** artikel jika diperlukan.
+1. Di tab **Publication**, akses submenu **"Issue"**.
+2. Pilih edisi yang telah dibuat sebagai target penerbitan (*Future Issue*).
+3. Masukkan nomor halaman artikel pada kolom yang tersedia.
 4. Klik **"Schedule for Publication"**.
 
-Naskah kini resmi terjadwalkan dan akan terbit saat edisi tersebut dipublikasikan.
+Naskah kini telah dijadwalkan dan akan dipublikasikan secara daring bersamaan dengan diterbitkannya edisi terkait.
 
 ![Penjadwalan naskah ke dalam Future Issue](../img/elementor-placeholder-image.png)
 
----
+## Checklist Bab 11
 
-## 11.7 Tips untuk Alur Kerja Produksi yang Efisien
+Sebelum beralih ke tahap manajemen edisi, pastikan poin-poin berikut telah terselesaikan:
 
-> **Sentralisasi Komunikasi:** Pastikan **semua instruksi perubahan layout** dilakukan melalui "Production Discussions". Jangan gunakan email eksternal agar riwayat perubahan file selalu tersimpan dan dapat diakses oleh seluruh tim editorial.
-
-> **Konsistensi Nama File:** Beri nama file galley secara konsisten — misalnya: `[JurnalSingkatan]-[Vol]-[No]-[Tahun]-[ID].pdf`. Ini memudahkan pengelolaan file dalam jangka panjang.
-
-> **Backup:** Simpan salinan file galley final di luar sistem OJS sebagai arsip cadangan.
-
----
-
-## Checklist Produksi
-
-Sebelum melanjutkan ke tahap manajemen edisi, pastikan semua poin berikut sudah terpenuhi:
-
-- [ ] File galley (minimal PDF) sudah dibuat dan diunggah.
-- [ ] Penulis sudah melakukan proofreading dan memberikan persetujuan.
-- [ ] Metadata di tab Publication sudah lengkap dan terverifikasi.
-- [ ] DOI sudah ter-assign.
-- [ ] Naskah sudah dijadwalkan ke dalam *Future Issue* yang sesuai.
-
----
+- [ ] Personel tim produksi (seperti Layout Editor) telah ditugaskan di dalam sistem jika menggunakan model tim.
+- [ ] Berkas galley (minimal berformat PDF) telah dikonversi dan diunggah menggunakan format tata letak jurnal.
+- [ ] Penulis telah melakukan *proofreading* akhir melalui fitur *Production Discussions* dan menyetujui versi galley.
+- [ ] Seluruh data metadata di tab *Publication* telah diverifikasi kesesuaiannya dengan teks artikel.
+- [ ] Nomor DOI telah ditugaskan (*assigned*).
+- [ ] Rentang halaman artikel telah ditentukan.
+- [ ] Naskah telah dijadwalkan ke dalam edisi mendatang (*Future Issue*).
 
 ## Ringkasan Bab
 
-Tahap produksi bukan sekadar urusan teknis — ini adalah penentu kualitas akhir jurnal di mata komunitas akademik global. Keakuratan galley, metadata yang rapi, dan komunikasi yang terdokumentasi dengan baik mencerminkan **kredibilitas dan profesionalisme jurnal**.
-
-Dengan menyelesaikan tahap ini, naskah siap untuk dipublikasikan melalui proses **Manajemen Edisi** yang dibahas pada Bab 12.
+Tahap produksi menentukan kualitas dan profesionalisme bentuk fisik digital sebuah jurnal. Penyajian tata letak yang bersih, kelengkapan ragam galley (termasuk format berbasis web seperti HTML atau XML JATS), serta kelengkapan metadata, berkontribusi langsung pada visibilitas artikel di berbagai mesin pencari akademik. Komunikasi *proofreading* yang tersentralisasi dalam OJS memastikan proses perbaikan akhir dapat dilacak dan dipertanggungjawabkan sebelum artikel diterbitkan secara publik.

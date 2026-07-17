@@ -1,316 +1,193 @@
 # Bab 13: Optimalisasi Metadata Artikel
 
-Metadata adalah fondasi dari visibilitas dan kemampuan artikel untuk ditemukan (*discoverability*) di era digital. Metadata yang lengkap, akurat, dan konsisten menentukan seberapa mudah artikel Anda dapat ditemukan, dikutip, dan diindeks oleh mesin pencari dan basis data ilmiah.
+Metadata adalah fondasi dari visibilitas dan kemampuan penemuan artikel (*discoverability*) di ekosistem penerbitan digital. Metadata yang lengkap, akurat, dan konsisten menentukan seberapa mudah artikel ilmiah dapat ditemukan, disitasi, dan diindeks oleh mesin pencari maupun basis data kepustakaan global.
 
-> **Metadata adalah tanggung jawab bersama** antara editor dan penulis. Kesalahan metadata dapat berdampak serius — mulai dari distribusi DOI yang gagal hingga sitasi yang salah di Google Scholar.
-
----
+Pemeliharaan metadata merupakan tanggung jawab yang diemban bersama antara tim editor dan penulis. Kesalahan pencatatan metadata dapat menimbulkan dampak serius, mulai dari kegagalan distribusi DOI hingga penyematan sitasi yang keliru pada profil Google Scholar penulis.
 
 ## 13.1 Pengertian Metadata Artikel
 
-Metadata adalah data yang berkaitan dengan informasi tentang data lain (Pomerantz, 2015). Metadata tidak hanya sekadar menggambarkan data — metadata juga menggambarkan bagaimana organisasi dapat memahami aktivitasnya, orang dan organisasinya, geografi, waktu, dan motivasinya (Hay, 2006). Metadata adalah informasi yang dibuat, disimpan, dan dibagikan untuk menggambarkan berbagai hal yang memungkinkan kita berinteraksi dengan hal-hal untuk memperoleh pengetahuan yang kita butuhkan (Riley, 2017).
+Metadata secara harfiah merujuk pada data yang menyajikan informasi mengenai data lainnya (Pomerantz, 2015). Metadata tidak sekadar berfungsi mendeskripsikan data mentah; entitas ini turut menggambarkan bagaimana sebuah organisasi mengonseptualisasikan aktivitasnya, aspek kewilayahan, konteks waktu, serta tujuan pendiriannya (Hay, 2006). Menurut Riley (2017), metadata adalah struktur informasi yang dibuat, disimpan, dan dibagikan dengan tujuan memampukan interaksi sistematis untuk ekstraksi pengetahuan.
 
-Dalam konteks artikel ilmiah, metadata adalah informasi *tentang* artikel — pengarang, judul, abstrak, kata kunci, tanggal publikasi, DOI, dan sebagainya. Untuk memudahkan pengarsipan dan pencarian kembali sebuah artikel ilmiah, dibutuhkan metadata yang lengkap dan akurat dari artikel ilmiah itu sendiri (Rahutomo, Irawati, & Pramudita, 2019).
+Dalam domain publikasi ilmiah, metadata bertindak sebagai representasi komprehensif dari sebuah artikel, yang mencakup nama kontributor, judul utama, abstrak penelitian, kata kunci spesifik, penanggalan penerbitan, hingga pengenal digital (DOI). Guna mendukung kelestarian arsip dan kemudahan pencarian retrospektif, setiap artikel ilmiah harus didukung oleh kerangka metadata yang kaya dan presisi (Rahutomo, Irawati, & Pramudita, 2019).
 
-Menurut Basuki (2000), secara umum ada 3 bagian yang digunakan untuk membuat metadata bagi sebuah paket informasi:
-1. Penyandian (*encoding*);
-2. Pembuatan deskripsi paket informasi bersama dengan informasi lain yang diperlukan untuk manajemen dan preservasi paket; dan
-3. Penyediaan akses terhadap deskripsi tersebut.
+Berdasarkan studi Basuki (2000), terdapat tiga elemen fundamental dalam konstruksi metadata sebuah unit informasi:
+1. Mekanisme penyandian (*encoding*);
+2. Formulasialisasi deskripsi identitas informasi yang digabungkan dengan parameter manajemen pelestarian digital; dan
+3. Penyediaan protokol akses menuju deskripsi yang bersangkutan.
 
-### Fungsi Metadata Artikel
+### Fungsi Esensial Metadata Artikel
 
-Fungsi utama metadata adalah **penemuan sumber** (*resource discovery*) (Basuki, 2000). Menurut Rao (1995) dan Basuki (2000), fungsi metadata adalah menunjang pemilihan, pemahaman, pendayagunaan, dan pengingatan sumber dan isinya. Secara khusus, metadata memungkinkan mekanisme yang efektif untuk mengenali dan mengetahui lokasi data yang relevan. Metadata memungkinkan pemakai untuk menentukan (Basuki, 2000):
+Fungsi primer metadata adalah memfasilitasi penemuan sumber informasi (*resource discovery*) (Basuki, 2000). Rao (1995) menegaskan bahwa instrumen ini menyokong proses seleksi, pemahaman analitis, dan daya ingat kolektif atas konten pustaka. Metadata menyediakan kerangka rasional bagi pemakai untuk menimbang tiga aspek (Basuki, 2000):
+1. **Ketersediaan** parameter eksistensi, kuantitas, dan rute lokasi objek informasi.
+2. **Kegunaan** yang merujuk pada otentisitas dan penjaminan kualitas.
+3. **Relevansi** penentu kesesuaian nilai fungsional informasi tersebut bagi kebutuhan spesifik pencari.
 
-1. **Ketersediaan informasi** — apakah objek informasi itu ada atau eksis? Di manakah letaknya? Berapakah yang tersedia?
-2. **Kegunaan informasi** — apakah otentik? Apakah berkualitas?
-3. **Relevansi** — bagaimana pemakai dapat menentukan apakah berguna atau tidak?
+Multazam (2021) merumuskan fungsi praktis metadata artikel dalam operasional jurnal harian:
+1. Menjamin artikel dapat terindeks secara mulus oleh algoritma perayap (*crawler*) dari institusi pengindeks global.
+2. Mengintegrasikan struktur informasi naskah agar dapat ditangkap tanpa cacat oleh perangkat lunak referensi pihak ketiga seperti Mendeley atau Zotero.
+3. Memberikan umpan data matang bagi mesin analitik kepustakaan.
 
-Menurut Multazam (2021), fungsi metadata artikel dalam konteks pengelolaan jurnal diantaranya:
-1. Mudah terindeks dan ditemukan oleh mesin pengindeks otomatis atau lembaga pengindeks yang mengandalkan metadata dalam proses pencariannya.
-2. Memudahkan untuk melakukan sitasi menggunakan mesin terkait (Mendeley, Zotero, dan lainnya).
-3. Memudahkan mesin analisa artikel untuk membaca identitas atau bahkan isi artikel.
+Catatan Kritis: Praktik mengubah metadata suatu artikel setelah tanggal publikasinya sangat tidak direkomendasikan. Perubahan modifikasi waktu rilis atau nama penulis dapat menimbulkan konflik pembaruan data pada Google Scholar dan sistem pengindeks lainnya. Tim editorial diwajibkan mengonfirmasi seluruh detail metadata kepada penulis jauh sebelum artikel mencapai tahap penerbitan.
 
-> **Perhatian:** Mengubah metadata artikel *setelah* terbit — terutama tanggal publikasi — dapat merubah data di Google Scholar dan mesin pengindeks lain. Konfirmasikan kebenaran data metadata kepada penulis **sebelum** artikel diterbitkan.
+## 13.2 Konfigurasi Awal Metadata di OJS 3
 
----
+Sebelum setiap artikel dapat diisi metadatanya, pengelola jurnal diwajibkan menyelesaikan konfigurasi global pada pangkalan sistem:
 
-## 13.2 Pengaturan Metadata di OJS 3 (Konfigurasi Awal)
+### A. Identitas Dasar Jurnal (Masthead)
 
-Sebelum metadata artikel dapat diisi dengan lengkap, pengelola jurnal perlu melakukan beberapa pengaturan di tingkat sistem:
+OJS 3.0 hingga 3.3: Akses melalui rute **Settings**, pilih **Journal**, kemudian **Masthead**.
+Instruksi: Masukkan nama jurnal secara penuh, nomor ISSN, beserta data pengelola dasar. Data ini berfungsi sebagai metadata jangkar (*anchor*) yang menyertai seluruh artikel dalam jurnal tersebut.
 
-### A. Basic Journal Identity (Masthead)
+### B. Konfigurasi Metadata Penyerahan Naskah
 
-**OJS 3.0–3.1 & 3.2–3.3:**
-```
-Login Journal Manager → Settings → Journal → Masthead
-```
-Isi nama jurnal, ISSN, dan informasi dasar lainnya. Data ini akan digunakan sebagai dasar metadata di semua artikel.
+OJS 3.2 dan 3.3: Akses melalui rute **Settings**, pilih **Workflow**, masuk ke **Submission**, lalu **Metadata**.
+Instruksi: Manajer Jurnal (*Journal Manager*) harus mengaktifkan kolom metadata yang wajib diisi oleh penulis saat pendaftaran naskah awal, seperti kolom kata kunci, lembaga pemberi hibah, hingga daftar rujukan.
 
-### B. Submission Metadata
+### C. Lisensi dan Hak Cipta
 
-**OJS 3.0–3.1:**
-```
-Login Journal Manager → Settings → Workflow → Submission → Submission Metadata
-```
+OJS 3.2 dan 3.3: Akses melalui rute **Settings**, pilih **Distribution**, lalu **License**.
+Instruksi: Tentukan dengan jelas kebijakan retensi hak cipta (apakah dipegang oleh pihak jurnal atau penulis) serta terapkan jenis lisensi diseminasi publik seperti Creative Commons.
 
-**OJS 3.2–3.3:**
-```
-Login Journal Manager → Settings → Workflow → Submission → Metadata
-```
+### D. Penataan Bagian Jurnal (Sections)
 
-Di sini, Journal Manager mengaktifkan (*centang*) field metadata apa saja yang dapat diisi penulis saat submission — misalnya: kata kunci, abstrak, agensi pendukung, dll.
+Akses melalui rute **Settings**, pilih **Journal**, lalu **Sections**.
+Instruksi: Kelola kompartemen penerbitan jurnal, misalnya kategori Artikel Penelitian Asli, Tinjauan Buku, atau Laporan Kasus.
 
-### C. Copyright dan Lisensi
+### E. Integrasi Pengaya (Plugins) Tambahan
 
-**OJS 3.0–3.1:**
-```
-Login Journal Manager → Settings → Distribution → Permissions
-```
+**Pengaya Pendanaan (Funding Plugin)**: Memfasilitasi pendaftaran dana hibah penelitian secara transparan. Diaktifkan melalui menu Plugins di Website Settings.
+**Pengaya Crossref Reference Linking**: Mensinkronisasikan daftar referensi dengan pangkalan data DOI global secara otonom.
 
-**OJS 3.2–3.3:**
-```
-Login Journal Manager → Settings → Distribution → License
-```
+## 13.3 Standar Struktur Metadata Artikel OJS 3
 
-Atur pemegang hak cipta (jurnal atau penulis) dan jenis lisensi (mis. Creative Commons).
+Struktur metadata di dalam naskah terbagi atas beberapa kelompok inti. Berikut merupakan pedoman teknis pengelolaan masing-masing kelompok:
 
-### D. Section Artikel
+### A. Judul dan Abstrak (Title and Abstract)
 
-```
-Login Journal Manager → Settings → Journal → Sections
-```
-Buat dan kelola bagian-bagian jurnal (Articles, Reviews, Notes, dll.).
+Elemen data wajib meliputi Awalan (*Prefix*), Judul Utama (*Title*), dan Teks Abstrak (*Abstract*).
 
-### E. Plugin Tambahan
+Panduan Formulasi Judul:
+- Wajib diketik menggunakan format kapitalisasi standar atau kapital di awal kata utama (*Title Case*). Jangan mengetik judul dengan huruf kapital yang dominan sepenuhnya.
+- Metadata judul di dalam sistem harus sama presisi dengan yang tertera di dokumen pracetak PDF.
 
-**Plugin Funding** (mendukung pencatatan hibah/pendanaan penelitian):
-```
-Login Journal Manager → Settings → Website → Plugins → Funding Plugin → Enable
-```
+Panduan Formulasi Abstrak:
+- Ditulis utuh dalam satu paragraf.
+- Tidak melebihi batas jumlah kata jurnal (lazimnya 250 kata).
+- Memuat pilar tujuan, rancangan metode, penjabaran sampel, dan intisari temuan.
+- Dilarang keras menyisipkan teks kata kunci ke dalam kolom isian khusus abstrak.
+- Dilarang menambahkan kata "Abstrak" atau "Abstract" sebagai kata pembuka di dalam formulir.
 
-**Plugin Crossref Reference Linking** (menghubungkan referensi dengan DOI secara otomatis):
-```
-Login Journal Manager → Settings → Website → Plugins → Crossref Reference Linking Plugin → Enable
-```
+### B. Informasi Kontributor (Contributors)
 
----
+Elemen data wajib meliputi Nama Depan, Nama Belakang, Surel Afiliasi, Negara Asal, Nama Institusi, ID ORCID, serta Penugasan Peran (*Role*).
 
-## 13.3 Struktur Metadata Artikel OJS 3
-
-Metadata artikel di OJS 3 terdiri dari beberapa bagian. Berikut panduan lengkap untuk setiap bagian:
-
-### A. Title and Abstract (Judul dan Abstrak)
-
-Isian wajib: **Prefix**, **Title**, **Subtitle**, **Abstract**.
-
-**Panduan Judul:**
-- Ditulis dalam format **Sentence case** atau **Title Case** — BUKAN huruf kapital semua.
-- Singkat dan merupakan *highlight* dari temuan penelitian.
-- Judul artikel ≠ judul penelitian. Judul artikel adalah "iklan" dari keseluruhan isi.
-- Cek konsistensi: judul di metadata harus **sama persis** dengan judul di file PDF.
-
-**Checklist Judul:**
-- [ ] Judul ditulis dalam Sentence case / Title Case.
-- [ ] Judul di metadata identik dengan judul di file PDF.
-- [ ] Tidak mengandung singkatan yang tidak umum.
-
-**Panduan Abstrak:**
-- Ditulis dalam **bahasa Inggris** saja (untuk jurnal internasional).
-- **1 paragraf**, tidak lebih dari **250 kata**.
-- Harus memuat: tujuan penelitian, metode, populasi/sampel, hasil, dan kesimpulan.
-- **Jangan** memasukkan kata kunci di dalam kolom abstrak.
-- **Jangan** menuliskan "Abstract" sebagai awalan di dalam kolom abstrak.
-
-**Checklist Abstrak:**
-- [ ] Dalam bahasa Inggris.
-- [ ] 1 paragraf, maksimal 250 kata.
-- [ ] Memuat tujuan, metode, hasil, dan kesimpulan.
-- [ ] Tidak ada kata kunci di dalam kolom abstrak.
-
----
-
-### B. Contributors (Data Penulis)
-
-Isian penting: **Given Name**, **Family Name**, **Email**, **Country**, **Affiliation**, **ORCID**, **Role**.
-
-**Panduan Penulisan Nama Penulis:**
-
-| Nama | Given Name (Depan) | Family Name (Belakang) |
+Pedoman Konversi Nama:
+| Nama Penulis | Masukan Nama Depan | Masukan Nama Belakang |
 |------|---------------------|------------------------|
-| Soekarno *(1 suku kata)* | S | Soekarno |
-| Soekarno *(alternatif)* | Soekarno | Soekarno |
-| Asep Erlan Maulana | Asep Erlan | Maulana |
+| Soekarno (1 kata tunggal) | S | Soekarno |
+| Soekarno (Format Alternatif) | Soekarno | Soekarno |
 | Andista Candra Yusro | Andista Candra | Yusro |
-| Faradila Hasan | Faradila | Hasan |
 
-> **Catatan:** Untuk nama dengan 3 kata atau lebih, pastikan *Family Name* hanya terdiri dari **1 kata**. Jangan mengisi *Middle Name* jika tidak diperlukan. Jangan isi kolom kosong dengan tanda (-).
+Ketentuan Tambahan:
+- Untuk nama yang terdiri dari tiga kata atau lebih, kompres seluruh unsur awal ke dalam Nama Depan, dan pertahankan hanya kata paling akhir sebagai Nama Belakang.
+- Dilarang memberikan karakter setrip telegrafis pada kolom identitas nama.
 
-**Checklist Penulis:**
-- [ ] Jumlah penulis di metadata sama dengan di fulltext.
-- [ ] Nama ditulis dengan benar (huruf kapital di awal setiap kata — *Title Case*).
-- [ ] Email penulis aktif (sebaiknya email institusi).
-- [ ] Afiliasi lengkap dan konsisten (nama departemen, institusi, kota, negara).
-- [ ] Country sudah dipilih.
-- [ ] ORCID ID sudah dimasukkan jika tersedia (**sangat dianjurkan**).
+ORCID (Open Researcher and Contributor ID) merupakan identifikasi unik yang bersifat persisten, bermanfaat untuk mengikat seorang akademisi dengan seluruh jejak rekam rekam hibah dan publikasinya di internet. Penulis dianjurkan keras untuk melampirkan identifikasi ini.
 
-**Tentang ORCID:**
+### C. Klasifikasi Kata Kunci dan Perekaman Pendanaan
 
-ORCID (Open Researcher and Contributor ID) adalah pengenal digital persisten yang membedakan seorang peneliti dari peneliti lain. Manfaatnya:
-- Menghubungkan peneliti dengan seluruh publikasi, hibah, dan afiliasi mereka.
-- Mengurangi risiko kesalahan identifikasi penulis.
-- Meningkatkan visibilitas dan rekam jejak akademik.
+**Kata Kunci (Keywords)**: Input setiap entitas kata kunci secara individu lalu tekan tombol Enter. Sistem OJS memproses setiap kata sebagai atribut tag independen untuk pengindeksan situs (*faceted search*), bukan sebagai deretan string biasa yang dipisahkan koma.
 
-Daftarkan ORCID gratis di [orcid.org](https://orcid.org).
+**Pendanaan (Supporting Agencies)**: Masukkan nama institusi pendonor riset dan koneksikan dengan plugin yang terkait agar informasi ini mengalir mulus ke dalam paket XML yang disetor kepada Crossref.
 
----
+### D. Rujukan (References)
 
-### C. Metadata (Kata Kunci & Pendanaan)
+Semua entri daftar rujukan wajib ditranskripsikan ke dalam pangkalan metadata.
 
-**Kata Kunci (*Keywords*):**
-- Masukkan kata kunci satu per satu, akhiri setiap kata kunci dengan menekan **Enter** (bukan koma atau titik koma).
-- Ini memastikan setiap kata kunci tersimpan sebagai tag terpisah untuk fungsi pencarian *faceted search* di website jurnal.
+Panduan Teknis:
+- Lakukan penyalinan dari dokumen berbasis pengolah kata (*Word processor*), bukan dokumen PDF, guna memitigasi kesalahan konversi karakter.
+- Beri jarak pemisah satu baris kosong yang bersih di antara tiap referensi.
+- Editor diharuskan melengkapi setiap referensi dengan tautan pengarah atau nomor DOI aktif, sesuai kaidah pengutipan modern.
 
-**Supporting Agencies (Pendanaan):**
-- Isi dengan nama organisasi yang memberikan pendanaan riset.
-- Jika ada dana hibah, masukkan juga di **Funding Plugin** jika tersedia.
-- Informasi pendanaan juga harus masuk dalam XML yang disetor ke Crossref.
+### E. Pengidentifikasi (Identifiers / DOI)
 
----
+Prosedur Penugasan Nomor Identifikasi:
+1. Verifikasi pengaya *Public Identifier* telah dirancang pola identifikasinya melalui pengaturan pengelola web.
+2. Pada halaman artikel yang akan disahkan (di tab *Publication*), beralih ke sub-menu *Identifiers*.
+3. Klik tombol operasi *Assign* di sebelah kotak isian DOI untuk membangkitkan nomor sandi resmi.
 
-### D. References (Daftar Pustaka)
+Setoran DOI ke Crossref:
+Otorisasi akun dan setoran (*deposit*) XML ke sistem Crossref dieksekusi melalui menu *Import/Export* di perkakas manajemen alat (*Tools*).
 
-Masukkan seluruh daftar pustaka artikel ke dalam kolom References di metadata.
+### F. Galley
 
-**Panduan pengisian:**
-- Copy-paste dari file **Docx** (bukan PDF) untuk menghindari kesalahan karakter.
-- Pisahkan setiap entri referensi dengan **baris kosong**.
-- Lebih baik jika setiap referensi dilengkapi dengan **tautan DOI atau URL**.
+Representasi dokumen terbitan final dalam bentuk portabel diunggah pada sesi ini dan dikunci modifikasinya dari pengguna awam.
 
-**Perlu dilakukan 2 kali checking:**
-1. Saat artikel pertama kali diterima (*pre-copyediting*).
-2. Saat artikel akan diterbitkan (*pre-production*).
+### G. Perizinan dan Keterbukaan Publik (Permission and Disclosure)
 
----
+Pemeriksaan akhir atas hak cipta berpusat pada:
+- **Hak Cipta**: Memastikan pihak pemegang hukum lisensi dideklarasikan dengan benar.
+- **Lisensi Rilis**: Memastikan kebijakan sirkulasi publik dicantumkan URL sahnya secara lengkap.
+- **Tahun Hak Cipta**: Harus tersinkronisasi presisi dengan tahun rilis edisi, aspek vital yang kerap terabaikan saat menerbitkan jurnal edisi terdahulu (*back issue*).
 
-### E. Identifiers (DOI)
+### H. Penempatan Edisi Penerbitan (Issue)
 
-**Cara meng-assign DOI:**
-1. Pastikan pengaturan DOI sudah diset melalui:
-   ```
-   Login Journal Manager → Settings → Website → Plugins → Public Identifier Plugins → DOI → Settings
-   ```
-2. Masuk ke halaman naskah → tab Publication → submenu Identifiers.
-3. Klik **"Assign"** di sebelah kolom DOI untuk meng-generate nomor DOI sesuai pola yang ditetapkan.
-4. Verifikasi nomor DOI sudah sesuai pola jurnal.
+Menu administratif penataan metadata tingkat lanjut di mana editor menyematkan artikel ke dalam kerangka edisi tertentu, menyematkan penomoran halaman yang utuh (*Pages*), menentukan gambar sampul artikel individual (apabila diimplementasikan), serta memvalidasi atribut penanggalan tanggal publikasi akhir artikel.
 
-**Deposit DOI ke Crossref:**
-```
-Login Journal Manager → Tools → Import/Export → Crossref XML Export Plugin → Settings
-```
-Masukkan akun Crossref (username dan password) yang diberikan oleh Crossref.
+## 13.4 Teknik Penyuntingan Metadata Pra-Terbit
 
----
+Siklus pengeditan baku sebelum status publikasi aktif dalam OJS 3.3:
+1. Masuk ke pangkalan sistem dengan otorisasi Editor.
+2. Akses antrean di **Submissions**.
+3. Buka naskah spesifik yang membutuhkan perbaikan.
+4. Sentuh penanda tab **Publication**.
+5. Ganti nilai-nilai metadata pada porsi sub-tab yang dikehendaki.
+6. Patenkan setiap perubahan melalui tombol **Save** sebelum berpindah tabulasi.
 
-### F. Galleys
+## 13.5 Teknik Penyuntingan Metadata Pasca-Terbit
 
-Pengelola jurnal mengunggah file PDF (dan format lain) hasil akhir dari proses produksi pada bagian ini. Galley adalah representasi final artikel yang akan diunduh pembaca.
+Ketentuan Prosedural OJS 3.3: Berbeda dari versi pendahulunya, sistem OJS modern memberikan perlindungan ketat pada artikel yang sudah diedarkan. Memodifikasi artikel yang telah rilis **memerlukan intervensi prosedur penarikan atau unpublish** secara sementara.
 
----
+Langkah Eksekusi:
+1. Akses menu **Issues**, lanjutkan ke **Back Issues**.
+2. Masuk ke halaman edisi kolektif dan temukan judul artikel yang hendak disunting.
+3. Sistem membuka area kerja publikasi artikel, lakukan *unpublish*, koreksi metadatanya, lalu terbitkan ulang artikel dengan kehati-hatian maksimal terhadap rekam jejak DOI-nya.
 
-### G. Permission and Disclosure
+## Checklist Komprehensif Metadata Artikel
 
-| Field | Yang Harus Diverifikasi |
-|-------|------------------------|
-| **Copyright Holder** | Nama jurnal (atau nama penulis jika hak cipta ada di penulis). Harus sesuai dengan nama pada ISSN. |
-| **License** | Pilihan lisensi (biasanya terisi otomatis berdasarkan pengaturan jurnal). |
-| **License URL** | URL lisensi (biasanya otomatis). |
-| **Copyright Year** | Tahun terbit (biasanya otomatis — perlu diperhatikan untuk artikel *back issue*). |
+Patuhi daftar kontrol metadata di bawah ini sebagai prasyarat akhir sebelum naskah masuk antrean publikasi rilis:
 
----
+**Judul dan Abstrak:**
+- [ ] Judul ditulis menggunakan standar *Title Case* tanpa pemborosan huruf kapital.
+- [ ] Abstrak dirangkum dalam satu blok paragraf bahasa Inggris yang padat (maksimal 250 kata).
+- [ ] Tidak ditemukan penempatan kata kunci liar di dalam kolom abstrak.
 
-### H. Issue (Penempatan Artikel)
+**Atribut Kepengarangan:**
+- [ ] Volume jumlah penulis sama persis dengan yang tertulis pada teks sumber.
+- [ ] Identitas setiap penulis ditulis tanpa saltasi atau singkatan ejaan yang serampangan.
+- [ ] Rincian hierarki afiliasi diklasifikasikan dengan sempurna.
+- [ ] Ekstensi alamat surel penulis dipastikan status aktifnya.
+- [ ] ID registri ORCID diikatkan pada profil kontributor terkait.
 
-Di bagian ini, editor dapat:
-- Memilih atau mengganti **Issue** (edisi) tempat artikel akan ditempatkan.
-- Memilih **Section** (bagian jurnal).
-- Mengunggah **Cover Image** khusus untuk artikel.
-- Mengatur **Pages** (nomor halaman).
-- Mengatur **URL Path** kustom.
-- Mengatur **Date Published** (penting untuk artikel *back issue*).
+**Detail Metadata Lanjutan:**
+- [ ] Setiap kata kunci telah tersimpan sebagai *tag* beridiri sendiri (terpisah melalui tombol *Enter*).
+- [ ] Afiliasi lembaga penyedia dana riset telah dideklarasikan secara tertulis.
 
-> Setelah semua perubahan dilakukan, jangan lupa klik **Save**.
+**Referensi dan Tautan:**
+- [ ] Rujukan referensi komplit tanpa pemenggalan dari teks asli.
+- [ ] Konvensi jarak baris pada antarmuka rujukan telah ditata sesuai instruksi pengindeks.
 
----
+**Sandi Registri:**
+- [ ] Atribut identifier publik (DOI) telah dirumuskan dan tertanam pada *database* OJS.
 
-## 13.4 Cara Edit Metadata di OJS 3.2 dan 3.3 (Sebelum Terbit)
+**Legalitas:**
+- [ ] Penetapan klausul hak cipta tervalidasi dengan lisensi resmi publik yang transparan.
+- [ ] Tahun legalitas lisensi selaras dengan tarikh rilis jurnal.
 
-**Prosedur standar edit metadata sebelum publikasi:**
-
-1. Login sebagai Editor.
-2. Masuk ke **Submissions → My Queue**.
-3. Pilih artikel yang akan diedit, klik **View**.
-4. Klik tab **Publication**.
-5. Edit metadata yang diperlukan di sub-tab yang sesuai.
-6. Klik **Save** setelah setiap perubahan.
-
----
-
-## 13.5 Cara Edit Metadata Artikel yang Sudah Terbit (OJS 3.2 & 3.3)
-
-> **Perhatian:** Pada OJS 3.2 dan 3.3, mengedit metadata artikel yang sudah terbit **memerlukan proses unpublish terlebih dahulu**. Berbeda dengan OJS 3.0 dan 3.1 yang dapat mengedit tanpa unpublish (namun ini juga tidak disarankan).
-
-**Prosedur:**
-1. Login sebagai Editor.
-2. Masuk ke **Issues → Back Issues**.
-3. Klik nama edisi yang berisi artikel.
-4. Klik judul artikel yang akan diedit.
-5. Anda akan diarahkan ke halaman alur kerja artikel tersebut.
-6. Klik tab **Publication** untuk mengedit metadata.
-
----
-
-## Checklist Lengkap Metadata Artikel
-
-Gunakan checklist komprehensif ini sebelum menerbitkan setiap artikel:
-
-**Judul & Abstrak:**
-- [ ] Judul Sentence case / Title Case, konsisten dengan PDF.
-- [ ] Abstrak bahasa Inggris, 1 paragraf, maks 250 kata.
-- [ ] Tidak ada kata kunci di dalam kolom abstrak.
-
-**Penulis:**
-- [ ] Jumlah penulis sama dengan di fulltext.
-- [ ] Nama penulis benar dan konsisten.
-- [ ] Afiliasi lengkap (departemen, institusi, kota, negara).
-- [ ] Email aktif tersedia.
-- [ ] ORCID dimasukkan (jika ada).
-
-**Metadata:**
-- [ ] Kata kunci dimasukkan per tag (satu per satu, tekan Enter).
-- [ ] Pendanaan/hibah dicantumkan (jika ada).
-
-**References:**
-- [ ] Semua referensi sudah dimasukkan.
-- [ ] Setiap referensi dipisahkan dengan baris kosong.
-- [ ] DOI/URL referensi sudah dicantumkan.
-
-**Identifiers:**
-- [ ] DOI sudah ter-assign sesuai pola.
-
-**Permissions:**
-- [ ] Copyright holder benar.
-- [ ] Lisensi sudah dipilih.
-- [ ] Tahun copyright sesuai tahun terbit.
-
-**Issue:**
-- [ ] Edisi dan bagian (*section*) sudah dipilih.
-- [ ] Nomor halaman sudah diisi.
-- [ ] Tanggal terbit sudah benar.
-
----
+**Posisi Struktural:**
+- [ ] Edisi penerbitan (*Issue*) serta kompartemen (*Section*) terkait telah dideklarasikan secara konkrit.
+- [ ] Lembar penomoran angka (*Pages*) definitif tercantum dengan komplit.
 
 ## Ringkasan Bab
 
-Metadata yang optimal adalah investasi jangka panjang untuk visibilitas jurnal. Setiap editor harus menganggap pengisian metadata bukan sebagai formalitas belaka, melainkan sebagai **penjaga gerbang kredibilitas jurnal** — karena metadata yang buruk berarti artikel yang susah payah dihasilkan penulis tidak akan dapat ditemukan oleh siapapun.
-
-> **Prinsip Utama:** Periksa, verifikasi, dan konfirmasi semua metadata **sebelum** artikel diterbitkan. Lebih mudah memperbaiki sebelum terbit daripada sesudahnya.
+Implementasi arsitektur metadata yang komprehensif adalah wujud jaminan eksistensi dan integritas jurnal di alam perayapan digital tingkat global. Pengisian seluk beluk atribut meta data melampaui formalitas teknis; hal tersebut mendefinisikan batas antara artikel yang menghilang tertelan algoritma dan artikel yang meraih reputasi rujukan (*citation impact*) optimal. Doktrin utama pengelolaan: Verifikasi final selalu dilakukan sebelum tuas rilis ditekan. Evaluasi mitigasi awal selalu lebih bernilai ketimbang operasi koreksi sengketa kepustakaan pascapublikasi.

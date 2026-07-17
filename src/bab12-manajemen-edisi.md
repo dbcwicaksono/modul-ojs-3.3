@@ -1,170 +1,141 @@
-# Bab 12: Manajemen Edisi (Issue) & Pasca Penerbitan
+# Bab 12: Manajemen Edisi dan Pasca Penerbitan
 
-**Manajemen Edisi** adalah tahap puncak dari seluruh rangkaian alur kerja editorial di OJS 3.3. Setelah naskah melewati Submission, Review, Copyediting, dan Production, langkah terakhir adalah **menggabungkan artikel-artikel yang telah siap ke dalam sebuah edisi** dan menerbitkannya kepada publik.
-
----
+Manajemen edisi adalah tahap puncak dari seluruh rangkaian alur kerja editorial di OJS 3.3. Setelah naskah melewati tahap *Submission*, *Review*, *Copyediting*, dan *Production*, langkah terakhir adalah menggabungkan artikel-artikel yang telah siap ke dalam sebuah edisi dan menerbitkannya kepada publik.
 
 ## 12.1 Konsep Dasar: Hubungan Naskah dan Edisi
 
-Sebelum memulai, pahami konsep kunci ini:
-
-> Sebuah naskah hanya akan muncul dalam manajemen edisi **setelah** Anda melakukan tindakan **"Scheduling"** (Penjadwalan) pada akhir tahap Production. Tanpa penjadwalan, naskah tidak akan muncul dalam antarmuka manajemen edisi.
-
----
+Sebelum memulai manajemen edisi, pengelola harus memahami satu konsep kunci: sebuah naskah hanya akan muncul dalam sistem manajemen edisi apabila telah dilakukan tindakan penjadwalan (*Scheduling*) pada akhir tahap *Production*. Tanpa proses penjadwalan tersebut, naskah tidak akan tersedia untuk dimasukkan ke dalam edisi mana pun.
 
 ## 12.2 Navigasi Menu Issues
 
-Untuk mengelola edisi, masuk ke menu navigasi kiri dan pilih **"Issues"**. Halaman ini terbagi menjadi dua tab:
+Untuk mengelola edisi, navigasikan ke menu sisi kiri dan pilih **"Issues"**. Halaman ini terbagi menjadi dua tab utama:
 
 | Tab | Isi | Fungsi |
 |-----|-----|--------|
-| **Future Issues** | Edisi yang sedang dipersiapkan atau belum diterbitkan. | Tempat berkumpulnya naskah yang telah dijadwalkan dari tahap Production. |
-| **Back Issues** | Edisi yang sudah terbit. | Digunakan untuk arsip dan koreksi pasca-publikasi. |
-
----
+| **Future Issues** | Edisi yang sedang dipersiapkan atau belum diterbitkan. | Berfungsi sebagai wadah penampungan naskah yang telah dijadwalkan dari tahap *Production*. |
+| **Back Issues** | Edisi yang sudah diterbitkan kepada publik. | Berfungsi sebagai arsip dan area untuk melakukan koreksi pascapublikasi jika diperlukan. |
 
 ## 12.3 Membuat Edisi Baru (Create Issue)
 
-Sebelum naskah dapat dijadwalkan, Anda harus membuat "wadah" edisinya terlebih dahulu.
+Sebelum naskah dapat dijadwalkan, editor harus membuat wadah edisi terlebih dahulu.
 
 1. Klik tab **"Future Issues"**.
 2. Klik tombol **"Create Issue"**.
-3. Isi formulir:
+3. Isi formulir pembuatan edisi:
 
 | Komponen | Instruksi |
 |----------|-----------|
-| **Identifikasi** | Masukkan Volume, Nomor, dan Tahun. Jika jurnal tidak menggunakan salah satunya, biarkan kosong dan **hilangkan centang** (*untick*) pada opsi tersebut. |
-| **Deskripsi** | Tambahkan narasi pengantar edisi (opsional). |
-| **Cover Image** | Unggah gambar sampul edisi jika diperlukan. |
-| **URL Path** | Opsional — untuk alamat URL kustom (mis. `v1n1-2025`). |
+| **Identifikasi** | Masukkan rentang Volume, Nomor, dan Tahun. Jika jurnal tidak menggunakan salah satu komponen ini, biarkan kolom kosong dan hapus centang pada opsi tersebut. |
+| **Deskripsi** | Tambahkan narasi pengantar atau editorial edisi (opsional). |
+| **Cover Image** | Unggah gambar sampul khusus untuk edisi ini jika diperlukan. |
+| **URL Path** | Opsi untuk membuat tautan khusus, misalnya `v1n1-2025`. |
 
-4. Klik **"Save"**. Edisi kini siap menerima naskah.
+4. Klik **"Save"**. Edisi kini siap untuk menerima naskah yang dijadwalkan.
 
 ![Formulir Create Issue](../img/elementor-placeholder-image.png)
 
----
-
 ## 12.4 Mengelola Daftar Isi Edisi (Table of Contents)
 
-Setelah naskah dijadwalkan ke dalam edisi, Anda dapat mengelola tampilan edisi:
-
-### Mengakses Pengaturan Edisi
-
-Klik **Expansion Arrow** (panah biru/segitiga) di sebelah judul edisi untuk mengakses opsi:
+Setelah naskah dijadwalkan ke dalam edisi, editor mengatur tata letak presentasi edisi tersebut. Klik ikon panah di sebelah judul edisi untuk mengakses opsi pengelolaan:
 
 | Opsi | Fungsi |
 |------|--------|
-| **View** | Melihat tampilan edisi dari perspektif pembaca. |
-| **Table of Contents (TOC)** | Mengelola daftar isi: melihat dan mengatur artikel di dalam edisi. |
-| **Order** | Mengaktifkan mode pengurutan. Setelah tombol **Order** aktif, gunakan *drag and drop* untuk mengatur urutan artikel dan bagian. |
-| **Issue Data** | Mengedit metadata edisi: tanggal terbit, identifikasi, deskripsi, dan gambar sampul. |
-| **Issue Galleys** | Menambahkan satu file PDF gabungan untuk seluruh edisi. |
+| **View** | Meninjau tampilan pratinjau edisi dari perspektif pembaca. |
+| **Table of Contents (TOC)** | Mengelola daftar isi dengan melihat dan mengatur posisi artikel di dalam edisi. |
+| **Order** | Mengaktifkan mode pengurutan. Setelah tombol diaktifkan, gunakan fungsi seret dan lepas (*drag and drop*) untuk mengatur urutan artikel. |
+| **Issue Data** | Mengubah metadata edisi seperti tanggal terbit, identifikasi, deskripsi, dan gambar sampul. |
+| **Issue Galleys** | Menambahkan satu berkas gabungan (umumnya PDF) untuk keseluruhan edisi penuh (*full issue*). |
 
-> **Tips Pakar:** Selalu lakukan pengecekan akhir pada **Issue Data** sebelum publikasi. Memperbaiki metadata edisi setelah artikel terindeks oleh mesin pencari jauh lebih rumit.
+Catatan Penting: Selalu lakukan verifikasi akhir pada metadata edisi sebelum mengklik publikasi. Mengubah metadata edisi setelah artikel terindeks oleh mesin pencari akademik akan menimbulkan inkonsistensi data.
 
 ![Tampilan pengelolaan Table of Contents edisi](../img/elementor-placeholder-image.png)
 
----
-
 ## 12.5 Menerbitkan Edisi (Publish Issue)
 
-Setelah semua naskah dalam edisi siap dan metadata sudah diverifikasi:
+Setelah seluruh naskah dalam edisi siap dan metadata tervalidasi:
 
 1. Pada tab **Future Issues**, temukan edisi yang dimaksud.
-2. Klik **Expansion Arrow** dan pilih **"Publish Issue"**.
-3. Jendela konfirmasi muncul. Terdapat opsi penting:
-   - **Notify Users** — Centang ini untuk mengirimkan email notifikasi otomatis kepada **seluruh pengguna terdaftar** bahwa edisi terbaru telah terbit. Ini adalah cara efektif untuk meningkatkan jangkauan pembaca.
-4. Klik **"Confirm"** untuk menyelesaikan.
-5. Edisi berpindah dari tab *Future Issues* ke tab **Back Issues** dan langsung tampil di halaman depan jurnal.
+2. Klik ikon panah dan pilih **"Publish Issue"**.
+3. Jendela konfirmasi akan muncul dengan opsi **Notify Users**. Centang opsi ini untuk mengirimkan surel pemberitahuan otomatis kepada seluruh pengguna terdaftar bahwa edisi terbaru telah terbit. Ini merupakan strategi dasar untuk meningkatkan jumlah pembaca.
+4. Klik **"Confirm"** untuk menyelesaikan proses publikasi.
+5. Edisi berpindah dari tab *Future Issues* ke tab **Back Issues** dan seketika tampil di halaman publik jurnal.
 
 ![Jendela konfirmasi Publish Issue dengan opsi Notify Users](../img/elementor-placeholder-image.png)
 
----
-
 ## 12.6 Menetapkan Edisi Terkini (Current Issue)
 
-OJS 3.3 memungkinkan Anda menetapkan edisi mana yang muncul paling awal di halaman depan jurnal:
+OJS 3.3 memungkinkan pengelola menetapkan edisi mana yang ditampilkan paling awal di halaman utama beranda jurnal:
 
-- Klik **Expansion Arrow** pada edisi yang diinginkan di tab *Back Issues*.
+- Klik ikon panah pada edisi yang diinginkan di tab *Back Issues*.
 - Pilih **"Set as Current Issue"**.
 
-Fitur ini berguna misalnya jika Anda menerbitkan edisi khusus (*special issue*) dan ingin edisi tersebut menjadi tampilan utama untuk sementara waktu.
+Fitur ini berguna apabila jurnal menerbitkan edisi khusus (*special issue*) dan ingin menampilkan edisi tersebut sebagai sorotan utama untuk sementara waktu.
 
----
+## 12.7 Fitur Pascapenerbitan: Koreksi dan Pengelolaan
 
-## 12.7 Fitur Pasca-Penerbitan: Koreksi dan Pengelolaan
+### Unpublish Issue (Membatalkan Publikasi)
 
-### Unpublish Issue
+Apabila ditemukan kesalahan fatal, editor dapat menarik edisi dari publikasi:
 
-Jika Anda perlu membatalkan publikasi edisi (misalnya ditemukan kesalahan kritis):
-
-1. Di *Back Issues*, klik **Expansion Arrow** pada edisi tersebut.
+1. Di tab *Back Issues*, klik ikon panah pada edisi terkait.
 2. Pilih **"Unpublish Issue"**.
 3. Edisi kembali menjadi *Future Issue* dan tidak lagi tampil di halaman publik.
 
-> **⚠️ Peringatan:** Gunakan fitur ini dengan sangat hati-hati. Membatalkan publikasi pada edisi yang sudah lama terbit dapat **memutus tautan eksternal** seperti DOI yang sudah terdaftar di Crossref dan mempengaruhi indeksasi yang sudah ada.
+Perhatian: Fitur ini harus digunakan dengan sangat hati-hati. Membatalkan publikasi pada edisi yang sudah terbit lama dapat merusak tautan eksternal seperti *Digital Object Identifier* (DOI) yang sudah didaftarkan dan memengaruhi metrik sitasi.
 
-### Menghapus Edisi (Delete)
+### Mengedit Metadata Artikel yang Terbit
 
-- Edisi hanya bisa dihapus jika **tidak berisi artikel yang aktif**.
-- Klik **Expansion Arrow** → **"Delete"**.
+Jika diperlukan koreksi pada metadata artikel setelah terbit:
 
-### Mengedit Metadata Artikel yang Sudah Terbit
-
-Jika diperlukan koreksi pada metadata artikel yang sudah terbit (mis. koreksi nama penulis):
-
-1. Masuk ke **Back Issues**, klik nama edisi.
-2. Klik **judul artikel** yang ingin diedit.
-3. Edit metadata yang diperlukan di tab **Publication**.
+1. Masuk ke **Back Issues**, lalu klik judul edisi.
+2. Klik judul artikel yang perlu dikoreksi.
+3. Lakukan koreksi metadata di tab **Publication**.
 4. Klik **"Save"**.
 
-> **Perhatian penting:** Mengubah metadata artikel yang sudah terbit (terutama tanggal terbit) dapat mempengaruhi data di Google Scholar dan mesin pengindeks lain. Selalu konfirmasi kebenaran data sebelum artikel diterbitkan, dan **hindari perubahan metadata pasca-terbit** kecuali benar-benar diperlukan.
+Mengubah metadata artikel pascaterbit (terutama tanggal terbit atau daftar nama penulis) dapat merusak sinkronisasi data dengan pengindeks seperti Google Scholar dan Crossref. Lakukan hanya jika benar-benar mendesak.
 
----
+## 12.8 Aktivitas Pascapenerbitan dan DOI
 
-## 12.8 Aktivitas Pasca-Penerbitan Lainnya
+Setelah edisi terbit, langkah teknis terpenting berikutnya adalah mendepositkan metadata dan mendaftarkan DOI artikel ke Crossref.
 
-Setelah edisi terbit, beberapa aktivitas penting yang perlu dilakukan:
+### Apa itu Crossref dan DOI?
 
-### Deposit DOI ke Crossref
+Crossref (https://www.crossref.org/) adalah lembaga pendaftaran resmi (*registration agency*) untuk *Digital Object Identifier* (DOI) yang paling banyak digunakan untuk publikasi ilmiah. DOI menyediakan tautan permanen (*persistent link*) ke lokasi artikel di internet. Jika URL jurnal berubah, DOI memastikan artikel tetap dapat ditemukan selama pengelola jurnal memperbarui data URL baru di sistem Crossref.
 
-Jika jurnal sudah terdaftar di Crossref:
+Standar kelayakan Directory of Open Access Journals (DOAJ) sangat menganjurkan agar setiap artikel ilmiah memiliki DOI yang valid untuk menjamin kelestarian akses jangka panjang artikel.
 
-1. Login sebagai **Journal Manager**.
-2. Buka menu **Tools → Import/Export → Crossref XML Export Plugin**.
-3. Pilih artikel yang akan dideposit DOI-nya.
-4. Klik **"Export"** untuk menghasilkan file XML.
-5. Deposit file XML tersebut ke Crossref melalui plugin atau secara manual.
+### Deposit DOI Melalui OJS 3.3
+
+Jika jurnal telah menjadi anggota Crossref, proses registrasi DOI dapat dilakukan secara langsung melalui sistem:
+
+1. Masuk sebagai **Journal Manager**.
+2. Navigasi ke menu **Tools**, pilih **Import/Export**, lalu klik **Crossref XML Export Plugin**.
+3. Pilih artikel yang akan didepositkan DOI-nya.
+4. OJS dapat mendepositkan secara otomatis atau menghasilkan berkas XML.
+5. Klik tombol ekspor atau register sesuai konfigurasi sistem jurnal Anda.
 
 ![Proses deposit DOI ke Crossref](../img/elementor-placeholder-image.png)
 
-### Pengumuman Kepada Pembaca
+Catatan: Untuk materi mengenai strategi promosi dan peningkatan visibilitas artikel secara eksternal (melalui media sosial atau repositori), lihat **Bab 14: Diseminasi dan Peningkatan Visibilitas Jurnal**.
 
-Selain fitur *Notify Users* saat menerbitkan edisi, Anda dapat membuat pengumuman resmi melalui:
+## Checklist Bab 12
 
-1. Menu **Announcements** di dasbor OJS.
-2. Klik **"Add Announcement"**.
-3. Isi judul dan konten pengumuman.
-4. Atur tanggal kedaluwarsa pengumuman (opsional).
-5. Klik **"Save"**.
+Gunakan daftar periksa berikut untuk mengelola edisi jurnal:
 
-### Promosi di Media Sosial
-
-Sebaiknya buat strategi promosi konten untuk setiap artikel yang diterbitkan di media sosial institusi atau jurnal, termasuk:
-- Ringkasan singkat artikel (untuk Twitter/X, LinkedIn).
-- Infografis temuan utama (untuk Instagram).
-- Tautan DOI atau URL artikel di jurnal.
-
----
+- [ ] Wadah edisi baru (*Create Issue*) telah dibuat pada tab *Future Issues*.
+- [ ] Naskah-naskah telah dijadwalkan dari tahap *Production* ke dalam edisi yang dituju.
+- [ ] Urutan artikel pada daftar isi (*Table of Contents*) telah ditata secara logis.
+- [ ] Keseluruhan metadata edisi (volume, nomor, tahun, tanggal terbit) telah diverifikasi kebenarannya.
+- [ ] Edisi telah dipublikasikan (*Publish Issue*) dengan mencentang opsi pemberitahuan kepada pengguna (*Notify Users*).
+- [ ] Proses deposit DOI ke Crossref telah diselesaikan segera setelah penerbitan.
 
 ## Ringkasan Bab
 
 | Langkah | Aksi Editor |
 |---------|-------------|
-| 1 | Buat edisi baru (*Create Issue*) di tab *Future Issues*. |
-| 2 | Jadwalkan naskah ke dalam edisi melalui tab Publication di masing-masing naskah. |
-| 3 | Kelola urutan artikel melalui *Table of Contents* (gunakan tombol Order + drag and drop). |
-| 4 | Verifikasi metadata edisi di *Issue Data*. |
-| 5 | Publikasikan edisi (*Publish Issue*) dan centang *Notify Users*. |
-| 6 | Deposit DOI ke Crossref. |
-| 7 | Lakukan promosi dan pengumuman pasca-terbit. |
+| 1 | Buat edisi baru di tab *Future Issues*. |
+| 2 | Jadwalkan naskah ke dalam edisi melalui opsi penjadwalan di tahap *Production*. |
+| 3 | Kelola tata letak urutan artikel melalui fitur *Table of Contents*. |
+| 4 | Verifikasi seluruh parameter metadata edisi di *Issue Data*. |
+| 5 | Publikasikan edisi dan aktifkan fitur pemberitahuan kepada pembaca (*Notify Users*). |
+| 6 | Daftarkan tautan permanen artikel dengan mendepositkan DOI ke Crossref. |

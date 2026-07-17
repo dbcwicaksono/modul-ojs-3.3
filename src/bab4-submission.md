@@ -1,176 +1,154 @@
-# Bab 4: Panduan Lengkap Mengirimkan Artikel (Submission)
+# Bab 4: Panduan Mengirimkan Artikel (Submission)
 
-Bab ini memandu penulis melalui proses pengiriman artikel ke jurnal yang menggunakan platform OJS 3.3. Proses *submission* di OJS dirancang secara intuitif dalam **5 langkah berurutan** yang memastikan seluruh informasi penting terdokumentasi dengan baik sejak hari pertama.
+Bab ini memandu penulis melalui proses pengiriman artikel ke jurnal yang menggunakan platform OJS 3.3. Proses pengiriman naskah (*submission*) di OJS dirancang dalam lima langkah berurutan untuk memastikan seluruh informasi penting dan metadata terdokumentasi dengan baik sejak tahap paling awal.
 
----
+## 4.1 Persiapan Pra-Pengiriman
 
-## 4.1 Sebelum Mengirim: Persiapan Pra-Submission
+Sebelum mengunggah berkas, penulis disarankan melakukan riset mendalam terhadap jurnal yang menjadi target. Periksa halaman informasi jurnal untuk memastikan kepatuhan terhadap kebijakan editorial:
 
-Sebelum mengunggah berkas, lakukan riset mendalam terhadap jurnal yang menjadi target. Periksa halaman jurnal untuk memastikan:
-
-| Hal yang Diperiksa | Penjelasan |
+| Aspek yang Diperiksa | Penjelasan |
 |---|---|
-| **Focus and Scope** | Pastikan topik penelitian Anda masuk dalam ruang lingkup jurnal. |
-| **Copyright Policy** | Pahami bagaimana hak kekayaan intelektual naskah akan dikelola setelah terbit. |
-| **Author Guidelines** | Periksa persyaratan teknis terkait gaya sitasi, format dokumen, dan panjang naskah. |
+| **Focus and Scope** | Pastikan topik penelitian sejalan dengan fokus dan ruang lingkup jurnal. |
+| **Copyright Policy** | Pahami kebijakan hak cipta dan lisensi yang akan diterapkan pada naskah setelah diterbitkan. |
+| **Author Guidelines** | Periksa persyaratan teknis terkait gaya selingkung, gaya sitasi, format dokumen, dan ketentuan panjang naskah. |
 
-> **Tips:** Manfaatkan direktori internasional seperti **DOAJ (Directory of Open Access Journals)** atau pantau publikasi rekan sejawat untuk menemukan jurnal yang tepat.
-
----
+Catatan Teknis: Penulis dapat merujuk pada direktori internasional seperti Directory of Open Access Journals (DOAJ) untuk mengevaluasi reputasi dan kebijakan transparansi jurnal target. Jurnal yang baik selalu mempublikasikan panduan penulis yang komprehensif dan biaya pemrosesan artikel secara transparan (DOAJ, 2024).
 
 ## 4.2 Registrasi dan Login Akun
 
-Untuk memulai submisi, Anda memerlukan akun pengguna di jurnal OJS yang dituju.
+Untuk mengirimkan naskah, penulis diwajibkan memiliki akun pengguna yang terdaftar pada jurnal tujuan.
 
 ### Membuat Akun Baru
 
-1. Kunjungi website jurnal dan klik menu **Register**.
-2. Isi formulir dengan informasi berikut:
-   - Nama lengkap (sesuai format publikasi)
-   - Afiliasi institusi
-   - Negara
-   - Alamat **email aktif**
-3. Centang persetujuan terhadap *Privacy Statement*.
-4. Centang opsi **"Agreed to get notifications"** agar selalu mendapat pembaruan status naskah otomatis.
-5. Opsional (namun sangat dianjurkan): Masukkan minat bidang keahlian di kolom **Reviewing Interests**. Ini membuka peluang untuk berkontribusi sebagai reviewer dan membangun jejaring profesional.
-6. Periksa email untuk melakukan **validasi akun**.
+1. Kunjungi situs web jurnal dan akses menu **Register**.
+2. Lengkapi formulir registrasi dengan informasi berikut:
+   - Nama lengkap (sesuai format identitas publikasi)
+   - Institusi afiliasi
+   - Negara asal
+   - Alamat surel aktif
+3. Setujui pernyataan privasi (*Privacy Statement*).
+4. Aktifkan opsi untuk menerima notifikasi (*Agreed to get notifications*) agar penulis selalu mendapatkan pembaruan otomatis mengenai status naskah.
+5. (Opsional) Masukkan minat bidang keahlian di kolom **Reviewing Interests**. Pengisian kolom ini membuka peluang bagi pengguna untuk diundang sebagai mitra bestari di masa mendatang.
+6. Periksa surel masuk untuk menyelesaikan proses validasi akun.
 
 ![Formulir registrasi akun OJS](../img/elementor-placeholder-image.png)
 
 ### Login
 
-Gunakan **username** dan **password** yang telah dibuat. Anda akan masuk ke **dasbor penulis**.
+Akses sistem menggunakan *username* dan *password* yang telah didaftarkan. Pengguna akan diarahkan ke dasbor penulis.
 
----
+## 4.3 Proses Pengiriman Artikel dalam Lima Langkah
 
-## 4.3 Proses Pengiriman Artikel: 5 Langkah
-
-Dari dasbor, klik tombol **"Make a New Submission"** untuk memulai.
+Dari dasbor utama, klik tombol **"Make a New Submission"** untuk memulai proses pengiriman naskah.
 
 ![Tombol Make a New Submission di dasbor OJS](../img/elementor-placeholder-image.png)
 
----
+### Langkah 1: Start (Memulai Pengiriman)
 
-### Langkah 1: Start (Memulai Submisi)
+Pada langkah pertama, penulis mengatur elemen administratif dasar naskah:
 
-Pada langkah ini, Anda mengatur hal-hal administratif dasar:
+1. Pilih **bahasa** yang digunakan dalam naskah.
+2. Pilih **Section** atau rubrik jurnal yang paling relevan dengan jenis naskah (misalnya: *Articles*, *Reviews*, *Notes*).
+3. Konfirmasi seluruh prasyarat pengiriman (*submission checklist*) yang ditampilkan oleh jurnal. Konfirmasi ini merupakan pernyataan kepatuhan administratif.
+4. Tuliskan pesan khusus untuk editor, jika ada, di kolom **Comments for the Editor**.
+5. Setujui **Copyright Statement**.
+6. Setujui **Data Collection Agreement**.
+7. Konfirmasikan peran sebagai kontak utama (*Corresponding Contact*) agar seluruh korespondensi editorial dikirimkan langsung kepada pengguna.
 
-1. **Pilih bahasa** pengiriman naskah.
-2. **Pilih Section (Rubrik)** jurnal yang paling relevan dengan naskah Anda (misalnya: *Articles*, *Reviews*, *Notes*).
-3. **Centang semua persyaratan submisi** (*submission checklist*) yang tercantum — ini memastikan kepatuhan administratif.
-4. Jika ada pesan khusus untuk editor, tuliskan di kolom **Comments for the Editor**.
-5. Centang persetujuan terhadap **Copyright Statement**.
-6. Centang persetujuan **Data Collection Agreement**.
-7. Konfirmasikan peran sebagai **Corresponding Contact** agar seluruh korespondensi editorial tertuju langsung kepada Anda.
+![Langkah 1: Start pemilihn section dan checklist](../img/elementor-placeholder-image.png)
 
-![Langkah 1: Start — Pemilihan section dan checklist](../img/elementor-placeholder-image.png)
+### Langkah 2: Upload Submission (Mengunggah Dokumen)
 
----
+Unggah dokumen naskah menggunakan salah satu metode yang tersedia (klik tombol **Add File**, klik tautan **Upload File**, atau gunakan fungsi seret dan lepas).
 
-### Langkah 2: Upload Submission (Unggah File Naskah)
+Setelah berkas terunggah, pilih komponen dokumen yang paling tepat dari menu tarik-turun:
 
-Unggah file naskah menggunakan salah satu metode berikut:
-- Klik tombol **Add File**
-- Klik tautan **Upload File**
-- Gunakan fitur ***drag-and-drop***
-
-**Setelah file terunggah, pilih komponen file yang tepat:**
-
-| Komponen File | Digunakan untuk |
+| Komponen Dokumen | Peruntukan |
 |---|---|
-| **Article Text** | Naskah utama artikel |
-| **Research Materials** | Instrumen penelitian, kuesioner, dll. |
-| **Transcripts** | Transkrip wawancara |
-| **Source Text** | Teks asli (untuk terjemahan) |
-| **Other** | Dokumen pendukung lainnya |
+| **Article Text** | Naskah utama artikel, mencakup pendahuluan hingga kesimpulan. |
+| **Research Materials** | Materi pendukung seperti instrumen penelitian, kuesioner, atau kumpulan data sekunder. |
+| **Transcripts** | Transkrip wawancara mentah. |
+| **Source Text** | Teks dokumen sumber asli, khusus untuk naskah terjemahan. |
+| **Other** | Dokumen pendukung lain yang tidak termasuk dalam kategori di atas. |
 
-> **Penting:** Ketepatan dalam memilih komponen file akan memudahkan editor dalam mengelola berkas Anda.
+Perhatian: Ketepatan klasifikasi komponen berkas sangat membantu editor dalam memilah dokumen saat mendistribusikan naskah kepada mitra bestari.
 
 ![Langkah 2: Upload file naskah ke OJS](../img/elementor-placeholder-image.png)
 
----
+### Langkah 3: Enter Metadata (Menginput Metadata)
 
-### Langkah 3: Enter Metadata (Input Metadata Naskah)
+Lengkapi informasi bibliografis naskah secara komprehensif. Keakuratan metadata sejak tahap pengiriman akan memperlancar seluruh alur editorial dan proses pengindeksan di kemudian hari.
 
-Lengkapi informasi bibliografis naskah secara teliti. Metadata yang akurat sejak tahap ini akan mempercepat seluruh alur editorial.
+Ketentuan pengisian utama:
+- **Judul** (*Title*): Ditulis menggunakan format *Sentence case* atau *Title Case*. Penulisan judul menggunakan huruf kapital seluruhnya tidak diizinkan.
+- **Abstrak** (*Abstract*): Pastikan sesuai dengan batas jumlah kata yang ditetapkan jurnal (umumnya maksimal 250 kata) dan disajikan dalam satu paragraf utuh.
 
-**Isian wajib:**
-- **Judul** (*Title*) — Ditulis dalam format *Sentence case* atau *Title Case*, BUKAN huruf kapital semua.
-- **Abstrak** (*Abstract*) — Berbahasa Inggris, 1 paragraf, maksimal 250 kata. Jangan sertakan kata kunci di dalam kolom abstrak.
+**Menambahkan Kontributor:**
 
-**Menambahkan Penulis/Kontributor:**
+Jika naskah ditulis oleh lebih dari satu penulis, klik **Add Contributor** dan isi informasi berikut:
 
-Klik **Add Contributor** untuk menambahkan penulis lain. Isi informasi berikut:
-
-| Field | Keterangan |
+| Kolom | Keterangan |
 |-------|-----------|
-| **Given Name** | Nama depan (dan tengah jika ada) |
-| **Family Name** | Nama belakang |
-| **Email** | Email aktif (sebaiknya email institusi) |
-| **Country** | Negara asal penulis |
-| **Affiliation** | Institusi/universitas (konsisten dengan fulltext) |
-| **ORCID** | ID ORCID jika tersedia (sangat dianjurkan) |
-| **Role** | Author atau Translator |
-| **Principal Contact** | Narahubung utama untuk korespondensi editorial |
-| **Browse List** | Centang jika nama kontributor harus muncul di halaman publik artikel |
+| **Given Name** | Nama depan dan nama tengah (jika ada). |
+| **Family Name** | Nama belakang penulis. |
+| **Email** | Alamat surel aktif, sangat disarankan menggunakan surel institusi. |
+| **Country** | Negara asal institusi penulis. |
+| **Affiliation** | Nama lengkap institusi asal. Penulisan harus konsisten dengan yang tertera di dalam naskah. |
+| **ORCID** | Tautan ID ORCID penulis (sangat direkomendasikan). |
+| **Role** | Peran kontributor (Penulis atau Penerjemah). |
+| **Principal Contact** | Status sebagai narahubung utama untuk keperluan korespondensi editorial. |
+| **Browse List** | Penentu apakah nama kontributor ini akan ditampilkan pada halaman publik artikel. |
 
-> **Konvensi penulisan nama penulis:**
-> - Jika nama hanya satu suku kata (mis. *Soekarno*): isi *Given Name* = Soekarno dan *Family Name* = Soekarno.
-> - Jika nama lebih dari satu kata (mis. *Andista Candra Yusro*): *Given Name* = Andista Candra, *Family Name* = Yusro.
-> - **Jangan** mengisi dengan tanda (-) pada kolom yang kosong.
+Catatan Penulisan Nama:
+- Jika nama hanya terdiri dari satu kata tunggal (misalnya: *Soekarno*), isikan nama tersebut di kolom *Given Name* maupun *Family Name*.
+- Dilarang mengisi tanda hubung atau karakter non-alfabet pada kolom nama yang kosong.
 
 ![Langkah 3: Input metadata artikel](../img/elementor-placeholder-image.png)
 
----
-
 ### Langkah 4: Confirmation (Konfirmasi)
 
-Ini adalah **kesempatan terakhir** untuk meninjau kembali seluruh data yang telah diinput. Periksa:
+Tahap ini memberikan kesempatan terakhir bagi penulis untuk memvalidasi seluruh data yang telah dimasukkan sebelum naskah dikirim secara final. Hal yang wajib dipastikan:
 
-- ✅ Judul sudah benar dan konsisten dengan file yang diunggah
-- ✅ File yang terunggah sudah sesuai
-- ✅ Daftar penulis sudah lengkap dan urutannya benar
-- ✅ Tidak ada kesalahan ketik pada metadata
+- Judul naskah telah ditulis dengan benar dan selaras dengan metadata dalam dokumen.
+- Dokumen yang diunggah adalah versi final dan diklasifikasikan ke komponen yang tepat.
+- Daftar kontributor telah diinput secara lengkap dan urutan penulis telah sesuai.
+- Metadata dasar tidak mengandung kesalahan ketik.
 
 ![Langkah 4: Halaman konfirmasi submission](../img/elementor-placeholder-image.png)
 
----
-
 ### Langkah 5: Next Steps (Selesai)
 
-Klik tombol **"Finish Submission"**. Sistem akan secara otomatis:
-1. Mengirimkan **email konfirmasi** kepada Anda.
-2. Memberikan **notifikasi kepada editor** bahwa ada naskah baru yang masuk.
-3. Menampilkan halaman *Next Steps* dengan informasi langkah selanjutnya.
+Klik tombol **"Finish Submission"** untuk menyelesaikan proses. Setelah tindakan ini dilakukan, sistem akan merespons dengan:
+1. Mengirimkan surel konfirmasi penerimaan kepada penulis utama.
+2. Membangkitkan notifikasi di dasbor editor bahwa terdapat kiriman naskah baru.
+3. Menampilkan halaman yang merangkum langkah-langkah administratif selanjutnya.
 
 ![Langkah 5: Halaman konfirmasi setelah submission selesai](../img/elementor-placeholder-image.png)
 
----
+## 4.4 Setelah Pengiriman: Proses Editorial Awal
 
-## 4.4 Setelah Submission: Apa yang Terjadi Selanjutnya?
+Setelah naskah berhasil dikirim, editor akan melaksanakan tinjauan awal meja (*desk review*). Proses evaluasi awal ini akan berujung pada salah satu dari tiga kemungkinan keputusan editorial:
 
-Setelah submisi selesai, editor akan melakukan **pemeriksaan awal (Desk Review)**. Berikut adalah tiga kemungkinan keputusan editor:
-
-| Keputusan Editor | Deskripsi |
+| Keputusan Awal Editor | Implikasi |
 |---|---|
-| **Send to Review** | Naskah dianggap memenuhi syarat awal dan dikirim ke mitra bestari untuk *peer review*. |
-| **Accept and Skip Review** | Naskah langsung diterima tanpa *peer review* (umumnya untuk kategori khusus seperti *editorial commentary*). |
-| **Decline Submission** | Naskah ditolak karena tidak sesuai ruang lingkup, kualitas tidak memenuhi standar, atau alasan administratif lainnya. |
+| **Send to Review** | Naskah dinilai memenuhi prasyarat awal jurnal dan dilanjutkan ke proses penelaahan sejawat (*peer review*). |
+| **Accept and Skip Review** | Naskah langsung diterima tanpa melalui proses *peer review*. Umumnya terjadi pada kategori khusus seperti resensi buku atau editorial. |
+| **Decline Submission** | Naskah ditolak pada tahap awal karena tidak sesuai dengan fokus jurnal, tidak mengikuti panduan format dasar, atau terdeteksi memiliki tingkat plagiarisme yang tinggi. |
 
-Anda akan menerima notifikasi via email untuk setiap perubahan status naskah. Anda juga dapat memantau status naskah secara langsung dari **dasbor OJS**.
+Sistem secara otomatis akan mengirimkan surel pemberitahuan untuk setiap perubahan status editorial. Penulis juga dianjurkan memantau status perkembangan naskah secara berkala melalui dasbor OJS.
 
----
+## Checklist Bab 4
 
-## 4.5 Tips Sukses Submission
+Gunakan daftar periksa berikut sebelum mengirimkan naskah:
 
-> **Ketelitian metadata sejak awal adalah kunci!** Metadata yang akurat tidak hanya mempercepat alur editorial, tetapi juga mempengaruhi indeksasi artikel Anda di Google Scholar dan database lainnya kelak.
+- [ ] Topik naskah telah dipastikan relevan dengan fokus dan ruang lingkup jurnal.
+- [ ] Berkas naskah telah disusun mematuhi panduan penulis (*author guidelines*).
+- [ ] Judul naskah menggunakan format huruf kapital yang tepat (*Title Case* atau *Sentence case*).
+- [ ] Seluruh data kontributor pendamping telah disiapkan (nama lengkap, afiliasi, surel, ORCID).
+- [ ] Abstrak telah disiapkan dan jumlah katanya tidak melebihi ketentuan jurnal.
+- [ ] Daftar pustaka ditulis secara konsisten dan sesuai dengan gaya sitasi yang diwajibkan.
+- [ ] Informasi yang berpotensi melanggar kebijakan *blind review* telah dihapus dari berkas naskah utama.
 
-**Checklist pra-pengiriman:**
+## Ringkasan Bab
 
-- [ ] Naskah sudah sesuai *scope* jurnal dan mengikuti *author guidelines*.
-- [ ] File naskah sudah bebas dari informasi identitas penulis (untuk keperluan *blind review*) — jika diminta.
-- [ ] Judul ditulis dalam *Sentence case* / *Title Case*, bukan HURUF KAPITAL SEMUA.
-- [ ] Abstrak dalam bahasa Inggris, 1 paragraf, maks 250 kata, tidak memuat kata kunci.
-- [ ] Data penulis (nama, afiliasi, email, negara, ORCID) sudah lengkap.
-- [ ] Format referensi sudah sesuai gaya sitasi yang ditetapkan jurnal.
-- [ ] Sudah membaca dan menyetujui seluruh persyaratan (*submission checklist*).
+Pengiriman naskah melalui OJS 3.3 dirancang sebagai proses pengumpulan informasi komprehensif. Keakuratan metadata dan pengklasifikasian berkas yang cermat tidak hanya mendemonstrasikan profesionalisme penulis, tetapi juga sangat memengaruhi efisiensi kerja tim redaksi. Pemahaman penulis terhadap pentingnya setiap langkah dalam tahap *submission* menjamin kelancaran transisi naskah ke tahap penilaian substansi ilmiah berikutnya.

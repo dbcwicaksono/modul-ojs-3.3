@@ -1,8 +1,6 @@
-# Bab 2: Analisis Subjek & Bibliografi
+# Bab 2: Analisis Subjek dan Bibliografi
 
 Bibliografi merupakan komponen fundamental dalam penulisan ilmiah. Tanpa bibliografi yang benar, integritas sebuah karya ilmiah menjadi diragukan. Bab ini membahas konsep dasar bibliografi, fungsinya, serta berbagai gaya penulisan sitasi yang umum digunakan dalam penerbitan jurnal ilmiah.
-
----
 
 ## 2.1 Pengertian Bibliografi
 
@@ -14,19 +12,15 @@ Beberapa definisi bibliografi menurut para ahli:
 - Menurut *American Library Association (ALA) Glossary of Library Terms*, bibliografi adalah suatu survei yang menggambarkan buku-buku secara baik dengan memperhatikan kepengarangan, edisi, bentuk fisik buku, dan lain-lain.
 - Menurut Thomas Landau dalam *Encyclopedia of Librarianship*, bibliografi adalah daftar deskriptif yang sistematik dan sejarah buku, kepengarangan, penerbit, edisi, dan sebagainya.
 
----
-
 ## 2.2 Aspek yang Harus Diperhatikan dalam Bibliografi
 
 Setiap entri bibliografi harus memuat aspek-aspek berikut secara lengkap dan akurat:
 
-1. **Nama Author** (pengarang/penulis)
+1. **Nama Author** (pengarang atau penulis)
 2. **Judul** dan Tahun Terbit
 3. **Halaman Judul** dan Jumlah Halaman
 4. **Penerbit**, Afiliasi, dan Kota Terbit
-5. **Edisi**, Volume, URL (untuk sumber online), dan informasi lainnya
-
----
+5. **Edisi**, Volume, URL (untuk sumber daring), dan informasi lainnya
 
 ## 2.3 Fungsi Bibliografi
 
@@ -36,8 +30,6 @@ Bibliografi memiliki beberapa fungsi penting dalam ekosistem ilmu pengetahuan:
 2. Sebagai **alat penelusuran informasi** untuk menemukan suatu dokumen (buku atau artikel penelitian).
 3. Sebagai alat informasi bagi perpustakaan atau lembaga yang akan melakukan penelitian atau pengembangan koleksi.
 4. Mengetahui **sumber informasi** yang digunakan sebagai referensi dalam karya orang lain.
-
----
 
 ## 2.4 Tujuan Bibliografi dan Syarat Menjadi Bibliografer
 
@@ -55,18 +47,14 @@ Bibliografi memiliki beberapa fungsi penting dalam ekosistem ilmu pengetahuan:
 3. Tidak malu bertanya.
 4. Memiliki daya ingat yang baik (dapat dilatih).
 
----
-
 ## 2.5 Data yang Harus Dicatat dalam Bibliografi
 
 Dalam menyusun entri bibliografi, informasi berikut wajib dicatat:
 
-1. **Nama pengarang/kepengarangan** — baik nama orang maupun lembaga.
-2. **Judul** — judul utama dan judul tambahan.
-3. **Impresum** — tempat terbit, nama penerbit, dan tahun terbit.
-4. **Kolasi** — jumlah jilid, halaman, keterangan ilustrasi, dan indeks.
-
----
+1. **Nama pengarang atau kepengarangan**: baik nama orang maupun lembaga.
+2. **Judul**: judul utama dan judul tambahan.
+3. **Impresum**: tempat terbit, nama penerbit, dan tahun terbit.
+4. **Kolasi**: jumlah jilid, halaman, keterangan ilustrasi, dan indeks.
 
 ## 2.6 Macam-macam Gaya Bibliografi (Citation Style)
 
@@ -87,14 +75,12 @@ Gaya APA paling umum digunakan dalam bidang **ilmu sosial, psikologi, dan pendid
 | **Jurnal Online** | (Kim et al., 2010, p. 311) | Kim, C., Mirusmonov, M., & Lee, I. (2010). An empirical examination of factors influencing the intention to use mobile payment. *Computers in Human Behavior*, 26, 310–322. https://doi.org/10.1016/j.chb.2009.10.013 |
 | **Buku Online** | (Kumar, 2012) | Kumar, S. R. (2012). *Case studies in Marketing Management*. Pearson. http://books.google.com/books |
 | **Surat Kabar Online** | Hatta (2019) | Hatta, C. (2019, Juni 16). Kode Morse THR. *Kompas Online*. http://www.kompas.com |
-| **Buku (dengan pengarang korporat)** | (APA, 2010) | American Psychological Association. (2010). *Publication manual of the APA Style* (6th ed.). Penulis. |
-| **Disertasi/Tesis Online** | Hartarto A (2019) | Hartarto, A. (2019). *Crossing boundaries in urban ecology* [Doctoral dissertation]. Proquest Dissertation & Theses Database. (UMI No. 327681). |
-
----
+| **Buku (korporat)** | (APA, 2010) | American Psychological Association. (2010). *Publication manual of the APA Style* (6th ed.). Penulis. |
+| **Disertasi/Tesis** | Hartarto A (2019) | Hartarto, A. (2019). *Crossing boundaries in urban ecology* [Doctoral dissertation]. Proquest Dissertation & Theses Database. (UMI No. 327681). |
 
 ### 2.6.2 Gaya Chicago dan Turabian
 
-Gaya Chicago/Turabian umum digunakan dalam bidang **sastra, sejarah, dan seni**. Ciri khasnya:
+Gaya Chicago atau Turabian umum digunakan dalam bidang **sastra, sejarah, dan seni**. Ciri khasnya:
 
 - Pada catatan kutipan: nama penulis ditulis *nama depan nama akhir*.
 - Pada daftar pustaka: nama penulis **dibalik** (*nama akhir, nama depan*).
@@ -110,8 +96,6 @@ Gaya Chicago/Turabian umum digunakan dalam bidang **sastra, sejarah, dan seni**.
 | **Buku** | Partini, *Bias Gender dalam Birokrasi* (Yogyakarta: Satya Wacana, 2013), 112. | Partini. *Bias Gender dalam Birokrasi*. Yogyakarta: Satya Wacana, 2013. |
 | **Jurnal** | Karim Jonathan, "Beyond Growth: Library and Development," *Annals of Library Research* 40, no. 5 (2015): 1111. | Jonathan, Karim. "Beyond Growth: Library and Development." *Annals of Library Research* 40, no. 5 (2015): 1111–1130. |
 
----
-
 ### 2.6.3 Gaya Harvard (Cite Them Right, 10th Edition)
 
 Gaya Harvard banyak digunakan dalam bidang **bisnis dan ilmu sosial**. Format umum untuk artikel jurnal:
@@ -122,19 +106,13 @@ Nama belakang pengarang, Inisial. Tahun Publikasi. 'Judul artikel'. *Nama jurnal
 
 **Contoh:**
 
-- **Pengarang tunggal:**  
-  Hall, M 1999, 'Breaking the silence: marginalisation of registered nurses employed in nursing homes', *Contemporary Nurse*, vol. 8, no. 1, hh. 232–237.
+- **Pengarang tunggal**: Hall, M 1999, 'Breaking the silence: marginalisation of registered nurses employed in nursing homes', *Contemporary Nurse*, vol. 8, no. 1, hh. 232–237.
 
-- **Dua pengarang:**  
-  Davis, L, Mohay, H & Edwards, H 2003, 'Mothers' involvement in caring for their premature infants: an historical overview', *Journal of Advanced Nursing*, vol. 42, no. 6, hh. 578–86.
+- **Dua pengarang**: Davis, L, Mohay, H & Edwards, H 2003, 'Mothers' involvement in caring for their premature infants: an historical overview', *Journal of Advanced Nursing*, vol. 42, no. 6, hh. 578–86.
 
-- **Lebih dari dua pengarang:**  
-  Wijaya, K, Phillips, M & Syarif, H 2002, 'Pemilihan sistem penyimpanan data skala besar', *Jurnal Informatika Indonesia*, vol. 1, no. 3, hh. 132–140.
+- **Lebih dari dua pengarang**: Wijaya, K, Phillips, M & Syarif, H 2002, 'Pemilihan sistem penyimpanan data skala besar', *Jurnal Informatika Indonesia*, vol. 1, no. 3, hh. 132–140.
 
-- **Jurnal Online:**  
-  Birbeck, D & Drummond, M 2006, 'Very young children's body image: bodies and minds under construction', *International Education Journal*, vol. 7, no. 4, dilihat 12 Desember 2006, \<https://iej.com\>.
-
----
+- **Jurnal Online**: Birbeck, D & Drummond, M 2006, 'Very young children's body image: bodies and minds under construction', *International Education Journal*, vol. 7, no. 4, dilihat 12 Desember 2006, \<https://iej.com\>.
 
 ### 2.6.4 Gaya MLA (Modern Language Association)
 
@@ -143,15 +121,13 @@ Gaya MLA umum digunakan dalam bidang **sastra dan bahasa**. Ciri-cirinya:
 - Nama penulis ditulis lengkap dengan nama akhir di depan.
 - **Tahun terbit** diletakkan di bagian akhir entri.
 - Kutipan dalam teks cukup dengan nama belakang penulis dan nomor halaman, contoh: `(Dunn 1112)`.
-- Sumber online tidak perlu menyebutkan URL; cukup tanggal akses.
+- Sumber daring tidak perlu menyebutkan URL secara spesifik, cukup sertakan tanggal akses apabila diminta.
 
 **Contoh Jurnal:**
 
 | Sitasi dalam Teks | Daftar Pustaka |
 |:---|:---|
 | Dunn berpendapat (1112) | Dunn, Creswell. "Beyond Growth: Library and Development." *Annals of Library Research* 40.5 (2015): 1111–1130. Print. |
-
----
 
 ### 2.6.5 Gaya IEEE (Institute of Electrical and Electronics Engineers)
 
@@ -165,9 +141,7 @@ Gaya IEEE digunakan dalam bidang **teknik, elektro, dan komputer**. Ciri khasnya
 | **Jurnal Online** | [1] R. E. Kalman, "New results in linear filtering and prediction theory," *J. Basic Eng.*, ser. D, vol. 83, pp. 95–108, Mar. 1961. |
 | **Tesis** | [1] Penulis, "Judul Tesis," M.S. thesis, Dept., Univ., Kota, Tahun. |
 
-> **Catatan:** Jika jumlah penulis lebih dari tiga orang, cukup tuliskan satu orang dan tambahkan *et al.*
-
----
+Catatan Teknis: Jika jumlah penulis lebih dari tiga orang dalam gaya sitasi tertentu, beberapa panduan menginstruksikan untuk menuliskan satu nama orang pertama dan menambahkan frasa *et al.*
 
 ## 2.7 Analisis Subjek dalam Konteks Pengelolaan Jurnal
 
@@ -175,20 +149,21 @@ Analisis subjek adalah proses mengidentifikasi dan merepresentasikan isi dokumen
 
 Dalam pengelolaan jurnal, analisis subjek sangat penting untuk:
 - Menentukan **kata kunci** yang tepat dalam metadata artikel.
-- Memastikan artikel dapat **ditemukan** oleh mesin pencari dan database pengindeks.
+- Memastikan artikel dapat **ditemukan** oleh mesin pencari dan basis data pengindeks.
 - Mendukung proses **klasifikasi** dan pengorganisasian konten jurnal.
 
-> Pengelolaan metadata artikel secara lengkap dibahas pada **Bab 13: Optimalisasi Metadata Artikel**.
+(Pengelolaan metadata artikel secara lebih komprehensif dibahas pada **Bab 13: Optimalisasi Metadata Artikel**).
 
----
+## Checklist Bab 2
+
+- [ ] Pengertian dan pentingnya bibliografi telah dipahami secara konsep.
+- [ ] Berbagai gaya sitasi yang paling relevan dengan bidang jurnal (APA, IEEE, dsb.) telah dipelajari perbedaannya.
+- [ ] Panduan penulisan referensi (*author guidelines*) jurnal telah disesuaikan dengan salah satu standar gaya sitasi yang diakui.
+- [ ] Pentingnya konsistensi metadata dan penelusuran (*information retrieval*) telah diidentifikasi untuk diterapkan dalam manajemen metadata kelak.
 
 ## Ringkasan Bab
 
-Bibliografi yang baik adalah fondasi dari karya ilmiah yang kredibel. Memahami berbagai gaya sitasi membantu pengelola jurnal untuk:
-
-1. Memastikan konsistensi penulisan referensi oleh penulis.
-2. Menentukan gaya sitasi yang diadopsi dalam *Author Guidelines* jurnal.
-3. Memeriksa kebenaran format referensi selama proses editorial.
+Bibliografi yang baik adalah fondasi dari karya ilmiah yang kredibel. Memahami berbagai gaya sitasi membantu pengelola jurnal untuk memastikan konsistensi penulisan referensi oleh penulis, menentukan gaya sitasi yang diadopsi dalam *Author Guidelines* jurnal, serta memeriksa kebenaran format referensi selama proses editorial.
 
 | Gaya Sitasi | Bidang Utama | Ciri Khas |
 |---|---|---|
