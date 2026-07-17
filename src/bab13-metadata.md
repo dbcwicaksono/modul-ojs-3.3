@@ -8,16 +8,29 @@ Metadata adalah fondasi dari visibilitas dan kemampuan artikel untuk ditemukan (
 
 ## 13.1 Pengertian Metadata Artikel
 
-**Metadata** adalah data yang mendeskripsikan data lain — dalam konteks artikel ilmiah, metadata adalah informasi *tentang* artikel: pengarang, judul, abstrak, kata kunci, tanggal publikasi, DOI, dan sebagainya.
+Metadata adalah data yang berkaitan dengan informasi tentang data lain (Pomerantz, 2015). Metadata tidak hanya sekadar menggambarkan data — metadata juga menggambarkan bagaimana organisasi dapat memahami aktivitasnya, orang dan organisasinya, geografi, waktu, dan motivasinya (Hay, 2006). Metadata adalah informasi yang dibuat, disimpan, dan dibagikan untuk menggambarkan berbagai hal yang memungkinkan kita berinteraksi dengan hal-hal untuk memperoleh pengetahuan yang kita butuhkan (Riley, 2017).
 
-Fungsi utama metadata dalam publikasi ilmiah:
+Dalam konteks artikel ilmiah, metadata adalah informasi *tentang* artikel — pengarang, judul, abstrak, kata kunci, tanggal publikasi, DOI, dan sebagainya. Untuk memudahkan pengarsipan dan pencarian kembali sebuah artikel ilmiah, dibutuhkan metadata yang lengkap dan akurat dari artikel ilmiah itu sendiri (Rahutomo, Irawati, & Pramudita, 2019).
 
-1. **Penemuan Sumber (*Resource Discovery*)** — Memungkinkan mesin pencari dan database menemukan artikel.
-2. **Kemudahan Sitasi** — Memudahkan software manajemen referensi (Mendeley, Zotero) mengambil data bibliografi secara otomatis.
-3. **Indeksasi** — Memudahkan lembaga pengindeks (Scopus, WoS, DOAJ) memproses artikel.
-4. **Distribusi DOI** — Metadata yang benar memastikan DOI artikel terdistribusi dengan tepat ke Crossref.
+Menurut Basuki (2000), secara umum ada 3 bagian yang digunakan untuk membuat metadata bagi sebuah paket informasi:
+1. Penyandian (*encoding*);
+2. Pembuatan deskripsi paket informasi bersama dengan informasi lain yang diperlukan untuk manajemen dan preservasi paket; dan
+3. Penyediaan akses terhadap deskripsi tersebut.
 
-> **Ingat:** Mengubah metadata artikel *setelah* terbit (terutama tanggal) dapat merubah data di Google Scholar dan mesin pengindeks lain. Pastikan semua data sudah benar **sebelum** artikel diterbitkan.
+### Fungsi Metadata Artikel
+
+Fungsi utama metadata adalah **penemuan sumber** (*resource discovery*) (Basuki, 2000). Menurut Rao (1995) dan Basuki (2000), fungsi metadata adalah menunjang pemilihan, pemahaman, pendayagunaan, dan pengingatan sumber dan isinya. Secara khusus, metadata memungkinkan mekanisme yang efektif untuk mengenali dan mengetahui lokasi data yang relevan. Metadata memungkinkan pemakai untuk menentukan (Basuki, 2000):
+
+1. **Ketersediaan informasi** — apakah objek informasi itu ada atau eksis? Di manakah letaknya? Berapakah yang tersedia?
+2. **Kegunaan informasi** — apakah otentik? Apakah berkualitas?
+3. **Relevansi** — bagaimana pemakai dapat menentukan apakah berguna atau tidak?
+
+Menurut Multazam (2021), fungsi metadata artikel dalam konteks pengelolaan jurnal diantaranya:
+1. Mudah terindeks dan ditemukan oleh mesin pengindeks otomatis atau lembaga pengindeks yang mengandalkan metadata dalam proses pencariannya.
+2. Memudahkan untuk melakukan sitasi menggunakan mesin terkait (Mendeley, Zotero, dan lainnya).
+3. Memudahkan mesin analisa artikel untuk membaca identitas atau bahkan isi artikel.
+
+> **Perhatian:** Mengubah metadata artikel *setelah* terbit — terutama tanggal publikasi — dapat merubah data di Google Scholar dan mesin pengindeks lain. Konfirmasikan kebenaran data metadata kepada penulis **sebelum** artikel diterbitkan.
 
 ---
 

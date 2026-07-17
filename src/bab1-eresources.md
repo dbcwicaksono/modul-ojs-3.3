@@ -8,7 +8,7 @@ Bab ini membahas konsep dasar manajemen referensi dan panduan lengkap penggunaan
 
 ## 1.1 Apa Itu Sitasi dan Mengapa Penting?
 
-Sitasi (*citation*) adalah rujukan terhadap buku, artikel, halaman web, atau produk penerbitan lainnya yang memberikan cukup rincian untuk mengidentifikasi sumber secara unik. Sitasi bisa berasal dari berbagai sumber: buku teks, audio visual, media cetak hingga online, dokumen *published* maupun *unpublished*.
+Suatu sitasi (*citation*) atau *bibliographic citation* adalah suatu rujukan terhadap buku, artikel, halaman web, atau produk-produk hasil penerbitan lainnya yang memberikan cukup rincian untuk mengidentifikasi produk penerbitan itu secara unik (Aliyah, Mahmud, & Andriani, 2021). Tulisan atau ceramah yang tidak diterbitkan, seperti *working paper* dan komunikasi pribadi (*personal communication*), juga kadang-kadang disitasi. Sitasi digunakan dalam karya-karya ilmiah untuk memberikan kredit atau pengakuan atas adanya pengaruh karya sebelumnya, atau merujuk kepada yang mempunyai kewenangan keilmuan.
 
 **Tujuan penulisan sumber sitasi dan daftar pustaka:**
 
@@ -268,6 +268,28 @@ Mendeley menyediakan fitur kolaborasi melalui **Grup**, memungkinkan berbagi ref
 1. Di website Mendeley, klik link **Groups**.
 2. Telusuri grup berdasarkan disiplin ilmu atau cari dengan kata kunci.
 3. Pilih grup yang sesuai, klik **Follow** (mengikuti perkembangan) atau **Ask to join this group** (bergabung sebagai anggota).
+
+---
+
+## 1.11 Jenis Gaya Penulisan Sitasi
+
+Jenis gaya atau model penulisan sitasi dikeluarkan oleh beberapa organisasi yang disesuaikan dengan bidang-bidang kajian (Djamaris, 2019). Mendeley mendukung ratusan gaya sitasi yang dapat dipilih sesuai dengan ketentuan jurnal yang dituju.
+
+Beberapa contoh model atau gaya sitasi yang umum digunakan:
+
+| Gaya Sitasi | Kepanjangan | Bidang Kajian |
+|---|---|---|
+| **APA** | American Psychological Association | Ilmu sosial, psikologi, pendidikan |
+| **CMOS** | Chicago Manual of Style | Humaniora, sejarah |
+| **MLA** | Modern Language Association | Sastra, linguistik |
+| **APSA** | American Political Science Association | Ilmu politik |
+| **Turabian** | — | Humaniora (turunan Chicago) |
+| **CSE** | Council of Science Editors (dulu Council of Biology Editors) | Ilmu alam, biologi |
+| **IEEE** | Institute of Electrical and Electronics Engineers | Teknik, komputer |
+
+Untuk mengubah gaya sitasi di Mendeley, buka menu **View → Citation Style** lalu pilih gaya yang sesuai. Untuk gaya yang tidak tersedia secara default, pilih **More Styles** dan cari melalui kolom pencarian.
+
+> **Rekomendasi:** Sesuaikan gaya sitasi Mendeley dengan gaya sitasi yang ditetapkan dalam *Author Guidelines* jurnal yang Anda tuju sebelum menulis artikel atau menyiapkan daftar pustaka.
 
 ---
 

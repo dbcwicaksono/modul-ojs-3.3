@@ -14,13 +14,15 @@ Salah satu tugas fundamental tim editor jurnal adalah memastikan bahwa setiap na
 
 ### Definisi
 
-Plagiarisme adalah tindakan menyajikan karya orang lain — berupa gagasan, data, informasi, kata, frasa, maupun kalimat — dan mengakuinya sebagai karya sendiri, baik secara **sengaja maupun tidak sengaja**, tanpa mencantumkan sumber dengan benar.
-
-Beberapa definisi yang perlu diketahui pengelola jurnal:
+Secara sederhana, plagiarisme adalah tindakan mengambil karya orang lain dan mengakuinya sebagai karya sendiri. Beberapa definisi yang perlu diketahui pengelola jurnal:
 
 - **Permendiknas No. 17 Tahun 2010:** Perbuatan sengaja atau tidak sengaja dalam memperoleh kredit atau nilai suatu karya ilmiah dengan mengutip sebagian atau seluruh karya pihak lain tanpa menyatakan sumber secara tepat dan memadai.
-- **Harris (2014):** *Plagiarism occurs when an information source is not properly credited.*
-- **Fenton & Gralla (2020):** *Plagiarism is the act of presenting, giving, or submitting work, ideas, or words without providing credit or acknowledgment to the source.*
+- **Harris (2014: 81):** *"Plagiarism occurs when an information source is not properly credited"* — plagiarisme terjadi apabila sumber informasi tidak dikutip secara benar.
+- **Menurut Lukman, Istadi, & Wiryawan (2020):** plagiasi adalah tindakan menggunakan bahasa, ide, dan material milik orang lain tanpa menyebutkan sumbernya.
+- **Fenton & Gralla (2020: 112)** berpendapat bahwa *plagiarism* merupakan tindakan menyajikan, memberikan, mengirim tulisan, ide, kata-kata tanpa memberikan kredit atau pengakuan dari mana sumber diambil.
+- **Purdue OWL (2020):** plagiarisme adalah menggunakan gagasan atau kata-kata orang lain tanpa menuliskan sumbernya atau memberi kredit kepada pemilik gagasan.
+
+Berdasarkan beberapa definisi di atas, dapat disimpulkan bahwa plagiarisme adalah tindakan menyajikan karya orang lain — berupa gagasan, data, informasi, kata, frasa, maupun kalimat — dan mengakuinya sebagai karya sendiri, baik secara **sengaja maupun tidak sengaja**, tanpa mencantumkan sumber dengan benar.
 
 ### Empat Kategori Plagiat
 
@@ -35,13 +37,9 @@ Beberapa definisi yang perlu diketahui pengelola jurnal:
 
 ## 6.3 Ketentuan Tingkat Kemiripan yang Dapat Diterima
 
-Belum ada panduan baku internasional yang seragam, namun beberapa acuan yang umum digunakan:
+Belum ada panduan baku internasional yang seragam. Namun dalam buku Lukman, Istadi, & Wiryawan (2020) disebutkan bahwa persentase total kemiripan naskah yang dapat diterima secara internasional adalah **15–20%**, dan **Kemenristek** menerima toleransi persentase plagiasi hingga **25%**. Persentase kemiripan ini **tidak termasuk** (*exclude*) kutipan langsung (*quote*) dan daftar referensi/pustaka.
 
-- Secara internasional, persentase kemiripan yang dapat diterima adalah **15–20%**.
-- **Kemenristek (Indonesia)** menerima toleransi kemiripan hingga **25%**.
-- Persentase kemiripan ini **tidak termasuk** (*exclude*) kutipan langsung (*quote*) dan daftar referensi/pustaka.
-
-> **Peringatan:** Meskipun total persentase masih di bawah ambang batas, jika kemiripan terhadap **satu sumber tergolong besar dan berurutan** dalam satu kalimat atau paragraf, naskah tetap tidak dapat diterima.
+> **Peringatan:** Meskipun total persentase masih di bawah ambang batas, jika kemiripan terhadap **satu sumber tergolong besar dan berurutan** dalam satu kalimat atau paragraf, naskah tetap tidak dapat diterima (Lukman, Istadi, & Wiryawan, 2020: 29–30).
 
 ---
 

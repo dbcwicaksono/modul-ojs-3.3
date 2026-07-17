@@ -6,11 +6,13 @@ Bibliografi merupakan komponen fundamental dalam penulisan ilmiah. Tanpa bibliog
 
 ## 2.1 Pengertian Bibliografi
 
-Kata **bibliografi** berasal dari bahasa Yunani: *biblio* (buku) dan *grafi* (menulis). Secara umum, bibliografi dapat didefinisikan sebagai:
+Kata **bibliografi** berasal dari bahasa Yunani: *biblio* (buku) dan *grafi* (menulis). Bibliografi dapat difungsikan sebagai suatu daftar buku atau artikel majalah untuk subjek tertentu yang mendaftar semua buku yang diterbitkan di wilayah geografi atau bahasa tertentu.
 
-- Daftar buku atau artikel tentang suatu subjek tertentu *(Random House Dictionary)*
-- Survei yang menggambarkan buku secara baik dengan memperhatikan kepengarangan, edisi, dan bentuk fisik *(American Library Association)*
-- Daftar deskriptif yang sistematik dan sejarah buku, kepengarangan, penerbit, edisi dan sebagainya *(Thomas Landau, Encyclopedia of Librarianship)*
+Beberapa definisi bibliografi menurut para ahli:
+
+- Menurut *Random House Dictionary of the English Language*, bibliografi adalah suatu daftar buku-buku atau artikel-artikel tentang suatu subjek tertentu.
+- Menurut *American Library Association (ALA) Glossary of Library Terms*, bibliografi adalah suatu survei yang menggambarkan buku-buku secara baik dengan memperhatikan kepengarangan, edisi, bentuk fisik buku, dan lain-lain.
+- Menurut Thomas Landau dalam *Encyclopedia of Librarianship*, bibliografi adalah daftar deskriptif yang sistematik dan sejarah buku, kepengarangan, penerbit, edisi, dan sebagainya.
 
 ---
 
