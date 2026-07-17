@@ -37,7 +37,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-7c001f04.js";
+            window.path_to_searchindex_js = "searchindex-e38718ef.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-2369117d.js"></script>
@@ -177,100 +177,95 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="bab-3-gambaran-umum-alur-kerja-editorial-ojs"><a class="header" href="#bab-3-gambaran-umum-alur-kerja-editorial-ojs">Bab 3: Gambaran Umum Alur Kerja Editorial OJS</a></h1>
-<p>Open Journal Systems (OJS) versi 3.3 adalah standar industri dalam publikasi ilmiah yang dirancang secara modular untuk membantu pengelola jurnal bekerja dengan standar setara jurnal bereputasi global. Memahami alur kerja editorial OJS 3.3 bukan sekadar mempelajari teknis klik tombol — ini adalah memastikan setiap naskah dikelola dengan integritas akademik yang tinggi.</p>
-<hr>
-<h2 id="31-para-aktor-dalam-ekosistem-jurnal-ojs"><a class="header" href="#31-para-aktor-dalam-ekosistem-jurnal-ojs">3.1 Para Aktor dalam Ekosistem Jurnal OJS</a></h2>
-<p>Kesuksesan sebuah jurnal bergantung pada kolaborasi antar peran. OJS 3.3 dirancang dengan sistem peran yang fleksibel, di mana satu orang bisa memegang beberapa peran atau dibagi ke tim yang lebih spesifik sesuai kapasitas.</p>
+<p>Open Journal Systems (OJS) versi 3.3 adalah perangkat lunak sumber terbuka (<em>open source</em>) yang dirancang secara modular untuk membantu pengelola jurnal mengelola proses editorial secara sistematis. Memahami alur kerja editorial OJS 3.3 berperan penting dalam memastikan setiap naskah dikelola dengan transparansi dan integritas akademik yang memadai.</p>
+<h2 id="31-sejarah-singkat-ojs-dan-public-knowledge-project-pkp"><a class="header" href="#31-sejarah-singkat-ojs-dan-public-knowledge-project-pkp">3.1 Sejarah Singkat OJS dan Public Knowledge Project (PKP)</a></h2>
+<p>Open Journal Systems dikembangkan oleh Public Knowledge Project (PKP), sebuah inisiatif penelitian dan pengembangan yang didirikan pada tahun 1998 oleh John Willinsky di University of British Columbia. Tujuan utama PKP adalah meningkatkan mutu akademik dan mutu publik dari penelitian melalui pengembangan platform penerbitan yang inovatif (PKP, 2023, https://docs.pkp.sfu.ca/learning-ojs/3.3/en/).</p>
+<p>OJS pertama kali dirilis pada tahun 2001 dan telah berkembang menjadi salah satu platform penerbitan jurnal paling banyak digunakan di dunia. Versi 3.x, termasuk OJS 3.3, membawa perombakan signifikan pada antarmuka pengguna dan alur kerja editorial, menjadikannya lebih intuitif dan responsif dibandingkan versi sebelumnya.</p>
+<h2 id="32-konsep-akses-terbuka-open-access"><a class="header" href="#32-konsep-akses-terbuka-open-access">3.2 Konsep Akses Terbuka (Open Access)</a></h2>
+<p>Pengembangan OJS sejalan dengan gerakan akses terbuka (<em>open access</em>). Berdasarkan deklarasi Budapest Open Access Initiative (BOAI) tahun 2002, akses terbuka berarti ketersediaan literatur ilmiah secara gratis di internet publik, memungkinkan setiap pengguna untuk membaca, mengunduh, menyalin, mendistribusikan, mencetak, mencari, atau menautkan ke teks lengkap artikel tanpa hambatan finansial, hukum, atau teknis selain yang tidak terpisahkan dari akses internet itu sendiri (BOAI, 2002, https://www.budapestopenaccessinitiative.org/).</p>
+<p>Bagi pengelola jurnal di Indonesia, pemahaman tentang konsep akses terbuka sangat relevan, sejalan dengan kebijakan Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi (Kemendikbudristek) yang mendorong publikasi hasil penelitian yang didanai negara secara terbuka.</p>
+<h2 id="33-para-aktor-dalam-ekosistem-jurnal-ojs"><a class="header" href="#33-para-aktor-dalam-ekosistem-jurnal-ojs">3.3 Para Aktor dalam Ekosistem Jurnal OJS</a></h2>
+<p>Kesuksesan penerbitan jurnal bergantung pada kolaborasi antar peran. OJS 3.3 dirancang dengan sistem peran yang fleksibel, di mana satu orang dapat memegang beberapa peran atau membagi peran ke tim yang lebih spesifik.</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>Peran</th><th>Tanggung Jawab Utama</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Journal Editor</strong> <em>(Editor Jurnal)</em></td><td>Kendali penuh atas sistem dan seluruh kebijakan jurnal. Mengelola akun pengguna dan mengambil keputusan akhir terhadap naskah.</td></tr>
-<tr><td><strong>Section Editor</strong> <em>(Editor Bagian)</em></td><td>Mengelola naskah di bagian atau rubrik tertentu. Motor penggerak operasional dari tahap review hingga keputusan editorial.</td></tr>
+<tr><td><strong>Journal Editor</strong> <em>(Editor Jurnal)</em></td><td>Memiliki kendali penuh atas sistem dan kebijakan jurnal. Bertanggung jawab mengelola akun pengguna dan mengambil keputusan akhir terhadap naskah.</td></tr>
+<tr><td><strong>Section Editor</strong> <em>(Editor Bagian)</em></td><td>Mengelola naskah di bagian atau rubrik tertentu. Bertindak sebagai motor penggerak operasional dari tahap penelaahan sejawat hingga keputusan editorial.</td></tr>
 <tr><td><strong>Author</strong> <em>(Penulis)</em></td><td>Mendaftarkan naskah, menyediakan metadata, dan melakukan revisi berdasarkan masukan editorial.</td></tr>
-<tr><td><strong>Reviewer</strong> <em>(Mitra Bestari)</em></td><td>Pakar bidang yang mengevaluasi kualitas konten secara objektif melalui proses <em>blind review</em> dan memberikan rekomendasi kepada editor.</td></tr>
+<tr><td><strong>Reviewer</strong> <em>(Mitra Bestari)</em></td><td>Pakar di bidang terkait yang mengevaluasi kualitas konten secara objektif melalui proses penelaahan sejawat dan memberikan rekomendasi kepada editor.</td></tr>
 <tr><td><strong>Copyeditor</strong></td><td>Memastikan akurasi bahasa, konsistensi istilah, dan kepatuhan terhadap gaya selingkung (<em>house style</em>) jurnal.</td></tr>
 <tr><td><strong>Layout Editor</strong></td><td>Menyusun tata letak naskah menjadi format publikasi siap unduh (<strong>Galleys</strong>) seperti PDF, HTML, atau XML.</td></tr>
-<tr><td><strong>Proofreader</strong></td><td>Melakukan pengecekan akhir sebelum naskah dipublikasikan.</td></tr>
+<tr><td><strong>Proofreader</strong></td><td>Melakukan pengecekan akhir pada pracetak sebelum naskah dipublikasikan.</td></tr>
 </tbody>
 </table>
 </div>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Ilustrasi: Ekosistem peran dalam OJS"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Ilustrasi: Ekosistem peran dalam OJS"></span></label></p>
-<hr>
-<h2 id="32-empat-pilar-utama-alur-kerja-editorial"><a class="header" href="#32-empat-pilar-utama-alur-kerja-editorial">3.2 Empat Pilar Utama Alur Kerja Editorial</a></h2>
-<p>Alur kerja dalam OJS 3.3 dibagi menjadi <strong>empat tahap utama</strong> yang saling terintegrasi:</p>
-<pre><code>[Submission] → [Review] → [Copyediting] → [Production]
-</code></pre>
-<p>Pengelola jurnal memiliki fleksibilitas penuh untuk menentukan siapa yang terlibat di setiap tahap.</p>
-<hr>
+<h2 id="34-empat-pilar-utama-alur-kerja-editorial"><a class="header" href="#34-empat-pilar-utama-alur-kerja-editorial">3.4 Empat Pilar Utama Alur Kerja Editorial</a></h2>
+<p>Alur kerja dalam OJS 3.3 dibagi menjadi empat tahap utama yang saling terintegrasi:</p>
+<p><code>[Submission] → [Review] → [Copyediting] → [Production]</code></p>
+<p>Pengelola jurnal memiliki fleksibilitas penuh untuk menentukan aktor yang terlibat di setiap tahap.</p>
 <h3 id="tahap-1-submission-penyerahan-naskah"><a class="header" href="#tahap-1-submission-penyerahan-naskah">Tahap 1: Submission (Penyerahan Naskah)</a></h3>
-<p>Tahap ini adalah <strong>gerbang utama</strong>. Editor melakukan <strong>Desk Review</strong> — penilaian awal untuk memastikan naskah layak diproses.</p>
-<p><strong>Tiga opsi utama editor pada tahap ini:</strong></p>
+<p>Tahap ini adalah gerbang utama proses editorial. Editor melakukan penilaian awal atau tinjauan awal meja (<em>desk review</em>) untuk memastikan naskah memenuhi syarat sebelum diproses lebih lanjut.</p>
+<p>Terdapat tiga opsi utama editor pada tahap ini:</p>
 <ol>
-<li><strong>Send to Review</strong> — Melanjutkan naskah ke tahap Review jika memenuhi kriteria awal.</li>
-<li><strong>Accept and Skip Review</strong> — Langsung ke tahap Copyediting tanpa melalui peer review (digunakan untuk <em>editorial commentary</em>, resensi buku, dll.).</li>
-<li><strong>Decline Submission</strong> — Menolak naskah yang tidak sesuai ruang lingkup jurnal.</li>
+<li><strong>Send to Review</strong>: Melanjutkan naskah ke tahap penelaahan sejawat jika memenuhi kriteria awal.</li>
+<li><strong>Accept and Skip Review</strong>: Memindahkan naskah langsung ke tahap Copyediting tanpa melalui penelaahan sejawat. Opsi ini digunakan untuk karya seperti komentar editorial atau resensi buku.</li>
+<li><strong>Decline Submission</strong>: Menolak naskah yang tidak sesuai dengan ruang lingkup atau standar awal jurnal.</li>
 </ol>
-<blockquote>
-<p><strong>Fitur Diskusi:</strong> Editor dapat menggunakan fitur <em>Discussion</em> untuk berkomunikasi dengan penulis jika ada kelengkapan yang kurang sebelum mengambil keputusan.</p>
-</blockquote>
-<hr>
-<h3 id="tahap-2-review-peninjauan-sejawat"><a class="header" href="#tahap-2-review-peninjauan-sejawat">Tahap 2: Review (Peninjauan Sejawat)</a></h3>
-<p>Inilah <strong>jantung dari publikasi ilmiah</strong>. Naskah ditinjau oleh satu atau lebih mitra bestari (reviewer). OJS 3.3 memfasilitasi format <em>blind review</em> untuk menjaga integritas penilaian.</p>
-<p>Setelah reviewer memberikan rekomendasi, editor mengambil <strong>keputusan editorial</strong>:</p>
+<p>Catatan Teknis: Editor dapat menggunakan fitur Diskusi (<em>Discussion</em>) untuk berkomunikasi dengan penulis guna melengkapi persyaratan administratif sebelum mengambil keputusan.</p>
+<h3 id="tahap-2-review-penelaahan-sejawat"><a class="header" href="#tahap-2-review-penelaahan-sejawat">Tahap 2: Review (Penelaahan Sejawat)</a></h3>
+<p>Tahap penelaahan sejawat merupakan tahap sentral dalam publikasi ilmiah. Naskah dievaluasi oleh satu atau lebih mitra bestari (<em>reviewer</em>). OJS 3.3 memfasilitasi format penelaahan nirnama ganda (<em>double-blind review</em>) untuk menjaga integritas dan objektivitas penilaian.</p>
+<p>Berdasarkan rekomendasi mitra bestari, editor mengambil keputusan editorial:</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>Keputusan Editor</th><th>Deskripsi</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Accept as is</strong></td><td>Menerima naskah tanpa perubahan (kondisi yang jarang terjadi).</td></tr>
-<tr><td><strong>Revisions Required</strong></td><td>Penulis wajib melakukan perbaikan minor. Editor memeriksa revisi tanpa melibatkan reviewer lagi.</td></tr>
-<tr><td><strong>Resubmit for Review</strong></td><td>Perubahan yang dibutuhkan sangat besar; memicu <strong>Round 2</strong> (Putaran ke-2) peninjauan.</td></tr>
-<tr><td><strong>Resubmit Elsewhere</strong></td><td>Naskah berkualitas namun tidak sesuai <em>scope</em> jurnal.</td></tr>
-<tr><td><strong>Decline Submission</strong></td><td>Naskah ditolak karena tidak memenuhi standar kualitas.</td></tr>
+<tr><td><strong>Accept as is</strong></td><td>Menerima naskah tanpa perubahan. Kondisi ini jarang terjadi.</td></tr>
+<tr><td><strong>Revisions Required</strong></td><td>Penulis diwajibkan melakukan perbaikan minor. Editor memeriksa revisi tanpa perlu melibatkan mitra bestari lagi.</td></tr>
+<tr><td><strong>Resubmit for Review</strong></td><td>Naskah memerlukan perubahan besar, sehingga memicu putaran kedua (<em>Round 2</em>) penelaahan sejawat.</td></tr>
+<tr><td><strong>Resubmit Elsewhere</strong></td><td>Naskah berkualitas namun tidak sesuai dengan fokus dan ruang lingkup jurnal.</td></tr>
+<tr><td><strong>Decline Submission</strong></td><td>Naskah ditolak karena tidak memenuhi standar kelayakan akademik.</td></tr>
 </tbody>
 </table>
 </div>
-<hr>
-<h3 id="tahap-3-copyediting-penyuntingan-salinan"><a class="header" href="#tahap-3-copyediting-penyuntingan-salinan">Tahap 3: Copyediting (Penyuntingan Salinan)</a></h3>
-<p>Setelah naskah diterima secara substansi, naskah masuk ke meja <em>copy editor</em>. Fokus di sini adalah <strong>meningkatkan akurasi, kejelasan, dan kepatuhan terhadap gaya selingkung jurnal</strong>.</p>
-<blockquote>
-<p><strong>Kunci OJS 3.3:</strong> Seluruh proses penyuntingan dilakukan <strong>di dalam sistem</strong> melalui fitur diskusi atau unggah file — bukan melalui email eksternal. Ini mencegah tertukarnya versi naskah dan menciptakan audit trail yang rapi.</p>
-</blockquote>
-<p>Penulis wajib meninjau kembali setiap perubahan yang dilakukan oleh copyeditor sebelum naskah dianggap final.</p>
-<hr>
+<h3 id="tahap-3-copyediting-penyuntingan-naskah"><a class="header" href="#tahap-3-copyediting-penyuntingan-naskah">Tahap 3: Copyediting (Penyuntingan Naskah)</a></h3>
+<p>Setelah naskah dinyatakan diterima secara substansi, naskah memasuki tahap penyuntingan naskah (<em>copyediting</em>). Fokus utama tahap ini adalah meningkatkan akurasi bahasa, kejelasan, dan kepatuhan tata letak terhadap gaya selingkung jurnal.</p>
+<p>Di OJS 3.3, seluruh proses penyuntingan direkomendasikan untuk dilakukan di dalam sistem melalui fitur diskusi dan pengunggahan dokumen. Praktik ini mencegah pertukaran versi dokumen yang keliru dan menciptakan jejak audit (<em>audit trail</em>) yang terdokumentasi.</p>
+<p><em>Jejak audit</em> (<em>audit trail</em>) adalah rekaman historis yang mencatat setiap aktivitas komunikasi dan pertukaran berkas secara sistematis, sehingga proses editorial dapat dipertanggungjawabkan di kemudian hari.</p>
+<p>Penulis berkewajiban meninjau setiap perubahan yang diusulkan oleh <em>copyeditor</em> sebelum naskah ditetapkan final.</p>
 <h3 id="tahap-4-production-produksi-dan-publikasi"><a class="header" href="#tahap-4-production-produksi-dan-publikasi">Tahap 4: Production (Produksi dan Publikasi)</a></h3>
-<p>Pada tahap akhir ini, <em>layout editor</em> mengubah naskah yang sudah bersih menjadi format publikasi profesional yang disebut <strong>Galleys</strong>.</p>
+<p>Pada tahap akhir, tata letak naskah akhir diubah menjadi format publikasi profesional yang dikenal sebagai <strong>Galleys</strong>.</p>
 <ul>
-<li><strong>Pembuatan Galley:</strong> Konversi ke PDF, HTML, XML, atau EPUB.</li>
-<li><strong>Proofreading:</strong> Penulis dan tim editorial melakukan pengecekan akhir.</li>
-<li><strong>Penjadwalan:</strong> Naskah dimasukkan ke dalam nomor terbitan (<em>issue</em>) tertentu dan dipublikasikan.</li>
+<li><strong>Pembuatan Galley</strong>: Proses konversi naskah ke format PDF, HTML, XML, atau EPUB.</li>
+<li><strong>Proofreading</strong>: Proses pengecekan akhir oleh penulis dan tim editorial sebelum penerbitan.</li>
+<li><strong>Penjadwalan</strong>: Penempatan naskah ke dalam nomor terbitan (<em>issue</em>) tertentu untuk dipublikasikan.</li>
 </ul>
-<hr>
-<h2 id="33-fitur-unggulan-ojs-33"><a class="header" href="#33-fitur-unggulan-ojs-33">3.3 Fitur Unggulan OJS 3.3</a></h2>
+<h2 id="35-fitur-unggulan-ojs-33"><a class="header" href="#35-fitur-unggulan-ojs-33">3.5 Fitur Unggulan OJS 3.3</a></h2>
 <h3 id="sistem-diskusi-terintegrasi"><a class="header" href="#sistem-diskusi-terintegrasi">Sistem Diskusi Terintegrasi</a></h3>
-<p>Salah satu fitur terpenting OJS 3.3 adalah <strong>Fitur Diskusi</strong> yang terintegrasi pada setiap naskah di setiap tahap. Semua percakapan antara editor, penulis, dan staf lainnya terdokumentasi di dalam sistem — bukan tersebar di email pribadi.</p>
-<p><strong>Manfaat fitur diskusi:</strong></p>
+<p>Fitur Diskusi terintegrasi pada setiap naskah di setiap tahap alur kerja. Seluruh korespondensi antara editor, penulis, dan aktor lainnya terdokumentasi di dalam sistem, mengurangi kebergantungan pada komunikasi surat elektronik eksternal.</p>
+<p>Manfaat fitur diskusi meliputi:</p>
 <ul>
-<li>Membangun <em>audit trail</em> yang transparan.</li>
-<li>Memastikan semua pihak memiliki akses ke informasi yang sama.</li>
-<li>Mencegah kehilangan komunikasi penting.</li>
+<li>Membangun jejak audit yang transparan.</li>
+<li>Memastikan setiap aktor yang berwenang memiliki akses ke informasi yang sama.</li>
+<li>Mencegah kehilangan rekam jejak komunikasi penting.</li>
 </ul>
 <h3 id="activity-log"><a class="header" href="#activity-log">Activity Log</a></h3>
-<p>OJS 3.3 mencatat setiap tindakan secara kronologis melalui <strong>Activity Log</strong>. Ini menciptakan transparansi: siapa melakukan apa, dan kapan, semua terekam dengan jelas.</p>
+<p>OJS 3.3 merekam setiap tindakan secara otomatis dan kronologis melalui <strong>Activity Log</strong>. Fitur ini mendukung transparansi dengan mencatat aktor pelaksana dan waktu tindakan secara akurat.</p>
 <h3 id="fleksibilitas-peran"><a class="header" href="#fleksibilitas-peran">Fleksibilitas Peran</a></h3>
+<p>Sistem peran dalam OJS 3.3 dapat disesuaikan dengan skala manajerial jurnal:</p>
 <ul>
-<li><strong>Tim besar:</strong> Editor-in-Chief, beberapa Section Editor, Layout Editor terpisah.</li>
-<li><strong>Tim kecil:</strong> Satu orang dapat merangkap berbagai peran.</li>
-<li>Peran dapat disesuaikan sewaktu-waktu sesuai kebutuhan jurnal.</li>
+<li><strong>Tim besar</strong>: Melibatkan Editor Kepala, sejumlah Editor Bagian, dan Editor Tata Letak yang terpisah.</li>
+<li><strong>Tim kecil</strong>: Memungkinkan satu orang merangkap berbagai peran fungsional.</li>
+<li>Peran dapat diubah sewaktu-waktu sesuai dengan kebutuhan operasional jurnal.</li>
 </ul>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Ilustrasi: Alur kerja editorial OJS 3.3"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Ilustrasi: Alur kerja editorial OJS 3.3"></span></label></p>
-<hr>
-<h2 id="34-struktur-pembelajaran-kursus-ini"><a class="header" href="#34-struktur-pembelajaran-kursus-ini">3.4 Struktur Pembelajaran Kursus Ini</a></h2>
-<p>Modul dalam buku panduan ini disusun mengikuti alur kerja OJS 3.3 secara berurutan:</p>
+<h2 id="36-struktur-pembelajaran-kursus"><a class="header" href="#36-struktur-pembelajaran-kursus">3.6 Struktur Pembelajaran Kursus</a></h2>
+<p>Buku panduan ini disusun mengikuti alur kerja OJS 3.3 secara berurutan:</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -279,36 +274,37 @@
 <tbody>
 <tr><td>Bab 1–2</td><td>Persiapan dan Kemampuan Dasar</td><td>Pra-OJS</td></tr>
 <tr><td>Bab 3</td><td>Gambaran Umum OJS</td><td>Pengenalan</td></tr>
-<tr><td>Bab 4</td><td>Panduan Mengirimkan Artikel</td><td>Submission (Sisi Penulis)</td></tr>
-<tr><td>Bab 5</td><td>Merespons Naskah Baru</td><td>Submission (Sisi Editor)</td></tr>
-<tr><td>Bab 6</td><td>Pemeriksaan Plagiasi</td><td>Pre-Review</td></tr>
-<tr><td>Bab 7</td><td>Menugaskan Reviewer</td><td>Review Stage</td></tr>
-<tr><td>Bab 8</td><td>Panduan Reviewer</td><td>Review Stage</td></tr>
-<tr><td>Bab 9</td><td>Merespons Hasil Ulasan</td><td>Review Decision</td></tr>
-<tr><td>Bab 10</td><td>Copyediting</td><td>Copyediting Stage</td></tr>
-<tr><td>Bab 11</td><td>Produksi &amp; Galley</td><td>Production Stage</td></tr>
-<tr><td>Bab 12</td><td>Manajemen Edisi</td><td>Publication</td></tr>
-<tr><td>Bab 13</td><td>Optimalisasi Metadata</td><td>Visibilitas &amp; Indeksasi</td></tr>
+<tr><td>Bab 4</td><td>Panduan Mengirimkan Artikel</td><td>Submission (Penulis)</td></tr>
+<tr><td>Bab 5</td><td>Merespons Naskah Baru</td><td>Submission (Editor)</td></tr>
+<tr><td>Bab 6</td><td>Pemeriksaan Plagiasi</td><td>Pra-Review</td></tr>
+<tr><td>Bab 7</td><td>Menugaskan Reviewer</td><td>Tahap Review</td></tr>
+<tr><td>Bab 8</td><td>Panduan Reviewer</td><td>Tahap Review</td></tr>
+<tr><td>Bab 9</td><td>Merespons Hasil Ulasan</td><td>Keputusan Review</td></tr>
+<tr><td>Bab 10</td><td>Penyuntingan Naskah (Copyediting)</td><td>Tahap Copyediting</td></tr>
+<tr><td>Bab 11</td><td>Produksi dan Galley</td><td>Tahap Production</td></tr>
+<tr><td>Bab 12</td><td>Manajemen Edisi</td><td>Publikasi</td></tr>
+<tr><td>Bab 13</td><td>Optimalisasi Metadata</td><td>Visibilitas dan Indeksasi</td></tr>
 </tbody>
 </table>
 </div>
-<hr>
-<h2 id="35-persiapan-sebelum-memulai"><a class="header" href="#35-persiapan-sebelum-memulai">3.5 Persiapan Sebelum Memulai</a></h2>
-<p>Sebelum melangkah ke aspek manajerial, sangat disarankan untuk memiliki akses ke sebuah <strong>jurnal demonstrasi</strong> (jurnal latihan). Dengan jurnal latihan sendiri, Anda mendapatkan lingkungan belajar yang “aman” untuk:</p>
+<h2 id="37-persiapan-sebelum-memulai"><a class="header" href="#37-persiapan-sebelum-memulai">3.7 Persiapan Sebelum Memulai</a></h2>
+<p>Sebelum menerapkan praktik operasional pada jurnal utama, pengelola sangat disarankan untuk memiliki akses ke jurnal demonstrasi atau jurnal simulasi. Lingkungan simulasi ini memberikan ruang aman untuk:</p>
 <ul>
-<li>Bereksperimen dengan berbagai fitur.</li>
-<li>Mencoba peran yang berbeda.</li>
-<li>Menguji konfigurasi alur kerja tanpa risiko merusak data jurnal resmi.</li>
+<li>Bereksperimen dengan berbagai fitur manajerial.</li>
+<li>Menguji fungsi dari berbagai peran secara bergantian.</li>
+<li>Menyempurnakan konfigurasi alur kerja tanpa risiko mengubah data jurnal resmi.</li>
 </ul>
-<blockquote>
-<p>Jika belum memiliki jurnal OJS, ikuti kursus <strong>“Setting up a Journal in OJS 3.3”</strong> dari PKP School secara gratis di <a href="https://pkpschool.ca">pkpschool.ca</a>.</p>
-</blockquote>
-<hr>
+<p>Untuk panduan instalasi atau konfigurasi awal OJS, pengelola dapat merujuk ke materi PKP School di <a href="https://pkpschool.ca">pkpschool.ca</a>.</p>
+<h2 id="checklist-bab-3"><a class="header" href="#checklist-bab-3">Checklist Bab 3</a></h2>
+<ul>
+<li><input disabled="" type="checkbox"> Konsep akses terbuka (open access) telah dipahami.</li>
+<li><input disabled="" type="checkbox"> Empat pilar utama alur kerja OJS (Submission, Review, Copyediting, Production) telah dikenali.</li>
+<li><input disabled="" type="checkbox"> Berbagai peran dalam ekosistem OJS dan batasan wewenangnya telah dipahami.</li>
+<li><input disabled="" type="checkbox"> Pentingnya fungsi jejak audit (<em>audit trail</em>) dalam proses editorial telah dipahami.</li>
+<li><input disabled="" type="checkbox"> Lingkungan jurnal simulasi untuk latihan telah disiapkan jika diperlukan.</li>
+</ul>
 <h2 id="ringkasan-bab"><a class="header" href="#ringkasan-bab">Ringkasan Bab</a></h2>
-<p>OJS 3.3 dirancang untuk mendukung publikasi ilmiah yang profesional, transparan, dan akuntabel. Dengan memahami empat pilar utama alur kerja editorial — <strong>Submission, Review, Copyediting, Production</strong> — dan peran masing-masing aktor di dalamnya, pengelola jurnal dapat mengelola jurnal dengan standar internasional.</p>
-<blockquote>
-<p><strong>Penting diingat:</strong> OJS 3.3 memiliki satu fitur kunci yang membedakannya dari versi sebelumnya: seluruh komunikasi dan pertukaran file dilakukan <strong>di dalam sistem</strong>. Manfaatkan fitur ini sepenuhnya untuk menjaga ketertiban dan transparansi editorial.</p>
-</blockquote>
+<p>OJS 3.3 dikembangkan untuk mendukung publikasi ilmiah yang profesional, transparan, dan dapat dipertanggungjawabkan. Dengan menguasai empat pilar utama alur kerja editorial, pengelola jurnal dapat menyelenggarakan proses publikasi yang sesuai dengan standar pengelolaan jurnal ilmiah. Sistem komunikasi yang terpusat mencegah hilangnya jejak audit dan mendukung integritas proses editorial secara menyeluruh.</p>
 
                     </main>
 
