@@ -27,6 +27,18 @@ Multazam (2021) merumuskan fungsi praktis metadata artikel dalam operasional jur
 2. Mengintegrasikan struktur informasi naskah agar dapat ditangkap tanpa cacat oleh perangkat lunak referensi pihak ketiga seperti Mendeley atau Zotero.
 3. Memberikan umpan data matang bagi mesin analitik kepustakaan.
 
+### Standar Metadata Internasional
+
+Dalam ekosistem komunikasi ilmiah global, jurnal tidak lagi bekerja secara terisolasi. Metadata yang dihasilkan oleh OJS harus dapat dibaca oleh berbagai sistem internasional. Beberapa standar utama yang perlu dipahami:
+
+- **Dublin Core (DC)**: Standar metadata paling umum di internet yang terdiri dari 15 elemen dasar (seperti Title, Creator, Subject, Description). OJS secara otomatis mengekspor metadata artikel dalam format Dublin Core untuk meningkatkan keterbacaan lintas sistem (https://dublincore.org/).
+- **schema.org/ScholarlyArticle**: Skema markup terstruktur yang dikembangkan bersama oleh mesin pencari utama (Google, Microsoft, Yahoo, Yandex). Penerapan skema ini membantu mesin pencari seperti Google Scholar memahami bahwa sebuah halaman web adalah artikel ilmiah (https://schema.org/ScholarlyArticle).
+- **JATS (Journal Article Tag Suite)**: Standar format XML yang dirancang khusus untuk memodelkan artikel jurnal ilmiah. Format ini merupakan persyaratan utama untuk pengindeksan di PubMed Central dan sangat dianjurkan untuk Scopus (https://jats.nlm.nih.gov/).
+
+Selain itu, standar **Directory of Open Access Journals (DOAJ)** secara spesifik mengharuskan bahwa metadata artikel jurnal harus dapat diakses secara terbuka, terstruktur, dan disajikan di halaman awal (*landing page*) dari setiap artikel untuk memfasilitasi interoperabilitas dan perayapan mesin pencari (DOAJ, 2024, https://doaj.org/apply/guide/).
+
+**Studi Kasus:** Sebuah jurnal kesehatan mengeluhkan mengapa sebagian besar artikel terbarunya tidak muncul di Google Scholar, meskipun edisi sebelumnya terindeks dengan baik. Setelah diselidiki, tim editor menemukan bahwa mereka salah menginput nama depan dan belakang penulis pada kolom yang terbalik, dan menyisipkan teks penuh (*full-text*) ke dalam kolom abstrak. Metadata yang buruk dan format yang tidak terstruktur ini menyebabkan algoritma Google Scholar menolak (*reject*) artikel tersebut karena dianggap gagal memenuhi standar `schema.org/ScholarlyArticle`. Kasus ini menegaskan bahwa validitas input metadata berdampak langsung pada kemampuan keterpaparan (*discoverability*) naskah.
+
 Catatan Kritis: Praktik mengubah metadata suatu artikel setelah tanggal publikasinya sangat tidak direkomendasikan. Perubahan modifikasi waktu rilis atau nama penulis dapat menimbulkan konflik pembaruan data pada Google Scholar dan sistem pengindeks lainnya. Tim editorial diwajibkan mengonfirmasi seluruh detail metadata kepada penulis jauh sebelum artikel mencapai tahap penerbitan.
 
 ## 13.2 Konfigurasi Awal Metadata di OJS 3

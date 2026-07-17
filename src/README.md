@@ -1,78 +1,34 @@
-# Pengantar
+# Kata Pengantar
 
-Selamat datang di **Panduan Pengelolaan Jurnal Elektronik dengan OJS 3.3**.
+Puji syukur kami panjatkan atas selesainya penyusunan buku panduan **Pengelolaan Jurnal Elektronik dengan Open Journal Systems (OJS) 3.3** ini.
 
-**Penulis:** Dimas BC Wicaksono (Diasisteni oleh AI)  
-**Terakhir Diperbarui:** 17 Juli 2026  
-**Lisensi:** [Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA)](https://creativecommons.org/licenses/by-sa/4.0/)
+## Latar Belakang
+Lanskap penerbitan ilmiah di Indonesia telah mengalami transformasi digital yang masif dalam satu dekade terakhir. Tuntutan akan transparansi, percepatan proses penelaahan, dan kemudahan akses bagi khalayak luas menjadikan penggunaan platform penerbitan daring sebagai sebuah keharusan. Open Journal Systems (OJS), sebagai perangkat lunak sumber terbuka yang dikembangkan oleh Public Knowledge Project (PKP), telah menjadi tulang punggung bagi ribuan jurnal ilmiah di Indonesia. 
 
-Buku panduan ini disusun untuk membantu pengelola jurnal ilmiah — terutama yang menggunakan platform **Open Journal Systems (OJS)** versi 3.3 — dalam memahami dan menjalankan seluruh proses editorial secara sistematis, dari persiapan dasar hingga penerbitan.
+Meskipun penggunaannya meluas, banyak pengelola jurnal yang masih menghadapi tantangan dalam mengoptimalkan fitur-fitur OJS secara purna. Proses editorial sering kali masih mengandalkan komunikasi di luar sistem, yang berakibat pada hilangnya rekam jejak audit (*audit trail*) dan melemahnya integritas proses penelaahan sejawat. Berangkat dari realitas tersebut, buku panduan ini disusun.
 
----
+## Tujuan Penulisan
+Buku panduan ini bertujuan untuk memberikan pemahaman yang menyeluruh dan praktis mengenai alur kerja editorial berbasis sistem, dari pendaftaran naskah hingga tahap penerbitan dan indeksasi. Sasaran utamanya adalah membantu para pengelola jurnal, editor, peninjau, dan penulis untuk bekerja dalam satu ekosistem yang terstruktur, efisien, dan selaras dengan standar publikasi ilmiah global seperti pedoman Committee on Publication Ethics (COPE) dan Directory of Open Access Journals (DOAJ).
 
-## Tentang Buku Ini
+## Sistematika Buku
+Buku ini disusun secara berurutan mengikuti siklus hidup (*lifecycle*) sebuah naskah ilmiah:
+- **Bagian I (Persiapan dan Kemampuan Dasar)**: Membekali pembaca dengan pengetahuan mengenai ekosistem jurnal dan kemampuan penelusuran literatur dasar.
+- **Bagian II (Pengenalan OJS 3.3)**: Memberikan gambaran umum mengenai peran dan arsitektur alur kerja OJS.
+- **Bagian III (Alur Kerja Penulis)**: Mengupas proses penyerahan naskah dari sudut pandang penulis.
+- **Bagian IV (Alur Kerja Editorial)**: Menjadi inti dari buku ini, membahas secara mendetail mengenai tinjauan awal, penugasan mitra bestari, panduan penelaahan, dan pengambilan keputusan editorial.
+- **Bagian V (Pasca-Review, Produksi, dan Penerbitan)**: Menjelaskan tahapan penyuntingan naskah akhir, tata letak, dan manajemen edisi terbitan.
+- **Bagian VI & VII (Visibilitas dan Diseminasi)**: Berfokus pada upaya pascapenerbitan untuk meningkatkan keterpaparan jurnal melalui kelengkapan metadata, perolehan pengidentifikasi unik (DOI), dan strategi diseminasi publik.
 
-Buku ini merupakan panduan komprehensif yang menggabungkan dua sumber utama:
+## Ucapan Terima Kasih
+Penulisan buku ini tidak terlepas dari dukungan berbagai pihak. Kami mengucapkan terima kasih yang sebesar-besarnya kepada Relawan Jurnal Indonesia (RJI) yang senantiasa mengadvokasi kualitas publikasi ilmiah nasional, serta Public Knowledge Project (PKP) yang terus mengembangkan sistem inovatif bagi komunitas ilmiah. Terima kasih juga kami sampaikan kepada rekan-rekan editor dan akademisi yang telah memberikan wawasan serta masukan berharga.
 
-1. **Modul RJI Academy** — Materi berbasis praktik lapangan dari Relawan Jurnal Indonesia, mencakup pengelolaan e-resources, similarity check, dan optimalisasi metadata.
-2. **Kurikulum PKP School** — Panduan resmi dari Public Knowledge Project (pengembang OJS), mencakup seluruh alur kerja editorial dari Submission hingga Publication.
+Semoga buku panduan ini dapat berkontribusi dalam memajukan tata kelola penerbitan ilmiah di Indonesia dan mendukung terciptanya ekosistem ilmu pengetahuan yang berintegritas dan berdampak luas.
 
----
-
-## Untuk Siapa Buku Ini?
-
-Panduan ini ditujukan untuk:
-
-- **Pengelola Jurnal** (*Journal Manager*) yang baru memulai atau ingin meningkatkan standar pengelolaan jurnal OJS mereka.
-- **Editor** (*Section Editor*) yang ingin memahami alur kerja editorial secara menyeluruh.
-- **Reviewer (Mitra Bestari)** yang ingin memahami cara menggunakan sistem OJS saat menjalankan tugasnya.
-- **Penulis** yang ingin memahami proses di balik layar agar dapat mempersiapkan naskah dengan lebih baik.
-
----
-
-## Struktur Buku
-
-Buku ini dibagi menjadi enam bagian:
-
-| Bagian | Topik | Bab |
-|--------|-------|-----|
-| **I** | Persiapan dan Kemampuan Dasar | 1–2 |
-| **II** | Pengenalan OJS 3.3 | 3 |
-| **III** | Alur Kerja Penulis (Author) | 4 |
-| **IV** | Alur Kerja Editorial | 5–9 |
-| **V** | Produksi dan Penerbitan | 10–12 |
-| **VI** | Visibilitas & Indeksasi | 13 |
+*Surabaya, Juli 2026*  
+  
+**Dimas BC Wicaksono**
 
 ---
 
-## Cara Menggunakan Buku Ini
-
-- Jika Anda **pengelola jurnal baru**, disarankan membaca dari Bab 1 secara berurutan.
-- Jika Anda **editor berpengalaman** yang ingin referensi cepat, gunakan navigasi di sidebar untuk langsung ke bab yang relevan.
-- Setiap bab dilengkapi dengan **checklist praktis** di bagian akhir untuk memudahkan implementasi.
-
----
-
-## Catatan tentang Gambar
-
-Setiap gambar dalam buku ini menggunakan *placeholder* yang menandai posisi tangkapan layar (*screenshot*) yang relevan. Gambar-gambar tersebut akan digantikan dengan screenshot aktual dari sistem OJS yang digunakan oleh institusi Anda.
-
----
-
-## Sumber Referensi
-
-- Public Knowledge Project (PKP). *PKP School — Editorial Workflow in OJS 3.3*. https://pkpschool.ca
-- Relawan Jurnal Indonesia (RJI). *RJI Academy — Modul Pelatihan Pengelolaan Jurnal*.
-- PKP Docs. *Learning OJS 3.3*. https://docs.pkp.sfu.ca/learning-ojs/3.3/en/
-
----
-
-## Tentang Lisensi CC-BY-SA
-Modul ini dilisensikan di bawah **Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA)**.
-Artinya, Anda bebas untuk membagikan (menyalin dan mendistribusikan ulang) dan mengadaptasi (mencampur, mengubah, dan membuat turunan) materi ini, bahkan untuk kepentingan komersial, dengan syarat:
-1. **Atribusi (BY):** Anda harus mencantumkan nama penulis asli (Dimas BC Wicaksono).
-2. **BerbagiSerupa (SA):** Jika Anda mengubah atau membuat turunan dari materi ini, Anda harus mendistribusikan kontribusi Anda di bawah lisensi yang sama dengan materi asli.
-
----
-
-*Semoga panduan ini bermanfaat dalam upaya meningkatkan kualitas dan kredibilitas jurnal ilmiah Indonesia.*
+**Catatan Lisensi**  
+Modul ini dilisensikan di bawah **Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA)**. Anda bebas untuk membagikan dan mengadaptasi materi ini dengan syarat mencantumkan atribusi kepada penulis asli dan mendistribusikan kontribusi Anda di bawah lisensi yang sama.

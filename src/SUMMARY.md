@@ -44,3 +44,14 @@
 # Bagian VI: Visibilitas & Indeksasi
 
 - [Bab 13: Optimalisasi Metadata Artikel](./bab13-metadata.md)
+
+---
+
+# Bagian VII: Diseminasi dan Peningkatan Visibilitas Jurnal
+
+- [Bab 14: Diseminasi dan Peningkatan Visibilitas Jurnal](./bab14-diseminasi.md)
+
+---
+
+- [Glosarium](./glosarium.md)
+- [Daftar Pustaka Terpadu](./daftar-pustaka.md)

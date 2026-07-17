@@ -15,7 +15,9 @@ Reviewer berkontribusi pada ekosistem ilmiah melalui tiga fungsi utama:
 
 ## 8.1 Peran Reviewer dalam Ekosistem Jurnal
 
-Reviewer adalah pakar di bidangnya yang bertugas mengevaluasi kualitas konten naskah secara objektif dan independen. Dalam proses *double-blind review*, identitas penulis dirahasiakan dari reviewer dan identitas reviewer dirahasiakan dari penulis. Mekanisme ini dirancang untuk menjamin independensi penilaian dari pengaruh sosial atau institusional.
+Reviewer adalah pakar di bidangnya yang bertugas mengevaluasi kualitas konten naskah secara objektif dan independen guna menjamin integritas ilmiah naskah (COPE, 2017). Directory of Open Access Journals (DOAJ) mensyaratkan setiap jurnal yang terindeks harus secara jelas memublikasikan jenis penelaahan sejawat yang digunakan (misalnya *blind review* atau *double-blind review*), serta memastikan seluruh naskah penelitian melalui proses evaluasi sejawat oleh sekurang-kurangnya dua peninjau independen (DOAJ, 2024, https://doaj.org/apply/guide/).
+
+Dalam proses *double-blind review*, identitas penulis dirahasiakan dari reviewer dan identitas reviewer dirahasiakan dari penulis. Mekanisme ini dirancang untuk menjamin independensi penilaian dari pengaruh sosial atau institusional.
 
 ---
 
@@ -66,6 +68,8 @@ Sebelum menerima penugasan, reviewer wajib:
 Klik **"Accept Review"** untuk melanjutkan, atau **"Decline Review"** jika tidak dapat atau tidak bersedia meninjau.
 
 Pengungkapan kepentingan bersaing adalah standar etika publikasi yang berlaku secara internasional. Apabila terdapat konflik kepentingan, reviewer sebaiknya menolak penugasan agar integritas proses penelaahan terjaga. Panduan COPE menyatakan bahwa reviewer harus mengungkapkan kepada editor setiap hubungan yang berpotensi menimbulkan konflik kepentingan (COPE, 2017, https://publicationethics.org/files/cope-ethical-guidelines-peer-reviewers-v2.pdf).
+
+**Studi Kasus:** Seorang mitra bestari menyetujui tugas meninjau naskah dalam format *double-blind review*. Di pertengahan proses membaca naskah, ia mengenali gagasan spesifik, gaya penulisan, dan metode yang digunakan, sehingga ia menyadari bahwa naskah tersebut kemungkinan besar ditulis oleh mantan mahasiswanya. Dalam situasi ini, mitra bestari tersebut diwajibkan untuk segera menghentikan peninjauan dan menghubungi editor melalui fitur *Add Discussion* untuk mendeklarasikan potensi konflik kepentingan, dan membiarkan editor memutuskan apakah ia harus melanjutkan atau mundur dari penugasan tersebut.
 
 ![Halaman permintaan review: informasi naskah dan jadwal](../img/elementor-placeholder-image.png)
 
