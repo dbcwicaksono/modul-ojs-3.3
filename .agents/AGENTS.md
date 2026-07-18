@@ -46,6 +46,13 @@ Tanpa pembaruan ini, sesi berikutnya tidak tahu:
 
 ---
 
+## Aturan Perilaku Khusus Agen (Sangat Penting)
+
+1. **JANGAN MENGHAPUS TANPA IZIN**: Agen dilarang keras menghapus instruksi, aturan, poin pedoman, atau informasi lama di dalam *file* konfigurasi, kecuali pengguna secara eksplisit menginstruksikan penghapusan tersebut. Aturan ini KHUSUS untuk file konfigurasi agar memori proyek tidak rusak. Agen tetap leluasa mengedit, memotong, atau merombak isi draf buku (`src/bab*.md`) demi kesesuaian gaya bahasa.
+2. **KONFIRMASI TERLEBIH DAHULU**: Jika sebuah instruksi pembaruan dari pengguna berpotensi menimpa atau menghapus aturan krusial yang sudah ada di dalam file konfigurasi, agen **WAJIB** meminta konfirmasi persetujuan terlebih dahulu. Jangan mengambil inisiatif sepihak yang merusak data aturan.
+
+---
+
 ## Agen yang Tersedia di Proyek Ini
 
 Dua agen sudah dikonfigurasi. Untuk menggunakannya di sesi baru, baca file konfigurasi lalu panggil `define_subagent`:
@@ -69,13 +76,16 @@ Dua agen sudah dikonfigurasi. Untuk menggunakannya di sesi baru, baca file konfi
 
 ## Prinsip Gaya Bahasa (Berlaku untuk Semua Output)
 
-1. Tidak ada em-dash (—) — ganti dengan titik dua atau koma
-2. Tidak ada emotikon atau simbol dekoratif
-3. Tidak ada tanda seru kecuali kutipan antarmuka OJS
-4. Setiap klaim normatif disertai sumber (Nama, Tahun, URL)
-5. Label informal dilarang — gunakan: "Catatan Teknis", "Catatan Penting", "Catatan Kritis"
-6. Istilah asing miring (*italic*) pada kemunculan pertama
-7. Semua referensi daring disertai tautan langsung
+1. **Gaya Buku Panduan Praktis Profesional**: Tulisan harus jelas, ringkas, profesional, dan berorientasi pada kepraktisan. Hindari bahasa berbunga-bunga, dramatis, atau retoris berlebihan.
+2. **LARANGAN KERAS**: Dilarang menggunakan gaya bahasa "sok asik", "sok-sokan", hiperbolis, atau sok akrab. Pertahankan *tone* yang datar, objektif, dan profesional.
+3. **Struktur yang Mudah Dipindai (*Skimmable*)**: Sangat dianjurkan menyajikan data, langkah, atau konsep dalam bentuk poin-poin (*bullet points* / *numbered lists*) atau tabel.
+4. **Tidak ada em-dash (—)**: Ganti dengan titik dua atau koma.
+5. **Tidak ada emotikon** atau simbol dekoratif.
+6. **Tidak ada tanda seru** kecuali kutipan antarmuka OJS.
+7. **Label informal dilarang**: Gunakan "Catatan Teknis", "Catatan Penting", "Catatan Kritis".
+8. **Keakuratan Fakta**: Setiap klaim normatif/definitif wajib bersumber (Nama, Tahun, URL).
+9. **Istilah Asing**: Ditulis miring (*italic*) pada kemunculan pertama.
+10. **Tautan Langsung**: Semua referensi daring disertai tautan (*link*) yang dapat diklik.
 
 ---
 

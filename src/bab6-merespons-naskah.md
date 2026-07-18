@@ -1,4 +1,4 @@
-# Bab 5: Merespons Kiriman Naskah Baru
+﻿# Bab 6: Merespons Kiriman Naskah Baru
 
 Bab ini membahas peran editor dalam mengelola naskah yang masuk ke sistem OJS 3.3, mulai dari navigasi dasbor editorial, pemeriksaan awal naskah, penugasan editor bagian, hingga pengambilan keputusan editorial pertama. Untuk pembahasan tentang proses pengiriman naskah dari sudut pandang penulis, lihat **Bab 4: Panduan Mengirimkan Artikel**.
 
@@ -16,7 +16,7 @@ Tinjauan awal meja umumnya mencakup:
 
 ---
 
-## 5.1 Peran Editor dalam Tahap Submission
+## 6.1 Peran Editor dalam Tahap Submission
 
 Editor di OJS 3.3 tidak hanya memantau naskah, tetapi memiliki kemampuan teknis untuk:
 - Mengelola akun pengguna.
@@ -27,7 +27,7 @@ OJS 3.3 bersifat fleksibel. Jurnal dapat dikelola oleh editor tunggal yang menan
 
 ---
 
-## 5.2 Navigasi Dasbor Editorial
+## 6.2 Navigasi Dasbor Editorial
 
 Dasbor editorial adalah antarmuka utama bagi editor untuk memantau seluruh aktivitas naskah. Terdapat empat tab utama yang perlu dipahami:
 
@@ -50,7 +50,7 @@ OJS 3.3 menyediakan filter untuk navigasi yang lebih efisien:
 
 ---
 
-## 5.3 Membuka dan Memahami Rekam Naskah
+## 6.3 Membuka dan Memahami Rekam Naskah
 
 Klik tombol **"View"** pada naskah untuk masuk ke halaman rekam naskah (*submission record*). Halaman ini berisi seluruh informasi dan aktivitas terkait naskah tersebut.
 
@@ -79,7 +79,7 @@ Submission Library adalah tempat berbagi dokumen pendukung, seperti formulir eti
 
 ---
 
-## 5.4 Manajemen File Kiriman
+## 6.4 Manajemen File Kiriman
 
 Area **"Submission Files"** menampilkan seluruh berkas digital yang diunggah penulis, beserta keterangan komponen naskahnya (*Article Text*, *Research Materials*, dan lainnya).
 
@@ -95,7 +95,7 @@ Tindakan yang dapat dilakukan editor pada area ini:
 
 ---
 
-## 5.5 Fitur Diskusi Pre-Review
+## 6.5 Fitur Diskusi Pre-Review
 
 Fitur **Pre-review Discussions** adalah sarana komunikasi editorial yang terpusat dan tercatat dalam sistem. Fitur ini digunakan untuk meminta klarifikasi atau perbaikan administratif dari penulis sebelum naskah dikirimkan ke tahap penelaahan sejawat.
 
@@ -114,7 +114,7 @@ Editor juga dapat menggunakan fitur **"Notify"** pada daftar *Participants* di p
 
 ---
 
-## 5.6 Tiga Keputusan Editorial pada Tahap Submission
+## 6.6 Tiga Keputusan Editorial pada Tahap Submission
 
 Setelah tinjauan awal meja selesai, editor mengambil satu dari tiga keputusan melalui **Decision Wizard** di panel sebelah kanan:
 
@@ -145,7 +145,7 @@ Pada opsi ini, editor dapat memilih untuk mengirimkan notifikasi kepada penulis 
 
 ---
 
-## 5.7 Penugasan Editor Bagian (Section Editor)
+## 6.7 Penugasan Editor Bagian (Section Editor)
 
 Pada jurnal yang menggunakan model tim editorial, Editor Kepala dapat menugaskan **Section Editor** melalui tombol **"Assign"** di panel *Participants*.
 
@@ -163,7 +163,7 @@ Setelah penugasan dikonfirmasi, sistem secara otomatis mengirimkan email pemberi
 
 ---
 
-## 5.8 Memindahkan Naskah ke Tahap Review
+## 6.8 Memindahkan Naskah ke Tahap Review
 
 Setelah keputusan "Send to Review" dikonfirmasi, naskah berpindah dari status *Submission* ke **Review (Round 1)**. File yang dipilih akan tercantum secara otomatis di panel *Review Files* pada tahap Review.
 
@@ -173,7 +173,7 @@ Panduan lengkap tentang proses penugasan reviewer dibahas di **Bab 7: Menugaskan
 
 ---
 
-## Checklist Bab 5
+## Checklist Bab 6
 
 Gunakan daftar berikut sebagai panduan sebelum memindahkan naskah ke tahap berikutnya:
 

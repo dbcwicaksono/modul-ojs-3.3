@@ -1,10 +1,12 @@
-# Bab 1: Pengelolaan e-Resources dan Manajemen Referensi
+# Bab 3: Pengelolaan e-Resources dan Manajemen Referensi
+
+> *Pernahkah Anda menemukan naskah dengan argumen yang sangat meyakinkan, namun referensi yang digunakan tidak relevan, berupa tautan rusak, atau bahkan bersumber dari blog pribadi? Bagaimana Anda, sebagai pengelola jurnal, dapat memastikan validitas dan konsistensi fondasi keilmuan naskah tersebut tanpa harus menghabiskan berjam-jam waktu penyuntingan manual?*
 
 Penulisan ilmiah selalu berpijak pada referensi kepustakaan yang valid. Setiap sumber yang digunakan harus dikutip (*citation*) dan dicantumkan dalam daftar pustaka sesuai gaya sitasi yang berlaku. Untuk mempermudah pengelolaan referensi secara masif, penggunaan perangkat lunak manajemen referensi menjadi kebutuhan mutlak bagi pengelola jurnal dan penulis ilmiah.
 
 Bab ini membahas konsep dasar manajemen referensi dan panduan penggunaan **Mendeley** sebagai perangkat lunak pengelola referensi yang banyak digunakan oleh komunitas akademik.
 
-## 1.1 Konsep Sitasi dan Signifikansinya
+## 3.1 Konsep Sitasi dan Signifikansinya
 
 Sitasi atau kutipan bibliografi (*bibliographic citation*) adalah rujukan terhadap dokumen ilmiah seperti buku, artikel, halaman web, atau produk penerbitan lainnya yang memberikan rincian memadai untuk mengidentifikasi produk tersebut secara unik (MIT Libraries, 2009). Sitasi berfungsi untuk memberikan pengakuan terhadap karya sebelumnya dan merujuk pada kewenangan keilmuan tertentu guna mendukung argumen penulis.
 
@@ -13,7 +15,13 @@ Tujuan utama penulisan sumber sitasi dan daftar pustaka meliputi:
 2. **Menghargai penulis sebelumnya**: Mengakui secara eksplisit bahwa ide, argumen, atau analisis tertentu merupakan kontribusi intelektual orang lain.
 3. **Membantu penelusuran informasi**: Memfasilitasi pembaca yang ingin mengetahui lebih dalam mengenai sumber kutipan dengan memberikan rincian lengkap pada daftar pustaka.
 
-## 1.2 Perangkat Lunak Manajemen Referensi
+**Sorotan Standar Global: Committee on Publication Ethics (COPE)**
+
+Committee on Publication Ethics (COPE) memberikan peringatan keras terhadap praktik manipulasi sitasi (*citation manipulation*), yaitu penggunaan referensi semata-mata untuk menggelembungkan tingkat sitasi seorang penulis atau metrik jurnal secara artifisial. Pengelola jurnal wajib memiliki kebijakan yang jelas terkait integritas sitasi—seperti membatasi *self-citation* yang tidak relevan—guna menjaga keandalan ekosistem publikasi akademik global.
+
+*Sumber: https://publicationethics.org/*
+
+## 3.2 Perangkat Lunak Manajemen Referensi
 
 Untuk mengelola sitasi dan daftar pustaka secara efisien serta terintegrasi dengan perangkat lunak pengolah kata (seperti Microsoft Word atau LibreOffice), penulis dapat memanfaatkan perangkat lunak manajemen referensi. Beberapa contoh perangkat lunak yang umum digunakan adalah:
 
@@ -28,7 +36,7 @@ Bab ini berfokus pada **Mendeley**, karena perangkat lunak ini tersedia secara g
 
 ![Ilustrasi: Perangkat Lunak Manajemen Referensi](../img/elementor-placeholder-image.png)
 
-## 1.3 Pengenalan Mendeley
+## 3.3 Pengenalan Mendeley
 
 Mendeley adalah perangkat lunak manajemen referensi sekaligus jaringan sosial akademis. Perangkat lunak ini mengombinasikan aplikasi *desktop* dan situs web untuk mengelola, berbagi, serta mencari referensi dan kontak akademik.
 
@@ -39,7 +47,7 @@ Keunggulan utama Mendeley:
 - Sinkronisasi awan (*cloud synchronization*) yang memungkinkan akses data dari berbagai perangkat.
 - Dukungan impor dari perangkat lunak referensi lain seperti EndNote dan Zotero.
 
-## 1.4 Instalasi Mendeley
+## 3.4 Instalasi Mendeley
 
 Mendeley tersedia untuk sistem operasi Windows, macOS, dan Linux dan dapat diunduh melalui situs resminya.
 
@@ -70,7 +78,7 @@ Setelah akun dibuat, akses halaman unduhan:
 
 ![Proses instalasi Mendeley](../img/elementor-placeholder-image.png)
 
-## 1.5 Memulai Mendeley dan Menambah Referensi
+## 3.5 Memulai Mendeley dan Menambah Referensi
 
 Sebelum memulai, kumpulkan seluruh dokumen referensi dalam satu folder atau unduh referensi melalui basis data jurnal ilmiah terpercaya (seperti PubMed, EBSCO, atau platform jurnal OJS terkait) untuk mengoptimalkan otomatisasi metadata.
 
@@ -87,7 +95,7 @@ Saat dokumen ditambahkan, Mendeley akan mencari informasi dari *CrossRef*, *PubM
 
 ![Menambah file ke Mendeley dengan Drag and Drop](../img/elementor-placeholder-image.png)
 
-## 1.6 Pengelolaan Berkas Referensi
+## 3.6 Pengelolaan Berkas Referensi
 
 Untuk mencegah penumpukan dokumen yang tidak terorganisasi, manfaatkan fitur-fitur pengelolaan berikut:
 
@@ -96,7 +104,7 @@ Untuk mencegah penumpukan dokumen yang tidak terorganisasi, manfaatkan fitur-fit
 3. **Pencarian Real-Time**: Kolom pencarian di sudut kanan atas memungkinkan penyaringan dan penyorotan kata kunci langsung di dalam dokumen (*search as you type*).
 4. **Sorotan dan Catatan**: Saat membaca dokumen PDF di Mendeley, gunakan fitur *Highlight Text* untuk menandai teks penting dan *Add Note* untuk menyisipkan catatan khusus.
 
-## 1.7 Memasukkan Sitasi ke Microsoft Word
+## 3.7 Memasukkan Sitasi ke Microsoft Word
 
 ### Mengintegrasikan MS Word dengan Mendeley
 1. Pastikan Microsoft Word dalam keadaan tertutup.
@@ -119,7 +127,11 @@ Penulis harus memilih gaya sitasi sesuai dengan panduan (*Author Guidelines*) ju
 
 Setelah seluruh sitasi disisipkan dalam dokumen, klik **Insert Bibliography**. Daftar pustaka akan dibangkitkan secara otomatis di bagian akhir dokumen dan akan beradaptasi setiap kali terdapat penambahan atau perubahan sitasi.
 
-## 1.8 Sinkronisasi dan Fitur Kolaborasi (Grup)
+**Catatan dari Lapangan**
+
+Beberapa pengelola jurnal sering menghadapi situasi di mana penulis mensitasi sumber yang ternyata tidak dapat dilacak atau diverifikasi keberadaannya secara daring (*unverifiable sources*). Pertanyaan yang kerap muncul dalam sesi pelatihan editorial adalah bagaimana editor dapat mengidentifikasi sitasi bermasalah ini secara efisien. Salah satu kesalahan yang paling umum dijumpai pada naskah tahap awal adalah kegagalan penulis memanfaatkan fitur sitasi otomatis, sehingga memicu inkonsistensi gaya sitasi (misalnya percampuran format APA dan IEEE) di dalam satu draf naskah.
+
+## 3.8 Sinkronisasi dan Fitur Kolaborasi (Grup)
 
 Mendeley menyediakan fungsionalitas penyimpanan awan dan kolaborasi tim:
 
@@ -127,7 +139,16 @@ Mendeley menyediakan fungsionalitas penyimpanan awan dan kolaborasi tim:
 - **Pembuatan Grup**: Mendeley mendukung pembuatan grup (*Private*, *Invite-only*, atau *Open*) untuk berbagi pustaka referensi dengan tim peneliti atau pengelola jurnal lainnya.
 - **Berbagi Referensi**: Anggota grup privat dapat saling mengunggah referensi, menyisipkan catatan, serta melakukan sorotan pada dokumen yang sama, dengan warna yang dibedakan untuk setiap pengguna.
 
-## Checklist Bab 1
+## Latihan Bab 3
+
+**Latihan 3.1: Membangun Daftar Pustaka Otomatis**
+
+Anda menerima draf naskah tahap produksi yang memiliki lima kutipan langsung tanpa format sitasi standar, dan daftar pustakanya masih diketik secara manual.
+**Tugas**: Buatlah sebuah folder bernama "Latihan OJS" di Mendeley Reference Manager. Cari lima artikel ilmiah di internet yang relevan dengan topik naskah tersebut, masukkan ke dalam Mendeley, pastikan kelengkapan metadatanya (seperti DOI dan nama penulis), lalu gunakan Mendeley Cite (Word Plugin) untuk memasukkan sitasi. Bangkitkan daftar pustaka dalam format *American Psychological Association (APA) 7th Edition* secara otomatis ke dalam dokumen draf.
+
+**Panduan Fasilitator**: Pastikan setiap peserta telah membuat akun Mendeley, mengunduh Mendeley Reference Manager, dan berhasil memasang *plugin* Mendeley Cite di Microsoft Word. Sediakan satu dokumen Word *dummy* berisi teks paragraf kosong yang membutuhkan sitasi agar peserta memiliki bahan praktik.
+
+## Checklist Bab 3
 
 - [ ] Konsep sitasi dan kepentingannya untuk mencegah plagiarisme telah dipahami.
 - [ ] Akun Mendeley (atau pengelola referensi serupa) telah dibuat dan divalidasi.

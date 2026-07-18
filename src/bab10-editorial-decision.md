@@ -1,8 +1,8 @@
-# Bab 9: Merespons Hasil Ulasan (Editorial Decision)
+﻿# Bab 10: Merespons Hasil Ulasan (Editorial Decision)
 
 Bab ini merupakan tahap krusial dalam alur kerja editorial, di mana editor menafsirkan rekomendasi dari para peninjau (*reviewer*) dan menetapkan keputusan editorial resmi yang menentukan kelayakan suatu naskah.
 
-## 9.1 Pentingnya Tahap Pengambilan Keputusan
+## 10.1 Pentingnya Tahap Pengambilan Keputusan
 
 Setelah proses penelaahan sejawat (*peer review*) selesai dilakukan oleh mitra bestari, tugas editor bukan sekadar meneruskan komentar dari mitra bestari kepada penulis. Editor memiliki tanggung jawab akademik untuk:
 
@@ -10,7 +10,7 @@ Setelah proses penelaahan sejawat (*peer review*) selesai dilakukan oleh mitra b
 2. Menetapkan keputusan editorial resmi: diterima, memerlukan revisi, atau ditolak.
 3. Mengomunikasikan hasil ulasan kepada penulis dengan tetap menjamin integritas penelaahan nirnama (*blind review*).
 
-## 9.2 Melihat dan Mengevaluasi Hasil Ulasan
+## 10.2 Melihat dan Mengevaluasi Hasil Ulasan
 
 ### Prosedur Melihat Ulasan
 
@@ -31,7 +31,7 @@ Catatan Teknis: Sebelum membaca ulasan, klik tombol **Activity Log** di pojok ka
 | **Komentar untuk Penulis & Editor** | Penulis dan Editor | Masukan teknis yang akan dikirim kepada penulis sebagai panduan untuk melakukan revisi. |
 | **Komentar Khusus untuk Editor** | Editor saja | Catatan rahasia dan direktif tentang kelayakan naskah. Penulis tidak memiliki akses ke bagian ini. |
 
-## 9.3 Opsi Keputusan Editorial
+## 10.3 Opsi Keputusan Editorial
 
 Mitra bestari bertugas memberikan rekomendasi, namun keputusan final tetap berada di tangan editor. Editor mengeksekusi salah satu opsi keputusan berikut:
 
@@ -45,7 +45,7 @@ Mitra bestari bertugas memberikan rekomendasi, namun keputusan final tetap berad
 
 Catatan Penting: Keputusan **"Accept Submission"** harus diambil dengan sangat hati-hati. Setelah keputusan dicatat melalui tombol **"Record Editorial Decision"**, sistem akan mengunci status naskah. Pembatalan keputusan kembali ke status "Request Revisions" memerlukan intervensi administratif yang kompleks. Pastikan naskah benar-benar siap sebelum mengkonfirmasi.
 
-## 9.4 Menangani Ulasan yang Saling Bertentangan
+## 10.4 Menangani Ulasan yang Saling Bertentangan
 
 Dalam proses editorial, sangat umum ditemui situasi di mana rekomendasi dari dua mitra bestari saling bertentangan (misalnya, satu merekomendasikan *Accept* sedangkan yang lain merekomendasikan *Decline*). Dalam situasi ini, editor dapat mengambil langkah-langkah sesuai panduan Committee on Publication Ethics (COPE):
 
@@ -55,7 +55,7 @@ Dalam proses editorial, sangat umum ditemui situasi di mana rekomendasi dari dua
 
 Editor dapat merujuk pada diagram alir COPE untuk penanganan proses editorial yang lebih kompleks terkait sengketa peninjauan.
 
-## 9.5 Mengomunikasikan Keputusan kepada Penulis
+## 10.5 Mengomunikasikan Keputusan kepada Penulis
 
 Setelah menentukan keputusan, klik tombol aksi yang sesuai (misalnya **"Request Revisions"**). Jendela surel (*email*) otomatis akan muncul.
 
@@ -70,7 +70,7 @@ Perhatian: OJS tidak secara otomatis menghapus metadata personal dari dokumen Wo
 
 ![Jendela pengiriman notifikasi keputusan ke penulis](../img/elementor-placeholder-image.png)
 
-## 9.6 Mengelola Revisi dan Putaran Ulasan Baru
+## 10.6 Mengelola Revisi dan Putaran Ulasan Baru
 
 ### Jika Keputusan: Revisions Required
 
@@ -86,7 +86,7 @@ Perhatian: OJS tidak secara otomatis menghapus metadata personal dari dokumen Wo
 
 ![Antarmuka memulai New Review Round](../img/elementor-placeholder-image.png)
 
-## 9.7 Mencatat Keputusan Akhir dan Transisi ke Copyediting
+## 10.7 Mencatat Keputusan Akhir dan Transisi ke Copyediting
 
 Setelah seluruh proses revisi selesai dan editor memutuskan naskah layak terbit, langkah akhir pada tahap ini adalah:
 
@@ -97,7 +97,7 @@ Setelah seluruh proses revisi selesai dan editor memutuskan naskah layak terbit,
 
 ![Transisi naskah dari Review ke Copyediting](../img/elementor-placeholder-image.png)
 
-## Checklist Bab 9
+## Checklist Bab 10
 
 - [ ] Status dan komentar semua mitra bestari telah dievaluasi.
 - [ ] Keputusan editorial telah ditetapkan dengan mempertimbangkan seluruh ulasan yang masuk.

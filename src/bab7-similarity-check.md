@@ -1,12 +1,12 @@
-# Bab 6: Pemeriksaan Plagiasi (Similarity Check)
+﻿# Bab 7: Pemeriksaan Plagiasi (Similarity Check)
 
 Salah satu tugas fundamental tim editor jurnal adalah memastikan bahwa setiap naskah yang dikirimkan penulis merupakan karya orisinal. Oleh karena itu, sebelum naskah dikirimkan ke mitra bestari (*reviewer*), editor perlu melakukan pemeriksaan kemiripan naskah (*similarity check*) terhadap sumber-sumber lain yang telah beredar luas.
 
-## 6.1 Definisi Pemeriksaan Kemiripan
+## 7.1 Definisi Pemeriksaan Kemiripan
 
 Pemeriksaan kemiripan (*similarity check*) adalah pembandingan terhadap naskah untuk mengetahui tingkat kesamaannya terhadap naskah atau teks lain yang sudah dipublikasikan, menggunakan perangkat lunak deteksi plagiasi. Tujuannya adalah memastikan naskah yang masuk terbebas dari unsur-unsur plagiat atau duplikasi sebelum diproses secara akademik.
 
-## 6.2 Memahami Plagiarisme
+## 7.2 Memahami Plagiarisme
 
 ### Definisi Teoritis
 
@@ -29,13 +29,13 @@ Berdasarkan definisi tersebut, dapat disimpulkan bahwa plagiarisme adalah tindak
 | **Mosaic Plagiarism** | Menggunakan frasa dari sumber lain tanpa tanda kutip atau menggunakan sinonim dengan struktur kalimat dan arti yang persis sama dengan naskah aslinya. |
 | **Accidental Plagiarism** | Ketidaksengajaan akibat lupa mencantumkan sumber, kesalahan mencantumkan sumber, atau melakukan parafrasa tanpa menyertakan referensi. Walaupun tidak disengaja, hal ini tetap diperlakukan sama dalam sanksi editorial. |
 
-## 6.3 Ketentuan Tingkat Kemiripan yang Dapat Diterima
+## 7.3 Ketentuan Tingkat Kemiripan yang Dapat Diterima
 
 Meskipun belum terdapat panduan baku internasional yang seragam, buku rujukan Lukman, Istadi, & Wiryawan (2020) menyatakan bahwa persentase total kemiripan naskah yang dapat diterima secara internasional berada di rentang **15 hingga 20 persen**. Di Indonesia, Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi menetapkan toleransi persentase plagiasi hingga maksimal **25 persen**. Persentase kemiripan ini dinilai secara selektif dengan mengecualikan (*exclude*) kutipan langsung dan daftar pustaka.
 
 Catatan Kritis: Walaupun total persentase masih berada di bawah ambang batas toleransi, apabila kemiripan terhadap satu sumber tunggal tergolong terlampau dominan secara berurutan dalam satu paragraf penuh, naskah tersebut pada dasarnya tetap terindikasi pelanggaran etika dan dapat ditolak (Lukman, Istadi, & Wiryawan, 2020: 29–30).
 
-## 6.4 Perangkat Lunak Pemeriksaan Gratis
+## 7.4 Perangkat Lunak Pemeriksaan Gratis
 
 Terdapat beberapa perangkat lunak daring gratis yang dapat dimanfaatkan untuk memeriksa kemiripan secara cepat.
 
@@ -65,7 +65,7 @@ SmallSEOTools memiliki basis deteksi yang relatif lebih andal dibandingkan Dupli
 
 ![Hasil pemeriksaan kemiripan dengan SmallSEOTools](../img/elementor-placeholder-image.png)
 
-## 6.5 Perbandingan Alat Pemeriksa Gratis
+## 7.5 Perbandingan Alat Pemeriksa Gratis
 
 | No. | Perangkat Lunak | Evaluasi Skor | Sepenuhnya Gratis | Keterbatasan Utama |
 |:---:|:---|:---:|:---:|:---|
@@ -78,7 +78,7 @@ SmallSEOTools memiliki basis deteksi yang relatif lebih andal dibandingkan Dupli
 
 *Rujukan Data: scribbr.com/plagiarism/best-free-plagiarism-checker*
 
-## 6.6 Layanan Pemeriksaan Berbayar Profesional
+## 7.6 Layanan Pemeriksaan Berbayar Profesional
 
 Bagi pengelolaan jurnal tingkat universitas yang profesional, penyediaan lisensi perangkat lunak berbayar sangat diutamakan:
 
@@ -89,7 +89,7 @@ Bagi pengelolaan jurnal tingkat universitas yang profesional, penyediaan lisensi
 
 Arahan Editorial: Apabila jurnal menargetkan indeksasi bereputasi seperti Scopus atau Web of Science, berlangganan layanan seperti iThenticate menjadi investasi krusial dalam mitigasi risiko plagiarisme pascaterbit.
 
-## 6.7 Panduan Praktis untuk Tim Editor Jurnal
+## 7.7 Panduan Praktis untuk Tim Editor Jurnal
 
 Untuk menjaga integritas ilmiah, tim editorial dianjurkan mengimplementasikan langkah-langkah berikut:
 
@@ -98,7 +98,7 @@ Untuk menjaga integritas ilmiah, tim editorial dianjurkan mengimplementasikan la
 3. Minta mitra bestari untuk proaktif mengidentifikasi tanda-tanda plagiat empiris, meliputi duplikasi struktur kalimat yang ganjil, inkonsistensi penyajian data gambar, hingga keberadaan gagasan sentral tanpa pengutipan selayaknya.
 4. Rujuk pedoman Committee on Publication Ethics (COPE) yang memuat diagram alur penanganan sengketa etika akademik di situs publicationethics.org.
 
-## 6.8 Panduan Pencegahan Plagiarisme bagi Penulis
+## 7.8 Panduan Pencegahan Plagiarisme bagi Penulis
 
 Penulis dituntut memahami bahwa plagiat adalah pelanggaran etika yang mendatangkan sanksi pencabutan dokumen (*retraction*). Langkah pencegahan esensial meliputi:
 
@@ -108,7 +108,7 @@ Penulis dituntut memahami bahwa plagiat adalah pelanggaran etika yang mendatangk
 4. Jangan mengirimkan naskah yang identik ke lebih dari satu jurnal secara bersamaan, karena hal ini diklasifikasikan sebagai plagiasi diri (*self-plagiarism*).
 5. Kembangkan budaya pencatatan rujukan berbasis *reference manager* agar silsilah sumber ide tidak terputus atau terlupakan saat naskah ditulis.
 
-## Checklist Bab 6
+## Checklist Bab 7
 
 - [ ] Batas toleransi plagiarisme jurnal telah ditetapkan secara eksplisit dalam kebijakan (*mis. maks 25%*).
 - [ ] Perangkat lunak pemeriksa kemiripan (*similarity checker*) telah ditentukan penggunaannya (gratis atau lisensi universitas).

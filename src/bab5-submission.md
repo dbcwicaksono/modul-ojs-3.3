@@ -1,8 +1,8 @@
-# Bab 4: Panduan Mengirimkan Artikel (Submission)
+﻿# Bab 5: Panduan Mengirimkan Artikel (Submission)
 
 Bab ini memandu penulis melalui proses pengiriman artikel ke jurnal yang menggunakan platform OJS 3.3. Proses pengiriman naskah (*submission*) di OJS dirancang dalam lima langkah berurutan untuk memastikan seluruh informasi penting dan metadata terdokumentasi dengan baik sejak tahap paling awal.
 
-## 4.1 Persiapan Pra-Pengiriman
+## 5.1 Persiapan Pra-Pengiriman
 
 Sebelum mengunggah berkas, penulis disarankan melakukan riset mendalam terhadap jurnal yang menjadi target. Periksa halaman informasi jurnal untuk memastikan kepatuhan terhadap kebijakan editorial:
 
@@ -14,7 +14,7 @@ Sebelum mengunggah berkas, penulis disarankan melakukan riset mendalam terhadap 
 
 Catatan Teknis: Penulis dapat merujuk pada direktori internasional seperti Directory of Open Access Journals (DOAJ) untuk mengevaluasi reputasi dan kebijakan transparansi jurnal target. Jurnal yang baik selalu mempublikasikan panduan penulis yang komprehensif dan biaya pemrosesan artikel secara transparan (DOAJ, 2024).
 
-## 4.2 Registrasi dan Login Akun
+## 5.2 Registrasi dan Login Akun
 
 Untuk mengirimkan naskah, penulis diwajibkan memiliki akun pengguna yang terdaftar pada jurnal tujuan.
 
@@ -37,7 +37,7 @@ Untuk mengirimkan naskah, penulis diwajibkan memiliki akun pengguna yang terdaft
 
 Akses sistem menggunakan *username* dan *password* yang telah didaftarkan. Pengguna akan diarahkan ke dasbor penulis.
 
-## 4.3 Proses Pengiriman Artikel dalam Lima Langkah
+## 5.3 Proses Pengiriman Artikel dalam Lima Langkah
 
 Dari dasbor utama, klik tombol **"Make a New Submission"** untuk memulai proses pengiriman naskah.
 
@@ -125,7 +125,7 @@ Klik tombol **"Finish Submission"** untuk menyelesaikan proses. Setelah tindakan
 
 ![Langkah 5: Halaman konfirmasi setelah submission selesai](../img/elementor-placeholder-image.png)
 
-## 4.4 Setelah Pengiriman: Proses Editorial Awal
+## 5.4 Setelah Pengiriman: Proses Editorial Awal
 
 Setelah naskah berhasil dikirim, editor akan melaksanakan tinjauan awal meja (*desk review*). Proses evaluasi awal ini akan berujung pada salah satu dari tiga kemungkinan keputusan editorial:
 
@@ -137,7 +137,7 @@ Setelah naskah berhasil dikirim, editor akan melaksanakan tinjauan awal meja (*d
 
 Sistem secara otomatis akan mengirimkan surel pemberitahuan untuk setiap perubahan status editorial. Penulis juga dianjurkan memantau status perkembangan naskah secara berkala melalui dasbor OJS.
 
-## Checklist Bab 4
+## Checklist Bab 5
 
 Gunakan daftar periksa berikut sebelum mengirimkan naskah:
 

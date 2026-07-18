@@ -1,8 +1,8 @@
-# Bab 7: Menugaskan Peninjau (Assigning Reviewer)
+﻿# Bab 8: Menugaskan Peninjau (Assigning Reviewer)
 
 Setelah naskah lolos dari tinjauan awal meja (*desk review*) dan pemeriksaan kemiripan (*similarity check*), tahap selanjutnya adalah mengirimkan naskah ke proses penelaahan sejawat (*peer review*). Bab ini memandu editor dalam memilih mitra bestari (*reviewer*) yang tepat, mengatur parameter penugasan, dan memantau jalannya proses penelaahan.
 
-## 7.1 Memindahkan Naskah ke Tahap Review
+## 8.1 Memindahkan Naskah ke Tahap Review
 
 Sebelum menugaskan mitra bestari, pastikan naskah telah siap secara teknis dan substantif untuk ditinjau.
 
@@ -17,7 +17,7 @@ Perhatian Kritis untuk Penelaahan Nirnama Ganda (*Double-Blind Review*): Sebelum
 
 ![Jendela pemilihan file untuk Send to Review](../img/elementor-placeholder-image.png)
 
-## 7.2 Antarmuka Section Editor dan Editor Kepala
+## 8.2 Antarmuka Section Editor dan Editor Kepala
 
 OJS 3.3 menerapkan pembagian tampilan berbasis peran yang spesifik untuk mencegah terjadinya beban informasi berlebih (*information overload*). Beban informasi berlebih adalah kondisi di mana editor dihadapkan pada volume data yang terlalu besar sehingga menghambat efisiensi pengambilan keputusan.
 
@@ -28,7 +28,7 @@ OJS 3.3 menerapkan pembagian tampilan berbasis peran yang spesifik untuk mencega
 
 Sistem navigasi terfokus ini memungkinkan Section Editor bekerja lebih efisien tanpa terganggu oleh data naskah di luar tanggung jawabnya.
 
-## 7.3 Memilih Mitra Bestari yang Tepat
+## 8.3 Memilih Mitra Bestari yang Tepat
 
 Klik tombol **"Add Reviewer"** di panel *Reviewers* untuk mengakses basis data mitra bestari. OJS 3.3 menyediakan parameter pencarian mendalam untuk mendukung pengambilan keputusan berbasis rekam jejak:
 
@@ -50,7 +50,7 @@ Pemilihan mitra bestari harus dilandasi objektivitas keahlian. Panduan Committee
 
 **Studi Kasus:** Sebuah jurnal naskah biologi kelautan membutuhkan mitra bestari khusus. Editor menemukan lima pakar di sistem, tetapi setelah ditelusuri, kelima pakar tersebut bekerja di institusi yang sama dengan penulis atau pernah menjadi rekan penulis makalah di tahun sebelumnya. Mengingat asas *double-blind review* dan potensi konflik kepentingan, editor dilarang keras menugaskan mereka. Sebagai gantinya, editor wajib mencari calon peninjau dari institusi atau negara lain, lalu mendaftarkan mereka ke dalam basis data OJS sebagai mitra bestari baru sebelum menugaskannya.
 
-## 7.4 Mengatur Parameter Penugasan
+## 8.4 Mengatur Parameter Penugasan
 
 Setelah memilih kandidat, sistem akan menampilkan formulir penugasan untuk mengatur detail evaluasi.
 
@@ -83,7 +83,7 @@ Apabila pengelola jurnal menggunakan instrumen penilaian terstruktur, editor har
 
 ![Formulir penugasan reviewer dengan parameter lengkap](../img/elementor-placeholder-image.png)
 
-## 7.5 Konfirmasi dan Pemantauan Penugasan
+## 8.5 Konfirmasi dan Pemantauan Penugasan
 
 Setelah parameter ditetapkan dan tombol **"Add Reviewer"** dieksekusi, sistem beroperasi secara otomatis untuk:
 1. Mengirimkan surel undangan formal kepada mitra bestari.
@@ -103,7 +103,7 @@ Jika mitra bestari belum memberikan respons menjelang tanggal batas konfirmasi (
 - Menggunakan tombol **"Send Reminder"** yang tersedia di sebelah nama mitra bestari, atau
 - Menggunakan fitur diskusi surel (*Notify*) untuk berkomunikasi secara lebih personal.
 
-## 7.6 Mengelola Kelengkapan Peninjauan
+## 8.6 Mengelola Kelengkapan Peninjauan
 
 Standar akademik kelayakan sebuah naskah umumnya mensyaratkan keterlibatan sekurang-kurangnya dua orang mitra bestari independen. Editor harus mengulangi langkah penugasan untuk melengkapi kuota peninjauan.
 
@@ -112,7 +112,7 @@ Praktik Terbaik:
 - Apabila mitra bestari utama menolak undangan, segera cari kandidat alternatif untuk mencegah penundaan durasi editorial.
 - Jurnal bereputasi sering kali mengundang tiga kandidat di awal untuk mengantisipasi penolakan atau keterlambatan peninjauan.
 
-## Checklist Bab 7
+## Checklist Bab 8
 
 - [ ] Seluruh dokumen naskah yang dikirimkan telah dibersihkan dari properti metadata personal (*blinding*).
 - [ ] Kandidat mitra bestari telah dipilih berdasarkan kesesuaian kepakaran (minat meninjau).

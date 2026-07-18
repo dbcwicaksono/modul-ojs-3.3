@@ -59,7 +59,7 @@ Public Knowledge Project. (2025). *Open Journal Systems*. Simon Fraser Universit
 Public Knowledge Project. (2025). *About PKP*. Simon Fraser University Library.
 - **URL**: https://pkp.sfu.ca/about/
 - **Tipe sumber**: halaman-web
-- **Relevansi Bab**: Bab 1
+- **Relevansi Bab**: Bab 3
 - **Terhubung ke KB**: KB-002
 - **Diakses**: 2026-07-18
 - **Status URL**: aktif
@@ -72,6 +72,39 @@ Directory of Open Access Journals. (2025). *DOAJ: Directory of Open Access Journ
 - **Tipe sumber**: halaman-web
 - **Relevansi Bab**: Bab 1, Bab 3
 - **Terhubung ke KB**: KB-003, KB-005
+- **Diakses**: 2026-07-18
+- **Status URL**: aktif
+
+---
+
+**BIB-011**
+Directory of Open Access Journals (DOAJ), Committee on Publication Ethics (COPE), Open Access Scholarly Publishing Association (OASPA), & World Association of Medical Editors (WAME). (2022). *Principles of Transparency and Best Practice in Scholarly Publishing*. DOAJ.
+- **URL**: https://doaj.org/apply/transparency/
+- **Tipe sumber**: halaman-web
+- **Relevansi Bab**: Bab 2
+- **Terhubung ke KB**: KB-017, KB-018, KB-022, KB-023
+- **Diakses**: 2026-07-18
+- **Status URL**: aktif
+
+---
+
+**BIB-012**
+Committee on Publication Ethics (COPE). (2025). *Core Practices: Editorial Boards*. COPE.
+- **URL**: https://publicationethics.org/
+- **Tipe sumber**: dokumentasi
+- **Relevansi Bab**: Bab 2
+- **Terhubung ke KB**: KB-018
+- **Diakses**: 2026-07-18
+- **Status URL**: aktif
+
+---
+
+**BIB-013**
+Creative Commons. (2025). *About CC Licenses*. Creative Commons.
+- **URL**: https://creativecommons.org/about/cclicenses/
+- **Tipe sumber**: dokumentasi
+- **Relevansi Bab**: Bab 2
+- **Terhubung ke KB**: KB-020
 - **Diakses**: 2026-07-18
 - **Status URL**: aktif
 
@@ -105,7 +138,7 @@ Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi. (2024). *ARJUNA: Akred
 Public Knowledge Project. (2024). *Learning OJS 3.3: A Visual Guide to Open Journal Systems*. PKP Documentation Hub.
 - **URL**: https://docs.pkp.sfu.ca/learning-ojs/
 - **Tipe sumber**: dokumentasi
-- **Relevansi Bab**: Bab 3
+- **Relevansi Bab**: Bab 1
 - **Terhubung ke KB**: KB-007, KB-008
 - **Diakses**: 2026-07-18
 - **Status URL**: aktif
@@ -116,7 +149,7 @@ Public Knowledge Project. (2024). *Learning OJS 3.3: A Visual Guide to Open Jour
 Public Knowledge Project. (2021). *OJS 3.3 Release Notebook*. PKP Documentation Hub.
 - **URL**: https://docs.pkp.sfu.ca/dev/release-notebooks/en/3.3-release-notebook
 - **Tipe sumber**: dokumentasi
-- **Relevansi Bab**: Bab 3
+- **Relevansi Bab**: Bab 1
 - **Terhubung ke KB**: KB-009
 - **Diakses**: 2026-07-18
 - **Status URL**: aktif
@@ -127,8 +160,19 @@ Public Knowledge Project. (2021). *OJS 3.3 Release Notebook*. PKP Documentation 
 Public Knowledge Project. (2025). *PKP School*. Simon Fraser University Library.
 - **URL**: https://pkpschool.sfu.ca/
 - **Tipe sumber**: halaman-web
-- **Relevansi Bab**: Bab 3, Bab Lampiran
+- **Relevansi Bab**: Bab 1, Bab Lampiran
 - **Terhubung ke KB**: KB-007
+- **Diakses**: 2026-07-18
+- **Status URL**: aktif
+
+---
+
+**BIB-014**
+Crossref. (2025). *Reference linking*. Crossref.
+- **URL**: https://www.crossref.org/services/reference-linking/
+- **Tipe sumber**: dokumentasi
+- **Relevansi Bab**: Bab 4, Bab 14
+- **Terhubung ke KB**: KB-027, KB-029
 - **Diakses**: 2026-07-18
 - **Status URL**: aktif
 
@@ -152,8 +196,19 @@ Relawan Jurnal Indonesia. (2024). *Tentang RJI: Relawan Jurnal Indonesia*.
 Wikipedia. (2025). *Open Journal Systems*. Wikimedia Foundation.
 - **URL**: https://en.wikipedia.org/wiki/Open_Journal_Systems
 - **Tipe sumber**: halaman-web
-- **Relevansi Bab**: Bab 1
+- **Relevansi Bab**: Bab 3
 - **Terhubung ke KB**: KB-001, KB-003
+- **Diakses**: 2026-07-18
+- **Status URL**: aktif
+
+---
+
+**BIB-015**
+San Jose State University Library. (2025). *Controlled Vocabulary vs. Keyword Searching*.
+- **URL**: https://library.sjsu.edu/
+- **Tipe sumber**: halaman-web
+- **Relevansi Bab**: Bab 4
+- **Terhubung ke KB**: KB-026
 - **Diakses**: 2026-07-18
 - **Status URL**: aktif
 
@@ -164,4 +219,9 @@ Wikipedia. (2025). *Open Journal Systems*. Wikimedia Foundation.
 | Tanggal | Topik | Entri Ditambahkan | Agen |
 |---------|-------|-------------------|------|
 | 2026-07-18 | OJS sejarah & adopsi, BOAI, PKP, SINTA/ARJUNA/Garuda, RJI, PKP Docs, versi OJS | BIB-001 s.d. BIB-010 (10 entri) | Agen Peneliti Web (Antigravity) |
+| 2026-07-18 | DOAJ Principles of Transparency, Identitas Jurnal, Focus and Scope | BIB-011 (1 entri) | Agen Peneliti Web (Antigravity) |
+| 2026-07-18 | Standar DOAJ/COPE untuk Editorial Board, in-house, dewan fiktif | BIB-012 (1 entri) | Agen Peneliti Web (Antigravity) |
+| 2026-07-18 | Perbedaan Hak Cipta vs Hak Penerbitan, Lisensi Creative Commons, Kepemilikan Artikel BOAI | BIB-013 (1 entri), reuse BIB-001 | Agen Peneliti Web (Antigravity) |
+| 2026-07-18 | Syarat DOAJ halaman About (Transparansi APC & Etika Publikasi), Praktik Terbaik Author Guidelines & Masalah Pemformatan | reuse BIB-011 | Agen Peneliti Web (Antigravity) |
+| 2026-07-18 | Controlled Vocabularies vs Keywords, Reference Extraction, Citation Styles, Crossref Linking, Parsing | BIB-014, BIB-015 (2 entri) | Agen Peneliti Web (Antigravity) |
 

@@ -112,7 +112,7 @@ Dokumen ini diisi secara kumulatif oleh agen peneliti. Setiap entri baru **ditam
 
 - **Kategori**: referensi-teknis, praktik-terbaik
 - **Keywords**: PKP School, PKP Docs, dokumentasi OJS, e-learning, tutorial, Learning OJS, pkpschool.sfu.ca, docs.pkp.sfu.ca
-- **Relevansi Bab**: Bab 3, Bab Lampiran
+- **Relevansi Bab**: Bab 1, Bab Lampiran
 - **Sumber**: PKP Docs — https://docs.pkp.sfu.ca/ | PKP School — https://pkpschool.sfu.ca/
 - **Diambil**: 2026-07-18
 
@@ -126,7 +126,7 @@ Dokumen ini diisi secara kumulatif oleh agen peneliti. Setiap entri baru **ditam
 
 - **Kategori**: referensi-teknis, term
 - **Keywords**: OJS 2, OJS 3, perbedaan versi, antarmuka, alur kerja, peran, diskusi editorial, migrasi, responsif
-- **Relevansi Bab**: Bab 3
+- **Relevansi Bab**: Bab 1
 - **Sumber**: PKP Docs / Learning OJS — https://docs.pkp.sfu.ca/learning-ojs/
 - **Diambil**: 2026-07-18
 
@@ -140,7 +140,7 @@ Dokumen ini diisi secara kumulatif oleh agen peneliti. Setiap entri baru **ditam
 
 - **Kategori**: referensi-teknis
 - **Keywords**: OJS 3.3, fitur baru, 2021, PHP 7.3, Laravel Illuminate, aksesibilitas, manajemen pengguna, multilingual
-- **Relevansi Bab**: Bab 3
+- **Relevansi Bab**: Bab 1
 - **Sumber**: PKP Docs Release Notebook — https://docs.pkp.sfu.ca/dev/release-notebooks/en/3.3-release-notebook
 - **Diambil**: 2026-07-18
 
@@ -168,7 +168,7 @@ Dokumen ini diisi secara kumulatif oleh agen peneliti. Setiap entri baru **ditam
 
 - **Kategori**: definisi, sejarah, kutipan-pakar
 - **Keywords**: serials crisis, krisis jurnal ilmiah, paywall, John Willinsky, PKP, demokratisasi pengetahuan
-- **Relevansi Bab**: Bab 3
+- **Relevansi Bab**: Bab 1
 - **Sumber**: PKP About — https://pkp.sfu.ca/about/
 - **Diambil**: 2026-07-18
 
@@ -182,7 +182,7 @@ Dokumen ini diisi secara kumulatif oleh agen peneliti. Setiap entri baru **ditam
 
 - **Kategori**: referensi-teknis, sejarah
 - **Keywords**: OJS 1.x, OJS 2.x, OJS 3.x, PHP prosedural, monolitik, Bootstrap, total rewrite, front-end, back-end
-- **Relevansi Bab**: Bab 3
+- **Relevansi Bab**: Bab 1
 - **Sumber**: PKP Docs Release Notebook — https://docs.pkp.sfu.ca/
 - **Diambil**: 2026-07-18
 
@@ -194,7 +194,7 @@ Dokumen ini diisi secara kumulatif oleh agen peneliti. Setiap entri baru **ditam
 
 - **Kategori**: referensi-teknis, regulasi
 - **Keywords**: OJS 3.4, OJS 3.5 LTS, GDPR, privasi data, self-invitation, User Experience, Editorial Dashboard
-- **Relevansi Bab**: Bab 3
+- **Relevansi Bab**: Bab 1
 - **Sumber**: PKP Release Notes — https://pkp.sfu.ca/
 - **Diambil**: 2026-07-18
 
@@ -206,11 +206,230 @@ Dokumen ini diisi secara kumulatif oleh agen peneliti. Setiap entri baru **ditam
 
 - **Kategori**: referensi-teknis, standar
 - **Keywords**: OAI-PMH, Crossref, DOI, ORCID, ROR, Turnitin, LOCKSS, PKP PN, preservasi digital
-- **Relevansi Bab**: Bab 3
+- **Relevansi Bab**: Bab 1
 - **Sumber**: PKP Docs Archiving & Interoperability — https://docs.pkp.sfu.ca/
 - **Diambil**: 2026-07-18
 
 > [Parafrase] OJS memastikan jurnal terhubung dengan ekosistem riset global melalui berbagai protokol. OJS memiliki dukungan bawaan untuk **OAI-PMH**, protokol yang memancarkan metadata artikel agar dipanen seketika oleh DOAJ, Google Scholar, dan repositori lainnya. Platform ini juga terintegrasi secara *native* dengan infrastruktur seperti **Crossref** untuk deposit DOI otomatis, **ORCID** untuk identifikasi peneliti yang akurat, dan **ROR** untuk standardisasi afiliasi institusi. Untuk keamanan jangka panjang, OJS mendukung pengaya uji kemiripan (Turnitin/iThenticate) dan preservasi digital menggunakan **LOCKSS** serta **PKP Preservation Network (PKP PN)** yang memastikan konten tetap tersimpan aman (sebagai *dark archive*) meskipun jurnal atau peladen utamanya berhenti beroperasi.
+
+---
+
+### KB-015 — Definisi Manipulasi Sitasi (Citation Manipulation)
+
+- **Kategori**: definisi, standar
+- **Keywords**: COPE, citation manipulation, manipulasi sitasi, self-citation, etika publikasi
+- **Relevansi Bab**: Bab 3, Bab 4
+- **Sumber**: Committee on Publication Ethics (COPE) — https://publicationethics.org/
+- **Diambil**: 2026-07-18
+
+> [Parafrase] Committee on Publication Ethics (COPE) mendefinisikan manipulasi sitasi (*citation manipulation*) sebagai praktik penggunaan referensi untuk secara artifisial menggelembungkan dampak atau jumlah sitasi dari seorang individu, institusi, jurnal, atau subjek tertentu. Praktik ini merusak catatan ilmiah dan menyesatkan pembaca. Bentuk manipulasi yang umum meliputi sitasi diri (*self-citation*) yang berlebihan dan tidak relevan, sitasi berlebihan terhadap jurnal tempat naskah diterbitkan, atau sitasi terkoordinasi antarjurnal (*citation rings*). COPE merekomendasikan agar pengelola jurnal memiliki kebijakan yang jelas terkait ambang batas sitasi diri dan mengedukasi penulis serta mitra bestari (*reviewer*) tentang praktik sitasi yang etis.
+
+---
+
+### KB-016 — Sejarah dan Evolusi Mendeley
+
+- **Kategori**: definisi, sejarah, referensi-teknis
+- **Keywords**: Mendeley, Elsevier, reference manager, sejarah Mendeley, Mendeley Cite
+- **Relevansi Bab**: Bab 3, Bab 4
+- **Sumber**: Elsevier / Mendeley — https://www.mendeley.com/
+- **Diambil**: 2026-07-18
+
+> [Parafrase] Mendeley didirikan di London pada tahun 2007 oleh tiga mahasiswa doktoral (Paul Foeckler, Victor Henning, dan Jan Reichelt) dan meluncurkan versi beta publik pertamanya pada Agustus 2008. Platform ini dirancang sebagai perangkat lunak manajemen referensi sekaligus jaringan sosial akademis untuk membantu peneliti menyimpan, mengorganisasi, memberi anotasi, dan menyitasi makalah penelitian. Pada tahun 2013, Mendeley diakuisisi oleh penerbit akademik global, Elsevier. Sejak saat itu, Mendeley terus berevolusi dari versi lawas "Mendeley Desktop" menjadi platform modern berbasis awan "Mendeley Reference Manager", yang terintegrasi kuat dengan Mendeley Cite untuk Microsoft Word dan Mendeley Web Importer.
+
+---
+
+### KB-017 — Prinsip Keterbukaan DOAJ: Identitas Jurnal dan Focus and Scope
+
+- **Kategori**: standar
+- **Keywords**: DOAJ, Principles of Transparency, Best Practice, Focus and Scope, identitas jurnal, Aims and Scope, readership
+- **Relevansi Bab**: Bab 2
+- **Sumber**: DOAJ Principles of Transparency and Best Practice in Scholarly Publishing — https://doaj.org/apply/transparency/
+- **Diambil**: 2026-07-18
+
+> [Parafrase] Berdasarkan "Principles of Transparency and Best Practice in Scholarly Publishing" yang dirumuskan oleh DOAJ bersama COPE, OASPA, dan WAME, setiap jurnal harus memenuhi standar ketat terkait identitas dan cakupannya. (1) **Identitas Jurnal**: Nama jurnal harus unik, tidak membingungkan, dan tidak meniru jurnal atau penerbit lain. Identitas pengelola/penerbit juga harus dicantumkan secara jelas. (2) **Focus and Scope (Aims & Scope)**: Situs web jurnal wajib memiliki pernyataan yang eksplisit mengenai cakupan fokusnya. Ini termasuk definisi target pembaca (*readership*) yang jelas, kriteria kepengarangan, dan kebijakan pengajuan naskah (misalnya menegaskan tidak menerima *multiple submissions* atau publikasi redundan). Hal ini bertujuan agar penulis dan pembaca dapat segera memahami secara spesifik apa yang diterbitkan jurnal, untuk siapa, dan batas-batas etisnya tanpa ambiguitas.
+
+*Catatan konteks*: Prinsip ini adalah standar global wajib bagi jurnal yang ingin terindeks di DOAJ, menjadi dasar penting dalam merumuskan dan mengisi identitas serta Focus and Scope pada OJS.
+
+---
+
+### KB-018 — Standar DOAJ dan COPE untuk Dewan Redaksi (Editorial Board)
+
+- **Kategori**: standar, regulasi
+- **Keywords**: DOAJ, COPE, dewan redaksi, editorial board, keragaman afiliasi, dewan fiktif, in-house journal, Principles of Transparency
+- **Relevansi Bab**: Bab 2
+- **Sumber**: DOAJ & COPE Principles of Transparency — https://doaj.org/apply/transparency/
+- **Diambil**: 2026-07-18
+
+> [Parafrase] Berdasarkan *Principles of Transparency and Best Practice in Scholarly Publishing* (DOAJ, COPE, dkk.), jurnal wajib mencantumkan nama lengkap dan afiliasi institusi seluruh anggota dewan redaksinya. Secara implisit maupun eksplisit, indeksator utama seperti DOAJ mensyaratkan keragaman geografis dan institusional anggota dewan redaksi agar sejalan dengan cakupan jurnal. Jurnal yang sangat *in-house* (mayoritas pengurus dan penulis berasal dari institusi yang sama dengan penerbit) sering ditolak indeksasinya. Selain itu, penggunaan nama pakar tanpa izin (dewan redaksi fiktif) merupakan pelanggaran etika berat. Tim *Integrity and Ethics* DOAJ secara aktif menindaklanjuti laporan semacam ini; terbuktinya penggunaan dewan fiktif akan mengakibatkan pencabutan (penghapusan) jurnal dari direktori DOAJ seketika. COPE juga memberikan sanksi bagi anggotanya yang melakukan praktik manipulasi identitas pengurus ini.
+
+*Catatan konteks*: Poin ini krusial untuk Bab 2 guna mengingatkan pengelola jurnal agar merekrut redaktur dari luar afiliasi mereka dan selalu meminta persetujuan formal (konsen) sebelum mendaftarkan nama pakar di dalam OJS.
+
+---
+
+### KB-019 — Perbedaan Hak Cipta (Copyright) dan Hak Penerbitan (Publishing Rights)
+
+- **Kategori**: definisi, kasus
+- **Keywords**: Hak cipta, copyright, hak penerbitan, publishing rights, kepemilikan
+- **Relevansi Bab**: Bab 2
+- **Sumber**: Berbagai pedoman penerbitan akademik
+- **Diambil**: 2026-07-18
+
+> [Parafrase] Dalam penerbitan akademik, sangat penting membedakan antara "Hak Cipta" (Copyright) dan "Hak Penerbitan" (Publishing Rights). 
+> **Hak Cipta** adalah kepemilikan hukum atas suatu karya cipta, termasuk hak mengontrol penggunaannya di masa depan. Pemilik hak cipta adalah penulis itu sendiri sejak naskah dibuat.
+> **Hak Penerbitan** adalah izin atau lisensi yang diberikan oleh pemilik hak cipta kepada penerbit untuk mendistribusikan, menampilkan, dan menggandakan karya tersebut.
+> 
+> *Konsekuensi di dunia nyata*: Jika jurnal memaksa penulis **menyerahkan hak cipta penuh (Transfer of Copyright)**, maka penulis kehilangan hak atas karyanya sendiri (misal: mereka tidak boleh mendistribusikan ulang atau menerjemahkan artikelnya tanpa izin penerbit). Namun, jika penulis **mempertahankan hak cipta (Retain Copyright)** dan hanya memberikan **hak penerbitan (Publishing Rights)** ke jurnal, penulis bebas mendistribusikan, memodifikasi, dan menggunakan kembali naskahnya. Pada model Open Access yang ideal, jurnal hanya meminta hak penerbitan perdana, sementara hak cipta tetap di tangan penulis.
+
+---
+
+### KB-020 — Penjelasan Sederhana Lisensi Creative Commons (CC)
+
+- **Kategori**: definisi, regulasi
+- **Keywords**: Creative Commons, lisensi CC, CC BY, CC BY-SA, CC BY-NC
+- **Relevansi Bab**: Bab 2
+- **Sumber**: Creative Commons — https://creativecommons.org/
+- **Diambil**: 2026-07-18
+
+> [Parafrase] Lisensi Creative Commons (CC) adalah cara standar untuk memberikan izin kepada publik untuk membagikan dan menggunakan karya seseorang dengan syarat pencipta aslinya diberi kredit (Atribusi). Tiga lisensi utama yang sering dipakai jurnal:
+> 1. **CC BY (Attribution)**: Paling terbuka. Siapapun boleh menyalin, mengubah, membagikan, dan bahkan menjual (komersial) karya tersebut, asalkan menyebutkan penulis aslinya.
+> 2. **CC BY-SA (Attribution-ShareAlike)**: Boleh digunakan untuk apa saja dan boleh diubah. Namun, jika diubah, karya baru tersebut **wajib** disebarkan dengan lisensi CC BY-SA yang sama.
+> 3. **CC BY-NC (Attribution-NonCommercial)**: Boleh disalin dan diubah, asalkan menyebutkan penulis asli dan **tidak boleh digunakan untuk tujuan komersial (mencari uang)**.
+> 
+> *Konsekuensi di dunia nyata*: Jurnal yang menggunakan CC BY memungkinkan artikel penulis dibagikan seluas mungkin, bahkan oleh repositori komersial. Jika menggunakan CC BY-NC, maka artikel tidak bisa dimasukkan ke dalam basis data komersial tanpa izin tambahan.
+
+---
+
+### KB-021 — Kepemilikan Artikel Setelah Publikasi Menurut BOAI
+
+- **Kategori**: standar, praktik-terbaik
+- **Keywords**: BOAI, kepemilikan artikel, open access, retensi hak cipta
+- **Relevansi Bab**: Bab 2
+- **Sumber**: Budapest Open Access Initiative (BOAI) — https://www.budapestopenaccessinitiative.org/
+- **Diambil**: 2026-07-18
+
+> [Parafrase] Berdasarkan prinsip Budapest Open Access Initiative (BOAI), publikasi *Open Access* (Akses Terbuka) dirancang agar sejalan dengan undang-undang hak cipta. Satu-satunya peran hak cipta dalam model ini adalah **memberikan penulis kendali atas integritas karya mereka dan hak untuk diakui serta dikutip secara layak**. BOAI merekomendasikan agar **penulis mempertahankan hak cipta (Retain Copyright)** atas artikel mereka, bukan menyerahkannya kepada penerbit.
+> 
+> *Konsekuensi di dunia nyata*: Jurnal berstandar BOAI tidak akan mengambil alih kepemilikan artikel. Mereka menggunakan lisensi publik (seperti Creative Commons) agar publik mendapat akses gratis tak terbatas, sementara penulis tetap menjadi pemilik sah atas kekayaan intelektualnya.
+
+---
+
+### KB-022 — Syarat DOAJ: Transparansi APC pada Halaman "About"
+
+- **Kategori**: standar, regulasi
+- **Keywords**: DOAJ, APC, Article Processing Charges, transparansi, About page, author fees
+- **Relevansi Bab**: Bab 2
+- **Sumber**: DOAJ & COPE Principles of Transparency — https://doaj.org/apply/transparency/
+- **Diambil**: 2026-07-18
+
+> [Parafrase] Berdasarkan *Principles of Transparency and Best Practice in Scholarly Publishing* (DOAJ, COPE, dkk.), jurnal wajib memberikan informasi yang sangat jelas mengenai Biaya Pemrosesan Artikel (APC) atau biaya penulis lainnya. Informasi ini harus diletakkan di tempat yang mudah ditemukan oleh calon penulis (biasanya di halaman "About" atau "Author Guidelines") **sebelum** mereka melakukan *submission*. Jika jurnal sama sekali tidak memungut biaya (Diamond Open Access), hal ini juga harus dinyatakan secara tertulis dan eksplisit untuk menghindari keraguan.
+
+*Catatan konteks*: Poin ini sangat penting untuk Bab 2 saat mengonfigurasi halaman About dan kebijakan jurnal di OJS.
+
+---
+
+### KB-023 — Syarat DOAJ: Etika Publikasi (Publication Ethics)
+
+- **Kategori**: standar, regulasi
+- **Keywords**: DOAJ, COPE, publication ethics, etika publikasi, misconduct, editorial decisions
+- **Relevansi Bab**: Bab 2
+- **Sumber**: DOAJ & COPE Principles of Transparency — https://doaj.org/apply/transparency/
+- **Diambil**: 2026-07-18
+
+> [Parafrase] Kebijakan Etika Publikasi adalah syarat wajib dari DOAJ dan COPE. Jurnal harus memiliki panduan tertulis di situs webnya mengenai penanganan kasus pelanggaran riset (*research misconduct*), konflik kepengarangan, dan proses banding. Keputusan editorial harus murni didasarkan pada kualitas dan kelayakan ilmiah dari naskah, serta bebas dari pengaruh diskriminatif seperti kewarganegaraan, pandangan politik, atau agama penulis.
+
+*Catatan konteks*: OJS memiliki kolom khusus untuk Etika Publikasi yang wajib diisi oleh pengelola jurnal jika ingin memenuhi standar global.
+
+---
+
+### KB-024 — Praktik Terbaik Author Guidelines: Template Sederhana vs Template Layout
+
+- **Kategori**: praktik-terbaik, referensi-teknis
+- **Keywords**: author guidelines, manuscript template, copyediting, layout, typeset, format sederhana
+- **Relevansi Bab**: Bab 5, Bab 10, Bab 11, Bab 12
+- **Sumber**: Berbagai panduan penulisan akademik dan penerbitan
+- **Diambil**: 2026-07-18
+
+> [Parafrase] Dalam menyusun *Author Guidelines*, praktik terbaik bagi pengelola jurnal adalah menyediakan *template* naskah awal yang **sangat sederhana** (mengutamakan struktur IMRaD dan pemformatan teks dasar seperti *double spacing*), alih-alih meminta penulis memformat naskah mereka ke dalam *template final layout* (dua kolom, header/footer rumit, font spesifik). Memisahkan fase *Copyediting* (fokus pada substansi, tata bahasa, konsistensi) dengan fase *Layout/Typesetting* (fokus pada desain visual PDF akhir) akan sangat memudahkan kerja editor. Jika penulis dipaksa menggunakan template layout di awal, editor dan *copyeditor* akan kesulitan melakukan *track changes* dan modifikasi teks tanpa merusak desain, yang pada akhirnya memicu efek domino dan kerja dua kali. "Boring is better" pada tahap *submission*.
+
+*Catatan konteks*: Konsep ini krusial untuk mengedukasi pengelola jurnal agar tidak menyiksa penulis dan editor sendiri dengan *template* awal yang terlalu kompleks.
+
+---
+
+### KB-025 — Masalah Umum Pemformatan Penulis yang Menyulitkan Editor
+
+- **Kategori**: kasus, praktik-terbaik
+- **Keywords**: masalah naskah, line breaks, gambar resolusi rendah, tabel kompleks, formatting, copyediting
+- **Relevansi Bab**: Bab 5, Bab 11
+- **Sumber**: Berbagai panduan penulisan akademik dan penerbitan
+- **Diambil**: 2026-07-18
+
+> [Parafrase] Beberapa kesalahan teknis dari penulis yang paling sering menyebabkan beban kerja ganda bagi editor dan *copyeditor* meliputi: (1) **Line Breaks & Spacing Manual**: Penulis menggunakan tombol `Enter` berulang kali untuk pindah halaman, menekan `Shift+Enter` untuk merapikan baris, atau menggunakan spasi ganda setelah titik, yang merusak aliran dokumen; (2) **Gambar Kualitas Rendah**: Menyisipkan gambar dari *screenshot* atau *copy-paste* langsung dari web (di bawah 300 dpi), sehingga pecah saat tahap produksi PDF; (3) **Tabel Kompleks dan "Image Tables"**: Menyisipkan tabel sebagai gambar (tidak bisa diedit oleh *copyeditor*), atau membuat tabel dengan pemformatan berlebihan (bayangan sel, enter di dalam sel, garis ganda) alih-alih menggunakan fitur tabel bawaan pengolah kata secara bersih.
+
+*Catatan konteks*: Penjelasan ini sangat bagus dimasukkan di bagian "Catatan dari Lapangan" di bab *Submission* atau *Copyediting* untuk menunjukkan realita di meja editor.
+
+### KB-026 — Perbedaan Controlled Vocabularies dan Author Keywords dalam Metadata
+
+- **Kategori**: definisi, praktik-terbaik
+- **Keywords**: controlled vocabularies, author keywords, metadata, subject analysis, MeSH, penemuan artikel
+- **Relevansi Bab**: Bab 4
+- **Sumber**: Berbagai referensi pustakawan (SJSU, Washington.edu)
+- **Diambil**: 2026-07-18
+
+> [Parafrase] Dalam penerbitan akademik dan analisis subjek, terdapat dua jenis metadata kata kunci: *Controlled Vocabularies* dan *Author Keywords*. *Controlled Vocabularies* (seperti MeSH untuk medis atau JEL untuk ekonomi) adalah daftar istilah standar dan terstruktur yang dikelola oleh pakar untuk mengurangi ambiguitas (misal: menyatukan "heart attack" dan "myocardial infarction"). Tujuannya adalah konsistensi dan akurasi tinggi dalam pencarian sistematis. Sebaliknya, *Author Keywords* adalah istilah bebas (*natural language*) yang dipilih sendiri oleh penulis. Meskipun tidak standar, kata kunci penulis penting karena mencerminkan tren, istilah baru, dan bahasa spesifik yang belum masuk ke standar baku. Praktik terbaik bagi jurnal adalah mengkombinasikan keduanya untuk memaksimalkan *discoverability* (keterlihatan) artikel.
+
+*Catatan konteks*: Di OJS, pengelola jurnal dapat mengaktifkan isian kata kunci penulis, namun editor juga disarankan menambahkan atau menyesuaikan kata kunci agar sejalan dengan *controlled vocabulary* di bidang ilmu jurnal tersebut.
+
+---
+
+### KB-027 — Ekstraksi Referensi (Reference Extraction) di OJS 3.3
+
+- **Kategori**: referensi-teknis, standar
+- **Keywords**: OJS 3.3, reference extraction, Crossref, XML export, metadata, daftar pustaka
+- **Relevansi Bab**: Bab 4
+- **Sumber**: PKP Docs / Crossref — https://docs.pkp.sfu.ca/ dan https://www.crossref.org/
+- **Diambil**: 2026-07-18
+
+> [Parafrase] OJS 3.3 memiliki fitur bawaan untuk mengekstrak dan memisahkan setiap item dalam daftar pustaka (*references*). Editor atau penulis harus menempelkan daftar pustaka sebagai teks biasa (satu referensi per baris) di *tab* "References" pada metadata artikel. Setelah tombol "Extract" ditekan, OJS menyimpan setiap referensi sebagai entri terpisah dalam basis data. Proses ini krusial karena saat artikel diekspor (XML) ke Crossref, referensi yang telah diekstrak ini dimasukkan ke dalam *tag* `<citation_list>`. Jika referensi dibiarkan menyatu dalam badan teks PDF tanpa diekstrak ke dalam metadata OJS, mesin pengindeks global tidak akan mampu membaca atau memanen daftar pustaka tersebut.
+
+*Catatan konteks*: Fitur ekstraksi referensi wajib diaktifkan melalui Settings > Workflow > Submission agar metadata referensi dapat dipanen.
+
+---
+
+### KB-028 — Praktik Terbaik Penentuan Gaya Selingkung (Citation Styles)
+
+- **Kategori**: praktik-terbaik, standar
+- **Keywords**: citation styles, APA, IEEE, Vancouver, gaya selingkung, konsistensi
+- **Relevansi Bab**: Bab 4
+- **Sumber**: Berbagai panduan penerbitan jurnal ilmiah
+- **Diambil**: 2026-07-18
+
+> [Parafrase] Menetapkan gaya selingkung atau *citation style* yang baku (seperti APA, IEEE, Vancouver, Chicago) adalah standar emas dalam pengelolaan jurnal. APA (*Author-Date*) umum digunakan di rumpun sosial dan psikologi karena menonjolkan aktualitas tahun riset. IEEE atau Vancouver (*Numerical*) lazim di teknik dan kedokteran untuk menghemat ruang dan membaca teknis dengan cepat tanpa interupsi nama pengarang. Praktik terbaik: (1) Jurnal harus menyatakan secara eksplisit gaya kutipan yang digunakan di halaman *Author Guidelines*; (2) Disarankan agar penulis diwajibkan menggunakan perangkat lunak *reference manager* (Zotero, Mendeley) guna menjamin konsistensi sitasi, mencegah kesalahan format manual, dan menyertakan metadata penting seperti DOI pada setiap akhir referensi.
+
+---
+
+### KB-029 — Crossref Reference Linking: Membangun Jejaring Sitasi
+
+- **Kategori**: referensi-teknis, praktik-terbaik
+- **Keywords**: Crossref Reference Linking, DOI, sitasi timbal balik, visibilitas
+- **Relevansi Bab**: Bab 4, Bab 14
+- **Sumber**: Crossref & PKP Docs — https://www.crossref.org/
+- **Diambil**: 2026-07-18
+
+> [Parafrase] Setelah mengekstrak daftar pustaka di OJS, jurnal sangat dianjurkan untuk menggunakan pengaya *Crossref Reference Linking*. Jika dikonfigurasi, pengaya ini akan memindai daftar pustaka artikel dan secara otomatis mencari tautan DOI untuk setiap referensi yang disitasi. Partisipasi dalam *reference linking* sangat vital karena menciptakan "jejaring riset akademis" (*scholarly research nexus*) dua arah. Artinya, artikel yang diterbitkan oleh jurnal tidak hanya mengutip artikel lain, tetapi Crossref akan mencatat metrik "cited-by" sehingga meningkatkan visibilitas artikel secara drastis di ekosistem global. Praktik ini juga semakin diperhatikan sebagai salah satu indikator kualitas jurnal oleh lembaga pengindeks seperti DOAJ.
+
+*Catatan konteks*: Pengaya ini harus diunduh atau diaktifkan melalui Plugin Gallery dan membutuhkan langganan Crossref aktif.
+
+---
+
+### KB-030 — Masalah Umum Standarisasi Daftar Pustaka untuk Pemanenan Metadata (Parsing)
+
+- **Kategori**: kasus, referensi-teknis
+- **Keywords**: metadata parsing, pemanenan referensi, hardcoded citations, reference manager
+- **Relevansi Bab**: Bab 4
+- **Sumber**: Berbagai panduan manajemen jurnal
+- **Diambil**: 2026-07-18
+
+> [Parafrase] Banyak jurnal mengalami masalah saat mengekspor referensi mereka ke pihak ketiga karena penulisan daftar pustaka dilakukan secara manual (*hardcoded*) dan formatnya acak-acakan. Ketika skrip pemanen (*parser*) dari Crossref atau DOAJ mencoba membaca teks biasa tersebut, mereka gagal mengenali bagian mana yang merupakan nama penulis, judul, nama jurnal, atau volume. Inilah alasan mengapa penggunaan *Reference Manager* dan penataan metadata OJS yang disiplin amat ditekankan. Referensi yang terstruktur rapi dengan separator yang benar (titik, koma, huruf miring) memungkinkan parser mengekstrak data meta dengan presisi tinggi, memastikan pengakuan kutipan (*citation credit*) yang akurat bagi penulis yang disitasi.
 
 ---
 
@@ -220,3 +439,9 @@ Dokumen ini diisi secara kumulatif oleh agen peneliti. Setiap entri baru **ditam
 |---------|-------------|-------------------|-----------------|
 | 2026-07-18 | OJS sejarah, statistik global & Indonesia, Open Access BOAI, kebijakan OA Indonesia, adopsi OJS Indonesia (SINTA/Garuda/ARJUNA), PKP School & PKP Docs, versi OJS 2.x vs 3.x, OJS 3.3, RJI | 10 (KB-001 s.d. KB-010) | Agen Peneliti Web (Antigravity) |
 | 2026-07-18 | Serials Crisis, OJS 3.x rewrite (2016), OJS 3.5 LTS (GDPR, self-invitation), OAI-PMH, Crossref, ORCID, ROR, PKP PN, LOCKSS | 4 (KB-011 s.d. KB-014) | Antigravity Utama |
+| 2026-07-18 | COPE citation manipulation, sejarah Mendeley Elsevier 2008 | 2 (KB-015 s.d. KB-016) | Antigravity Utama |
+| 2026-07-18 | DOAJ Principles of Transparency, Identitas Jurnal & Focus and Scope | 1 (KB-017) | Agen Peneliti Web (Antigravity) |
+| 2026-07-18 | Standar DOAJ/COPE untuk Editorial Board, keragaman afiliasi, in-house journal, sanksi dewan fiktif | 1 (KB-018) | Agen Peneliti Web (Antigravity) |
+| 2026-07-18 | Perbedaan Hak Cipta vs Hak Penerbitan, Lisensi Creative Commons, Kepemilikan Artikel BOAI | 3 (KB-019 s.d. KB-021) | Agen Peneliti Web (Antigravity) |
+| 2026-07-18 | Syarat DOAJ halaman About (Transparansi APC & Etika Publikasi), Praktik Terbaik Author Guidelines (Template sederhana vs layout), Masalah umum naskah penulis (line breaks, gambar, tabel) | 4 (KB-022 s.d. KB-025) | Agen Peneliti Web (Antigravity) |
+| 2026-07-18 | Controlled Vocabularies vs Author Keywords, Ekstraksi referensi OJS 3.3, Praktik gaya selingkung (Citation Styles), Crossref Reference Linking, Standarisasi parsing metadata pustaka | 5 (KB-026 s.d. KB-030) | Agen Peneliti Web (Antigravity) |

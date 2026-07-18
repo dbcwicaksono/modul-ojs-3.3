@@ -1,8 +1,10 @@
-# Bab 2: Analisis Subjek dan Bibliografi
+# Bab 4: Analisis Subjek dan Bibliografi
+
+> *Salah satu masalah paling persisten dalam publikasi ilmiah adalah daftar pustaka yang ditulis secara acak atau tidak mengikuti standar baku. Daftar pustaka yang berantakan bukan sekadar masalah estetika, melainkan hambatan serius yang menyebabkan mesin pengindeks gagal mengenali sitasi dan memutus jejaring metrik artikel tersebut.*
 
 Bibliografi merupakan komponen fundamental dalam penulisan ilmiah. Tanpa bibliografi yang benar, integritas sebuah karya ilmiah menjadi diragukan. Bab ini membahas konsep dasar bibliografi, fungsinya, serta berbagai gaya penulisan sitasi yang umum digunakan dalam penerbitan jurnal ilmiah.
 
-## 2.1 Pengertian Bibliografi
+## 4.1 Pengertian Bibliografi
 
 Kata **bibliografi** berasal dari bahasa Yunani: *biblio* (buku) dan *grafi* (menulis). Bibliografi dapat difungsikan sebagai suatu daftar buku atau artikel majalah untuk subjek tertentu yang mendaftar semua buku yang diterbitkan di wilayah geografi atau bahasa tertentu.
 
@@ -12,7 +14,7 @@ Beberapa definisi bibliografi menurut para ahli:
 - Menurut *American Library Association (ALA) Glossary of Library Terms*, bibliografi adalah suatu survei yang menggambarkan buku-buku secara baik dengan memperhatikan kepengarangan, edisi, bentuk fisik buku, dan lain-lain.
 - Menurut Thomas Landau dalam *Encyclopedia of Librarianship*, bibliografi adalah daftar deskriptif yang sistematik dan sejarah buku, kepengarangan, penerbit, edisi, dan sebagainya.
 
-## 2.2 Aspek yang Harus Diperhatikan dalam Bibliografi
+## 4.2 Aspek yang Harus Diperhatikan dalam Bibliografi
 
 Setiap entri bibliografi harus memuat aspek-aspek berikut secara lengkap dan akurat:
 
@@ -22,7 +24,7 @@ Setiap entri bibliografi harus memuat aspek-aspek berikut secara lengkap dan aku
 4. **Penerbit**, Afiliasi, dan Kota Terbit
 5. **Edisi**, Volume, URL (untuk sumber daring), dan informasi lainnya
 
-## 2.3 Fungsi Bibliografi
+## 4.3 Fungsi Bibliografi
 
 Bibliografi memiliki beberapa fungsi penting dalam ekosistem ilmu pengetahuan:
 
@@ -31,7 +33,7 @@ Bibliografi memiliki beberapa fungsi penting dalam ekosistem ilmu pengetahuan:
 3. Sebagai alat informasi bagi perpustakaan atau lembaga yang akan melakukan penelitian atau pengembangan koleksi.
 4. Mengetahui **sumber informasi** yang digunakan sebagai referensi dalam karya orang lain.
 
-## 2.4 Tujuan Bibliografi dan Syarat Menjadi Bibliografer
+## 4.4 Tujuan Bibliografi dan Syarat Menjadi Bibliografer
 
 ### Tujuan Bibliografi
 
@@ -47,7 +49,7 @@ Bibliografi memiliki beberapa fungsi penting dalam ekosistem ilmu pengetahuan:
 3. Tidak malu bertanya.
 4. Memiliki daya ingat yang baik (dapat dilatih).
 
-## 2.5 Data yang Harus Dicatat dalam Bibliografi
+## 4.5 Data yang Harus Dicatat dalam Bibliografi
 
 Dalam menyusun entri bibliografi, informasi berikut wajib dicatat:
 
@@ -56,11 +58,15 @@ Dalam menyusun entri bibliografi, informasi berikut wajib dicatat:
 3. **Impresum**: tempat terbit, nama penerbit, dan tahun terbit.
 4. **Kolasi**: jumlah jilid, halaman, keterangan ilustrasi, dan indeks.
 
-## 2.6 Macam-macam Gaya Bibliografi (Citation Style)
+## 4.6 Macam-macam Gaya Bibliografi (Citation Style)
 
 Gaya sitasi dikeluarkan oleh berbagai organisasi dan disesuaikan dengan bidang kajian masing-masing. Memilih gaya sitasi yang tepat sangat penting karena setiap jurnal umumnya mensyaratkan satu gaya tertentu dalam panduan penulisannya (*author guidelines*).
 
-### 2.6.1 Gaya APA (American Psychological Association)
+**Sorotan Standar Global: Ekstraksi Referensi dan Crossref Reference Linking**
+OJS 3.3 menyediakan fitur ekstraksi referensi yang memungkinkan sistem memisahkan setiap item dalam daftar pustaka menjadi metadata mandiri. Hal ini sejalan dengan praktik terbaik *Crossref Reference Linking*, di mana daftar pustaka yang terstruktur dengan baik akan disetor ke Crossref untuk membentuk jejaring sitasi otomatis (meningkatkan metrik "cited-by"). Mesin pemanen (*parser*) pengindeks global hanya dapat membaca referensi yang telah diekstrak dengan rapi ke dalam metadata, bukan dari naskah PDF secara langsung.
+*Sumber: Crossref (2025, https://www.crossref.org/) dan PKP Docs (2025, https://docs.pkp.sfu.ca/)*
+
+### 4.6.1 Gaya APA (American Psychological Association)
 
 Gaya APA paling umum digunakan dalam bidang **ilmu sosial, psikologi, dan pendidikan**. Ciri-cirinya:
 
@@ -78,7 +84,7 @@ Gaya APA paling umum digunakan dalam bidang **ilmu sosial, psikologi, dan pendid
 | **Buku (korporat)** | (APA, 2010) | American Psychological Association. (2010). *Publication manual of the APA Style* (6th ed.). Penulis. |
 | **Disertasi/Tesis** | Hartarto A (2019) | Hartarto, A. (2019). *Crossing boundaries in urban ecology* [Doctoral dissertation]. Proquest Dissertation & Theses Database. (UMI No. 327681). |
 
-### 2.6.2 Gaya Chicago dan Turabian
+### 4.6.2 Gaya Chicago dan Turabian
 
 Gaya Chicago atau Turabian umum digunakan dalam bidang **sastra, sejarah, dan seni**. Ciri khasnya:
 
@@ -96,7 +102,7 @@ Gaya Chicago atau Turabian umum digunakan dalam bidang **sastra, sejarah, dan se
 | **Buku** | Partini, *Bias Gender dalam Birokrasi* (Yogyakarta: Satya Wacana, 2013), 112. | Partini. *Bias Gender dalam Birokrasi*. Yogyakarta: Satya Wacana, 2013. |
 | **Jurnal** | Karim Jonathan, "Beyond Growth: Library and Development," *Annals of Library Research* 40, no. 5 (2015): 1111. | Jonathan, Karim. "Beyond Growth: Library and Development." *Annals of Library Research* 40, no. 5 (2015): 1111–1130. |
 
-### 2.6.3 Gaya Harvard (Cite Them Right, 10th Edition)
+### 4.6.3 Gaya Harvard (Cite Them Right, 10th Edition)
 
 Gaya Harvard banyak digunakan dalam bidang **bisnis dan ilmu sosial**. Format umum untuk artikel jurnal:
 
@@ -114,7 +120,7 @@ Nama belakang pengarang, Inisial. Tahun Publikasi. 'Judul artikel'. *Nama jurnal
 
 - **Jurnal Online**: Birbeck, D & Drummond, M 2006, 'Very young children's body image: bodies and minds under construction', *International Education Journal*, vol. 7, no. 4, dilihat 12 Desember 2006, \<https://iej.com\>.
 
-### 2.6.4 Gaya MLA (Modern Language Association)
+### 4.6.4 Gaya MLA (Modern Language Association)
 
 Gaya MLA umum digunakan dalam bidang **sastra dan bahasa**. Ciri-cirinya:
 
@@ -129,7 +135,7 @@ Gaya MLA umum digunakan dalam bidang **sastra dan bahasa**. Ciri-cirinya:
 |:---|:---|
 | Dunn berpendapat (1112) | Dunn, Creswell. "Beyond Growth: Library and Development." *Annals of Library Research* 40.5 (2015): 1111–1130. Print. |
 
-### 2.6.5 Gaya IEEE (Institute of Electrical and Electronics Engineers)
+### 4.6.5 Gaya IEEE (Institute of Electrical and Electronics Engineers)
 
 Gaya IEEE digunakan dalam bidang **teknik, elektro, dan komputer**. Ciri khasnya menggunakan **sistem penomoran** dalam teks, misalnya: `[1]`, `[2]`.
 
@@ -143,7 +149,10 @@ Gaya IEEE digunakan dalam bidang **teknik, elektro, dan komputer**. Ciri khasnya
 
 Catatan Teknis: Jika jumlah penulis lebih dari tiga orang dalam gaya sitasi tertentu, beberapa panduan menginstruksikan untuk menuliskan satu nama orang pertama dan menambahkan frasa *et al.*
 
-## 2.7 Analisis Subjek dalam Konteks Pengelolaan Jurnal
+**Catatan dari Lapangan**
+Banyak pengelola jurnal sering mengeluhkan kegagalan sistem pengindeks seperti DOAJ atau portal Garuda dalam mendeteksi dan menghitung jumlah kutipan artikel mereka. Salah satu penyebab utamanya adalah penulis sering kali menyusun daftar pustaka secara manual (*hardcoded citations*) dengan format yang acak-acakan. Ketika skrip pemanen (*parser*) mencoba membaca teks biasa tersebut, mereka gagal mengenali elemen-elemen penting seperti nama penulis atau judul artikel. Oleh karena itu, mewajibkan penggunaan perangkat lunak manajer referensi (*reference manager*) seperti Mendeley atau Zotero kepada penulis adalah solusi praktis untuk menjamin standardisasi dan kelancaran pemanenan metadata.
+
+## 4.7 Analisis Subjek dalam Konteks Pengelolaan Jurnal
 
 Analisis subjek adalah proses mengidentifikasi dan merepresentasikan isi dokumen (artikel, buku) ke dalam bentuk **kata kunci** (*keywords*) atau **subjek terstandar** yang memudahkan penelusuran kembali (*information retrieval*).
 
@@ -152,9 +161,25 @@ Dalam pengelolaan jurnal, analisis subjek sangat penting untuk:
 - Memastikan artikel dapat **ditemukan** oleh mesin pencari dan basis data pengindeks.
 - Mendukung proses **klasifikasi** dan pengorganisasian konten jurnal.
 
+**Sorotan Standar Global: *Controlled Vocabularies* dan *Author Keywords***
+Dalam praktik terbaik penerbitan akademik yang diakui oleh pengindeks global, sangat disarankan untuk mengkombinasikan *Author Keywords* dengan *Controlled Vocabularies*. *Controlled Vocabularies* (seperti MeSH atau JEL) adalah daftar istilah standar yang dikelola oleh pakar untuk mengurangi ambiguitas istilah yang digunakan penulis. Sementara itu, *Author Keywords* menangkap istilah bebas dan tren baru yang mungkin belum masuk ke standar baku. Kombinasi keduanya akan memaksimalkan kemampuan artikel ditemukan (*discoverability*) di basis data akademik.
+*Sumber: San Jose State University & University of Washington Libraries (2025, URL terkait panduan pustaka)*
+
 (Pengelolaan metadata artikel secara lebih komprehensif dibahas pada **Bab 13: Optimalisasi Metadata Artikel**).
 
-## Checklist Bab 2
+## Latihan Bab 4
+
+**Latihan 4.1: Analisis Ekstraksi Referensi**
+Skenario: Anda menerima sebuah artikel dengan daftar pustaka yang ditulis secara acak tanpa mengikuti standar baku apa pun.
+Tugas: Gunakan perangkat lunak manajer referensi atau format ulang secara manual untuk mengubah lima daftar pustaka acak tersebut menjadi format standar (misalnya APA atau IEEE) sehingga siap untuk diekstrak ke kolom referensi pada metadata artikel di OJS.
+**Panduan Fasilitator**: Berikan contoh daftar pustaka yang berantakan, lalu pantau kemampuan peserta dalam menstrukturkan kembali elemen-elemen (penulis, tahun, judul, sumber, DOI) menjadi format yang terbaca oleh sistem pemanen.
+
+**Latihan 4.2: Audit Kata Kunci**
+Skenario: Penulis mengirimkan artikel dengan sekumpulan kata kunci (*author keywords*) yang sangat spesifik dan beberapa di antaranya berupa frasa yang terlalu panjang.
+Tugas: Evaluasi kata kunci yang diberikan oleh penulis. Coba petakan kata kunci tersebut ke dalam *controlled vocabularies* (misalnya MeSH untuk kesehatan atau taksonomi khusus lainnya yang relevan).
+**Panduan Fasilitator**: Diskusikan dengan peserta perbedaan hasil pencarian ketika menggunakan kata kunci bebas dari penulis dibandingkan menggunakan istilah dari *controlled vocabularies*.
+
+## Checklist Bab 4
 
 - [ ] Pengertian dan pentingnya bibliografi telah dipahami secara konsep.
 - [ ] Berbagai gaya sitasi yang paling relevan dengan bidang jurnal (APA, IEEE, dsb.) telah dipelajari perbedaannya.

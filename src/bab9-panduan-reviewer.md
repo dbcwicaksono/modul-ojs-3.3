@@ -1,4 +1,4 @@
-# Bab 8: Panduan untuk Peninjau (Reviewer)
+﻿# Bab 9: Panduan untuk Peninjau (Reviewer)
 
 Bab ini membahas alur kerja penelaahan sejawat dari sudut pandang reviewer atau mitra bestari. Untuk konteks bagaimana editor menugaskan reviewer, lihat **Bab 7: Menugaskan Peninjau**. Untuk panduan editor dalam merespons hasil ulasan, lihat **Bab 9: Merespons Hasil Ulasan**.
 
@@ -13,7 +13,7 @@ Reviewer berkontribusi pada ekosistem ilmiah melalui tiga fungsi utama:
 
 ---
 
-## 8.1 Peran Reviewer dalam Ekosistem Jurnal
+## 9.1 Peran Reviewer dalam Ekosistem Jurnal
 
 Reviewer adalah pakar di bidangnya yang bertugas mengevaluasi kualitas konten naskah secara objektif dan independen guna menjamin integritas ilmiah naskah (COPE, 2017). Directory of Open Access Journals (DOAJ) mensyaratkan setiap jurnal yang terindeks harus secara jelas memublikasikan jenis penelaahan sejawat yang digunakan (misalnya *blind review* atau *double-blind review*), serta memastikan seluruh naskah penelitian melalui proses evaluasi sejawat oleh sekurang-kurangnya dua peninjau independen (DOAJ, 2024, https://doaj.org/apply/guide/).
 
@@ -21,7 +21,7 @@ Dalam proses *double-blind review*, identitas penulis dirahasiakan dari reviewer
 
 ---
 
-## 8.2 Menerima Undangan dan Login ke Sistem
+## 9.2 Menerima Undangan dan Login ke Sistem
 
 ### Memulai dari Email Undangan
 
@@ -51,7 +51,7 @@ Dasbor reviewer menampilkan naskah-naskah yang ditugaskan kepada reviewer yang s
 
 ---
 
-## 8.3 Langkah 1: Menerima atau Menolak Permintaan Review
+## 9.3 Langkah 1: Menerima atau Menolak Permintaan Review
 
 Setelah membuka tugas dari dasbor, reviewer masuk ke tahap **Request**. Tahap ini menyajikan:
 
@@ -75,7 +75,7 @@ Pengungkapan kepentingan bersaing adalah standar etika publikasi yang berlaku se
 
 ---
 
-## 8.4 Langkah 2: Membaca Pedoman Peninjau
+## 9.4 Langkah 2: Membaca Pedoman Peninjau
 
 Setelah menerima undangan, reviewer masuk ke tahap **Guidelines**. Bagian ini memuat instruksi khusus yang disusun oleh pengelola jurnal, yang mencakup:
 
@@ -88,7 +88,7 @@ Pedoman ini perlu dibaca secara saksama karena setiap jurnal dapat memiliki stan
 
 ---
 
-## 8.5 Langkah 3: Mengunduh File, Menilai, dan Memberikan Komentar
+## 9.5 Langkah 3: Mengunduh File, Menilai, dan Memberikan Komentar
 
 Tahap ini adalah inti dari proses penelaahan. Di sini evaluasi substantif terhadap naskah dilakukan.
 
@@ -150,7 +150,7 @@ Setelah selesai menilai, pilih satu rekomendasi final di bagian bawah halaman se
 
 ---
 
-## 8.6 Langkah 4: Penyelesaian dan Konfirmasi Akhir
+## 9.6 Langkah 4: Penyelesaian dan Konfirmasi Akhir
 
 1. Tinjau kembali seluruh komentar dan rekomendasi yang telah diisi.
 2. Klik **"Submit Review"**.
@@ -167,7 +167,7 @@ Setelah konfirmasi:
 
 ---
 
-## 8.7 Etika Peer Review
+## 9.7 Etika Peer Review
 
 Prinsip-prinsip etika berikut berlaku bagi reviewer berdasarkan panduan COPE Ethical Guidelines for Peer Reviewers (COPE, 2017, https://publicationethics.org/files/cope-ethical-guidelines-peer-reviewers-v2.pdf):
 
@@ -185,7 +185,7 @@ Prinsip-prinsip etika berikut berlaku bagi reviewer berdasarkan panduan COPE Eth
 
 ---
 
-## Checklist Bab 8
+## Checklist Bab 9
 
 - [ ] Email undangan sudah dibaca dan jadwal peninjauan sudah dicatat.
 - [ ] Tidak ada konflik kepentingan, atau konflik kepentingan sudah dilaporkan kepada editor.

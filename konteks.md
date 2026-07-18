@@ -47,13 +47,12 @@ modul-ojs-3/
 
 | Bagian | Judul | Bab |
 |---|---|---|
-| I | Persiapan dan Kemampuan Dasar | 1, 2 |
-| II | Pengenalan OJS 3.3 | 3 |
-| III | Alur Kerja Penulis | 4 |
-| IV | Alur Kerja Editorial | 5, 6, 7, 8, 9 |
-| V | Pasca-Review, Produksi, dan Penerbitan | 10, 11, 12 |
-| VI | Visibilitas dan Indeksasi | 13 |
-| VII | Diseminasi dan Peningkatan Visibilitas Jurnal | 14 (BELUM DIBUAT) |
+| I | Pengenalan dan Persiapan Jurnal | 1, 2, 3, 4 |
+| II | Alur Kerja Penulis (Author) | 5 |
+| III | Alur Kerja Editorial | 6, 7, 8, 9, 10 |
+| IV | Pasca-Review, Produksi, dan Penerbitan | 11, 12, 13 |
+| V | Visibilitas dan Indeksasi | 14 |
+| VI | Diseminasi dan Peningkatan Visibilitas Jurnal | 15 (BELUM DIBUAT) |
 | -- | Glosarium | (BELUM DIBUAT) |
 | -- | Daftar Pustaka Terpadu | (BELUM DIBUAT) |
 
@@ -65,9 +64,9 @@ modul-ojs-3/
 
 ### Ringkasan Cepat (Perbarui Setiap Sesi)
 
-- **Sesi terakhir**: 2026-07-18
-- **Dikerjakan**: Penulisan dan penyempurnaan Bab 3 (Gambaran Umum OJS) dengan menambahkan Pemantik Bab, Catatan Lapangan, Latihan, dan subbab konteks OJS di Indonesia.
-- **Berikutnya**: Beranjak ke Bab 7 atau bagian Front Matter (README.md, Cara Menggunakan Buku Ini).
+- **Sesi terakhir**: 2026-07-19
+- **Dikerjakan**: Menyunting dan memperkaya **Bab 4 (Bibliografi & Referensi)**. Menambahkan Pemantik Bab tentang dampak daftar pustaka acak terhadap indeksasi, Sorotan Standar Global (Ekstraksi Referensi OJS 3.3, Crossref Reference Linking, Controlled Vocabularies vs Author Keywords), Catatan dari Lapangan (keluhan editor terkait gagalnya parser pada *hardcoded citations*), dan Latihan Bab 4 (Analisis Ekstraksi Referensi & Audit Kata Kunci).
+- **Berikutnya**: Melanjutkan ke Bab 5 (Submission Penulis) atau bab lain sesuai urutan prioritas.
 
 ### Tahap 1: Pembersihan Gaya Bahasa [SELESAI — 2026-07-17]
 
@@ -84,20 +83,21 @@ Legenda status: `[ ]` Belum | `[R]` Riset selesai | `[/]` Sedang dikerjakan | `[
 |-----|-------|----------|-----------|---------------------|
 | README | Kata Pengantar | `[ ]` | `[ ]` | — |
 | Baru | Cara Menggunakan Buku Ini | `[ ]` | `[ ]` | — |
-| **Bab 1** | E-Resources & Penelusuran | `[ ]` | `[ ]` | — |
-| **Bab 2** | Bibliografi & Referensi | `[ ]` | `[ ]` | — |
-| **Bab 3** | Gambaran Umum OJS | `[R]` KB-001~010 | `[x]` | 2026-07-18 |
-| **Bab 4** | Submission (Penulis) | `[ ]` | `[ ]` | — |
-| **Bab 5** | Merespons Naskah (Desk Review) | `[ ]` | `[ ]` | — |
-| **Bab 6** | Similarity Check | `[ ]` | `[ ]` | — |
-| **Bab 7** | Assigning Reviewer | `[ ]` | `[ ]` | — |
-| **Bab 8** | Panduan Reviewer | `[ ]` | `[ ]` | — |
-| **Bab 9** | Keputusan Editorial | `[ ]` | `[ ]` | — |
-| **Bab 10** | Copyediting | `[ ]` | `[ ]` | — |
-| **Bab 11** | Produksi & Galley | `[ ]` | `[ ]` | — |
-| **Bab 12** | Manajemen Edisi | `[ ]` | `[ ]` | — |
-| **Bab 13** | Optimalisasi Metadata | `[ ]` | `[ ]` | — |
-| **Bab 14** | Diseminasi (BARU) | `[ ]` | `[ ]` | — |
+| **Bab 1** | Gambaran Umum OJS | `[R]` KB-001~010 | `[x]` | 2026-07-18 |
+| **Bab 2** | Identitas & Kebijakan Jurnal | `[R]` KB-017~023 | `[ ]` | 2026-07-18 |
+| **Bab 3** | E-Resources & Penelusuran | `[x]` | `[x]` | 2026-07-18 |
+| **Bab 4** | Bibliografi & Referensi | `[R]` KB-026~030 | `[x]` | 2026-07-19 |
+| **Bab 5** | Submission (Penulis) | `[R]` KB-024~025 | `[ ]` | 2026-07-18 |
+| **Bab 6** | Merespons Naskah (Desk Review) | `[ ]` | `[ ]` | — |
+| **Bab 7** | Similarity Check | `[ ]` | `[ ]` | — |
+| **Bab 8** | Assigning Reviewer | `[ ]` | `[ ]` | — |
+| **Bab 9** | Panduan Reviewer | `[ ]` | `[ ]` | — |
+| **Bab 10** | Keputusan Editorial | `[R]` KB-024 | `[ ]` | 2026-07-18 |
+| **Bab 11** | Copyediting | `[R]` KB-024~025 | `[ ]` | 2026-07-18 |
+| **Bab 12** | Produksi & Galley | `[R]` KB-024 | `[ ]` | 2026-07-18 |
+| **Bab 13** | Manajemen Edisi | `[ ]` | `[ ]` | — |
+| **Bab 14** | Optimalisasi Metadata | `[ ]` | `[ ]` | — |
+| **Bab 15** | Diseminasi (BARU) | `[ ]` | `[ ]` | — |
 | Back | Glosarium | `[ ]` | `[ ]` | — |
 | Back | Daftar Pustaka Terpadu | `[ ]` | `[ ]` | — |
 | Back | Indeks Subjek (BARU) | `[ ]` | `[ ]` | — |
@@ -106,7 +106,7 @@ Legenda status: `[ ]` Belum | `[R]` Riset selesai | `[/]` Sedang dikerjakan | `[
 
 ### Tahap 3: Aparatus Buku Baru [BELUM DIMULAI]
 
-- [ ] Bab 14 (Baru): Diseminasi dan Peningkatan Visibilitas Jurnal
+- [ ] Bab 15 (Baru): Diseminasi dan Peningkatan Visibilitas Jurnal
 - [ ] Glosarium (perkaya draft yang sudah ada)
 - [ ] Daftar Pustaka Terpadu (konsolidasi dari semua bab)
 - [ ] Indeks Subjek (`src/indeks-subjek.md`) — baru
@@ -119,24 +119,34 @@ Legenda status: `[ ]` Belum | `[R]` Riset selesai | `[/]` Sedang dikerjakan | `[
 
 | Bab | Sub-topik Tercakup | Entri KB | Sub-topik yang Belum Diteliti | Tanggal Terakhir |
 |-----|--------------------|----------|-------------------------------|------------------|
-| Bab 3 | Definisi & sejarah OJS; sejarah & misi PKP (John Willinsky, 1998); krisis publikasi (serials crisis); statistik global OJS (58.000 jurnal, 156 negara, 2025); definisi Open Access dari BOAI; adopsi OJS di Indonesia (11.000-17.000 instalasi); ekosistem ARJUNA, SINTA, Garuda; PKP School & PKP Docs; evolusi arsitektur OJS 1.x/2.x vs 3.x; OJS 3.4 & 3.5 LTS (GDPR, self-invitation); interoperabilitas (OAI-PMH, Crossref, ORCID, ROR, Turnitin, PKP PN, LOCKSS); profil RJI | KB-001 s.d. KB-014 | Definisi *audit trail* formal; kebijakan Permendikbudristek spesifik tentang OA; fitur *Activity Log* OJS secara detail | 2026-07-18 |
+| Bab 1 | Definisi & sejarah OJS; sejarah & misi PKP (John Willinsky, 1998); krisis publikasi (serials crisis); statistik global OJS (58.000 jurnal, 156 negara, 2025); definisi Open Access dari BOAI; adopsi OJS di Indonesia (11.000-17.000 instalasi); ekosistem ARJUNA, SINTA, Garuda; PKP School & PKP Docs; evolusi arsitektur OJS 1.x/2.x vs 3.x; OJS 3.4 & 3.5 LTS (GDPR, self-invitation); interoperabilitas (OAI-PMH, Crossref, ORCID, ROR, Turnitin, PKP PN, LOCKSS); profil RJI | KB-001 s.d. KB-014 | Definisi *audit trail* formal; kebijakan Permendikbudristek spesifik tentang OA; fitur *Activity Log* OJS secara detail | 2026-07-18 |
+| Bab 3 | Definisi manipulasi sitasi (COPE); sejarah Mendeley (2007) & akuisisi Elsevier; praktik sitasi etis | KB-015, KB-016 | Cara mendeteksi *citation rings* secara teknis | 2026-07-18 |
+| Bab 2 | DOAJ Principles of Transparency (Identitas Jurnal, Focus & Scope, Transparansi APC, Etika Publikasi); Standar Editorial Board, keragaman afiliasi, larangan dewan fiktif/in-house; Perbedaan Hak Cipta vs Hak Penerbitan; Lisensi CC; Kepemilikan artikel menurut BOAI | KB-017 s.d. KB-023 | Kebijakan privasi, frekuensi terbitan, sponsorship | 2026-07-18 |
+| Bab 4 | Controlled Vocabularies vs Author Keywords; Ekstraksi Referensi OJS 3.3; Gaya Selingkung (APA, IEEE, Vancouver); Crossref Reference Linking; Standarisasi Parsing Pustaka | KB-026 s.d. KB-030 | *(semua sub-topik belum diteliti)* | 2026-07-18 |
+| Bab 5 | Praktik terbaik Author Guidelines (Template sederhana vs Layout); Masalah umum naskah penulis (line breaks, resolusi gambar, tabel kompleks) | KB-024, KB-025 | *(semua sub-topik belum diteliti)* | 2026-07-18 |
+| Bab 10 | Praktik terbaik Author Guidelines (Template sederhana vs Layout) | KB-024 | *(semua sub-topik belum diteliti)* | 2026-07-18 |
+| Bab 11 | Praktik terbaik Author Guidelines (Template sederhana vs Layout); Masalah umum naskah penulis (line breaks, resolusi gambar, tabel kompleks) | KB-024, KB-025 | *(semua sub-topik belum diteliti)* | 2026-07-18 |
+| Bab 12 | Praktik terbaik Author Guidelines (Template sederhana vs Layout) | KB-024 | *(semua sub-topik belum diteliti)* | 2026-07-18 |
 | Bab lainnya | *(belum ada riset)* | — | *(semua sub-topik belum diteliti)* | — |
 
 
 ---
 
-## 5. Prinsip Penulisan yang Harus Dipatuhi di Semua Bab
+## 5. Prinsip Penulisan yang Harus Dipatuhi di Semua Bab (Gaya Buku Panduan Praktis Profesional)
 
-1. **Tidak ada em-dash (—)**. Ganti dengan titik dua, koma, atau susun ulang kalimat.
-2. **Tidak ada emotikon** atau simbol dekoratif di luar kutipan antarmuka sistem.
-3. **Tidak ada tanda seru** kecuali dalam kutipan antarmuka sistem OJS.
-4. **Setiap klaim normatif atau definitif disertai sumber**, atau diubah menjadi pernyataan prosedural yang dapat diverifikasi.
-5. **Gaya bahasa formal dan lugas**. Tidak ada frasa retoris tanpa dasar.
-6. **Label informal dilarang**. Gunakan "Catatan Teknis", "Catatan Penting", "Arahan Editorial", atau "Catatan Kritis".
-7. **Istilah asing ditulis miring (*italic*) pada kemunculan pertama** dan disertai padanan atau penjelasan singkat.
-8. **Setiap bab dapat dibaca secara mandiri**. Rujukan silang ("lihat Bab X") bersifat petunjuk, bukan prasyarat.
-9. **Setiap bab harus memiliki checklist** di bagian akhir sebelum Ringkasan.
-10. **Referensi dari sumber daring** wajib disertai tautan langsung yang dapat diklik.
+1. **Gaya Bahasa Praktis Profesional**: Menulis dengan lugas, jelas, dan berorientasi pada tindakan (*action-oriented*). Bahasa harus profesional namun mudah dipahami, tidak kaku seperti jurnal akademis, dan tidak terlalu dramatis seperti buku fiksi.
+2. **LARANGAN KERAS PENGGUNAAN NADA "SOK ASIK"**: Dilarang keras menggunakan gaya bahasa yang "sok-sokan", "sok asik", terlalu akrab, atau hiperbolis. Pertahankan nada (*tone*) yang datar, objektif, dan berwibawa.
+3. **Gunakan Format Terstruktur**: Sangat dianjurkan menggunakan daftar poin (*bullet points*) dan daftar bernomor (*numbered lists*) untuk merinci langkah-langkah, fitur, atau konsep.
+4. **Tidak ada em-dash (—)**: Ganti dengan titik dua atau koma.
+5. **Tidak ada emotikon** atau simbol dekoratif di luar kutipan antarmuka sistem.
+6. **Tidak ada tanda seru** kecuali dalam kutipan antarmuka sistem OJS.
+7. **Label informal dilarang**: Gunakan "Catatan Teknis", "Catatan Penting", "Arahan Editorial", atau "Catatan Kritis".
+8. **Fokus pada Kepraktisan**: Penjelasan teori (seperti sejarah atau standar global) harus langsung dikaitkan dengan implikasi praktisnya di lapangan.
+9. **Keakuratan Fakta**: Setiap klaim normatif atau definitif wajib disertai sumber (nama, tahun, URL).
+10. **Istilah asing ditulis miring (*italic*) pada kemunculan pertama** dan disertai padanan atau penjelasan singkat.
+11. **Setiap bab dapat dibaca secara mandiri**.
+12. **Setiap bab harus memiliki checklist** di bagian akhir sebelum Ringkasan.
+13. **Referensi dari sumber daring** wajib disertai tautan langsung yang dapat diklik.
 
 ---
 

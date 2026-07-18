@@ -4,52 +4,48 @@
 
 ---
 
-# Bagian I: Persiapan dan Kemampuan Dasar
+# Bagian I: Pengenalan dan Persiapan Jurnal
 
-- [Bab 1: Pengelolaan e-Resources & Manajemen Referensi](./bab1-eresources.md)
-- [Bab 2: Analisis Subjek & Bibliografi](./bab2-bibliografi.md)
-
----
-
-# Bagian II: Pengenalan OJS 3.3
-
-- [Bab 3: Gambaran Umum Alur Kerja Editorial OJS](./bab3-gambaran-umum.md)
+- [Bab 1: Gambaran Umum Alur Kerja Editorial OJS](./bab1-gambaran-umum.md)
+- [Bab 2: Pengaturan Identitas dan Kebijakan Dasar Jurnal](./bab2-identitas-kebijakan.md)
+- [Bab 3: Pengelolaan e-Resources & Manajemen Referensi](./bab3-eresources.md)
+- [Bab 4: Analisis Subjek & Bibliografi](./bab4-bibliografi.md)
 
 ---
 
-# Bagian III: Alur Kerja Penulis (Author)
+# Bagian II: Alur Kerja Penulis (Author)
 
-- [Bab 4: Panduan Lengkap Mengirimkan Artikel](./bab4-submission.md)
-
----
-
-# Bagian IV: Alur Kerja Editorial
-
-- [Bab 5: Merespons Kiriman Naskah Baru](./bab5-merespons-naskah.md)
-- [Bab 6: Pemeriksaan Plagiasi (Similarity Check)](./bab6-similarity-check.md)
-- [Bab 7: Menugaskan Peninjau (Assigning Reviewer)](./bab7-assigning-reviewer.md)
-- [Bab 8: Panduan untuk Peninjau (Reviewer)](./bab8-panduan-reviewer.md)
-- [Bab 9: Merespons Hasil Ulasan (Editorial Decision)](./bab9-editorial-decision.md)
+- [Bab 5: Panduan Lengkap Mengirimkan Artikel](./bab5-submission.md)
 
 ---
 
-# Bagian V: Pasca-Review, Produksi, dan Penerbitan
+# Bagian III: Alur Kerja Editorial
 
-- [Bab 10: Penyuntingan Naskah (Copyediting)](./bab10-copyediting.md)
-- [Bab 11: Produksi, Tata Letak & Galley](./bab11-produksi.md)
-- [Bab 12: Manajemen Edisi (Issue) & Pasca Penerbitan](./bab12-manajemen-edisi.md)
-
----
-
-# Bagian VI: Visibilitas & Indeksasi
-
-- [Bab 13: Optimalisasi Metadata Artikel](./bab13-metadata.md)
+- [Bab 6: Merespons Kiriman Naskah Baru](./bab6-merespons-naskah.md)
+- [Bab 7: Pemeriksaan Plagiasi (Similarity Check)](./bab7-similarity-check.md)
+- [Bab 8: Menugaskan Peninjau (Assigning Reviewer)](./bab8-assigning-reviewer.md)
+- [Bab 9: Panduan untuk Peninjau (Reviewer)](./bab9-panduan-reviewer.md)
+- [Bab 10: Merespons Hasil Ulasan (Editorial Decision)](./bab10-editorial-decision.md)
 
 ---
 
-# Bagian VII: Diseminasi dan Peningkatan Visibilitas Jurnal
+# Bagian IV: Pasca-Review, Produksi, dan Penerbitan
 
-- [Bab 14: Diseminasi dan Peningkatan Visibilitas Jurnal](./bab14-diseminasi.md)
+- [Bab 11: Penyuntingan Naskah (Copyediting)](./bab11-copyediting.md)
+- [Bab 12: Produksi, Tata Letak & Galley](./bab12-produksi.md)
+- [Bab 13: Manajemen Edisi (Issue) & Pasca Penerbitan](./bab13-manajemen-edisi.md)
+
+---
+
+# Bagian V: Visibilitas & Indeksasi
+
+- [Bab 14: Optimalisasi Metadata Artikel](./bab14-metadata.md)
+
+---
+
+# Bagian VI: Diseminasi dan Peningkatan Visibilitas Jurnal
+
+- [Bab 15: Diseminasi dan Peningkatan Visibilitas Jurnal](./bab15-diseminasi.md)
 
 ---
 

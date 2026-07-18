@@ -1,4 +1,4 @@
-# Bab 10: Penyuntingan Naskah (Copyediting)
+﻿# Bab 11: Penyuntingan Naskah (Copyediting)
 
 Tahap **Copyediting** adalah fase ketiga dalam alur kerja editorial OJS 3.3, yang dimulai tepat setelah naskah dinyatakan diterima (*Accepted*) pada akhir tahap penelaahan sejawat. Tahap ini merupakan jembatan antara konten yang telah disetujui secara substansi dengan proses produksi tata letak.
 
@@ -6,7 +6,7 @@ Fokus tahap penyuntingan bukan lagi menilai isi penelitian, melainkan menyempurn
 
 Menurut standar Directory of Open Access Journals (DOAJ), transparansi proses editorial dan penyuntingan adalah kriteria penting. Seluruh tahapan penyuntingan, termasuk *copyediting*, harus memiliki jejak audit yang jelas dan melibatkan peran profesional untuk memastikan standar bahasa terjaga sebelum diterbitkan.
 
-## 10.1 Peran dan Tanggung Jawab
+## 11.1 Peran dan Tanggung Jawab
 
 Kolaborasi yang transparan antar-aktor sangat penting di tahap ini:
 
@@ -16,7 +16,7 @@ Kolaborasi yang transparan antar-aktor sangat penting di tahap ini:
 | **Copyeditor** | Melakukan penyuntingan teknis: mengunduh naskah, memperbaiki tata bahasa, format, dan rujukan, serta mengunggah kembali versi yang telah disempurnakan. |
 | **Author (Penulis)** | Meninjau semua perubahan yang dilakukan penyunting dan memberikan persetujuan atau klarifikasi melalui fitur diskusi sebelum naskah dinyatakan final. |
 
-## 10.2 Menugaskan Copyeditor
+## 11.2 Menugaskan Copyeditor
 
 Langkah pertama editor setelah naskah masuk ke tahap *copyediting* adalah menugaskan penyunting.
 
@@ -31,7 +31,7 @@ Prosedur penugasan:
 
 ![Panel Participants: menugaskan Copyeditor](../img/elementor-placeholder-image.png)
 
-## 10.3 Alur Kerja Teknis Penyuntingan Naskah
+## 11.3 Alur Kerja Teknis Penyuntingan Naskah
 
 OJS 3.3 memfasilitasi pertukaran dokumen secara sistematis guna mencegah tumpang tindih versi dokumen:
 
@@ -55,7 +55,7 @@ Catatan Teknis: Saat mengunggah, berikan label dokumen dengan nama yang jelas, m
 
 ![Area Draft Files dan Upload di tahap Copyediting](../img/elementor-placeholder-image.png)
 
-## 10.4 Komunikasi dan Kolaborasi Melalui Fitur Diskusi
+## 11.4 Komunikasi dan Kolaborasi Melalui Fitur Diskusi
 
 Fitur **Copyediting Discussions** berfungsi sebagai alat dokumentasi formal dalam manajemen jurnal.
 
@@ -75,7 +75,7 @@ Cara memulai diskusi dengan penulis:
 
 ![Fitur diskusi Copyediting: komunikasi editor dan penulis](../img/elementor-placeholder-image.png)
 
-## 10.5 Finalisasi dan Transisi ke Tahap Produksi
+## 11.5 Finalisasi dan Transisi ke Tahap Produksi
 
 Tahap *Copyediting* dinyatakan selesai ketika editor mengonfirmasi bahwa naskah telah disunting dengan baik dan disetujui oleh penulis.
 
@@ -91,7 +91,7 @@ Setelah langkah ini:
 
 ![Jendela Send to Production: pemilihan file final](../img/elementor-placeholder-image.png)
 
-## 10.6 Catatan Tambahan Penyuntingan
+## 11.6 Catatan Tambahan Penyuntingan
 
 Terdapat beberapa aspek penting untuk memastikan tahap penyuntingan berjalan efektif:
 
@@ -99,7 +99,7 @@ Terdapat beberapa aspek penting untuk memastikan tahap penyuntingan berjalan efe
 - **Penerapan Templat**: Praktik yang baik adalah mengarahkan penyunting untuk menerapkan templat (*template*) jurnal sejak tahap ini, untuk meringankan beban kerja penyusun tata letak.
 - **Validasi Referensi**: Pastikan semua tautan DOI dalam daftar rujukan aktif dan akurat. Validasi dapat dilakukan melalui alat pencarian standar seperti Crossref.
 
-## Checklist Bab 10
+## Checklist Bab 11
 
 Sebelum naskah bergeser ke tahap tata letak, pastikan seluruh tindakan di bawah ini sudah terpenuhi:
 

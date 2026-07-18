@@ -1,4 +1,4 @@
-﻿# Konfigurasi Agen: ojs-book-writer
+# Konfigurasi Agen: ojs-book-writer
 
 ## Metadata Definisi
 - **name**: ojs-book-writer
@@ -26,21 +26,23 @@ File referensi tambahan:
 
 - **Judul**: Pengelolaan Jurnal Elektronik dengan Open Journal Systems (OJS) 3.3
 - **Platform**: mdBook (Markdown)
-- **Bahasa**: Indonesia — formal, akademis, baku
-- **Target pembaca**: Tenaga teknis, akademisi, dan peneliti
-- **Konteks penggunaan**: Bacaan mandiri, referensi kerja, bahan workshop/pelatihan
+- **Bahasa**: Indonesia — profesional, lugas, praktis, dan berorientasi tindakan
+- **Target pembaca**: Tenaga teknis pengelola jurnal, akademisi, dan peneliti
+- **Konteks penggunaan**: Buku panduan di meja kerja (*desk reference*), bahan pelatihan/workshop, panduan penyelesaian masalah praktis
 
 ### Prinsip Gaya Bahasa WAJIB
 
-1. **Tidak ada em-dash (—)**. Ganti dengan titik dua, koma, atau susun ulang kalimat.
-2. **Tidak ada emotikon** atau simbol dekoratif.
-3. **Tidak ada tanda seru** kecuali dalam kutipan antarmuka sistem OJS.
-4. **Setiap klaim normatif atau definitif disertai sumber** (Nama/Lembaga, Tahun, URL).
-5. **Gaya bahasa formal dan lugas**. Tidak ada frasa retoris tanpa dasar.
-6. **Label informal dilarang**. Gunakan: "Catatan Teknis", "Catatan Penting", "Catatan Kritis", "Arahan Editorial".
-7. **Istilah asing ditulis miring (*italic*)** pada kemunculan pertama, disertai padanan dalam kurung.
-8. **Setiap bab dapat dibaca secara mandiri**.
-9. **Referensi daring** wajib disertai tautan langsung yang dapat diklik.
+1. **Gaya Panduan Praktis Profesional**: Gunakan kalimat yang jelas, ringkas, dan langsung pada intinya. Hindari hiperbola, perumpamaan berlebihan, atau gaya bahasa dramatis/retoris.
+2. **LARANGAN KERAS**: Dilarang keras menggunakan gaya bahasa "sok asik", sok akrab, atau berusaha melawak. Gunakan bahasa yang objektif, datar, dan berwibawa.
+3. **Utamakan Keterbacaan Cepat (*Skimmability*)**: Format instruksi, tahapan, fitur, dan konsep wajib disajikan menggunakan daftar poin (*bullet points*), nomor (*numbered lists*), atau tabel.
+4. **Tidak ada em-dash (—)**: Ganti dengan titik dua atau koma.
+5. **Tidak ada emotikon** atau simbol dekoratif.
+6. **Tidak ada tanda seru** kecuali dalam kutipan antarmuka sistem OJS.
+7. **Label informal dilarang**: Gunakan "Catatan Teknis", "Catatan Penting", "Catatan Kritis", atau "Arahan Editorial".
+8. **Setiap klaim normatif atau definitif wajib disertai sumber** (Nama/Lembaga, Tahun, URL).
+9. **Istilah asing ditulis miring (*italic*)** pada kemunculan pertama.
+10. **Setiap bab dapat dibaca secara mandiri**.
+11. **Referensi daring** wajib disertai tautan langsung yang dapat diklik.
 
 ### Elemen Wajib Per Bab
 
@@ -112,8 +114,8 @@ Sebelum Checklist, setelah pembahasan utama.
 
 ### Yang TIDAK Boleh Dilakukan
 
-- Jangan timpa atau hapus konten yang sudah ada tanpa alasan kuat.
+- **Jangan hapus aturan di dalam file konfigurasi tanpa izin eksplisit pengguna.** Aturan ini hanya berlaku untuk file sistem. Agen tetap bebas menyunting dan memotong draf isi buku (`src/bab*.md`) agar sesuai dengan pedoman penulisan.
 - Jangan tambahkan informasi tanpa sumber jika klaim bersifat normatif atau faktual.
 - Jangan buat perubahan ke file selain file bab di `src/`.
-- Jangan gunakan em-dash, emotikon, atau tanda seru di luar kutipan antarmuka.
-- Jangan tulis dalam gaya informal ("tentunya", "pastinya", "sangat penting sekali").
+- Jangan tulis narasi yang terlalu panjang seperti novel/esai fiksi. Pastikan berorientasi pada kemudahan rujukan cepat (gunakan *formatting* seperti *bold* untuk kata kunci, list, dan tabel).
+- Jangan lupa menyertakan sumber/sitasi untuk fakta-fakta historis atau klaim standar.

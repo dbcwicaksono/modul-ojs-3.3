@@ -1,12 +1,12 @@
-# Bab 12: Manajemen Edisi dan Pasca Penerbitan
+﻿# Bab 13: Manajemen Edisi dan Pasca Penerbitan
 
 Manajemen edisi adalah tahap puncak dari seluruh rangkaian alur kerja editorial di OJS 3.3. Setelah naskah melewati tahap *Submission*, *Review*, *Copyediting*, dan *Production*, langkah terakhir adalah menggabungkan artikel-artikel yang telah siap ke dalam sebuah edisi dan menerbitkannya kepada publik.
 
-## 12.1 Konsep Dasar: Hubungan Naskah dan Edisi
+## 13.1 Konsep Dasar: Hubungan Naskah dan Edisi
 
 Sebelum memulai manajemen edisi, pengelola harus memahami satu konsep kunci: sebuah naskah hanya akan muncul dalam sistem manajemen edisi apabila telah dilakukan tindakan penjadwalan (*Scheduling*) pada akhir tahap *Production*. Tanpa proses penjadwalan tersebut, naskah tidak akan tersedia untuk dimasukkan ke dalam edisi mana pun.
 
-## 12.2 Navigasi Menu Issues
+## 13.2 Navigasi Menu Issues
 
 Untuk mengelola edisi, navigasikan ke menu sisi kiri dan pilih **"Issues"**. Halaman ini terbagi menjadi dua tab utama:
 
@@ -15,7 +15,7 @@ Untuk mengelola edisi, navigasikan ke menu sisi kiri dan pilih **"Issues"**. Hal
 | **Future Issues** | Edisi yang sedang dipersiapkan atau belum diterbitkan. | Berfungsi sebagai wadah penampungan naskah yang telah dijadwalkan dari tahap *Production*. |
 | **Back Issues** | Edisi yang sudah diterbitkan kepada publik. | Berfungsi sebagai arsip dan area untuk melakukan koreksi pascapublikasi jika diperlukan. |
 
-## 12.3 Membuat Edisi Baru (Create Issue)
+## 13.3 Membuat Edisi Baru (Create Issue)
 
 Sebelum naskah dapat dijadwalkan, editor harus membuat wadah edisi terlebih dahulu.
 
@@ -34,7 +34,7 @@ Sebelum naskah dapat dijadwalkan, editor harus membuat wadah edisi terlebih dahu
 
 ![Formulir Create Issue](../img/elementor-placeholder-image.png)
 
-## 12.4 Mengelola Daftar Isi Edisi (Table of Contents)
+## 13.4 Mengelola Daftar Isi Edisi (Table of Contents)
 
 Setelah naskah dijadwalkan ke dalam edisi, editor mengatur tata letak presentasi edisi tersebut. Klik ikon panah di sebelah judul edisi untuk mengakses opsi pengelolaan:
 
@@ -50,7 +50,7 @@ Catatan Penting: Selalu lakukan verifikasi akhir pada metadata edisi sebelum men
 
 ![Tampilan pengelolaan Table of Contents edisi](../img/elementor-placeholder-image.png)
 
-## 12.5 Menerbitkan Edisi (Publish Issue)
+## 13.5 Menerbitkan Edisi (Publish Issue)
 
 Setelah seluruh naskah dalam edisi siap dan metadata tervalidasi:
 
@@ -62,7 +62,7 @@ Setelah seluruh naskah dalam edisi siap dan metadata tervalidasi:
 
 ![Jendela konfirmasi Publish Issue dengan opsi Notify Users](../img/elementor-placeholder-image.png)
 
-## 12.6 Menetapkan Edisi Terkini (Current Issue)
+## 13.6 Menetapkan Edisi Terkini (Current Issue)
 
 OJS 3.3 memungkinkan pengelola menetapkan edisi mana yang ditampilkan paling awal di halaman utama beranda jurnal:
 
@@ -71,7 +71,7 @@ OJS 3.3 memungkinkan pengelola menetapkan edisi mana yang ditampilkan paling awa
 
 Fitur ini berguna apabila jurnal menerbitkan edisi khusus (*special issue*) dan ingin menampilkan edisi tersebut sebagai sorotan utama untuk sementara waktu.
 
-## 12.7 Fitur Pascapenerbitan: Koreksi dan Pengelolaan
+## 13.7 Fitur Pascapenerbitan: Koreksi dan Pengelolaan
 
 ### Unpublish Issue (Membatalkan Publikasi)
 
@@ -94,7 +94,7 @@ Jika diperlukan koreksi pada metadata artikel setelah terbit:
 
 Mengubah metadata artikel pascaterbit (terutama tanggal terbit atau daftar nama penulis) dapat merusak sinkronisasi data dengan pengindeks seperti Google Scholar dan Crossref. Lakukan hanya jika benar-benar mendesak.
 
-## 12.8 Aktivitas Pascapenerbitan dan DOI
+## 13.8 Aktivitas Pascapenerbitan dan DOI
 
 Setelah edisi terbit, langkah teknis terpenting berikutnya adalah mendepositkan metadata dan mendaftarkan DOI artikel ke Crossref.
 
@@ -118,7 +118,7 @@ Jika jurnal telah menjadi anggota Crossref, proses registrasi DOI dapat dilakuka
 
 Catatan: Untuk materi mengenai strategi promosi dan peningkatan visibilitas artikel secara eksternal (melalui media sosial atau repositori), lihat **Bab 14: Diseminasi dan Peningkatan Visibilitas Jurnal**.
 
-## Checklist Bab 12
+## Checklist Bab 13
 
 Gunakan daftar periksa berikut untuk mengelola edisi jurnal:
 

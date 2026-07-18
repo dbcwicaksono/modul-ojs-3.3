@@ -1,10 +1,10 @@
-# Bab 13: Optimalisasi Metadata Artikel
+﻿# Bab 14: Optimalisasi Metadata Artikel
 
 Metadata adalah fondasi dari visibilitas dan kemampuan penemuan artikel (*discoverability*) di ekosistem penerbitan digital. Metadata yang lengkap, akurat, dan konsisten menentukan seberapa mudah artikel ilmiah dapat ditemukan, disitasi, dan diindeks oleh mesin pencari maupun basis data kepustakaan global.
 
 Pemeliharaan metadata merupakan tanggung jawab yang diemban bersama antara tim editor dan penulis. Kesalahan pencatatan metadata dapat menimbulkan dampak serius, mulai dari kegagalan distribusi DOI hingga penyematan sitasi yang keliru pada profil Google Scholar penulis.
 
-## 13.1 Pengertian Metadata Artikel
+## 14.1 Pengertian Metadata Artikel
 
 Metadata secara harfiah merujuk pada data yang menyajikan informasi mengenai data lainnya (Pomerantz, 2015). Metadata tidak sekadar berfungsi mendeskripsikan data mentah; entitas ini turut menggambarkan bagaimana sebuah organisasi mengonseptualisasikan aktivitasnya, aspek kewilayahan, konteks waktu, serta tujuan pendiriannya (Hay, 2006). Menurut Riley (2017), metadata adalah struktur informasi yang dibuat, disimpan, dan dibagikan dengan tujuan memampukan interaksi sistematis untuk ekstraksi pengetahuan.
 
@@ -41,7 +41,7 @@ Selain itu, standar **Directory of Open Access Journals (DOAJ)** secara spesifik
 
 Catatan Kritis: Praktik mengubah metadata suatu artikel setelah tanggal publikasinya sangat tidak direkomendasikan. Perubahan modifikasi waktu rilis atau nama penulis dapat menimbulkan konflik pembaruan data pada Google Scholar dan sistem pengindeks lainnya. Tim editorial diwajibkan mengonfirmasi seluruh detail metadata kepada penulis jauh sebelum artikel mencapai tahap penerbitan.
 
-## 13.2 Konfigurasi Awal Metadata di OJS 3
+## 14.2 Konfigurasi Awal Metadata di OJS 3
 
 Sebelum setiap artikel dapat diisi metadatanya, pengelola jurnal diwajibkan menyelesaikan konfigurasi global pada pangkalan sistem:
 
@@ -70,7 +70,7 @@ Instruksi: Kelola kompartemen penerbitan jurnal, misalnya kategori Artikel Penel
 **Pengaya Pendanaan (Funding Plugin)**: Memfasilitasi pendaftaran dana hibah penelitian secara transparan. Diaktifkan melalui menu Plugins di Website Settings.
 **Pengaya Crossref Reference Linking**: Mensinkronisasikan daftar referensi dengan pangkalan data DOI global secara otonom.
 
-## 13.3 Standar Struktur Metadata Artikel OJS 3
+## 14.3 Standar Struktur Metadata Artikel OJS 3
 
 Struktur metadata di dalam naskah terbagi atas beberapa kelompok inti. Berikut merupakan pedoman teknis pengelolaan masing-masing kelompok:
 
@@ -146,7 +146,7 @@ Pemeriksaan akhir atas hak cipta berpusat pada:
 
 Menu administratif penataan metadata tingkat lanjut di mana editor menyematkan artikel ke dalam kerangka edisi tertentu, menyematkan penomoran halaman yang utuh (*Pages*), menentukan gambar sampul artikel individual (apabila diimplementasikan), serta memvalidasi atribut penanggalan tanggal publikasi akhir artikel.
 
-## 13.4 Teknik Penyuntingan Metadata Pra-Terbit
+## 14.4 Teknik Penyuntingan Metadata Pra-Terbit
 
 Siklus pengeditan baku sebelum status publikasi aktif dalam OJS 3.3:
 1. Masuk ke pangkalan sistem dengan otorisasi Editor.
@@ -156,7 +156,7 @@ Siklus pengeditan baku sebelum status publikasi aktif dalam OJS 3.3:
 5. Ganti nilai-nilai metadata pada porsi sub-tab yang dikehendaki.
 6. Patenkan setiap perubahan melalui tombol **Save** sebelum berpindah tabulasi.
 
-## 13.5 Teknik Penyuntingan Metadata Pasca-Terbit
+## 14.5 Teknik Penyuntingan Metadata Pasca-Terbit
 
 Ketentuan Prosedural OJS 3.3: Berbeda dari versi pendahulunya, sistem OJS modern memberikan perlindungan ketat pada artikel yang sudah diedarkan. Memodifikasi artikel yang telah rilis **memerlukan intervensi prosedur penarikan atau unpublish** secara sementara.
 

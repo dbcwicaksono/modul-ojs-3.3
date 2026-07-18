@@ -1,10 +1,10 @@
-# Bab 11: Produksi, Tata Letak, dan Galley
+﻿# Bab 12: Produksi, Tata Letak, dan Galley
 
 Tahap **Produksi** adalah fase keempat dan terakhir dalam alur kerja editorial OJS 3.3. Pada tahap ini, naskah yang telah melalui proses penyuntingan dikonversi menjadi format publikasi resmi yang disebut **Galley**, kemudian dijadwalkan ke dalam edisi (*issue*) tertentu.
 
 Tujuan utama tahap produksi bukan lagi untuk menyunting substansi konten, melainkan memastikan presentasi teknis naskah siap diakses oleh pembaca secara global dalam format yang profesional dan akurat.
 
-## 11.1 Peran dalam Tahap Produksi
+## 12.1 Peran dalam Tahap Produksi
 
 | Aktor | Tanggung Jawab |
 |-------|---------------|
@@ -15,7 +15,7 @@ Tujuan utama tahap produksi bukan lagi untuk menyunting substansi konten, melain
 
 Catatan Teknis: OJS 3.3 memberikan fleksibilitas peran. Apabila tim pengelola terbatas, seorang editor dapat merangkap peran sebagai Layout Editor dengan cara memberikan akses peran tambahan di dalam sistem.
 
-## 11.2 Penugasan Tim Produksi
+## 12.2 Penugasan Tim Produksi
 
 Langkah pertama pada tahap produksi adalah menunjuk personel pelaksana:
 
@@ -27,7 +27,7 @@ Langkah pertama pada tahap produksi adalah menunjuk personel pelaksana:
 
 ![Panel Participants di tahap Production](../img/elementor-placeholder-image.png)
 
-## 11.3 Pembuatan File Galley
+## 12.3 Pembuatan File Galley
 
 Layout Editor akan mengunduh berkas *copyedited* dari tahap sebelumnya, melakukan tata letak menggunakan perangkat lunak eksternal, lalu mengunggahnya kembali sebagai **Galley**.
 
@@ -58,7 +58,7 @@ Pentingnya Format XML JATS: *Journal Article Tag Suite* (JATS) adalah format sta
 
 ![Tampilan unggah Galley di tahap Production](../img/elementor-placeholder-image.png)
 
-## 11.4 Diskusi Produksi dan Proofreading
+## 12.4 Diskusi Produksi dan Proofreading
 
 Fungsikan fitur **"Production Discussions"** sebagai pusat komunikasi utama selama tahap ini.
 
@@ -76,7 +76,7 @@ Seluruh komunikasi harus dilakukan melalui fitur diskusi produksi OJS, bukan mel
 
 ![Fitur Production Discussions untuk proofreading](../img/elementor-placeholder-image.png)
 
-## 11.5 Finalisasi Metadata di Tab Publication
+## 12.5 Finalisasi Metadata di Tab Publication
 
 Sebelum naskah dijadwalkan untuk terbit, pastikan semua metadata sudah terverifikasi. Masuk ke tab **"Publication"** pada halaman alur kerja naskah dan periksa elemen berikut:
 
@@ -92,7 +92,7 @@ Sebelum naskah dijadwalkan untuk terbit, pastikan semua metadata sudah terverifi
 
 ![Tab Publication: verifikasi metadata sebelum publikasi](../img/elementor-placeholder-image.png)
 
-## 11.6 Menjadwalkan Naskah ke Dalam Issue
+## 12.6 Menjadwalkan Naskah ke Dalam Issue
 
 Setelah galley dan metadata siap, naskah siap dijadwalkan:
 
@@ -105,7 +105,7 @@ Naskah kini telah dijadwalkan dan akan dipublikasikan secara daring bersamaan de
 
 ![Penjadwalan naskah ke dalam Future Issue](../img/elementor-placeholder-image.png)
 
-## Checklist Bab 11
+## Checklist Bab 12
 
 Sebelum beralih ke tahap manajemen edisi, pastikan poin-poin berikut telah terselesaikan:
 
