@@ -1,189 +1,322 @@
-# Rencana Implementasi: Panduan Pengelolaan Jurnal Elektronik dengan OJS 3.3
+# Transformasi Modul OJS 3.3 Menjadi Buku Teks/Referensi
 
-## Keputusan Desain yang Sudah Disepakati
+## Visi dan Latar Belakang
 
-| Pertanyaan | Keputusan |
-|---|---|
-| Penempatan glosarium | Masuk navigasi utama buku (memudahkan pengembangan dan rujukan silang antar bab) |
-| Subbab promosi/diseminasi | Dijadikan Bagian VII tersendiri: "Diseminasi dan Peningkatan Visibilitas Jurnal" |
-| Sumber referensi | Gunakan sumber asli (bahasa Inggris maupun Indonesia) dengan tautan langsung |
+Modul yang ada saat ini sudah sangat baik secara prosedural: bersih dari gaya bahasa informal, berstruktur, dan bersumber. Namun ia masih berkarakter **panduan teknis** — linear, berbasis langkah, dan terbatas pada pengalaman "di dalam kotak OJS". Transformasi ini bertujuan mengangkatnya menjadi **buku teks referensi** yang:
 
----
-
-## Prinsip Penulisan yang Diterapkan Seluruhnya
-
-1. Tidak menggunakan em-dash. Ganti dengan titik dua (:), koma, atau susun ulang kalimat.
-2. Tidak menggunakan emotikon atau simbol dekoratif di luar kutipan langsung antarmuka sistem.
-3. Tidak menggunakan tanda seru kecuali dalam kutipan antarmuka sistem.
-4. Setiap klaim definitif atau normatif disertai sumber atau diubah menjadi pernyataan prosedural.
-5. Gaya bahasa formal dan lugas. Tidak ada frasa retoris tanpa dasar.
-6. Label informal ("Pro-Tip", "Expert Tip") diganti: "Catatan Teknis" atau "Catatan Penting".
-7. Istilah asing ditulis miring pada kemunculan pertama dan disertai padanan atau penjelasan.
-8. Setiap bab harus dapat dibaca secara mandiri tanpa harus membaca bab sebelumnya. Sertakan rujukan silang ("lihat Bab X") sebagai petunjuk, bukan prasyarat.
-9. Semua referensi dari situs web atau dokumen daring disertai tautan langsung.
+- **Eksploratif**: membahas "mengapa" di balik "bagaimana" — konteks, standar global, dan konsekuensi pilihan.
+- **Inklusif secara level**: bisa dibaca oleh pengelola jurnal baru *maupun* editor berpengalaman yang ingin memahami praktik terbaik global.
+- **Kaya studi kasus**: dilengkapi situasi riil (termasuk dari pengalaman penulis) yang menjembatani teori dengan praktik lapangan.
+- **Layak sebagai bahan pelatihan/workshop**: struktur tiap bab mendukung fasilitasi sesi belajar kelompok.
 
 ---
 
-## Struktur Buku yang Diperbarui
+## Pertanyaan Terbuka untuk Penulis
 
-| Bagian | Judul | Bab |
+> [!IMPORTANT]
+> Sebelum eksekusi dimulai, ada beberapa hal yang perlu klarifikasi dari Anda. Tidak harus dijawab semua sekarang — bisa dijawab bertahap saat mengerjakan tiap bab.
+
+1. **Identitas pengalaman**: Pengalaman Anda di bidang apa saja yang bisa digali? Misalnya: pernah mengelola jurnal X, pernah menjadi reviewer, pernah mengalami kasus plagiasi yang rumit, pernah mengurus DOAJ/Scopus, pernah pelatih/fasilitator workshop OJS, dll. Ini akan menjadi bahan studi kasus.
+
+2. **Nada buku**: Apakah Anda menginginkan nada *akademis-formal* sepenuhnya, atau boleh ada bagian "catatan dari pengalaman penulis" (*author's note*) yang lebih personal dan reflektif?
+
+3. **Target pembaca utama**: Apakah buku ini lebih condong ke (a) pengelola jurnal kampus yang baru mulai, (b) editor jurnal yang sudah jalan tapi ingin naik kelas ke DOAJ/Scopus, atau (c) fasilitator pelatihan OJS? Ini menentukan kedalaman bab mana yang diprioritaskan.
+
+4. **Judul buku**: Apakah sudah ada judul yang Anda pikirkan? Contoh alternatif:
+   - *"Manajemen Jurnal Ilmiah Berbasis OJS 3.3: Panduan Komprehensif dari Naskah hingga Indeksasi"*
+   - *"OJS 3.3 untuk Pengelola Jurnal: Praktik, Standar, dan Strategi Visibilitas"*
+
+5. **Bab 14 (Diseminasi)**: Topik ini masih kosong. Apakah Anda punya pengalaman atau preferensi strategi diseminasi tertentu (media sosial, ResearchGate, repository institusional, dll.)?
+
+---
+
+## Diagnosis Kondisi Terkini
+
+| Aspek | Kondisi Sekarang | Target Buku |
 |---|---|---|
-| I | Persiapan dan Kemampuan Dasar | 1, 2 |
-| II | Pengenalan OJS 3.3 | 3 |
-| III | Alur Kerja Penulis | 4 |
-| IV | Alur Kerja Editorial | 5, 6, 7, 8, 9 |
-| V | Pasca-Review, Produksi, dan Penerbitan | 10, 11, 12 |
-| VI | Visibilitas dan Indeksasi | 13 |
-| VII | Diseminasi dan Peningkatan Visibilitas Jurnal | 14 (baru) |
-| -- | Glosarium | -- |
-| -- | Daftar Pustaka | -- |
+| Gaya bahasa | Formal, baku ✓ | Tetap formal, tambah narasi reflektif |
+| Kedalaman | Prosedural, berbasis langkah | Konseptual + prosedural + kontekstual |
+| Studi kasus | Ada di beberapa bab (Bab 7, 11, 13) | Setiap bab wajib punya ≥1 studi kasus |
+| Pengalaman penulis | Belum ada | Sisipkan sebagai *"Catatan dari Lapangan"* |
+| Elemen latihan | Hanya checklist | Tambah latihan/skenario simulasi per bab |
+| Aparatus buku | Glosarium & Daftar Pustaka sudah ada (draft) | Perkaya + tambah Indeks Subjek + Tentang Penulis |
+| Pengantar bab | Langsung ke materi | Tambah *vignette* atau situasi pemantik di awal tiap bab |
 
 ---
 
-## Pendekatan Pengembangan
+## Kerangka Buku yang Diusulkan
 
-Pengembangan dilakukan secara **bertahap dan fokus**. Setiap sesi mengerjakan satu unit (satu bab atau satu komponen aparatus buku) sampai tuntas sebelum pindah ke berikutnya.
+### Aparatus Depan (Front Matter)
+- **Halaman Judul dan Hak Cipta** (dalam `book.toml` dan `README.md`)
+- **Kata Pengantar** — Ditulis ulang sepenuhnya: lebih personal, menceritakan perjalanan penulis dan mengapa buku ini lahir
+- **Cara Menggunakan Buku Ini** — Panduan membaca untuk berbagai jenis pembaca (pemula, editor berpengalaman, fasilitator)
+- **Ucapan Terima Kasih**
 
-Pendalaman konten setiap bab mengikuti pola:
-1. Paragraf pengantar konseptual dengan sumber.
-2. Isi teknis OJS yang sudah ada (dipertahankan dan dibersihkan).
-3. Standar lembaga indeksasi atau etika publikasi yang relevan (DOAJ, COPE, ICMJE, Scopus).
-4. Studi kasus atau contoh situasi nyata jika relevan.
-5. Checklist di akhir bab (semua bab harus punya).
+### Bagian I–VII (Bab 1–14) — Transformasi Per Bab
+Setiap bab akan diperkaya dengan:
+- **Pemantik Bab** (*Chapter Vignette*): sebuah pertanyaan, skenario, atau kutipan singkat yang membuka bab
+- **Catatan dari Lapangan** (*Field Notes*): pengalaman atau observasi penulis yang relevan
+- **Sorotan Standar Global**: kotak informasi tentang standar DOAJ, COPE, Crossref, dll.
+- **Latihan/Skenario**: tugas reflektif atau simulasi untuk konteks pelatihan
+- Checklist yang sudah ada tetap dipertahankan
 
----
-
-## Tahap 1: Pembersihan Gaya Bahasa [SELESAI]
-
-Telah dikerjakan secara menyeluruh pada semua bab yang ada.
-
-| Urutan | File | Masalah Utama | Status |
-|---|---|---|---|
-| 1 | bab5-merespons-naskah.md | 15+ em-dash, emotikon, label "Pro-Tip" | [x] Selesai |
-| 2 | bab8-panduan-reviewer.md | 10+ em-dash, emotikon, label "Expert Tip" | [x] Selesai |
-| 3 | bab3-gambaran-umum.md | 8+ em-dash, frasa retoris tanpa sumber | [x] Selesai |
-| 4 | bab9-editorial-decision.md | 8 em-dash, emotikon, tidak ada checklist | [x] Selesai |
-| 5 | bab11-produksi.md | 6 em-dash, klaim normatif tanpa sumber | [x] Selesai |
-| 6 | bab10-copyediting.md | 5 em-dash | [x] Selesai |
-| 7 | bab4-submission.md | 5 em-dash, 4 emotikon centang | [x] Selesai |
-| 8 | bab7-assigning-reviewer.md | 5 em-dash, emotikon, istilah tanpa definisi | [x] Selesai |
-| 9 | bab12-manajemen-edisi.md | 3 em-dash, emotikon | [x] Selesai |
-| 10 | bab1-eresources.md | Em-dash sisa, label informal | [x] Selesai |
-| 11 | bab2-bibliografi.md | Em-dash sisa | [x] Selesai |
-| 12 | bab6-similarity-check.md | Em-dash sisa | [x] Selesai |
-| 13 | bab13-metadata.md | Em-dash sisa (dari format CRLF) | [x] Selesai |
+### Aparatus Belakang (Back Matter)
+- **Glosarium** — perkaya dari draft yang ada
+- **Daftar Pustaka Terpadu** — konsolidasi semua referensi
+- **Indeks Subjek** (*Subject Index*) — [BARU]
+- **Tentang Penulis** (*About the Author*) — [BARU]
+- **Lampiran**: contoh-contoh formulir, templat surel, checklist pra-indeksasi
 
 ---
 
-## Tahap 2: Pendalaman Konten Per Bab
+## Rencana Perubahan Per Bab
 
-Dikerjakan satu per satu setelah Tahap 1 selesai. Setiap bab diperkaya dengan konteks akademik, standar indeksasi, dan studi kasus.
+### Aparatus Depan
 
-### Bab 3: Gambaran Umum OJS (prioritas tinggi)
+#### [MODIFY] [README.md](file:///d:/opot/antigravity/modul-ojs-3/src/README.md) — Kata Pengantar
+- Tulis ulang seluruhnya menjadi narasi personal dan kontekstual
+- Ceritakan: mengapa jurnal ilmiah Indonesia penting, perjalanan penulis mengenal OJS, dan visi buku ini
+- Tambahkan bagian: **"Untuk Siapa Buku Ini"** dengan panduan membaca per profil pembaca
 
-Tambahan yang diperlukan:
-- Subbab sejarah singkat OJS dan PKP (tahun berdiri, skala penggunaan global).
-- Subbab konsep akses terbuka (*open access*) dan kebijakan OA di Indonesia, dengan referensi ke Budapest Open Access Initiative (BOAI, 2002): https://www.budapestopenaccessinitiative.org/ dan Permendikbudristek yang relevan.
-- Definisi formal *audit trail* pada kemunculan pertama.
-
-### Bab 5: Merespons Naskah Baru
-
-Tambahan yang diperlukan:
-- Paragraf pengantar tentang tinjauan awal meja (*desk review*) sebagai tahap penyaringan pertama.
-- Standar DOAJ terkait proses editorial: DOAJ mensyaratkan jurnal memiliki proses editorial yang terdokumentasi dan transparan. Referensi: https://doaj.org/apply/guide/
-
-### Bab 6: Similarity Check
-
-Sudah baik secara in-text citation. Pendalaman yang diperlukan:
-- Tambahkan standar Turnitin atau iThenticate yang diterima lembaga indeksasi.
-- Panduan COPE tentang penanganan plagiat: https://publicationethics.org/guidance/Guidelines
-
-### Bab 7: Assigning Reviewer
-
-Tambahan yang diperlukan:
-- Standar waktu review menurut DOAJ: minimal 4 minggu, standar internasional 8 minggu. Referensi: https://doaj.org/apply/guide/#peer-review
-- Pembahasan konflik kepentingan dalam penugasan reviewer sesuai panduan COPE: https://publicationethics.org/guidance/Guidelines
-- Definisi *reviewer fatigue* dan *information overload* pada kemunculan pertama.
-- Studi kasus: situasi ketika daftar reviewer tersedia tetapi semua memiliki konflik kepentingan.
-
-### Bab 8: Panduan Reviewer
-
-Tambahan yang diperlukan:
-- Sumber untuk definisi reviewer dan klaim tentang integritas ilmiah.
-- Referensi eksplisit COPE Ethical Guidelines for Peer Reviewers untuk setiap prinsip etika: https://publicationethics.org/files/cope-ethical-guidelines-peer-reviewers-v2.pdf
-- Standar DOAJ terkait jenis dan proses peer review yang diterima.
-- Studi kasus: reviewer menerima naskah tetapi kemudian menyadari konflik kepentingan.
-
-### Bab 9: Editorial Decision
-
-Tambahan yang diperlukan:
-- Checklist di akhir bab (saat ini satu-satunya bab tanpa checklist).
-- Subbab tentang penanganan situasi reviewer saling bertentangan: kapan editor perlu mengundang reviewer ketiga, bagaimana prosedurnya sesuai standar COPE.
-- Referensi ke COPE flowchart untuk keputusan editorial.
-
-### Bab 10: Copyediting
-
-Tambahan yang diperlukan:
-- Definisi copyediting dari literatur penyuntingan.
-- Standar DOAJ terkait transparansi proses penyuntingan.
-
-### Bab 11: Produksi dan Galley
-
-Tambahan yang diperlukan:
-- Subbab perangkat untuk membuat galley: MS Word, LibreOffice, Pandoc (https://pandoc.org/), plugin OJS untuk XML JATS.
-- Penjelasan singkat format XML JATS dan mengapa penting untuk indeksasi PubMed Central dan Scopus.
-- Studi kasus: jurnal yang meningkatkan visibilitas setelah menyediakan galley HTML atau XML.
-
-### Bab 12: Manajemen Edisi
-
-Tambahan yang diperlukan:
-- Penjelasan Crossref: apa itu, fungsinya sebagai otoritas registrasi DOI internasional, cara mendaftar. Referensi: https://www.crossref.org/
-- Standar DOAJ terkait DOI: DOAJ sangat menganjurkan (dan untuk level Gold sangat disarankan) setiap artikel memiliki DOI.
-
-### Bab 13: Metadata Artikel
-
-Tambahan yang diperlukan:
-- Subbab standar metadata internasional:
-  - Dublin Core: https://dublincore.org/
-  - schema.org: https://schema.org/ScholarlyArticle
-  - JATS (Journal Article Tag Suite): https://jats.nlm.nih.gov/
-- Standar DOAJ terkait metadata: DOAJ mengharuskan metadata artikel dapat diakses secara terbuka dan terstruktur.
-- Studi kasus: bagaimana metadata yang buruk menyebabkan artikel sulit ditemukan di Google Scholar.
+#### [NEW] `src/cara-menggunakan-buku.md` — Panduan Membaca
+- Profil Pembaca 1: Pengelola Jurnal Baru (rute baca linear)
+- Profil Pembaca 2: Editor Berpengalaman (rute baca tematik, lompat ke bab relevan)
+- Profil Pembaca 3: Fasilitator Pelatihan (rute baca per modul workshop)
+- Penjelasan elemen-elemen bab (apa itu "Catatan dari Lapangan", "Sorotan Standar Global", dll.)
 
 ---
 
-## Tahap 3: Aparatus Buku Baru
+### Bagian I — Persiapan dan Kemampuan Dasar
 
-Dikerjakan setelah Tahap 2 selesai atau paralel per bagian.
+#### [MODIFY] [bab1-eresources.md](file:///d:/opot/antigravity/modul-ojs-3/src/bab1-eresources.md)
+- Tambah **Pemantik Bab**: "Bayangkan Anda diminta menelusuri 50 referensi dalam 3 hari untuk sebuah artikel review..."
+- Tambah subbab: konteks ekosistem informasi ilmiah global (Web of Science, Scopus, Google Scholar, repositori)
+- Tambah **Catatan dari Lapangan**: pengalaman menelusuri referensi untuk keperluan editorial
+- Tambah **Latihan**: simulasi menelusuri sumber untuk topik tertentu
 
-### README.md -- Kata Pengantar
-
-Ditulis ulang sebagai kata pengantar formal dengan: latar belakang konteks jurnal ilmiah Indonesia, tujuan penulisan, sistematika buku, ucapan terima kasih, tempat dan tanggal, nama penulis.
-
-### Bab 14 (Baru): Diseminasi dan Peningkatan Visibilitas Jurnal
-
-Konten utama:
-- Konsep diseminasi hasil penelitian dan pentingnya jangkauan jurnal.
-- Strategi pengindeksan: DOAJ, Google Scholar, Sinta, Garuda, Dimensions.
-- Promosi melalui media sosial akademik: ResearchGate, Academia.edu, dan media sosial umum.
-- Penggunaan fitur Announcements di OJS untuk notifikasi pembaca.
-- Peningkatan impact: mendorong penulis mendaftarkan ORCID, menggunakan DOI di semua komunikasi.
-- Studi kasus: jurnal Indonesia yang berhasil meningkatkan sitasi setelah memperbaiki visibilitas.
-
-### Glosarium (src/glosarium.md)
-
-Masuk navigasi utama. Setiap entri memuat: istilah, padanan Indonesia jika ada, definisi singkat, sumber.
-
-### Daftar Pustaka Terpadu (src/daftar-pustaka.md)
-
-Semua referensi dari seluruh bab dikumpulkan, disusun alfabetis dengan format APA, disertai tautan.
+#### [MODIFY] [bab2-bibliografi.md](file:///d:/opot/antigravity/modul-ojs-3/src/bab2-bibliografi.md)
+- Tambah **Pemantik Bab**: "Sebuah artikel ditolak indeksasi bukan karena isinya buruk, tapi karena format referensinya kacau..."
+- Perluas pembahasan gaya sitasi: APA, Chicago, Vancouver — kapan dan mengapa digunakan
+- Tambah **Catatan dari Lapangan**: kasus referensi bermasalah yang pernah dijumpai
+- Tambah **Latihan**: latihan konversi format referensi
 
 ---
 
-## Rencana Verifikasi Akhir
+### Bagian II — Pengenalan OJS 3.3
 
-1. Pencarian global untuk memastikan tidak ada em-dash yang tersisa.
-2. Pencarian global untuk memastikan tidak ada emotikon yang tersisa.
-3. Periksa setiap bab: ada checklist, ada paragraf pengantar konseptual, ada rujukan silang jika relevan.
-4. Jalankan `mdbook build` untuk memastikan tidak ada kesalahan format atau tautan rusak.
-5. Push ke GitHub dan tunggu deployment otomatis.
+#### [MODIFY] [bab3-gambaran-umum.md](file:///d:/opot/antigravity/modul-ojs-3/src/bab3-gambaran-umum.md)
+- Tambah **Pemantik Bab**: "Tahun 2001, sebuah perangkat lunak gratis diluncurkan dan perlahan mengubah lanskap penerbitan ilmiah dunia..."
+- Perkuat sub-bab sejarah OJS/PKP dengan narasi yang lebih hidup
+- Tambah subbab: **"OJS di Indonesia: Konteks Nasional"** — data adopsi, Garuda, Sinta, kebijakan Kemendikbudristek
+- Tambah **Catatan dari Lapangan**: kesan pertama berinteraksi dengan OJS
+- Tambah **Sorotan Standar Global**: Open Access dan BOAI (sudah ada, perkuat narasi)
+
+---
+
+### Bagian III — Alur Kerja Penulis
+
+#### [MODIFY] [bab4-submission.md](file:///d:/opot/antigravity/modul-ojs-3/src/bab4-submission.md)
+- Tambah **Pemantik Bab**: "Sebagai penulis, kesan pertama Anda terhadap sebuah jurnal dimulai dari halaman submission-nya..."
+- Tambah perspektif ganda: panduan dari sisi penulis DAN dari sisi editor yang menerima
+- Tambah **Catatan dari Lapangan**: kesalahan submission yang paling sering ditemui
+- Tambah **Latihan**: skenario simulasi submission dengan naskah contoh
+
+---
+
+### Bagian IV — Alur Kerja Editorial (inti buku)
+
+#### [MODIFY] [bab5-merespons-naskah.md](file:///d:/opot/antigravity/modul-ojs-3/src/bab5-merespons-naskah.md)
+- Tambah **Pemantik Bab**: skenario editor yang mendapat 15 submission baru dalam sehari
+- Perluas desk review: kriteria substantif (kelayakan metodologi, novelty, scope) bukan hanya administratif
+- Tambah **Sorotan Standar Global**: DOAJ tentang proses editorial terdokumentasi
+- Tambah **Catatan dari Lapangan**: pengalaman atau observasi melakukan desk review
+- Tambah **Latihan**: latihan menilai kelayakan abstrak untuk desk review
+
+#### [MODIFY] [bab6-similarity-check.md](file:///d:/opot/antigravity/modul-ojs-3/src/bab6-similarity-check.md)
+- Tambah **Pemantik Bab**: "Similarity report menunjukkan 35% — apakah naskah ini plagiat?"
+- Tambah subbab: **"Membaca Laporan Similarity dengan Bijak"** — perbedaan self-plagiarism, plagiarism, dan false positive
+- Tambah **Sorotan Standar Global**: COPE flowchart plagiarism, standar Turnitin/iThenticate
+- Tambah **Studi Kasus**: kasus similarity tinggi tapi ternyata bukan plagiarism (misalnya: methods section yang baku)
+- Tambah **Latihan**: latihan menginterpretasi similarity report fiktif
+
+#### [MODIFY] [bab7-assigning-reviewer.md](file:///d:/opot/antigravity/modul-ojs-3/src/bab7-assigning-reviewer.md)
+- Tambah **Pemantik Bab**: "Database reviewer Anda hanya berisi 8 orang — bagaimana Anda mengelola peer review yang adil?"
+- Tambah subbab: **"Membangun dan Merawat Database Reviewer"** — strategi rekrutmen, diversifikasi
+- Perluas pembahasan konflik kepentingan dengan lebih banyak skenario
+- Tambah **Catatan dari Lapangan**: pengalaman mencari reviewer untuk topik yang sangat niche
+- Tambah **Latihan**: skenario simulasi pemilihan reviewer
+
+#### [MODIFY] [bab8-panduan-reviewer.md](file:///d:/opot/antigravity/modul-ojs-3/src/bab8-panduan-reviewer.md)
+- Tambah **Pemantik Bab**: kutipan tentang apa yang diharapkan dari seorang reviewer yang baik
+- Tambah subbab: **"Anatomi Review yang Baik"** — bagaimana menulis komentar yang konstruktif
+- Tambah **Sorotan Standar Global**: COPE Ethical Guidelines for Peer Reviewers
+- Tambah **Studi Kasus**: contoh review yang buruk vs review yang konstruktif (anonim)
+- Tambah **Latihan**: latihan menulis komentar review untuk abstrak fiktif
+
+#### [MODIFY] [bab9-editorial-decision.md](file:///d:/opot/antigravity/modul-ojs-3/src/bab9-editorial-decision.md)
+- Tambah **Pemantik Bab**: "Dua reviewer memberikan rekomendasi yang bertolak belakang — apa yang Anda lakukan?"
+- Perluas pembahasan: kapan perlu reviewer ketiga, penanganan reviewer yang tidak profesional
+- Tambah **Sorotan Standar Global**: COPE flowchart keputusan editorial
+- Tambah **Catatan dari Lapangan**: pengalaman menghadapi situasi review yang rumit
+- Tambah **Latihan**: simulasi pengambilan keputusan editorial dari berbagai skenario
+
+---
+
+### Bagian V — Pasca-Review, Produksi, dan Penerbitan
+
+#### [MODIFY] [bab10-copyediting.md](file:///d:/opot/antigravity/modul-ojs-3/src/bab10-copyediting.md)
+- Tambah **Pemantik Bab**: "Apa yang terjadi jika sebuah artikel terbit dengan kesalahan ketik pada judul?"
+- Tambah subbab: **"Gaya Selingkung (House Style)"** — pentingnya konsistensi dan cara membuat style guide
+- Tambah **Sorotan Standar Global**: DOAJ tentang transparansi proses penyuntingan
+- Tambah **Catatan dari Lapangan**: observasi copyediting di berbagai jurnal
+- Tambah **Latihan**: latihan copyediting pada paragraf dengan berbagai jenis kesalahan
+
+#### [MODIFY] [bab11-produksi.md](file:///d:/opot/antigravity/modul-ojs-3/src/bab11-produksi.md)
+- Tambah **Pemantik Bab**: "Artikel sudah terbit, tapi tidak bisa dibaca di ponsel — siapa yang bertanggung jawab?"
+- Perluas pembahasan Pandoc dan XML JATS dengan penjelasan lebih aksesibel
+- Tambah **Sorotan Standar Global**: persyaratan galley untuk PubMed Central, Scopus
+- Tambah **Studi Kasus**: (sudah ada, perkuat dengan data konkret)
+- Tambah **Latihan**: simulasi memilih format galley berdasarkan target indeksasi
+
+#### [MODIFY] [bab12-manajemen-edisi.md](file:///d:/opot/antigravity/modul-ojs-3/src/bab12-manajemen-edisi.md)
+- Tambah **Pemantik Bab**: "Jurnal Anda hampir terindeks DOAJ, tapi tim reviewer menemukan back issue tanpa DOI..."
+- Tambah subbab: **"DOI dan Crossref: Mengapa Setiap Artikel Perlu Identitas Permanen"**
+- Tambah **Sorotan Standar Global**: standar Crossref, DOAJ terkait kepemilikan DOI
+- Tambah **Catatan dari Lapangan**: pengalaman mengurus DOI untuk back issue
+- Tambah **Latihan**: latihan perencanaan edisi dan deposit DOI
+
+---
+
+### Bagian VI — Visibilitas dan Indeksasi
+
+#### [MODIFY] [bab13-metadata.md](file:///d:/opot/antigravity/modul-ojs-3/src/bab13-metadata.md)
+- Tambah **Pemantik Bab**: "Artikel Anda sudah terbit 6 bulan — tapi tidak muncul di Google Scholar sama sekali..."
+- Perkuat penjelasan Dublin Core, schema.org, JATS agar lebih mudah dipahami non-teknis
+- Tambah **Sorotan Standar Global**: perkuat DOAJ metadata requirements
+- Tambah **Studi Kasus**: (sudah ada kasus Google Scholar, perkuat dan tambah satu kasus lagi)
+- Tambah **Latihan**: latihan mengaudit metadata artikel yang memiliki masalah
+
+---
+
+### Bagian VII — Diseminasi
+
+#### [NEW] [bab14-diseminasi.md](file:///d:/opot/antigravity/modul-ojs-3/src/bab14-diseminasi.md)
+Bab baru yang belum ada. Topik yang diusulkan:
+- **14.1** Mengapa Diseminasi Pasca-Terbit Itu Penting
+- **14.2** Strategi Diseminasi di Media Sosial Akademik (ResearchGate, Academia.edu, Twitter/X untuk akademisi)
+- **14.3** Repository Institusional dan Sinta
+- **14.4** Mendaftarkan Jurnal ke DOAJ dan Indeksator Lainnya
+- **14.5** Mengoptimalkan Profil Google Scholar Jurnal
+- **14.6** Komunikasi dengan Komunitas Ilmiah
+
+---
+
+### Aparatus Belakang
+
+#### [MODIFY] [glosarium.md](file:///d:/opot/antigravity/modul-ojs-3/src/glosarium.md)
+- Perkaya dengan semua istilah baru yang masuk seiring penambahan konten
+- Tambahkan: `schema.org`, `JATS`, `Dublin Core`, `ORCID`, `CrossRef`, `DOAJ`, `COPE`, `Desk Review`, `House Style`, dll.
+
+#### [MODIFY] [daftar-pustaka.md](file:///d:/opot/antigravity/modul-ojs-3/src/daftar-pustaka.md)
+- Konsolidasi semua referensi dari semua bab
+- Verifikasi setiap URL masih aktif
+- Format konsisten: APA 7th Edition
+
+#### [NEW] `src/indeks-subjek.md` — Indeks Subjek
+- Daftar alfabet istilah utama dengan referensi ke nomor bab
+- Contoh: "Conflict of Interest → Bab 7, Bab 8", "DOI → Bab 12, Bab 13"
+
+#### [NEW] `src/tentang-penulis.md` — Tentang Penulis
+- Biografi singkat penulis
+- Rekam jejak yang relevan dengan topik buku
+
+#### [NEW] `src/lampiran.md` — Lampiran
+- Lampiran A: Templat Surel Undangan Reviewer
+- Lampiran B: Contoh Formulir Review Terstruktur
+- Lampiran C: Checklist Pra-Submission DOAJ
+- Lampiran D: Daftar Plugin OJS yang Direkomendasikan
+
+---
+
+## Elemen Baru Per Bab (Konvensi)
+
+Berikut adalah elemen baru yang akan ditambahkan ke setiap bab secara konsisten:
+
+### 1. Pemantik Bab (*Chapter Vignette*)
+Diletakkan tepat setelah judul bab dan sebelum paragraf pembuka. Format:
+
+```markdown
+> *[Situasi atau pertanyaan pemantik yang menggambarkan tantangan nyata yang akan dijawab di bab ini.]*
+```
+
+### 2. Catatan dari Lapangan (*Field Notes*)
+Diletakkan di posisi yang relevan dalam bab, umumnya setelah pembahasan konsep yang didukung pengalaman. Format:
+
+```markdown
+**Catatan dari Lapangan**
+
+[Narasi singkat berdasarkan pengalaman atau observasi penulis. Tidak harus dramatis — cukup autentik dan relevan. Jika pengalaman tidak tersedia, gunakan observasi umum yang dapat diverifikasi.]
+```
+
+### 3. Sorotan Standar Global (*Global Standards Spotlight*)
+Untuk setiap standar internasional yang relevan (COPE, DOAJ, Crossref, dll.). Format:
+
+```markdown
+**Sorotan Standar Global: [Nama Standar]**
+
+[Penjelasan singkat: apa standar ini, siapa yang menetapkan, mengapa relevan bagi pengelola jurnal Indonesia.]
+
+*Sumber: [URL]*
+```
+
+### 4. Latihan dan Skenario (*Exercises*)
+Diletakkan sebelum Checklist, setelah pembahasan utama. Format:
+
+```markdown
+## Latihan Bab [X]
+
+**Latihan [X.1]: [Judul Latihan]**
+[Deskripsi skenario atau tugas reflektif]
+
+**Panduan Fasilitator**: [Catatan untuk fasilitator pelatihan/workshop, jika relevan]
+```
+
+---
+
+## Urutan Prioritas Pengerjaan
+
+Mengingat buku ini ditujukan untuk audiens luas dan sebagian besar bab sudah ada (tinggal diperkaya), berikut urutan pengerjaan yang disarankan:
+
+| Prioritas | Item | Alasan |
+|---|---|---|
+| 1 | Kata Pengantar (README.md) | Fondasi identitas buku |
+| 2 | Cara Menggunakan Buku Ini | Panduan membaca untuk fasilitator |
+| 3 | Bab 3 (Gambaran Umum) | Gerbang pembaca — paling sering dibaca pertama |
+| 4 | Bab 7 (Assigning Reviewer) | Sudah punya studi kasus, tinggal diperkaya |
+| 5 | Bab 9 (Keputusan Editorial) | Topik yang paling sering jadi pertanyaan di workshop |
+| 6 | Bab 6 (Similarity Check) | Topik yang paling "viral" di komunitas jurnal |
+| 7 | Bab 14 (Diseminasi) | Bab baru yang perlu dibuat dari nol |
+| 8 | Bab 13 (Metadata) | Sudah paling lengkap, tinggal perkuat |
+| 9 | Bab 5, 8, 10, 11, 12 | Kelompok bab inti |
+| 10 | Bab 1, 2, 4 | Bab pendukung |
+| 11 | Glosarium, Daftar Pustaka, Indeks | Aparatus akhir |
+| 12 | Tentang Penulis, Lampiran | Aparatus pelengkap |
+
+---
+
+## Rencana Verifikasi
+
+1. Setiap bab: pastikan semua 4 elemen baru hadir (Pemantik, Catatan Lapangan, Sorotan Standar, Latihan)
+2. Lakukan pencarian global untuk memastikan tidak ada em-dash atau emotikon
+3. Jalankan `mdbook build` setelah setiap batch pengerjaan
+4. Push ke GitHub dan verifikasi tampilan di GitHub Pages
+
+---
+
+## Catatan Teknis
+
+- **Format file**: tetap Markdown, tidak ada perubahan platform (tetap mdBook)
+- **Gambar**: tetap menggunakan placeholder `../img/elementor-placeholder-image.png`
+- **Bahasa**: tetap formal, baku — penambahan "Catatan dari Lapangan" boleh sedikit lebih personal tapi tetap tidak menggunakan bahasa santai/informal
+- **Referensi**: setiap klaim baru harus disertai sumber atau diubah menjadi pernyataan prosedural
+

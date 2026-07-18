@@ -61,38 +61,67 @@ modul-ojs-3/
 
 ## 4. Status Pengerjaan
 
-### Tahap 1: Pembersihan Gaya Bahasa [SELESAI]
+> **CATATAN UNTUK AI**: Bagian ini adalah "memori" proyek. Selalu perbarui tabel di bawah setelah selesai mengerjakan sesuatu di sesi manapun. Tanpa pembaruan ini, sesi berikutnya tidak tahu sudah sampai mana.
+
+### Ringkasan Cepat (Perbarui Setiap Sesi)
+
+- **Sesi terakhir**: 2026-07-18
+- **Dikerjakan**: Penulisan dan penyempurnaan Bab 3 (Gambaran Umum OJS) dengan menambahkan Pemantik Bab, Catatan Lapangan, Latihan, dan subbab konteks OJS di Indonesia.
+- **Berikutnya**: Beranjak ke Bab 7 atau bagian Front Matter (README.md, Cara Menggunakan Buku Ini).
+
+### Tahap 1: Pembersihan Gaya Bahasa [SELESAI — 2026-07-17]
 
 Semua 13 bab yang ada (bab1 s.d. bab13) telah dibersihkan dari:
-- Em-dash (—) → diganti dengan tanda baca yang tepat
-- Emotikon (✅, ⚠️, dll)
-- Label informal ("Pro-Tip", "Expert Tip") → diganti "Catatan Teknis" / "Catatan Penting"
-- Tanda seru yang tidak perlu
-- Frasa informal dan retoris tanpa dasar
+- Em-dash (—), emotikon, label informal, tanda seru berlebihan, frasa retoris
 
-### Tahap 2: Pendalaman Konten Per Bab [BELUM DILAKUKAN]
+### Tahap 2: Transformasi Menjadi Buku Teks [SEDANG BERJALAN]
 
-Setiap bab perlu diperkaya dengan penambahan materi spesifik berikut:
+Setiap bab diperkaya dengan 4 elemen baru: **Pemantik Bab**, **Catatan dari Lapangan**, **Sorotan Standar Global**, **Latihan/Skenario**.
 
-| Bab | Penambahan yang Diperlukan |
-|-----|---------------------------|
-| **Bab 3** | Sejarah singkat OJS dan PKP; konsep *Open Access* dan BOAI (2002); kebijakan OA di Indonesia (Permendikbudristek); definisi formal *audit trail*. |
-| **Bab 5** | Paragraf pengantar tentang *desk review* sebagai tahap penyaringan pertama; standar DOAJ terkait proses editorial yang terdokumentasi. |
-| **Bab 6** | Standar Turnitin/iThenticate yang diterima lembaga indeksasi; panduan COPE tentang penanganan plagiat. |
-| **Bab 7** | Standar waktu ulasan DOAJ (4-8 minggu); pembahasan konflik kepentingan sesuai COPE; definisi *reviewer fatigue* dan *information overload*; studi kasus konflik kepentingan. |
-| **Bab 8** | Sumber untuk definisi *reviewer*; referensi COPE Ethical Guidelines for Peer Reviewers; standar DOAJ terkait jenis *peer review*; studi kasus reviewer dengan konflik kepentingan. |
-| **Bab 9** | Prosedur penanganan reviewer yang bertentangan; kapan perlu reviewer ketiga (*adjudicator*); referensi ke COPE flowchart keputusan editorial. |
-| **Bab 10** | Definisi *copyediting* dari literatur penyuntingan; standar DOAJ tentang transparansi proses penyuntingan. |
-| **Bab 11** | Penjelasan perangkat galley (Pandoc, plugin XML JATS); penjelasan XML JATS dan kepentingannya untuk PubMed Central dan Scopus; studi kasus peningkatan visibilitas setelah menyediakan galley HTML/XML. |
-| **Bab 12** | Penjelasan Crossref sebagai otoritas registrasi DOI; standar DOAJ terkait kepemilikan DOI. |
-| **Bab 13** | Subbab standar metadata internasional: Dublin Core, schema.org, JATS; standar DOAJ terkait aksesibilitas metadata; studi kasus artikel sulit ditemukan di Google Scholar akibat metadata buruk. |
+Legenda status: `[ ]` Belum | `[R]` Riset selesai | `[/]` Sedang dikerjakan | `[x]` Selesai
 
-### Tahap 3: Aparatus Buku Baru [BELUM DILAKUKAN]
+| Bab | Judul | Riset KB | Penulisan | Terakhir Diperbarui |
+|-----|-------|----------|-----------|---------------------|
+| README | Kata Pengantar | `[ ]` | `[ ]` | — |
+| Baru | Cara Menggunakan Buku Ini | `[ ]` | `[ ]` | — |
+| **Bab 1** | E-Resources & Penelusuran | `[ ]` | `[ ]` | — |
+| **Bab 2** | Bibliografi & Referensi | `[ ]` | `[ ]` | — |
+| **Bab 3** | Gambaran Umum OJS | `[R]` KB-001~010 | `[x]` | 2026-07-18 |
+| **Bab 4** | Submission (Penulis) | `[ ]` | `[ ]` | — |
+| **Bab 5** | Merespons Naskah (Desk Review) | `[ ]` | `[ ]` | — |
+| **Bab 6** | Similarity Check | `[ ]` | `[ ]` | — |
+| **Bab 7** | Assigning Reviewer | `[ ]` | `[ ]` | — |
+| **Bab 8** | Panduan Reviewer | `[ ]` | `[ ]` | — |
+| **Bab 9** | Keputusan Editorial | `[ ]` | `[ ]` | — |
+| **Bab 10** | Copyediting | `[ ]` | `[ ]` | — |
+| **Bab 11** | Produksi & Galley | `[ ]` | `[ ]` | — |
+| **Bab 12** | Manajemen Edisi | `[ ]` | `[ ]` | — |
+| **Bab 13** | Optimalisasi Metadata | `[ ]` | `[ ]` | — |
+| **Bab 14** | Diseminasi (BARU) | `[ ]` | `[ ]` | — |
+| Back | Glosarium | `[ ]` | `[ ]` | — |
+| Back | Daftar Pustaka Terpadu | `[ ]` | `[ ]` | — |
+| Back | Indeks Subjek (BARU) | `[ ]` | `[ ]` | — |
+| Back | Tentang Penulis (BARU) | `[ ]` | `[ ]` | — |
+| Back | Lampiran (BARU) | `[ ]` | `[ ]` | — |
+
+### Tahap 3: Aparatus Buku Baru [BELUM DIMULAI]
 
 - [ ] Bab 14 (Baru): Diseminasi dan Peningkatan Visibilitas Jurnal
-- [ ] Glosarium (`src/glosarium.md`)
-- [ ] Daftar Pustaka Terpadu (`src/daftar-pustaka.md`)
-- [ ] Penulisan ulang `src/README.md` menjadi Kata Pengantar formal
+- [ ] Glosarium (perkaya draft yang sudah ada)
+- [ ] Daftar Pustaka Terpadu (konsolidasi dari semua bab)
+- [ ] Indeks Subjek (`src/indeks-subjek.md`) — baru
+- [ ] Tentang Penulis (`src/tentang-penulis.md`) — baru
+- [ ] Lampiran (`src/lampiran.md`) — baru
+
+### Knowledge Base: Riwayat Riset per Topik
+
+> **UNTUK AGEN PENELITI**: Sebelum mulai riset, baca tabel ini. Jika sub-topik yang akan diteliti sudah ada di kolom "Sub-topik Tercakup", **jangan teliti ulang** — kecuali pengguna secara eksplisit meminta pendalaman. Cukup rujuk ke nomor KB yang sudah ada.
+
+| Bab | Sub-topik Tercakup | Entri KB | Sub-topik yang Belum Diteliti | Tanggal Terakhir |
+|-----|--------------------|----------|-------------------------------|------------------|
+| Bab 3 | Definisi & sejarah OJS; sejarah & misi PKP (John Willinsky, 1998); krisis publikasi (serials crisis); statistik global OJS (58.000 jurnal, 156 negara, 2025); definisi Open Access dari BOAI; adopsi OJS di Indonesia (11.000-17.000 instalasi); ekosistem ARJUNA, SINTA, Garuda; PKP School & PKP Docs; evolusi arsitektur OJS 1.x/2.x vs 3.x; OJS 3.4 & 3.5 LTS (GDPR, self-invitation); interoperabilitas (OAI-PMH, Crossref, ORCID, ROR, Turnitin, PKP PN, LOCKSS); profil RJI | KB-001 s.d. KB-014 | Definisi *audit trail* formal; kebijakan Permendikbudristek spesifik tentang OA; fitur *Activity Log* OJS secara detail | 2026-07-18 |
+| Bab lainnya | *(belum ada riset)* | — | *(semua sub-topik belum diteliti)* | — |
+
 
 ---
 
@@ -156,4 +185,54 @@ Gambar asli belum tersedia. Jangan ubah konvensi ini.
 3. Asisten dapat langsung membuka file bab terkait di `src/` dan mulai bekerja.
 
 Rencana implementasi lengkap tersedia di:
-`C:\Users\LENOVO\.gemini\antigravity\brain\04f2e7f7-eb57-4d38-8c02-694939b87052\implementation_plan.md`
+`C:\Users\LENOVO\.gemini\antigravity\brain\52194a1c-5c65-4a49-b4e1-47c1b97a7630\implementation_plan.md`
+
+Bank pertanyaan lapangan per bab tersedia di:
+`C:\Users\LENOVO\.gemini\antigravity\brain\52194a1c-5c65-4a49-b4e1-47c1b97a7630\pertanyaan-lapangan.md`
+
+---
+
+## 10. Sistem Agen (Mulai Juli 2026)
+
+Proyek ini menggunakan sistem multi-agen. Dua agen khusus telah didefinisikan:
+
+### Agen 1: `ojs-web-researcher`
+**Fungsi**: Melakukan penelusuran web, mengekstrak informasi, dan mengarsipkan ke repositori penelitian.
+
+**Output**:
+- `research/knowledge-base.md` — informasi yang diekstrak, dikategorikan, dengan keywords
+- `research/bibliography.md` — semua sumber dalam format APA 7, dikelompokkan per tipe sumber
+
+**Cara menggunakan**: Kirim pesan ke agen ini dengan format:
+```
+Topik: [topik yang ingin diteliti]
+Relevansi Bab: [bab mana yang membutuhkan informasi ini]
+Fokus: [apa yang ingin dicari — definisi, standar, kasus, regulasi, dll.]
+```
+
+### Agen 2: `ojs-book-writer`
+**Fungsi**: Menulis dan menyempurnakan bab-bab buku. Membaca knowledge base sebelum menulis. Menambahkan 4 elemen baru ke setiap bab: Pemantik Bab, Catatan dari Lapangan, Sorotan Standar Global, Latihan.
+
+**Cara menggunakan**: Kirim pesan ke agen ini dengan format:
+```
+Bab: [nomor dan nama bab]
+Tugas: [tulis ulang / perkaya / tambahkan elemen X]
+Konteks tambahan: [jawaban pertanyaan lapangan jika ada]
+```
+
+### Alur Kerja Ideal per Sesi
+1. Jalankan `ojs-web-researcher` untuk mengumpulkan informasi bab yang akan dikerjakan.
+2. Setelah knowledge base diperbarui, jalankan `ojs-book-writer` untuk mengerjakan bab tersebut.
+3. Review hasil dan minta revisi jika perlu.
+
+---
+
+## 11. Struktur Repositori Penelitian
+
+```
+research/
+├── knowledge-base.md   ← semua informasi yang diekstrak (definisi, standar, kasus, dll.)
+└── bibliography.md     ← semua sumber, format APA 7, dikelompokkan per tipe
+```
+
+Kedua file ini **tidak boleh diedit secara manual** kecuali untuk koreksi minor. Pengisian dilakukan eksklusif oleh agen `ojs-web-researcher`.
