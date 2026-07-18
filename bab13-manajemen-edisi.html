@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Bab 14: Diseminasi dan Peningkatan Visibilitas Jurnal - Buku Panduan OJS 3</title>
+        <title>Bab 13: Manajemen Edisi (Issue) &amp; Pasca Penerbitan - Buku Panduan OJS 3</title>
 
 
         <!-- Custom HTML head -->
@@ -37,10 +37,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-a62b3e59.js";
+            window.path_to_searchindex_js = "searchindex-4bcd7828.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-9bcb721c.js"></script>
+        <script src="toc-95e609ce.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -176,82 +176,152 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="bab-14-diseminasi-dan-peningkatan-visibilitas-jurnal"><a class="header" href="#bab-14-diseminasi-dan-peningkatan-visibilitas-jurnal">Bab 14: Diseminasi dan Peningkatan Visibilitas Jurnal</a></h1>
-<p>Penerbitan suatu edisi jurnal bukanlah akhir dari tanggung jawab tim editorial, melainkan awal dari fase krusial berikutnya: diseminasi. Diseminasi adalah upaya proaktif untuk menyebarluaskan hasil penelitian agar dapat diakses, dibaca, dan disitasi oleh komunitas akademik yang lebih luas. Tanpa strategi diseminasi yang efektif, artikel berkualitas tinggi sekalipun berisiko tidak mendapatkan pengakuan dan dampak (<em>impact</em>) yang sepadan.</p>
-<p>Bab ini membahas strategi komprehensif untuk meningkatkan visibilitas jurnal melalui pengindeksan, pemanfaatan media sosial, serta optimalisasi fitur bawaan OJS 3.3.</p>
-<h2 id="141-konsep-diseminasi-hasil-penelitian"><a class="header" href="#141-konsep-diseminasi-hasil-penelitian">14.1 Konsep Diseminasi Hasil Penelitian</a></h2>
-<p>Dalam era digital, jangkauan sebuah jurnal sangat bergantung pada kemampuan artikel-artikelnya ditemukan (<em>discoverability</em>) di internet. Diseminasi bertujuan untuk menjembatani kesenjangan antara publikasi dan pembaca potensial. Pengelola jurnal harus mengadopsi pola pikir bahwa mereka bukan sekadar “penerbit”, melainkan “promotor” pengetahuan.</p>
-<p>Upaya peningkatan visibilitas terbagi menjadi dua pilar:</p>
+                        <h1 id="bab-13-manajemen-edisi-dan-pasca-penerbitan"><a class="header" href="#bab-13-manajemen-edisi-dan-pasca-penerbitan">Bab 13: Manajemen Edisi dan Pasca Penerbitan</a></h1>
+<p>Manajemen edisi adalah tahap puncak dari seluruh rangkaian alur kerja editorial di OJS 3.3. Setelah naskah melewati tahap <em>Submission</em>, <em>Review</em>, <em>Copyediting</em>, dan <em>Production</em>, langkah terakhir adalah menggabungkan artikel-artikel yang telah siap ke dalam sebuah edisi dan menerbitkannya kepada publik.</p>
+<h2 id="131-konsep-dasar-hubungan-naskah-dan-edisi"><a class="header" href="#131-konsep-dasar-hubungan-naskah-dan-edisi">13.1 Konsep Dasar: Hubungan Naskah dan Edisi</a></h2>
+<p>Sebelum memulai manajemen edisi, pengelola harus memahami satu konsep kunci: sebuah naskah hanya akan muncul dalam sistem manajemen edisi apabila telah dilakukan tindakan penjadwalan (<em>Scheduling</em>) pada akhir tahap <em>Production</em>. Tanpa proses penjadwalan tersebut, naskah tidak akan tersedia untuk dimasukkan ke dalam edisi mana pun.</p>
+<h2 id="132-navigasi-menu-issues"><a class="header" href="#132-navigasi-menu-issues">13.2 Navigasi Menu Issues</a></h2>
+<p>Untuk mengelola edisi, navigasikan ke menu sisi kiri dan pilih <strong>“Issues”</strong>. Halaman ini terbagi menjadi dua tab utama:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Tab</th><th>Isi</th><th>Fungsi</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Future Issues</strong></td><td>Edisi yang sedang dipersiapkan atau belum diterbitkan.</td><td>Berfungsi sebagai wadah penampungan naskah yang telah dijadwalkan dari tahap <em>Production</em>.</td></tr>
+<tr><td><strong>Back Issues</strong></td><td>Edisi yang sudah diterbitkan kepada publik.</td><td>Berfungsi sebagai arsip dan area untuk melakukan koreksi pascapublikasi jika diperlukan.</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="133-membuat-edisi-baru-create-issue"><a class="header" href="#133-membuat-edisi-baru-create-issue">13.3 Membuat Edisi Baru (Create Issue)</a></h2>
+<p>Sebelum naskah dapat dijadwalkan, editor harus membuat wadah edisi terlebih dahulu.</p>
 <ol>
-<li><strong>Visibilitas Mesin</strong>: Memastikan artikel dapat dibaca dan diindeks dengan benar oleh algoritma mesin pencari (<em>crawler</em>).</li>
-<li><strong>Visibilitas Manusia</strong>: Mempromosikan artikel langsung ke komunitas target melalui saluran komunikasi profesional.</li>
+<li>Klik tab <strong>“Future Issues”</strong>.</li>
+<li>Klik tombol <strong>“Create Issue”</strong>.</li>
+<li>Isi formulir pembuatan edisi:</li>
 </ol>
-<h2 id="142-strategi-pengindeksan-jurnal"><a class="header" href="#142-strategi-pengindeksan-jurnal">14.2 Strategi Pengindeksan Jurnal</a></h2>
-<p>Pengindeksan adalah mekanisme utama untuk meningkatkan visibilitas mesin. Jurnal yang terindeks dalam pangkalan data terkemuka secara otomatis akan lebih mudah ditemukan oleh para peneliti di seluruh dunia.</p>
-<p>Beberapa lembaga pengindeks prioritas yang harus ditargetkan oleh pengelola jurnal:</p>
-<ul>
-<li><strong>Directory of Open Access Journals (DOAJ)</strong>: Direktori paling bergengsi untuk jurnal akses terbuka (<em>open access</em>). Terindeks di DOAJ merupakan bukti komitmen jurnal terhadap standar kualitas dan transparansi (https://doaj.org/).</li>
-<li><strong>Google Scholar</strong>: Mesin pencari akademik terbesar. Pastikan metadata artikel disusun sesuai standar (lihat <strong>Bab 13: Optimalisasi Metadata Artikel</strong>) agar terindeks tanpa hambatan oleh Google Scholar.</li>
-<li><strong>SINTA (Science and Technology Index)</strong>: Portal pengindeks utama di Indonesia yang dikelola oleh Kemendikbudristek. SINTA digunakan sebagai metrik utama penilaian kinerja jurnal nasional.</li>
-<li><strong>Garuda (Garba Rujukan Digital)</strong>: Portal penelusuran artikel ilmiah Indonesia yang sangat esensial untuk meningkatkan rujukan lokal.</li>
-<li><strong>Dimensions</strong>: Basis data sitasi global yang mengintegrasikan publikasi, hibah riset, dan paten. Pengindeksan di sini meningkatkan keterpaparan jurnal ke komunitas internasional.</li>
-</ul>
-<h2 id="143-promosi-melalui-media-sosial-akademik"><a class="header" href="#143-promosi-melalui-media-sosial-akademik">14.3 Promosi Melalui Media Sosial Akademik</a></h2>
-<p>Selain mengandalkan pengindeks, tim editorial perlu membangun kehadiran (<em>presence</em>) di platform tempat para peneliti berkumpul.</p>
-<h3 id="jejaring-akademik"><a class="header" href="#jejaring-akademik">Jejaring Akademik</a></h3>
-<ul>
-<li><strong>ResearchGate dan Academia.edu</strong>: Mendorong tim editor dan penulis untuk membagikan pranala artikel ke profil mereka di platform ini.</li>
-<li><strong>ORCID</strong>: Mewajibkan penulis untuk menautkan akun ORCID mereka saat mendaftar di OJS. Hal ini memastikan karya mereka secara otomatis terekam di rekam jejak publik publikasi internasional (https://orcid.org/).</li>
-</ul>
-<h3 id="media-sosial-umum"><a class="header" href="#media-sosial-umum">Media Sosial Umum</a></h3>
-<p>Penggunaan platform seperti X (sebelumnya Twitter), LinkedIn, atau Facebook dapat dimanfaatkan untuk mempromosikan terbitan baru.</p>
-<ul>
-<li>Buat ringkasan infografis (<em>graphical abstract</em>) dari artikel unggulan.</li>
-<li>Selalu sertakan tautan permanen (DOI) alih-alih URL biasa dalam setiap unggahan promosi.</li>
-</ul>
-<h2 id="144-menggunakan-fitur-announcements-di-ojs"><a class="header" href="#144-menggunakan-fitur-announcements-di-ojs">14.4 Menggunakan Fitur Announcements di OJS</a></h2>
-<p>OJS 3.3 menyediakan fitur pengumuman (<em>Announcements</em>) yang sangat efektif untuk notifikasi internal pembaca setia jurnal.</p>
-<p>Cara memanfaatkannya:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Komponen</th><th>Instruksi</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Identifikasi</strong></td><td>Masukkan rentang Volume, Nomor, dan Tahun. Jika jurnal tidak menggunakan salah satu komponen ini, biarkan kolom kosong dan hapus centang pada opsi tersebut.</td></tr>
+<tr><td><strong>Deskripsi</strong></td><td>Tambahkan narasi pengantar atau editorial edisi (opsional).</td></tr>
+<tr><td><strong>Cover Image</strong></td><td>Unggah gambar sampul khusus untuk edisi ini jika diperlukan.</td></tr>
+<tr><td><strong>URL Path</strong></td><td>Opsi untuk membuat tautan khusus, misalnya <code>v1n1-2025</code>.</td></tr>
+</tbody>
+</table>
+</div>
+<ol start="4">
+<li>Klik <strong>“Save”</strong>. Edisi kini siap untuk menerima naskah yang dijadwalkan.</li>
+</ol>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Formulir Create Issue"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Formulir Create Issue"></span></label></p>
+<h2 id="134-mengelola-daftar-isi-edisi-table-of-contents"><a class="header" href="#134-mengelola-daftar-isi-edisi-table-of-contents">13.4 Mengelola Daftar Isi Edisi (Table of Contents)</a></h2>
+<p>Setelah naskah dijadwalkan ke dalam edisi, editor mengatur tata letak presentasi edisi tersebut. Klik ikon panah di sebelah judul edisi untuk mengakses opsi pengelolaan:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Opsi</th><th>Fungsi</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>View</strong></td><td>Meninjau tampilan pratinjau edisi dari perspektif pembaca.</td></tr>
+<tr><td><strong>Table of Contents (TOC)</strong></td><td>Mengelola daftar isi dengan melihat dan mengatur posisi artikel di dalam edisi.</td></tr>
+<tr><td><strong>Order</strong></td><td>Mengaktifkan mode pengurutan. Setelah tombol diaktifkan, gunakan fungsi seret dan lepas (<em>drag and drop</em>) untuk mengatur urutan artikel.</td></tr>
+<tr><td><strong>Issue Data</strong></td><td>Mengubah metadata edisi seperti tanggal terbit, identifikasi, deskripsi, dan gambar sampul.</td></tr>
+<tr><td><strong>Issue Galleys</strong></td><td>Menambahkan satu berkas gabungan (umumnya PDF) untuk keseluruhan edisi penuh (<em>full issue</em>).</td></tr>
+</tbody>
+</table>
+</div>
+<p>Catatan Penting: Selalu lakukan verifikasi akhir pada metadata edisi sebelum mengklik publikasi. Mengubah metadata edisi setelah artikel terindeks oleh mesin pencari akademik akan menimbulkan inkonsistensi data.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Tampilan pengelolaan Table of Contents edisi"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Tampilan pengelolaan Table of Contents edisi"></span></label></p>
+<h2 id="135-menerbitkan-edisi-publish-issue"><a class="header" href="#135-menerbitkan-edisi-publish-issue">13.5 Menerbitkan Edisi (Publish Issue)</a></h2>
+<p>Setelah seluruh naskah dalam edisi siap dan metadata tervalidasi:</p>
 <ol>
-<li>Aktifkan fitur ini melalui menu <strong>Settings</strong> &gt; <strong>Website</strong> &gt; <strong>Setup</strong> &gt; <strong>Announcements</strong>.</li>
-<li>Buat pengumuman setiap kali ada terbitan edisi (<em>issue</em>) baru, panggilan untuk naskah (<em>Call for Papers</em>), atau pencapaian indeksasi.</li>
-<li>Pengumuman ini akan terpampang di beranda depan jurnal dan dapat didistribusikan melalui sindikasi umpan RSS (<em>RSS feed</em>).</li>
+<li>Pada tab <strong>Future Issues</strong>, temukan edisi yang dimaksud.</li>
+<li>Klik ikon panah dan pilih <strong>“Publish Issue”</strong>.</li>
+<li>Jendela konfirmasi akan muncul dengan opsi <strong>Notify Users</strong>. Centang opsi ini untuk mengirimkan surel pemberitahuan otomatis kepada seluruh pengguna terdaftar bahwa edisi terbaru telah terbit. Ini merupakan strategi dasar untuk meningkatkan jumlah pembaca.</li>
+<li>Klik <strong>“Confirm”</strong> untuk menyelesaikan proses publikasi.</li>
+<li>Edisi berpindah dari tab <em>Future Issues</em> ke tab <strong>Back Issues</strong> dan seketika tampil di halaman publik jurnal.</li>
 </ol>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Fitur Pengumuman di beranda OJS"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Fitur Pengumuman di beranda OJS"></span></label></p>
-<h2 id="145-peningkatan-dampak-impact"><a class="header" href="#145-peningkatan-dampak-impact">14.5 Peningkatan Dampak (Impact)</a></h2>
-<p>Tujuan akhir dari visibilitas adalah peningkatan sitasi atau dampak riset. Praktik berikut sangat disarankan:</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Jendela konfirmasi Publish Issue dengan opsi Notify Users"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Jendela konfirmasi Publish Issue dengan opsi Notify Users"></span></label></p>
+<h2 id="136-menetapkan-edisi-terkini-current-issue"><a class="header" href="#136-menetapkan-edisi-terkini-current-issue">13.6 Menetapkan Edisi Terkini (Current Issue)</a></h2>
+<p>OJS 3.3 memungkinkan pengelola menetapkan edisi mana yang ditampilkan paling awal di halaman utama beranda jurnal:</p>
 <ul>
-<li><strong>Edukasi Penulis</strong>: Kirimkan surel kepada penulis sesaat setelah artikel mereka diterbitkan. Ucapkan selamat dan berikan instruksi singkat tentang cara mereka dapat mempromosikan artikelnya sendiri menggunakan tautan DOI.</li>
-<li><strong>Konsistensi DOI</strong>: Pastikan bahwa pengutipan referensi di jurnal Anda selalu mencantumkan tautan DOI yang aktif. Hal ini membantu menumbuhkan ekosistem sitasi silang (<em>cross-referencing</em>) yang sehat (Crossref, 2024).</li>
+<li>Klik ikon panah pada edisi yang diinginkan di tab <em>Back Issues</em>.</li>
+<li>Pilih <strong>“Set as Current Issue”</strong>.</li>
 </ul>
-<h2 id="146-studi-kasus-meningkatkan-sitasi-setelah-memperbaiki-visibilitas"><a class="header" href="#146-studi-kasus-meningkatkan-sitasi-setelah-memperbaiki-visibilitas">14.6 Studi Kasus: Meningkatkan Sitasi Setelah Memperbaiki Visibilitas</a></h2>
-<p><strong>Studi Kasus:</strong> Sebuah jurnal ilmu sosial yang beroperasi di Indonesia mengalami stagnasi jumlah sitasi selama tiga tahun berturut-turut meskipun kualitas artikel yang diterbitkan sangat baik. Tim editorial kemudian mengimplementasikan tiga intervensi:</p>
+<p>Fitur ini berguna apabila jurnal menerbitkan edisi khusus (<em>special issue</em>) dan ingin menampilkan edisi tersebut sebagai sorotan utama untuk sementara waktu.</p>
+<h2 id="137-fitur-pascapenerbitan-koreksi-dan-pengelolaan"><a class="header" href="#137-fitur-pascapenerbitan-koreksi-dan-pengelolaan">13.7 Fitur Pascapenerbitan: Koreksi dan Pengelolaan</a></h2>
+<h3 id="unpublish-issue-membatalkan-publikasi"><a class="header" href="#unpublish-issue-membatalkan-publikasi">Unpublish Issue (Membatalkan Publikasi)</a></h3>
+<p>Apabila ditemukan kesalahan fatal, editor dapat menarik edisi dari publikasi:</p>
 <ol>
-<li>Mereka memperbaiki kelengkapan metadata XML JATS untuk memenuhi standar DOAJ.</li>
-<li>Mereka mewajibkan seluruh penulis untuk mendaftarkan ID ORCID.</li>
-<li>Tim editorial secara rutin mencuitkan (<em>tweet</em>) ringkasan bergambar dari setiap artikel unggulan dengan menyematkan DOI.</li>
+<li>Di tab <em>Back Issues</em>, klik ikon panah pada edisi terkait.</li>
+<li>Pilih <strong>“Unpublish Issue”</strong>.</li>
+<li>Edisi kembali menjadi <em>Future Issue</em> dan tidak lagi tampil di halaman publik.</li>
 </ol>
-<p>Hasilnya, dalam kurun waktu 18 bulan, jurnal tersebut berhasil lolos akreditasi SINTA tingkat atas, dan metrik kutipannya di Google Scholar melonjak hingga 300% berkat kombinasi keterbacaan oleh mesin pengindeks dan penyebaran aktif melalui jejaring akademisi.</p>
-<h2 id="checklist-bab-14"><a class="header" href="#checklist-bab-14">Checklist Bab 14</a></h2>
+<p>Perhatian: Fitur ini harus digunakan dengan sangat hati-hati. Membatalkan publikasi pada edisi yang sudah terbit lama dapat merusak tautan eksternal seperti <em>Digital Object Identifier</em> (DOI) yang sudah didaftarkan dan memengaruhi metrik sitasi.</p>
+<h3 id="mengedit-metadata-artikel-yang-terbit"><a class="header" href="#mengedit-metadata-artikel-yang-terbit">Mengedit Metadata Artikel yang Terbit</a></h3>
+<p>Jika diperlukan koreksi pada metadata artikel setelah terbit:</p>
+<ol>
+<li>Masuk ke <strong>Back Issues</strong>, lalu klik judul edisi.</li>
+<li>Klik judul artikel yang perlu dikoreksi.</li>
+<li>Lakukan koreksi metadata di tab <strong>Publication</strong>.</li>
+<li>Klik <strong>“Save”</strong>.</li>
+</ol>
+<p>Mengubah metadata artikel pascaterbit (terutama tanggal terbit atau daftar nama penulis) dapat merusak sinkronisasi data dengan pengindeks seperti Google Scholar dan Crossref. Lakukan hanya jika benar-benar mendesak.</p>
+<h2 id="138-aktivitas-pascapenerbitan-dan-doi"><a class="header" href="#138-aktivitas-pascapenerbitan-dan-doi">13.8 Aktivitas Pascapenerbitan dan DOI</a></h2>
+<p>Setelah edisi terbit, langkah teknis terpenting berikutnya adalah mendepositkan metadata dan mendaftarkan DOI artikel ke Crossref.</p>
+<h3 id="apa-itu-crossref-dan-doi"><a class="header" href="#apa-itu-crossref-dan-doi">Apa itu Crossref dan DOI?</a></h3>
+<p>Crossref (https://www.crossref.org/) adalah lembaga pendaftaran resmi (<em>registration agency</em>) untuk <em>Digital Object Identifier</em> (DOI) yang paling banyak digunakan untuk publikasi ilmiah. DOI menyediakan tautan permanen (<em>persistent link</em>) ke lokasi artikel di internet. Jika URL jurnal berubah, DOI memastikan artikel tetap dapat ditemukan selama pengelola jurnal memperbarui data URL baru di sistem Crossref.</p>
+<p>Standar kelayakan Directory of Open Access Journals (DOAJ) sangat menganjurkan agar setiap artikel ilmiah memiliki DOI yang valid untuk menjamin kelestarian akses jangka panjang artikel.</p>
+<h3 id="deposit-doi-melalui-ojs-33"><a class="header" href="#deposit-doi-melalui-ojs-33">Deposit DOI Melalui OJS 3.3</a></h3>
+<p>Jika jurnal telah menjadi anggota Crossref, proses registrasi DOI dapat dilakukan secara langsung melalui sistem:</p>
+<ol>
+<li>Masuk sebagai <strong>Journal Manager</strong>.</li>
+<li>Navigasi ke menu <strong>Tools</strong>, pilih <strong>Import/Export</strong>, lalu klik <strong>Crossref XML Export Plugin</strong>.</li>
+<li>Pilih artikel yang akan didepositkan DOI-nya.</li>
+<li>OJS dapat mendepositkan secara otomatis atau menghasilkan berkas XML.</li>
+<li>Klik tombol ekspor atau register sesuai konfigurasi sistem jurnal Anda.</li>
+</ol>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Proses deposit DOI ke Crossref"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Proses deposit DOI ke Crossref"></span></label></p>
+<p>Catatan: Untuk materi mengenai strategi promosi dan peningkatan visibilitas artikel secara eksternal (melalui media sosial atau repositori), lihat <strong>Bab 14: Diseminasi dan Peningkatan Visibilitas Jurnal</strong>.</p>
+<h2 id="checklist-bab-13"><a class="header" href="#checklist-bab-13">Checklist Bab 13</a></h2>
+<p>Gunakan daftar periksa berikut untuk mengelola edisi jurnal:</p>
 <ul>
-<li><input disabled="" type="checkbox"> Jurnal telah didaftarkan ke pengindeks basis (minimal Google Scholar dan Garuda).</li>
-<li><input disabled="" type="checkbox"> Fitur <em>Announcements</em> diaktifkan dan digunakan secara rutin saat rilis edisi baru.</li>
-<li><input disabled="" type="checkbox"> Penulis didorong untuk menggunakan ORCID dan mempromosikan artikel mereka secara mandiri.</li>
-<li><input disabled="" type="checkbox"> Tautan DOI selalu digunakan pada seluruh kampanye media sosial atau korespondensi surat elektronik.</li>
-<li><input disabled="" type="checkbox"> Tim pengelola memiliki akun media sosial jurnal atau jejaring akademik untuk menyebarluaskan ringkasan artikel.</li>
+<li><input disabled="" type="checkbox"> Wadah edisi baru (<em>Create Issue</em>) telah dibuat pada tab <em>Future Issues</em>.</li>
+<li><input disabled="" type="checkbox"> Naskah-naskah telah dijadwalkan dari tahap <em>Production</em> ke dalam edisi yang dituju.</li>
+<li><input disabled="" type="checkbox"> Urutan artikel pada daftar isi (<em>Table of Contents</em>) telah ditata secara logis.</li>
+<li><input disabled="" type="checkbox"> Keseluruhan metadata edisi (volume, nomor, tahun, tanggal terbit) telah diverifikasi kebenarannya.</li>
+<li><input disabled="" type="checkbox"> Edisi telah dipublikasikan (<em>Publish Issue</em>) dengan mencentang opsi pemberitahuan kepada pengguna (<em>Notify Users</em>).</li>
+<li><input disabled="" type="checkbox"> Proses deposit DOI ke Crossref telah diselesaikan segera setelah penerbitan.</li>
 </ul>
 <h2 id="ringkasan-bab"><a class="header" href="#ringkasan-bab">Ringkasan Bab</a></h2>
-<p>Upaya diseminasi adalah katalis yang mengubah artikel ilmiah dari sekadar “tersedia” menjadi “terbaca dan disitasi”. Kolaborasi antara metadata yang dirancang untuk keterbacaan algoritma pengindeks, ditambah dengan strategi kehumasan akademik (melalui media sosial, <em>Announcements</em>, dan advokasi penulis mandiri), membangun sebuah ekosistem yang melestarikan reputasi dan dampak jurnal secara berkelanjutan.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Langkah</th><th>Aksi Editor</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>Buat edisi baru di tab <em>Future Issues</em>.</td></tr>
+<tr><td>2</td><td>Jadwalkan naskah ke dalam edisi melalui opsi penjadwalan di tahap <em>Production</em>.</td></tr>
+<tr><td>3</td><td>Kelola tata letak urutan artikel melalui fitur <em>Table of Contents</em>.</td></tr>
+<tr><td>4</td><td>Verifikasi seluruh parameter metadata edisi di <em>Issue Data</em>.</td></tr>
+<tr><td>5</td><td>Publikasikan edisi dan aktifkan fitur pemberitahuan kepada pembaca (<em>Notify Users</em>).</td></tr>
+<tr><td>6</td><td>Daftarkan tautan permanen artikel dengan mendepositkan DOI ke Crossref.</td></tr>
+</tbody>
+</table>
+</div>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="bab13-metadata.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="bab12-produksi.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="glosarium.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="bab14-metadata.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -261,11 +331,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="bab13-metadata.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="bab12-produksi.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="glosarium.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="bab14-metadata.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>

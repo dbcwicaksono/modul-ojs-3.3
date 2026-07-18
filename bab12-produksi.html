@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Bab 10: Penyuntingan Naskah (Copyediting) - Buku Panduan OJS 3</title>
+        <title>Bab 12: Produksi, Tata Letak &amp; Galley - Buku Panduan OJS 3</title>
 
 
         <!-- Custom HTML head -->
@@ -37,10 +37,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-a62b3e59.js";
+            window.path_to_searchindex_js = "searchindex-4bcd7828.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-9bcb721c.js"></script>
+        <script src="toc-95e609ce.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -176,124 +176,136 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="bab-10-penyuntingan-naskah-copyediting"><a class="header" href="#bab-10-penyuntingan-naskah-copyediting">Bab 10: Penyuntingan Naskah (Copyediting)</a></h1>
-<p>Tahap <strong>Copyediting</strong> adalah fase ketiga dalam alur kerja editorial OJS 3.3, yang dimulai tepat setelah naskah dinyatakan diterima (<em>Accepted</em>) pada akhir tahap penelaahan sejawat. Tahap ini merupakan jembatan antara konten yang telah disetujui secara substansi dengan proses produksi tata letak.</p>
-<p>Fokus tahap penyuntingan bukan lagi menilai isi penelitian, melainkan menyempurnakan naskah dalam hal akurasi teknis, kejelasan bahasa, dan kepatuhan terhadap gaya selingkung jurnal (<em>house style</em>). Secara definisi, <em>copyediting</em> adalah proses penyiapan naskah untuk dipublikasikan dengan cara mengoreksi kesalahan ejaan, tata bahasa, tanda baca, serta memastikan konsistensi format sesuai dengan pedoman penerbit.</p>
-<p>Menurut standar Directory of Open Access Journals (DOAJ), transparansi proses editorial dan penyuntingan adalah kriteria penting. Seluruh tahapan penyuntingan, termasuk <em>copyediting</em>, harus memiliki jejak audit yang jelas dan melibatkan peran profesional untuk memastikan standar bahasa terjaga sebelum diterbitkan.</p>
-<h2 id="101-peran-dan-tanggung-jawab"><a class="header" href="#101-peran-dan-tanggung-jawab">10.1 Peran dan Tanggung Jawab</a></h2>
-<p>Kolaborasi yang transparan antar-aktor sangat penting di tahap ini:</p>
+                        <h1 id="bab-12-produksi-tata-letak-dan-galley"><a class="header" href="#bab-12-produksi-tata-letak-dan-galley">Bab 12: Produksi, Tata Letak, dan Galley</a></h1>
+<p>Tahap <strong>Produksi</strong> adalah fase keempat dan terakhir dalam alur kerja editorial OJS 3.3. Pada tahap ini, naskah yang telah melalui proses penyuntingan dikonversi menjadi format publikasi resmi yang disebut <strong>Galley</strong>, kemudian dijadwalkan ke dalam edisi (<em>issue</em>) tertentu.</p>
+<p>Tujuan utama tahap produksi bukan lagi untuk menyunting substansi konten, melainkan memastikan presentasi teknis naskah siap diakses oleh pembaca secara global dalam format yang profesional dan akurat.</p>
+<h2 id="121-peran-dalam-tahap-produksi"><a class="header" href="#121-peran-dalam-tahap-produksi">12.1 Peran dalam Tahap Produksi</a></h2>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>Aktor</th><th>Tanggung Jawab</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Editor / Section Editor</strong></td><td>Manajer alur kerja: menugaskan penyunting (<em>copyeditor</em>), memantau kemajuan diskusi, dan melakukan seleksi akhir berkas untuk diteruskan ke tahap produksi.</td></tr>
-<tr><td><strong>Copyeditor</strong></td><td>Melakukan penyuntingan teknis: mengunduh naskah, memperbaiki tata bahasa, format, dan rujukan, serta mengunggah kembali versi yang telah disempurnakan.</td></tr>
-<tr><td><strong>Author (Penulis)</strong></td><td>Meninjau semua perubahan yang dilakukan penyunting dan memberikan persetujuan atau klarifikasi melalui fitur diskusi sebelum naskah dinyatakan final.</td></tr>
+<tr><td><strong>Layout Editor</strong></td><td>Mengubah versi naskah hasil <em>copyediting</em> menjadi format siap terbit (PDF, HTML, XML, EPUB).</td></tr>
+<tr><td><strong>Editor / Section Editor</strong></td><td>Mengelola alur kerja produksi dengan menunjuk staf, mengawasi proses, dan menetapkan jadwal terbit.</td></tr>
+<tr><td><strong>Author (Penulis)</strong></td><td>Melakukan pengecekan akhir (<em>proofreading</em>) terhadap berkas galley yang telah disiapkan sebelum diterbitkan.</td></tr>
+<tr><td><strong>Proofreader</strong></td><td>Melakukan pemeriksaan akhir pada galley untuk memastikan tidak terdapat kesalahan tata letak atau visual visual.</td></tr>
 </tbody>
 </table>
 </div>
-<h2 id="102-menugaskan-copyeditor"><a class="header" href="#102-menugaskan-copyeditor">10.2 Menugaskan Copyeditor</a></h2>
-<p>Langkah pertama editor setelah naskah masuk ke tahap <em>copyediting</em> adalah menugaskan penyunting.</p>
-<p>Prosedur penugasan:</p>
+<p>Catatan Teknis: OJS 3.3 memberikan fleksibilitas peran. Apabila tim pengelola terbatas, seorang editor dapat merangkap peran sebagai Layout Editor dengan cara memberikan akses peran tambahan di dalam sistem.</p>
+<h2 id="122-penugasan-tim-produksi"><a class="header" href="#122-penugasan-tim-produksi">12.2 Penugasan Tim Produksi</a></h2>
+<p>Langkah pertama pada tahap produksi adalah menunjuk personel pelaksana:</p>
 <ol>
-<li>Masuk ke dasbor submisi dan klik tab <strong>Copyediting</strong>.</li>
-<li>Di panel <em>Participants</em> pada sisi kanan, klik tombol <strong>“Assign”</strong>.</li>
-<li>Pada jendela yang muncul, pilih peran <strong>Copyeditor</strong> dari menu tarik-turun (<em>drop-down</em>).</li>
-<li>Klik <strong>“Search”</strong> untuk menampilkan daftar staf yang tersedia.</li>
-<li>Pilih penyunting yang ditugaskan.</li>
-<li>Sistem membuka draf surel notifikasi otomatis. Editor dapat menyesuaikan pesannya jika diperlukan.</li>
-<li>Klik <strong>“OK”</strong>. Penyunting tersebut kini memiliki hak akses resmi ke naskah pada tahap ini.</li>
+<li>Navigasi ke panel <strong>“Participants”</strong> di halaman naskah pada tab <em>Production</em>.</li>
+<li>Klik tombol <strong>“Assign”</strong>.</li>
+<li>Pilih peran yang ditugaskan, misalnya <em>Layout Editor</em> atau <em>Proofreader</em>.</li>
+<li>Cari dan pilih staf yang tersedia dari daftar pengguna.</li>
+<li>Sistem akan membuka draf surel notifikasi. Sesuaikan isi surel jika diperlukan, kemudian klik <strong>“OK”</strong>.</li>
 </ol>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Panel Participants: menugaskan Copyeditor"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Panel Participants: menugaskan Copyeditor"></span></label></p>
-<h2 id="103-alur-kerja-teknis-penyuntingan-naskah"><a class="header" href="#103-alur-kerja-teknis-penyuntingan-naskah">10.3 Alur Kerja Teknis Penyuntingan Naskah</a></h2>
-<p>OJS 3.3 memfasilitasi pertukaran dokumen secara sistematis guna mencegah tumpang tindih versi dokumen:</p>
-<h3 id="1-mengakses-naskah-sumber"><a class="header" href="#1-mengakses-naskah-sumber">1. Mengakses Naskah Sumber</a></h3>
-<p>Penyunting mengunduh dokumen dari area <strong>Draft Files</strong> atau grid <em>Copyediting</em>. Dokumen ini merupakan versi bersih yang disetujui pada akhir tahap penelaahan sejawat.</p>
-<h3 id="2-penyuntingan-dokumen"><a class="header" href="#2-penyuntingan-dokumen">2. Penyuntingan Dokumen</a></h3>
-<p>Penyuntingan dilakukan menggunakan perangkat lunak pengolah kata untuk memperbaiki:</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Panel Participants di tahap Production"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Panel Participants di tahap Production"></span></label></p>
+<h2 id="123-pembuatan-file-galley"><a class="header" href="#123-pembuatan-file-galley">12.3 Pembuatan File Galley</a></h2>
+<p>Layout Editor akan mengunduh berkas <em>copyedited</em> dari tahap sebelumnya, melakukan tata letak menggunakan perangkat lunak eksternal, lalu mengunggahnya kembali sebagai <strong>Galley</strong>.</p>
+<p>Pembuatan galley umumnya menggunakan beberapa perangkat lunak, seperti:</p>
 <ul>
-<li>Tata bahasa dan ejaan.</li>
-<li>Konsistensi istilah teknis.</li>
-<li>Format dan gaya penulisan sesuai dengan gaya selingkung jurnal.</li>
-<li>Kelengkapan dan akurasi format rujukan, termasuk validasi tautan DOI.</li>
+<li><strong>Microsoft Word atau LibreOffice</strong>: Digunakan untuk menyusun draf akhir sebelum diekspor menjadi format PDF.</li>
+<li><strong>Pandoc</strong> (https://pandoc.org/): Perangkat lunak baris perintah untuk mengonversi dokumen antar berbagai format, sangat berguna untuk membuat HTML atau EPUB dari dokumen teks.</li>
+<li><strong>Plugin OJS JATS XML</strong>: Beberapa jurnal menggunakan plugin OJS atau perangkat lunak pihak ketiga seperti Texture untuk menghasilkan dokumen berformat XML JATS secara otomatis.</li>
 </ul>
-<h3 id="3-mengunggah-hasil-suntingan"><a class="header" href="#3-mengunggah-hasil-suntingan">3. Mengunggah Hasil Suntingan</a></h3>
-<p>Penyunting menggunakan fitur <strong>“Add Discussion”</strong> atau <strong>“Upload File”</strong> di dalam panel diskusi untuk mengunggah naskah yang telah disunting.</p>
-<p>Catatan Teknis: Saat mengunggah, berikan label dokumen dengan nama yang jelas, misalnya “Copyedited Version”, untuk membedakannya dari draf awal. Pelabelan yang tepat mencegah kebingungan manajemen berkas pada tahap produksi.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Area Draft Files dan Upload di tahap Copyediting"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Area Draft Files dan Upload di tahap Copyediting"></span></label></p>
-<h2 id="104-komunikasi-dan-kolaborasi-melalui-fitur-diskusi"><a class="header" href="#104-komunikasi-dan-kolaborasi-melalui-fitur-diskusi">10.4 Komunikasi dan Kolaborasi Melalui Fitur Diskusi</a></h2>
-<p>Fitur <strong>Copyediting Discussions</strong> berfungsi sebagai alat dokumentasi formal dalam manajemen jurnal.</p>
+<h3 id="format-file-galley-yang-didukung-ojs"><a class="header" href="#format-file-galley-yang-didukung-ojs">Format File Galley yang Didukung OJS</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>Fungsi</th><th>Penjelasan</th></tr>
+<tr><th>Format</th><th>Kegunaan Utama</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Jejak Audit</strong></td><td>Setiap pesan dan dokumen yang diunggah dalam diskusi direkam secara permanen sebagai bukti transparansi proses.</td></tr>
-<tr><td><strong>Persetujuan Penulis</strong></td><td>Editor atau penyunting diwajibkan memulai diskusi dengan penulis untuk meminta tinjauan atas hasil suntingan. Penulis meninjau dokumen dan memberikan persetujuan secara sistem tercatat.</td></tr>
-<tr><td><strong>Catatan Persetujuan</strong></td><td>Diskusi berfungsi sebagai catatan formal bahwa penulis menyetujui seluruh modifikasi bahasa sebelum dokumen dikunci untuk proses tata letak.</td></tr>
+<tr><td><strong>PDF</strong></td><td>Format standar untuk cetak digital dan pembacaan luring (<em>offline</em>). Paling umum digunakan oleh jurnal ilmiah.</td></tr>
+<tr><td><strong>HTML</strong></td><td>Menyediakan tampilan responsif yang dapat dibaca langsung melalui peramban web tanpa perlu mengunduh dokumen.</td></tr>
+<tr><td><strong>XML (JATS)</strong></td><td>Format terstruktur yang esensial untuk indeksasi tingkat lanjut dan pertukaran data antar mesin.</td></tr>
+<tr><td><strong>EPUB</strong></td><td>Format yang dioptimalkan untuk perangkat pembaca buku elektronik (<em>e-reader</em>).</td></tr>
 </tbody>
 </table>
 </div>
-<p>Cara memulai diskusi dengan penulis:</p>
+<p>Pentingnya Format XML JATS: <em>Journal Article Tag Suite</em> (JATS) adalah format standar internasional untuk mendeskripsikan konten ilmiah. Penyediaan galley dalam format XML JATS merupakan persyaratan penting bagi jurnal yang ingin terindeks di pangkalan data bergengsi seperti PubMed Central dan sangat direkomendasikan untuk indeksasi Scopus. XML JATS memastikan bahwa metadata dan konten teks artikel terstruktur dengan sempurna sehingga dapat dibaca dan diekstraksi oleh mesin pengindeks.</p>
+<p><strong>Studi Kasus</strong>: Banyak jurnal di Indonesia mengalami peningkatan jumlah pembaca (<em>readership</em>) dan sitasi yang signifikan setelah beralih dari sekadar menyajikan PDF menjadi juga menyediakan versi HTML dan XML artikelnya. Versi HTML dan XML membuat artikel jauh lebih mudah ditemukan oleh mesin pencari dan lebih nyaman dibaca di perangkat seluler, sehingga meningkatkan visibilitas secara drastis.</p>
+<h3 id="cara-mengunggah-galley"><a class="header" href="#cara-mengunggah-galley">Cara Mengunggah Galley</a></h3>
 <ol>
-<li>Di panel <em>Copyediting Discussions</em>, klik <strong>“Add Discussion”</strong>.</li>
-<li>Pilih penulis sebagai partisipan diskusi.</li>
-<li>Tuliskan subjek diskusi (misalnya, “Mohon tinjau hasil penyuntingan”) beserta pesannya.</li>
-<li>Lampirkan dokumen hasil suntingan.</li>
-<li>Klik <strong>“OK”</strong>.</li>
-<li>Penulis akan mendapat surel notifikasi dan dapat merespons langsung melalui sistem OJS.</li>
+<li>Di halaman naskah pada tahap <em>Production</em>, klik <strong>“Add Galley”</strong> di bagian <em>Galleys</em>.</li>
+<li>Isi label galley (misalnya “PDF” atau “HTML”).</li>
+<li>Pilih bahasa dari dokumen galley tersebut.</li>
+<li>Klik <strong>“Save”</strong>, lalu unggah berkas galley yang telah disiapkan.</li>
 </ol>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Fitur diskusi Copyediting: komunikasi editor dan penulis"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Fitur diskusi Copyediting: komunikasi editor dan penulis"></span></label></p>
-<h2 id="105-finalisasi-dan-transisi-ke-tahap-produksi"><a class="header" href="#105-finalisasi-dan-transisi-ke-tahap-produksi">10.5 Finalisasi dan Transisi ke Tahap Produksi</a></h2>
-<p>Tahap <em>Copyediting</em> dinyatakan selesai ketika editor mengonfirmasi bahwa naskah telah disunting dengan baik dan disetujui oleh penulis.</p>
-<p>Langkah transisi:</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Tampilan unggah Galley di tahap Production"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Tampilan unggah Galley di tahap Production"></span></label></p>
+<h2 id="124-diskusi-produksi-dan-proofreading"><a class="header" href="#124-diskusi-produksi-dan-proofreading">12.4 Diskusi Produksi dan Proofreading</a></h2>
+<p>Fungsikan fitur <strong>“Production Discussions”</strong> sebagai pusat komunikasi utama selama tahap ini.</p>
+<p>Prosedur proofreading oleh penulis dilakukan sebagai berikut:</p>
 <ol>
-<li>Klik tombol <strong>“Send to Production”</strong>.</li>
-<li>Pada jendela yang muncul, editor wajib mencentang dokumen dari daftar grid <em>Copyediting</em> yang akan ditetapkan sebagai versi akhir (<em>final version</em>).</li>
-<li>OJS dapat memunculkan jendela untuk mengirimkan surel pemberitahuan kepada penulis bahwa tahap penyuntingan telah selesai.</li>
-<li>Klik konfirmasi transisi.</li>
+<li>Editor mengunggah berkas galley ke area diskusi produksi.</li>
+<li>Editor memulai diskusi dengan penulis (<em>Add Discussion</em>, dan memilih penulis sebagai partisipan).</li>
+<li>Penulis akan menerima surel notifikasi.</li>
+<li>Penulis mengunduh berkas galley dan memeriksa beberapa hal teknis:
+<ul>
+<li>Apakah tata letak halaman dan tipografi sudah sesuai?</li>
+<li>Apakah terdapat kesalahan ketik atau pemotongan kata yang tidak tepat?</li>
+<li>Apakah gambar, grafik, dan tabel disajikan dengan jelas?</li>
+</ul>
+</li>
+<li>Penulis menyampaikan konfirmasi atau daftar koreksi melalui fitur diskusi.</li>
 </ol>
-<p>Setelah langkah ini:</p>
+<p>Seluruh komunikasi harus dilakukan melalui fitur diskusi produksi OJS, bukan melalui surel eksternal pribadi. Praktik ini memastikan seluruh proses revisi tercatat dalam sistem dan dapat diakses oleh tim editorial lainnya.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Fitur Production Discussions untuk proofreading"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Fitur Production Discussions untuk proofreading"></span></label></p>
+<h2 id="125-finalisasi-metadata-di-tab-publication"><a class="header" href="#125-finalisasi-metadata-di-tab-publication">12.5 Finalisasi Metadata di Tab Publication</a></h2>
+<p>Sebelum naskah dijadwalkan untuk terbit, pastikan semua metadata sudah terverifikasi. Masuk ke tab <strong>“Publication”</strong> pada halaman alur kerja naskah dan periksa elemen berikut:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Bagian</th><th>Elemen yang Diverifikasi</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Title &amp; Abstract</strong></td><td>Judul dan abstrak bebas dari kesalahan ketik dan sesuai secara presisi dengan teks di dalam galley.</td></tr>
+<tr><td><strong>Contributors</strong></td><td>Daftar penulis, nama institusi afiliasi, dan urutan nama penulis sudah benar.</td></tr>
+<tr><td><strong>Metadata</strong></td><td>Kata kunci (<em>keywords</em>) telah diinput dengan struktur tag yang tepat.</td></tr>
+<tr><td><strong>References</strong></td><td>Daftar pustaka sudah diinput, dengan setiap referensi dipisahkan oleh satu baris kosong.</td></tr>
+<tr><td><strong>Identifiers (DOI)</strong></td><td>Nomor DOI (<em>Digital Object Identifier</em>) telah ditugaskan (<em>assigned</em>) sesuai dengan pola registrasi jurnal.</td></tr>
+<tr><td><strong>Permissions &amp; Disclosure</strong></td><td>Informasi pemegang hak cipta, jenis lisensi, dan tahun hak cipta sudah tercatat dengan benar.</td></tr>
+<tr><td><strong>Issue &amp; Page Numbers</strong></td><td>Nomor edisi target dan rentang halaman artikel telah ditetapkan.</td></tr>
+</tbody>
+</table>
+</div>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Tab Publication: verifikasi metadata sebelum publikasi"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Tab Publication: verifikasi metadata sebelum publikasi"></span></label></p>
+<h2 id="126-menjadwalkan-naskah-ke-dalam-issue"><a class="header" href="#126-menjadwalkan-naskah-ke-dalam-issue">12.6 Menjadwalkan Naskah ke Dalam Issue</a></h2>
+<p>Setelah galley dan metadata siap, naskah siap dijadwalkan:</p>
+<ol>
+<li>Di tab <strong>Publication</strong>, akses submenu <strong>“Issue”</strong>.</li>
+<li>Pilih edisi yang telah dibuat sebagai target penerbitan (<em>Future Issue</em>).</li>
+<li>Masukkan nomor halaman artikel pada kolom yang tersedia.</li>
+<li>Klik <strong>“Schedule for Publication”</strong>.</li>
+</ol>
+<p>Naskah kini telah dijadwalkan dan akan dipublikasikan secara daring bersamaan dengan diterbitkannya edisi terkait.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Penjadwalan naskah ke dalam Future Issue"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Penjadwalan naskah ke dalam Future Issue"></span></label></p>
+<h2 id="checklist-bab-12"><a class="header" href="#checklist-bab-12">Checklist Bab 12</a></h2>
+<p>Sebelum beralih ke tahap manajemen edisi, pastikan poin-poin berikut telah terselesaikan:</p>
 <ul>
-<li>Status alur kerja berubah menjadi tahap <strong>Production</strong>.</li>
-<li>Dokumen final yang dicentang otomatis disalurkan ke tahap produksi untuk dikerjakan oleh penyusun tata letak (<em>Layout Editor</em>).</li>
-</ul>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Jendela Send to Production: pemilihan file final"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Jendela Send to Production: pemilihan file final"></span></label></p>
-<h2 id="106-catatan-tambahan-penyuntingan"><a class="header" href="#106-catatan-tambahan-penyuntingan">10.6 Catatan Tambahan Penyuntingan</a></h2>
-<p>Terdapat beberapa aspek penting untuk memastikan tahap penyuntingan berjalan efektif:</p>
-<ul>
-<li><strong>Konsistensi Metadata</strong>: Selama penyuntingan, selalu pastikan nama penulis, institusi afiliasi, dan judul dalam dokumen naskah sama persis dengan metadata yang diinput ke dalam sistem OJS. Ketidaksesuaian metadata merupakan salah satu penyebab utama kesalahan pada tahap penerbitan.</li>
-<li><strong>Penerapan Templat</strong>: Praktik yang baik adalah mengarahkan penyunting untuk menerapkan templat (<em>template</em>) jurnal sejak tahap ini, untuk meringankan beban kerja penyusun tata letak.</li>
-<li><strong>Validasi Referensi</strong>: Pastikan semua tautan DOI dalam daftar rujukan aktif dan akurat. Validasi dapat dilakukan melalui alat pencarian standar seperti Crossref.</li>
-</ul>
-<h2 id="checklist-bab-10"><a class="header" href="#checklist-bab-10">Checklist Bab 10</a></h2>
-<p>Sebelum naskah bergeser ke tahap tata letak, pastikan seluruh tindakan di bawah ini sudah terpenuhi:</p>
-<ul>
-<li><input disabled="" type="checkbox"> Tata bahasa dan struktur ejaan telah dikoreksi sepenuhnya.</li>
-<li><input disabled="" type="checkbox"> Konsistensi penggunaan istilah dan frasa telah dipastikan.</li>
-<li><input disabled="" type="checkbox"> Judul dan abstrak pada dokumen sesuai dengan metadata artikel.</li>
-<li><input disabled="" type="checkbox"> Penulisan rujukan telah mengikuti standar gaya sitasi jurnal.</li>
-<li><input disabled="" type="checkbox"> Seluruh tautan DOI dalam daftar rujukan telah divalidasi dan dipastikan aktif.</li>
-<li><input disabled="" type="checkbox"> Nama kontributor dan nama afiliasi pada dokumen identik dengan daftar metadata di sistem.</li>
-<li><input disabled="" type="checkbox"> Penulis telah memberikan persetujuan eksplisit atas revisi penyuntingan melalui fitur diskusi OJS.</li>
-<li><input disabled="" type="checkbox"> Dokumen hasil suntingan telah diunggah dan diidentifikasi secara jelas.</li>
-<li><input disabled="" type="checkbox"> Dokumen telah dialihkan ke tahap <em>Production</em> dengan memilih versi berkas yang tepat.</li>
+<li><input disabled="" type="checkbox"> Personel tim produksi (seperti Layout Editor) telah ditugaskan di dalam sistem jika menggunakan model tim.</li>
+<li><input disabled="" type="checkbox"> Berkas galley (minimal berformat PDF) telah dikonversi dan diunggah menggunakan format tata letak jurnal.</li>
+<li><input disabled="" type="checkbox"> Penulis telah melakukan <em>proofreading</em> akhir melalui fitur <em>Production Discussions</em> dan menyetujui versi galley.</li>
+<li><input disabled="" type="checkbox"> Seluruh data metadata di tab <em>Publication</em> telah diverifikasi kesesuaiannya dengan teks artikel.</li>
+<li><input disabled="" type="checkbox"> Nomor DOI telah ditugaskan (<em>assigned</em>).</li>
+<li><input disabled="" type="checkbox"> Rentang halaman artikel telah ditentukan.</li>
+<li><input disabled="" type="checkbox"> Naskah telah dijadwalkan ke dalam edisi mendatang (<em>Future Issue</em>).</li>
 </ul>
 <h2 id="ringkasan-bab"><a class="header" href="#ringkasan-bab">Ringkasan Bab</a></h2>
-<p>Tahap Copyediting adalah filter kualitas bahasa dan format terakhir sebelum naskah masuk ke meja produksi tata letak visual. Keteraturan manajemen penamaan dokumen dan penggunaan fitur diskusi internal untuk meminta persetujuan penulis adalah dua pilar penting untuk menjaga transparansi dan efektivitas proses penyuntingan dalam lingkungan redaksional profesional.</p>
+<p>Tahap produksi menentukan kualitas dan profesionalisme bentuk fisik digital sebuah jurnal. Penyajian tata letak yang bersih, kelengkapan ragam galley (termasuk format berbasis web seperti HTML atau XML JATS), serta kelengkapan metadata, berkontribusi langsung pada visibilitas artikel di berbagai mesin pencari akademik. Komunikasi <em>proofreading</em> yang tersentralisasi dalam OJS memastikan proses perbaikan akhir dapat dilacak dan dipertanggungjawabkan sebelum artikel diterbitkan secara publik.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="bab9-editorial-decision.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="bab11-copyediting.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="bab11-produksi.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="bab13-manajemen-edisi.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -303,11 +315,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="bab9-editorial-decision.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="bab11-copyediting.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="bab11-produksi.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="bab13-manajemen-edisi.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>

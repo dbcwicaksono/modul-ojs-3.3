@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Bab 5: Merespons Kiriman Naskah Baru - Buku Panduan OJS 3</title>
+        <title>Bab 11: Penyuntingan Naskah (Copyediting) - Buku Panduan OJS 3</title>
 
 
         <!-- Custom HTML head -->
@@ -37,10 +37,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-a62b3e59.js";
+            window.path_to_searchindex_js = "searchindex-4bcd7828.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-9bcb721c.js"></script>
+        <script src="toc-95e609ce.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -176,186 +176,124 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="bab-5-merespons-kiriman-naskah-baru"><a class="header" href="#bab-5-merespons-kiriman-naskah-baru">Bab 5: Merespons Kiriman Naskah Baru</a></h1>
-<p>Bab ini membahas peran editor dalam mengelola naskah yang masuk ke sistem OJS 3.3, mulai dari navigasi dasbor editorial, pemeriksaan awal naskah, penugasan editor bagian, hingga pengambilan keputusan editorial pertama. Untuk pembahasan tentang proses pengiriman naskah dari sudut pandang penulis, lihat <strong>Bab 4: Panduan Mengirimkan Artikel</strong>.</p>
-<h2 id="tinjauan-awal-meja-desk-review"><a class="header" href="#tinjauan-awal-meja-desk-review">Tinjauan Awal Meja (Desk Review)</a></h2>
-<p>Sebelum sebuah naskah dikirimkan ke proses penelaahan sejawat (<em>peer review</em>), editor terlebih dahulu melakukan tinjauan awal meja (<em>desk review</em>). Tinjauan ini adalah penilaian administratif dan kesesuaian ruang lingkup yang dilakukan oleh editor sebelum melibatkan reviewer. Tujuannya adalah menyaring naskah yang tidak memenuhi syarat minimum sehingga beban reviewer dapat dikelola secara efisien.</p>
-<p>Menurut panduan Directory of Open Access Journals (DOAJ), jurnal yang memenuhi syarat untuk terindeks harus memiliki proses editorial yang terdokumentasi dan dapat diverifikasi, termasuk proses tinjauan awal sebelum peer review (DOAJ, 2024, https://doaj.org/apply/guide/).</p>
-<p>Tinjauan awal meja umumnya mencakup:</p>
-<ol>
-<li>Pemeriksaan kesesuaian topik dengan fokus dan ruang lingkup jurnal.</li>
-<li>Pemeriksaan kepatuhan terhadap panduan penulisan (<em>author guidelines</em>).</li>
-<li>Pemeriksaan kelengkapan administratif (jumlah penulis, afiliasi, pernyataan etika jika diperlukan).</li>
-<li>Pemeriksaan awal kemiripan naskah menggunakan perangkat lunak deteksi plagiasi (lihat <strong>Bab 6: Pemeriksaan Plagiasi</strong>).</li>
-</ol>
-<hr>
-<h2 id="51-peran-editor-dalam-tahap-submission"><a class="header" href="#51-peran-editor-dalam-tahap-submission">5.1 Peran Editor dalam Tahap Submission</a></h2>
-<p>Editor di OJS 3.3 tidak hanya memantau naskah, tetapi memiliki kemampuan teknis untuk:</p>
-<ul>
-<li>Mengelola akun pengguna.</li>
-<li>Masuk sebagai pengguna lain jika diperlukan (<em>login as</em>).</li>
-<li>Mengambil keputusan editorial di setiap tahap alur kerja.</li>
-</ul>
-<p>OJS 3.3 bersifat fleksibel. Jurnal dapat dikelola oleh editor tunggal yang menangani seluruh proses, atau oleh tim yang terdiri dari Editor Kepala (<em>Editor-in-Chief</em>), beberapa Section Editor, hingga staf pendukung.</p>
-<hr>
-<h2 id="52-navigasi-dasbor-editorial"><a class="header" href="#52-navigasi-dasbor-editorial">5.2 Navigasi Dasbor Editorial</a></h2>
-<p>Dasbor editorial adalah antarmuka utama bagi editor untuk memantau seluruh aktivitas naskah. Terdapat empat tab utama yang perlu dipahami:</p>
+                        <h1 id="bab-11-penyuntingan-naskah-copyediting"><a class="header" href="#bab-11-penyuntingan-naskah-copyediting">Bab 11: Penyuntingan Naskah (Copyediting)</a></h1>
+<p>Tahap <strong>Copyediting</strong> adalah fase ketiga dalam alur kerja editorial OJS 3.3, yang dimulai tepat setelah naskah dinyatakan diterima (<em>Accepted</em>) pada akhir tahap penelaahan sejawat. Tahap ini merupakan jembatan antara konten yang telah disetujui secara substansi dengan proses produksi tata letak.</p>
+<p>Fokus tahap penyuntingan bukan lagi menilai isi penelitian, melainkan menyempurnakan naskah dalam hal akurasi teknis, kejelasan bahasa, dan kepatuhan terhadap gaya selingkung jurnal (<em>house style</em>). Secara definisi, <em>copyediting</em> adalah proses penyiapan naskah untuk dipublikasikan dengan cara mengoreksi kesalahan ejaan, tata bahasa, tanda baca, serta memastikan konsistensi format sesuai dengan pedoman penerbit.</p>
+<p>Menurut standar Directory of Open Access Journals (DOAJ), transparansi proses editorial dan penyuntingan adalah kriteria penting. Seluruh tahapan penyuntingan, termasuk <em>copyediting</em>, harus memiliki jejak audit yang jelas dan melibatkan peran profesional untuk memastikan standar bahasa terjaga sebelum diterbitkan.</p>
+<h2 id="111-peran-dan-tanggung-jawab"><a class="header" href="#111-peran-dan-tanggung-jawab">11.1 Peran dan Tanggung Jawab</a></h2>
+<p>Kolaborasi yang transparan antar-aktor sangat penting di tahap ini:</p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>Tab</th><th>Fungsi</th><th>Catatan</th></tr>
+<tr><th>Aktor</th><th>Tanggung Jawab</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>My Queue</strong></td><td>Naskah yang menjadi tanggung jawab langsung editor yang sedang login.</td><td>Periksa setiap hari untuk menjaga akuntabilitas kerja.</td></tr>
-<tr><td><strong>Unassigned</strong></td><td>Naskah masuk yang belum ditugaskan ke editor mana pun.</td><td>Area berisiko tinggi. Pantau secara rutin untuk mencegah naskah tidak tertangani.</td></tr>
-<tr><td><strong>All Active</strong></td><td>Seluruh naskah yang sedang diproses di semua tahap.</td><td>Digunakan Editor Kepala untuk memantau beban kerja tim secara keseluruhan.</td></tr>
-<tr><td><strong>Archives</strong></td><td>Naskah yang telah dipublikasikan atau ditolak.</td><td>Berfungsi sebagai rekam jejak permanen seluruh aktivitas editorial.</td></tr>
+<tr><td><strong>Editor / Section Editor</strong></td><td>Manajer alur kerja: menugaskan penyunting (<em>copyeditor</em>), memantau kemajuan diskusi, dan melakukan seleksi akhir berkas untuk diteruskan ke tahap produksi.</td></tr>
+<tr><td><strong>Copyeditor</strong></td><td>Melakukan penyuntingan teknis: mengunduh naskah, memperbaiki tata bahasa, format, dan rujukan, serta mengunggah kembali versi yang telah disempurnakan.</td></tr>
+<tr><td><strong>Author (Penulis)</strong></td><td>Meninjau semua perubahan yang dilakukan penyunting dan memberikan persetujuan atau klarifikasi melalui fitur diskusi sebelum naskah dinyatakan final.</td></tr>
 </tbody>
 </table>
 </div>
-<p><strong>Fitur Filter dan Pencarian:</strong></p>
-<p>OJS 3.3 menyediakan filter untuk navigasi yang lebih efisien:</p>
+<h2 id="112-menugaskan-copyeditor"><a class="header" href="#112-menugaskan-copyeditor">11.2 Menugaskan Copyeditor</a></h2>
+<p>Langkah pertama editor setelah naskah masuk ke tahap <em>copyediting</em> adalah menugaskan penyunting.</p>
+<p>Prosedur penugasan:</p>
+<ol>
+<li>Masuk ke dasbor submisi dan klik tab <strong>Copyediting</strong>.</li>
+<li>Di panel <em>Participants</em> pada sisi kanan, klik tombol <strong>“Assign”</strong>.</li>
+<li>Pada jendela yang muncul, pilih peran <strong>Copyeditor</strong> dari menu tarik-turun (<em>drop-down</em>).</li>
+<li>Klik <strong>“Search”</strong> untuk menampilkan daftar staf yang tersedia.</li>
+<li>Pilih penyunting yang ditugaskan.</li>
+<li>Sistem membuka draf surel notifikasi otomatis. Editor dapat menyesuaikan pesannya jika diperlukan.</li>
+<li>Klik <strong>“OK”</strong>. Penyunting tersebut kini memiliki hak akses resmi ke naskah pada tahap ini.</li>
+</ol>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Panel Participants: menugaskan Copyeditor"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Panel Participants: menugaskan Copyeditor"></span></label></p>
+<h2 id="113-alur-kerja-teknis-penyuntingan-naskah"><a class="header" href="#113-alur-kerja-teknis-penyuntingan-naskah">11.3 Alur Kerja Teknis Penyuntingan Naskah</a></h2>
+<p>OJS 3.3 memfasilitasi pertukaran dokumen secara sistematis guna mencegah tumpang tindih versi dokumen:</p>
+<h3 id="1-mengakses-naskah-sumber"><a class="header" href="#1-mengakses-naskah-sumber">1. Mengakses Naskah Sumber</a></h3>
+<p>Penyunting mengunduh dokumen dari area <strong>Draft Files</strong> atau grid <em>Copyediting</em>. Dokumen ini merupakan versi bersih yang disetujui pada akhir tahap penelaahan sejawat.</p>
+<h3 id="2-penyuntingan-dokumen"><a class="header" href="#2-penyuntingan-dokumen">2. Penyuntingan Dokumen</a></h3>
+<p>Penyuntingan dilakukan menggunakan perangkat lunak pengolah kata untuk memperbaiki:</p>
 <ul>
-<li>Pencarian berdasarkan nama penulis atau kata kunci judul.</li>
-<li>Filter berdasarkan status terlambat (<em>overdue</em>).</li>
-<li>Filter berdasarkan naskah belum lengkap (<em>incomplete</em>).</li>
-<li>Filter berdasarkan tahap proses, bagian jurnal, atau jumlah hari sejak aktivitas terakhir (<em>Days since last activity</em>). Filter terakhir ini berguna untuk mengidentifikasi naskah yang tidak berkembang dalam waktu lama.</li>
+<li>Tata bahasa dan ejaan.</li>
+<li>Konsistensi istilah teknis.</li>
+<li>Format dan gaya penulisan sesuai dengan gaya selingkung jurnal.</li>
+<li>Kelengkapan dan akurasi format rujukan, termasuk validasi tautan DOI.</li>
 </ul>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Tampilan dasbor editorial OJS dengan empat tab utama"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Tampilan dasbor editorial OJS dengan empat tab utama"></span></label></p>
-<hr>
-<h2 id="53-membuka-dan-memahami-rekam-naskah"><a class="header" href="#53-membuka-dan-memahami-rekam-naskah">5.3 Membuka dan Memahami Rekam Naskah</a></h2>
-<p>Klik tombol <strong>“View”</strong> pada naskah untuk masuk ke halaman rekam naskah (<em>submission record</em>). Halaman ini berisi seluruh informasi dan aktivitas terkait naskah tersebut.</p>
-<h3 id="informasi-di-header-rekam-naskah"><a class="header" href="#informasi-di-header-rekam-naskah">Informasi di Header Rekam Naskah</a></h3>
-<ul>
-<li><strong>ID Naskah</strong>: Pengenal unik setiap naskah dalam sistem.</li>
-<li><strong>Nama Belakang Penulis</strong>: Informasi cepat untuk identifikasi.</li>
-<li><strong>Judul Naskah</strong>: Judul lengkap artikel.</li>
-</ul>
-<h3 id="activity-log-dan-internal-notes"><a class="header" href="#activity-log-dan-internal-notes">Activity Log dan Internal Notes</a></h3>
-<p>Penting untuk membedakan dua fitur ini:</p>
+<h3 id="3-mengunggah-hasil-suntingan"><a class="header" href="#3-mengunggah-hasil-suntingan">3. Mengunggah Hasil Suntingan</a></h3>
+<p>Penyunting menggunakan fitur <strong>“Add Discussion”</strong> atau <strong>“Upload File”</strong> di dalam panel diskusi untuk mengunggah naskah yang telah disunting.</p>
+<p>Catatan Teknis: Saat mengunggah, berikan label dokumen dengan nama yang jelas, misalnya “Copyedited Version”, untuk membedakannya dari draf awal. Pelabelan yang tepat mencegah kebingungan manajemen berkas pada tahap produksi.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Area Draft Files dan Upload di tahap Copyediting"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Area Draft Files dan Upload di tahap Copyediting"></span></label></p>
+<h2 id="114-komunikasi-dan-kolaborasi-melalui-fitur-diskusi"><a class="header" href="#114-komunikasi-dan-kolaborasi-melalui-fitur-diskusi">11.4 Komunikasi dan Kolaborasi Melalui Fitur Diskusi</a></h2>
+<p>Fitur <strong>Copyediting Discussions</strong> berfungsi sebagai alat dokumentasi formal dalam manajemen jurnal.</p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>Fitur</th><th>Fungsi</th><th>Sifat</th></tr>
+<tr><th>Fungsi</th><th>Penjelasan</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Activity Log</strong></td><td>Rekaman otomatis setiap tindakan sistem: unggah file, keputusan editor, pengiriman email, dan lainnya.</td><td>Tidak dapat diubah (<em>immutable</em>). Berfungsi sebagai jejak audit (<em>audit trail</em>) seluruh aktivitas sistem.</td></tr>
-<tr><td><strong>Notes</strong> (tab internal)</td><td>Catatan manual antar-editor untuk hal-hal strategis terkait naskah yang tidak perlu diketahui penulis.</td><td>Dapat ditambah dan diedit oleh editor.</td></tr>
+<tr><td><strong>Jejak Audit</strong></td><td>Setiap pesan dan dokumen yang diunggah dalam diskusi direkam secara permanen sebagai bukti transparansi proses.</td></tr>
+<tr><td><strong>Persetujuan Penulis</strong></td><td>Editor atau penyunting diwajibkan memulai diskusi dengan penulis untuk meminta tinjauan atas hasil suntingan. Penulis meninjau dokumen dan memberikan persetujuan secara sistem tercatat.</td></tr>
+<tr><td><strong>Catatan Persetujuan</strong></td><td>Diskusi berfungsi sebagai catatan formal bahwa penulis menyetujui seluruh modifikasi bahasa sebelum dokumen dikunci untuk proses tata letak.</td></tr>
 </tbody>
 </table>
 </div>
-<p><em>Jejak audit</em> (<em>audit trail</em>) adalah rekaman kronologis yang tidak dapat diubah dari seluruh aktivitas yang terjadi dalam sistem. Fungsinya adalah memastikan akuntabilitas dan transparansi proses editorial.</p>
-<h3 id="submission-library"><a class="header" href="#submission-library">Submission Library</a></h3>
-<p>Submission Library adalah tempat berbagi dokumen pendukung, seperti formulir etik penelitian atau data tambahan, secara langsung antara editor dan penulis tanpa melalui prosedur unggah formal.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Halaman detail rekam naskah"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Halaman detail rekam naskah"></span></label></p>
-<hr>
-<h2 id="54-manajemen-file-kiriman"><a class="header" href="#54-manajemen-file-kiriman">5.4 Manajemen File Kiriman</a></h2>
-<p>Area <strong>“Submission Files”</strong> menampilkan seluruh berkas digital yang diunggah penulis, beserta keterangan komponen naskahnya (<em>Article Text</em>, <em>Research Materials</em>, dan lainnya).</p>
-<p>Tindakan yang dapat dilakukan editor pada area ini:</p>
+<p>Cara memulai diskusi dengan penulis:</p>
 <ol>
-<li><strong>Mengunduh</strong>: Klik judul file untuk mengunduhnya ke perangkat lokal.</li>
-<li><strong>Expansion Arrow</strong>: Klik panah kecil di sebelah nama file untuk mengakses log aktivitas spesifik file tersebut beserta catatan internal terkait.</li>
-<li><strong>Mengedit nama file</strong> atau menghapus file yang tidak relevan.</li>
-<li><strong>Upload File</strong>: Menambahkan dokumen baru yang diperlukan untuk proses editorial.</li>
-<li><strong>Download All Files</strong>: Mengunduh seluruh paket dokumen sekaligus untuk peninjauan secara <em>offline</em>.</li>
-</ol>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Area Submission Files dengan berbagai opsi manajemen"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Area Submission Files dengan berbagai opsi manajemen"></span></label></p>
-<hr>
-<h2 id="55-fitur-diskusi-pre-review"><a class="header" href="#55-fitur-diskusi-pre-review">5.5 Fitur Diskusi Pre-Review</a></h2>
-<p>Fitur <strong>Pre-review Discussions</strong> adalah sarana komunikasi editorial yang terpusat dan tercatat dalam sistem. Fitur ini digunakan untuk meminta klarifikasi atau perbaikan administratif dari penulis sebelum naskah dikirimkan ke tahap penelaahan sejawat.</p>
-<p>Seluruh komunikasi yang dilakukan melalui fitur ini tersimpan secara permanen di sistem sebagai bagian dari jejak audit. Penggunaan email eksternal untuk komunikasi editorial tidak dianjurkan karena tidak tercatat dalam sistem dan tidak dapat diverifikasi.</p>
-<p><strong>Prosedur penggunaan:</strong></p>
-<ol>
-<li>Klik <strong>“Add Discussion”</strong> di panel <em>Pre-review Discussions</em>.</li>
-<li>Pilih partisipan: penulis, editor lain, atau keduanya.</li>
-<li>Masukkan subjek dan isi pesan. File dapat dilampirkan di sini.</li>
+<li>Di panel <em>Copyediting Discussions</em>, klik <strong>“Add Discussion”</strong>.</li>
+<li>Pilih penulis sebagai partisipan diskusi.</li>
+<li>Tuliskan subjek diskusi (misalnya, “Mohon tinjau hasil penyuntingan”) beserta pesannya.</li>
+<li>Lampirkan dokumen hasil suntingan.</li>
 <li>Klik <strong>“OK”</strong>.</li>
+<li>Penulis akan mendapat surel notifikasi dan dapat merespons langsung melalui sistem OJS.</li>
 </ol>
-<p>Editor juga dapat menggunakan fitur <strong>“Notify”</strong> pada daftar <em>Participants</em> di panel kanan untuk mengirim pesan menggunakan templat email yang tersedia dalam sistem.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Fitur Pre-review Discussions di halaman submission"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Fitur Pre-review Discussions di halaman submission"></span></label></p>
-<hr>
-<h2 id="56-tiga-keputusan-editorial-pada-tahap-submission"><a class="header" href="#56-tiga-keputusan-editorial-pada-tahap-submission">5.6 Tiga Keputusan Editorial pada Tahap Submission</a></h2>
-<p>Setelah tinjauan awal meja selesai, editor mengambil satu dari tiga keputusan melalui <strong>Decision Wizard</strong> di panel sebelah kanan:</p>
-<h3 id="a-send-to-review"><a class="header" href="#a-send-to-review">A. Send to Review</a></h3>
-<p>Naskah dinyatakan memenuhi syarat awal dan dipindahkan ke tahap penelaahan sejawat (<em>peer review</em>).</p>
-<p>Catatan Penting untuk Proses Double-Blind Review: Saat memilih file yang akan dikirim ke reviewer, pastikan file yang mengandung identitas penulis tidak disertakan (hapus tanda centang). Hal ini menjaga integritas proses <em>double-blind review</em> di mana reviewer tidak mengetahui identitas penulis.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Jendela Send to Review: pemilihan file yang akan dikirim ke reviewer"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Jendela Send to Review: pemilihan file yang akan dikirim ke reviewer"></span></label></p>
-<h3 id="b-accept-and-skip-review"><a class="header" href="#b-accept-and-skip-review">B. Accept and Skip Review</a></h3>
-<p>Digunakan untuk kiriman yang tidak memerlukan proses peer review formal, seperti:</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Fitur diskusi Copyediting: komunikasi editor dan penulis"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Fitur diskusi Copyediting: komunikasi editor dan penulis"></span></label></p>
+<h2 id="115-finalisasi-dan-transisi-ke-tahap-produksi"><a class="header" href="#115-finalisasi-dan-transisi-ke-tahap-produksi">11.5 Finalisasi dan Transisi ke Tahap Produksi</a></h2>
+<p>Tahap <em>Copyediting</em> dinyatakan selesai ketika editor mengonfirmasi bahwa naskah telah disunting dengan baik dan disetujui oleh penulis.</p>
+<p>Langkah transisi:</p>
+<ol>
+<li>Klik tombol <strong>“Send to Production”</strong>.</li>
+<li>Pada jendela yang muncul, editor wajib mencentang dokumen dari daftar grid <em>Copyediting</em> yang akan ditetapkan sebagai versi akhir (<em>final version</em>).</li>
+<li>OJS dapat memunculkan jendela untuk mengirimkan surel pemberitahuan kepada penulis bahwa tahap penyuntingan telah selesai.</li>
+<li>Klik konfirmasi transisi.</li>
+</ol>
+<p>Setelah langkah ini:</p>
 <ul>
-<li>Komentar editorial</li>
-<li>Pengumuman</li>
-<li>Resensi buku</li>
+<li>Status alur kerja berubah menjadi tahap <strong>Production</strong>.</li>
+<li>Dokumen final yang dicentang otomatis disalurkan ke tahap produksi untuk dikerjakan oleh penyusun tata letak (<em>Layout Editor</em>).</li>
 </ul>
-<p>Naskah langsung masuk ke tahap Copyediting tanpa melalui tahap Review.</p>
-<h3 id="c-decline-submission"><a class="header" href="#c-decline-submission">C. Decline Submission</a></h3>
-<p>Naskah ditolak karena tidak sesuai standar atau ruang lingkup jurnal.</p>
-<p>Pada opsi ini, editor dapat memilih untuk mengirimkan notifikasi kepada penulis atau hanya merekam keputusan secara internal. Jika terjadi kesalahan dalam pengambilan keputusan, gunakan fitur <strong>“Change Decision”</strong> untuk membatalkan status penolakan.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Panel keputusan editorial"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Panel keputusan editorial"></span></label></p>
-<hr>
-<h2 id="57-penugasan-editor-bagian-section-editor"><a class="header" href="#57-penugasan-editor-bagian-section-editor">5.7 Penugasan Editor Bagian (Section Editor)</a></h2>
-<p>Pada jurnal yang menggunakan model tim editorial, Editor Kepala dapat menugaskan <strong>Section Editor</strong> melalui tombol <strong>“Assign”</strong> di panel <em>Participants</em>.</p>
-<p>Terdapat tiga tingkat wewenang yang harus ditentukan saat penugasan:</p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>Tingkat Wewenang</th><th>Deskripsi</th></tr>
-</thead>
-<tbody>
-<tr><td><strong>Hanya Rekomendasi</strong></td><td>Section Editor hanya dapat memberikan saran kepada Editor Kepala, tidak dapat mengambil keputusan final atau menghubungi penulis secara mandiri.</td></tr>
-<tr><td><strong>Wewenang Penuh</strong></td><td>Section Editor memiliki kendali penuh atas alur naskah, termasuk pengambilan keputusan editorial.</td></tr>
-<tr><td><strong>Pembatasan Metadata</strong></td><td>Hak akses Section Editor untuk mengubah metadata naskah dapat dibatasi. Pembatasan ini penting untuk menjaga integritas data bibliografi.</td></tr>
-</tbody>
-</table>
-</div>
-<p>Setelah penugasan dikonfirmasi, sistem secara otomatis mengirimkan email pemberitahuan kepada Section Editor yang ditugaskan.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Jendela penugasan Section Editor dengan pilihan perizinan"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Jendela penugasan Section Editor dengan pilihan perizinan"></span></label></p>
-<hr>
-<h2 id="58-memindahkan-naskah-ke-tahap-review"><a class="header" href="#58-memindahkan-naskah-ke-tahap-review">5.8 Memindahkan Naskah ke Tahap Review</a></h2>
-<p>Setelah keputusan “Send to Review” dikonfirmasi, naskah berpindah dari status <em>Submission</em> ke <strong>Review (Round 1)</strong>. File yang dipilih akan tercantum secara otomatis di panel <em>Review Files</em> pada tahap Review.</p>
-<p>Pada tahap ini, editor juga dapat menggunakan fitur diskusi untuk mengklarifikasi hal-hal kepada penulis sebelum proses review dimulai, serta memeriksa kembali kelengkapan file naskah.</p>
-<p>Panduan lengkap tentang proses penugasan reviewer dibahas di <strong>Bab 7: Menugaskan Peninjau</strong>.</p>
-<hr>
-<h2 id="checklist-bab-5"><a class="header" href="#checklist-bab-5">Checklist Bab 5</a></h2>
-<p>Gunakan daftar berikut sebagai panduan sebelum memindahkan naskah ke tahap berikutnya:</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Jendela Send to Production: pemilihan file final"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Jendela Send to Production: pemilihan file final"></span></label></p>
+<h2 id="116-catatan-tambahan-penyuntingan"><a class="header" href="#116-catatan-tambahan-penyuntingan">11.6 Catatan Tambahan Penyuntingan</a></h2>
+<p>Terdapat beberapa aspek penting untuk memastikan tahap penyuntingan berjalan efektif:</p>
 <ul>
-<li><input disabled="" type="checkbox"> Tab <strong>Unassigned</strong> sudah diperiksa dan tidak ada naskah yang terbengkalai.</li>
-<li><input disabled="" type="checkbox"> Rekam naskah sudah dibuka dan <em>Activity Log</em> sudah dipelajari.</li>
-<li><input disabled="" type="checkbox"> File kiriman sudah diunduh dan diperiksa.</li>
-<li><input disabled="" type="checkbox"> Pemeriksaan kemiripan (<em>similarity check</em>) sudah dilakukan (lihat Bab 6).</li>
-<li><input disabled="" type="checkbox"> <strong>Pre-review Discussions</strong> sudah digunakan untuk komunikasi dengan penulis jika diperlukan.</li>
-<li><input disabled="" type="checkbox"> Section Editor sudah ditugaskan dengan tingkat wewenang yang tepat (jika menggunakan model tim).</li>
-<li><input disabled="" type="checkbox"> Keputusan editorial sudah diambil: <em>Send to Review</em>, <em>Accept and Skip Review</em>, atau <em>Decline Submission</em>.</li>
-<li><input disabled="" type="checkbox"> File sudah dipastikan tidak mengandung identitas penulis sebelum dikirim ke reviewer (untuk <em>double-blind review</em>).</li>
+<li><strong>Konsistensi Metadata</strong>: Selama penyuntingan, selalu pastikan nama penulis, institusi afiliasi, dan judul dalam dokumen naskah sama persis dengan metadata yang diinput ke dalam sistem OJS. Ketidaksesuaian metadata merupakan salah satu penyebab utama kesalahan pada tahap penerbitan.</li>
+<li><strong>Penerapan Templat</strong>: Praktik yang baik adalah mengarahkan penyunting untuk menerapkan templat (<em>template</em>) jurnal sejak tahap ini, untuk meringankan beban kerja penyusun tata letak.</li>
+<li><strong>Validasi Referensi</strong>: Pastikan semua tautan DOI dalam daftar rujukan aktif dan akurat. Validasi dapat dilakukan melalui alat pencarian standar seperti Crossref.</li>
 </ul>
-<hr>
+<h2 id="checklist-bab-11"><a class="header" href="#checklist-bab-11">Checklist Bab 11</a></h2>
+<p>Sebelum naskah bergeser ke tahap tata letak, pastikan seluruh tindakan di bawah ini sudah terpenuhi:</p>
+<ul>
+<li><input disabled="" type="checkbox"> Tata bahasa dan struktur ejaan telah dikoreksi sepenuhnya.</li>
+<li><input disabled="" type="checkbox"> Konsistensi penggunaan istilah dan frasa telah dipastikan.</li>
+<li><input disabled="" type="checkbox"> Judul dan abstrak pada dokumen sesuai dengan metadata artikel.</li>
+<li><input disabled="" type="checkbox"> Penulisan rujukan telah mengikuti standar gaya sitasi jurnal.</li>
+<li><input disabled="" type="checkbox"> Seluruh tautan DOI dalam daftar rujukan telah divalidasi dan dipastikan aktif.</li>
+<li><input disabled="" type="checkbox"> Nama kontributor dan nama afiliasi pada dokumen identik dengan daftar metadata di sistem.</li>
+<li><input disabled="" type="checkbox"> Penulis telah memberikan persetujuan eksplisit atas revisi penyuntingan melalui fitur diskusi OJS.</li>
+<li><input disabled="" type="checkbox"> Dokumen hasil suntingan telah diunggah dan diidentifikasi secara jelas.</li>
+<li><input disabled="" type="checkbox"> Dokumen telah dialihkan ke tahap <em>Production</em> dengan memilih versi berkas yang tepat.</li>
+</ul>
 <h2 id="ringkasan-bab"><a class="header" href="#ringkasan-bab">Ringkasan Bab</a></h2>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>Langkah</th><th>Aksi Editor</th></tr>
-</thead>
-<tbody>
-<tr><td>1</td><td>Pantau tab <strong>Unassigned</strong> secara rutin.</td></tr>
-<tr><td>2</td><td>Buka rekam naskah dan pelajari <em>Activity Log</em>.</td></tr>
-<tr><td>3</td><td>Unduh dan periksa file kiriman.</td></tr>
-<tr><td>4</td><td>Gunakan <strong>Pre-review Discussions</strong> untuk komunikasi dengan penulis.</td></tr>
-<tr><td>5</td><td>Tugaskan <strong>Section Editor</strong> dengan wewenang yang tepat (jika ada).</td></tr>
-<tr><td>6</td><td>Ambil keputusan: <em>Send to Review</em>, <em>Accept and Skip Review</em>, atau <em>Decline Submission</em>.</td></tr>
-<tr><td>7</td><td>Pastikan file sudah dianonimkan sebelum dikirim ke reviewer.</td></tr>
-</tbody>
-</table>
-</div>
+<p>Tahap Copyediting adalah filter kualitas bahasa dan format terakhir sebelum naskah masuk ke meja produksi tata letak visual. Keteraturan manajemen penamaan dokumen dan penggunaan fitur diskusi internal untuk meminta persetujuan penulis adalah dua pilar penting untuk menjaga transparansi dan efektivitas proses penyuntingan dalam lingkungan redaksional profesional.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="bab4-submission.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="bab10-editorial-decision.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="bab6-similarity-check.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="bab12-produksi.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -365,11 +303,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="bab4-submission.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="bab10-editorial-decision.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="bab6-similarity-check.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="bab12-produksi.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>

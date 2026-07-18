@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Bab 13: Optimalisasi Metadata Artikel - Buku Panduan OJS 3</title>
+        <title>Bab 14: Optimalisasi Metadata Artikel - Buku Panduan OJS 3</title>
 
 
         <!-- Custom HTML head -->
@@ -37,10 +37,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-a62b3e59.js";
+            window.path_to_searchindex_js = "searchindex-4bcd7828.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-9bcb721c.js"></script>
+        <script src="toc-95e609ce.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -176,10 +176,10 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="bab-13-optimalisasi-metadata-artikel"><a class="header" href="#bab-13-optimalisasi-metadata-artikel">Bab 13: Optimalisasi Metadata Artikel</a></h1>
+                        <h1 id="bab-14-optimalisasi-metadata-artikel"><a class="header" href="#bab-14-optimalisasi-metadata-artikel">Bab 14: Optimalisasi Metadata Artikel</a></h1>
 <p>Metadata adalah fondasi dari visibilitas dan kemampuan penemuan artikel (<em>discoverability</em>) di ekosistem penerbitan digital. Metadata yang lengkap, akurat, dan konsisten menentukan seberapa mudah artikel ilmiah dapat ditemukan, disitasi, dan diindeks oleh mesin pencari maupun basis data kepustakaan global.</p>
 <p>Pemeliharaan metadata merupakan tanggung jawab yang diemban bersama antara tim editor dan penulis. Kesalahan pencatatan metadata dapat menimbulkan dampak serius, mulai dari kegagalan distribusi DOI hingga penyematan sitasi yang keliru pada profil Google Scholar penulis.</p>
-<h2 id="131-pengertian-metadata-artikel"><a class="header" href="#131-pengertian-metadata-artikel">13.1 Pengertian Metadata Artikel</a></h2>
+<h2 id="141-pengertian-metadata-artikel"><a class="header" href="#141-pengertian-metadata-artikel">14.1 Pengertian Metadata Artikel</a></h2>
 <p>Metadata secara harfiah merujuk pada data yang menyajikan informasi mengenai data lainnya (Pomerantz, 2015). Metadata tidak sekadar berfungsi mendeskripsikan data mentah; entitas ini turut menggambarkan bagaimana sebuah organisasi mengonseptualisasikan aktivitasnya, aspek kewilayahan, konteks waktu, serta tujuan pendiriannya (Hay, 2006). Menurut Riley (2017), metadata adalah struktur informasi yang dibuat, disimpan, dan dibagikan dengan tujuan memampukan interaksi sistematis untuk ekstraksi pengetahuan.</p>
 <p>Dalam domain publikasi ilmiah, metadata bertindak sebagai representasi komprehensif dari sebuah artikel, yang mencakup nama kontributor, judul utama, abstrak penelitian, kata kunci spesifik, penanggalan penerbitan, hingga pengenal digital (DOI). Guna mendukung kelestarian arsip dan kemudahan pencarian retrospektif, setiap artikel ilmiah harus didukung oleh kerangka metadata yang kaya dan presisi (Rahutomo, Irawati, &amp; Pramudita, 2019).</p>
 <p>Berdasarkan studi Basuki (2000), terdapat tiga elemen fundamental dalam konstruksi metadata sebuah unit informasi:</p>
@@ -211,7 +211,7 @@
 <p>Selain itu, standar <strong>Directory of Open Access Journals (DOAJ)</strong> secara spesifik mengharuskan bahwa metadata artikel jurnal harus dapat diakses secara terbuka, terstruktur, dan disajikan di halaman awal (<em>landing page</em>) dari setiap artikel untuk memfasilitasi interoperabilitas dan perayapan mesin pencari (DOAJ, 2024, https://doaj.org/apply/guide/).</p>
 <p><strong>Studi Kasus:</strong> Sebuah jurnal kesehatan mengeluhkan mengapa sebagian besar artikel terbarunya tidak muncul di Google Scholar, meskipun edisi sebelumnya terindeks dengan baik. Setelah diselidiki, tim editor menemukan bahwa mereka salah menginput nama depan dan belakang penulis pada kolom yang terbalik, dan menyisipkan teks penuh (<em>full-text</em>) ke dalam kolom abstrak. Metadata yang buruk dan format yang tidak terstruktur ini menyebabkan algoritma Google Scholar menolak (<em>reject</em>) artikel tersebut karena dianggap gagal memenuhi standar <code>schema.org/ScholarlyArticle</code>. Kasus ini menegaskan bahwa validitas input metadata berdampak langsung pada kemampuan keterpaparan (<em>discoverability</em>) naskah.</p>
 <p>Catatan Kritis: Praktik mengubah metadata suatu artikel setelah tanggal publikasinya sangat tidak direkomendasikan. Perubahan modifikasi waktu rilis atau nama penulis dapat menimbulkan konflik pembaruan data pada Google Scholar dan sistem pengindeks lainnya. Tim editorial diwajibkan mengonfirmasi seluruh detail metadata kepada penulis jauh sebelum artikel mencapai tahap penerbitan.</p>
-<h2 id="132-konfigurasi-awal-metadata-di-ojs-3"><a class="header" href="#132-konfigurasi-awal-metadata-di-ojs-3">13.2 Konfigurasi Awal Metadata di OJS 3</a></h2>
+<h2 id="142-konfigurasi-awal-metadata-di-ojs-3"><a class="header" href="#142-konfigurasi-awal-metadata-di-ojs-3">14.2 Konfigurasi Awal Metadata di OJS 3</a></h2>
 <p>Sebelum setiap artikel dapat diisi metadatanya, pengelola jurnal diwajibkan menyelesaikan konfigurasi global pada pangkalan sistem:</p>
 <h3 id="a-identitas-dasar-jurnal-masthead"><a class="header" href="#a-identitas-dasar-jurnal-masthead">A. Identitas Dasar Jurnal (Masthead)</a></h3>
 <p>OJS 3.0 hingga 3.3: Akses melalui rute <strong>Settings</strong>, pilih <strong>Journal</strong>, kemudian <strong>Masthead</strong>.
@@ -228,7 +228,7 @@ Instruksi: Kelola kompartemen penerbitan jurnal, misalnya kategori Artikel Penel
 <h3 id="e-integrasi-pengaya-plugins-tambahan"><a class="header" href="#e-integrasi-pengaya-plugins-tambahan">E. Integrasi Pengaya (Plugins) Tambahan</a></h3>
 <p><strong>Pengaya Pendanaan (Funding Plugin)</strong>: Memfasilitasi pendaftaran dana hibah penelitian secara transparan. Diaktifkan melalui menu Plugins di Website Settings.
 <strong>Pengaya Crossref Reference Linking</strong>: Mensinkronisasikan daftar referensi dengan pangkalan data DOI global secara otonom.</p>
-<h2 id="133-standar-struktur-metadata-artikel-ojs-3"><a class="header" href="#133-standar-struktur-metadata-artikel-ojs-3">13.3 Standar Struktur Metadata Artikel OJS 3</a></h2>
+<h2 id="143-standar-struktur-metadata-artikel-ojs-3"><a class="header" href="#143-standar-struktur-metadata-artikel-ojs-3">14.3 Standar Struktur Metadata Artikel OJS 3</a></h2>
 <p>Struktur metadata di dalam naskah terbagi atas beberapa kelompok inti. Berikut merupakan pedoman teknis pengelolaan masing-masing kelompok:</p>
 <h3 id="a-judul-dan-abstrak-title-and-abstract"><a class="header" href="#a-judul-dan-abstrak-title-and-abstract">A. Judul dan Abstrak (Title and Abstract)</a></h3>
 <p>Elemen data wajib meliputi Awalan (<em>Prefix</em>), Judul Utama (<em>Title</em>), dan Teks Abstrak (<em>Abstract</em>).</p>
@@ -297,7 +297,7 @@ Otorisasi akun dan setoran (<em>deposit</em>) XML ke sistem Crossref dieksekusi 
 </ul>
 <h3 id="h-penempatan-edisi-penerbitan-issue"><a class="header" href="#h-penempatan-edisi-penerbitan-issue">H. Penempatan Edisi Penerbitan (Issue)</a></h3>
 <p>Menu administratif penataan metadata tingkat lanjut di mana editor menyematkan artikel ke dalam kerangka edisi tertentu, menyematkan penomoran halaman yang utuh (<em>Pages</em>), menentukan gambar sampul artikel individual (apabila diimplementasikan), serta memvalidasi atribut penanggalan tanggal publikasi akhir artikel.</p>
-<h2 id="134-teknik-penyuntingan-metadata-pra-terbit"><a class="header" href="#134-teknik-penyuntingan-metadata-pra-terbit">13.4 Teknik Penyuntingan Metadata Pra-Terbit</a></h2>
+<h2 id="144-teknik-penyuntingan-metadata-pra-terbit"><a class="header" href="#144-teknik-penyuntingan-metadata-pra-terbit">14.4 Teknik Penyuntingan Metadata Pra-Terbit</a></h2>
 <p>Siklus pengeditan baku sebelum status publikasi aktif dalam OJS 3.3:</p>
 <ol>
 <li>Masuk ke pangkalan sistem dengan otorisasi Editor.</li>
@@ -307,7 +307,7 @@ Otorisasi akun dan setoran (<em>deposit</em>) XML ke sistem Crossref dieksekusi 
 <li>Ganti nilai-nilai metadata pada porsi sub-tab yang dikehendaki.</li>
 <li>Patenkan setiap perubahan melalui tombol <strong>Save</strong> sebelum berpindah tabulasi.</li>
 </ol>
-<h2 id="135-teknik-penyuntingan-metadata-pasca-terbit"><a class="header" href="#135-teknik-penyuntingan-metadata-pasca-terbit">13.5 Teknik Penyuntingan Metadata Pasca-Terbit</a></h2>
+<h2 id="145-teknik-penyuntingan-metadata-pasca-terbit"><a class="header" href="#145-teknik-penyuntingan-metadata-pasca-terbit">14.5 Teknik Penyuntingan Metadata Pasca-Terbit</a></h2>
 <p>Ketentuan Prosedural OJS 3.3: Berbeda dari versi pendahulunya, sistem OJS modern memberikan perlindungan ketat pada artikel yang sudah diedarkan. Memodifikasi artikel yang telah rilis <strong>memerlukan intervensi prosedur penarikan atau unpublish</strong> secara sementara.</p>
 <p>Langkah Eksekusi:</p>
 <ol>
@@ -362,11 +362,11 @@ Otorisasi akun dan setoran (<em>deposit</em>) XML ke sistem Crossref dieksekusi 
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="bab12-manajemen-edisi.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="bab13-manajemen-edisi.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="bab14-diseminasi.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="bab15-diseminasi.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -376,11 +376,11 @@ Otorisasi akun dan setoran (<em>deposit</em>) XML ke sistem Crossref dieksekusi 
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="bab12-manajemen-edisi.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="bab13-manajemen-edisi.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="bab14-diseminasi.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="bab15-diseminasi.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>

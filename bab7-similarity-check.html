@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Bab 4: Panduan Lengkap Mengirimkan Artikel - Buku Panduan OJS 3</title>
+        <title>Bab 7: Pemeriksaan Plagiasi (Similarity Check) - Buku Panduan OJS 3</title>
 
 
         <!-- Custom HTML head -->
@@ -37,10 +37,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-a62b3e59.js";
+            window.path_to_searchindex_js = "searchindex-4bcd7828.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-9bcb721c.js"></script>
+        <script src="toc-95e609ce.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -176,166 +176,126 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="bab-4-panduan-mengirimkan-artikel-submission"><a class="header" href="#bab-4-panduan-mengirimkan-artikel-submission">Bab 4: Panduan Mengirimkan Artikel (Submission)</a></h1>
-<p>Bab ini memandu penulis melalui proses pengiriman artikel ke jurnal yang menggunakan platform OJS 3.3. Proses pengiriman naskah (<em>submission</em>) di OJS dirancang dalam lima langkah berurutan untuk memastikan seluruh informasi penting dan metadata terdokumentasi dengan baik sejak tahap paling awal.</p>
-<h2 id="41-persiapan-pra-pengiriman"><a class="header" href="#41-persiapan-pra-pengiriman">4.1 Persiapan Pra-Pengiriman</a></h2>
-<p>Sebelum mengunggah berkas, penulis disarankan melakukan riset mendalam terhadap jurnal yang menjadi target. Periksa halaman informasi jurnal untuk memastikan kepatuhan terhadap kebijakan editorial:</p>
+                        <h1 id="bab-7-pemeriksaan-plagiasi-similarity-check"><a class="header" href="#bab-7-pemeriksaan-plagiasi-similarity-check">Bab 7: Pemeriksaan Plagiasi (Similarity Check)</a></h1>
+<p>Salah satu tugas fundamental tim editor jurnal adalah memastikan bahwa setiap naskah yang dikirimkan penulis merupakan karya orisinal. Oleh karena itu, sebelum naskah dikirimkan ke mitra bestari (<em>reviewer</em>), editor perlu melakukan pemeriksaan kemiripan naskah (<em>similarity check</em>) terhadap sumber-sumber lain yang telah beredar luas.</p>
+<h2 id="71-definisi-pemeriksaan-kemiripan"><a class="header" href="#71-definisi-pemeriksaan-kemiripan">7.1 Definisi Pemeriksaan Kemiripan</a></h2>
+<p>Pemeriksaan kemiripan (<em>similarity check</em>) adalah pembandingan terhadap naskah untuk mengetahui tingkat kesamaannya terhadap naskah atau teks lain yang sudah dipublikasikan, menggunakan perangkat lunak deteksi plagiasi. Tujuannya adalah memastikan naskah yang masuk terbebas dari unsur-unsur plagiat atau duplikasi sebelum diproses secara akademik.</p>
+<h2 id="72-memahami-plagiarisme"><a class="header" href="#72-memahami-plagiarisme">7.2 Memahami Plagiarisme</a></h2>
+<h3 id="definisi-teoritis"><a class="header" href="#definisi-teoritis">Definisi Teoritis</a></h3>
+<p>Secara sederhana, plagiarisme adalah tindakan mengambil karya orang lain dan mengakuinya sebagai karya sendiri. Beberapa definisi yang perlu diketahui oleh pengelola jurnal:</p>
+<ul>
+<li><strong>Permendiknas No. 17 Tahun 2010</strong>: Perbuatan sengaja atau tidak sengaja dalam memperoleh kredit atau nilai suatu karya ilmiah dengan mengutip sebagian atau seluruh karya pihak lain tanpa menyatakan sumber secara tepat dan memadai.</li>
+<li><strong>Harris (2014: 81)</strong>: <em>“Plagiarism occurs when an information source is not properly credited”</em>, yang bermakna plagiarisme terjadi apabila sumber informasi tidak dikutip secara benar.</li>
+<li><strong>Menurut Lukman, Istadi, &amp; Wiryawan (2020)</strong>: Plagiasi adalah tindakan menggunakan bahasa, ide, dan material milik orang lain tanpa menyebutkan sumber asalnya.</li>
+<li><strong>Fenton &amp; Gralla (2020: 112)</strong>: <em>Plagiarism</em> merupakan tindakan menyajikan, memberikan, atau mengirim tulisan, ide, maupun kata-kata tanpa memberikan kredit atau pengakuan darimana sumber tersebut diambil.</li>
+<li><strong>Purdue OWL (2020)</strong>: Plagiarisme adalah menggunakan gagasan atau kata-kata orang lain tanpa menuliskan sumbernya atau memberi pengakuan kepada pemilik gagasan.</li>
+</ul>
+<p>Berdasarkan definisi tersebut, dapat disimpulkan bahwa plagiarisme adalah tindakan menyajikan karya orang lain, baik berupa gagasan, data, informasi, kata, frasa, maupun kalimat, dan mengakuinya sebagai karya sendiri secara sengaja maupun tidak sengaja, tanpa mencantumkan sumber dengan kaidah yang benar.</p>
+<h3 id="empat-kategori-plagiat"><a class="header" href="#empat-kategori-plagiat">Empat Kategori Plagiat</a></h3>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>Aspek yang Diperiksa</th><th>Penjelasan</th></tr>
+<tr><th>Kategori</th><th>Penjelasan</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Focus and Scope</strong></td><td>Pastikan topik penelitian sejalan dengan fokus dan ruang lingkup jurnal.</td></tr>
-<tr><td><strong>Copyright Policy</strong></td><td>Pahami kebijakan hak cipta dan lisensi yang akan diterapkan pada naskah setelah diterbitkan.</td></tr>
-<tr><td><strong>Author Guidelines</strong></td><td>Periksa persyaratan teknis terkait gaya selingkung, gaya sitasi, format dokumen, dan ketentuan panjang naskah.</td></tr>
+<tr><td><strong>Direct Plagiarism</strong></td><td>Menyalin setiap kata dari karya orang lain tanpa tanda kutip dan tanpa menyebutkan sumber. Bentuk ini adalah yang paling serius dan tidak etis.</td></tr>
+<tr><td><strong>Self-Plagiarism</strong></td><td>Menggunakan materi yang sudah pernah dipublikasikan sebelumnya oleh penulis yang sama tanpa pengungkapan yang tepat.</td></tr>
+<tr><td><strong>Mosaic Plagiarism</strong></td><td>Menggunakan frasa dari sumber lain tanpa tanda kutip atau menggunakan sinonim dengan struktur kalimat dan arti yang persis sama dengan naskah aslinya.</td></tr>
+<tr><td><strong>Accidental Plagiarism</strong></td><td>Ketidaksengajaan akibat lupa mencantumkan sumber, kesalahan mencantumkan sumber, atau melakukan parafrasa tanpa menyertakan referensi. Walaupun tidak disengaja, hal ini tetap diperlakukan sama dalam sanksi editorial.</td></tr>
 </tbody>
 </table>
 </div>
-<p>Catatan Teknis: Penulis dapat merujuk pada direktori internasional seperti Directory of Open Access Journals (DOAJ) untuk mengevaluasi reputasi dan kebijakan transparansi jurnal target. Jurnal yang baik selalu mempublikasikan panduan penulis yang komprehensif dan biaya pemrosesan artikel secara transparan (DOAJ, 2024).</p>
-<h2 id="42-registrasi-dan-login-akun"><a class="header" href="#42-registrasi-dan-login-akun">4.2 Registrasi dan Login Akun</a></h2>
-<p>Untuk mengirimkan naskah, penulis diwajibkan memiliki akun pengguna yang terdaftar pada jurnal tujuan.</p>
-<h3 id="membuat-akun-baru"><a class="header" href="#membuat-akun-baru">Membuat Akun Baru</a></h3>
+<h2 id="73-ketentuan-tingkat-kemiripan-yang-dapat-diterima"><a class="header" href="#73-ketentuan-tingkat-kemiripan-yang-dapat-diterima">7.3 Ketentuan Tingkat Kemiripan yang Dapat Diterima</a></h2>
+<p>Meskipun belum terdapat panduan baku internasional yang seragam, buku rujukan Lukman, Istadi, &amp; Wiryawan (2020) menyatakan bahwa persentase total kemiripan naskah yang dapat diterima secara internasional berada di rentang <strong>15 hingga 20 persen</strong>. Di Indonesia, Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi menetapkan toleransi persentase plagiasi hingga maksimal <strong>25 persen</strong>. Persentase kemiripan ini dinilai secara selektif dengan mengecualikan (<em>exclude</em>) kutipan langsung dan daftar pustaka.</p>
+<p>Catatan Kritis: Walaupun total persentase masih berada di bawah ambang batas toleransi, apabila kemiripan terhadap satu sumber tunggal tergolong terlampau dominan secara berurutan dalam satu paragraf penuh, naskah tersebut pada dasarnya tetap terindikasi pelanggaran etika dan dapat ditolak (Lukman, Istadi, &amp; Wiryawan, 2020: 29–30).</p>
+<h2 id="74-perangkat-lunak-pemeriksaan-gratis"><a class="header" href="#74-perangkat-lunak-pemeriksaan-gratis">7.4 Perangkat Lunak Pemeriksaan Gratis</a></h2>
+<p>Terdapat beberapa perangkat lunak daring gratis yang dapat dimanfaatkan untuk memeriksa kemiripan secara cepat.</p>
+<h3 id="a-duplichecker"><a class="header" href="#a-duplichecker">A. Duplichecker</a></h3>
+<p>Situs Web: https://www.duplichecker.com</p>
+<p>Prosedur penggunaan:</p>
 <ol>
-<li>Kunjungi situs web jurnal dan akses menu <strong>Register</strong>.</li>
-<li>Lengkapi formulir registrasi dengan informasi berikut:
-<ul>
-<li>Nama lengkap (sesuai format identitas publikasi)</li>
-<li>Institusi afiliasi</li>
-<li>Negara asal</li>
-<li>Alamat surel aktif</li>
-</ul>
-</li>
-<li>Setujui pernyataan privasi (<em>Privacy Statement</em>).</li>
-<li>Aktifkan opsi untuk menerima notifikasi (<em>Agreed to get notifications</em>) agar penulis selalu mendapatkan pembaruan otomatis mengenai status naskah.</li>
-<li>(Opsional) Masukkan minat bidang keahlian di kolom <strong>Reviewing Interests</strong>. Pengisian kolom ini membuka peluang bagi pengguna untuk diundang sebagai mitra bestari di masa mendatang.</li>
-<li>Periksa surel masuk untuk menyelesaikan proses validasi akun.</li>
+<li>Akses halaman situs web Duplichecker.</li>
+<li>Salin dan tempel teks yang akan diperiksa ke dalam kolom utama.</li>
+<li>Centang kotak verifikasi CAPTCHA.</li>
+<li>Klik tombol <em>Check Plagiarism</em>.</li>
+<li>Tunggu proses analisis data selesai.</li>
+<li>Evaluasi persentase kemiripan yang dilaporkan.</li>
 </ol>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Formulir registrasi akun OJS"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Formulir registrasi akun OJS"></span></label></p>
-<h3 id="login"><a class="header" href="#login">Login</a></h3>
-<p>Akses sistem menggunakan <em>username</em> dan <em>password</em> yang telah didaftarkan. Pengguna akan diarahkan ke dasbor penulis.</p>
-<h2 id="43-proses-pengiriman-artikel-dalam-lima-langkah"><a class="header" href="#43-proses-pengiriman-artikel-dalam-lima-langkah">4.3 Proses Pengiriman Artikel dalam Lima Langkah</a></h2>
-<p>Dari dasbor utama, klik tombol <strong>“Make a New Submission”</strong> untuk memulai proses pengiriman naskah.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Tombol Make a New Submission di dasbor OJS"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Tombol Make a New Submission di dasbor OJS"></span></label></p>
-<h3 id="langkah-1-start-memulai-pengiriman"><a class="header" href="#langkah-1-start-memulai-pengiriman">Langkah 1: Start (Memulai Pengiriman)</a></h3>
-<p>Pada langkah pertama, penulis mengatur elemen administratif dasar naskah:</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Langkah pengecekan kemiripan dengan Duplichecker"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Langkah pengecekan kemiripan dengan Duplichecker"></span></label></p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Hasil pemeriksaan kemiripan dengan Duplichecker"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Hasil pemeriksaan kemiripan dengan Duplichecker"></span></label></p>
+<p>Perhatian: Duplichecker versi gratis memiliki keterbatasan dalam akurasi algoritma. Hasil laporannya sering kali menghasilkan persentase yang lebih rendah dari indeks sebenarnya dan terbatas pada 1.000 kata per pemeriksaan.</p>
+<h3 id="b-smallseotools"><a class="header" href="#b-smallseotools">B. SmallSEOTools</a></h3>
+<p>Situs Web: https://smallseotools.com/plagiarism-checker</p>
+<p>SmallSEOTools memiliki basis deteksi yang relatif lebih andal dibandingkan Duplichecker. Aplikasi ini menampilkan tautan sumber-sumber yang diidentifikasi memiliki kalimat yang identik beserta porsi persentasenya.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Hasil pemeriksaan kemiripan dengan SmallSEOTools"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Hasil pemeriksaan kemiripan dengan SmallSEOTools"></span></label></p>
+<h2 id="75-perbandingan-alat-pemeriksa-gratis"><a class="header" href="#75-perbandingan-alat-pemeriksa-gratis">7.5 Perbandingan Alat Pemeriksa Gratis</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th style="text-align: center">No.</th><th style="text-align: left">Perangkat Lunak</th><th style="text-align: center">Evaluasi Skor</th><th style="text-align: center">Sepenuhnya Gratis</th><th style="text-align: left">Keterbatasan Utama</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align: center">1</td><td style="text-align: left"><strong>Scribbr</strong></td><td style="text-align: center">★★★★★ (4.7)</td><td style="text-align: center">Tidak</td><td style="text-align: left">Akses versi gratis tidak memuat laporan mendetail.</td></tr>
+<tr><td style="text-align: center">2</td><td style="text-align: left">Quetext</td><td style="text-align: center">★★★☆☆ (3.3)</td><td style="text-align: center">Sebagian</td><td style="text-align: left">Hanya memberikan uji coba terbatas (2.500 kata).</td></tr>
+<tr><td style="text-align: center">3</td><td style="text-align: left">Grammarly</td><td style="text-align: center">★★★☆☆ (3.2)</td><td style="text-align: center">Tidak</td><td style="text-align: left">Versi tidak berbayar tidak menyediakan analisis kalimat rinci.</td></tr>
+<tr><td style="text-align: center">4</td><td style="text-align: left">Unicheck</td><td style="text-align: center">★★★☆☆ (3.0)</td><td style="text-align: center">Tidak</td><td style="text-align: left">Uji coba terbatas untuk 200 kata.</td></tr>
+<tr><td style="text-align: center">5</td><td style="text-align: left">Small SEO Tools</td><td style="text-align: center">★☆☆☆☆ (1.7)</td><td style="text-align: center">Tidak</td><td style="text-align: left">Dibatasi 1.000 kata per pemindaian.</td></tr>
+<tr><td style="text-align: center">6</td><td style="text-align: left">DupliChecker</td><td style="text-align: center">★☆☆☆☆ (1.7)</td><td style="text-align: center">Tidak</td><td style="text-align: left">Dibatasi 1.000 kata per pemindaian.</td></tr>
+</tbody>
+</table>
+</div>
+<p><em>Rujukan Data: scribbr.com/plagiarism/best-free-plagiarism-checker</em></p>
+<h2 id="76-layanan-pemeriksaan-berbayar-profesional"><a class="header" href="#76-layanan-pemeriksaan-berbayar-profesional">7.6 Layanan Pemeriksaan Berbayar Profesional</a></h2>
+<p>Bagi pengelolaan jurnal tingkat universitas yang profesional, penyediaan lisensi perangkat lunak berbayar sangat diutamakan:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Layanan</th><th>Keterangan</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Turnitin</strong></td><td>Merupakan standar industri yang diadopsi luas oleh perguruan tinggi global. Memiliki basis data dokumen akademik yang sangat ekstensif.</td></tr>
+<tr><td><strong>iThenticate</strong></td><td>Didesain khusus untuk kebutuhan editor jurnal ilmiah dan lembaga riset, membedakannya dari Turnitin yang condong digunakan pada tingkat mahasiswa.</td></tr>
+</tbody>
+</table>
+</div>
+<p>Arahan Editorial: Apabila jurnal menargetkan indeksasi bereputasi seperti Scopus atau Web of Science, berlangganan layanan seperti iThenticate menjadi investasi krusial dalam mitigasi risiko plagiarisme pascaterbit.</p>
+<h2 id="77-panduan-praktis-untuk-tim-editor-jurnal"><a class="header" href="#77-panduan-praktis-untuk-tim-editor-jurnal">7.7 Panduan Praktis untuk Tim Editor Jurnal</a></h2>
+<p>Untuk menjaga integritas ilmiah, tim editorial dianjurkan mengimplementasikan langkah-langkah berikut:</p>
 <ol>
-<li>Pilih <strong>bahasa</strong> yang digunakan dalam naskah.</li>
-<li>Pilih <strong>Section</strong> atau rubrik jurnal yang paling relevan dengan jenis naskah (misalnya: <em>Articles</em>, <em>Reviews</em>, <em>Notes</em>).</li>
-<li>Konfirmasi seluruh prasyarat pengiriman (<em>submission checklist</em>) yang ditampilkan oleh jurnal. Konfirmasi ini merupakan pernyataan kepatuhan administratif.</li>
-<li>Tuliskan pesan khusus untuk editor, jika ada, di kolom <strong>Comments for the Editor</strong>.</li>
-<li>Setujui <strong>Copyright Statement</strong>.</li>
-<li>Setujui <strong>Data Collection Agreement</strong>.</li>
-<li>Konfirmasikan peran sebagai kontak utama (<em>Corresponding Contact</em>) agar seluruh korespondensi editorial dikirimkan langsung kepada pengguna.</li>
+<li>Formulasikan dan publikasikan kebijakan jurnal yang lugas mengenai aturan orisinalitas serta kepengarangan di situs web OJS.</li>
+<li>Sediakan dokumen prosedur operasional standar (<em>Standard Operating Procedure</em>) untuk penanganan temuan plagiasi.</li>
+<li>Minta mitra bestari untuk proaktif mengidentifikasi tanda-tanda plagiat empiris, meliputi duplikasi struktur kalimat yang ganjil, inkonsistensi penyajian data gambar, hingga keberadaan gagasan sentral tanpa pengutipan selayaknya.</li>
+<li>Rujuk pedoman Committee on Publication Ethics (COPE) yang memuat diagram alur penanganan sengketa etika akademik di situs publicationethics.org.</li>
 </ol>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Langkah 1: Start pemilihn section dan checklist"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Langkah 1: Start pemilihn section dan checklist"></span></label></p>
-<h3 id="langkah-2-upload-submission-mengunggah-dokumen"><a class="header" href="#langkah-2-upload-submission-mengunggah-dokumen">Langkah 2: Upload Submission (Mengunggah Dokumen)</a></h3>
-<p>Unggah dokumen naskah menggunakan salah satu metode yang tersedia (klik tombol <strong>Add File</strong>, klik tautan <strong>Upload File</strong>, atau gunakan fungsi seret dan lepas).</p>
-<p>Setelah berkas terunggah, pilih komponen dokumen yang paling tepat dari menu tarik-turun:</p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>Komponen Dokumen</th><th>Peruntukan</th></tr>
-</thead>
-<tbody>
-<tr><td><strong>Article Text</strong></td><td>Naskah utama artikel, mencakup pendahuluan hingga kesimpulan.</td></tr>
-<tr><td><strong>Research Materials</strong></td><td>Materi pendukung seperti instrumen penelitian, kuesioner, atau kumpulan data sekunder.</td></tr>
-<tr><td><strong>Transcripts</strong></td><td>Transkrip wawancara mentah.</td></tr>
-<tr><td><strong>Source Text</strong></td><td>Teks dokumen sumber asli, khusus untuk naskah terjemahan.</td></tr>
-<tr><td><strong>Other</strong></td><td>Dokumen pendukung lain yang tidak termasuk dalam kategori di atas.</td></tr>
-</tbody>
-</table>
-</div>
-<p>Perhatian: Ketepatan klasifikasi komponen berkas sangat membantu editor dalam memilah dokumen saat mendistribusikan naskah kepada mitra bestari.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Langkah 2: Upload file naskah ke OJS"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Langkah 2: Upload file naskah ke OJS"></span></label></p>
-<h3 id="langkah-3-enter-metadata-menginput-metadata"><a class="header" href="#langkah-3-enter-metadata-menginput-metadata">Langkah 3: Enter Metadata (Menginput Metadata)</a></h3>
-<p>Lengkapi informasi bibliografis naskah secara komprehensif. Keakuratan metadata sejak tahap pengiriman akan memperlancar seluruh alur editorial dan proses pengindeksan di kemudian hari.</p>
-<p>Ketentuan pengisian utama:</p>
-<ul>
-<li><strong>Judul</strong> (<em>Title</em>): Ditulis menggunakan format <em>Sentence case</em> atau <em>Title Case</em>. Penulisan judul menggunakan huruf kapital seluruhnya tidak diizinkan.</li>
-<li><strong>Abstrak</strong> (<em>Abstract</em>): Pastikan sesuai dengan batas jumlah kata yang ditetapkan jurnal (umumnya maksimal 250 kata) dan disajikan dalam satu paragraf utuh.</li>
-</ul>
-<p><strong>Menambahkan Kontributor:</strong></p>
-<p>Jika naskah ditulis oleh lebih dari satu penulis, klik <strong>Add Contributor</strong> dan isi informasi berikut:</p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>Kolom</th><th>Keterangan</th></tr>
-</thead>
-<tbody>
-<tr><td><strong>Given Name</strong></td><td>Nama depan dan nama tengah (jika ada).</td></tr>
-<tr><td><strong>Family Name</strong></td><td>Nama belakang penulis.</td></tr>
-<tr><td><strong>Email</strong></td><td>Alamat surel aktif, sangat disarankan menggunakan surel institusi.</td></tr>
-<tr><td><strong>Country</strong></td><td>Negara asal institusi penulis.</td></tr>
-<tr><td><strong>Affiliation</strong></td><td>Nama lengkap institusi asal. Penulisan harus konsisten dengan yang tertera di dalam naskah.</td></tr>
-<tr><td><strong>ORCID</strong></td><td>Tautan ID ORCID penulis (sangat direkomendasikan).</td></tr>
-<tr><td><strong>Role</strong></td><td>Peran kontributor (Penulis atau Penerjemah).</td></tr>
-<tr><td><strong>Principal Contact</strong></td><td>Status sebagai narahubung utama untuk keperluan korespondensi editorial.</td></tr>
-<tr><td><strong>Browse List</strong></td><td>Penentu apakah nama kontributor ini akan ditampilkan pada halaman publik artikel.</td></tr>
-</tbody>
-</table>
-</div>
-<p>Catatan Penulisan Nama:</p>
-<ul>
-<li>Jika nama hanya terdiri dari satu kata tunggal (misalnya: <em>Soekarno</em>), isikan nama tersebut di kolom <em>Given Name</em> maupun <em>Family Name</em>.</li>
-<li>Dilarang mengisi tanda hubung atau karakter non-alfabet pada kolom nama yang kosong.</li>
-</ul>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Langkah 3: Input metadata artikel"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Langkah 3: Input metadata artikel"></span></label></p>
-<h3 id="langkah-4-confirmation-konfirmasi"><a class="header" href="#langkah-4-confirmation-konfirmasi">Langkah 4: Confirmation (Konfirmasi)</a></h3>
-<p>Tahap ini memberikan kesempatan terakhir bagi penulis untuk memvalidasi seluruh data yang telah dimasukkan sebelum naskah dikirim secara final. Hal yang wajib dipastikan:</p>
-<ul>
-<li>Judul naskah telah ditulis dengan benar dan selaras dengan metadata dalam dokumen.</li>
-<li>Dokumen yang diunggah adalah versi final dan diklasifikasikan ke komponen yang tepat.</li>
-<li>Daftar kontributor telah diinput secara lengkap dan urutan penulis telah sesuai.</li>
-<li>Metadata dasar tidak mengandung kesalahan ketik.</li>
-</ul>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Langkah 4: Halaman konfirmasi submission"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Langkah 4: Halaman konfirmasi submission"></span></label></p>
-<h3 id="langkah-5-next-steps-selesai"><a class="header" href="#langkah-5-next-steps-selesai">Langkah 5: Next Steps (Selesai)</a></h3>
-<p>Klik tombol <strong>“Finish Submission”</strong> untuk menyelesaikan proses. Setelah tindakan ini dilakukan, sistem akan merespons dengan:</p>
+<h2 id="78-panduan-pencegahan-plagiarisme-bagi-penulis"><a class="header" href="#78-panduan-pencegahan-plagiarisme-bagi-penulis">7.8 Panduan Pencegahan Plagiarisme bagi Penulis</a></h2>
+<p>Penulis dituntut memahami bahwa plagiat adalah pelanggaran etika yang mendatangkan sanksi pencabutan dokumen (<em>retraction</em>). Langkah pencegahan esensial meliputi:</p>
 <ol>
-<li>Mengirimkan surel konfirmasi penerimaan kepada penulis utama.</li>
-<li>Membangkitkan notifikasi di dasbor editor bahwa terdapat kiriman naskah baru.</li>
-<li>Menampilkan halaman yang merangkum langkah-langkah administratif selanjutnya.</li>
+<li>Gunakan tanda kutip ganda pada saat mengadopsi teks rujukan sama persis tanpa memarafrasakannya.</li>
+<li>Cantumkan seluruh referensi secara terperinci pada daftar pustaka.</li>
+<li>Selalu sematkan sitasi dalam teks (<em>in-text citation</em>) seketika gagasan sumber diintegrasikan ke dalam naskah.</li>
+<li>Jangan mengirimkan naskah yang identik ke lebih dari satu jurnal secara bersamaan, karena hal ini diklasifikasikan sebagai plagiasi diri (<em>self-plagiarism</em>).</li>
+<li>Kembangkan budaya pencatatan rujukan berbasis <em>reference manager</em> agar silsilah sumber ide tidak terputus atau terlupakan saat naskah ditulis.</li>
 </ol>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Langkah 5: Halaman konfirmasi setelah submission selesai"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Langkah 5: Halaman konfirmasi setelah submission selesai"></span></label></p>
-<h2 id="44-setelah-pengiriman-proses-editorial-awal"><a class="header" href="#44-setelah-pengiriman-proses-editorial-awal">4.4 Setelah Pengiriman: Proses Editorial Awal</a></h2>
-<p>Setelah naskah berhasil dikirim, editor akan melaksanakan tinjauan awal meja (<em>desk review</em>). Proses evaluasi awal ini akan berujung pada salah satu dari tiga kemungkinan keputusan editorial:</p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>Keputusan Awal Editor</th><th>Implikasi</th></tr>
-</thead>
-<tbody>
-<tr><td><strong>Send to Review</strong></td><td>Naskah dinilai memenuhi prasyarat awal jurnal dan dilanjutkan ke proses penelaahan sejawat (<em>peer review</em>).</td></tr>
-<tr><td><strong>Accept and Skip Review</strong></td><td>Naskah langsung diterima tanpa melalui proses <em>peer review</em>. Umumnya terjadi pada kategori khusus seperti resensi buku atau editorial.</td></tr>
-<tr><td><strong>Decline Submission</strong></td><td>Naskah ditolak pada tahap awal karena tidak sesuai dengan fokus jurnal, tidak mengikuti panduan format dasar, atau terdeteksi memiliki tingkat plagiarisme yang tinggi.</td></tr>
-</tbody>
-</table>
-</div>
-<p>Sistem secara otomatis akan mengirimkan surel pemberitahuan untuk setiap perubahan status editorial. Penulis juga dianjurkan memantau status perkembangan naskah secara berkala melalui dasbor OJS.</p>
-<h2 id="checklist-bab-4"><a class="header" href="#checklist-bab-4">Checklist Bab 4</a></h2>
-<p>Gunakan daftar periksa berikut sebelum mengirimkan naskah:</p>
+<h2 id="checklist-bab-7"><a class="header" href="#checklist-bab-7">Checklist Bab 7</a></h2>
 <ul>
-<li><input disabled="" type="checkbox"> Topik naskah telah dipastikan relevan dengan fokus dan ruang lingkup jurnal.</li>
-<li><input disabled="" type="checkbox"> Berkas naskah telah disusun mematuhi panduan penulis (<em>author guidelines</em>).</li>
-<li><input disabled="" type="checkbox"> Judul naskah menggunakan format huruf kapital yang tepat (<em>Title Case</em> atau <em>Sentence case</em>).</li>
-<li><input disabled="" type="checkbox"> Seluruh data kontributor pendamping telah disiapkan (nama lengkap, afiliasi, surel, ORCID).</li>
-<li><input disabled="" type="checkbox"> Abstrak telah disiapkan dan jumlah katanya tidak melebihi ketentuan jurnal.</li>
-<li><input disabled="" type="checkbox"> Daftar pustaka ditulis secara konsisten dan sesuai dengan gaya sitasi yang diwajibkan.</li>
-<li><input disabled="" type="checkbox"> Informasi yang berpotensi melanggar kebijakan <em>blind review</em> telah dihapus dari berkas naskah utama.</li>
+<li><input disabled="" type="checkbox"> Batas toleransi plagiarisme jurnal telah ditetapkan secara eksplisit dalam kebijakan (<em>mis. maks 25%</em>).</li>
+<li><input disabled="" type="checkbox"> Perangkat lunak pemeriksa kemiripan (<em>similarity checker</em>) telah ditentukan penggunaannya (gratis atau lisensi universitas).</li>
+<li><input disabled="" type="checkbox"> Prosedur standar pemindaian dokumen setelah tinjauan awal meja (<em>desk review</em>) telah dilaksanakan pada seluruh naskah yang masuk.</li>
+<li><input disabled="" type="checkbox"> Editor telah memahami cara menafsirkan laporan kemiripan dengan benar (mengecualikan kutipan langsung dan daftar pustaka).</li>
+<li><input disabled="" type="checkbox"> Diagram alur penanganan pelanggaran dari COPE telah diadopsi sebagai referensi mitigasi etika jurnal.</li>
 </ul>
 <h2 id="ringkasan-bab"><a class="header" href="#ringkasan-bab">Ringkasan Bab</a></h2>
-<p>Pengiriman naskah melalui OJS 3.3 dirancang sebagai proses pengumpulan informasi komprehensif. Keakuratan metadata dan pengklasifikasian berkas yang cermat tidak hanya mendemonstrasikan profesionalisme penulis, tetapi juga sangat memengaruhi efisiensi kerja tim redaksi. Pemahaman penulis terhadap pentingnya setiap langkah dalam tahap <em>submission</em> menjamin kelancaran transisi naskah ke tahap penilaian substansi ilmiah berikutnya.</p>
+<p>Pemeriksaan kemiripan (<em>similarity check</em>) bertindak sebagai lapisan pelindung lini depan bagi kredibilitas sebuah jurnal. Integrasi prosedur deteksi sebelum mengalihkan naskah ke penelaah sejawat membantu menjaga standar kualitas, menghindarkan mitra bestari dari keharusan mengevaluasi dokumen yang cacat etika, dan mencegah potensi penarikan publikasi di kemudian hari.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="bab3-gambaran-umum.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="bab6-merespons-naskah.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="bab5-merespons-naskah.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="bab8-assigning-reviewer.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -345,11 +305,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="bab3-gambaran-umum.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="bab6-merespons-naskah.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="bab5-merespons-naskah.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="bab8-assigning-reviewer.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>

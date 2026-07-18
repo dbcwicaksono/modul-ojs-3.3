@@ -1,0 +1,438 @@
+<!DOCTYPE HTML>
+<html lang="id" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Bab 4: Analisis Subjek &amp; Bibliografi - Buku Panduan OJS 3</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-e96d0476.css">
+        <link rel="stylesheet" href="css/chrome-d279d366.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-4bcd7828.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-95e609ce.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Buku Panduan OJS 3</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="bab-4-analisis-subjek-dan-bibliografi"><a class="header" href="#bab-4-analisis-subjek-dan-bibliografi">Bab 4: Analisis Subjek dan Bibliografi</a></h1>
+<blockquote>
+<p><em>Salah satu masalah paling persisten dalam publikasi ilmiah adalah daftar pustaka yang ditulis secara acak atau tidak mengikuti standar baku. Daftar pustaka yang berantakan bukan sekadar masalah estetika, melainkan hambatan serius yang menyebabkan mesin pengindeks gagal mengenali sitasi dan memutus jejaring metrik artikel tersebut.</em></p>
+</blockquote>
+<p>Bibliografi merupakan komponen fundamental dalam penulisan ilmiah. Tanpa bibliografi yang benar, integritas sebuah karya ilmiah menjadi diragukan. Bab ini membahas konsep dasar bibliografi, fungsinya, serta berbagai gaya penulisan sitasi yang umum digunakan dalam penerbitan jurnal ilmiah.</p>
+<h2 id="41-pengertian-bibliografi"><a class="header" href="#41-pengertian-bibliografi">4.1 Pengertian Bibliografi</a></h2>
+<p>Kata <strong>bibliografi</strong> berasal dari bahasa Yunani: <em>biblio</em> (buku) dan <em>grafi</em> (menulis). Bibliografi dapat difungsikan sebagai suatu daftar buku atau artikel majalah untuk subjek tertentu yang mendaftar semua buku yang diterbitkan di wilayah geografi atau bahasa tertentu.</p>
+<p>Beberapa definisi bibliografi menurut para ahli:</p>
+<ul>
+<li>Menurut <em>Random House Dictionary of the English Language</em>, bibliografi adalah suatu daftar buku-buku atau artikel-artikel tentang suatu subjek tertentu.</li>
+<li>Menurut <em>American Library Association (ALA) Glossary of Library Terms</em>, bibliografi adalah suatu survei yang menggambarkan buku-buku secara baik dengan memperhatikan kepengarangan, edisi, bentuk fisik buku, dan lain-lain.</li>
+<li>Menurut Thomas Landau dalam <em>Encyclopedia of Librarianship</em>, bibliografi adalah daftar deskriptif yang sistematik dan sejarah buku, kepengarangan, penerbit, edisi, dan sebagainya.</li>
+</ul>
+<h2 id="42-aspek-yang-harus-diperhatikan-dalam-bibliografi"><a class="header" href="#42-aspek-yang-harus-diperhatikan-dalam-bibliografi">4.2 Aspek yang Harus Diperhatikan dalam Bibliografi</a></h2>
+<p>Setiap entri bibliografi harus memuat aspek-aspek berikut secara lengkap dan akurat:</p>
+<ol>
+<li><strong>Nama Author</strong> (pengarang atau penulis)</li>
+<li><strong>Judul</strong> dan Tahun Terbit</li>
+<li><strong>Halaman Judul</strong> dan Jumlah Halaman</li>
+<li><strong>Penerbit</strong>, Afiliasi, dan Kota Terbit</li>
+<li><strong>Edisi</strong>, Volume, URL (untuk sumber daring), dan informasi lainnya</li>
+</ol>
+<h2 id="43-fungsi-bibliografi"><a class="header" href="#43-fungsi-bibliografi">4.3 Fungsi Bibliografi</a></h2>
+<p>Bibliografi memiliki beberapa fungsi penting dalam ekosistem ilmu pengetahuan:</p>
+<ol>
+<li>Mengetahui apa yang pernah ditulis dan diterbitkan oleh orang lain dalam disiplin ilmu tertentu.</li>
+<li>Sebagai <strong>alat penelusuran informasi</strong> untuk menemukan suatu dokumen (buku atau artikel penelitian).</li>
+<li>Sebagai alat informasi bagi perpustakaan atau lembaga yang akan melakukan penelitian atau pengembangan koleksi.</li>
+<li>Mengetahui <strong>sumber informasi</strong> yang digunakan sebagai referensi dalam karya orang lain.</li>
+</ol>
+<h2 id="44-tujuan-bibliografi-dan-syarat-menjadi-bibliografer"><a class="header" href="#44-tujuan-bibliografi-dan-syarat-menjadi-bibliografer">4.4 Tujuan Bibliografi dan Syarat Menjadi Bibliografer</a></h2>
+<h3 id="tujuan-bibliografi"><a class="header" href="#tujuan-bibliografi">Tujuan Bibliografi</a></h3>
+<ol>
+<li>Menambah ilmu pengetahuan.</li>
+<li>Mendukung penelitian.</li>
+<li>Sebagai bahan ajar.</li>
+<li>Mengikuti perkembangan disiplin ilmu dan penelitian.</li>
+</ol>
+<h3 id="syarat-menjadi-bibliografer-yang-baik"><a class="header" href="#syarat-menjadi-bibliografer-yang-baik">Syarat Menjadi Bibliografer yang Baik</a></h3>
+<ol>
+<li>Cekatan, teliti, sabar, dan pantang menyerah.</li>
+<li>Memiliki keinginan kuat untuk terus belajar dan mengembangkan diri.</li>
+<li>Tidak malu bertanya.</li>
+<li>Memiliki daya ingat yang baik (dapat dilatih).</li>
+</ol>
+<h2 id="45-data-yang-harus-dicatat-dalam-bibliografi"><a class="header" href="#45-data-yang-harus-dicatat-dalam-bibliografi">4.5 Data yang Harus Dicatat dalam Bibliografi</a></h2>
+<p>Dalam menyusun entri bibliografi, informasi berikut wajib dicatat:</p>
+<ol>
+<li><strong>Nama pengarang atau kepengarangan</strong>: baik nama orang maupun lembaga.</li>
+<li><strong>Judul</strong>: judul utama dan judul tambahan.</li>
+<li><strong>Impresum</strong>: tempat terbit, nama penerbit, dan tahun terbit.</li>
+<li><strong>Kolasi</strong>: jumlah jilid, halaman, keterangan ilustrasi, dan indeks.</li>
+</ol>
+<h2 id="46-macam-macam-gaya-bibliografi-citation-style"><a class="header" href="#46-macam-macam-gaya-bibliografi-citation-style">4.6 Macam-macam Gaya Bibliografi (Citation Style)</a></h2>
+<p>Gaya sitasi dikeluarkan oleh berbagai organisasi dan disesuaikan dengan bidang kajian masing-masing. Memilih gaya sitasi yang tepat sangat penting karena setiap jurnal umumnya mensyaratkan satu gaya tertentu dalam panduan penulisannya (<em>author guidelines</em>).</p>
+<p><strong>Sorotan Standar Global: Ekstraksi Referensi dan Crossref Reference Linking</strong>
+OJS 3.3 menyediakan fitur ekstraksi referensi yang memungkinkan sistem memisahkan setiap item dalam daftar pustaka menjadi metadata mandiri. Hal ini sejalan dengan praktik terbaik <em>Crossref Reference Linking</em>, di mana daftar pustaka yang terstruktur dengan baik akan disetor ke Crossref untuk membentuk jejaring sitasi otomatis (meningkatkan metrik “cited-by”). Mesin pemanen (<em>parser</em>) pengindeks global hanya dapat membaca referensi yang telah diekstrak dengan rapi ke dalam metadata, bukan dari naskah PDF secara langsung.
+<em>Sumber: Crossref (2025, https://www.crossref.org/) dan PKP Docs (2025, https://docs.pkp.sfu.ca/)</em></p>
+<h3 id="461-gaya-apa-american-psychological-association"><a class="header" href="#461-gaya-apa-american-psychological-association">4.6.1 Gaya APA (American Psychological Association)</a></h3>
+<p>Gaya APA paling umum digunakan dalam bidang <strong>ilmu sosial, psikologi, dan pendidikan</strong>. Ciri-cirinya:</p>
+<ul>
+<li>Daftar pustaka diurutkan <strong>alfabetis</strong> berdasarkan nama belakang penulis (atau judul jika tidak ada penulis).</li>
+<li>Nama depan penulis ditulis sebagai <strong>inisial</strong>.</li>
+<li>Jika ada penulis yang sama, urutkan dari tahun yang paling lama (bisa ditambahkan huruf a, b, c setelah tahun).</li>
+</ul>
+<p><strong>Contoh penulisan untuk berbagai sumber:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th style="text-align: left">Jenis Sumber</th><th style="text-align: left">Contoh Sitasi dalam Teks</th><th style="text-align: left">Contoh Daftar Pustaka</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align: left"><strong>Jurnal Online</strong></td><td style="text-align: left">(Kim et al., 2010, p. 311)</td><td style="text-align: left">Kim, C., Mirusmonov, M., &amp; Lee, I. (2010). An empirical examination of factors influencing the intention to use mobile payment. <em>Computers in Human Behavior</em>, 26, 310–322. https://doi.org/10.1016/j.chb.2009.10.013</td></tr>
+<tr><td style="text-align: left"><strong>Buku Online</strong></td><td style="text-align: left">(Kumar, 2012)</td><td style="text-align: left">Kumar, S. R. (2012). <em>Case studies in Marketing Management</em>. Pearson. http://books.google.com/books</td></tr>
+<tr><td style="text-align: left"><strong>Surat Kabar Online</strong></td><td style="text-align: left">Hatta (2019)</td><td style="text-align: left">Hatta, C. (2019, Juni 16). Kode Morse THR. <em>Kompas Online</em>. http://www.kompas.com</td></tr>
+<tr><td style="text-align: left"><strong>Buku (korporat)</strong></td><td style="text-align: left">(APA, 2010)</td><td style="text-align: left">American Psychological Association. (2010). <em>Publication manual of the APA Style</em> (6th ed.). Penulis.</td></tr>
+<tr><td style="text-align: left"><strong>Disertasi/Tesis</strong></td><td style="text-align: left">Hartarto A (2019)</td><td style="text-align: left">Hartarto, A. (2019). <em>Crossing boundaries in urban ecology</em> [Doctoral dissertation]. Proquest Dissertation &amp; Theses Database. (UMI No. 327681).</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="462-gaya-chicago-dan-turabian"><a class="header" href="#462-gaya-chicago-dan-turabian">4.6.2 Gaya Chicago dan Turabian</a></h3>
+<p>Gaya Chicago atau Turabian umum digunakan dalam bidang <strong>sastra, sejarah, dan seni</strong>. Ciri khasnya:</p>
+<ul>
+<li>Pada catatan kutipan: nama penulis ditulis <em>nama depan nama akhir</em>.</li>
+<li>Pada daftar pustaka: nama penulis <strong>dibalik</strong> (<em>nama akhir, nama depan</em>).</li>
+<li>Menggunakan <strong>catatan kaki</strong> (<em>footnotes</em>) atau <strong>catatan akhir</strong> (<em>endnotes</em>) yang diberi nomor secara kronologis.</li>
+<li>Judul karya pendek (artikel, puisi): diapit tanda kutip <code>"Judul"</code>.</li>
+<li>Judul karya panjang (buku, jurnal): ditulis <em>miring</em> (italic).</li>
+<li>Memiliki dua sistem: <strong>Notes-Bibliography</strong> (humaniora) dan <strong>Author-Date</strong> (ilmu sosial dan alam).</li>
+</ul>
+<p><strong>Contoh:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th style="text-align: left">Jenis Sumber</th><th style="text-align: left">Catatan Kaki (Footnote)</th><th style="text-align: left">Daftar Pustaka</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align: left"><strong>Buku</strong></td><td style="text-align: left">Partini, <em>Bias Gender dalam Birokrasi</em> (Yogyakarta: Satya Wacana, 2013), 112.</td><td style="text-align: left">Partini. <em>Bias Gender dalam Birokrasi</em>. Yogyakarta: Satya Wacana, 2013.</td></tr>
+<tr><td style="text-align: left"><strong>Jurnal</strong></td><td style="text-align: left">Karim Jonathan, “Beyond Growth: Library and Development,” <em>Annals of Library Research</em> 40, no. 5 (2015): 1111.</td><td style="text-align: left">Jonathan, Karim. “Beyond Growth: Library and Development.” <em>Annals of Library Research</em> 40, no. 5 (2015): 1111–1130.</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="463-gaya-harvard-cite-them-right-10th-edition"><a class="header" href="#463-gaya-harvard-cite-them-right-10th-edition">4.6.3 Gaya Harvard (Cite Them Right, 10th Edition)</a></h3>
+<p>Gaya Harvard banyak digunakan dalam bidang <strong>bisnis dan ilmu sosial</strong>. Format umum untuk artikel jurnal:</p>
+<pre><code>Nama belakang pengarang, Inisial. Tahun Publikasi. 'Judul artikel'. *Nama jurnal*, Vol. x, No. x, hh. xxx–xxx.
+</code></pre>
+<p><strong>Contoh:</strong></p>
+<ul>
+<li>
+<p><strong>Pengarang tunggal</strong>: Hall, M 1999, ‘Breaking the silence: marginalisation of registered nurses employed in nursing homes’, <em>Contemporary Nurse</em>, vol. 8, no. 1, hh. 232–237.</p>
+</li>
+<li>
+<p><strong>Dua pengarang</strong>: Davis, L, Mohay, H &amp; Edwards, H 2003, ‘Mothers’ involvement in caring for their premature infants: an historical overview’, <em>Journal of Advanced Nursing</em>, vol. 42, no. 6, hh. 578–86.</p>
+</li>
+<li>
+<p><strong>Lebih dari dua pengarang</strong>: Wijaya, K, Phillips, M &amp; Syarif, H 2002, ‘Pemilihan sistem penyimpanan data skala besar’, <em>Jurnal Informatika Indonesia</em>, vol. 1, no. 3, hh. 132–140.</p>
+</li>
+<li>
+<p><strong>Jurnal Online</strong>: Birbeck, D &amp; Drummond, M 2006, ‘Very young children’s body image: bodies and minds under construction’, <em>International Education Journal</em>, vol. 7, no. 4, dilihat 12 Desember 2006, &lt;https://iej.com&gt;.</p>
+</li>
+</ul>
+<h3 id="464-gaya-mla-modern-language-association"><a class="header" href="#464-gaya-mla-modern-language-association">4.6.4 Gaya MLA (Modern Language Association)</a></h3>
+<p>Gaya MLA umum digunakan dalam bidang <strong>sastra dan bahasa</strong>. Ciri-cirinya:</p>
+<ul>
+<li>Nama penulis ditulis lengkap dengan nama akhir di depan.</li>
+<li><strong>Tahun terbit</strong> diletakkan di bagian akhir entri.</li>
+<li>Kutipan dalam teks cukup dengan nama belakang penulis dan nomor halaman, contoh: <code>(Dunn 1112)</code>.</li>
+<li>Sumber daring tidak perlu menyebutkan URL secara spesifik, cukup sertakan tanggal akses apabila diminta.</li>
+</ul>
+<p><strong>Contoh Jurnal:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th style="text-align: left">Sitasi dalam Teks</th><th style="text-align: left">Daftar Pustaka</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align: left">Dunn berpendapat (1112)</td><td style="text-align: left">Dunn, Creswell. “Beyond Growth: Library and Development.” <em>Annals of Library Research</em> 40.5 (2015): 1111–1130. Print.</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="465-gaya-ieee-institute-of-electrical-and-electronics-engineers"><a class="header" href="#465-gaya-ieee-institute-of-electrical-and-electronics-engineers">4.6.5 Gaya IEEE (Institute of Electrical and Electronics Engineers)</a></h3>
+<p>Gaya IEEE digunakan dalam bidang <strong>teknik, elektro, dan komputer</strong>. Ciri khasnya menggunakan <strong>sistem penomoran</strong> dalam teks, misalnya: <code>[1]</code>, <code>[2]</code>.</p>
+<p><strong>Contoh:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th style="text-align: left">Jenis Sumber</th><th style="text-align: left">Format Daftar Pustaka</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align: left"><strong>Buku</strong></td><td style="text-align: left">[1] Penulis, <em>Judul Buku</em>. Edisi. Kota: Penerbit, Tahun.</td></tr>
+<tr><td style="text-align: left"><strong>Jurnal Online</strong></td><td style="text-align: left">[1] R. E. Kalman, “New results in linear filtering and prediction theory,” <em>J. Basic Eng.</em>, ser. D, vol. 83, pp. 95–108, Mar. 1961.</td></tr>
+<tr><td style="text-align: left"><strong>Tesis</strong></td><td style="text-align: left">[1] Penulis, “Judul Tesis,” M.S. thesis, Dept., Univ., Kota, Tahun.</td></tr>
+</tbody>
+</table>
+</div>
+<p>Catatan Teknis: Jika jumlah penulis lebih dari tiga orang dalam gaya sitasi tertentu, beberapa panduan menginstruksikan untuk menuliskan satu nama orang pertama dan menambahkan frasa <em>et al.</em></p>
+<p><strong>Catatan dari Lapangan</strong>
+Banyak pengelola jurnal sering mengeluhkan kegagalan sistem pengindeks seperti DOAJ atau portal Garuda dalam mendeteksi dan menghitung jumlah kutipan artikel mereka. Salah satu penyebab utamanya adalah penulis sering kali menyusun daftar pustaka secara manual (<em>hardcoded citations</em>) dengan format yang acak-acakan. Ketika skrip pemanen (<em>parser</em>) mencoba membaca teks biasa tersebut, mereka gagal mengenali elemen-elemen penting seperti nama penulis atau judul artikel. Oleh karena itu, mewajibkan penggunaan perangkat lunak manajer referensi (<em>reference manager</em>) seperti Mendeley atau Zotero kepada penulis adalah solusi praktis untuk menjamin standardisasi dan kelancaran pemanenan metadata.</p>
+<h2 id="47-analisis-subjek-dalam-konteks-pengelolaan-jurnal"><a class="header" href="#47-analisis-subjek-dalam-konteks-pengelolaan-jurnal">4.7 Analisis Subjek dalam Konteks Pengelolaan Jurnal</a></h2>
+<p>Analisis subjek adalah proses mengidentifikasi dan merepresentasikan isi dokumen (artikel, buku) ke dalam bentuk <strong>kata kunci</strong> (<em>keywords</em>) atau <strong>subjek terstandar</strong> yang memudahkan penelusuran kembali (<em>information retrieval</em>).</p>
+<p>Dalam pengelolaan jurnal, analisis subjek sangat penting untuk:</p>
+<ul>
+<li>Menentukan <strong>kata kunci</strong> yang tepat dalam metadata artikel.</li>
+<li>Memastikan artikel dapat <strong>ditemukan</strong> oleh mesin pencari dan basis data pengindeks.</li>
+<li>Mendukung proses <strong>klasifikasi</strong> dan pengorganisasian konten jurnal.</li>
+</ul>
+<p><strong>Sorotan Standar Global: <em>Controlled Vocabularies</em> dan <em>Author Keywords</em></strong>
+Dalam praktik terbaik penerbitan akademik yang diakui oleh pengindeks global, sangat disarankan untuk mengkombinasikan <em>Author Keywords</em> dengan <em>Controlled Vocabularies</em>. <em>Controlled Vocabularies</em> (seperti MeSH atau JEL) adalah daftar istilah standar yang dikelola oleh pakar untuk mengurangi ambiguitas istilah yang digunakan penulis. Sementara itu, <em>Author Keywords</em> menangkap istilah bebas dan tren baru yang mungkin belum masuk ke standar baku. Kombinasi keduanya akan memaksimalkan kemampuan artikel ditemukan (<em>discoverability</em>) di basis data akademik.
+<em>Sumber: San Jose State University &amp; University of Washington Libraries (2025, URL terkait panduan pustaka)</em></p>
+<p>(Pengelolaan metadata artikel secara lebih komprehensif dibahas pada <strong>Bab 13: Optimalisasi Metadata Artikel</strong>).</p>
+<h2 id="latihan-bab-4"><a class="header" href="#latihan-bab-4">Latihan Bab 4</a></h2>
+<p><strong>Latihan 4.1: Analisis Ekstraksi Referensi</strong>
+Skenario: Anda menerima sebuah artikel dengan daftar pustaka yang ditulis secara acak tanpa mengikuti standar baku apa pun.
+Tugas: Gunakan perangkat lunak manajer referensi atau format ulang secara manual untuk mengubah lima daftar pustaka acak tersebut menjadi format standar (misalnya APA atau IEEE) sehingga siap untuk diekstrak ke kolom referensi pada metadata artikel di OJS.
+<strong>Panduan Fasilitator</strong>: Berikan contoh daftar pustaka yang berantakan, lalu pantau kemampuan peserta dalam menstrukturkan kembali elemen-elemen (penulis, tahun, judul, sumber, DOI) menjadi format yang terbaca oleh sistem pemanen.</p>
+<p><strong>Latihan 4.2: Audit Kata Kunci</strong>
+Skenario: Penulis mengirimkan artikel dengan sekumpulan kata kunci (<em>author keywords</em>) yang sangat spesifik dan beberapa di antaranya berupa frasa yang terlalu panjang.
+Tugas: Evaluasi kata kunci yang diberikan oleh penulis. Coba petakan kata kunci tersebut ke dalam <em>controlled vocabularies</em> (misalnya MeSH untuk kesehatan atau taksonomi khusus lainnya yang relevan).
+<strong>Panduan Fasilitator</strong>: Diskusikan dengan peserta perbedaan hasil pencarian ketika menggunakan kata kunci bebas dari penulis dibandingkan menggunakan istilah dari <em>controlled vocabularies</em>.</p>
+<h2 id="checklist-bab-4"><a class="header" href="#checklist-bab-4">Checklist Bab 4</a></h2>
+<ul>
+<li><input disabled="" type="checkbox"> Pengertian dan pentingnya bibliografi telah dipahami secara konsep.</li>
+<li><input disabled="" type="checkbox"> Berbagai gaya sitasi yang paling relevan dengan bidang jurnal (APA, IEEE, dsb.) telah dipelajari perbedaannya.</li>
+<li><input disabled="" type="checkbox"> Panduan penulisan referensi (<em>author guidelines</em>) jurnal telah disesuaikan dengan salah satu standar gaya sitasi yang diakui.</li>
+<li><input disabled="" type="checkbox"> Pentingnya konsistensi metadata dan penelusuran (<em>information retrieval</em>) telah diidentifikasi untuk diterapkan dalam manajemen metadata kelak.</li>
+</ul>
+<h2 id="ringkasan-bab"><a class="header" href="#ringkasan-bab">Ringkasan Bab</a></h2>
+<p>Bibliografi yang baik adalah fondasi dari karya ilmiah yang kredibel. Memahami berbagai gaya sitasi membantu pengelola jurnal untuk memastikan konsistensi penulisan referensi oleh penulis, menentukan gaya sitasi yang diadopsi dalam <em>Author Guidelines</em> jurnal, serta memeriksa kebenaran format referensi selama proses editorial.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Gaya Sitasi</th><th>Bidang Utama</th><th>Ciri Khas</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>APA</strong></td><td>Sosial, Psikologi, Pendidikan</td><td>Nama-tahun, inisial nama depan</td></tr>
+<tr><td><strong>Chicago/Turabian</strong></td><td>Humaniora, Sejarah</td><td>Catatan kaki bernomor</td></tr>
+<tr><td><strong>Harvard</strong></td><td>Bisnis, Sosial</td><td>Nama-tahun, format ringkas</td></tr>
+<tr><td><strong>MLA</strong></td><td>Sastra, Bahasa</td><td>Nama-halaman dalam teks</td></tr>
+<tr><td><strong>IEEE</strong></td><td>Teknik, Komputer</td><td>Nomor dalam tanda kurung siku</td></tr>
+</tbody>
+</table>
+</div>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="bab3-eresources.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="bab5-submission.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="bab3-eresources.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="bab5-submission.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

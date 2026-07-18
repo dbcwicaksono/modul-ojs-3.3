@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Bab 6: Pemeriksaan Plagiasi (Similarity Check) - Buku Panduan OJS 3</title>
+        <title>Bab 1: Gambaran Umum Alur Kerja Editorial OJS - Buku Panduan OJS 3</title>
 
 
         <!-- Custom HTML head -->
@@ -37,10 +37,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-a62b3e59.js";
+            window.path_to_searchindex_js = "searchindex-4bcd7828.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-9bcb721c.js"></script>
+        <script src="toc-95e609ce.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -176,126 +176,129 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="bab-6-pemeriksaan-plagiasi-similarity-check"><a class="header" href="#bab-6-pemeriksaan-plagiasi-similarity-check">Bab 6: Pemeriksaan Plagiasi (Similarity Check)</a></h1>
-<p>Salah satu tugas fundamental tim editor jurnal adalah memastikan bahwa setiap naskah yang dikirimkan penulis merupakan karya orisinal. Oleh karena itu, sebelum naskah dikirimkan ke mitra bestari (<em>reviewer</em>), editor perlu melakukan pemeriksaan kemiripan naskah (<em>similarity check</em>) terhadap sumber-sumber lain yang telah beredar luas.</p>
-<h2 id="61-definisi-pemeriksaan-kemiripan"><a class="header" href="#61-definisi-pemeriksaan-kemiripan">6.1 Definisi Pemeriksaan Kemiripan</a></h2>
-<p>Pemeriksaan kemiripan (<em>similarity check</em>) adalah pembandingan terhadap naskah untuk mengetahui tingkat kesamaannya terhadap naskah atau teks lain yang sudah dipublikasikan, menggunakan perangkat lunak deteksi plagiasi. Tujuannya adalah memastikan naskah yang masuk terbebas dari unsur-unsur plagiat atau duplikasi sebelum diproses secara akademik.</p>
-<h2 id="62-memahami-plagiarisme"><a class="header" href="#62-memahami-plagiarisme">6.2 Memahami Plagiarisme</a></h2>
-<h3 id="definisi-teoritis"><a class="header" href="#definisi-teoritis">Definisi Teoritis</a></h3>
-<p>Secara sederhana, plagiarisme adalah tindakan mengambil karya orang lain dan mengakuinya sebagai karya sendiri. Beberapa definisi yang perlu diketahui oleh pengelola jurnal:</p>
+                        <h1 id="bab-1-gambaran-umum-alur-kerja-editorial-ojs"><a class="header" href="#bab-1-gambaran-umum-alur-kerja-editorial-ojs">Bab 1: Gambaran Umum Alur Kerja Editorial OJS</a></h1>
+<blockquote>
+<p><em>Penerbitan jurnal ilmiah elektronik memerlukan sistem tata kelola yang terstandardisasi. Bab ini menguraikan struktur operasional, evolusi sistem, dan empat fase alur kerja utama pada platform Open Journal Systems (OJS).</em></p>
+</blockquote>
+<p>Open Journal Systems (OJS) versi 3.3 adalah perangkat lunak sumber terbuka (<em>open-source</em>) yang dirancang secara modular untuk memfasilitasi pengelola jurnal dalam mengatur proses editorial secara sistematis. Memahami alur kerja OJS 3.3 berperan penting dalam memastikan proses penerbitan berjalan dengan transparan, terdokumentasi, dan memenuhi standar integritas akademik.</p>
+<h2 id="11-fondasi-evolusi-dan-lanskap-kontemporer-ojs"><a class="header" href="#11-fondasi-evolusi-dan-lanskap-kontemporer-ojs">1.1 Fondasi, Evolusi, dan Lanskap Kontemporer OJS</a></h2>
+<h3 id="latar-belakang-krisis-publikasi-dan-akses-terbuka"><a class="header" href="#latar-belakang-krisis-publikasi-dan-akses-terbuka">Latar Belakang: Krisis Publikasi dan Akses Terbuka</a></h3>
+<p>Pengembangan OJS berakar dari fenomena krisis jurnal ilmiah (<em>serials crisis</em>) pada akhir abad ke-20. Pada periode tersebut, biaya langganan jurnal yang dikuasai penerbit komersial melonjak tajam, sehingga membebani anggaran perpustakaan institusi pendidikan. Kondisi ini membatasi akses publik terhadap hasil penelitian yang mayoritas didanai oleh anggaran publik, karena literatur tersebut terkunci di balik sistem berbayar (<em>paywall</em>) komersial (PKP, 2026, https://pkp.sfu.ca/about/).</p>
+<p>Situasi ini memicu munculnya gerakan Akses Terbuka (<em>Open Access</em>). Merespons kebutuhan infrastruktur untuk penerbitan mandiri, John Willinsky mendirikan Public Knowledge Project (PKP) pada tahun 1998. OJS dirancang sebagai solusi teknis untuk menekan biaya operasional penerbitan jurnal, sehingga memungkinkan institusi pendidikan di seluruh dunia untuk mengelola jurnal secara profesional dan independen.</p>
+<p><strong>Sorotan Standar Global: Budapest Open Access Initiative (BOAI)</strong></p>
+<p>Standar akses terbuka secara formal dikukuhkan melalui Budapest Open Access Initiative (BOAI) pada Februari 2002. BOAI menetapkan bahwa literatur ilmiah harus tersedia secara gratis di internet. Pengguna diizinkan untuk membaca, mengunduh, menyalin, mendistribusikan, atau menautkan teks lengkap artikel tanpa hambatan finansial, hukum, atau teknis di luar batas konektivitas internet.</p>
+<p><em>Sumber: https://www.budapestopenaccessinitiative.org/read/</em></p>
+<h3 id="arsitektur-teknologi-dan-evolusi-ojs"><a class="header" href="#arsitektur-teknologi-dan-evolusi-ojs">Arsitektur Teknologi dan Evolusi OJS</a></h3>
+<p>Sejak peluncurannya pada tahun 2001, OJS mengalami pembaruan arsitektur untuk menyesuaikan dengan standar keamanan dan kebutuhan pengguna modern:</p>
+<ol>
+<li><strong>Era OJS 1.x dan 2.x (2000-an hingga 2016)</strong>
+Versi ini menggunakan arsitektur monolitik berbasis PHP prosedural. OJS 2.x memiliki stabilitas tinggi, namun kaku dalam hal kustomisasi tata letak. Perubahan antarmuka mengharuskan pengelola mengubah kode inti (<em>core code</em>), yang berisiko menimbulkan galat sistem.</li>
+<li><strong>Perubahan Arsitektur OJS 3.x (2016)</strong>
+Tim PKP melakukan penulisan ulang sistem secara menyeluruh (<em>total rewrite</em>). OJS 3.x memisahkan arsitektur <em>back-end</em> dan <em>front-end</em>, serta mengadopsi kerangka kerja Bootstrap untuk memastikan antarmuka situs responsif di berbagai perangkat. Selain itu, manajemen peran pengguna disatukan dalam satu dasbor, sehingga pengguna tidak perlu berpindah antarmuka (PKP Docs, 2021).</li>
+<li><strong>Versi OJS 3.4 dan 3.5 LTS (Kontemporer)</strong>
+Versi dukungan jangka panjang (<em>Long-Term Support</em>) berfokus pada optimalisasi Pengalaman Pengguna (<em>User Experience</em>) dan kepatuhan regulasi. Dasbor editorial dirancang agar editor dapat memantau seluruh antrean naskah secara komprehensif. OJS 3.5 LTS juga menerapkan fitur undangan pengulas mandiri (<em>self-invitation</em>) untuk mematuhi regulasi privasi data global, seperti <em>General Data Protection Regulation</em> (GDPR) dari Uni Eropa.</li>
+</ol>
+<h2 id="12-ojs-di-indonesia-konteks-nasional"><a class="header" href="#12-ojs-di-indonesia-konteks-nasional">1.2 OJS di Indonesia: Konteks Nasional</a></h2>
+<p>Hingga tahun 2025, OJS digunakan oleh lebih dari 58.000 jurnal di 156 negara (PKP, 2026). Indonesia tercatat sebagai negara pengguna OJS terbesar di dunia, mencakup sekitar 40% dari total instalasi global. Sebagian besar jurnal di Indonesia beroperasi menggunakan domain institusi (<code>.ac.id</code>) dan mengimplementasikan model <em>Diamond Open Access</em>, di mana proses publikasi dan akses artikel digratiskan.</p>
+<p>Adopsi massal OJS di Indonesia didorong oleh kebijakan Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi (Kemendikbudristek). Untuk memenuhi syarat akreditasi di portal ARJUNA (Akreditasi Jurnal Nasional) dan sistem pemeringkatan SINTA, pengelola jurnal diwajibkan menggunakan sistem manajemen jurnal elektronik. OJS memenuhi kriteria verifikasi asesor karena kemampuannya merekam riwayat penelaahan (<em>peer review</em>) secara transparan.</p>
+<p><strong>Catatan dari Lapangan</strong></p>
+<p>Pada implementasi awal, pengelola baru kerap mengalami kesulitan dalam mengoperasikan antarmuka OJS yang memiliki banyak fitur. Hal ini sering memicu pengelola untuk beralih menggunakan aplikasi pesan instan pihak ketiga (seperti WhatsApp) atau surel pribadi guna berkoordinasi dengan penulis dan pengulas. Praktik komunikasi di luar sistem ini menimbulkan risiko manajerial yang tinggi, yaitu hilangnya riwayat jejak audit (<em>audit trail</em>). Saat menjalani evaluasi akreditasi, pengelola jurnal tidak akan dapat melampirkan bukti validitas proses penelaahan naskah apabila riwayat komunikasi tersebut tidak terekam di dalam sistem OJS.</p>
+<h2 id="13-sistem-manajemen-peran-pada-ekosistem-ojs"><a class="header" href="#13-sistem-manajemen-peran-pada-ekosistem-ojs">1.3 Sistem Manajemen Peran pada Ekosistem OJS</a></h2>
+<p>OJS 3.3 memiliki sistem manajemen peran yang fleksibel, memungkinkan pengguna memegang peran ganda (untuk tim kecil) atau membaginya secara spesifik (untuk tim redaksi profesional).</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Peran</th><th>Tanggung Jawab Utama</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Journal Editor</strong></td><td>Memiliki akses penuh terhadap pengaturan sistem, mengelola pengguna, dan mengambil keputusan akhir (penerimaan/penolakan) naskah.</td></tr>
+<tr><td><strong>Section Editor</strong></td><td>Mengelola lalu lintas naskah pada bagian/rubrik tertentu, mulai dari tahap penugasan pengulas hingga rekomendasi keputusan.</td></tr>
+<tr><td><strong>Author</strong></td><td>Mengunggah naskah awal, melengkapi metadata (abstrak, afiliasi), dan melakukan perbaikan sesuai instruksi editor.</td></tr>
+<tr><td><strong>Reviewer</strong></td><td>Pakar independen yang bertugas mengevaluasi substansi naskah secara objektif dan memberikan rekomendasi kelayakan.</td></tr>
+<tr><td><strong>Copyeditor</strong></td><td>Memeriksa ketepatan tata bahasa, ejaan, dan kesesuaian format referensi dengan gaya selingkung jurnal.</td></tr>
+<tr><td><strong>Layout Editor</strong></td><td>Memformat naskah final menjadi dokumen publikasi (<em>Galleys</em>) seperti PDF, HTML, atau XML.</td></tr>
+<tr><td><strong>Proofreader</strong></td><td>Melakukan verifikasi akhir pada tata letak <em>Galleys</em> sebelum artikel diterbitkan secara publik.</td></tr>
+</tbody>
+</table>
+</div>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Ilustrasi: Ekosistem peran dalam OJS"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Ilustrasi: Ekosistem peran dalam OJS"></span></label></p>
+<h2 id="14-mekanisme-alur-kerja-editorial-yang-terintegrasi"><a class="header" href="#14-mekanisme-alur-kerja-editorial-yang-terintegrasi">1.4 Mekanisme Alur Kerja Editorial yang Terintegrasi</a></h2>
+<p>OJS mengotomatisasi siklus penerbitan naskah ilmiah melalui empat tahapan utama yang berurutan:</p>
+<p><code>[Submission] → [Review] → [Copyediting] → [Production]</code></p>
+<ol>
+<li><strong>Submission (Pengajuan Naskah)</strong>
+Penulis mengirimkan naskah dan memasukkan metadata secara terstruktur. Editor kemudian melakukan tinjauan kelayakan awal (<em>desk review</em>). Keputusan di tahap ini meliputi: <em>Send to Review</em> (untuk artikel riset), <em>Accept and Skip Review</em> (untuk naskah non-riset seperti opini redaksi), atau <em>Decline Submission</em>.</li>
+<li><strong>Review (Penelaahan Sejawat)</strong>
+Tahap ini mengelola proses evaluasi substansi naskah. OJS memfasilitasi berbagai metode, termasuk <em>blind review</em> maupun <em>open review</em>. Sistem akan melacak tenggat waktu evaluasi, mengirim peringatan otomatis, dan mendokumentasikan masukan dari pengulas.</li>
+<li><strong>Copyediting (Penyuntingan Naskah)</strong>
+Naskah yang telah lolos ulasan diserahkan untuk proses penyuntingan kebahasaan. Komunikasi terkait perbaikan tata bahasa dan format berlangsung di dalam platform hingga naskah mencapai versi final (<em>clean copy</em>).</li>
+<li><strong>Production (Produksi dan Publikasi)</strong>
+Teks akhir diformat menjadi <em>Galleys</em> (PDF/HTML/XML). Setelah pemeriksaan pracetak selesai, editor mendaftarkan artikel tersebut ke dalam daftar isi terbitan (volume dan isu tertentu) untuk dipublikasikan.</li>
+</ol>
+<h2 id="15-integritas-akademik-interoperabilitas-dan-preservasi"><a class="header" href="#15-integritas-akademik-interoperabilitas-dan-preservasi">1.5 Integritas Akademik, Interoperabilitas, dan Preservasi</a></h2>
+<p>OJS dirancang agar jurnal dapat terintegrasi dengan ekosistem penelitian global dan menjaga standar etika publikasi melalui fitur-fitur berikut:</p>
 <ul>
-<li><strong>Permendiknas No. 17 Tahun 2010</strong>: Perbuatan sengaja atau tidak sengaja dalam memperoleh kredit atau nilai suatu karya ilmiah dengan mengutip sebagian atau seluruh karya pihak lain tanpa menyatakan sumber secara tepat dan memadai.</li>
-<li><strong>Harris (2014: 81)</strong>: <em>“Plagiarism occurs when an information source is not properly credited”</em>, yang bermakna plagiarisme terjadi apabila sumber informasi tidak dikutip secara benar.</li>
-<li><strong>Menurut Lukman, Istadi, &amp; Wiryawan (2020)</strong>: Plagiasi adalah tindakan menggunakan bahasa, ide, dan material milik orang lain tanpa menyebutkan sumber asalnya.</li>
-<li><strong>Fenton &amp; Gralla (2020: 112)</strong>: <em>Plagiarism</em> merupakan tindakan menyajikan, memberikan, atau mengirim tulisan, ide, maupun kata-kata tanpa memberikan kredit atau pengakuan darimana sumber tersebut diambil.</li>
-<li><strong>Purdue OWL (2020)</strong>: Plagiarisme adalah menggunakan gagasan atau kata-kata orang lain tanpa menuliskan sumbernya atau memberi pengakuan kepada pemilik gagasan.</li>
+<li><strong>Interoperabilitas Metadata (OAI-PMH):</strong> OJS menggunakan protokol <em>Open Archives Initiative Protocol for Metadata Harvesting</em> (OAI-PMH). Protokol ini memungkinkan basis data eksternal (seperti Google Scholar, DOAJ, dan Garuda) untuk secara otomatis menarik metadata artikel segera setelah dipublikasikan (PKP Docs).</li>
+<li><strong>Integrasi Infrastruktur Digital:</strong> OJS mendukung aktivasi <strong>DOI (Crossref)</strong> untuk menjamin tautan permanen artikel, <strong>ORCID</strong> untuk memverifikasi profil peneliti, dan <strong>ROR (Research Organization Registry)</strong> untuk standardisasi data afiliasi institusi.</li>
+<li><strong>Jejak Audit (<em>Audit Trail</em>):</strong> Sistem secara otomatis merekam seluruh aktivitas (pengunggahan berkas, korespondensi, dan perubahan status naskah) di dalam <em>Activity Log</em>. Catatan ini menjadi bukti validitas operasional saat pengajuan akreditasi atau investigasi etika publikasi.</li>
+<li><strong>Preservasi Jangka Panjang:</strong> OJS mendukung pengarsipan terdistribusi melalui <strong>LOCKSS</strong> dan <strong>PKP Preservation Network (PKP PN)</strong>. Jaringan <em>dark archive</em> ini menjamin artikel tetap tersimpan dan dapat diakses di masa depan meskipun server utama jurnal mengalami gangguan permanen.</li>
 </ul>
-<p>Berdasarkan definisi tersebut, dapat disimpulkan bahwa plagiarisme adalah tindakan menyajikan karya orang lain, baik berupa gagasan, data, informasi, kata, frasa, maupun kalimat, dan mengakuinya sebagai karya sendiri secara sengaja maupun tidak sengaja, tanpa mencantumkan sumber dengan kaidah yang benar.</p>
-<h3 id="empat-kategori-plagiat"><a class="header" href="#empat-kategori-plagiat">Empat Kategori Plagiat</a></h3>
+<h2 id="16-struktur-pembelajaran-kursus"><a class="header" href="#16-struktur-pembelajaran-kursus">1.6 Struktur Pembelajaran Kursus</a></h2>
+<p>Buku panduan ini menguraikan tahapan manajemen jurnal secara sekuensial berdasarkan alur kerja OJS 3.3:</p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>Kategori</th><th>Penjelasan</th></tr>
+<tr><th>Bab</th><th>Topik</th><th>Tahap OJS</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Direct Plagiarism</strong></td><td>Menyalin setiap kata dari karya orang lain tanpa tanda kutip dan tanpa menyebutkan sumber. Bentuk ini adalah yang paling serius dan tidak etis.</td></tr>
-<tr><td><strong>Self-Plagiarism</strong></td><td>Menggunakan materi yang sudah pernah dipublikasikan sebelumnya oleh penulis yang sama tanpa pengungkapan yang tepat.</td></tr>
-<tr><td><strong>Mosaic Plagiarism</strong></td><td>Menggunakan frasa dari sumber lain tanpa tanda kutip atau menggunakan sinonim dengan struktur kalimat dan arti yang persis sama dengan naskah aslinya.</td></tr>
-<tr><td><strong>Accidental Plagiarism</strong></td><td>Ketidaksengajaan akibat lupa mencantumkan sumber, kesalahan mencantumkan sumber, atau melakukan parafrasa tanpa menyertakan referensi. Walaupun tidak disengaja, hal ini tetap diperlakukan sama dalam sanksi editorial.</td></tr>
+<tr><td>Bab 1–2</td><td>Persiapan Dasar</td><td>Tahap Pra-OJS</td></tr>
+<tr><td>Bab 3</td><td>Gambaran Umum</td><td>Pengenalan Sistem</td></tr>
+<tr><td>Bab 4</td><td>Pengajuan Naskah</td><td>Tahap Submission</td></tr>
+<tr><td>Bab 5</td><td>Merespons Naskah</td><td>Tahap Submission</td></tr>
+<tr><td>Bab 6</td><td>Pemeriksaan Plagiasi</td><td>Pra-Review</td></tr>
+<tr><td>Bab 7</td><td>Menugaskan Reviewer</td><td>Tahap Review</td></tr>
+<tr><td>Bab 8</td><td>Panduan Reviewer</td><td>Tahap Review</td></tr>
+<tr><td>Bab 9</td><td>Keputusan Editorial</td><td>Tahap Review</td></tr>
+<tr><td>Bab 10</td><td>Penyuntingan</td><td>Tahap Copyediting</td></tr>
+<tr><td>Bab 11</td><td>Produksi</td><td>Tahap Production</td></tr>
+<tr><td>Bab 12</td><td>Manajemen Edisi</td><td>Tahap Publikasi</td></tr>
+<tr><td>Bab 13</td><td>Manajemen Metadata</td><td>Visibilitas</td></tr>
+<tr><td>Bab 14</td><td>Diseminasi Eksternal</td><td>Pasca-Publikasi</td></tr>
 </tbody>
 </table>
 </div>
-<h2 id="63-ketentuan-tingkat-kemiripan-yang-dapat-diterima"><a class="header" href="#63-ketentuan-tingkat-kemiripan-yang-dapat-diterima">6.3 Ketentuan Tingkat Kemiripan yang Dapat Diterima</a></h2>
-<p>Meskipun belum terdapat panduan baku internasional yang seragam, buku rujukan Lukman, Istadi, &amp; Wiryawan (2020) menyatakan bahwa persentase total kemiripan naskah yang dapat diterima secara internasional berada di rentang <strong>15 hingga 20 persen</strong>. Di Indonesia, Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi menetapkan toleransi persentase plagiasi hingga maksimal <strong>25 persen</strong>. Persentase kemiripan ini dinilai secara selektif dengan mengecualikan (<em>exclude</em>) kutipan langsung dan daftar pustaka.</p>
-<p>Catatan Kritis: Walaupun total persentase masih berada di bawah ambang batas toleransi, apabila kemiripan terhadap satu sumber tunggal tergolong terlampau dominan secara berurutan dalam satu paragraf penuh, naskah tersebut pada dasarnya tetap terindikasi pelanggaran etika dan dapat ditolak (Lukman, Istadi, &amp; Wiryawan, 2020: 29–30).</p>
-<h2 id="64-perangkat-lunak-pemeriksaan-gratis"><a class="header" href="#64-perangkat-lunak-pemeriksaan-gratis">6.4 Perangkat Lunak Pemeriksaan Gratis</a></h2>
-<p>Terdapat beberapa perangkat lunak daring gratis yang dapat dimanfaatkan untuk memeriksa kemiripan secara cepat.</p>
-<h3 id="a-duplichecker"><a class="header" href="#a-duplichecker">A. Duplichecker</a></h3>
-<p>Situs Web: https://www.duplichecker.com</p>
-<p>Prosedur penggunaan:</p>
+<h2 id="17-persiapan-praktik"><a class="header" href="#17-persiapan-praktik">1.7 Persiapan Praktik</a></h2>
+<p>Untuk memaksimalkan pembelajaran, pengelola disarankan untuk melakukan uji coba pada jurnal simulasi (jurnal percobaan). Latihan pada jurnal simulasi memungkinkan Anda untuk menguji alur kerja lintas peran tanpa berisiko mengubah data atau pengaturan pada sistem jurnal yang berstatus produksi (aktif).</p>
+<p>Referensi panduan teknis resmi dapat diakses melalui <strong>PKP Docs</strong> (https://docs.pkp.sfu.ca) dan modul pelatihan daring di <strong>PKP School</strong> (https://pkpschool.sfu.ca).</p>
+<h2 id="latihan-bab-1"><a class="header" href="#latihan-bab-1">Latihan Bab 1</a></h2>
+<p><strong>Latihan 1.1: Identifikasi Jalur Alur Kerja Naskah</strong></p>
+<p>Tinjau tiga jenis naskah di bawah ini. Tentukan tahapan alur kerja mana saja (dari <em>Submission</em> hingga <em>Production</em>) yang harus dilewati oleh setiap dokumen di dalam sistem OJS.</p>
 <ol>
-<li>Akses halaman situs web Duplichecker.</li>
-<li>Salin dan tempel teks yang akan diperiksa ke dalam kolom utama.</li>
-<li>Centang kotak verifikasi CAPTCHA.</li>
-<li>Klik tombol <em>Check Plagiarism</em>.</li>
-<li>Tunggu proses analisis data selesai.</li>
-<li>Evaluasi persentase kemiripan yang dilaporkan.</li>
+<li><strong>Artikel Penelitian Empiris</strong> (Naskah utama berisi metode dan hasil riset lapangan).</li>
+<li><strong>Catatan Editorial</strong> (Pengantar edisi yang ditulis oleh Editor Kepala, berisi ringkasan topik terbitan berjalan).</li>
+<li><strong>Resensi Buku</strong> (Tinjauan singkat atas sebuah buku akademik yang ditulis oleh pakar undangan).</li>
 </ol>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Langkah pengecekan kemiripan dengan Duplichecker"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Langkah pengecekan kemiripan dengan Duplichecker"></span></label></p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Hasil pemeriksaan kemiripan dengan Duplichecker"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Hasil pemeriksaan kemiripan dengan Duplichecker"></span></label></p>
-<p>Perhatian: Duplichecker versi gratis memiliki keterbatasan dalam akurasi algoritma. Hasil laporannya sering kali menghasilkan persentase yang lebih rendah dari indeks sebenarnya dan terbatas pada 1.000 kata per pemeriksaan.</p>
-<h3 id="b-smallseotools"><a class="header" href="#b-smallseotools">B. SmallSEOTools</a></h3>
-<p>Situs Web: https://smallseotools.com/plagiarism-checker</p>
-<p>SmallSEOTools memiliki basis deteksi yang relatif lebih andal dibandingkan Duplichecker. Aplikasi ini menampilkan tautan sumber-sumber yang diidentifikasi memiliki kalimat yang identik beserta porsi persentasenya.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Hasil pemeriksaan kemiripan dengan SmallSEOTools"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Hasil pemeriksaan kemiripan dengan SmallSEOTools"></span></label></p>
-<h2 id="65-perbandingan-alat-pemeriksa-gratis"><a class="header" href="#65-perbandingan-alat-pemeriksa-gratis">6.5 Perbandingan Alat Pemeriksa Gratis</a></h2>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th style="text-align: center">No.</th><th style="text-align: left">Perangkat Lunak</th><th style="text-align: center">Evaluasi Skor</th><th style="text-align: center">Sepenuhnya Gratis</th><th style="text-align: left">Keterbatasan Utama</th></tr>
-</thead>
-<tbody>
-<tr><td style="text-align: center">1</td><td style="text-align: left"><strong>Scribbr</strong></td><td style="text-align: center">★★★★★ (4.7)</td><td style="text-align: center">Tidak</td><td style="text-align: left">Akses versi gratis tidak memuat laporan mendetail.</td></tr>
-<tr><td style="text-align: center">2</td><td style="text-align: left">Quetext</td><td style="text-align: center">★★★☆☆ (3.3)</td><td style="text-align: center">Sebagian</td><td style="text-align: left">Hanya memberikan uji coba terbatas (2.500 kata).</td></tr>
-<tr><td style="text-align: center">3</td><td style="text-align: left">Grammarly</td><td style="text-align: center">★★★☆☆ (3.2)</td><td style="text-align: center">Tidak</td><td style="text-align: left">Versi tidak berbayar tidak menyediakan analisis kalimat rinci.</td></tr>
-<tr><td style="text-align: center">4</td><td style="text-align: left">Unicheck</td><td style="text-align: center">★★★☆☆ (3.0)</td><td style="text-align: center">Tidak</td><td style="text-align: left">Uji coba terbatas untuk 200 kata.</td></tr>
-<tr><td style="text-align: center">5</td><td style="text-align: left">Small SEO Tools</td><td style="text-align: center">★☆☆☆☆ (1.7)</td><td style="text-align: center">Tidak</td><td style="text-align: left">Dibatasi 1.000 kata per pemindaian.</td></tr>
-<tr><td style="text-align: center">6</td><td style="text-align: left">DupliChecker</td><td style="text-align: center">★☆☆☆☆ (1.7)</td><td style="text-align: center">Tidak</td><td style="text-align: left">Dibatasi 1.000 kata per pemindaian.</td></tr>
-</tbody>
-</table>
-</div>
-<p><em>Rujukan Data: scribbr.com/plagiarism/best-free-plagiarism-checker</em></p>
-<h2 id="66-layanan-pemeriksaan-berbayar-profesional"><a class="header" href="#66-layanan-pemeriksaan-berbayar-profesional">6.6 Layanan Pemeriksaan Berbayar Profesional</a></h2>
-<p>Bagi pengelolaan jurnal tingkat universitas yang profesional, penyediaan lisensi perangkat lunak berbayar sangat diutamakan:</p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>Layanan</th><th>Keterangan</th></tr>
-</thead>
-<tbody>
-<tr><td><strong>Turnitin</strong></td><td>Merupakan standar industri yang diadopsi luas oleh perguruan tinggi global. Memiliki basis data dokumen akademik yang sangat ekstensif.</td></tr>
-<tr><td><strong>iThenticate</strong></td><td>Didesain khusus untuk kebutuhan editor jurnal ilmiah dan lembaga riset, membedakannya dari Turnitin yang condong digunakan pada tingkat mahasiswa.</td></tr>
-</tbody>
-</table>
-</div>
-<p>Arahan Editorial: Apabila jurnal menargetkan indeksasi bereputasi seperti Scopus atau Web of Science, berlangganan layanan seperti iThenticate menjadi investasi krusial dalam mitigasi risiko plagiarisme pascaterbit.</p>
-<h2 id="67-panduan-praktis-untuk-tim-editor-jurnal"><a class="header" href="#67-panduan-praktis-untuk-tim-editor-jurnal">6.7 Panduan Praktis untuk Tim Editor Jurnal</a></h2>
-<p>Untuk menjaga integritas ilmiah, tim editorial dianjurkan mengimplementasikan langkah-langkah berikut:</p>
-<ol>
-<li>Formulasikan dan publikasikan kebijakan jurnal yang lugas mengenai aturan orisinalitas serta kepengarangan di situs web OJS.</li>
-<li>Sediakan dokumen prosedur operasional standar (<em>Standard Operating Procedure</em>) untuk penanganan temuan plagiasi.</li>
-<li>Minta mitra bestari untuk proaktif mengidentifikasi tanda-tanda plagiat empiris, meliputi duplikasi struktur kalimat yang ganjil, inkonsistensi penyajian data gambar, hingga keberadaan gagasan sentral tanpa pengutipan selayaknya.</li>
-<li>Rujuk pedoman Committee on Publication Ethics (COPE) yang memuat diagram alur penanganan sengketa etika akademik di situs publicationethics.org.</li>
-</ol>
-<h2 id="68-panduan-pencegahan-plagiarisme-bagi-penulis"><a class="header" href="#68-panduan-pencegahan-plagiarisme-bagi-penulis">6.8 Panduan Pencegahan Plagiarisme bagi Penulis</a></h2>
-<p>Penulis dituntut memahami bahwa plagiat adalah pelanggaran etika yang mendatangkan sanksi pencabutan dokumen (<em>retraction</em>). Langkah pencegahan esensial meliputi:</p>
-<ol>
-<li>Gunakan tanda kutip ganda pada saat mengadopsi teks rujukan sama persis tanpa memarafrasakannya.</li>
-<li>Cantumkan seluruh referensi secara terperinci pada daftar pustaka.</li>
-<li>Selalu sematkan sitasi dalam teks (<em>in-text citation</em>) seketika gagasan sumber diintegrasikan ke dalam naskah.</li>
-<li>Jangan mengirimkan naskah yang identik ke lebih dari satu jurnal secara bersamaan, karena hal ini diklasifikasikan sebagai plagiasi diri (<em>self-plagiarism</em>).</li>
-<li>Kembangkan budaya pencatatan rujukan berbasis <em>reference manager</em> agar silsilah sumber ide tidak terputus atau terlupakan saat naskah ditulis.</li>
-</ol>
-<h2 id="checklist-bab-6"><a class="header" href="#checklist-bab-6">Checklist Bab 6</a></h2>
+<p><strong>Panduan Fasilitator</strong>: Diskusikan secara kelompok mengenai penerapan fitur “Accept and Skip Review” pada OJS. Tekankan urgensi penerapan alur <em>Review</em> penuh bagi artikel penelitian empiris untuk menjamin standar objektivitas (<em>peer-review</em>), serta kapan pengecualian dapat diterapkan secara etis pada naskah non-riset.</p>
+<h2 id="checklist-bab-1"><a class="header" href="#checklist-bab-1">Checklist Bab 1</a></h2>
 <ul>
-<li><input disabled="" type="checkbox"> Batas toleransi plagiarisme jurnal telah ditetapkan secara eksplisit dalam kebijakan (<em>mis. maks 25%</em>).</li>
-<li><input disabled="" type="checkbox"> Perangkat lunak pemeriksa kemiripan (<em>similarity checker</em>) telah ditentukan penggunaannya (gratis atau lisensi universitas).</li>
-<li><input disabled="" type="checkbox"> Prosedur standar pemindaian dokumen setelah tinjauan awal meja (<em>desk review</em>) telah dilaksanakan pada seluruh naskah yang masuk.</li>
-<li><input disabled="" type="checkbox"> Editor telah memahami cara menafsirkan laporan kemiripan dengan benar (mengecualikan kutipan langsung dan daftar pustaka).</li>
-<li><input disabled="" type="checkbox"> Diagram alur penanganan pelanggaran dari COPE telah diadopsi sebagai referensi mitigasi etika jurnal.</li>
+<li><input disabled="" type="checkbox"> Memahami definisi <em>serials crisis</em> dan peran OJS dalam memfasilitasi gerakan Akses Terbuka.</li>
+<li><input disabled="" type="checkbox"> Mengetahui urgensi OJS sebagai syarat teknis akreditasi jurnal nasional di Indonesia (ARJUNA/SINTA).</li>
+<li><input disabled="" type="checkbox"> Mampu mengidentifikasi urutan keempat tahapan editorial utama (<em>Submission</em>, <em>Review</em>, <em>Copyediting</em>, <em>Production</em>).</li>
+<li><input disabled="" type="checkbox"> Memahami dampak negatif komunikasi editorial di luar sistem (aplikasi pihak ketiga) terhadap jejak audit (<em>audit trail</em>).</li>
+<li><input disabled="" type="checkbox"> Mengenali fungsi dasar integrasi standar global seperti OAI-PMH, Crossref, dan PKP PN.</li>
 </ul>
 <h2 id="ringkasan-bab"><a class="header" href="#ringkasan-bab">Ringkasan Bab</a></h2>
-<p>Pemeriksaan kemiripan (<em>similarity check</em>) bertindak sebagai lapisan pelindung lini depan bagi kredibilitas sebuah jurnal. Integrasi prosedur deteksi sebelum mengalihkan naskah ke penelaah sejawat membantu menjaga standar kualitas, menghindarkan mitra bestari dari keharusan mengevaluasi dokumen yang cacat etika, dan mencegah potensi penarikan publikasi di kemudian hari.</p>
+<p>Open Journal Systems (OJS) berfungsi sebagai infrastruktur digital komprehensif yang dirancang untuk mendukung penerbitan ilmiah profesional dan dapat diaudit. Dengan memahami arsitektur sistem—yang terbagi dalam fase Pengajuan, Penelaahan, Penyuntingan, dan Produksi—pengelola jurnal dapat memetakan pembagian tugas secara spesifik antarperan. Kepastian alur kerja di dalam OJS menjamin tersedianya jejak audit secara otomatis, memastikan bahwa jurnal mematuhi etika publikasi internasional, serta memenuhi syarat standar akreditasi dan indeksasi global.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="bab5-merespons-naskah.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="bab7-assigning-reviewer.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="bab2-identitas-kebijakan.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -305,11 +308,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="bab5-merespons-naskah.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="bab7-assigning-reviewer.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="bab2-identitas-kebijakan.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>

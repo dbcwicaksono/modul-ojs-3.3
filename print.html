@@ -38,10 +38,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-a62b3e59.js";
+            window.path_to_searchindex_js = "searchindex-4bcd7828.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-9bcb721c.js"></script>
+        <script src="toc-95e609ce.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -202,10 +202,231 @@
 <hr>
 <p><strong>Catatan Lisensi</strong><br>Modul ini dilisensikan di bawah <strong>Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA)</strong>. Anda bebas untuk membagikan dan mengadaptasi materi ini dengan syarat mencantumkan atribusi kepada penulis asli dan mendistribusikan kontribusi Anda di bawah lisensi yang sama.</p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="bab-1-pengelolaan-e-resources-dan-manajemen-referensi"><a class="header" href="#bab-1-pengelolaan-e-resources-dan-manajemen-referensi">Bab 1: Pengelolaan e-Resources dan Manajemen Referensi</a></h1>
+<h1 id="bab-1-gambaran-umum-alur-kerja-editorial-ojs"><a class="header" href="#bab-1-gambaran-umum-alur-kerja-editorial-ojs">Bab 1: Gambaran Umum Alur Kerja Editorial OJS</a></h1>
+<blockquote>
+<p><em>Penerbitan jurnal ilmiah elektronik memerlukan sistem tata kelola yang terstandardisasi. Bab ini menguraikan struktur operasional, evolusi sistem, dan empat fase alur kerja utama pada platform Open Journal Systems (OJS).</em></p>
+</blockquote>
+<p>Open Journal Systems (OJS) versi 3.3 adalah perangkat lunak sumber terbuka (<em>open-source</em>) yang dirancang secara modular untuk memfasilitasi pengelola jurnal dalam mengatur proses editorial secara sistematis. Memahami alur kerja OJS 3.3 berperan penting dalam memastikan proses penerbitan berjalan dengan transparan, terdokumentasi, dan memenuhi standar integritas akademik.</p>
+<h2 id="11-fondasi-evolusi-dan-lanskap-kontemporer-ojs"><a class="header" href="#11-fondasi-evolusi-dan-lanskap-kontemporer-ojs">1.1 Fondasi, Evolusi, dan Lanskap Kontemporer OJS</a></h2>
+<h3 id="latar-belakang-krisis-publikasi-dan-akses-terbuka"><a class="header" href="#latar-belakang-krisis-publikasi-dan-akses-terbuka">Latar Belakang: Krisis Publikasi dan Akses Terbuka</a></h3>
+<p>Pengembangan OJS berakar dari fenomena krisis jurnal ilmiah (<em>serials crisis</em>) pada akhir abad ke-20. Pada periode tersebut, biaya langganan jurnal yang dikuasai penerbit komersial melonjak tajam, sehingga membebani anggaran perpustakaan institusi pendidikan. Kondisi ini membatasi akses publik terhadap hasil penelitian yang mayoritas didanai oleh anggaran publik, karena literatur tersebut terkunci di balik sistem berbayar (<em>paywall</em>) komersial (PKP, 2026, https://pkp.sfu.ca/about/).</p>
+<p>Situasi ini memicu munculnya gerakan Akses Terbuka (<em>Open Access</em>). Merespons kebutuhan infrastruktur untuk penerbitan mandiri, John Willinsky mendirikan Public Knowledge Project (PKP) pada tahun 1998. OJS dirancang sebagai solusi teknis untuk menekan biaya operasional penerbitan jurnal, sehingga memungkinkan institusi pendidikan di seluruh dunia untuk mengelola jurnal secara profesional dan independen.</p>
+<p><strong>Sorotan Standar Global: Budapest Open Access Initiative (BOAI)</strong></p>
+<p>Standar akses terbuka secara formal dikukuhkan melalui Budapest Open Access Initiative (BOAI) pada Februari 2002. BOAI menetapkan bahwa literatur ilmiah harus tersedia secara gratis di internet. Pengguna diizinkan untuk membaca, mengunduh, menyalin, mendistribusikan, atau menautkan teks lengkap artikel tanpa hambatan finansial, hukum, atau teknis di luar batas konektivitas internet.</p>
+<p><em>Sumber: https://www.budapestopenaccessinitiative.org/read/</em></p>
+<h3 id="arsitektur-teknologi-dan-evolusi-ojs"><a class="header" href="#arsitektur-teknologi-dan-evolusi-ojs">Arsitektur Teknologi dan Evolusi OJS</a></h3>
+<p>Sejak peluncurannya pada tahun 2001, OJS mengalami pembaruan arsitektur untuk menyesuaikan dengan standar keamanan dan kebutuhan pengguna modern:</p>
+<ol>
+<li><strong>Era OJS 1.x dan 2.x (2000-an hingga 2016)</strong>
+Versi ini menggunakan arsitektur monolitik berbasis PHP prosedural. OJS 2.x memiliki stabilitas tinggi, namun kaku dalam hal kustomisasi tata letak. Perubahan antarmuka mengharuskan pengelola mengubah kode inti (<em>core code</em>), yang berisiko menimbulkan galat sistem.</li>
+<li><strong>Perubahan Arsitektur OJS 3.x (2016)</strong>
+Tim PKP melakukan penulisan ulang sistem secara menyeluruh (<em>total rewrite</em>). OJS 3.x memisahkan arsitektur <em>back-end</em> dan <em>front-end</em>, serta mengadopsi kerangka kerja Bootstrap untuk memastikan antarmuka situs responsif di berbagai perangkat. Selain itu, manajemen peran pengguna disatukan dalam satu dasbor, sehingga pengguna tidak perlu berpindah antarmuka (PKP Docs, 2021).</li>
+<li><strong>Versi OJS 3.4 dan 3.5 LTS (Kontemporer)</strong>
+Versi dukungan jangka panjang (<em>Long-Term Support</em>) berfokus pada optimalisasi Pengalaman Pengguna (<em>User Experience</em>) dan kepatuhan regulasi. Dasbor editorial dirancang agar editor dapat memantau seluruh antrean naskah secara komprehensif. OJS 3.5 LTS juga menerapkan fitur undangan pengulas mandiri (<em>self-invitation</em>) untuk mematuhi regulasi privasi data global, seperti <em>General Data Protection Regulation</em> (GDPR) dari Uni Eropa.</li>
+</ol>
+<h2 id="12-ojs-di-indonesia-konteks-nasional"><a class="header" href="#12-ojs-di-indonesia-konteks-nasional">1.2 OJS di Indonesia: Konteks Nasional</a></h2>
+<p>Hingga tahun 2025, OJS digunakan oleh lebih dari 58.000 jurnal di 156 negara (PKP, 2026). Indonesia tercatat sebagai negara pengguna OJS terbesar di dunia, mencakup sekitar 40% dari total instalasi global. Sebagian besar jurnal di Indonesia beroperasi menggunakan domain institusi (<code>.ac.id</code>) dan mengimplementasikan model <em>Diamond Open Access</em>, di mana proses publikasi dan akses artikel digratiskan.</p>
+<p>Adopsi massal OJS di Indonesia didorong oleh kebijakan Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi (Kemendikbudristek). Untuk memenuhi syarat akreditasi di portal ARJUNA (Akreditasi Jurnal Nasional) dan sistem pemeringkatan SINTA, pengelola jurnal diwajibkan menggunakan sistem manajemen jurnal elektronik. OJS memenuhi kriteria verifikasi asesor karena kemampuannya merekam riwayat penelaahan (<em>peer review</em>) secara transparan.</p>
+<p><strong>Catatan dari Lapangan</strong></p>
+<p>Pada implementasi awal, pengelola baru kerap mengalami kesulitan dalam mengoperasikan antarmuka OJS yang memiliki banyak fitur. Hal ini sering memicu pengelola untuk beralih menggunakan aplikasi pesan instan pihak ketiga (seperti WhatsApp) atau surel pribadi guna berkoordinasi dengan penulis dan pengulas. Praktik komunikasi di luar sistem ini menimbulkan risiko manajerial yang tinggi, yaitu hilangnya riwayat jejak audit (<em>audit trail</em>). Saat menjalani evaluasi akreditasi, pengelola jurnal tidak akan dapat melampirkan bukti validitas proses penelaahan naskah apabila riwayat komunikasi tersebut tidak terekam di dalam sistem OJS.</p>
+<h2 id="13-sistem-manajemen-peran-pada-ekosistem-ojs"><a class="header" href="#13-sistem-manajemen-peran-pada-ekosistem-ojs">1.3 Sistem Manajemen Peran pada Ekosistem OJS</a></h2>
+<p>OJS 3.3 memiliki sistem manajemen peran yang fleksibel, memungkinkan pengguna memegang peran ganda (untuk tim kecil) atau membaginya secara spesifik (untuk tim redaksi profesional).</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Peran</th><th>Tanggung Jawab Utama</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Journal Editor</strong></td><td>Memiliki akses penuh terhadap pengaturan sistem, mengelola pengguna, dan mengambil keputusan akhir (penerimaan/penolakan) naskah.</td></tr>
+<tr><td><strong>Section Editor</strong></td><td>Mengelola lalu lintas naskah pada bagian/rubrik tertentu, mulai dari tahap penugasan pengulas hingga rekomendasi keputusan.</td></tr>
+<tr><td><strong>Author</strong></td><td>Mengunggah naskah awal, melengkapi metadata (abstrak, afiliasi), dan melakukan perbaikan sesuai instruksi editor.</td></tr>
+<tr><td><strong>Reviewer</strong></td><td>Pakar independen yang bertugas mengevaluasi substansi naskah secara objektif dan memberikan rekomendasi kelayakan.</td></tr>
+<tr><td><strong>Copyeditor</strong></td><td>Memeriksa ketepatan tata bahasa, ejaan, dan kesesuaian format referensi dengan gaya selingkung jurnal.</td></tr>
+<tr><td><strong>Layout Editor</strong></td><td>Memformat naskah final menjadi dokumen publikasi (<em>Galleys</em>) seperti PDF, HTML, atau XML.</td></tr>
+<tr><td><strong>Proofreader</strong></td><td>Melakukan verifikasi akhir pada tata letak <em>Galleys</em> sebelum artikel diterbitkan secara publik.</td></tr>
+</tbody>
+</table>
+</div>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Ilustrasi: Ekosistem peran dalam OJS"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Ilustrasi: Ekosistem peran dalam OJS"></span></label></p>
+<h2 id="14-mekanisme-alur-kerja-editorial-yang-terintegrasi"><a class="header" href="#14-mekanisme-alur-kerja-editorial-yang-terintegrasi">1.4 Mekanisme Alur Kerja Editorial yang Terintegrasi</a></h2>
+<p>OJS mengotomatisasi siklus penerbitan naskah ilmiah melalui empat tahapan utama yang berurutan:</p>
+<p><code>[Submission] → [Review] → [Copyediting] → [Production]</code></p>
+<ol>
+<li><strong>Submission (Pengajuan Naskah)</strong>
+Penulis mengirimkan naskah dan memasukkan metadata secara terstruktur. Editor kemudian melakukan tinjauan kelayakan awal (<em>desk review</em>). Keputusan di tahap ini meliputi: <em>Send to Review</em> (untuk artikel riset), <em>Accept and Skip Review</em> (untuk naskah non-riset seperti opini redaksi), atau <em>Decline Submission</em>.</li>
+<li><strong>Review (Penelaahan Sejawat)</strong>
+Tahap ini mengelola proses evaluasi substansi naskah. OJS memfasilitasi berbagai metode, termasuk <em>blind review</em> maupun <em>open review</em>. Sistem akan melacak tenggat waktu evaluasi, mengirim peringatan otomatis, dan mendokumentasikan masukan dari pengulas.</li>
+<li><strong>Copyediting (Penyuntingan Naskah)</strong>
+Naskah yang telah lolos ulasan diserahkan untuk proses penyuntingan kebahasaan. Komunikasi terkait perbaikan tata bahasa dan format berlangsung di dalam platform hingga naskah mencapai versi final (<em>clean copy</em>).</li>
+<li><strong>Production (Produksi dan Publikasi)</strong>
+Teks akhir diformat menjadi <em>Galleys</em> (PDF/HTML/XML). Setelah pemeriksaan pracetak selesai, editor mendaftarkan artikel tersebut ke dalam daftar isi terbitan (volume dan isu tertentu) untuk dipublikasikan.</li>
+</ol>
+<h2 id="15-integritas-akademik-interoperabilitas-dan-preservasi"><a class="header" href="#15-integritas-akademik-interoperabilitas-dan-preservasi">1.5 Integritas Akademik, Interoperabilitas, dan Preservasi</a></h2>
+<p>OJS dirancang agar jurnal dapat terintegrasi dengan ekosistem penelitian global dan menjaga standar etika publikasi melalui fitur-fitur berikut:</p>
+<ul>
+<li><strong>Interoperabilitas Metadata (OAI-PMH):</strong> OJS menggunakan protokol <em>Open Archives Initiative Protocol for Metadata Harvesting</em> (OAI-PMH). Protokol ini memungkinkan basis data eksternal (seperti Google Scholar, DOAJ, dan Garuda) untuk secara otomatis menarik metadata artikel segera setelah dipublikasikan (PKP Docs).</li>
+<li><strong>Integrasi Infrastruktur Digital:</strong> OJS mendukung aktivasi <strong>DOI (Crossref)</strong> untuk menjamin tautan permanen artikel, <strong>ORCID</strong> untuk memverifikasi profil peneliti, dan <strong>ROR (Research Organization Registry)</strong> untuk standardisasi data afiliasi institusi.</li>
+<li><strong>Jejak Audit (<em>Audit Trail</em>):</strong> Sistem secara otomatis merekam seluruh aktivitas (pengunggahan berkas, korespondensi, dan perubahan status naskah) di dalam <em>Activity Log</em>. Catatan ini menjadi bukti validitas operasional saat pengajuan akreditasi atau investigasi etika publikasi.</li>
+<li><strong>Preservasi Jangka Panjang:</strong> OJS mendukung pengarsipan terdistribusi melalui <strong>LOCKSS</strong> dan <strong>PKP Preservation Network (PKP PN)</strong>. Jaringan <em>dark archive</em> ini menjamin artikel tetap tersimpan dan dapat diakses di masa depan meskipun server utama jurnal mengalami gangguan permanen.</li>
+</ul>
+<h2 id="16-struktur-pembelajaran-kursus"><a class="header" href="#16-struktur-pembelajaran-kursus">1.6 Struktur Pembelajaran Kursus</a></h2>
+<p>Buku panduan ini menguraikan tahapan manajemen jurnal secara sekuensial berdasarkan alur kerja OJS 3.3:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Bab</th><th>Topik</th><th>Tahap OJS</th></tr>
+</thead>
+<tbody>
+<tr><td>Bab 1–2</td><td>Persiapan Dasar</td><td>Tahap Pra-OJS</td></tr>
+<tr><td>Bab 3</td><td>Gambaran Umum</td><td>Pengenalan Sistem</td></tr>
+<tr><td>Bab 4</td><td>Pengajuan Naskah</td><td>Tahap Submission</td></tr>
+<tr><td>Bab 5</td><td>Merespons Naskah</td><td>Tahap Submission</td></tr>
+<tr><td>Bab 6</td><td>Pemeriksaan Plagiasi</td><td>Pra-Review</td></tr>
+<tr><td>Bab 7</td><td>Menugaskan Reviewer</td><td>Tahap Review</td></tr>
+<tr><td>Bab 8</td><td>Panduan Reviewer</td><td>Tahap Review</td></tr>
+<tr><td>Bab 9</td><td>Keputusan Editorial</td><td>Tahap Review</td></tr>
+<tr><td>Bab 10</td><td>Penyuntingan</td><td>Tahap Copyediting</td></tr>
+<tr><td>Bab 11</td><td>Produksi</td><td>Tahap Production</td></tr>
+<tr><td>Bab 12</td><td>Manajemen Edisi</td><td>Tahap Publikasi</td></tr>
+<tr><td>Bab 13</td><td>Manajemen Metadata</td><td>Visibilitas</td></tr>
+<tr><td>Bab 14</td><td>Diseminasi Eksternal</td><td>Pasca-Publikasi</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="17-persiapan-praktik"><a class="header" href="#17-persiapan-praktik">1.7 Persiapan Praktik</a></h2>
+<p>Untuk memaksimalkan pembelajaran, pengelola disarankan untuk melakukan uji coba pada jurnal simulasi (jurnal percobaan). Latihan pada jurnal simulasi memungkinkan Anda untuk menguji alur kerja lintas peran tanpa berisiko mengubah data atau pengaturan pada sistem jurnal yang berstatus produksi (aktif).</p>
+<p>Referensi panduan teknis resmi dapat diakses melalui <strong>PKP Docs</strong> (https://docs.pkp.sfu.ca) dan modul pelatihan daring di <strong>PKP School</strong> (https://pkpschool.sfu.ca).</p>
+<h2 id="latihan-bab-1"><a class="header" href="#latihan-bab-1">Latihan Bab 1</a></h2>
+<p><strong>Latihan 1.1: Identifikasi Jalur Alur Kerja Naskah</strong></p>
+<p>Tinjau tiga jenis naskah di bawah ini. Tentukan tahapan alur kerja mana saja (dari <em>Submission</em> hingga <em>Production</em>) yang harus dilewati oleh setiap dokumen di dalam sistem OJS.</p>
+<ol>
+<li><strong>Artikel Penelitian Empiris</strong> (Naskah utama berisi metode dan hasil riset lapangan).</li>
+<li><strong>Catatan Editorial</strong> (Pengantar edisi yang ditulis oleh Editor Kepala, berisi ringkasan topik terbitan berjalan).</li>
+<li><strong>Resensi Buku</strong> (Tinjauan singkat atas sebuah buku akademik yang ditulis oleh pakar undangan).</li>
+</ol>
+<p><strong>Panduan Fasilitator</strong>: Diskusikan secara kelompok mengenai penerapan fitur “Accept and Skip Review” pada OJS. Tekankan urgensi penerapan alur <em>Review</em> penuh bagi artikel penelitian empiris untuk menjamin standar objektivitas (<em>peer-review</em>), serta kapan pengecualian dapat diterapkan secara etis pada naskah non-riset.</p>
+<h2 id="checklist-bab-1"><a class="header" href="#checklist-bab-1">Checklist Bab 1</a></h2>
+<ul>
+<li><input disabled="" type="checkbox"> Memahami definisi <em>serials crisis</em> dan peran OJS dalam memfasilitasi gerakan Akses Terbuka.</li>
+<li><input disabled="" type="checkbox"> Mengetahui urgensi OJS sebagai syarat teknis akreditasi jurnal nasional di Indonesia (ARJUNA/SINTA).</li>
+<li><input disabled="" type="checkbox"> Mampu mengidentifikasi urutan keempat tahapan editorial utama (<em>Submission</em>, <em>Review</em>, <em>Copyediting</em>, <em>Production</em>).</li>
+<li><input disabled="" type="checkbox"> Memahami dampak negatif komunikasi editorial di luar sistem (aplikasi pihak ketiga) terhadap jejak audit (<em>audit trail</em>).</li>
+<li><input disabled="" type="checkbox"> Mengenali fungsi dasar integrasi standar global seperti OAI-PMH, Crossref, dan PKP PN.</li>
+</ul>
+<h2 id="ringkasan-bab"><a class="header" href="#ringkasan-bab">Ringkasan Bab</a></h2>
+<p>Open Journal Systems (OJS) berfungsi sebagai infrastruktur digital komprehensif yang dirancang untuk mendukung penerbitan ilmiah profesional dan dapat diaudit. Dengan memahami arsitektur sistem—yang terbagi dalam fase Pengajuan, Penelaahan, Penyuntingan, dan Produksi—pengelola jurnal dapat memetakan pembagian tugas secara spesifik antarperan. Kepastian alur kerja di dalam OJS menjamin tersedianya jejak audit secara otomatis, memastikan bahwa jurnal mematuhi etika publikasi internasional, serta memenuhi syarat standar akreditasi dan indeksasi global.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="bab-2-pengaturan-identitas-dan-kebijakan-dasar-jurnal"><a class="header" href="#bab-2-pengaturan-identitas-dan-kebijakan-dasar-jurnal">Bab 2: Pengaturan Identitas dan Kebijakan Dasar Jurnal</a></h1>
+<blockquote>
+<p><em>Banyak jurnal ditolak indeksasi DOAJ dan SINTA bukan karena kualitas artikelnya buruk, melainkan karena informasi identitas, fokus, dan kebijakan akses terbukanya dibiarkan ambigu. Tanpa kebijakan yang jelas di tahap awal ini, pengelola jurnal, penulis, dan pembaca akan terjebak dalam masalah kepemilikan dan hak distribusi di kemudian hari.</em></p>
+</blockquote>
+<p>Bab ini secara khusus disusun bagi pengelola jurnal yang kerap menghadapi kesulitan teknis maupun konseptual dalam mendefinisikan kebijakan jurnal mereka di OJS 3.3. Mengisi pengaturan jurnal bukanlah sekadar formalitas administratif, melainkan proses mendeklarasikan standar keilmuan dan etika kepada komunitas akademik global.</p>
+<h2 id="21-elemen-identitas-utama-jurnal-journal-identity"><a class="header" href="#21-elemen-identitas-utama-jurnal-journal-identity">2.1 Elemen Identitas Utama Jurnal (Journal Identity)</a></h2>
+<p>Identitas jurnal adalah wajah pertama yang dilihat oleh pembaca, penulis, dan lembaga pengindeks. Pengaturan ini dapat diakses pada OJS 3.3 melalui menu <strong>Settings &gt; Journal &gt; Masthead</strong>. Elemen yang wajib dikonfigurasi meliputi:</p>
+<ul>
+<li><strong>Nama Jurnal</strong>: Nama yang dicantumkan di OJS harus persis sama dengan kepanjangan nama yang terdaftar di surat keputusan (SK) ISSN. <strong>Catatan Kritis</strong>: Pengelola jurnal di Indonesia sering keliru menjadikan singkatan/akronim (misal: “Jurnal ABCD”) sebagai nama utama jurnal. Padahal, portal ISSN memiliki kolom tersendiri untuk akronim. Gunakan nama lengkap sebagai nama utama, karena Pusat Nasional ISSN kini semakin ketat menertibkan kekeliruan ini.</li>
+<li><strong>Singkatan dan Inisial</strong>: Masukkan akronim resmi jurnal Anda di sini. Gunakan inisial yang konsisten, karena OJS akan menggunakannya sebagai pengenal tautan situs.</li>
+<li><strong>Penerbit (Publisher)</strong>: Tuliskan nama institusi, fakultas, atau himpunan profesi yang secara legal menaungi jurnal tersebut.</li>
+<li><strong>ISSN</strong>: Cantumkan e-ISSN (elektronik) dan p-ISSN (cetak) jika ada. Jurnal diperkenankan hanya memiliki e-ISSN jika pengelola memang murni menerbitkan jurnal secara daring (<em>online</em>). Namun, berhati-hatilah karena beberapa perguruan tinggi di Indonesia masih mewajibkan penyerahan versi cetak fisik untuk syarat administrasi atau akreditasi internal.</li>
+</ul>
+<h2 id="22-fokus-dan-ruang-lingkup-focus-and-scope"><a class="header" href="#22-fokus-dan-ruang-lingkup-focus-and-scope">2.2 Fokus dan Ruang Lingkup (<em>Focus and Scope</em>)</a></h2>
+<p>Mendefinisikan <em>Focus and Scope</em> secara eksplisit adalah langkah krusial untuk mencegah jurnal Anda dianggap sebagai jurnal “gado-gado” yang menerima topik apa saja. Jurnal dengan cakupan yang terlalu luas sering kali kesulitan menembus indeksasi bereputasi karena dianggap tidak memiliki batasan keilmuan yang jelas.</p>
+<p><strong>Cara Merumuskan Focus and Scope yang Efektif:</strong></p>
+<ol>
+<li><strong>Definisikan Disiplin Ilmu Spesifik</strong>: Alih-alih menulis cakupan luas seperti “Ilmu Pendidikan”, tuliskan “Pendidikan Dasar dan Menengah”. Dalam sistem akreditasi nasional (ARJUNA), cakupan ilmu yang semakin spesifik akan memberikan skor penilaian yang semakin tinggi. <strong>Namun, berhati-hatilah</strong>: konsekuensi dari ruang lingkup yang terlalu sempit adalah kesulitan mencari naskah yang relevan. Mengingat akreditasi mensyaratkan jumlah terbitan minimal per tahun, redaksi harus sangat matang menyeimbangkan antara spesialisasi topik dan ketersediaan pasokan naskah.</li>
+<li><strong>Tentukan Target Pembaca (<em>Readership</em>)</strong>: Jelaskan secara spesifik siapa yang diharapkan membaca dan memanfaatkan artikel di jurnal Anda, misalnya praktisi kebijakan, guru sekolah dasar, atau peneliti klinis.</li>
+<li><strong>Sebutkan Topik yang Ditolak</strong>: Sangat direkomendasikan untuk secara tegas menyebutkan topik-topik yang beririsan namun <strong>tidak</strong> akan diterima oleh jurnal demi efisiensi proses editorial.</li>
+</ol>
+<p><strong>Sorotan Standar Global: DOAJ Principles of Transparency</strong></p>
+<p>Lembaga DOAJ bersama COPE, OASPA, dan WAME mensyaratkan bahwa situs web jurnal wajib memiliki pernyataan yang eksplisit mengenai cakupan fokusnya. Nama jurnal harus unik dan tidak meniru penerbit lain. Definisi target pembaca dan kebijakan pengajuan naskah (seperti larangan pengiriman naskah ganda) harus dipaparkan tanpa ambiguitas (DOAJ, 2026, https://doaj.org/apply/transparency/).</p>
+<p><strong>Catatan dari Lapangan</strong></p>
+<p>Beberapa pengelola jurnal sering menghadapi situasi di mana mereka menerima banyak sekali kiriman naskah, tetapi mayoritas naskah tersebut sama sekali tidak relevan dengan fokus keilmuan jurnal. Hal ini kerap terjadi karena halaman <em>Focus and Scope</em> hanya diisi dengan satu paragraf normatif yang sangat luas. Akibatnya, editor tingkat pertama (<em>desk editor</em>) harus menghabiskan waktu berjam-jam secara sia-sia untuk menolak naskah-naskah yang salah sasaran.</p>
+<h2 id="23-dewan-redaksi-editorial-board"><a class="header" href="#23-dewan-redaksi-editorial-board">2.3 Dewan Redaksi (<em>Editorial Board</em>)</a></h2>
+<p>Kredibilitas sebuah jurnal tercermin dari komposisi dewan redaksinya. Di OJS 3.3, Anda dapat mengelola profil dewan redaksi melalui menu <strong>Users &amp; Roles</strong>. Namun, yang lebih penting daripada cara menambahkannya secara teknis adalah strategi perekrutannya.</p>
+<p><strong>Menghindari Jebakan “In-House Journal”</strong>
+Kesalahan fatal yang sering dilakukan oleh pengelola jurnal kampus adalah mengisi struktur dewan redaksi (mulai dari <em>Editor in Chief</em> hingga <em>Section Editor</em>) dengan dosen-dosen dari satu program studi atau satu fakultas yang sama. Praktik ini dikenal sebagai <em>in-house journal</em> dan sangat dihindari oleh lembaga pengindeks global.</p>
+<p>Untuk membangun dewan redaksi yang kredibel, pastikan:</p>
+<ol>
+<li><strong>Keragaman Institusional</strong>: Rekrut editor dari universitas atau lembaga penelitian lain, idealnya yang memiliki reputasi yang diakui di bidang keilmuan jurnal Anda.</li>
+<li><strong>Keragaman Geografis</strong>: Jika jurnal Anda menargetkan cakupan nasional, usahakan memiliki editor dari berbagai provinsi. Jika menargetkan cakupan internasional, editor dari berbagai negara menjadi syarat mutlak.</li>
+<li><strong>Keahlian Spesifik</strong>: Setiap editor sebaiknya memiliki rekam jejak publikasi (bisa dibuktikan dengan tautan profil SINTA, ORCID, atau Scopus) yang sejalan dengan fokus jurnal.</li>
+</ol>
+<p><strong>Catatan dari Lapangan</strong></p>
+<p>Beberapa pengelola jurnal baru, demi mempercepat proses indeksasi atau akreditasi, diam-diam mencatut nama profesor ternama dari universitas bergengsi sebagai anggota dewan redaksi tanpa meminta izin. Mereka berasumsi bahwa hal ini tidak akan diperiksa secara mendetail. Namun, ketika asesor SINTA atau tim verifikasi DOAJ melakukan konfirmasi via surel (<em>email</em>) secara langsung kepada tokoh yang dicatut tersebut, pelanggaran ini terbongkar dan jurnal langsung mendapat sanksi daftar hitam (<em>blacklist</em>).</p>
+<p><strong>Sorotan Standar Global: Sanksi DOAJ dan COPE atas Dewan Fiktif</strong></p>
+<p>Berdasarkan <em>Principles of Transparency and Best Practice in Scholarly Publishing</em>, indeksator utama mewajibkan pencantuman nama lengkap dan afiliasi institusi yang divalidasi. Praktik memalsukan dewan redaksi (<em>fake editorial board</em>) dianggap sebagai pelanggaran etika akademik berat. DOAJ menegaskan bahwa jika penggunaan nama pakar tanpa izin tertulis terbukti, jurnal tersebut akan langsung dicabut dan dihapus dari direktori (DOAJ &amp; COPE, 2026, https://doaj.org/apply/transparency/).</p>
+<h2 id="24-kebijakan-akses-terbuka-dan-hak-cipta"><a class="header" href="#24-kebijakan-akses-terbuka-dan-hak-cipta">2.4 Kebijakan Akses Terbuka dan Hak Cipta</a></h2>
+<p>Mengatur kebijakan akses terbuka dan hak cipta sering kali menjadi momok bagi pengelola jurnal. Banyak yang bingung membedakan antara “siapa yang memiliki artikel” dan “siapa yang boleh menerbitkan”. Mari kita pahami dengan cara yang sangat sederhana.</p>
+<p><strong>Hak Cipta (<em>Copyright</em>) vs Hak Penerbitan (<em>Publishing Rights</em>)</strong></p>
+<ul>
+<li><strong>Hak Cipta</strong>: Ini adalah status kepemilikan. Siapa pemilik naskah tersebut? Penulis adalah pemilik sah kekayaan intelektual tersebut sejak naskah ditulis.</li>
+<li><strong>Hak Penerbitan</strong>: Ini adalah sekadar “izin”. Jurnal meminta izin kepada penulis untuk menjadi pihak pertama yang mempublikasikan dan menyebarkan naskah tersebut.</li>
+</ul>
+<p><strong>Catatan Kritis: Konsekuensi Merampas Hak Cipta</strong>
+Jika jurnal Anda memaksa penulis untuk menyerahkan hak cipta penuh (<em>Transfer of Copyright</em>) dengan menandatangani formulir pelimpahan hak, maka secara hukum penulis <strong>kehilangan kebebasan</strong> atas artikelnya sendiri. Penulis tidak boleh menerjemahkan, merangkum, atau bahkan mengunggah artikelnya sendiri di repositori kampus tanpa meminta izin kepada pengelola jurnal. Ini adalah praktik penerbit komersial zaman dahulu.</p>
+<p>Jurnal <em>Open Access</em> modern akan membiarkan penulis mempertahankan hak ciptanya (<em>Retain Copyright</em>) secara penuh dan hanya meminta “hak penerbitan perdana” (<em>first publishing rights</em>).</p>
+<p><strong>Kepemilikan Artikel Setelah Terbit</strong>
+Berdasarkan standar <em>Budapest Open Access Initiative</em> (BOAI), filosofi jurnal <em>open access</em> sejati tidak menuntut jurnal untuk “merampas” artikel dari penulisnya. Setelah terbit, artikel tersebut tetap milik penulis seutuhnya.</p>
+<p><strong>Memilih Lisensi Creative Commons (CC)</strong>
+Jika artikel tetap milik penulis, bagaimana caranya agar dunia tahu apa yang boleh mereka lakukan dengan artikel tersebut tanpa harus mengirim surel (<em>email</em>) ke penulis satu per satu? Di sinilah Lisensi CC digunakan sebagai “label izin universal”. Pemilihan lisensi ini memiliki <strong>konsekuensi langsung pada indeksasi global</strong>:</p>
+<ol>
+<li><strong>CC BY (<em>Attribution</em>)</strong>: Ini adalah lisensi paling bebas. Pembaca boleh menyalin, mengubah, dan menyebarluaskan artikel tersebut untuk tujuan komersial sekalipun, asalkan menyebut nama penulis aslinya. <strong>Konsekuensi Indeksasi</strong>: Lisensi ini sangat dianjurkan oleh pengindeks global. DOAJ mensyaratkan penggunaan CC BY jika jurnal ingin mendapatkan pengakuan tertinggi (<em>DOAJ Seal</em>), dan konsorsium riset Eropa (Plan S) mewajibkan lisensi ini.</li>
+<li><strong>CC BY-SA (<em>ShareAlike</em>)</strong>: Boleh diubah dan dikomersialkan, dengan syarat karya turunannya wajib menggunakan lisensi CC BY-SA yang sama. <strong>Konsekuensi Indeksasi</strong>: Diterima oleh DOAJ, namun membatasi fleksibilitas distribusi karena sifat lisensinya yang “menular” (<em>viral license</em>).</li>
+<li><strong>CC BY-NC (<em>Non-Commercial</em>)</strong>: Boleh disalin dan diubah, namun <strong>dilarang keras untuk tujuan komersial/mencari uang</strong>. <strong>Konsekuensi Indeksasi</strong>: Diterima oleh DOAJ, namun banyak basis data akademik atau korporasi yang enggan mengindeks artikel dengan lisensi ini karena takut melanggar batasan komersial. Selain itu, lisensi NC berlawanan dengan prinsip dasar <em>Open Access</em> menurut standar BOAI yang melarang hambatan distribusi hukum.</li>
+</ol>
+<h2 id="25-halaman-about-the-journal-tentang-jurnal"><a class="header" href="#25-halaman-about-the-journal-tentang-jurnal">2.5 Halaman “About the Journal” (Tentang Jurnal)</a></h2>
+<p>Halaman <em>About</em> adalah brosur digital jurnal Anda. Pengunjung, termasuk asesor akreditasi, akan membaca halaman ini untuk menilai profesionalisme pengelolaan jurnal. Berdasarkan pedoman DOAJ dan COPE, elemen-elemen berikut <strong>wajib</strong> dipaparkan di sini secara transparan:</p>
+<ol>
+<li><strong>Transparansi Biaya (APC)</strong>: Beri tahu penulis sejak awal apakah mereka harus membayar <em>Article Processing Charges</em> (APC) atau tidak. Jika ada biaya, cantumkan nominal pastinya <strong>sebelum</strong> mereka mengirimkan naskah (<em>submission</em>). Jika jurnal Anda sepenuhnya gratis, tulislah secara eksplisit: “Jurnal ini tidak memungut biaya pemrosesan artikel (APC) maupun biaya pengiriman naskah dari penulis.”</li>
+<li><strong>Pernyataan Etika Publikasi</strong>: Jurnal yang kredibel harus memiliki panduan penanganan pelanggaran riset (<em>research misconduct</em>), pedoman penentuan kepengarangan, dan proses banding. Keputusan editorial harus secara tegas dinyatakan bebas dari diskriminasi.</li>
+<li><strong>Informasi Identitas Permanen (ISSN)</strong>: Tuliskan kembali nomor e-ISSN (dan p-ISSN jika ada) di halaman ini. Sangat disarankan untuk memberikan tautan hidup (<em>hyperlink</em>) pada nomor tersebut yang mengarah langsung ke laman validasi portal ISSN nasional. Ini akan sangat memudahkan asesor atau lembaga pengindeks memverifikasi legalitas jurnal Anda secara instan.</li>
+</ol>
+<h2 id="26-panduan-penulis-author-guidelines-dan-template-naskah"><a class="header" href="#26-panduan-penulis-author-guidelines-dan-template-naskah">2.6 Panduan Penulis (<em>Author Guidelines</em>) dan <em>Template</em> Naskah</a></h2>
+<p>Banyak pengelola jurnal membuat kesalahan dengan mengira bahwa <em>Author Guidelines</em> yang baik adalah yang memaksa penulis mengirim naskah dalam format tata letak (<em>layout</em>) final jurnal—lengkap dengan dua kolom, format kolom yang rumit, dan <em>header/footer</em> khusus.</p>
+<p><strong>Mengapa Template Penulis Harus Sangat Sederhana?</strong>
+Memaksa penulis menggunakan <em>template final layout</em> justru akan <strong>menyusahkan tim editorial Anda sendiri</strong>. Proses penyuntingan naskah tahap awal (<em>Copyediting</em>) berfokus pada perbaikan substansi, ejaan, dan konsistensi tata bahasa; bukan pada desain visual.</p>
+<p>Jika editor harus melakukan modifikasi dan <em>track changes</em> pada teks di dalam sebuah <em>template layout</em> yang terformat rapat, desain teks akan rusak, dan staf <em>layouter</em> di tahap produksi (<em>Typesetting</em>) harus bekerja dua kali untuk menyusun ulang teks yang hancur tersebut. Prinsip utama pada tahap penerimaan awal adalah: <em>“Boring is better”</em> (semakin polos, semakin baik).</p>
+<p><strong>Catatan Kritis: Masalah Teknis yang Membuat Editor Bekerja Dua Kali</strong>
+Penggunaan <em>template final</em> yang rumit sering memicu berbagai kesalahan pemformatan (<em>formatting</em>) oleh penulis yang membebani kerja editor:</p>
+<ul>
+<li><strong>Pemformatan Manual (<em>Line Breaks</em>)</strong>: Penulis sering menggunakan tombol <code>Enter</code> berulang kali untuk memindahkan teks ke halaman berikutnya, atau menekan <code>Shift+Enter</code> untuk memotong baris secara manual. Saat teks tersebut dipindahkan ke aplikasi tata letak resmi, seluruh spasi tersebut berubah menjadi ruang kosong yang berantakan.</li>
+<li><strong>Daftar Pustaka <em>Hardcoded</em></strong>: Penulis mengetik daftar pustaka secara manual satu per satu tanpa menggunakan aplikasi manajer referensi (seperti Mendeley, Zotero, atau EndNote). Akibatnya, jika ada kesalahan format sitasi, <em>copyeditor</em> harus membetulkannya huruf demi huruf.</li>
+<li><strong>Kualitas Gambar Buruk</strong>: Alih-alih menyertakan gambar asli beresolusi tinggi (minimal 300 dpi), penulis sering menyisipkan hasil tangkapan layar (<em>screenshot</em>) beresolusi sangat rendah langsung ke dalam dokumen teks. Hal ini membuat grafik terlihat buram saat dicetak dalam PDF.</li>
+<li><strong>Tabel Kompleks</strong>: Penulis menyisipkan tabel yang digambar dengan format sel rumit (bayangan, garis ganda, atau spasi <em>enter</em> di dalam satu sel), atau bahkan mengubah tabel teks menjadi sekadar gambar sisipan (<em>image table</em>) yang membuat editor tidak bisa memperbaiki salah ketik.</li>
+<li><strong>Pengiriman Berkas PDF</strong>: Terbuai dengan tampilan <em>template final layout</em> yang cantik, penulis justru menyimpan dokumennya ke format PDF alih-alih DOCX/RTF. <em>Copyeditor</em> sama sekali tidak bisa melakukan penyuntingan <em>track changes</em> pada dokumen PDF.</li>
+</ul>
+<p><strong>Solusinya</strong>: Sediakan <em>template</em> kosong berformat satu kolom yang sangat sederhana untuk penulis. Wajibkan penggunaan manajer referensi untuk sitasi. Instruksikan agar penulis mengunggah tabel besar dan gambar asli sebagai berkas terpisah (<em>Supplementary Files</em>) pada OJS. Biarkan desain visual menjadi urusan penata letak (<em>typesetter</em>) di tahap akhir (Produksi), bukan urusan penulis di tahap awal.</p>
+<h2 id="27-referensi-dan-tautan-penting"><a class="header" href="#27-referensi-dan-tautan-penting">2.7 Referensi dan Tautan Penting</a></h2>
+<p>Pengaturan identitas dan kebijakan jurnal adalah proses yang dinamis dan terikat pada aturan standar ekosistem penerbitan akademik global. Jika Anda membutuhkan informasi spesifik atau panduan legalitas yang lebih mendalam, kunjungi tautan-tautan resmi berikut:</p>
+<ol>
+<li><strong>Layanan ISSN Nasional (BRIN)</strong>: Tempat memverifikasi, mendaftar, dan memahami aturan penamaan jurnal di Indonesia. <a href="https://issn.brin.go.id/">https://issn.brin.go.id/</a></li>
+<li><strong>Akreditasi Jurnal Nasional (ARJUNA)</strong>: Pedoman resmi dari Kemendikbudristek terkait instrumen penilaian spesialisasi dan ruang lingkup jurnal. <a href="https://arjuna.kemdikbud.go.id/">https://arjuna.kemdikbud.go.id/</a></li>
+<li><strong>DOAJ Principles of Transparency</strong>: Standar keterbukaan tata kelola jurnal (dewan redaksi, APC, fokus, dan hak cipta) yang diakui secara internasional. <a href="https://doaj.org/apply/transparency/">https://doaj.org/apply/transparency/</a></li>
+<li><strong>Committee on Publication Ethics (COPE)</strong>: Panduan lengkap dalam menangani pelanggaran etika dan pedoman tugas editor jurnal. <a href="https://publicationethics.org/">https://publicationethics.org/</a></li>
+<li><strong>Pemilih Lisensi Creative Commons (CC)</strong>: Fitur interaktif untuk membantu pengelola jurnal memilih dan menghasilkan teks legal lisensi akses terbuka yang tepat. <a href="https://chooser-beta.creativecommons.org/">https://chooser-beta.creativecommons.org/</a></li>
+</ol>
+<h2 id="checklist-pengaturan-identitas-dan-kebijakan"><a class="header" href="#checklist-pengaturan-identitas-dan-kebijakan">Checklist Pengaturan Identitas dan Kebijakan</a></h2>
+<ul>
+<li><input disabled="" type="checkbox"> Nama jurnal dan ISSN yang dicantumkan di OJS sama persis dengan salinan SK ISSN.</li>
+<li><input disabled="" type="checkbox"> <em>Focus and Scope</em> sudah secara tegas menyebutkan batasan bidang ilmu dan target pembaca.</li>
+<li><input disabled="" type="checkbox"> Terdapat pernyataan tertulis mengenai topik naskah yang tidak akan diterima oleh jurnal.</li>
+<li><input disabled="" type="checkbox"> Dewan Redaksi memiliki keragaman afiliasi institusi (bukan jurnal yang sepenuhnya bersifat <em>in-house</em>).</li>
+<li><input disabled="" type="checkbox"> Tidak ada pencatutan nama tokoh akademik di dalam struktur redaksi tanpa izin tertulis.</li>
+<li><input disabled="" type="checkbox"> Kebijakan <em>Open Access</em> dan tipe lisensi <em>Creative Commons</em> (misalnya: CC BY) diumumkan dengan sangat gamblang.</li>
+<li><input disabled="" type="checkbox"> Kepemilikan artikel dinyatakan secara hukum tetap berada di tangan penulis.</li>
+<li><input disabled="" type="checkbox"> Jurnal mempublikasikan <em>Template</em> Naskah (<em>Author Guidelines</em>) yang sederhana, bukan <em>template</em> tata letak produksi, demi memudahkan kerja penyuntingan.</li>
+<li><input disabled="" type="checkbox"> Penjelasan mengenai Biaya Pemrosesan Artikel (APC) atau ketiadaan biaya ditulis secara tegas di halaman “Tentang Jurnal”.</li>
+</ul>
+<h2 id="ringkasan-bab-1"><a class="header" href="#ringkasan-bab-1">Ringkasan Bab</a></h2>
+<p>Mengonfigurasi identitas dan kebijakan jurnal adalah langkah struktural paling krusial sebelum jurnal diterbitkan secara publik. Kebijakan yang ambigu, sentralisasi pengurus pada satu institusi, perampasan hak cipta, atau bahkan instruksi pemformatan naskah yang menyulitkan penyunting (<em>copyeditor</em>), tidak hanya akan berujung pada penolakan indeksator global, tetapi juga melipatgandakan beban operasional tim editorial. Pengaturan kebijakan yang jujur dan tertata rapi sejak awal adalah jaminan keberlangsungan jurnal yang berkualitas.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="bab-3-pengelolaan-e-resources-dan-manajemen-referensi"><a class="header" href="#bab-3-pengelolaan-e-resources-dan-manajemen-referensi">Bab 3: Pengelolaan e-Resources dan Manajemen Referensi</a></h1>
+<blockquote>
+<p><em>Pernahkah Anda menemukan naskah dengan argumen yang sangat meyakinkan, namun referensi yang digunakan tidak relevan, berupa tautan rusak, atau bahkan bersumber dari blog pribadi? Bagaimana Anda, sebagai pengelola jurnal, dapat memastikan validitas dan konsistensi fondasi keilmuan naskah tersebut tanpa harus menghabiskan berjam-jam waktu penyuntingan manual?</em></p>
+</blockquote>
 <p>Penulisan ilmiah selalu berpijak pada referensi kepustakaan yang valid. Setiap sumber yang digunakan harus dikutip (<em>citation</em>) dan dicantumkan dalam daftar pustaka sesuai gaya sitasi yang berlaku. Untuk mempermudah pengelolaan referensi secara masif, penggunaan perangkat lunak manajemen referensi menjadi kebutuhan mutlak bagi pengelola jurnal dan penulis ilmiah.</p>
 <p>Bab ini membahas konsep dasar manajemen referensi dan panduan penggunaan <strong>Mendeley</strong> sebagai perangkat lunak pengelola referensi yang banyak digunakan oleh komunitas akademik.</p>
-<h2 id="11-konsep-sitasi-dan-signifikansinya"><a class="header" href="#11-konsep-sitasi-dan-signifikansinya">1.1 Konsep Sitasi dan Signifikansinya</a></h2>
+<h2 id="31-konsep-sitasi-dan-signifikansinya"><a class="header" href="#31-konsep-sitasi-dan-signifikansinya">3.1 Konsep Sitasi dan Signifikansinya</a></h2>
 <p>Sitasi atau kutipan bibliografi (<em>bibliographic citation</em>) adalah rujukan terhadap dokumen ilmiah seperti buku, artikel, halaman web, atau produk penerbitan lainnya yang memberikan rincian memadai untuk mengidentifikasi produk tersebut secara unik (MIT Libraries, 2009). Sitasi berfungsi untuk memberikan pengakuan terhadap karya sebelumnya dan merujuk pada kewenangan keilmuan tertentu guna mendukung argumen penulis.</p>
 <p>Tujuan utama penulisan sumber sitasi dan daftar pustaka meliputi:</p>
 <ol>
@@ -213,7 +434,10 @@
 <li><strong>Menghargai penulis sebelumnya</strong>: Mengakui secara eksplisit bahwa ide, argumen, atau analisis tertentu merupakan kontribusi intelektual orang lain.</li>
 <li><strong>Membantu penelusuran informasi</strong>: Memfasilitasi pembaca yang ingin mengetahui lebih dalam mengenai sumber kutipan dengan memberikan rincian lengkap pada daftar pustaka.</li>
 </ol>
-<h2 id="12-perangkat-lunak-manajemen-referensi"><a class="header" href="#12-perangkat-lunak-manajemen-referensi">1.2 Perangkat Lunak Manajemen Referensi</a></h2>
+<p><strong>Sorotan Standar Global: Committee on Publication Ethics (COPE)</strong></p>
+<p>Committee on Publication Ethics (COPE) memberikan peringatan keras terhadap praktik manipulasi sitasi (<em>citation manipulation</em>), yaitu penggunaan referensi semata-mata untuk menggelembungkan tingkat sitasi seorang penulis atau metrik jurnal secara artifisial. Pengelola jurnal wajib memiliki kebijakan yang jelas terkait integritas sitasi—seperti membatasi <em>self-citation</em> yang tidak relevan—guna menjaga keandalan ekosistem publikasi akademik global.</p>
+<p><em>Sumber: https://publicationethics.org/</em></p>
+<h2 id="32-perangkat-lunak-manajemen-referensi"><a class="header" href="#32-perangkat-lunak-manajemen-referensi">3.2 Perangkat Lunak Manajemen Referensi</a></h2>
 <p>Untuk mengelola sitasi dan daftar pustaka secara efisien serta terintegrasi dengan perangkat lunak pengolah kata (seperti Microsoft Word atau LibreOffice), penulis dapat memanfaatkan perangkat lunak manajemen referensi. Beberapa contoh perangkat lunak yang umum digunakan adalah:</p>
 <div class="table-wrapper">
 <table>
@@ -230,7 +454,7 @@
 </div>
 <p>Bab ini berfokus pada <strong>Mendeley</strong>, karena perangkat lunak ini tersedia secara gratis, mendukung berbagai sistem operasi, dan memiliki ekosistem kolaborasi akademik yang luas.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Ilustrasi: Perangkat Lunak Manajemen Referensi"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Ilustrasi: Perangkat Lunak Manajemen Referensi"></span></label></p>
-<h2 id="13-pengenalan-mendeley"><a class="header" href="#13-pengenalan-mendeley">1.3 Pengenalan Mendeley</a></h2>
+<h2 id="33-pengenalan-mendeley"><a class="header" href="#33-pengenalan-mendeley">3.3 Pengenalan Mendeley</a></h2>
 <p>Mendeley adalah perangkat lunak manajemen referensi sekaligus jaringan sosial akademis. Perangkat lunak ini mengombinasikan aplikasi <em>desktop</em> dan situs web untuk mengelola, berbagi, serta mencari referensi dan kontak akademik.</p>
 <p>Keunggulan utama Mendeley:</p>
 <ul>
@@ -240,7 +464,7 @@
 <li>Sinkronisasi awan (<em>cloud synchronization</em>) yang memungkinkan akses data dari berbagai perangkat.</li>
 <li>Dukungan impor dari perangkat lunak referensi lain seperti EndNote dan Zotero.</li>
 </ul>
-<h2 id="14-instalasi-mendeley"><a class="header" href="#14-instalasi-mendeley">1.4 Instalasi Mendeley</a></h2>
+<h2 id="34-instalasi-mendeley"><a class="header" href="#34-instalasi-mendeley">3.4 Instalasi Mendeley</a></h2>
 <p>Mendeley tersedia untuk sistem operasi Windows, macOS, dan Linux dan dapat diunduh melalui situs resminya.</p>
 <h3 id="langkah-1-pembuatan-akun"><a class="header" href="#langkah-1-pembuatan-akun">Langkah 1: Pembuatan Akun</a></h3>
 <ol>
@@ -274,7 +498,7 @@
 <li>Tunggu hingga proses instalasi selesai, lalu klik <strong>Finish</strong>.</li>
 </ol>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Proses instalasi Mendeley"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Proses instalasi Mendeley"></span></label></p>
-<h2 id="15-memulai-mendeley-dan-menambah-referensi"><a class="header" href="#15-memulai-mendeley-dan-menambah-referensi">1.5 Memulai Mendeley dan Menambah Referensi</a></h2>
+<h2 id="35-memulai-mendeley-dan-menambah-referensi"><a class="header" href="#35-memulai-mendeley-dan-menambah-referensi">3.5 Memulai Mendeley dan Menambah Referensi</a></h2>
 <p>Sebelum memulai, kumpulkan seluruh dokumen referensi dalam satu folder atau unduh referensi melalui basis data jurnal ilmiah terpercaya (seperti PubMed, EBSCO, atau platform jurnal OJS terkait) untuk mengoptimalkan otomatisasi metadata.</p>
 <h3 id="menambahkan-dokumen-referensi"><a class="header" href="#menambahkan-dokumen-referensi">Menambahkan Dokumen Referensi</a></h3>
 <p>Terdapat beberapa metode untuk menambahkan referensi ke dalam perpustakaan Mendeley:</p>
@@ -287,7 +511,7 @@
 <h3 id="melengkapi-metadata-referensi-secara-otomatis"><a class="header" href="#melengkapi-metadata-referensi-secara-otomatis">Melengkapi Metadata Referensi Secara Otomatis</a></h3>
 <p>Saat dokumen ditambahkan, Mendeley akan mencari informasi dari <em>CrossRef</em>, <em>PubMed</em>, atau <em>Google Scholar</em>. Apabila metadata tidak lengkap (biasanya ditandai di folder <em>Needs Review</em>), pengguna dapat melengkapinya secara manual dengan memasukkan kode identifikasi seperti DOI atau PMID pada panel <em>Catalog IDs</em>, lalu mengeklik ikon pencarian untuk menarik data bibliografi yang valid.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Menambah file ke Mendeley dengan Drag and Drop"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Menambah file ke Mendeley dengan Drag and Drop"></span></label></p>
-<h2 id="16-pengelolaan-berkas-referensi"><a class="header" href="#16-pengelolaan-berkas-referensi">1.6 Pengelolaan Berkas Referensi</a></h2>
+<h2 id="36-pengelolaan-berkas-referensi"><a class="header" href="#36-pengelolaan-berkas-referensi">3.6 Pengelolaan Berkas Referensi</a></h2>
 <p>Untuk mencegah penumpukan dokumen yang tidak terorganisasi, manfaatkan fitur-fitur pengelolaan berikut:</p>
 <ol>
 <li><strong>Menggabungkan Duplikasi (Merge)</strong>: Gunakan fitur <em>Filter by Authors/Tags/Publications</em> untuk menemukan duplikasi, lalu pindahkan entri yang keliru ke entri yang penulisannya benar.</li>
@@ -295,7 +519,7 @@
 <li><strong>Pencarian Real-Time</strong>: Kolom pencarian di sudut kanan atas memungkinkan penyaringan dan penyorotan kata kunci langsung di dalam dokumen (<em>search as you type</em>).</li>
 <li><strong>Sorotan dan Catatan</strong>: Saat membaca dokumen PDF di Mendeley, gunakan fitur <em>Highlight Text</em> untuk menandai teks penting dan <em>Add Note</em> untuk menyisipkan catatan khusus.</li>
 </ol>
-<h2 id="17-memasukkan-sitasi-ke-microsoft-word"><a class="header" href="#17-memasukkan-sitasi-ke-microsoft-word">1.7 Memasukkan Sitasi ke Microsoft Word</a></h2>
+<h2 id="37-memasukkan-sitasi-ke-microsoft-word"><a class="header" href="#37-memasukkan-sitasi-ke-microsoft-word">3.7 Memasukkan Sitasi ke Microsoft Word</a></h2>
 <h3 id="mengintegrasikan-ms-word-dengan-mendeley"><a class="header" href="#mengintegrasikan-ms-word-dengan-mendeley">Mengintegrasikan MS Word dengan Mendeley</a></h3>
 <ol>
 <li>Pastikan Microsoft Word dalam keadaan tertutup.</li>
@@ -314,14 +538,21 @@
 <h3 id="memilih-gaya-sitasi-dan-membuat-daftar-pustaka"><a class="header" href="#memilih-gaya-sitasi-dan-membuat-daftar-pustaka">Memilih Gaya Sitasi dan Membuat Daftar Pustaka</a></h3>
 <p>Penulis harus memilih gaya sitasi sesuai dengan panduan (<em>Author Guidelines</em>) jurnal yang dituju melalui menu <em>Style</em> di MS Word. Mendeley mendukung ratusan gaya sitasi seperti APA, IEEE, Chicago, dan MLA.</p>
 <p>Setelah seluruh sitasi disisipkan dalam dokumen, klik <strong>Insert Bibliography</strong>. Daftar pustaka akan dibangkitkan secara otomatis di bagian akhir dokumen dan akan beradaptasi setiap kali terdapat penambahan atau perubahan sitasi.</p>
-<h2 id="18-sinkronisasi-dan-fitur-kolaborasi-grup"><a class="header" href="#18-sinkronisasi-dan-fitur-kolaborasi-grup">1.8 Sinkronisasi dan Fitur Kolaborasi (Grup)</a></h2>
+<p><strong>Catatan dari Lapangan</strong></p>
+<p>Beberapa pengelola jurnal sering menghadapi situasi di mana penulis mensitasi sumber yang ternyata tidak dapat dilacak atau diverifikasi keberadaannya secara daring (<em>unverifiable sources</em>). Pertanyaan yang kerap muncul dalam sesi pelatihan editorial adalah bagaimana editor dapat mengidentifikasi sitasi bermasalah ini secara efisien. Salah satu kesalahan yang paling umum dijumpai pada naskah tahap awal adalah kegagalan penulis memanfaatkan fitur sitasi otomatis, sehingga memicu inkonsistensi gaya sitasi (misalnya percampuran format APA dan IEEE) di dalam satu draf naskah.</p>
+<h2 id="38-sinkronisasi-dan-fitur-kolaborasi-grup"><a class="header" href="#38-sinkronisasi-dan-fitur-kolaborasi-grup">3.8 Sinkronisasi dan Fitur Kolaborasi (Grup)</a></h2>
 <p>Mendeley menyediakan fungsionalitas penyimpanan awan dan kolaborasi tim:</p>
 <ul>
 <li><strong>Sinkronisasi</strong>: Klik tombol <em>Synchronize</em> untuk menyelaraskan pangkalan data referensi luring dengan akun daring. Hal ini memungkinkan akses dari perangkat lain.</li>
 <li><strong>Pembuatan Grup</strong>: Mendeley mendukung pembuatan grup (<em>Private</em>, <em>Invite-only</em>, atau <em>Open</em>) untuk berbagi pustaka referensi dengan tim peneliti atau pengelola jurnal lainnya.</li>
 <li><strong>Berbagi Referensi</strong>: Anggota grup privat dapat saling mengunggah referensi, menyisipkan catatan, serta melakukan sorotan pada dokumen yang sama, dengan warna yang dibedakan untuk setiap pengguna.</li>
 </ul>
-<h2 id="checklist-bab-1"><a class="header" href="#checklist-bab-1">Checklist Bab 1</a></h2>
+<h2 id="latihan-bab-3"><a class="header" href="#latihan-bab-3">Latihan Bab 3</a></h2>
+<p><strong>Latihan 3.1: Membangun Daftar Pustaka Otomatis</strong></p>
+<p>Anda menerima draf naskah tahap produksi yang memiliki lima kutipan langsung tanpa format sitasi standar, dan daftar pustakanya masih diketik secara manual.
+<strong>Tugas</strong>: Buatlah sebuah folder bernama “Latihan OJS” di Mendeley Reference Manager. Cari lima artikel ilmiah di internet yang relevan dengan topik naskah tersebut, masukkan ke dalam Mendeley, pastikan kelengkapan metadatanya (seperti DOI dan nama penulis), lalu gunakan Mendeley Cite (Word Plugin) untuk memasukkan sitasi. Bangkitkan daftar pustaka dalam format <em>American Psychological Association (APA) 7th Edition</em> secara otomatis ke dalam dokumen draf.</p>
+<p><strong>Panduan Fasilitator</strong>: Pastikan setiap peserta telah membuat akun Mendeley, mengunduh Mendeley Reference Manager, dan berhasil memasang <em>plugin</em> Mendeley Cite di Microsoft Word. Sediakan satu dokumen Word <em>dummy</em> berisi teks paragraf kosong yang membutuhkan sitasi agar peserta memiliki bahan praktik.</p>
+<h2 id="checklist-bab-3"><a class="header" href="#checklist-bab-3">Checklist Bab 3</a></h2>
 <ul>
 <li><input disabled="" type="checkbox"> Konsep sitasi dan kepentingannya untuk mencegah plagiarisme telah dipahami.</li>
 <li><input disabled="" type="checkbox"> Akun Mendeley (atau pengelola referensi serupa) telah dibuat dan divalidasi.</li>
@@ -330,12 +561,15 @@
 <li><input disabled="" type="checkbox"> Fungsi penyisipan sitasi dan pembuatan daftar pustaka (<em>Insert Bibliography</em>) di Microsoft Word telah diuji coba.</li>
 <li><input disabled="" type="checkbox"> Gaya sitasi telah disesuaikan dengan standar yang ditentukan oleh jurnal tujuan.</li>
 </ul>
-<h2 id="ringkasan-bab"><a class="header" href="#ringkasan-bab">Ringkasan Bab</a></h2>
+<h2 id="ringkasan-bab-2"><a class="header" href="#ringkasan-bab-2">Ringkasan Bab</a></h2>
 <p>Penggunaan perangkat lunak manajemen referensi seperti Mendeley sangat mempermudah pengorganisasian pustaka dan meminimalkan kesalahan manusia dalam penulisan sitasi. Ketelitian dalam melengkapi metadata referensi (seperti nama penulis, tahun, dan DOI) sejak awal akan menjamin bahwa daftar pustaka yang dihasilkan secara otomatis memenuhi standar keakuratan tinggi yang dituntut oleh penerbitan ilmiah.</p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="bab-2-analisis-subjek-dan-bibliografi"><a class="header" href="#bab-2-analisis-subjek-dan-bibliografi">Bab 2: Analisis Subjek dan Bibliografi</a></h1>
+<h1 id="bab-4-analisis-subjek-dan-bibliografi"><a class="header" href="#bab-4-analisis-subjek-dan-bibliografi">Bab 4: Analisis Subjek dan Bibliografi</a></h1>
+<blockquote>
+<p><em>Salah satu masalah paling persisten dalam publikasi ilmiah adalah daftar pustaka yang ditulis secara acak atau tidak mengikuti standar baku. Daftar pustaka yang berantakan bukan sekadar masalah estetika, melainkan hambatan serius yang menyebabkan mesin pengindeks gagal mengenali sitasi dan memutus jejaring metrik artikel tersebut.</em></p>
+</blockquote>
 <p>Bibliografi merupakan komponen fundamental dalam penulisan ilmiah. Tanpa bibliografi yang benar, integritas sebuah karya ilmiah menjadi diragukan. Bab ini membahas konsep dasar bibliografi, fungsinya, serta berbagai gaya penulisan sitasi yang umum digunakan dalam penerbitan jurnal ilmiah.</p>
-<h2 id="21-pengertian-bibliografi"><a class="header" href="#21-pengertian-bibliografi">2.1 Pengertian Bibliografi</a></h2>
+<h2 id="41-pengertian-bibliografi"><a class="header" href="#41-pengertian-bibliografi">4.1 Pengertian Bibliografi</a></h2>
 <p>Kata <strong>bibliografi</strong> berasal dari bahasa Yunani: <em>biblio</em> (buku) dan <em>grafi</em> (menulis). Bibliografi dapat difungsikan sebagai suatu daftar buku atau artikel majalah untuk subjek tertentu yang mendaftar semua buku yang diterbitkan di wilayah geografi atau bahasa tertentu.</p>
 <p>Beberapa definisi bibliografi menurut para ahli:</p>
 <ul>
@@ -343,7 +577,7 @@
 <li>Menurut <em>American Library Association (ALA) Glossary of Library Terms</em>, bibliografi adalah suatu survei yang menggambarkan buku-buku secara baik dengan memperhatikan kepengarangan, edisi, bentuk fisik buku, dan lain-lain.</li>
 <li>Menurut Thomas Landau dalam <em>Encyclopedia of Librarianship</em>, bibliografi adalah daftar deskriptif yang sistematik dan sejarah buku, kepengarangan, penerbit, edisi, dan sebagainya.</li>
 </ul>
-<h2 id="22-aspek-yang-harus-diperhatikan-dalam-bibliografi"><a class="header" href="#22-aspek-yang-harus-diperhatikan-dalam-bibliografi">2.2 Aspek yang Harus Diperhatikan dalam Bibliografi</a></h2>
+<h2 id="42-aspek-yang-harus-diperhatikan-dalam-bibliografi"><a class="header" href="#42-aspek-yang-harus-diperhatikan-dalam-bibliografi">4.2 Aspek yang Harus Diperhatikan dalam Bibliografi</a></h2>
 <p>Setiap entri bibliografi harus memuat aspek-aspek berikut secara lengkap dan akurat:</p>
 <ol>
 <li><strong>Nama Author</strong> (pengarang atau penulis)</li>
@@ -352,7 +586,7 @@
 <li><strong>Penerbit</strong>, Afiliasi, dan Kota Terbit</li>
 <li><strong>Edisi</strong>, Volume, URL (untuk sumber daring), dan informasi lainnya</li>
 </ol>
-<h2 id="23-fungsi-bibliografi"><a class="header" href="#23-fungsi-bibliografi">2.3 Fungsi Bibliografi</a></h2>
+<h2 id="43-fungsi-bibliografi"><a class="header" href="#43-fungsi-bibliografi">4.3 Fungsi Bibliografi</a></h2>
 <p>Bibliografi memiliki beberapa fungsi penting dalam ekosistem ilmu pengetahuan:</p>
 <ol>
 <li>Mengetahui apa yang pernah ditulis dan diterbitkan oleh orang lain dalam disiplin ilmu tertentu.</li>
@@ -360,7 +594,7 @@
 <li>Sebagai alat informasi bagi perpustakaan atau lembaga yang akan melakukan penelitian atau pengembangan koleksi.</li>
 <li>Mengetahui <strong>sumber informasi</strong> yang digunakan sebagai referensi dalam karya orang lain.</li>
 </ol>
-<h2 id="24-tujuan-bibliografi-dan-syarat-menjadi-bibliografer"><a class="header" href="#24-tujuan-bibliografi-dan-syarat-menjadi-bibliografer">2.4 Tujuan Bibliografi dan Syarat Menjadi Bibliografer</a></h2>
+<h2 id="44-tujuan-bibliografi-dan-syarat-menjadi-bibliografer"><a class="header" href="#44-tujuan-bibliografi-dan-syarat-menjadi-bibliografer">4.4 Tujuan Bibliografi dan Syarat Menjadi Bibliografer</a></h2>
 <h3 id="tujuan-bibliografi"><a class="header" href="#tujuan-bibliografi">Tujuan Bibliografi</a></h3>
 <ol>
 <li>Menambah ilmu pengetahuan.</li>
@@ -375,7 +609,7 @@
 <li>Tidak malu bertanya.</li>
 <li>Memiliki daya ingat yang baik (dapat dilatih).</li>
 </ol>
-<h2 id="25-data-yang-harus-dicatat-dalam-bibliografi"><a class="header" href="#25-data-yang-harus-dicatat-dalam-bibliografi">2.5 Data yang Harus Dicatat dalam Bibliografi</a></h2>
+<h2 id="45-data-yang-harus-dicatat-dalam-bibliografi"><a class="header" href="#45-data-yang-harus-dicatat-dalam-bibliografi">4.5 Data yang Harus Dicatat dalam Bibliografi</a></h2>
 <p>Dalam menyusun entri bibliografi, informasi berikut wajib dicatat:</p>
 <ol>
 <li><strong>Nama pengarang atau kepengarangan</strong>: baik nama orang maupun lembaga.</li>
@@ -383,9 +617,12 @@
 <li><strong>Impresum</strong>: tempat terbit, nama penerbit, dan tahun terbit.</li>
 <li><strong>Kolasi</strong>: jumlah jilid, halaman, keterangan ilustrasi, dan indeks.</li>
 </ol>
-<h2 id="26-macam-macam-gaya-bibliografi-citation-style"><a class="header" href="#26-macam-macam-gaya-bibliografi-citation-style">2.6 Macam-macam Gaya Bibliografi (Citation Style)</a></h2>
+<h2 id="46-macam-macam-gaya-bibliografi-citation-style"><a class="header" href="#46-macam-macam-gaya-bibliografi-citation-style">4.6 Macam-macam Gaya Bibliografi (Citation Style)</a></h2>
 <p>Gaya sitasi dikeluarkan oleh berbagai organisasi dan disesuaikan dengan bidang kajian masing-masing. Memilih gaya sitasi yang tepat sangat penting karena setiap jurnal umumnya mensyaratkan satu gaya tertentu dalam panduan penulisannya (<em>author guidelines</em>).</p>
-<h3 id="261-gaya-apa-american-psychological-association"><a class="header" href="#261-gaya-apa-american-psychological-association">2.6.1 Gaya APA (American Psychological Association)</a></h3>
+<p><strong>Sorotan Standar Global: Ekstraksi Referensi dan Crossref Reference Linking</strong>
+OJS 3.3 menyediakan fitur ekstraksi referensi yang memungkinkan sistem memisahkan setiap item dalam daftar pustaka menjadi metadata mandiri. Hal ini sejalan dengan praktik terbaik <em>Crossref Reference Linking</em>, di mana daftar pustaka yang terstruktur dengan baik akan disetor ke Crossref untuk membentuk jejaring sitasi otomatis (meningkatkan metrik “cited-by”). Mesin pemanen (<em>parser</em>) pengindeks global hanya dapat membaca referensi yang telah diekstrak dengan rapi ke dalam metadata, bukan dari naskah PDF secara langsung.
+<em>Sumber: Crossref (2025, https://www.crossref.org/) dan PKP Docs (2025, https://docs.pkp.sfu.ca/)</em></p>
+<h3 id="461-gaya-apa-american-psychological-association"><a class="header" href="#461-gaya-apa-american-psychological-association">4.6.1 Gaya APA (American Psychological Association)</a></h3>
 <p>Gaya APA paling umum digunakan dalam bidang <strong>ilmu sosial, psikologi, dan pendidikan</strong>. Ciri-cirinya:</p>
 <ul>
 <li>Daftar pustaka diurutkan <strong>alfabetis</strong> berdasarkan nama belakang penulis (atau judul jika tidak ada penulis).</li>
@@ -407,7 +644,7 @@
 </tbody>
 </table>
 </div>
-<h3 id="262-gaya-chicago-dan-turabian"><a class="header" href="#262-gaya-chicago-dan-turabian">2.6.2 Gaya Chicago dan Turabian</a></h3>
+<h3 id="462-gaya-chicago-dan-turabian"><a class="header" href="#462-gaya-chicago-dan-turabian">4.6.2 Gaya Chicago dan Turabian</a></h3>
 <p>Gaya Chicago atau Turabian umum digunakan dalam bidang <strong>sastra, sejarah, dan seni</strong>. Ciri khasnya:</p>
 <ul>
 <li>Pada catatan kutipan: nama penulis ditulis <em>nama depan nama akhir</em>.</li>
@@ -429,7 +666,7 @@
 </tbody>
 </table>
 </div>
-<h3 id="263-gaya-harvard-cite-them-right-10th-edition"><a class="header" href="#263-gaya-harvard-cite-them-right-10th-edition">2.6.3 Gaya Harvard (Cite Them Right, 10th Edition)</a></h3>
+<h3 id="463-gaya-harvard-cite-them-right-10th-edition"><a class="header" href="#463-gaya-harvard-cite-them-right-10th-edition">4.6.3 Gaya Harvard (Cite Them Right, 10th Edition)</a></h3>
 <p>Gaya Harvard banyak digunakan dalam bidang <strong>bisnis dan ilmu sosial</strong>. Format umum untuk artikel jurnal:</p>
 <pre><code>Nama belakang pengarang, Inisial. Tahun Publikasi. 'Judul artikel'. *Nama jurnal*, Vol. x, No. x, hh. xxx–xxx.
 </code></pre>
@@ -448,7 +685,7 @@
 <p><strong>Jurnal Online</strong>: Birbeck, D &amp; Drummond, M 2006, ‘Very young children’s body image: bodies and minds under construction’, <em>International Education Journal</em>, vol. 7, no. 4, dilihat 12 Desember 2006, &lt;https://iej.com&gt;.</p>
 </li>
 </ul>
-<h3 id="264-gaya-mla-modern-language-association"><a class="header" href="#264-gaya-mla-modern-language-association">2.6.4 Gaya MLA (Modern Language Association)</a></h3>
+<h3 id="464-gaya-mla-modern-language-association"><a class="header" href="#464-gaya-mla-modern-language-association">4.6.4 Gaya MLA (Modern Language Association)</a></h3>
 <p>Gaya MLA umum digunakan dalam bidang <strong>sastra dan bahasa</strong>. Ciri-cirinya:</p>
 <ul>
 <li>Nama penulis ditulis lengkap dengan nama akhir di depan.</li>
@@ -467,7 +704,7 @@
 </tbody>
 </table>
 </div>
-<h3 id="265-gaya-ieee-institute-of-electrical-and-electronics-engineers"><a class="header" href="#265-gaya-ieee-institute-of-electrical-and-electronics-engineers">2.6.5 Gaya IEEE (Institute of Electrical and Electronics Engineers)</a></h3>
+<h3 id="465-gaya-ieee-institute-of-electrical-and-electronics-engineers"><a class="header" href="#465-gaya-ieee-institute-of-electrical-and-electronics-engineers">4.6.5 Gaya IEEE (Institute of Electrical and Electronics Engineers)</a></h3>
 <p>Gaya IEEE digunakan dalam bidang <strong>teknik, elektro, dan komputer</strong>. Ciri khasnya menggunakan <strong>sistem penomoran</strong> dalam teks, misalnya: <code>[1]</code>, <code>[2]</code>.</p>
 <p><strong>Contoh:</strong></p>
 <div class="table-wrapper">
@@ -483,7 +720,9 @@
 </table>
 </div>
 <p>Catatan Teknis: Jika jumlah penulis lebih dari tiga orang dalam gaya sitasi tertentu, beberapa panduan menginstruksikan untuk menuliskan satu nama orang pertama dan menambahkan frasa <em>et al.</em></p>
-<h2 id="27-analisis-subjek-dalam-konteks-pengelolaan-jurnal"><a class="header" href="#27-analisis-subjek-dalam-konteks-pengelolaan-jurnal">2.7 Analisis Subjek dalam Konteks Pengelolaan Jurnal</a></h2>
+<p><strong>Catatan dari Lapangan</strong>
+Banyak pengelola jurnal sering mengeluhkan kegagalan sistem pengindeks seperti DOAJ atau portal Garuda dalam mendeteksi dan menghitung jumlah kutipan artikel mereka. Salah satu penyebab utamanya adalah penulis sering kali menyusun daftar pustaka secara manual (<em>hardcoded citations</em>) dengan format yang acak-acakan. Ketika skrip pemanen (<em>parser</em>) mencoba membaca teks biasa tersebut, mereka gagal mengenali elemen-elemen penting seperti nama penulis atau judul artikel. Oleh karena itu, mewajibkan penggunaan perangkat lunak manajer referensi (<em>reference manager</em>) seperti Mendeley atau Zotero kepada penulis adalah solusi praktis untuk menjamin standardisasi dan kelancaran pemanenan metadata.</p>
+<h2 id="47-analisis-subjek-dalam-konteks-pengelolaan-jurnal"><a class="header" href="#47-analisis-subjek-dalam-konteks-pengelolaan-jurnal">4.7 Analisis Subjek dalam Konteks Pengelolaan Jurnal</a></h2>
 <p>Analisis subjek adalah proses mengidentifikasi dan merepresentasikan isi dokumen (artikel, buku) ke dalam bentuk <strong>kata kunci</strong> (<em>keywords</em>) atau <strong>subjek terstandar</strong> yang memudahkan penelusuran kembali (<em>information retrieval</em>).</p>
 <p>Dalam pengelolaan jurnal, analisis subjek sangat penting untuk:</p>
 <ul>
@@ -491,15 +730,27 @@
 <li>Memastikan artikel dapat <strong>ditemukan</strong> oleh mesin pencari dan basis data pengindeks.</li>
 <li>Mendukung proses <strong>klasifikasi</strong> dan pengorganisasian konten jurnal.</li>
 </ul>
+<p><strong>Sorotan Standar Global: <em>Controlled Vocabularies</em> dan <em>Author Keywords</em></strong>
+Dalam praktik terbaik penerbitan akademik yang diakui oleh pengindeks global, sangat disarankan untuk mengkombinasikan <em>Author Keywords</em> dengan <em>Controlled Vocabularies</em>. <em>Controlled Vocabularies</em> (seperti MeSH atau JEL) adalah daftar istilah standar yang dikelola oleh pakar untuk mengurangi ambiguitas istilah yang digunakan penulis. Sementara itu, <em>Author Keywords</em> menangkap istilah bebas dan tren baru yang mungkin belum masuk ke standar baku. Kombinasi keduanya akan memaksimalkan kemampuan artikel ditemukan (<em>discoverability</em>) di basis data akademik.
+<em>Sumber: San Jose State University &amp; University of Washington Libraries (2025, URL terkait panduan pustaka)</em></p>
 <p>(Pengelolaan metadata artikel secara lebih komprehensif dibahas pada <strong>Bab 13: Optimalisasi Metadata Artikel</strong>).</p>
-<h2 id="checklist-bab-2"><a class="header" href="#checklist-bab-2">Checklist Bab 2</a></h2>
+<h2 id="latihan-bab-4"><a class="header" href="#latihan-bab-4">Latihan Bab 4</a></h2>
+<p><strong>Latihan 4.1: Analisis Ekstraksi Referensi</strong>
+Skenario: Anda menerima sebuah artikel dengan daftar pustaka yang ditulis secara acak tanpa mengikuti standar baku apa pun.
+Tugas: Gunakan perangkat lunak manajer referensi atau format ulang secara manual untuk mengubah lima daftar pustaka acak tersebut menjadi format standar (misalnya APA atau IEEE) sehingga siap untuk diekstrak ke kolom referensi pada metadata artikel di OJS.
+<strong>Panduan Fasilitator</strong>: Berikan contoh daftar pustaka yang berantakan, lalu pantau kemampuan peserta dalam menstrukturkan kembali elemen-elemen (penulis, tahun, judul, sumber, DOI) menjadi format yang terbaca oleh sistem pemanen.</p>
+<p><strong>Latihan 4.2: Audit Kata Kunci</strong>
+Skenario: Penulis mengirimkan artikel dengan sekumpulan kata kunci (<em>author keywords</em>) yang sangat spesifik dan beberapa di antaranya berupa frasa yang terlalu panjang.
+Tugas: Evaluasi kata kunci yang diberikan oleh penulis. Coba petakan kata kunci tersebut ke dalam <em>controlled vocabularies</em> (misalnya MeSH untuk kesehatan atau taksonomi khusus lainnya yang relevan).
+<strong>Panduan Fasilitator</strong>: Diskusikan dengan peserta perbedaan hasil pencarian ketika menggunakan kata kunci bebas dari penulis dibandingkan menggunakan istilah dari <em>controlled vocabularies</em>.</p>
+<h2 id="checklist-bab-4"><a class="header" href="#checklist-bab-4">Checklist Bab 4</a></h2>
 <ul>
 <li><input disabled="" type="checkbox"> Pengertian dan pentingnya bibliografi telah dipahami secara konsep.</li>
 <li><input disabled="" type="checkbox"> Berbagai gaya sitasi yang paling relevan dengan bidang jurnal (APA, IEEE, dsb.) telah dipelajari perbedaannya.</li>
 <li><input disabled="" type="checkbox"> Panduan penulisan referensi (<em>author guidelines</em>) jurnal telah disesuaikan dengan salah satu standar gaya sitasi yang diakui.</li>
 <li><input disabled="" type="checkbox"> Pentingnya konsistensi metadata dan penelusuran (<em>information retrieval</em>) telah diidentifikasi untuk diterapkan dalam manajemen metadata kelak.</li>
 </ul>
-<h2 id="ringkasan-bab-1"><a class="header" href="#ringkasan-bab-1">Ringkasan Bab</a></h2>
+<h2 id="ringkasan-bab-3"><a class="header" href="#ringkasan-bab-3">Ringkasan Bab</a></h2>
 <p>Bibliografi yang baik adalah fondasi dari karya ilmiah yang kredibel. Memahami berbagai gaya sitasi membantu pengelola jurnal untuk memastikan konsistensi penulisan referensi oleh penulis, menentukan gaya sitasi yang diadopsi dalam <em>Author Guidelines</em> jurnal, serta memeriksa kebenaran format referensi selama proses editorial.</p>
 <div class="table-wrapper">
 <table>
@@ -516,123 +767,9 @@
 </table>
 </div>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="bab-3-gambaran-umum-alur-kerja-editorial-ojs"><a class="header" href="#bab-3-gambaran-umum-alur-kerja-editorial-ojs">Bab 3: Gambaran Umum Alur Kerja Editorial OJS</a></h1>
-<blockquote>
-<p><em>Bagaimana perangkat lunak bersumber terbuka dapat berkembang menjadi infrastruktur utama bagi puluhan ribu jurnal di seluruh dunia, termasuk di Indonesia?</em></p>
-</blockquote>
-<p>Open Journal Systems (OJS) versi 3.3 adalah perangkat lunak sumber terbuka (<em>open-source</em>) yang dirancang secara modular untuk membantu pengelola jurnal mengelola proses editorial secara sistematis. Memahami alur kerja editorial OJS 3.3 berperan penting dalam memastikan setiap naskah dikelola dengan transparansi dan integritas akademik yang memadai.</p>
-<h2 id="31-fondasi-evolusi-dan-lanskap-kontemporer-ojs"><a class="header" href="#31-fondasi-evolusi-dan-lanskap-kontemporer-ojs">3.1 Fondasi, Evolusi, dan Lanskap Kontemporer OJS</a></h2>
-<h3 id="akar-filosofis-krisis-publikasi-dan-lahirnya-gerakan-akses-terbuka"><a class="header" href="#akar-filosofis-krisis-publikasi-dan-lahirnya-gerakan-akses-terbuka">Akar Filosofis: Krisis Publikasi dan Lahirnya Gerakan Akses Terbuka</a></h3>
-<p>Pengembangan Open Journal Systems (OJS) berakar dari kondisi krisis jurnal ilmiah (<em>serials crisis</em>) pada akhir abad ke-20. Pada periode tersebut, biaya berlangganan jurnal komersial meningkat secara signifikan dan membebani anggaran perpustakaan institusi pendidikan. Kondisi ini membatasi aksesibilitas publik terhadap hasil penelitian yang sebagian besar didanai oleh anggaran publik, karena literatur tersebut terkunci di balik sistem berbayar (<em>paywall</em>) (PKP, 2026, https://pkp.sfu.ca/about/).</p>
-<p>Situasi tersebut memicu lahirnya gerakan akses terbuka (<em>open access</em>), yang bertujuan menyediakan akses literatur ilmiah secara gratis di internet. Merespons kebutuhan ini, John Willinsky mendirikan Public Knowledge Project (PKP) pada tahun 1998 di University of British Columbia. Tujuan utama PKP adalah mendemokrasikan pengetahuan dengan mempermudah penerbitan ilmiah secara mandiri. OJS, yang diluncurkan pada tahun 2001, dikembangkan sebagai sarana teknis untuk mewujudkan tujuan tersebut. Platform ini menekan biaya operasional penerbitan dan memfasilitasi institusi pendidikan, termasuk di negara-negara berkembang, untuk mengelola jurnal dengan standar kualitas yang tinggi.</p>
-<p><strong>Sorotan Standar Global: Budapest Open Access Initiative (BOAI)</strong></p>
-<p>Landasan filosofis akses terbuka secara formal dikukuhkan melalui Budapest Open Access Initiative (BOAI) pada Februari 2002. BOAI mendefinisikan akses terbuka sebagai ketersediaan literatur ilmiah secara gratis di internet publik. Definisi ini mengizinkan pengguna membaca, mengunduh, menyalin, mendistribusikan, mencari, atau menautkan ke teks lengkap artikel tanpa hambatan finansial, hukum, atau teknis, selain batas konektivitas internet.</p>
-<p><em>Sumber: https://www.budapestopenaccessinitiative.org/read/</em></p>
-<h3 id="arsitektur-teknologi-dan-jejak-evolusi-generasi-ojs"><a class="header" href="#arsitektur-teknologi-dan-jejak-evolusi-generasi-ojs">Arsitektur Teknologi dan Jejak Evolusi Generasi OJS</a></h3>
-<p>Sejak peluncurannya, arsitektur teknologi OJS terus berevolusi merespons tuntutan standar keamanan, kemudahan penggunaan, dan komputasi modern:</p>
-<ol>
-<li><strong>Era OJS 1.x dan 2.x (Awal 2000-an hingga 2016)</strong>: Versi awal ini menggunakan arsitektur monolitik berbasis PHP prosedural. OJS 2.x menawarkan stabilitas operasional yang tinggi dan menjadi sistem utama bagi banyak jurnal, namun memiliki keterbatasan dalam penyesuaian tata letak antarmuka. Perubahan tata letak mengharuskan modifikasi pada kode inti sistem, yang berisiko menimbulkan galat saat pembaruan versi dilakukan.</li>
-<li><strong>Perubahan Arsitektur OJS 3.x (2016)</strong>: PKP melakukan penulisan ulang sistem secara menyeluruh untuk memisahkan pengolahan data (<em>back-end</em>) dan antarmuka pengguna (<em>front-end</em>). OJS 3.x mengadopsi kerangka Bootstrap untuk menghasilkan tampilan situs yang responsif pada berbagai ukuran layar. Versi ini juga mengintegrasikan sistem peran dalam satu dasbor terpadu, menghilangkan keharusan bagi pengguna untuk berpindah antarmuka saat menjalankan peran yang berbeda (PKP Docs, 2021).</li>
-<li><strong>Versi OJS 3.4 dan 3.5 LTS</strong>: Versi terbaru dan versi dukungan jangka panjang (<em>Long-Term Support</em>) berfokus pada peningkatan antarmuka pengguna dan kepatuhan terhadap regulasi pelindungan data global. Dasbor editorial dirancang ulang untuk memfasilitasi pemantauan seluruh naskah dalam satu tampilan layar. Sistem ini juga mengimplementasikan fitur persetujuan mandiri (<em>self-invitation</em>) untuk memenuhi standar privasi data seperti <em>General Data Protection Regulation</em> (GDPR) dari Uni Eropa.</li>
-</ol>
-<h2 id="32-ojs-di-indonesia-konteks-nasional"><a class="header" href="#32-ojs-di-indonesia-konteks-nasional">3.2 OJS di Indonesia: Konteks Nasional</a></h2>
-<p>Berdasarkan data tahun 2025, OJS digunakan oleh lebih dari 58.000 jurnal di 156 negara. Indonesia menempati posisi sentral sebagai negara pengguna OJS terbesar di dunia, dengan proporsi instalasi mencapai 40% dari total instalasi global (PKP, 2026). Sebagian besar instalasi ini beroperasi menggunakan domain institusi akademik (<code>.ac.id</code>) dan mengadopsi model <em>Diamond Open Access</em>, yaitu publikasi yang tidak membebankan biaya kepada penulis maupun pembaca.</p>
-<p>Tingginya tingkat adopsi OJS di Indonesia terkait dengan kebijakan standardisasi dari Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi (Kemendikbudristek). Untuk memenuhi kriteria pada portal ARJUNA (Akreditasi Jurnal Nasional) dan meraih peringkat SINTA (S1 hingga S6), pengelola jurnal diwajibkan menyelenggarakan proses editorial secara elektronik. OJS memenuhi spesifikasi yang dibutuhkan oleh asesor akreditasi, termasuk transparansi riwayat penelaahan sejawat dan integrasi pengindeksan dengan portal Garuda (Garba Rujukan Digital). Komunitas independen seperti Relawan Jurnal Indonesia (RJI) berperan memberikan bimbingan teknis bagi pengelola jurnal lokal dalam implementasi dan standardisasi OJS di lingkungan akademik.</p>
-<p><strong>Catatan dari Lapangan</strong></p>
-<p>Berdasarkan temuan di berbagai lokakarya pengelolaan jurnal, pengguna baru kerap mengalami kebingungan saat pertama kali mengoperasikan dasbor OJS yang sarat fitur. Keterbatasan pemahaman teknis ini sering kali memicu pengelola jurnal untuk memindahkan komunikasi dengan penulis atau mitra bestari ke aplikasi pesan singkat atau surel pribadi. Praktik di luar sistem ini berakibat fatal pada hilangnya riwayat jejak audit (<em>audit trail</em>). Akibatnya, jurnal tidak dapat menyediakan bukti terdokumentasi mengenai proses penilaian naskahnya saat menjalani evaluasi akreditasi.</p>
-<h2 id="33-para-aktor-dalam-ekosistem-jurnal-ojs"><a class="header" href="#33-para-aktor-dalam-ekosistem-jurnal-ojs">3.3 Para Aktor dalam Ekosistem Jurnal OJS</a></h2>
-<p>Proses penerbitan jurnal dikelola melalui pembagian tanggung jawab. OJS 3.3 menyediakan sistem peran yang fleksibel; pengguna dapat memegang beberapa peran secara merangkap atau membaginya secara spesifik dalam tim editorial.</p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>Peran</th><th>Tanggung Jawab Utama</th></tr>
-</thead>
-<tbody>
-<tr><td><strong>Journal Editor</strong> <em>(Editor Jurnal)</em></td><td>Memiliki kendali penuh atas sistem dan kebijakan jurnal. Bertanggung jawab mengelola akun pengguna dan mengambil keputusan akhir terhadap kelayakan naskah.</td></tr>
-<tr><td><strong>Section Editor</strong> <em>(Editor Bagian)</em></td><td>Mengelola naskah pada ruang lingkup atau rubrik tertentu. Mengawasi alur naskah dari tahap penelaahan sejawat hingga penetapan keputusan editorial.</td></tr>
-<tr><td><strong>Author</strong> <em>(Penulis)</em></td><td>Mendaftarkan naskah, mengelola kelengkapan metadata, dan melakukan perbaikan berdasarkan instruksi editorial.</td></tr>
-<tr><td><strong>Reviewer</strong> <em>(Mitra Bestari)</em></td><td>Ahli di bidang terkait yang melakukan penelaahan sejawat secara objektif dan memberikan rekomendasi kelayakan naskah kepada editor.</td></tr>
-<tr><td><strong>Copyeditor</strong> <em>(Penyunting Naskah)</em></td><td>Memeriksa ketepatan bahasa, konsistensi terminologi, dan kesesuaian format teks dengan gaya selingkung jurnal.</td></tr>
-<tr><td><strong>Layout Editor</strong> <em>(Editor Tata Letak)</em></td><td>Memproses naskah final menjadi format siap terbit atau <em>Galleys</em> (PDF, HTML, XML).</td></tr>
-<tr><td><strong>Proofreader</strong> <em>(Pemeriksa Pracetak)</em></td><td>Melakukan verifikasi akhir pada dokumen <em>Galley</em> sebelum dipublikasikan.</td></tr>
-</tbody>
-</table>
-</div>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Ilustrasi: Ekosistem peran dalam OJS"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Ilustrasi: Ekosistem peran dalam OJS"></span></label></p>
-<h2 id="34-mekanisme-alur-kerja-editorial-yang-terintegrasi"><a class="header" href="#34-mekanisme-alur-kerja-editorial-yang-terintegrasi">3.4 Mekanisme Alur Kerja Editorial yang Terintegrasi</a></h2>
-<p>OJS memiliki kemampuan mengotomatisasi siklus penerbitan naskah ilmiah. Alur kerja dalam OJS 3.3 dibagi menjadi empat fase utama yang saling terhubung secara terstruktur:</p>
-<p><code>[Submission] → [Review] → [Copyediting] → [Production]</code></p>
-<h3 id="tahap-1-submission-pengajuan-naskah"><a class="header" href="#tahap-1-submission-pengajuan-naskah">Tahap 1: Submission (Pengajuan Naskah)</a></h3>
-<p>Penulis menyerahkan naskah beserta kelengkapan metadata, seperti abstrak, daftar penulis, dan rujukan, melalui antarmuka pendaftaran. Editor jurnal akan melakukan penilaian kelayakan awal (<em>desk review</em>) dan merespons pengajuan dengan tiga pilihan tindakan:</p>
-<ol>
-<li><strong>Send to Review</strong>: Meneruskan naskah ke tahap penelaahan sejawat jika naskah memenuhi kriteria dasar jurnal.</li>
-<li><strong>Accept and Skip Review</strong>: Memindahkan naskah langsung ke tahap penyuntingan tanpa ulasan sejawat (berlaku untuk teks non-riset seperti editorial atau ulasan buku).</li>
-<li><strong>Decline Submission</strong>: Menolak naskah apabila di luar ruang lingkup keilmuan atau tidak memenuhi kelayakan akademis dasar.</li>
-</ol>
-<h3 id="tahap-2-review-penelaahan-sejawat"><a class="header" href="#tahap-2-review-penelaahan-sejawat">Tahap 2: Review (Penelaahan Sejawat)</a></h3>
-<p>Tahap penelaahan memfasilitasi evaluasi substansi naskah. OJS memfasilitasi metode penelaahan nirnama ganda (<em>double-blind review</em>) maupun penelaahan terbuka. Sistem secara otomatis mencatat tenggat waktu, mengelola notifikasi, dan merekam hasil tinjauan. Berdasarkan penilaian mitra bestari, editor menetapkan keputusan akhir berupa penerimaan (<em>Accept</em>), permintaan revisi minor atau mayor (<em>Revisions Required / Resubmit for Review</em>), maupun penolakan (<em>Decline</em>).</p>
-<h3 id="tahap-3-copyediting-penyuntingan-naskah"><a class="header" href="#tahap-3-copyediting-penyuntingan-naskah">Tahap 3: Copyediting (Penyuntingan Naskah)</a></h3>
-<p>Naskah yang diterima secara substansi akan dievaluasi ketepatan kebahasaan dan disesuaikan dengan format penerbitan. Proses ini melibatkan pertukaran draf antara editor, penyunting, dan penulis melalui fasilitas diskusi di dalam sistem, hingga seluruh revisi tata bahasa dan tata letak disetujui.</p>
-<h3 id="tahap-4-production-produksi-dan-publikasi"><a class="header" href="#tahap-4-production-produksi-dan-publikasi">Tahap 4: Production (Produksi dan Publikasi)</a></h3>
-<p>Teks yang telah disetujui akan diubah menjadi format cetak digital akhir (<em>Galleys</em>) seperti PDF, HTML, atau JATS XML. Sesudah proses verifikasi pracetak (<em>proofreading</em>), editor menempatkan artikel pada nomor edisi tertentu, mengatur urutan publikasi, dan mempublikasikan terbitan ke portal publik.</p>
-<h2 id="35-integritas-akademik-interoperabilitas-dan-preservasi"><a class="header" href="#35-integritas-akademik-interoperabilitas-dan-preservasi">3.5 Integritas Akademik, Interoperabilitas, dan Preservasi</a></h2>
-<p>Sistem penerbitan jurnal modern membutuhkan integrasi data dengan infrastruktur pengindeksan global. OJS memfasilitasi kebutuhan ini melalui berbagai fitur bawaan dan protokol standar:</p>
-<ol>
-<li><strong>Protokol OAI-PMH</strong>: OJS menggunakan <em>Open Archives Initiative Protocol for Metadata Harvesting</em> (OAI-PMH). Protokol ini memungkinkan basis data eksternal, seperti Google Scholar dan Directory of Open Access Journals (DOAJ), untuk membaca dan menyalin metadata artikel secara otomatis (PKP Docs).</li>
-<li><strong>Integrasi Ekosistem Riset</strong>: OJS mendukung konektivitas dengan infrastruktur publikasi internasional, seperti registrasi <strong>DOI (Crossref)</strong> untuk menjamin identitas permanen artikel, <strong>ORCID</strong> untuk memverifikasi profil unik penulis, dan <strong>ROR (Research Organization Registry)</strong> untuk standardisasi data institusi afiliasi penulis.</li>
-<li><strong>Jejak Audit (Audit Trail)</strong>: Seluruh tindakan operasional dalam sistem direkam ke dalam <em>Activity Log</em> kronologis. Pendokumentasian otomatis ini berfungsi sebagai alat pembuktian yang valid untuk mendemonstrasikan transparansi manajerial kepada asesor maupun untuk kebutuhan penelusuran jika terjadi pelanggaran etik publikasi.</li>
-<li><strong>Keamanan Preservasi Digital</strong>: OJS memfasilitasi pengarsipan jangka panjang (<em>dark archive</em>) menggunakan teknologi <strong>LOCKSS</strong> (<em>Lots of Copies Keep Stuff Safe</em>) dan <strong>PKP Preservation Network (PKP PN)</strong>. Layanan ini dirancang untuk memastikan arsip jurnal tetap utuh dan tersedia di pangkalan data cadangan meskipun layanan situs jurnal utama mengalami kegagalan teknis secara permanen.</li>
-</ol>
-<h2 id="36-struktur-pembelajaran-kursus"><a class="header" href="#36-struktur-pembelajaran-kursus">3.6 Struktur Pembelajaran Kursus</a></h2>
-<p>Buku panduan ini disusun agar merefleksikan tahapan kerja pada OJS 3.3 secara kronologis dan mempertimbangkan berbagai peran pengguna:</p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>Bab</th><th>Topik</th><th>Tahap OJS / Peran</th></tr>
-</thead>
-<tbody>
-<tr><td>Bab 1–2</td><td>Persiapan dan Kemampuan Dasar</td><td>Pra-OJS (Keterampilan Esensial)</td></tr>
-<tr><td>Bab 3</td><td>Gambaran Umum OJS</td><td>Pengenalan</td></tr>
-<tr><td>Bab 4</td><td>Panduan Mengirimkan Artikel</td><td>Tahap Submission (Sudut pandang Penulis)</td></tr>
-<tr><td>Bab 5</td><td>Merespons Naskah Baru</td><td>Tahap Submission (Sudut pandang Editor)</td></tr>
-<tr><td>Bab 6</td><td>Pemeriksaan Plagiasi</td><td>Pra-Review (Integritas Akademik)</td></tr>
-<tr><td>Bab 7</td><td>Menugaskan Reviewer</td><td>Tahap Review (Sudut pandang Editor)</td></tr>
-<tr><td>Bab 8</td><td>Panduan Reviewer</td><td>Tahap Review (Sudut pandang Mitra Bestari)</td></tr>
-<tr><td>Bab 9</td><td>Merespons Hasil Ulasan</td><td>Tahap Review (Keputusan Akhir Editor)</td></tr>
-<tr><td>Bab 10</td><td>Penyuntingan Naskah (Copyediting)</td><td>Tahap Copyediting</td></tr>
-<tr><td>Bab 11</td><td>Produksi dan Galley</td><td>Tahap Production</td></tr>
-<tr><td>Bab 12</td><td>Manajemen Edisi</td><td>Publikasi Pasca-Produksi</td></tr>
-<tr><td>Bab 13</td><td>Optimalisasi Metadata</td><td>Visibilitas dan Indeksasi</td></tr>
-<tr><td>Bab 14</td><td>Diseminasi dan Peningkatan Visibilitas</td><td>Diseminasi Pasca-Terbit</td></tr>
-</tbody>
-</table>
-</div>
-<h2 id="37-persiapan-sebelum-memulai"><a class="header" href="#37-persiapan-sebelum-memulai">3.7 Persiapan Sebelum Memulai</a></h2>
-<p>Sebelum menerapkan pengelolaan jurnal menggunakan instalasi utama, pengelola sangat disarankan menyiapkan jurnal simulasi atau lingkungan percobaan. Fasilitas ini penting untuk menguji fungsi lintas peran dan melatih simulasi keputusan tanpa risiko merusak integritas basis data jurnal yang beroperasi.</p>
-<p>PKP menyediakan dokumentasi resmi melalui portal <strong>PKP Docs</strong> (https://docs.pkp.sfu.ca) dan modul pelatihan daring melalui platform <strong>PKP School</strong> (https://pkpschool.sfu.ca) sebagai referensi panduan lanjutan.</p>
-<h2 id="latihan-bab-3"><a class="header" href="#latihan-bab-3">Latihan Bab 3</a></h2>
-<p><strong>Latihan 3.1: Identifikasi Fungsi Alur Kerja</strong>
-Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mulai dari <em>Submission</em> hingga <em>Production</em>) yang wajib dilewati dan tahapan yang dapat dilewati.</p>
-<ol>
-<li><strong>Artikel Penelitian Orisinal</strong> (Naskah utama yang menyajikan hasil observasi lapangan).</li>
-<li><strong>Komentar Editorial</strong> (Pernyataan Editor Kepala terkait isu terkini yang tidak mensyaratkan penelaahan pakar eksternal).</li>
-<li><strong>Resensi Buku Akademik</strong> (Tinjauan kritis literatur oleh penulis undangan yang proses penelaahannya dikelola secara langsung oleh Editor Bagian).</li>
-</ol>
-<p><strong>Panduan Fasilitator</strong>: Latihan ini bertujuan menunjukkan fleksibilitas alur kerja di OJS 3.3. Diskusikan fungsi opsi <em>Accept and Skip Review</em> untuk jenis naskah non-riset dan tegaskan keharusan pemanfaatan fitur <em>Review</em> untuk naskah riset murni guna menjaga kualitas objektivitas evaluasi.</p>
-<h2 id="checklist-bab-3"><a class="header" href="#checklist-bab-3">Checklist Bab 3</a></h2>
-<ul>
-<li><input disabled="" type="checkbox"> Latar belakang krisis publikasi dan tujuan utama inisiatif akses terbuka telah diidentifikasi.</li>
-<li><input disabled="" type="checkbox"> Signifikansi fungsional OJS dalam struktur akreditasi jurnal nasional di Indonesia (ARJUNA, SINTA) telah dimengerti.</li>
-<li><input disabled="" type="checkbox"> Susunan dan fungsi keempat tahapan editorial utama (<em>Submission</em>, <em>Review</em>, <em>Copyediting</em>, <em>Production</em>) telah dikenali.</li>
-<li><input disabled="" type="checkbox"> Manfaat integrasi infrastruktur digital (OAI-PMH, Crossref, ORCID) dan prosedur keamanan preservasi (PKP PN) telah dipahami secara konseptual.</li>
-<li><input disabled="" type="checkbox"> Ruang simulasi mandiri untuk uji coba fitur manajerial jurnal telah dipersiapkan jika diperlukan.</li>
-</ul>
-<h2 id="ringkasan-bab-2"><a class="header" href="#ringkasan-bab-2">Ringkasan Bab</a></h2>
-<p>OJS didesain sebagai ekosistem digital untuk mengelola proses penerbitan ilmiah secara profesional dan terdokumentasi. Platform ini berperan penting sebagai infrastruktur penggerak akses terbuka secara global, khususnya dalam memfasilitasi jurnal perguruan tinggi di Indonesia. Memahami arsitektur empat tahap operasionalnya, serta menjaga konsistensi komunikasi dalam sistem untuk merekam jejak audit, akan memastikan jurnal dapat mematuhi standar prosedur akreditasi nasional serta menjaga akuntabilitas penilaian kualitas keilmuan.</p>
-<div style="break-before: page; page-break-before: always;"></div>
-<h1 id="bab-4-panduan-mengirimkan-artikel-submission"><a class="header" href="#bab-4-panduan-mengirimkan-artikel-submission">Bab 4: Panduan Mengirimkan Artikel (Submission)</a></h1>
+<h1 id="bab-5-panduan-mengirimkan-artikel-submission"><a class="header" href="#bab-5-panduan-mengirimkan-artikel-submission">Bab 5: Panduan Mengirimkan Artikel (Submission)</a></h1>
 <p>Bab ini memandu penulis melalui proses pengiriman artikel ke jurnal yang menggunakan platform OJS 3.3. Proses pengiriman naskah (<em>submission</em>) di OJS dirancang dalam lima langkah berurutan untuk memastikan seluruh informasi penting dan metadata terdokumentasi dengan baik sejak tahap paling awal.</p>
-<h2 id="41-persiapan-pra-pengiriman"><a class="header" href="#41-persiapan-pra-pengiriman">4.1 Persiapan Pra-Pengiriman</a></h2>
+<h2 id="51-persiapan-pra-pengiriman"><a class="header" href="#51-persiapan-pra-pengiriman">5.1 Persiapan Pra-Pengiriman</a></h2>
 <p>Sebelum mengunggah berkas, penulis disarankan melakukan riset mendalam terhadap jurnal yang menjadi target. Periksa halaman informasi jurnal untuk memastikan kepatuhan terhadap kebijakan editorial:</p>
 <div class="table-wrapper">
 <table>
@@ -647,7 +784,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </table>
 </div>
 <p>Catatan Teknis: Penulis dapat merujuk pada direktori internasional seperti Directory of Open Access Journals (DOAJ) untuk mengevaluasi reputasi dan kebijakan transparansi jurnal target. Jurnal yang baik selalu mempublikasikan panduan penulis yang komprehensif dan biaya pemrosesan artikel secara transparan (DOAJ, 2024).</p>
-<h2 id="42-registrasi-dan-login-akun"><a class="header" href="#42-registrasi-dan-login-akun">4.2 Registrasi dan Login Akun</a></h2>
+<h2 id="52-registrasi-dan-login-akun"><a class="header" href="#52-registrasi-dan-login-akun">5.2 Registrasi dan Login Akun</a></h2>
 <p>Untuk mengirimkan naskah, penulis diwajibkan memiliki akun pengguna yang terdaftar pada jurnal tujuan.</p>
 <h3 id="membuat-akun-baru"><a class="header" href="#membuat-akun-baru">Membuat Akun Baru</a></h3>
 <ol>
@@ -668,7 +805,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Formulir registrasi akun OJS"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Formulir registrasi akun OJS"></span></label></p>
 <h3 id="login"><a class="header" href="#login">Login</a></h3>
 <p>Akses sistem menggunakan <em>username</em> dan <em>password</em> yang telah didaftarkan. Pengguna akan diarahkan ke dasbor penulis.</p>
-<h2 id="43-proses-pengiriman-artikel-dalam-lima-langkah"><a class="header" href="#43-proses-pengiriman-artikel-dalam-lima-langkah">4.3 Proses Pengiriman Artikel dalam Lima Langkah</a></h2>
+<h2 id="53-proses-pengiriman-artikel-dalam-lima-langkah"><a class="header" href="#53-proses-pengiriman-artikel-dalam-lima-langkah">5.3 Proses Pengiriman Artikel dalam Lima Langkah</a></h2>
 <p>Dari dasbor utama, klik tombol <strong>“Make a New Submission”</strong> untuk memulai proses pengiriman naskah.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Tombol Make a New Submission di dasbor OJS"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Tombol Make a New Submission di dasbor OJS"></span></label></p>
 <h3 id="langkah-1-start-memulai-pengiriman"><a class="header" href="#langkah-1-start-memulai-pengiriman">Langkah 1: Start (Memulai Pengiriman)</a></h3>
@@ -752,7 +889,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li>Menampilkan halaman yang merangkum langkah-langkah administratif selanjutnya.</li>
 </ol>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Langkah 5: Halaman konfirmasi setelah submission selesai"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Langkah 5: Halaman konfirmasi setelah submission selesai"></span></label></p>
-<h2 id="44-setelah-pengiriman-proses-editorial-awal"><a class="header" href="#44-setelah-pengiriman-proses-editorial-awal">4.4 Setelah Pengiriman: Proses Editorial Awal</a></h2>
+<h2 id="54-setelah-pengiriman-proses-editorial-awal"><a class="header" href="#54-setelah-pengiriman-proses-editorial-awal">5.4 Setelah Pengiriman: Proses Editorial Awal</a></h2>
 <p>Setelah naskah berhasil dikirim, editor akan melaksanakan tinjauan awal meja (<em>desk review</em>). Proses evaluasi awal ini akan berujung pada salah satu dari tiga kemungkinan keputusan editorial:</p>
 <div class="table-wrapper">
 <table>
@@ -767,7 +904,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </table>
 </div>
 <p>Sistem secara otomatis akan mengirimkan surel pemberitahuan untuk setiap perubahan status editorial. Penulis juga dianjurkan memantau status perkembangan naskah secara berkala melalui dasbor OJS.</p>
-<h2 id="checklist-bab-4"><a class="header" href="#checklist-bab-4">Checklist Bab 4</a></h2>
+<h2 id="checklist-bab-5"><a class="header" href="#checklist-bab-5">Checklist Bab 5</a></h2>
 <p>Gunakan daftar periksa berikut sebelum mengirimkan naskah:</p>
 <ul>
 <li><input disabled="" type="checkbox"> Topik naskah telah dipastikan relevan dengan fokus dan ruang lingkup jurnal.</li>
@@ -778,10 +915,10 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li><input disabled="" type="checkbox"> Daftar pustaka ditulis secara konsisten dan sesuai dengan gaya sitasi yang diwajibkan.</li>
 <li><input disabled="" type="checkbox"> Informasi yang berpotensi melanggar kebijakan <em>blind review</em> telah dihapus dari berkas naskah utama.</li>
 </ul>
-<h2 id="ringkasan-bab-3"><a class="header" href="#ringkasan-bab-3">Ringkasan Bab</a></h2>
+<h2 id="ringkasan-bab-4"><a class="header" href="#ringkasan-bab-4">Ringkasan Bab</a></h2>
 <p>Pengiriman naskah melalui OJS 3.3 dirancang sebagai proses pengumpulan informasi komprehensif. Keakuratan metadata dan pengklasifikasian berkas yang cermat tidak hanya mendemonstrasikan profesionalisme penulis, tetapi juga sangat memengaruhi efisiensi kerja tim redaksi. Pemahaman penulis terhadap pentingnya setiap langkah dalam tahap <em>submission</em> menjamin kelancaran transisi naskah ke tahap penilaian substansi ilmiah berikutnya.</p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="bab-5-merespons-kiriman-naskah-baru"><a class="header" href="#bab-5-merespons-kiriman-naskah-baru">Bab 5: Merespons Kiriman Naskah Baru</a></h1>
+<h1 id="bab-6-merespons-kiriman-naskah-baru"><a class="header" href="#bab-6-merespons-kiriman-naskah-baru">Bab 6: Merespons Kiriman Naskah Baru</a></h1>
 <p>Bab ini membahas peran editor dalam mengelola naskah yang masuk ke sistem OJS 3.3, mulai dari navigasi dasbor editorial, pemeriksaan awal naskah, penugasan editor bagian, hingga pengambilan keputusan editorial pertama. Untuk pembahasan tentang proses pengiriman naskah dari sudut pandang penulis, lihat <strong>Bab 4: Panduan Mengirimkan Artikel</strong>.</p>
 <h2 id="tinjauan-awal-meja-desk-review"><a class="header" href="#tinjauan-awal-meja-desk-review">Tinjauan Awal Meja (Desk Review)</a></h2>
 <p>Sebelum sebuah naskah dikirimkan ke proses penelaahan sejawat (<em>peer review</em>), editor terlebih dahulu melakukan tinjauan awal meja (<em>desk review</em>). Tinjauan ini adalah penilaian administratif dan kesesuaian ruang lingkup yang dilakukan oleh editor sebelum melibatkan reviewer. Tujuannya adalah menyaring naskah yang tidak memenuhi syarat minimum sehingga beban reviewer dapat dikelola secara efisien.</p>
@@ -794,7 +931,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li>Pemeriksaan awal kemiripan naskah menggunakan perangkat lunak deteksi plagiasi (lihat <strong>Bab 6: Pemeriksaan Plagiasi</strong>).</li>
 </ol>
 <hr>
-<h2 id="51-peran-editor-dalam-tahap-submission"><a class="header" href="#51-peran-editor-dalam-tahap-submission">5.1 Peran Editor dalam Tahap Submission</a></h2>
+<h2 id="61-peran-editor-dalam-tahap-submission"><a class="header" href="#61-peran-editor-dalam-tahap-submission">6.1 Peran Editor dalam Tahap Submission</a></h2>
 <p>Editor di OJS 3.3 tidak hanya memantau naskah, tetapi memiliki kemampuan teknis untuk:</p>
 <ul>
 <li>Mengelola akun pengguna.</li>
@@ -803,7 +940,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </ul>
 <p>OJS 3.3 bersifat fleksibel. Jurnal dapat dikelola oleh editor tunggal yang menangani seluruh proses, atau oleh tim yang terdiri dari Editor Kepala (<em>Editor-in-Chief</em>), beberapa Section Editor, hingga staf pendukung.</p>
 <hr>
-<h2 id="52-navigasi-dasbor-editorial"><a class="header" href="#52-navigasi-dasbor-editorial">5.2 Navigasi Dasbor Editorial</a></h2>
+<h2 id="62-navigasi-dasbor-editorial"><a class="header" href="#62-navigasi-dasbor-editorial">6.2 Navigasi Dasbor Editorial</a></h2>
 <p>Dasbor editorial adalah antarmuka utama bagi editor untuk memantau seluruh aktivitas naskah. Terdapat empat tab utama yang perlu dipahami:</p>
 <div class="table-wrapper">
 <table>
@@ -828,7 +965,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </ul>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Tampilan dasbor editorial OJS dengan empat tab utama"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Tampilan dasbor editorial OJS dengan empat tab utama"></span></label></p>
 <hr>
-<h2 id="53-membuka-dan-memahami-rekam-naskah"><a class="header" href="#53-membuka-dan-memahami-rekam-naskah">5.3 Membuka dan Memahami Rekam Naskah</a></h2>
+<h2 id="63-membuka-dan-memahami-rekam-naskah"><a class="header" href="#63-membuka-dan-memahami-rekam-naskah">6.3 Membuka dan Memahami Rekam Naskah</a></h2>
 <p>Klik tombol <strong>“View”</strong> pada naskah untuk masuk ke halaman rekam naskah (<em>submission record</em>). Halaman ini berisi seluruh informasi dan aktivitas terkait naskah tersebut.</p>
 <h3 id="informasi-di-header-rekam-naskah"><a class="header" href="#informasi-di-header-rekam-naskah">Informasi di Header Rekam Naskah</a></h3>
 <ul>
@@ -854,7 +991,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <p>Submission Library adalah tempat berbagi dokumen pendukung, seperti formulir etik penelitian atau data tambahan, secara langsung antara editor dan penulis tanpa melalui prosedur unggah formal.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Halaman detail rekam naskah"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Halaman detail rekam naskah"></span></label></p>
 <hr>
-<h2 id="54-manajemen-file-kiriman"><a class="header" href="#54-manajemen-file-kiriman">5.4 Manajemen File Kiriman</a></h2>
+<h2 id="64-manajemen-file-kiriman"><a class="header" href="#64-manajemen-file-kiriman">6.4 Manajemen File Kiriman</a></h2>
 <p>Area <strong>“Submission Files”</strong> menampilkan seluruh berkas digital yang diunggah penulis, beserta keterangan komponen naskahnya (<em>Article Text</em>, <em>Research Materials</em>, dan lainnya).</p>
 <p>Tindakan yang dapat dilakukan editor pada area ini:</p>
 <ol>
@@ -866,7 +1003,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </ol>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Area Submission Files dengan berbagai opsi manajemen"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Area Submission Files dengan berbagai opsi manajemen"></span></label></p>
 <hr>
-<h2 id="55-fitur-diskusi-pre-review"><a class="header" href="#55-fitur-diskusi-pre-review">5.5 Fitur Diskusi Pre-Review</a></h2>
+<h2 id="65-fitur-diskusi-pre-review"><a class="header" href="#65-fitur-diskusi-pre-review">6.5 Fitur Diskusi Pre-Review</a></h2>
 <p>Fitur <strong>Pre-review Discussions</strong> adalah sarana komunikasi editorial yang terpusat dan tercatat dalam sistem. Fitur ini digunakan untuk meminta klarifikasi atau perbaikan administratif dari penulis sebelum naskah dikirimkan ke tahap penelaahan sejawat.</p>
 <p>Seluruh komunikasi yang dilakukan melalui fitur ini tersimpan secara permanen di sistem sebagai bagian dari jejak audit. Penggunaan email eksternal untuk komunikasi editorial tidak dianjurkan karena tidak tercatat dalam sistem dan tidak dapat diverifikasi.</p>
 <p><strong>Prosedur penggunaan:</strong></p>
@@ -879,7 +1016,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <p>Editor juga dapat menggunakan fitur <strong>“Notify”</strong> pada daftar <em>Participants</em> di panel kanan untuk mengirim pesan menggunakan templat email yang tersedia dalam sistem.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Fitur Pre-review Discussions di halaman submission"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Fitur Pre-review Discussions di halaman submission"></span></label></p>
 <hr>
-<h2 id="56-tiga-keputusan-editorial-pada-tahap-submission"><a class="header" href="#56-tiga-keputusan-editorial-pada-tahap-submission">5.6 Tiga Keputusan Editorial pada Tahap Submission</a></h2>
+<h2 id="66-tiga-keputusan-editorial-pada-tahap-submission"><a class="header" href="#66-tiga-keputusan-editorial-pada-tahap-submission">6.6 Tiga Keputusan Editorial pada Tahap Submission</a></h2>
 <p>Setelah tinjauan awal meja selesai, editor mengambil satu dari tiga keputusan melalui <strong>Decision Wizard</strong> di panel sebelah kanan:</p>
 <h3 id="a-send-to-review"><a class="header" href="#a-send-to-review">A. Send to Review</a></h3>
 <p>Naskah dinyatakan memenuhi syarat awal dan dipindahkan ke tahap penelaahan sejawat (<em>peer review</em>).</p>
@@ -898,7 +1035,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <p>Pada opsi ini, editor dapat memilih untuk mengirimkan notifikasi kepada penulis atau hanya merekam keputusan secara internal. Jika terjadi kesalahan dalam pengambilan keputusan, gunakan fitur <strong>“Change Decision”</strong> untuk membatalkan status penolakan.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Panel keputusan editorial"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Panel keputusan editorial"></span></label></p>
 <hr>
-<h2 id="57-penugasan-editor-bagian-section-editor"><a class="header" href="#57-penugasan-editor-bagian-section-editor">5.7 Penugasan Editor Bagian (Section Editor)</a></h2>
+<h2 id="67-penugasan-editor-bagian-section-editor"><a class="header" href="#67-penugasan-editor-bagian-section-editor">6.7 Penugasan Editor Bagian (Section Editor)</a></h2>
 <p>Pada jurnal yang menggunakan model tim editorial, Editor Kepala dapat menugaskan <strong>Section Editor</strong> melalui tombol <strong>“Assign”</strong> di panel <em>Participants</em>.</p>
 <p>Terdapat tiga tingkat wewenang yang harus ditentukan saat penugasan:</p>
 <div class="table-wrapper">
@@ -916,12 +1053,12 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <p>Setelah penugasan dikonfirmasi, sistem secara otomatis mengirimkan email pemberitahuan kepada Section Editor yang ditugaskan.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Jendela penugasan Section Editor dengan pilihan perizinan"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Jendela penugasan Section Editor dengan pilihan perizinan"></span></label></p>
 <hr>
-<h2 id="58-memindahkan-naskah-ke-tahap-review"><a class="header" href="#58-memindahkan-naskah-ke-tahap-review">5.8 Memindahkan Naskah ke Tahap Review</a></h2>
+<h2 id="68-memindahkan-naskah-ke-tahap-review"><a class="header" href="#68-memindahkan-naskah-ke-tahap-review">6.8 Memindahkan Naskah ke Tahap Review</a></h2>
 <p>Setelah keputusan “Send to Review” dikonfirmasi, naskah berpindah dari status <em>Submission</em> ke <strong>Review (Round 1)</strong>. File yang dipilih akan tercantum secara otomatis di panel <em>Review Files</em> pada tahap Review.</p>
 <p>Pada tahap ini, editor juga dapat menggunakan fitur diskusi untuk mengklarifikasi hal-hal kepada penulis sebelum proses review dimulai, serta memeriksa kembali kelengkapan file naskah.</p>
 <p>Panduan lengkap tentang proses penugasan reviewer dibahas di <strong>Bab 7: Menugaskan Peninjau</strong>.</p>
 <hr>
-<h2 id="checklist-bab-5"><a class="header" href="#checklist-bab-5">Checklist Bab 5</a></h2>
+<h2 id="checklist-bab-6"><a class="header" href="#checklist-bab-6">Checklist Bab 6</a></h2>
 <p>Gunakan daftar berikut sebagai panduan sebelum memindahkan naskah ke tahap berikutnya:</p>
 <ul>
 <li><input disabled="" type="checkbox"> Tab <strong>Unassigned</strong> sudah diperiksa dan tidak ada naskah yang terbengkalai.</li>
@@ -934,7 +1071,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li><input disabled="" type="checkbox"> File sudah dipastikan tidak mengandung identitas penulis sebelum dikirim ke reviewer (untuk <em>double-blind review</em>).</li>
 </ul>
 <hr>
-<h2 id="ringkasan-bab-4"><a class="header" href="#ringkasan-bab-4">Ringkasan Bab</a></h2>
+<h2 id="ringkasan-bab-5"><a class="header" href="#ringkasan-bab-5">Ringkasan Bab</a></h2>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -952,11 +1089,11 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </table>
 </div>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="bab-6-pemeriksaan-plagiasi-similarity-check"><a class="header" href="#bab-6-pemeriksaan-plagiasi-similarity-check">Bab 6: Pemeriksaan Plagiasi (Similarity Check)</a></h1>
+<h1 id="bab-7-pemeriksaan-plagiasi-similarity-check"><a class="header" href="#bab-7-pemeriksaan-plagiasi-similarity-check">Bab 7: Pemeriksaan Plagiasi (Similarity Check)</a></h1>
 <p>Salah satu tugas fundamental tim editor jurnal adalah memastikan bahwa setiap naskah yang dikirimkan penulis merupakan karya orisinal. Oleh karena itu, sebelum naskah dikirimkan ke mitra bestari (<em>reviewer</em>), editor perlu melakukan pemeriksaan kemiripan naskah (<em>similarity check</em>) terhadap sumber-sumber lain yang telah beredar luas.</p>
-<h2 id="61-definisi-pemeriksaan-kemiripan"><a class="header" href="#61-definisi-pemeriksaan-kemiripan">6.1 Definisi Pemeriksaan Kemiripan</a></h2>
+<h2 id="71-definisi-pemeriksaan-kemiripan"><a class="header" href="#71-definisi-pemeriksaan-kemiripan">7.1 Definisi Pemeriksaan Kemiripan</a></h2>
 <p>Pemeriksaan kemiripan (<em>similarity check</em>) adalah pembandingan terhadap naskah untuk mengetahui tingkat kesamaannya terhadap naskah atau teks lain yang sudah dipublikasikan, menggunakan perangkat lunak deteksi plagiasi. Tujuannya adalah memastikan naskah yang masuk terbebas dari unsur-unsur plagiat atau duplikasi sebelum diproses secara akademik.</p>
-<h2 id="62-memahami-plagiarisme"><a class="header" href="#62-memahami-plagiarisme">6.2 Memahami Plagiarisme</a></h2>
+<h2 id="72-memahami-plagiarisme"><a class="header" href="#72-memahami-plagiarisme">7.2 Memahami Plagiarisme</a></h2>
 <h3 id="definisi-teoritis"><a class="header" href="#definisi-teoritis">Definisi Teoritis</a></h3>
 <p>Secara sederhana, plagiarisme adalah tindakan mengambil karya orang lain dan mengakuinya sebagai karya sendiri. Beberapa definisi yang perlu diketahui oleh pengelola jurnal:</p>
 <ul>
@@ -981,10 +1118,10 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </tbody>
 </table>
 </div>
-<h2 id="63-ketentuan-tingkat-kemiripan-yang-dapat-diterima"><a class="header" href="#63-ketentuan-tingkat-kemiripan-yang-dapat-diterima">6.3 Ketentuan Tingkat Kemiripan yang Dapat Diterima</a></h2>
+<h2 id="73-ketentuan-tingkat-kemiripan-yang-dapat-diterima"><a class="header" href="#73-ketentuan-tingkat-kemiripan-yang-dapat-diterima">7.3 Ketentuan Tingkat Kemiripan yang Dapat Diterima</a></h2>
 <p>Meskipun belum terdapat panduan baku internasional yang seragam, buku rujukan Lukman, Istadi, &amp; Wiryawan (2020) menyatakan bahwa persentase total kemiripan naskah yang dapat diterima secara internasional berada di rentang <strong>15 hingga 20 persen</strong>. Di Indonesia, Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi menetapkan toleransi persentase plagiasi hingga maksimal <strong>25 persen</strong>. Persentase kemiripan ini dinilai secara selektif dengan mengecualikan (<em>exclude</em>) kutipan langsung dan daftar pustaka.</p>
 <p>Catatan Kritis: Walaupun total persentase masih berada di bawah ambang batas toleransi, apabila kemiripan terhadap satu sumber tunggal tergolong terlampau dominan secara berurutan dalam satu paragraf penuh, naskah tersebut pada dasarnya tetap terindikasi pelanggaran etika dan dapat ditolak (Lukman, Istadi, &amp; Wiryawan, 2020: 29–30).</p>
-<h2 id="64-perangkat-lunak-pemeriksaan-gratis"><a class="header" href="#64-perangkat-lunak-pemeriksaan-gratis">6.4 Perangkat Lunak Pemeriksaan Gratis</a></h2>
+<h2 id="74-perangkat-lunak-pemeriksaan-gratis"><a class="header" href="#74-perangkat-lunak-pemeriksaan-gratis">7.4 Perangkat Lunak Pemeriksaan Gratis</a></h2>
 <p>Terdapat beberapa perangkat lunak daring gratis yang dapat dimanfaatkan untuk memeriksa kemiripan secara cepat.</p>
 <h3 id="a-duplichecker"><a class="header" href="#a-duplichecker">A. Duplichecker</a></h3>
 <p>Situs Web: https://www.duplichecker.com</p>
@@ -1004,7 +1141,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <p>Situs Web: https://smallseotools.com/plagiarism-checker</p>
 <p>SmallSEOTools memiliki basis deteksi yang relatif lebih andal dibandingkan Duplichecker. Aplikasi ini menampilkan tautan sumber-sumber yang diidentifikasi memiliki kalimat yang identik beserta porsi persentasenya.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Hasil pemeriksaan kemiripan dengan SmallSEOTools"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Hasil pemeriksaan kemiripan dengan SmallSEOTools"></span></label></p>
-<h2 id="65-perbandingan-alat-pemeriksa-gratis"><a class="header" href="#65-perbandingan-alat-pemeriksa-gratis">6.5 Perbandingan Alat Pemeriksa Gratis</a></h2>
+<h2 id="75-perbandingan-alat-pemeriksa-gratis"><a class="header" href="#75-perbandingan-alat-pemeriksa-gratis">7.5 Perbandingan Alat Pemeriksa Gratis</a></h2>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1021,7 +1158,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </table>
 </div>
 <p><em>Rujukan Data: scribbr.com/plagiarism/best-free-plagiarism-checker</em></p>
-<h2 id="66-layanan-pemeriksaan-berbayar-profesional"><a class="header" href="#66-layanan-pemeriksaan-berbayar-profesional">6.6 Layanan Pemeriksaan Berbayar Profesional</a></h2>
+<h2 id="76-layanan-pemeriksaan-berbayar-profesional"><a class="header" href="#76-layanan-pemeriksaan-berbayar-profesional">7.6 Layanan Pemeriksaan Berbayar Profesional</a></h2>
 <p>Bagi pengelolaan jurnal tingkat universitas yang profesional, penyediaan lisensi perangkat lunak berbayar sangat diutamakan:</p>
 <div class="table-wrapper">
 <table>
@@ -1035,7 +1172,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </table>
 </div>
 <p>Arahan Editorial: Apabila jurnal menargetkan indeksasi bereputasi seperti Scopus atau Web of Science, berlangganan layanan seperti iThenticate menjadi investasi krusial dalam mitigasi risiko plagiarisme pascaterbit.</p>
-<h2 id="67-panduan-praktis-untuk-tim-editor-jurnal"><a class="header" href="#67-panduan-praktis-untuk-tim-editor-jurnal">6.7 Panduan Praktis untuk Tim Editor Jurnal</a></h2>
+<h2 id="77-panduan-praktis-untuk-tim-editor-jurnal"><a class="header" href="#77-panduan-praktis-untuk-tim-editor-jurnal">7.7 Panduan Praktis untuk Tim Editor Jurnal</a></h2>
 <p>Untuk menjaga integritas ilmiah, tim editorial dianjurkan mengimplementasikan langkah-langkah berikut:</p>
 <ol>
 <li>Formulasikan dan publikasikan kebijakan jurnal yang lugas mengenai aturan orisinalitas serta kepengarangan di situs web OJS.</li>
@@ -1043,7 +1180,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li>Minta mitra bestari untuk proaktif mengidentifikasi tanda-tanda plagiat empiris, meliputi duplikasi struktur kalimat yang ganjil, inkonsistensi penyajian data gambar, hingga keberadaan gagasan sentral tanpa pengutipan selayaknya.</li>
 <li>Rujuk pedoman Committee on Publication Ethics (COPE) yang memuat diagram alur penanganan sengketa etika akademik di situs publicationethics.org.</li>
 </ol>
-<h2 id="68-panduan-pencegahan-plagiarisme-bagi-penulis"><a class="header" href="#68-panduan-pencegahan-plagiarisme-bagi-penulis">6.8 Panduan Pencegahan Plagiarisme bagi Penulis</a></h2>
+<h2 id="78-panduan-pencegahan-plagiarisme-bagi-penulis"><a class="header" href="#78-panduan-pencegahan-plagiarisme-bagi-penulis">7.8 Panduan Pencegahan Plagiarisme bagi Penulis</a></h2>
 <p>Penulis dituntut memahami bahwa plagiat adalah pelanggaran etika yang mendatangkan sanksi pencabutan dokumen (<em>retraction</em>). Langkah pencegahan esensial meliputi:</p>
 <ol>
 <li>Gunakan tanda kutip ganda pada saat mengadopsi teks rujukan sama persis tanpa memarafrasakannya.</li>
@@ -1052,7 +1189,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li>Jangan mengirimkan naskah yang identik ke lebih dari satu jurnal secara bersamaan, karena hal ini diklasifikasikan sebagai plagiasi diri (<em>self-plagiarism</em>).</li>
 <li>Kembangkan budaya pencatatan rujukan berbasis <em>reference manager</em> agar silsilah sumber ide tidak terputus atau terlupakan saat naskah ditulis.</li>
 </ol>
-<h2 id="checklist-bab-6"><a class="header" href="#checklist-bab-6">Checklist Bab 6</a></h2>
+<h2 id="checklist-bab-7"><a class="header" href="#checklist-bab-7">Checklist Bab 7</a></h2>
 <ul>
 <li><input disabled="" type="checkbox"> Batas toleransi plagiarisme jurnal telah ditetapkan secara eksplisit dalam kebijakan (<em>mis. maks 25%</em>).</li>
 <li><input disabled="" type="checkbox"> Perangkat lunak pemeriksa kemiripan (<em>similarity checker</em>) telah ditentukan penggunaannya (gratis atau lisensi universitas).</li>
@@ -1060,12 +1197,12 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li><input disabled="" type="checkbox"> Editor telah memahami cara menafsirkan laporan kemiripan dengan benar (mengecualikan kutipan langsung dan daftar pustaka).</li>
 <li><input disabled="" type="checkbox"> Diagram alur penanganan pelanggaran dari COPE telah diadopsi sebagai referensi mitigasi etika jurnal.</li>
 </ul>
-<h2 id="ringkasan-bab-5"><a class="header" href="#ringkasan-bab-5">Ringkasan Bab</a></h2>
+<h2 id="ringkasan-bab-6"><a class="header" href="#ringkasan-bab-6">Ringkasan Bab</a></h2>
 <p>Pemeriksaan kemiripan (<em>similarity check</em>) bertindak sebagai lapisan pelindung lini depan bagi kredibilitas sebuah jurnal. Integrasi prosedur deteksi sebelum mengalihkan naskah ke penelaah sejawat membantu menjaga standar kualitas, menghindarkan mitra bestari dari keharusan mengevaluasi dokumen yang cacat etika, dan mencegah potensi penarikan publikasi di kemudian hari.</p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="bab-7-menugaskan-peninjau-assigning-reviewer"><a class="header" href="#bab-7-menugaskan-peninjau-assigning-reviewer">Bab 7: Menugaskan Peninjau (Assigning Reviewer)</a></h1>
+<h1 id="bab-8-menugaskan-peninjau-assigning-reviewer"><a class="header" href="#bab-8-menugaskan-peninjau-assigning-reviewer">Bab 8: Menugaskan Peninjau (Assigning Reviewer)</a></h1>
 <p>Setelah naskah lolos dari tinjauan awal meja (<em>desk review</em>) dan pemeriksaan kemiripan (<em>similarity check</em>), tahap selanjutnya adalah mengirimkan naskah ke proses penelaahan sejawat (<em>peer review</em>). Bab ini memandu editor dalam memilih mitra bestari (<em>reviewer</em>) yang tepat, mengatur parameter penugasan, dan memantau jalannya proses penelaahan.</p>
-<h2 id="71-memindahkan-naskah-ke-tahap-review"><a class="header" href="#71-memindahkan-naskah-ke-tahap-review">7.1 Memindahkan Naskah ke Tahap Review</a></h2>
+<h2 id="81-memindahkan-naskah-ke-tahap-review"><a class="header" href="#81-memindahkan-naskah-ke-tahap-review">8.1 Memindahkan Naskah ke Tahap Review</a></h2>
 <p>Sebelum menugaskan mitra bestari, pastikan naskah telah siap secara teknis dan substantif untuk ditinjau.</p>
 <p>Prosedur Teknis:</p>
 <ol>
@@ -1078,7 +1215,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li>Setelah dikonfirmasi, status naskah secara otomatis berpindah dari tahap <em>Submission</em> ke tahap <strong>Review (Round 1)</strong>.</li>
 </ol>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Jendela pemilihan file untuk Send to Review"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Jendela pemilihan file untuk Send to Review"></span></label></p>
-<h2 id="72-antarmuka-section-editor-dan-editor-kepala"><a class="header" href="#72-antarmuka-section-editor-dan-editor-kepala">7.2 Antarmuka Section Editor dan Editor Kepala</a></h2>
+<h2 id="82-antarmuka-section-editor-dan-editor-kepala"><a class="header" href="#82-antarmuka-section-editor-dan-editor-kepala">8.2 Antarmuka Section Editor dan Editor Kepala</a></h2>
 <p>OJS 3.3 menerapkan pembagian tampilan berbasis peran yang spesifik untuk mencegah terjadinya beban informasi berlebih (<em>information overload</em>). Beban informasi berlebih adalah kondisi di mana editor dihadapkan pada volume data yang terlalu besar sehingga menghambat efisiensi pengambilan keputusan.</p>
 <div class="table-wrapper">
 <table>
@@ -1092,7 +1229,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </table>
 </div>
 <p>Sistem navigasi terfokus ini memungkinkan Section Editor bekerja lebih efisien tanpa terganggu oleh data naskah di luar tanggung jawabnya.</p>
-<h2 id="73-memilih-mitra-bestari-yang-tepat"><a class="header" href="#73-memilih-mitra-bestari-yang-tepat">7.3 Memilih Mitra Bestari yang Tepat</a></h2>
+<h2 id="83-memilih-mitra-bestari-yang-tepat"><a class="header" href="#83-memilih-mitra-bestari-yang-tepat">8.3 Memilih Mitra Bestari yang Tepat</a></h2>
 <p>Klik tombol <strong>“Add Reviewer”</strong> di panel <em>Reviewers</em> untuk mengakses basis data mitra bestari. OJS 3.3 menyediakan parameter pencarian mendalam untuk mendukung pengambilan keputusan berbasis rekam jejak:</p>
 <div class="table-wrapper">
 <table>
@@ -1113,7 +1250,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <h3 id="etika-pemilihan-mitra-bestari-standar-cope"><a class="header" href="#etika-pemilihan-mitra-bestari-standar-cope">Etika Pemilihan Mitra Bestari (Standar COPE)</a></h3>
 <p>Pemilihan mitra bestari harus dilandasi objektivitas keahlian. Panduan Committee on Publication Ethics (COPE) menekankan bahwa editor tidak boleh menugaskan mitra bestari yang diketahui memiliki konflik kepentingan (<em>conflict of interest</em>) dengan penulis naskah (COPE, 2017). Konflik kepentingan meliputi hubungan keluarga, hubungan kerja (afiliasi institusi yang sama), atau kolaborasi publikasi dalam tiga tahun terakhir.</p>
 <p><strong>Studi Kasus:</strong> Sebuah jurnal naskah biologi kelautan membutuhkan mitra bestari khusus. Editor menemukan lima pakar di sistem, tetapi setelah ditelusuri, kelima pakar tersebut bekerja di institusi yang sama dengan penulis atau pernah menjadi rekan penulis makalah di tahun sebelumnya. Mengingat asas <em>double-blind review</em> dan potensi konflik kepentingan, editor dilarang keras menugaskan mereka. Sebagai gantinya, editor wajib mencari calon peninjau dari institusi atau negara lain, lalu mendaftarkan mereka ke dalam basis data OJS sebagai mitra bestari baru sebelum menugaskannya.</p>
-<h2 id="74-mengatur-parameter-penugasan"><a class="header" href="#74-mengatur-parameter-penugasan">7.4 Mengatur Parameter Penugasan</a></h2>
+<h2 id="84-mengatur-parameter-penugasan"><a class="header" href="#84-mengatur-parameter-penugasan">8.4 Mengatur Parameter Penugasan</a></h2>
 <p>Setelah memilih kandidat, sistem akan menampilkan formulir penugasan untuk mengatur detail evaluasi.</p>
 <h3 id="templat-surel-undangan"><a class="header" href="#templat-surel-undangan">Templat Surel Undangan</a></h3>
 <p>OJS menyediakan draf surel undangan otomatis yang menggunakan <em>Placeholders</em> untuk menarik metadata naskah secara dinamis:</p>
@@ -1148,7 +1285,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <h3 id="formulir-penilaian"><a class="header" href="#formulir-penilaian">Formulir Penilaian</a></h3>
 <p>Apabila pengelola jurnal menggunakan instrumen penilaian terstruktur, editor harus memilih formulir penilaian dari menu tarik-turun (<em>drop-down</em>). Pengaturan formulir khusus ini merupakan wewenang Manajer Jurnal (<em>Journal Manager</em>) melalui menu pengaturan sistem.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Formulir penugasan reviewer dengan parameter lengkap"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Formulir penugasan reviewer dengan parameter lengkap"></span></label></p>
-<h2 id="75-konfirmasi-dan-pemantauan-penugasan"><a class="header" href="#75-konfirmasi-dan-pemantauan-penugasan">7.5 Konfirmasi dan Pemantauan Penugasan</a></h2>
+<h2 id="85-konfirmasi-dan-pemantauan-penugasan"><a class="header" href="#85-konfirmasi-dan-pemantauan-penugasan">8.5 Konfirmasi dan Pemantauan Penugasan</a></h2>
 <p>Setelah parameter ditetapkan dan tombol <strong>“Add Reviewer”</strong> dieksekusi, sistem beroperasi secara otomatis untuk:</p>
 <ol>
 <li>Mengirimkan surel undangan formal kepada mitra bestari.</li>
@@ -1168,7 +1305,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li>Menggunakan tombol <strong>“Send Reminder”</strong> yang tersedia di sebelah nama mitra bestari, atau</li>
 <li>Menggunakan fitur diskusi surel (<em>Notify</em>) untuk berkomunikasi secara lebih personal.</li>
 </ul>
-<h2 id="76-mengelola-kelengkapan-peninjauan"><a class="header" href="#76-mengelola-kelengkapan-peninjauan">7.6 Mengelola Kelengkapan Peninjauan</a></h2>
+<h2 id="86-mengelola-kelengkapan-peninjauan"><a class="header" href="#86-mengelola-kelengkapan-peninjauan">8.6 Mengelola Kelengkapan Peninjauan</a></h2>
 <p>Standar akademik kelayakan sebuah naskah umumnya mensyaratkan keterlibatan sekurang-kurangnya dua orang mitra bestari independen. Editor harus mengulangi langkah penugasan untuk melengkapi kuota peninjauan.</p>
 <p>Praktik Terbaik:</p>
 <ul>
@@ -1176,7 +1313,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li>Apabila mitra bestari utama menolak undangan, segera cari kandidat alternatif untuk mencegah penundaan durasi editorial.</li>
 <li>Jurnal bereputasi sering kali mengundang tiga kandidat di awal untuk mengantisipasi penolakan atau keterlambatan peninjauan.</li>
 </ul>
-<h2 id="checklist-bab-7"><a class="header" href="#checklist-bab-7">Checklist Bab 7</a></h2>
+<h2 id="checklist-bab-8"><a class="header" href="#checklist-bab-8">Checklist Bab 8</a></h2>
 <ul>
 <li><input disabled="" type="checkbox"> Seluruh dokumen naskah yang dikirimkan telah dibersihkan dari properti metadata personal (<em>blinding</em>).</li>
 <li><input disabled="" type="checkbox"> Kandidat mitra bestari telah dipilih berdasarkan kesesuaian kepakaran (minat meninjau).</li>
@@ -1185,10 +1322,10 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li><input disabled="" type="checkbox"> Templat surel undangan penelaahan telah disesuaikan dengan kebutuhan naskah.</li>
 <li><input disabled="" type="checkbox"> Minimal dua mitra bestari independen telah berhasil ditugaskan untuk naskah.</li>
 </ul>
-<h2 id="ringkasan-bab-6"><a class="header" href="#ringkasan-bab-6">Ringkasan Bab</a></h2>
+<h2 id="ringkasan-bab-7"><a class="header" href="#ringkasan-bab-7">Ringkasan Bab</a></h2>
 <p>Manajemen penugasan penelaahan sejawat yang disiplin merupakan pilar penjaga mutu akademik jurnal. Dengan memanfaatkan basis data OJS, parameter pencarian berbasis metrik historis, serta pengaturan tanggal batas waktu sesuai standar DOAJ, editor dapat menjalankan alur <em>peer review</em> yang efisien. Pemahaman terhadap fenomena keletihan peninjau (<em>reviewer fatigue</em>) serta ketegasan dalam menegakkan aturan tanpa konflik kepentingan (<em>conflict of interest</em>) adalah ciri khas pengelolaan jurnal yang berintegritas.</p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="bab-8-panduan-untuk-peninjau-reviewer"><a class="header" href="#bab-8-panduan-untuk-peninjau-reviewer">Bab 8: Panduan untuk Peninjau (Reviewer)</a></h1>
+<h1 id="bab-9-panduan-untuk-peninjau-reviewer"><a class="header" href="#bab-9-panduan-untuk-peninjau-reviewer">Bab 9: Panduan untuk Peninjau (Reviewer)</a></h1>
 <p>Bab ini membahas alur kerja penelaahan sejawat dari sudut pandang reviewer atau mitra bestari. Untuk konteks bagaimana editor menugaskan reviewer, lihat <strong>Bab 7: Menugaskan Peninjau</strong>. Untuk panduan editor dalam merespons hasil ulasan, lihat <strong>Bab 9: Merespons Hasil Ulasan</strong>.</p>
 <h2 id="penelaahan-sejawat-dalam-publikasi-ilmiah"><a class="header" href="#penelaahan-sejawat-dalam-publikasi-ilmiah">Penelaahan Sejawat dalam Publikasi Ilmiah</a></h2>
 <p>Penelaahan sejawat (<em>peer review</em>) adalah proses evaluasi suatu karya ilmiah oleh para ahli yang memiliki kompetensi di bidang yang sama sebelum karya tersebut diterbitkan. Menurut Committee on Publication Ethics (COPE), peer review merupakan metode utama yang digunakan komunitas ilmiah untuk memvalidasi penelitian dan memastikan integritas rekam jejak ilmiah (COPE, 2017, https://publicationethics.org/files/cope-ethical-guidelines-peer-reviewers-v2.pdf).</p>
@@ -1199,11 +1336,11 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li>Membantu editor mengambil keputusan editorial yang tepat dan berdasar.</li>
 </ol>
 <hr>
-<h2 id="81-peran-reviewer-dalam-ekosistem-jurnal"><a class="header" href="#81-peran-reviewer-dalam-ekosistem-jurnal">8.1 Peran Reviewer dalam Ekosistem Jurnal</a></h2>
+<h2 id="91-peran-reviewer-dalam-ekosistem-jurnal"><a class="header" href="#91-peran-reviewer-dalam-ekosistem-jurnal">9.1 Peran Reviewer dalam Ekosistem Jurnal</a></h2>
 <p>Reviewer adalah pakar di bidangnya yang bertugas mengevaluasi kualitas konten naskah secara objektif dan independen guna menjamin integritas ilmiah naskah (COPE, 2017). Directory of Open Access Journals (DOAJ) mensyaratkan setiap jurnal yang terindeks harus secara jelas memublikasikan jenis penelaahan sejawat yang digunakan (misalnya <em>blind review</em> atau <em>double-blind review</em>), serta memastikan seluruh naskah penelitian melalui proses evaluasi sejawat oleh sekurang-kurangnya dua peninjau independen (DOAJ, 2024, https://doaj.org/apply/guide/).</p>
 <p>Dalam proses <em>double-blind review</em>, identitas penulis dirahasiakan dari reviewer dan identitas reviewer dirahasiakan dari penulis. Mekanisme ini dirancang untuk menjamin independensi penilaian dari pengaruh sosial atau institusional.</p>
 <hr>
-<h2 id="82-menerima-undangan-dan-login-ke-sistem"><a class="header" href="#82-menerima-undangan-dan-login-ke-sistem">8.2 Menerima Undangan dan Login ke Sistem</a></h2>
+<h2 id="92-menerima-undangan-dan-login-ke-sistem"><a class="header" href="#92-menerima-undangan-dan-login-ke-sistem">9.2 Menerima Undangan dan Login ke Sistem</a></h2>
 <h3 id="memulai-dari-email-undangan"><a class="header" href="#memulai-dari-email-undangan">Memulai dari Email Undangan</a></h3>
 <p>Alur kerja reviewer dimulai saat menerima email undangan otomatis dari Section Editor. Email ini berisi:</p>
 <ul>
@@ -1233,7 +1370,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </div>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Dasbor reviewer dengan indikator notifikasi"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Dasbor reviewer dengan indikator notifikasi"></span></label></p>
 <hr>
-<h2 id="83-langkah-1-menerima-atau-menolak-permintaan-review"><a class="header" href="#83-langkah-1-menerima-atau-menolak-permintaan-review">8.3 Langkah 1: Menerima atau Menolak Permintaan Review</a></h2>
+<h2 id="93-langkah-1-menerima-atau-menolak-permintaan-review"><a class="header" href="#93-langkah-1-menerima-atau-menolak-permintaan-review">9.3 Langkah 1: Menerima atau Menolak Permintaan Review</a></h2>
 <p>Setelah membuka tugas dari dasbor, reviewer masuk ke tahap <strong>Request</strong>. Tahap ini menyajikan:</p>
 <ul>
 <li><strong>Detail Artikel</strong>: judul dan abstrak naskah sebagai dasar penilaian kesesuaian keahlian.</li>
@@ -1255,7 +1392,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <p><strong>Studi Kasus:</strong> Seorang mitra bestari menyetujui tugas meninjau naskah dalam format <em>double-blind review</em>. Di pertengahan proses membaca naskah, ia mengenali gagasan spesifik, gaya penulisan, dan metode yang digunakan, sehingga ia menyadari bahwa naskah tersebut kemungkinan besar ditulis oleh mantan mahasiswanya. Dalam situasi ini, mitra bestari tersebut diwajibkan untuk segera menghentikan peninjauan dan menghubungi editor melalui fitur <em>Add Discussion</em> untuk mendeklarasikan potensi konflik kepentingan, dan membiarkan editor memutuskan apakah ia harus melanjutkan atau mundur dari penugasan tersebut.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Halaman permintaan review: informasi naskah dan jadwal"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Halaman permintaan review: informasi naskah dan jadwal"></span></label></p>
 <hr>
-<h2 id="84-langkah-2-membaca-pedoman-peninjau"><a class="header" href="#84-langkah-2-membaca-pedoman-peninjau">8.4 Langkah 2: Membaca Pedoman Peninjau</a></h2>
+<h2 id="94-langkah-2-membaca-pedoman-peninjau"><a class="header" href="#94-langkah-2-membaca-pedoman-peninjau">9.4 Langkah 2: Membaca Pedoman Peninjau</a></h2>
 <p>Setelah menerima undangan, reviewer masuk ke tahap <strong>Guidelines</strong>. Bagian ini memuat instruksi khusus yang disusun oleh pengelola jurnal, yang mencakup:</p>
 <ul>
 <li>Kriteria penilaian yang diharapkan.</li>
@@ -1265,7 +1402,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </ul>
 <p>Pedoman ini perlu dibaca secara saksama karena setiap jurnal dapat memiliki standar dan kriteria penilaian yang berbeda.</p>
 <hr>
-<h2 id="85-langkah-3-mengunduh-file-menilai-dan-memberikan-komentar"><a class="header" href="#85-langkah-3-mengunduh-file-menilai-dan-memberikan-komentar">8.5 Langkah 3: Mengunduh File, Menilai, dan Memberikan Komentar</a></h2>
+<h2 id="95-langkah-3-mengunduh-file-menilai-dan-memberikan-komentar"><a class="header" href="#95-langkah-3-mengunduh-file-menilai-dan-memberikan-komentar">9.5 Langkah 3: Mengunduh File, Menilai, dan Memberikan Komentar</a></h2>
 <p>Tahap ini adalah inti dari proses penelaahan. Di sini evaluasi substantif terhadap naskah dilakukan.</p>
 <h3 id="mengunduh-dan-membaca-naskah"><a class="header" href="#mengunduh-dan-membaca-naskah">Mengunduh dan Membaca Naskah</a></h3>
 <p>Klik tautan naskah di bagian <strong>“Review Files”</strong> untuk mengunduh dokumen. Baca naskah secara menyeluruh sebelum mulai menulis komentar.</p>
@@ -1325,7 +1462,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </table>
 </div>
 <hr>
-<h2 id="86-langkah-4-penyelesaian-dan-konfirmasi-akhir"><a class="header" href="#86-langkah-4-penyelesaian-dan-konfirmasi-akhir">8.6 Langkah 4: Penyelesaian dan Konfirmasi Akhir</a></h2>
+<h2 id="96-langkah-4-penyelesaian-dan-konfirmasi-akhir"><a class="header" href="#96-langkah-4-penyelesaian-dan-konfirmasi-akhir">9.6 Langkah 4: Penyelesaian dan Konfirmasi Akhir</a></h2>
 <ol>
 <li>Tinjau kembali seluruh komentar dan rekomendasi yang telah diisi.</li>
 <li>Klik <strong>“Submit Review”</strong>.</li>
@@ -1340,7 +1477,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </ul>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Halaman konfirmasi selesai review"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Halaman konfirmasi selesai review"></span></label></p>
 <hr>
-<h2 id="87-etika-peer-review"><a class="header" href="#87-etika-peer-review">8.7 Etika Peer Review</a></h2>
+<h2 id="97-etika-peer-review"><a class="header" href="#97-etika-peer-review">9.7 Etika Peer Review</a></h2>
 <p>Prinsip-prinsip etika berikut berlaku bagi reviewer berdasarkan panduan COPE Ethical Guidelines for Peer Reviewers (COPE, 2017, https://publicationethics.org/files/cope-ethical-guidelines-peer-reviewers-v2.pdf):</p>
 <ol>
 <li>
@@ -1363,7 +1500,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </li>
 </ol>
 <hr>
-<h2 id="checklist-bab-8"><a class="header" href="#checklist-bab-8">Checklist Bab 8</a></h2>
+<h2 id="checklist-bab-9"><a class="header" href="#checklist-bab-9">Checklist Bab 9</a></h2>
 <ul>
 <li><input disabled="" type="checkbox"> Email undangan sudah dibaca dan jadwal peninjauan sudah dicatat.</li>
 <li><input disabled="" type="checkbox"> Tidak ada konflik kepentingan, atau konflik kepentingan sudah dilaporkan kepada editor.</li>
@@ -1376,7 +1513,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li><input disabled="" type="checkbox"> Seluruh isian sudah diperiksa kembali sebelum konfirmasi akhir.</li>
 </ul>
 <hr>
-<h2 id="ringkasan-bab-7"><a class="header" href="#ringkasan-bab-7">Ringkasan Bab</a></h2>
+<h2 id="ringkasan-bab-8"><a class="header" href="#ringkasan-bab-8">Ringkasan Bab</a></h2>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1391,16 +1528,16 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </table>
 </div>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="bab-9-merespons-hasil-ulasan-editorial-decision"><a class="header" href="#bab-9-merespons-hasil-ulasan-editorial-decision">Bab 9: Merespons Hasil Ulasan (Editorial Decision)</a></h1>
+<h1 id="bab-10-merespons-hasil-ulasan-editorial-decision"><a class="header" href="#bab-10-merespons-hasil-ulasan-editorial-decision">Bab 10: Merespons Hasil Ulasan (Editorial Decision)</a></h1>
 <p>Bab ini merupakan tahap krusial dalam alur kerja editorial, di mana editor menafsirkan rekomendasi dari para peninjau (<em>reviewer</em>) dan menetapkan keputusan editorial resmi yang menentukan kelayakan suatu naskah.</p>
-<h2 id="91-pentingnya-tahap-pengambilan-keputusan"><a class="header" href="#91-pentingnya-tahap-pengambilan-keputusan">9.1 Pentingnya Tahap Pengambilan Keputusan</a></h2>
+<h2 id="101-pentingnya-tahap-pengambilan-keputusan"><a class="header" href="#101-pentingnya-tahap-pengambilan-keputusan">10.1 Pentingnya Tahap Pengambilan Keputusan</a></h2>
 <p>Setelah proses penelaahan sejawat (<em>peer review</em>) selesai dilakukan oleh mitra bestari, tugas editor bukan sekadar meneruskan komentar dari mitra bestari kepada penulis. Editor memiliki tanggung jawab akademik untuk:</p>
 <ol>
 <li>Mengevaluasi kualitas ulasan dan melihat rekam jejak aktivitas peninjauan.</li>
 <li>Menetapkan keputusan editorial resmi: diterima, memerlukan revisi, atau ditolak.</li>
 <li>Mengomunikasikan hasil ulasan kepada penulis dengan tetap menjamin integritas penelaahan nirnama (<em>blind review</em>).</li>
 </ol>
-<h2 id="92-melihat-dan-mengevaluasi-hasil-ulasan"><a class="header" href="#92-melihat-dan-mengevaluasi-hasil-ulasan">9.2 Melihat dan Mengevaluasi Hasil Ulasan</a></h2>
+<h2 id="102-melihat-dan-mengevaluasi-hasil-ulasan"><a class="header" href="#102-melihat-dan-mengevaluasi-hasil-ulasan">10.2 Melihat dan Mengevaluasi Hasil Ulasan</a></h2>
 <h3 id="prosedur-melihat-ulasan"><a class="header" href="#prosedur-melihat-ulasan">Prosedur Melihat Ulasan</a></h3>
 <ol>
 <li>Masuk ke dasbor dan buka naskah yang sedang dalam tahap review.</li>
@@ -1424,7 +1561,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </tbody>
 </table>
 </div>
-<h2 id="93-opsi-keputusan-editorial"><a class="header" href="#93-opsi-keputusan-editorial">9.3 Opsi Keputusan Editorial</a></h2>
+<h2 id="103-opsi-keputusan-editorial"><a class="header" href="#103-opsi-keputusan-editorial">10.3 Opsi Keputusan Editorial</a></h2>
 <p>Mitra bestari bertugas memberikan rekomendasi, namun keputusan final tetap berada di tangan editor. Editor mengeksekusi salah satu opsi keputusan berikut:</p>
 <div class="table-wrapper">
 <table>
@@ -1441,7 +1578,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </table>
 </div>
 <p>Catatan Penting: Keputusan <strong>“Accept Submission”</strong> harus diambil dengan sangat hati-hati. Setelah keputusan dicatat melalui tombol <strong>“Record Editorial Decision”</strong>, sistem akan mengunci status naskah. Pembatalan keputusan kembali ke status “Request Revisions” memerlukan intervensi administratif yang kompleks. Pastikan naskah benar-benar siap sebelum mengkonfirmasi.</p>
-<h2 id="94-menangani-ulasan-yang-saling-bertentangan"><a class="header" href="#94-menangani-ulasan-yang-saling-bertentangan">9.4 Menangani Ulasan yang Saling Bertentangan</a></h2>
+<h2 id="104-menangani-ulasan-yang-saling-bertentangan"><a class="header" href="#104-menangani-ulasan-yang-saling-bertentangan">10.4 Menangani Ulasan yang Saling Bertentangan</a></h2>
 <p>Dalam proses editorial, sangat umum ditemui situasi di mana rekomendasi dari dua mitra bestari saling bertentangan (misalnya, satu merekomendasikan <em>Accept</em> sedangkan yang lain merekomendasikan <em>Decline</em>). Dalam situasi ini, editor dapat mengambil langkah-langkah sesuai panduan Committee on Publication Ethics (COPE):</p>
 <ol>
 <li><strong>Evaluasi kualitas ulasan</strong>: Editor harus menilai argumen mana yang didukung oleh bukti ilmiah yang lebih kuat. Ulasan yang lebih mendetail dan konstruktif umumnya lebih dapat diandalkan.</li>
@@ -1449,7 +1586,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li><strong>Mengambil keputusan mandiri</strong>: Jika editor adalah pakar di bidang terkait, editor berhak mengambil keputusan akhir dengan menyertakan alasan penolakan atau penerimaan yang jelas kepada penulis.</li>
 </ol>
 <p>Editor dapat merujuk pada diagram alir COPE untuk penanganan proses editorial yang lebih kompleks terkait sengketa peninjauan.</p>
-<h2 id="95-mengomunikasikan-keputusan-kepada-penulis"><a class="header" href="#95-mengomunikasikan-keputusan-kepada-penulis">9.5 Mengomunikasikan Keputusan kepada Penulis</a></h2>
+<h2 id="105-mengomunikasikan-keputusan-kepada-penulis"><a class="header" href="#105-mengomunikasikan-keputusan-kepada-penulis">10.5 Mengomunikasikan Keputusan kepada Penulis</a></h2>
 <p>Setelah menentukan keputusan, klik tombol aksi yang sesuai (misalnya <strong>“Request Revisions”</strong>). Jendela surel (<em>email</em>) otomatis akan muncul.</p>
 <h3 id="prosedur-kritis-menjaga-integritas-blind-review"><a class="header" href="#prosedur-kritis-menjaga-integritas-blind-review">Prosedur Kritis: Menjaga Integritas Blind Review</a></h3>
 <p>Salah satu kesalahan umum adalah membiarkan identitas mitra bestari bocor melalui dokumen ulasan yang dilampirkan.</p>
@@ -1460,7 +1597,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li>Di jendela notifikasi OJS, pastikan untuk mengunggah dan hanya mencentang berkas yang telah dianomimkan. Berkas asli yang masih memuat metadata tidak boleh dikirimkan ke penulis.</li>
 </ol>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Jendela pengiriman notifikasi keputusan ke penulis"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Jendela pengiriman notifikasi keputusan ke penulis"></span></label></p>
-<h2 id="96-mengelola-revisi-dan-putaran-ulasan-baru"><a class="header" href="#96-mengelola-revisi-dan-putaran-ulasan-baru">9.6 Mengelola Revisi dan Putaran Ulasan Baru</a></h2>
+<h2 id="106-mengelola-revisi-dan-putaran-ulasan-baru"><a class="header" href="#106-mengelola-revisi-dan-putaran-ulasan-baru">10.6 Mengelola Revisi dan Putaran Ulasan Baru</a></h2>
 <h3 id="jika-keputusan-revisions-required"><a class="header" href="#jika-keputusan-revisions-required">Jika Keputusan: Revisions Required</a></h3>
 <ul>
 <li>Penulis akan mendapat notifikasi dan mengunggah berkas hasil perbaikan.</li>
@@ -1474,7 +1611,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li>Pada putaran kedua, editor memiliki keleluasaan untuk mengundang kembali mitra bestari yang sama untuk mengecek perbaikan, atau menambahkan mitra bestari baru jika ulasan pada putaran pertama dirasa kurang memadai.</li>
 </ol>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Antarmuka memulai New Review Round"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Antarmuka memulai New Review Round"></span></label></p>
-<h2 id="97-mencatat-keputusan-akhir-dan-transisi-ke-copyediting"><a class="header" href="#97-mencatat-keputusan-akhir-dan-transisi-ke-copyediting">9.7 Mencatat Keputusan Akhir dan Transisi ke Copyediting</a></h2>
+<h2 id="107-mencatat-keputusan-akhir-dan-transisi-ke-copyediting"><a class="header" href="#107-mencatat-keputusan-akhir-dan-transisi-ke-copyediting">10.7 Mencatat Keputusan Akhir dan Transisi ke Copyediting</a></h2>
 <p>Setelah seluruh proses revisi selesai dan editor memutuskan naskah layak terbit, langkah akhir pada tahap ini adalah:</p>
 <ol>
 <li>Klik <strong>“Record Editorial Decision”</strong> dengan memilih <strong>Accept Submission</strong>.</li>
@@ -1483,7 +1620,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li>Berkas yang dipilih akan menjadi naskah sumber utama bagi tim penyunting di tahap selanjutnya.</li>
 </ol>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Transisi naskah dari Review ke Copyediting"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Transisi naskah dari Review ke Copyediting"></span></label></p>
-<h2 id="checklist-bab-9"><a class="header" href="#checklist-bab-9">Checklist Bab 9</a></h2>
+<h2 id="checklist-bab-10"><a class="header" href="#checklist-bab-10">Checklist Bab 10</a></h2>
 <ul>
 <li><input disabled="" type="checkbox"> Status dan komentar semua mitra bestari telah dievaluasi.</li>
 <li><input disabled="" type="checkbox"> Keputusan editorial telah ditetapkan dengan mempertimbangkan seluruh ulasan yang masuk.</li>
@@ -1493,7 +1630,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li><input disabled="" type="checkbox"> Pada naskah yang memerlukan putaran kedua (<em>Review Round 2</em>), mitra bestari lanjutan telah diundang.</li>
 <li><input disabled="" type="checkbox"> Naskah yang telah direvisi dan disetujui telah dicatat sebagai <em>Accept Submission</em> dan dipindahkan ke tahap Copyediting.</li>
 </ul>
-<h2 id="ringkasan-bab-8"><a class="header" href="#ringkasan-bab-8">Ringkasan Bab</a></h2>
+<h2 id="ringkasan-bab-9"><a class="header" href="#ringkasan-bab-9">Ringkasan Bab</a></h2>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1511,11 +1648,11 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </table>
 </div>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="bab-10-penyuntingan-naskah-copyediting"><a class="header" href="#bab-10-penyuntingan-naskah-copyediting">Bab 10: Penyuntingan Naskah (Copyediting)</a></h1>
+<h1 id="bab-11-penyuntingan-naskah-copyediting"><a class="header" href="#bab-11-penyuntingan-naskah-copyediting">Bab 11: Penyuntingan Naskah (Copyediting)</a></h1>
 <p>Tahap <strong>Copyediting</strong> adalah fase ketiga dalam alur kerja editorial OJS 3.3, yang dimulai tepat setelah naskah dinyatakan diterima (<em>Accepted</em>) pada akhir tahap penelaahan sejawat. Tahap ini merupakan jembatan antara konten yang telah disetujui secara substansi dengan proses produksi tata letak.</p>
 <p>Fokus tahap penyuntingan bukan lagi menilai isi penelitian, melainkan menyempurnakan naskah dalam hal akurasi teknis, kejelasan bahasa, dan kepatuhan terhadap gaya selingkung jurnal (<em>house style</em>). Secara definisi, <em>copyediting</em> adalah proses penyiapan naskah untuk dipublikasikan dengan cara mengoreksi kesalahan ejaan, tata bahasa, tanda baca, serta memastikan konsistensi format sesuai dengan pedoman penerbit.</p>
 <p>Menurut standar Directory of Open Access Journals (DOAJ), transparansi proses editorial dan penyuntingan adalah kriteria penting. Seluruh tahapan penyuntingan, termasuk <em>copyediting</em>, harus memiliki jejak audit yang jelas dan melibatkan peran profesional untuk memastikan standar bahasa terjaga sebelum diterbitkan.</p>
-<h2 id="101-peran-dan-tanggung-jawab"><a class="header" href="#101-peran-dan-tanggung-jawab">10.1 Peran dan Tanggung Jawab</a></h2>
+<h2 id="111-peran-dan-tanggung-jawab"><a class="header" href="#111-peran-dan-tanggung-jawab">11.1 Peran dan Tanggung Jawab</a></h2>
 <p>Kolaborasi yang transparan antar-aktor sangat penting di tahap ini:</p>
 <div class="table-wrapper">
 <table>
@@ -1529,7 +1666,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </tbody>
 </table>
 </div>
-<h2 id="102-menugaskan-copyeditor"><a class="header" href="#102-menugaskan-copyeditor">10.2 Menugaskan Copyeditor</a></h2>
+<h2 id="112-menugaskan-copyeditor"><a class="header" href="#112-menugaskan-copyeditor">11.2 Menugaskan Copyeditor</a></h2>
 <p>Langkah pertama editor setelah naskah masuk ke tahap <em>copyediting</em> adalah menugaskan penyunting.</p>
 <p>Prosedur penugasan:</p>
 <ol>
@@ -1542,7 +1679,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li>Klik <strong>“OK”</strong>. Penyunting tersebut kini memiliki hak akses resmi ke naskah pada tahap ini.</li>
 </ol>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Panel Participants: menugaskan Copyeditor"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Panel Participants: menugaskan Copyeditor"></span></label></p>
-<h2 id="103-alur-kerja-teknis-penyuntingan-naskah"><a class="header" href="#103-alur-kerja-teknis-penyuntingan-naskah">10.3 Alur Kerja Teknis Penyuntingan Naskah</a></h2>
+<h2 id="113-alur-kerja-teknis-penyuntingan-naskah"><a class="header" href="#113-alur-kerja-teknis-penyuntingan-naskah">11.3 Alur Kerja Teknis Penyuntingan Naskah</a></h2>
 <p>OJS 3.3 memfasilitasi pertukaran dokumen secara sistematis guna mencegah tumpang tindih versi dokumen:</p>
 <h3 id="1-mengakses-naskah-sumber"><a class="header" href="#1-mengakses-naskah-sumber">1. Mengakses Naskah Sumber</a></h3>
 <p>Penyunting mengunduh dokumen dari area <strong>Draft Files</strong> atau grid <em>Copyediting</em>. Dokumen ini merupakan versi bersih yang disetujui pada akhir tahap penelaahan sejawat.</p>
@@ -1558,7 +1695,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <p>Penyunting menggunakan fitur <strong>“Add Discussion”</strong> atau <strong>“Upload File”</strong> di dalam panel diskusi untuk mengunggah naskah yang telah disunting.</p>
 <p>Catatan Teknis: Saat mengunggah, berikan label dokumen dengan nama yang jelas, misalnya “Copyedited Version”, untuk membedakannya dari draf awal. Pelabelan yang tepat mencegah kebingungan manajemen berkas pada tahap produksi.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Area Draft Files dan Upload di tahap Copyediting"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Area Draft Files dan Upload di tahap Copyediting"></span></label></p>
-<h2 id="104-komunikasi-dan-kolaborasi-melalui-fitur-diskusi"><a class="header" href="#104-komunikasi-dan-kolaborasi-melalui-fitur-diskusi">10.4 Komunikasi dan Kolaborasi Melalui Fitur Diskusi</a></h2>
+<h2 id="114-komunikasi-dan-kolaborasi-melalui-fitur-diskusi"><a class="header" href="#114-komunikasi-dan-kolaborasi-melalui-fitur-diskusi">11.4 Komunikasi dan Kolaborasi Melalui Fitur Diskusi</a></h2>
 <p>Fitur <strong>Copyediting Discussions</strong> berfungsi sebagai alat dokumentasi formal dalam manajemen jurnal.</p>
 <div class="table-wrapper">
 <table>
@@ -1582,7 +1719,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li>Penulis akan mendapat surel notifikasi dan dapat merespons langsung melalui sistem OJS.</li>
 </ol>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Fitur diskusi Copyediting: komunikasi editor dan penulis"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Fitur diskusi Copyediting: komunikasi editor dan penulis"></span></label></p>
-<h2 id="105-finalisasi-dan-transisi-ke-tahap-produksi"><a class="header" href="#105-finalisasi-dan-transisi-ke-tahap-produksi">10.5 Finalisasi dan Transisi ke Tahap Produksi</a></h2>
+<h2 id="115-finalisasi-dan-transisi-ke-tahap-produksi"><a class="header" href="#115-finalisasi-dan-transisi-ke-tahap-produksi">11.5 Finalisasi dan Transisi ke Tahap Produksi</a></h2>
 <p>Tahap <em>Copyediting</em> dinyatakan selesai ketika editor mengonfirmasi bahwa naskah telah disunting dengan baik dan disetujui oleh penulis.</p>
 <p>Langkah transisi:</p>
 <ol>
@@ -1597,14 +1734,14 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li>Dokumen final yang dicentang otomatis disalurkan ke tahap produksi untuk dikerjakan oleh penyusun tata letak (<em>Layout Editor</em>).</li>
 </ul>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Jendela Send to Production: pemilihan file final"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Jendela Send to Production: pemilihan file final"></span></label></p>
-<h2 id="106-catatan-tambahan-penyuntingan"><a class="header" href="#106-catatan-tambahan-penyuntingan">10.6 Catatan Tambahan Penyuntingan</a></h2>
+<h2 id="116-catatan-tambahan-penyuntingan"><a class="header" href="#116-catatan-tambahan-penyuntingan">11.6 Catatan Tambahan Penyuntingan</a></h2>
 <p>Terdapat beberapa aspek penting untuk memastikan tahap penyuntingan berjalan efektif:</p>
 <ul>
 <li><strong>Konsistensi Metadata</strong>: Selama penyuntingan, selalu pastikan nama penulis, institusi afiliasi, dan judul dalam dokumen naskah sama persis dengan metadata yang diinput ke dalam sistem OJS. Ketidaksesuaian metadata merupakan salah satu penyebab utama kesalahan pada tahap penerbitan.</li>
 <li><strong>Penerapan Templat</strong>: Praktik yang baik adalah mengarahkan penyunting untuk menerapkan templat (<em>template</em>) jurnal sejak tahap ini, untuk meringankan beban kerja penyusun tata letak.</li>
 <li><strong>Validasi Referensi</strong>: Pastikan semua tautan DOI dalam daftar rujukan aktif dan akurat. Validasi dapat dilakukan melalui alat pencarian standar seperti Crossref.</li>
 </ul>
-<h2 id="checklist-bab-10"><a class="header" href="#checklist-bab-10">Checklist Bab 10</a></h2>
+<h2 id="checklist-bab-11"><a class="header" href="#checklist-bab-11">Checklist Bab 11</a></h2>
 <p>Sebelum naskah bergeser ke tahap tata letak, pastikan seluruh tindakan di bawah ini sudah terpenuhi:</p>
 <ul>
 <li><input disabled="" type="checkbox"> Tata bahasa dan struktur ejaan telah dikoreksi sepenuhnya.</li>
@@ -1617,13 +1754,13 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li><input disabled="" type="checkbox"> Dokumen hasil suntingan telah diunggah dan diidentifikasi secara jelas.</li>
 <li><input disabled="" type="checkbox"> Dokumen telah dialihkan ke tahap <em>Production</em> dengan memilih versi berkas yang tepat.</li>
 </ul>
-<h2 id="ringkasan-bab-9"><a class="header" href="#ringkasan-bab-9">Ringkasan Bab</a></h2>
+<h2 id="ringkasan-bab-10"><a class="header" href="#ringkasan-bab-10">Ringkasan Bab</a></h2>
 <p>Tahap Copyediting adalah filter kualitas bahasa dan format terakhir sebelum naskah masuk ke meja produksi tata letak visual. Keteraturan manajemen penamaan dokumen dan penggunaan fitur diskusi internal untuk meminta persetujuan penulis adalah dua pilar penting untuk menjaga transparansi dan efektivitas proses penyuntingan dalam lingkungan redaksional profesional.</p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="bab-11-produksi-tata-letak-dan-galley"><a class="header" href="#bab-11-produksi-tata-letak-dan-galley">Bab 11: Produksi, Tata Letak, dan Galley</a></h1>
+<h1 id="bab-12-produksi-tata-letak-dan-galley"><a class="header" href="#bab-12-produksi-tata-letak-dan-galley">Bab 12: Produksi, Tata Letak, dan Galley</a></h1>
 <p>Tahap <strong>Produksi</strong> adalah fase keempat dan terakhir dalam alur kerja editorial OJS 3.3. Pada tahap ini, naskah yang telah melalui proses penyuntingan dikonversi menjadi format publikasi resmi yang disebut <strong>Galley</strong>, kemudian dijadwalkan ke dalam edisi (<em>issue</em>) tertentu.</p>
 <p>Tujuan utama tahap produksi bukan lagi untuk menyunting substansi konten, melainkan memastikan presentasi teknis naskah siap diakses oleh pembaca secara global dalam format yang profesional dan akurat.</p>
-<h2 id="111-peran-dalam-tahap-produksi"><a class="header" href="#111-peran-dalam-tahap-produksi">11.1 Peran dalam Tahap Produksi</a></h2>
+<h2 id="121-peran-dalam-tahap-produksi"><a class="header" href="#121-peran-dalam-tahap-produksi">12.1 Peran dalam Tahap Produksi</a></h2>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1638,7 +1775,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </table>
 </div>
 <p>Catatan Teknis: OJS 3.3 memberikan fleksibilitas peran. Apabila tim pengelola terbatas, seorang editor dapat merangkap peran sebagai Layout Editor dengan cara memberikan akses peran tambahan di dalam sistem.</p>
-<h2 id="112-penugasan-tim-produksi"><a class="header" href="#112-penugasan-tim-produksi">11.2 Penugasan Tim Produksi</a></h2>
+<h2 id="122-penugasan-tim-produksi"><a class="header" href="#122-penugasan-tim-produksi">12.2 Penugasan Tim Produksi</a></h2>
 <p>Langkah pertama pada tahap produksi adalah menunjuk personel pelaksana:</p>
 <ol>
 <li>Navigasi ke panel <strong>“Participants”</strong> di halaman naskah pada tab <em>Production</em>.</li>
@@ -1648,7 +1785,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li>Sistem akan membuka draf surel notifikasi. Sesuaikan isi surel jika diperlukan, kemudian klik <strong>“OK”</strong>.</li>
 </ol>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Panel Participants di tahap Production"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Panel Participants di tahap Production"></span></label></p>
-<h2 id="113-pembuatan-file-galley"><a class="header" href="#113-pembuatan-file-galley">11.3 Pembuatan File Galley</a></h2>
+<h2 id="123-pembuatan-file-galley"><a class="header" href="#123-pembuatan-file-galley">12.3 Pembuatan File Galley</a></h2>
 <p>Layout Editor akan mengunduh berkas <em>copyedited</em> dari tahap sebelumnya, melakukan tata letak menggunakan perangkat lunak eksternal, lalu mengunggahnya kembali sebagai <strong>Galley</strong>.</p>
 <p>Pembuatan galley umumnya menggunakan beberapa perangkat lunak, seperti:</p>
 <ul>
@@ -1680,7 +1817,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li>Klik <strong>“Save”</strong>, lalu unggah berkas galley yang telah disiapkan.</li>
 </ol>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Tampilan unggah Galley di tahap Production"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Tampilan unggah Galley di tahap Production"></span></label></p>
-<h2 id="114-diskusi-produksi-dan-proofreading"><a class="header" href="#114-diskusi-produksi-dan-proofreading">11.4 Diskusi Produksi dan Proofreading</a></h2>
+<h2 id="124-diskusi-produksi-dan-proofreading"><a class="header" href="#124-diskusi-produksi-dan-proofreading">12.4 Diskusi Produksi dan Proofreading</a></h2>
 <p>Fungsikan fitur <strong>“Production Discussions”</strong> sebagai pusat komunikasi utama selama tahap ini.</p>
 <p>Prosedur proofreading oleh penulis dilakukan sebagai berikut:</p>
 <ol>
@@ -1698,7 +1835,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </ol>
 <p>Seluruh komunikasi harus dilakukan melalui fitur diskusi produksi OJS, bukan melalui surel eksternal pribadi. Praktik ini memastikan seluruh proses revisi tercatat dalam sistem dan dapat diakses oleh tim editorial lainnya.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Fitur Production Discussions untuk proofreading"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Fitur Production Discussions untuk proofreading"></span></label></p>
-<h2 id="115-finalisasi-metadata-di-tab-publication"><a class="header" href="#115-finalisasi-metadata-di-tab-publication">11.5 Finalisasi Metadata di Tab Publication</a></h2>
+<h2 id="125-finalisasi-metadata-di-tab-publication"><a class="header" href="#125-finalisasi-metadata-di-tab-publication">12.5 Finalisasi Metadata di Tab Publication</a></h2>
 <p>Sebelum naskah dijadwalkan untuk terbit, pastikan semua metadata sudah terverifikasi. Masuk ke tab <strong>“Publication”</strong> pada halaman alur kerja naskah dan periksa elemen berikut:</p>
 <div class="table-wrapper">
 <table>
@@ -1717,7 +1854,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </table>
 </div>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Tab Publication: verifikasi metadata sebelum publikasi"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Tab Publication: verifikasi metadata sebelum publikasi"></span></label></p>
-<h2 id="116-menjadwalkan-naskah-ke-dalam-issue"><a class="header" href="#116-menjadwalkan-naskah-ke-dalam-issue">11.6 Menjadwalkan Naskah ke Dalam Issue</a></h2>
+<h2 id="126-menjadwalkan-naskah-ke-dalam-issue"><a class="header" href="#126-menjadwalkan-naskah-ke-dalam-issue">12.6 Menjadwalkan Naskah ke Dalam Issue</a></h2>
 <p>Setelah galley dan metadata siap, naskah siap dijadwalkan:</p>
 <ol>
 <li>Di tab <strong>Publication</strong>, akses submenu <strong>“Issue”</strong>.</li>
@@ -1727,7 +1864,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </ol>
 <p>Naskah kini telah dijadwalkan dan akan dipublikasikan secara daring bersamaan dengan diterbitkannya edisi terkait.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Penjadwalan naskah ke dalam Future Issue"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Penjadwalan naskah ke dalam Future Issue"></span></label></p>
-<h2 id="checklist-bab-11"><a class="header" href="#checklist-bab-11">Checklist Bab 11</a></h2>
+<h2 id="checklist-bab-12"><a class="header" href="#checklist-bab-12">Checklist Bab 12</a></h2>
 <p>Sebelum beralih ke tahap manajemen edisi, pastikan poin-poin berikut telah terselesaikan:</p>
 <ul>
 <li><input disabled="" type="checkbox"> Personel tim produksi (seperti Layout Editor) telah ditugaskan di dalam sistem jika menggunakan model tim.</li>
@@ -1738,14 +1875,14 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li><input disabled="" type="checkbox"> Rentang halaman artikel telah ditentukan.</li>
 <li><input disabled="" type="checkbox"> Naskah telah dijadwalkan ke dalam edisi mendatang (<em>Future Issue</em>).</li>
 </ul>
-<h2 id="ringkasan-bab-10"><a class="header" href="#ringkasan-bab-10">Ringkasan Bab</a></h2>
+<h2 id="ringkasan-bab-11"><a class="header" href="#ringkasan-bab-11">Ringkasan Bab</a></h2>
 <p>Tahap produksi menentukan kualitas dan profesionalisme bentuk fisik digital sebuah jurnal. Penyajian tata letak yang bersih, kelengkapan ragam galley (termasuk format berbasis web seperti HTML atau XML JATS), serta kelengkapan metadata, berkontribusi langsung pada visibilitas artikel di berbagai mesin pencari akademik. Komunikasi <em>proofreading</em> yang tersentralisasi dalam OJS memastikan proses perbaikan akhir dapat dilacak dan dipertanggungjawabkan sebelum artikel diterbitkan secara publik.</p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="bab-12-manajemen-edisi-dan-pasca-penerbitan"><a class="header" href="#bab-12-manajemen-edisi-dan-pasca-penerbitan">Bab 12: Manajemen Edisi dan Pasca Penerbitan</a></h1>
+<h1 id="bab-13-manajemen-edisi-dan-pasca-penerbitan"><a class="header" href="#bab-13-manajemen-edisi-dan-pasca-penerbitan">Bab 13: Manajemen Edisi dan Pasca Penerbitan</a></h1>
 <p>Manajemen edisi adalah tahap puncak dari seluruh rangkaian alur kerja editorial di OJS 3.3. Setelah naskah melewati tahap <em>Submission</em>, <em>Review</em>, <em>Copyediting</em>, dan <em>Production</em>, langkah terakhir adalah menggabungkan artikel-artikel yang telah siap ke dalam sebuah edisi dan menerbitkannya kepada publik.</p>
-<h2 id="121-konsep-dasar-hubungan-naskah-dan-edisi"><a class="header" href="#121-konsep-dasar-hubungan-naskah-dan-edisi">12.1 Konsep Dasar: Hubungan Naskah dan Edisi</a></h2>
+<h2 id="131-konsep-dasar-hubungan-naskah-dan-edisi"><a class="header" href="#131-konsep-dasar-hubungan-naskah-dan-edisi">13.1 Konsep Dasar: Hubungan Naskah dan Edisi</a></h2>
 <p>Sebelum memulai manajemen edisi, pengelola harus memahami satu konsep kunci: sebuah naskah hanya akan muncul dalam sistem manajemen edisi apabila telah dilakukan tindakan penjadwalan (<em>Scheduling</em>) pada akhir tahap <em>Production</em>. Tanpa proses penjadwalan tersebut, naskah tidak akan tersedia untuk dimasukkan ke dalam edisi mana pun.</p>
-<h2 id="122-navigasi-menu-issues"><a class="header" href="#122-navigasi-menu-issues">12.2 Navigasi Menu Issues</a></h2>
+<h2 id="132-navigasi-menu-issues"><a class="header" href="#132-navigasi-menu-issues">13.2 Navigasi Menu Issues</a></h2>
 <p>Untuk mengelola edisi, navigasikan ke menu sisi kiri dan pilih <strong>“Issues”</strong>. Halaman ini terbagi menjadi dua tab utama:</p>
 <div class="table-wrapper">
 <table>
@@ -1758,7 +1895,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </tbody>
 </table>
 </div>
-<h2 id="123-membuat-edisi-baru-create-issue"><a class="header" href="#123-membuat-edisi-baru-create-issue">12.3 Membuat Edisi Baru (Create Issue)</a></h2>
+<h2 id="133-membuat-edisi-baru-create-issue"><a class="header" href="#133-membuat-edisi-baru-create-issue">13.3 Membuat Edisi Baru (Create Issue)</a></h2>
 <p>Sebelum naskah dapat dijadwalkan, editor harus membuat wadah edisi terlebih dahulu.</p>
 <ol>
 <li>Klik tab <strong>“Future Issues”</strong>.</li>
@@ -1782,7 +1919,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li>Klik <strong>“Save”</strong>. Edisi kini siap untuk menerima naskah yang dijadwalkan.</li>
 </ol>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Formulir Create Issue"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Formulir Create Issue"></span></label></p>
-<h2 id="124-mengelola-daftar-isi-edisi-table-of-contents"><a class="header" href="#124-mengelola-daftar-isi-edisi-table-of-contents">12.4 Mengelola Daftar Isi Edisi (Table of Contents)</a></h2>
+<h2 id="134-mengelola-daftar-isi-edisi-table-of-contents"><a class="header" href="#134-mengelola-daftar-isi-edisi-table-of-contents">13.4 Mengelola Daftar Isi Edisi (Table of Contents)</a></h2>
 <p>Setelah naskah dijadwalkan ke dalam edisi, editor mengatur tata letak presentasi edisi tersebut. Klik ikon panah di sebelah judul edisi untuk mengakses opsi pengelolaan:</p>
 <div class="table-wrapper">
 <table>
@@ -1800,7 +1937,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </div>
 <p>Catatan Penting: Selalu lakukan verifikasi akhir pada metadata edisi sebelum mengklik publikasi. Mengubah metadata edisi setelah artikel terindeks oleh mesin pencari akademik akan menimbulkan inkonsistensi data.</p>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Tampilan pengelolaan Table of Contents edisi"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Tampilan pengelolaan Table of Contents edisi"></span></label></p>
-<h2 id="125-menerbitkan-edisi-publish-issue"><a class="header" href="#125-menerbitkan-edisi-publish-issue">12.5 Menerbitkan Edisi (Publish Issue)</a></h2>
+<h2 id="135-menerbitkan-edisi-publish-issue"><a class="header" href="#135-menerbitkan-edisi-publish-issue">13.5 Menerbitkan Edisi (Publish Issue)</a></h2>
 <p>Setelah seluruh naskah dalam edisi siap dan metadata tervalidasi:</p>
 <ol>
 <li>Pada tab <strong>Future Issues</strong>, temukan edisi yang dimaksud.</li>
@@ -1810,14 +1947,14 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li>Edisi berpindah dari tab <em>Future Issues</em> ke tab <strong>Back Issues</strong> dan seketika tampil di halaman publik jurnal.</li>
 </ol>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Jendela konfirmasi Publish Issue dengan opsi Notify Users"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Jendela konfirmasi Publish Issue dengan opsi Notify Users"></span></label></p>
-<h2 id="126-menetapkan-edisi-terkini-current-issue"><a class="header" href="#126-menetapkan-edisi-terkini-current-issue">12.6 Menetapkan Edisi Terkini (Current Issue)</a></h2>
+<h2 id="136-menetapkan-edisi-terkini-current-issue"><a class="header" href="#136-menetapkan-edisi-terkini-current-issue">13.6 Menetapkan Edisi Terkini (Current Issue)</a></h2>
 <p>OJS 3.3 memungkinkan pengelola menetapkan edisi mana yang ditampilkan paling awal di halaman utama beranda jurnal:</p>
 <ul>
 <li>Klik ikon panah pada edisi yang diinginkan di tab <em>Back Issues</em>.</li>
 <li>Pilih <strong>“Set as Current Issue”</strong>.</li>
 </ul>
 <p>Fitur ini berguna apabila jurnal menerbitkan edisi khusus (<em>special issue</em>) dan ingin menampilkan edisi tersebut sebagai sorotan utama untuk sementara waktu.</p>
-<h2 id="127-fitur-pascapenerbitan-koreksi-dan-pengelolaan"><a class="header" href="#127-fitur-pascapenerbitan-koreksi-dan-pengelolaan">12.7 Fitur Pascapenerbitan: Koreksi dan Pengelolaan</a></h2>
+<h2 id="137-fitur-pascapenerbitan-koreksi-dan-pengelolaan"><a class="header" href="#137-fitur-pascapenerbitan-koreksi-dan-pengelolaan">13.7 Fitur Pascapenerbitan: Koreksi dan Pengelolaan</a></h2>
 <h3 id="unpublish-issue-membatalkan-publikasi"><a class="header" href="#unpublish-issue-membatalkan-publikasi">Unpublish Issue (Membatalkan Publikasi)</a></h3>
 <p>Apabila ditemukan kesalahan fatal, editor dapat menarik edisi dari publikasi:</p>
 <ol>
@@ -1835,7 +1972,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li>Klik <strong>“Save”</strong>.</li>
 </ol>
 <p>Mengubah metadata artikel pascaterbit (terutama tanggal terbit atau daftar nama penulis) dapat merusak sinkronisasi data dengan pengindeks seperti Google Scholar dan Crossref. Lakukan hanya jika benar-benar mendesak.</p>
-<h2 id="128-aktivitas-pascapenerbitan-dan-doi"><a class="header" href="#128-aktivitas-pascapenerbitan-dan-doi">12.8 Aktivitas Pascapenerbitan dan DOI</a></h2>
+<h2 id="138-aktivitas-pascapenerbitan-dan-doi"><a class="header" href="#138-aktivitas-pascapenerbitan-dan-doi">13.8 Aktivitas Pascapenerbitan dan DOI</a></h2>
 <p>Setelah edisi terbit, langkah teknis terpenting berikutnya adalah mendepositkan metadata dan mendaftarkan DOI artikel ke Crossref.</p>
 <h3 id="apa-itu-crossref-dan-doi"><a class="header" href="#apa-itu-crossref-dan-doi">Apa itu Crossref dan DOI?</a></h3>
 <p>Crossref (https://www.crossref.org/) adalah lembaga pendaftaran resmi (<em>registration agency</em>) untuk <em>Digital Object Identifier</em> (DOI) yang paling banyak digunakan untuk publikasi ilmiah. DOI menyediakan tautan permanen (<em>persistent link</em>) ke lokasi artikel di internet. Jika URL jurnal berubah, DOI memastikan artikel tetap dapat ditemukan selama pengelola jurnal memperbarui data URL baru di sistem Crossref.</p>
@@ -1851,7 +1988,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </ol>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Proses deposit DOI ke Crossref"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Proses deposit DOI ke Crossref"></span></label></p>
 <p>Catatan: Untuk materi mengenai strategi promosi dan peningkatan visibilitas artikel secara eksternal (melalui media sosial atau repositori), lihat <strong>Bab 14: Diseminasi dan Peningkatan Visibilitas Jurnal</strong>.</p>
-<h2 id="checklist-bab-12"><a class="header" href="#checklist-bab-12">Checklist Bab 12</a></h2>
+<h2 id="checklist-bab-13"><a class="header" href="#checklist-bab-13">Checklist Bab 13</a></h2>
 <p>Gunakan daftar periksa berikut untuk mengelola edisi jurnal:</p>
 <ul>
 <li><input disabled="" type="checkbox"> Wadah edisi baru (<em>Create Issue</em>) telah dibuat pada tab <em>Future Issues</em>.</li>
@@ -1861,7 +1998,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <li><input disabled="" type="checkbox"> Edisi telah dipublikasikan (<em>Publish Issue</em>) dengan mencentang opsi pemberitahuan kepada pengguna (<em>Notify Users</em>).</li>
 <li><input disabled="" type="checkbox"> Proses deposit DOI ke Crossref telah diselesaikan segera setelah penerbitan.</li>
 </ul>
-<h2 id="ringkasan-bab-11"><a class="header" href="#ringkasan-bab-11">Ringkasan Bab</a></h2>
+<h2 id="ringkasan-bab-12"><a class="header" href="#ringkasan-bab-12">Ringkasan Bab</a></h2>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1878,10 +2015,10 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 </table>
 </div>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="bab-13-optimalisasi-metadata-artikel"><a class="header" href="#bab-13-optimalisasi-metadata-artikel">Bab 13: Optimalisasi Metadata Artikel</a></h1>
+<h1 id="bab-14-optimalisasi-metadata-artikel"><a class="header" href="#bab-14-optimalisasi-metadata-artikel">Bab 14: Optimalisasi Metadata Artikel</a></h1>
 <p>Metadata adalah fondasi dari visibilitas dan kemampuan penemuan artikel (<em>discoverability</em>) di ekosistem penerbitan digital. Metadata yang lengkap, akurat, dan konsisten menentukan seberapa mudah artikel ilmiah dapat ditemukan, disitasi, dan diindeks oleh mesin pencari maupun basis data kepustakaan global.</p>
 <p>Pemeliharaan metadata merupakan tanggung jawab yang diemban bersama antara tim editor dan penulis. Kesalahan pencatatan metadata dapat menimbulkan dampak serius, mulai dari kegagalan distribusi DOI hingga penyematan sitasi yang keliru pada profil Google Scholar penulis.</p>
-<h2 id="131-pengertian-metadata-artikel"><a class="header" href="#131-pengertian-metadata-artikel">13.1 Pengertian Metadata Artikel</a></h2>
+<h2 id="141-pengertian-metadata-artikel"><a class="header" href="#141-pengertian-metadata-artikel">14.1 Pengertian Metadata Artikel</a></h2>
 <p>Metadata secara harfiah merujuk pada data yang menyajikan informasi mengenai data lainnya (Pomerantz, 2015). Metadata tidak sekadar berfungsi mendeskripsikan data mentah; entitas ini turut menggambarkan bagaimana sebuah organisasi mengonseptualisasikan aktivitasnya, aspek kewilayahan, konteks waktu, serta tujuan pendiriannya (Hay, 2006). Menurut Riley (2017), metadata adalah struktur informasi yang dibuat, disimpan, dan dibagikan dengan tujuan memampukan interaksi sistematis untuk ekstraksi pengetahuan.</p>
 <p>Dalam domain publikasi ilmiah, metadata bertindak sebagai representasi komprehensif dari sebuah artikel, yang mencakup nama kontributor, judul utama, abstrak penelitian, kata kunci spesifik, penanggalan penerbitan, hingga pengenal digital (DOI). Guna mendukung kelestarian arsip dan kemudahan pencarian retrospektif, setiap artikel ilmiah harus didukung oleh kerangka metadata yang kaya dan presisi (Rahutomo, Irawati, &amp; Pramudita, 2019).</p>
 <p>Berdasarkan studi Basuki (2000), terdapat tiga elemen fundamental dalam konstruksi metadata sebuah unit informasi:</p>
@@ -1913,7 +2050,7 @@ Tinjau tiga jenis naskah berikut ini. Identifikasi tahapan alur kerja di OJS (mu
 <p>Selain itu, standar <strong>Directory of Open Access Journals (DOAJ)</strong> secara spesifik mengharuskan bahwa metadata artikel jurnal harus dapat diakses secara terbuka, terstruktur, dan disajikan di halaman awal (<em>landing page</em>) dari setiap artikel untuk memfasilitasi interoperabilitas dan perayapan mesin pencari (DOAJ, 2024, https://doaj.org/apply/guide/).</p>
 <p><strong>Studi Kasus:</strong> Sebuah jurnal kesehatan mengeluhkan mengapa sebagian besar artikel terbarunya tidak muncul di Google Scholar, meskipun edisi sebelumnya terindeks dengan baik. Setelah diselidiki, tim editor menemukan bahwa mereka salah menginput nama depan dan belakang penulis pada kolom yang terbalik, dan menyisipkan teks penuh (<em>full-text</em>) ke dalam kolom abstrak. Metadata yang buruk dan format yang tidak terstruktur ini menyebabkan algoritma Google Scholar menolak (<em>reject</em>) artikel tersebut karena dianggap gagal memenuhi standar <code>schema.org/ScholarlyArticle</code>. Kasus ini menegaskan bahwa validitas input metadata berdampak langsung pada kemampuan keterpaparan (<em>discoverability</em>) naskah.</p>
 <p>Catatan Kritis: Praktik mengubah metadata suatu artikel setelah tanggal publikasinya sangat tidak direkomendasikan. Perubahan modifikasi waktu rilis atau nama penulis dapat menimbulkan konflik pembaruan data pada Google Scholar dan sistem pengindeks lainnya. Tim editorial diwajibkan mengonfirmasi seluruh detail metadata kepada penulis jauh sebelum artikel mencapai tahap penerbitan.</p>
-<h2 id="132-konfigurasi-awal-metadata-di-ojs-3"><a class="header" href="#132-konfigurasi-awal-metadata-di-ojs-3">13.2 Konfigurasi Awal Metadata di OJS 3</a></h2>
+<h2 id="142-konfigurasi-awal-metadata-di-ojs-3"><a class="header" href="#142-konfigurasi-awal-metadata-di-ojs-3">14.2 Konfigurasi Awal Metadata di OJS 3</a></h2>
 <p>Sebelum setiap artikel dapat diisi metadatanya, pengelola jurnal diwajibkan menyelesaikan konfigurasi global pada pangkalan sistem:</p>
 <h3 id="a-identitas-dasar-jurnal-masthead"><a class="header" href="#a-identitas-dasar-jurnal-masthead">A. Identitas Dasar Jurnal (Masthead)</a></h3>
 <p>OJS 3.0 hingga 3.3: Akses melalui rute <strong>Settings</strong>, pilih <strong>Journal</strong>, kemudian <strong>Masthead</strong>.
@@ -1930,7 +2067,7 @@ Instruksi: Kelola kompartemen penerbitan jurnal, misalnya kategori Artikel Penel
 <h3 id="e-integrasi-pengaya-plugins-tambahan"><a class="header" href="#e-integrasi-pengaya-plugins-tambahan">E. Integrasi Pengaya (Plugins) Tambahan</a></h3>
 <p><strong>Pengaya Pendanaan (Funding Plugin)</strong>: Memfasilitasi pendaftaran dana hibah penelitian secara transparan. Diaktifkan melalui menu Plugins di Website Settings.
 <strong>Pengaya Crossref Reference Linking</strong>: Mensinkronisasikan daftar referensi dengan pangkalan data DOI global secara otonom.</p>
-<h2 id="133-standar-struktur-metadata-artikel-ojs-3"><a class="header" href="#133-standar-struktur-metadata-artikel-ojs-3">13.3 Standar Struktur Metadata Artikel OJS 3</a></h2>
+<h2 id="143-standar-struktur-metadata-artikel-ojs-3"><a class="header" href="#143-standar-struktur-metadata-artikel-ojs-3">14.3 Standar Struktur Metadata Artikel OJS 3</a></h2>
 <p>Struktur metadata di dalam naskah terbagi atas beberapa kelompok inti. Berikut merupakan pedoman teknis pengelolaan masing-masing kelompok:</p>
 <h3 id="a-judul-dan-abstrak-title-and-abstract"><a class="header" href="#a-judul-dan-abstrak-title-and-abstract">A. Judul dan Abstrak (Title and Abstract)</a></h3>
 <p>Elemen data wajib meliputi Awalan (<em>Prefix</em>), Judul Utama (<em>Title</em>), dan Teks Abstrak (<em>Abstract</em>).</p>
@@ -1999,7 +2136,7 @@ Otorisasi akun dan setoran (<em>deposit</em>) XML ke sistem Crossref dieksekusi 
 </ul>
 <h3 id="h-penempatan-edisi-penerbitan-issue"><a class="header" href="#h-penempatan-edisi-penerbitan-issue">H. Penempatan Edisi Penerbitan (Issue)</a></h3>
 <p>Menu administratif penataan metadata tingkat lanjut di mana editor menyematkan artikel ke dalam kerangka edisi tertentu, menyematkan penomoran halaman yang utuh (<em>Pages</em>), menentukan gambar sampul artikel individual (apabila diimplementasikan), serta memvalidasi atribut penanggalan tanggal publikasi akhir artikel.</p>
-<h2 id="134-teknik-penyuntingan-metadata-pra-terbit"><a class="header" href="#134-teknik-penyuntingan-metadata-pra-terbit">13.4 Teknik Penyuntingan Metadata Pra-Terbit</a></h2>
+<h2 id="144-teknik-penyuntingan-metadata-pra-terbit"><a class="header" href="#144-teknik-penyuntingan-metadata-pra-terbit">14.4 Teknik Penyuntingan Metadata Pra-Terbit</a></h2>
 <p>Siklus pengeditan baku sebelum status publikasi aktif dalam OJS 3.3:</p>
 <ol>
 <li>Masuk ke pangkalan sistem dengan otorisasi Editor.</li>
@@ -2009,7 +2146,7 @@ Otorisasi akun dan setoran (<em>deposit</em>) XML ke sistem Crossref dieksekusi 
 <li>Ganti nilai-nilai metadata pada porsi sub-tab yang dikehendaki.</li>
 <li>Patenkan setiap perubahan melalui tombol <strong>Save</strong> sebelum berpindah tabulasi.</li>
 </ol>
-<h2 id="135-teknik-penyuntingan-metadata-pasca-terbit"><a class="header" href="#135-teknik-penyuntingan-metadata-pasca-terbit">13.5 Teknik Penyuntingan Metadata Pasca-Terbit</a></h2>
+<h2 id="145-teknik-penyuntingan-metadata-pasca-terbit"><a class="header" href="#145-teknik-penyuntingan-metadata-pasca-terbit">14.5 Teknik Penyuntingan Metadata Pasca-Terbit</a></h2>
 <p>Ketentuan Prosedural OJS 3.3: Berbeda dari versi pendahulunya, sistem OJS modern memberikan perlindungan ketat pada artikel yang sudah diedarkan. Memodifikasi artikel yang telah rilis <strong>memerlukan intervensi prosedur penarikan atau unpublish</strong> secara sementara.</p>
 <p>Langkah Eksekusi:</p>
 <ol>
@@ -2057,20 +2194,20 @@ Otorisasi akun dan setoran (<em>deposit</em>) XML ke sistem Crossref dieksekusi 
 <li><input disabled="" type="checkbox"> Edisi penerbitan (<em>Issue</em>) serta kompartemen (<em>Section</em>) terkait telah dideklarasikan secara konkrit.</li>
 <li><input disabled="" type="checkbox"> Lembar penomoran angka (<em>Pages</em>) definitif tercantum dengan komplit.</li>
 </ul>
-<h2 id="ringkasan-bab-12"><a class="header" href="#ringkasan-bab-12">Ringkasan Bab</a></h2>
+<h2 id="ringkasan-bab-13"><a class="header" href="#ringkasan-bab-13">Ringkasan Bab</a></h2>
 <p>Implementasi arsitektur metadata yang komprehensif adalah wujud jaminan eksistensi dan integritas jurnal di alam perayapan digital tingkat global. Pengisian seluk beluk atribut meta data melampaui formalitas teknis; hal tersebut mendefinisikan batas antara artikel yang menghilang tertelan algoritma dan artikel yang meraih reputasi rujukan (<em>citation impact</em>) optimal. Doktrin utama pengelolaan: Verifikasi final selalu dilakukan sebelum tuas rilis ditekan. Evaluasi mitigasi awal selalu lebih bernilai ketimbang operasi koreksi sengketa kepustakaan pascapublikasi.</p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="bab-14-diseminasi-dan-peningkatan-visibilitas-jurnal"><a class="header" href="#bab-14-diseminasi-dan-peningkatan-visibilitas-jurnal">Bab 14: Diseminasi dan Peningkatan Visibilitas Jurnal</a></h1>
+<h1 id="bab-15-diseminasi-dan-peningkatan-visibilitas-jurnal"><a class="header" href="#bab-15-diseminasi-dan-peningkatan-visibilitas-jurnal">Bab 15: Diseminasi dan Peningkatan Visibilitas Jurnal</a></h1>
 <p>Penerbitan suatu edisi jurnal bukanlah akhir dari tanggung jawab tim editorial, melainkan awal dari fase krusial berikutnya: diseminasi. Diseminasi adalah upaya proaktif untuk menyebarluaskan hasil penelitian agar dapat diakses, dibaca, dan disitasi oleh komunitas akademik yang lebih luas. Tanpa strategi diseminasi yang efektif, artikel berkualitas tinggi sekalipun berisiko tidak mendapatkan pengakuan dan dampak (<em>impact</em>) yang sepadan.</p>
 <p>Bab ini membahas strategi komprehensif untuk meningkatkan visibilitas jurnal melalui pengindeksan, pemanfaatan media sosial, serta optimalisasi fitur bawaan OJS 3.3.</p>
-<h2 id="141-konsep-diseminasi-hasil-penelitian"><a class="header" href="#141-konsep-diseminasi-hasil-penelitian">14.1 Konsep Diseminasi Hasil Penelitian</a></h2>
+<h2 id="151-konsep-diseminasi-hasil-penelitian"><a class="header" href="#151-konsep-diseminasi-hasil-penelitian">15.1 Konsep Diseminasi Hasil Penelitian</a></h2>
 <p>Dalam era digital, jangkauan sebuah jurnal sangat bergantung pada kemampuan artikel-artikelnya ditemukan (<em>discoverability</em>) di internet. Diseminasi bertujuan untuk menjembatani kesenjangan antara publikasi dan pembaca potensial. Pengelola jurnal harus mengadopsi pola pikir bahwa mereka bukan sekadar “penerbit”, melainkan “promotor” pengetahuan.</p>
 <p>Upaya peningkatan visibilitas terbagi menjadi dua pilar:</p>
 <ol>
 <li><strong>Visibilitas Mesin</strong>: Memastikan artikel dapat dibaca dan diindeks dengan benar oleh algoritma mesin pencari (<em>crawler</em>).</li>
 <li><strong>Visibilitas Manusia</strong>: Mempromosikan artikel langsung ke komunitas target melalui saluran komunikasi profesional.</li>
 </ol>
-<h2 id="142-strategi-pengindeksan-jurnal"><a class="header" href="#142-strategi-pengindeksan-jurnal">14.2 Strategi Pengindeksan Jurnal</a></h2>
+<h2 id="152-strategi-pengindeksan-jurnal"><a class="header" href="#152-strategi-pengindeksan-jurnal">15.2 Strategi Pengindeksan Jurnal</a></h2>
 <p>Pengindeksan adalah mekanisme utama untuk meningkatkan visibilitas mesin. Jurnal yang terindeks dalam pangkalan data terkemuka secara otomatis akan lebih mudah ditemukan oleh para peneliti di seluruh dunia.</p>
 <p>Beberapa lembaga pengindeks prioritas yang harus ditargetkan oleh pengelola jurnal:</p>
 <ul>
@@ -2080,7 +2217,7 @@ Otorisasi akun dan setoran (<em>deposit</em>) XML ke sistem Crossref dieksekusi 
 <li><strong>Garuda (Garba Rujukan Digital)</strong>: Portal penelusuran artikel ilmiah Indonesia yang sangat esensial untuk meningkatkan rujukan lokal.</li>
 <li><strong>Dimensions</strong>: Basis data sitasi global yang mengintegrasikan publikasi, hibah riset, dan paten. Pengindeksan di sini meningkatkan keterpaparan jurnal ke komunitas internasional.</li>
 </ul>
-<h2 id="143-promosi-melalui-media-sosial-akademik"><a class="header" href="#143-promosi-melalui-media-sosial-akademik">14.3 Promosi Melalui Media Sosial Akademik</a></h2>
+<h2 id="153-promosi-melalui-media-sosial-akademik"><a class="header" href="#153-promosi-melalui-media-sosial-akademik">15.3 Promosi Melalui Media Sosial Akademik</a></h2>
 <p>Selain mengandalkan pengindeks, tim editorial perlu membangun kehadiran (<em>presence</em>) di platform tempat para peneliti berkumpul.</p>
 <h3 id="jejaring-akademik"><a class="header" href="#jejaring-akademik">Jejaring Akademik</a></h3>
 <ul>
@@ -2093,7 +2230,7 @@ Otorisasi akun dan setoran (<em>deposit</em>) XML ke sistem Crossref dieksekusi 
 <li>Buat ringkasan infografis (<em>graphical abstract</em>) dari artikel unggulan.</li>
 <li>Selalu sertakan tautan permanen (DOI) alih-alih URL biasa dalam setiap unggahan promosi.</li>
 </ul>
-<h2 id="144-menggunakan-fitur-announcements-di-ojs"><a class="header" href="#144-menggunakan-fitur-announcements-di-ojs">14.4 Menggunakan Fitur Announcements di OJS</a></h2>
+<h2 id="154-menggunakan-fitur-announcements-di-ojs"><a class="header" href="#154-menggunakan-fitur-announcements-di-ojs">15.4 Menggunakan Fitur Announcements di OJS</a></h2>
 <p>OJS 3.3 menyediakan fitur pengumuman (<em>Announcements</em>) yang sangat efektif untuk notifikasi internal pembaca setia jurnal.</p>
 <p>Cara memanfaatkannya:</p>
 <ol>
@@ -2102,13 +2239,13 @@ Otorisasi akun dan setoran (<em>deposit</em>) XML ke sistem Crossref dieksekusi 
 <li>Pengumuman ini akan terpampang di beranda depan jurnal dan dapat didistribusikan melalui sindikasi umpan RSS (<em>RSS feed</em>).</li>
 </ol>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Fitur Pengumuman di beranda OJS"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Fitur Pengumuman di beranda OJS"></span></label></p>
-<h2 id="145-peningkatan-dampak-impact"><a class="header" href="#145-peningkatan-dampak-impact">14.5 Peningkatan Dampak (Impact)</a></h2>
+<h2 id="155-peningkatan-dampak-impact"><a class="header" href="#155-peningkatan-dampak-impact">15.5 Peningkatan Dampak (Impact)</a></h2>
 <p>Tujuan akhir dari visibilitas adalah peningkatan sitasi atau dampak riset. Praktik berikut sangat disarankan:</p>
 <ul>
 <li><strong>Edukasi Penulis</strong>: Kirimkan surel kepada penulis sesaat setelah artikel mereka diterbitkan. Ucapkan selamat dan berikan instruksi singkat tentang cara mereka dapat mempromosikan artikelnya sendiri menggunakan tautan DOI.</li>
 <li><strong>Konsistensi DOI</strong>: Pastikan bahwa pengutipan referensi di jurnal Anda selalu mencantumkan tautan DOI yang aktif. Hal ini membantu menumbuhkan ekosistem sitasi silang (<em>cross-referencing</em>) yang sehat (Crossref, 2024).</li>
 </ul>
-<h2 id="146-studi-kasus-meningkatkan-sitasi-setelah-memperbaiki-visibilitas"><a class="header" href="#146-studi-kasus-meningkatkan-sitasi-setelah-memperbaiki-visibilitas">14.6 Studi Kasus: Meningkatkan Sitasi Setelah Memperbaiki Visibilitas</a></h2>
+<h2 id="156-studi-kasus-meningkatkan-sitasi-setelah-memperbaiki-visibilitas"><a class="header" href="#156-studi-kasus-meningkatkan-sitasi-setelah-memperbaiki-visibilitas">15.6 Studi Kasus: Meningkatkan Sitasi Setelah Memperbaiki Visibilitas</a></h2>
 <p><strong>Studi Kasus:</strong> Sebuah jurnal ilmu sosial yang beroperasi di Indonesia mengalami stagnasi jumlah sitasi selama tiga tahun berturut-turut meskipun kualitas artikel yang diterbitkan sangat baik. Tim editorial kemudian mengimplementasikan tiga intervensi:</p>
 <ol>
 <li>Mereka memperbaiki kelengkapan metadata XML JATS untuk memenuhi standar DOAJ.</li>
@@ -2116,7 +2253,7 @@ Otorisasi akun dan setoran (<em>deposit</em>) XML ke sistem Crossref dieksekusi 
 <li>Tim editorial secara rutin mencuitkan (<em>tweet</em>) ringkasan bergambar dari setiap artikel unggulan dengan menyematkan DOI.</li>
 </ol>
 <p>Hasilnya, dalam kurun waktu 18 bulan, jurnal tersebut berhasil lolos akreditasi SINTA tingkat atas, dan metrik kutipannya di Google Scholar melonjak hingga 300% berkat kombinasi keterbacaan oleh mesin pengindeks dan penyebaran aktif melalui jejaring akademisi.</p>
-<h2 id="checklist-bab-14"><a class="header" href="#checklist-bab-14">Checklist Bab 14</a></h2>
+<h2 id="checklist-bab-15"><a class="header" href="#checklist-bab-15">Checklist Bab 15</a></h2>
 <ul>
 <li><input disabled="" type="checkbox"> Jurnal telah didaftarkan ke pengindeks basis (minimal Google Scholar dan Garuda).</li>
 <li><input disabled="" type="checkbox"> Fitur <em>Announcements</em> diaktifkan dan digunakan secara rutin saat rilis edisi baru.</li>
@@ -2124,7 +2261,7 @@ Otorisasi akun dan setoran (<em>deposit</em>) XML ke sistem Crossref dieksekusi 
 <li><input disabled="" type="checkbox"> Tautan DOI selalu digunakan pada seluruh kampanye media sosial atau korespondensi surat elektronik.</li>
 <li><input disabled="" type="checkbox"> Tim pengelola memiliki akun media sosial jurnal atau jejaring akademik untuk menyebarluaskan ringkasan artikel.</li>
 </ul>
-<h2 id="ringkasan-bab-13"><a class="header" href="#ringkasan-bab-13">Ringkasan Bab</a></h2>
+<h2 id="ringkasan-bab-14"><a class="header" href="#ringkasan-bab-14">Ringkasan Bab</a></h2>
 <p>Upaya diseminasi adalah katalis yang mengubah artikel ilmiah dari sekadar “tersedia” menjadi “terbaca dan disitasi”. Kolaborasi antara metadata yang dirancang untuk keterbacaan algoritma pengindeks, ditambah dengan strategi kehumasan akademik (melalui media sosial, <em>Announcements</em>, dan advokasi penulis mandiri), membangun sebuah ekosistem yang melestarikan reputasi dan dampak jurnal secara berkelanjutan.</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="glosarium"><a class="header" href="#glosarium">Glosarium</a></h1>
