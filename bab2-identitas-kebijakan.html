@@ -37,10 +37,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-4bcd7828.js";
+            window.path_to_searchindex_js = "searchindex-39e0f949.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-95e609ce.js"></script>
+        <script src="toc-9badc886.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -178,17 +178,27 @@
                     <main>
                         <h1 id="bab-2-pengaturan-identitas-dan-kebijakan-dasar-jurnal"><a class="header" href="#bab-2-pengaturan-identitas-dan-kebijakan-dasar-jurnal">Bab 2: Pengaturan Identitas dan Kebijakan Dasar Jurnal</a></h1>
 <blockquote>
-<p><em>Banyak jurnal ditolak indeksasi DOAJ dan SINTA bukan karena kualitas artikelnya buruk, melainkan karena informasi identitas, fokus, dan kebijakan akses terbukanya dibiarkan ambigu. Tanpa kebijakan yang jelas di tahap awal ini, pengelola jurnal, penulis, dan pembaca akan terjebak dalam masalah kepemilikan dan hak distribusi di kemudian hari.</em></p>
+<p><strong>Pemantik Bab</strong>
+Banyak jurnal ditolak secara tragis oleh indeksator bergengsi seperti DOAJ dan SINTA bukan karena kualitas artikelnya buruk, melainkan karena halaman identitas, fokus, dan kebijakan akses terbukanya dibiarkan kosong atau ambigu. Tanpa kebijakan yang tegas di tahap awal ini, pengelola jurnal, penulis, dan pembaca akan terjebak dalam masalah kepemilikan hukum di kemudian hari.</p>
 </blockquote>
-<p>Bab ini secara khusus disusun bagi pengelola jurnal yang kerap menghadapi kesulitan teknis maupun konseptual dalam mendefinisikan kebijakan jurnal mereka di OJS 3.3. Mengisi pengaturan jurnal bukanlah sekadar formalitas administratif, melainkan proses mendeklarasikan standar keilmuan dan etika kepada komunitas akademik global.</p>
+<p>Untuk menghindari jebakan fatal tersebut, bab ini secara khusus disusun bagi pengelola jurnal yang kerap kebingungan menerjemahkan SK ISSN ke dalam formulir digital. Mengisi pengaturan jurnal bukanlah sekadar formalitas mengeklik tombol <strong>Save</strong>; ini adalah proses mendeklarasikan konstitusi keilmuan jurnal Anda kepada dunia. Mari kita mulai proses eksekusinya.</p>
 <h2 id="21-elemen-identitas-utama-jurnal-journal-identity"><a class="header" href="#21-elemen-identitas-utama-jurnal-journal-identity">2.1 Elemen Identitas Utama Jurnal (Journal Identity)</a></h2>
-<p>Identitas jurnal adalah wajah pertama yang dilihat oleh pembaca, penulis, dan lembaga pengindeks. Pengaturan ini dapat diakses pada OJS 3.3 melalui menu <strong>Settings &gt; Journal &gt; Masthead</strong>. Elemen yang wajib dikonfigurasi meliputi:</p>
-<ul>
-<li><strong>Nama Jurnal</strong>: Nama yang dicantumkan di OJS harus persis sama dengan kepanjangan nama yang terdaftar di surat keputusan (SK) ISSN. <strong>Catatan Kritis</strong>: Pengelola jurnal di Indonesia sering keliru menjadikan singkatan/akronim (misal: “Jurnal ABCD”) sebagai nama utama jurnal. Padahal, portal ISSN memiliki kolom tersendiri untuk akronim. Gunakan nama lengkap sebagai nama utama, karena Pusat Nasional ISSN kini semakin ketat menertibkan kekeliruan ini.</li>
-<li><strong>Singkatan dan Inisial</strong>: Masukkan akronim resmi jurnal Anda di sini. Gunakan inisial yang konsisten, karena OJS akan menggunakannya sebagai pengenal tautan situs.</li>
-<li><strong>Penerbit (Publisher)</strong>: Tuliskan nama institusi, fakultas, atau himpunan profesi yang secara legal menaungi jurnal tersebut.</li>
-<li><strong>ISSN</strong>: Cantumkan e-ISSN (elektronik) dan p-ISSN (cetak) jika ada. Jurnal diperkenankan hanya memiliki e-ISSN jika pengelola memang murni menerbitkan jurnal secara daring (<em>online</em>). Namun, berhati-hatilah karena beberapa perguruan tinggi di Indonesia masih mewajibkan penyerahan versi cetak fisik untuk syarat administrasi atau akreditasi internal.</li>
-</ul>
+<p>Identitas jurnal adalah wajah pertama yang dilihat oleh pembaca dan mesin pengindeks. Berbeda dengan profil media sosial yang bisa diubah sesuka hati, identitas jurnal harus berpegang teguh pada dokumen legalitas.</p>
+<p><strong>Jalur Eksekusi Cepat: Mengisi Masthead</strong></p>
+<ol>
+<li>Masuk ke dasbor OJS sebagai <strong>Journal Manager</strong>.</li>
+<li>Pada panel kiri, navigasikan ke menu <strong>Settings</strong> &gt; <strong>Journal</strong> &gt; <strong>Masthead</strong>.</li>
+<li>Isi kolom <strong>Journal name</strong> agar persis sama dengan nama yang terdaftar di SK ISSN (jangan gunakan akronim di kolom ini).</li>
+<li>Masukkan akronim di kolom <strong>Journal initials</strong> (contoh: JAB).</li>
+<li>Pada bagian <strong>Publisher</strong>, tuliskan nama fakultas atau himpunan profesi penjamin mutu jurnal.</li>
+<li>Cantumkan e-ISSN di kolom yang disediakan.</li>
+<li>Klik tombol <strong>Save</strong> di sudut kanan bawah.</li>
+</ol>
+<blockquote>
+<p><strong>Troubleshooting: Tombol Save Tidak Merespons</strong></p>
+<p><strong>Masalah</strong>: Anda sudah mengeklik tombol <strong>Save</strong>, namun layar tidak memuat ulang (<em>loading</em>) dan perubahan tidak tersimpan.</p>
+<p><strong>Solusi Cepat</strong>: Ini hampir selalu terjadi karena Anda lupa mengisi kolom yang ditandai dengan bintang merah (<em>asterisk</em>). OJS versi 3.3 terkadang tidak memberikan peringatan eror mencolok jika isian wajib pada tab bahasa lain (jika jurnal Anda dwibahasa) dibiarkan kosong. Gulir (<em>scroll</em>) ke atas, cari ikon bendera bahasa (misal: Indonesia dan English), dan pastikan kolom “Nama Jurnal” di kedua tab bahasa tersebut sudah terisi.</p>
+</blockquote>
 <h2 id="22-fokus-dan-ruang-lingkup-focus-and-scope"><a class="header" href="#22-fokus-dan-ruang-lingkup-focus-and-scope">2.2 Fokus dan Ruang Lingkup (<em>Focus and Scope</em>)</a></h2>
 <p>Mendefinisikan <em>Focus and Scope</em> secara eksplisit adalah langkah krusial untuk mencegah jurnal Anda dianggap sebagai jurnal “gado-gado” yang menerima topik apa saja. Jurnal dengan cakupan yang terlalu luas sering kali kesulitan menembus indeksasi bereputasi karena dianggap tidak memiliki batasan keilmuan yang jelas.</p>
 <p><strong>Cara Merumuskan Focus and Scope yang Efektif:</strong></p>
@@ -242,7 +252,7 @@ Jika artikel tetap milik penulis, bagaimana caranya agar dunia tahu apa yang bol
 <li><strong>Informasi Identitas Permanen (ISSN)</strong>: Tuliskan kembali nomor e-ISSN (dan p-ISSN jika ada) di halaman ini. Sangat disarankan untuk memberikan tautan hidup (<em>hyperlink</em>) pada nomor tersebut yang mengarah langsung ke laman validasi portal ISSN nasional. Ini akan sangat memudahkan asesor atau lembaga pengindeks memverifikasi legalitas jurnal Anda secara instan.</li>
 </ol>
 <h2 id="26-panduan-penulis-author-guidelines-dan-template-naskah"><a class="header" href="#26-panduan-penulis-author-guidelines-dan-template-naskah">2.6 Panduan Penulis (<em>Author Guidelines</em>) dan <em>Template</em> Naskah</a></h2>
-<p>Banyak pengelola jurnal membuat kesalahan dengan mengira bahwa <em>Author Guidelines</em> yang baik adalah yang memaksa penulis mengirim naskah dalam format tata letak (<em>layout</em>) final jurnal—lengkap dengan dua kolom, format kolom yang rumit, dan <em>header/footer</em> khusus.</p>
+<p>Banyak pengelola jurnal membuat kesalahan dengan mengira bahwa <em>Author Guidelines</em> yang baik adalah yang memaksa penulis mengirim naskah dalam format tata letak (<em>layout</em>) final jurnal, lengkap dengan dua kolom, format kolom yang rumit, dan <em>header/footer</em> khusus.</p>
 <p><strong>Mengapa Template Penulis Harus Sangat Sederhana?</strong>
 Memaksa penulis menggunakan <em>template final layout</em> justru akan <strong>menyusahkan tim editorial Anda sendiri</strong>. Proses penyuntingan naskah tahap awal (<em>Copyediting</em>) berfokus pada perbaikan substansi, ejaan, dan konsistensi tata bahasa; bukan pada desain visual.</p>
 <p>Jika editor harus melakukan modifikasi dan <em>track changes</em> pada teks di dalam sebuah <em>template layout</em> yang terformat rapat, desain teks akan rusak, dan staf <em>layouter</em> di tahap produksi (<em>Typesetting</em>) harus bekerja dua kali untuk menyusun ulang teks yang hancur tersebut. Prinsip utama pada tahap penerimaan awal adalah: <em>“Boring is better”</em> (semakin polos, semakin baik).</p>

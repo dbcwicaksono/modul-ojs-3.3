@@ -37,10 +37,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-4bcd7828.js";
+            window.path_to_searchindex_js = "searchindex-39e0f949.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-95e609ce.js"></script>
+        <script src="toc-9badc886.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -177,6 +177,10 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="bab-13-manajemen-edisi-dan-pasca-penerbitan"><a class="header" href="#bab-13-manajemen-edisi-dan-pasca-penerbitan">Bab 13: Manajemen Edisi dan Pasca Penerbitan</a></h1>
+<blockquote>
+<p><strong>Pemantik Bab</strong>
+Anda memiliki sepuluh artikel matang yang siap rilis. Namun, sistem OJS tidak bekerja seperti blog biasa di mana setiap artikel diterbitkan satu per satu; OJS menggunakan konsep “wadah” yang disebut Edisi (<em>Issue</em>). Menjadwalkan artikel tanpa memasukkannya ke dalam edisi ibarat menumpuk barang di gudang tanpa etalase. Bab ini memandu Anda merakit etalase tersebut, menerbitkannya, hingga menangani krisis jika terjadi kesalahan pascapublikasi yang mengharuskan Anda menarik kembali edisi (<em>unpublish</em>).</p>
+</blockquote>
 <p>Manajemen edisi adalah tahap puncak dari seluruh rangkaian alur kerja editorial di OJS 3.3. Setelah naskah melewati tahap <em>Submission</em>, <em>Review</em>, <em>Copyediting</em>, dan <em>Production</em>, langkah terakhir adalah menggabungkan artikel-artikel yang telah siap ke dalam sebuah edisi dan menerbitkannya kepada publik.</p>
 <h2 id="131-konsep-dasar-hubungan-naskah-dan-edisi"><a class="header" href="#131-konsep-dasar-hubungan-naskah-dan-edisi">13.1 Konsep Dasar: Hubungan Naskah dan Edisi</a></h2>
 <p>Sebelum memulai manajemen edisi, pengelola harus memahami satu konsep kunci: sebuah naskah hanya akan muncul dalam sistem manajemen edisi apabila telah dilakukan tindakan penjadwalan (<em>Scheduling</em>) pada akhir tahap <em>Production</em>. Tanpa proses penjadwalan tersebut, naskah tidak akan tersedia untuk dimasukkan ke dalam edisi mana pun.</p>
@@ -195,27 +199,19 @@
 </div>
 <h2 id="133-membuat-edisi-baru-create-issue"><a class="header" href="#133-membuat-edisi-baru-create-issue">13.3 Membuat Edisi Baru (Create Issue)</a></h2>
 <p>Sebelum naskah dapat dijadwalkan, editor harus membuat wadah edisi terlebih dahulu.</p>
+<p><strong>Jalur Eksekusi Cepat: Membuat Edisi</strong></p>
 <ol>
-<li>Klik tab <strong>“Future Issues”</strong>.</li>
-<li>Klik tombol <strong>“Create Issue”</strong>.</li>
-<li>Isi formulir pembuatan edisi:</li>
+<li>Klik tab <strong>Future Issues</strong>.</li>
+<li>Klik tombol <strong>Create Issue</strong>.</li>
+<li>Isi formulir identifikasi (Volume, Nomor, Tahun).</li>
+<li>(Opsional) Tambahkan judul khusus, deskripsi, atau unggah <strong>Cover Image</strong>.</li>
+<li>Klik <strong>Save</strong>. Edisi kini siap untuk menerima naskah yang dijadwalkan.</li>
 </ol>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr><th>Komponen</th><th>Instruksi</th></tr>
-</thead>
-<tbody>
-<tr><td><strong>Identifikasi</strong></td><td>Masukkan rentang Volume, Nomor, dan Tahun. Jika jurnal tidak menggunakan salah satu komponen ini, biarkan kolom kosong dan hapus centang pada opsi tersebut.</td></tr>
-<tr><td><strong>Deskripsi</strong></td><td>Tambahkan narasi pengantar atau editorial edisi (opsional).</td></tr>
-<tr><td><strong>Cover Image</strong></td><td>Unggah gambar sampul khusus untuk edisi ini jika diperlukan.</td></tr>
-<tr><td><strong>URL Path</strong></td><td>Opsi untuk membuat tautan khusus, misalnya <code>v1n1-2025</code>.</td></tr>
-</tbody>
-</table>
-</div>
-<ol start="4">
-<li>Klik <strong>“Save”</strong>. Edisi kini siap untuk menerima naskah yang dijadwalkan.</li>
-</ol>
+<blockquote>
+<p><strong>Troubleshooting: Penomoran Edisi Tidak Urut</strong></p>
+<p><strong>Masalah</strong>: Anda secara tidak sengaja membuat dua edisi dengan Volume dan Nomor yang sama (misal: Vol 1 No 1), dan sistem OJS menjadi bingung saat menampilkan edisi berjalan (<em>Current Issue</em>).</p>
+<p><strong>Solusi Cepat</strong>: OJS mengizinkan duplikasi penomoran jika tidak menggunakan <em>URL Path</em> khusus. Untuk memperbaikinya, masuk ke <strong>Future Issues</strong>, klik ikon panah di edisi yang salah, pilih <strong>Edit</strong>, dan ubah nomornya. Pastikan Anda memeriksa ulang penomoran halaman (<em>Pages</em>) di setiap artikel di dalam edisi tersebut.</p>
+</blockquote>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Formulir Create Issue"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Formulir Create Issue"></span></label></p>
 <h2 id="134-mengelola-daftar-isi-edisi-table-of-contents"><a class="header" href="#134-mengelola-daftar-isi-edisi-table-of-contents">13.4 Mengelola Daftar Isi Edisi (Table of Contents)</a></h2>
 <p>Setelah naskah dijadwalkan ke dalam edisi, editor mengatur tata letak presentasi edisi tersebut. Klik ikon panah di sebelah judul edisi untuk mengakses opsi pengelolaan:</p>
@@ -237,12 +233,13 @@
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Tampilan pengelolaan Table of Contents edisi"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Tampilan pengelolaan Table of Contents edisi"></span></label></p>
 <h2 id="135-menerbitkan-edisi-publish-issue"><a class="header" href="#135-menerbitkan-edisi-publish-issue">13.5 Menerbitkan Edisi (Publish Issue)</a></h2>
 <p>Setelah seluruh naskah dalam edisi siap dan metadata tervalidasi:</p>
+<p><strong>Jalur Eksekusi Cepat: Memublikasikan Edisi</strong></p>
 <ol>
 <li>Pada tab <strong>Future Issues</strong>, temukan edisi yang dimaksud.</li>
-<li>Klik ikon panah dan pilih <strong>“Publish Issue”</strong>.</li>
-<li>Jendela konfirmasi akan muncul dengan opsi <strong>Notify Users</strong>. Centang opsi ini untuk mengirimkan surel pemberitahuan otomatis kepada seluruh pengguna terdaftar bahwa edisi terbaru telah terbit. Ini merupakan strategi dasar untuk meningkatkan jumlah pembaca.</li>
-<li>Klik <strong>“Confirm”</strong> untuk menyelesaikan proses publikasi.</li>
-<li>Edisi berpindah dari tab <em>Future Issues</em> ke tab <strong>Back Issues</strong> dan seketika tampil di halaman publik jurnal.</li>
+<li>Klik ikon panah dan pilih <strong>Publish Issue</strong>.</li>
+<li>Centang opsi <strong>Notify Users</strong> pada pop-up konfirmasi (wajib untuk visibilitas).</li>
+<li>Klik <strong>Confirm</strong> untuk menyelesaikan proses publikasi.</li>
+<li>Edisi otomatis berpindah ke tab <strong>Back Issues</strong> dan langsung tampil di halaman publik jurnal.</li>
 </ol>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Jendela konfirmasi Publish Issue dengan opsi Notify Users"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Jendela konfirmasi Publish Issue dengan opsi Notify Users"></span></label></p>
 <h2 id="136-menetapkan-edisi-terkini-current-issue"><a class="header" href="#136-menetapkan-edisi-terkini-current-issue">13.6 Menetapkan Edisi Terkini (Current Issue)</a></h2>
@@ -254,13 +251,16 @@
 <p>Fitur ini berguna apabila jurnal menerbitkan edisi khusus (<em>special issue</em>) dan ingin menampilkan edisi tersebut sebagai sorotan utama untuk sementara waktu.</p>
 <h2 id="137-fitur-pascapenerbitan-koreksi-dan-pengelolaan"><a class="header" href="#137-fitur-pascapenerbitan-koreksi-dan-pengelolaan">13.7 Fitur Pascapenerbitan: Koreksi dan Pengelolaan</a></h2>
 <h3 id="unpublish-issue-membatalkan-publikasi"><a class="header" href="#unpublish-issue-membatalkan-publikasi">Unpublish Issue (Membatalkan Publikasi)</a></h3>
-<p>Apabila ditemukan kesalahan fatal, editor dapat menarik edisi dari publikasi:</p>
+<p>Apabila ditemukan kesalahan fatal, editor dapat menarik edisi dari publikasi.</p>
+<p><strong>Jalur Eksekusi Cepat: Membatalkan Publikasi Edisi</strong></p>
 <ol>
-<li>Di tab <em>Back Issues</em>, klik ikon panah pada edisi terkait.</li>
-<li>Pilih <strong>“Unpublish Issue”</strong>.</li>
+<li>Di tab <strong>Back Issues</strong>, klik ikon panah pada edisi terkait.</li>
+<li>Pilih <strong>Unpublish Issue</strong>.</li>
 <li>Edisi kembali menjadi <em>Future Issue</em> dan tidak lagi tampil di halaman publik.</li>
 </ol>
-<p>Perhatian: Fitur ini harus digunakan dengan sangat hati-hati. Membatalkan publikasi pada edisi yang sudah terbit lama dapat merusak tautan eksternal seperti <em>Digital Object Identifier</em> (DOI) yang sudah didaftarkan dan memengaruhi metrik sitasi.</p>
+<blockquote>
+<p><strong>Catatan Kritis</strong>: Fitur <em>Unpublish</em> harus digunakan dengan sangat hati-hati. Membatalkan publikasi pada edisi yang sudah terbit lama dapat merusak tautan eksternal (termasuk DOI) dan menghilangkan akses pembaca secara tiba-tiba. Lakukan hanya dalam keadaan darurat absolut (misal: pelanggaran etika publikasi massal).</p>
+</blockquote>
 <h3 id="mengedit-metadata-artikel-yang-terbit"><a class="header" href="#mengedit-metadata-artikel-yang-terbit">Mengedit Metadata Artikel yang Terbit</a></h3>
 <p>Jika diperlukan koreksi pada metadata artikel setelah terbit:</p>
 <ol>
@@ -285,7 +285,18 @@
 <li>Klik tombol ekspor atau register sesuai konfigurasi sistem jurnal Anda.</li>
 </ol>
 <p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Proses deposit DOI ke Crossref"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Proses deposit DOI ke Crossref"></span></label></p>
-<p>Catatan: Untuk materi mengenai strategi promosi dan peningkatan visibilitas artikel secara eksternal (melalui media sosial atau repositori), lihat <strong>Bab 14: Diseminasi dan Peningkatan Visibilitas Jurnal</strong>.</p>
+<p>Catatan: Untuk materi mengenai strategi promosi dan peningkatan visibilitas artikel secara eksternal (melalui media sosial atau repositori), lihat <strong>Bab 15: Diseminasi dan Peningkatan Visibilitas Jurnal</strong>.</p>
+<h2 id="latihan-bab-13"><a class="header" href="#latihan-bab-13">Latihan Bab 13</a></h2>
+<p><strong>Skenario Simulasi: Membangun Etalase Publikasi</strong></p>
+<p>Jurnal Anda bersiap untuk menerbitkan edisi perdana. Anda ditugaskan untuk membuat wadah edisinya dan memublikasikannya secara <em>dummy</em>.</p>
+<p><strong>Tugas Praktik:</strong></p>
+<ol>
+<li>Masuk ke dasbor utama dan navigasikan ke menu <strong>Issues</strong>.</li>
+<li>Pada tab <strong>Future Issues</strong>, buat edisi baru dengan klik <strong>Create Issue</strong>. Isi dengan Volume 1, Nomor 1, Tahun ini.</li>
+<li>Setelah tersimpan, jadwalkan satu naskah uji coba dari tahap <em>Production</em> ke dalam edisi tersebut.</li>
+<li>Kembali ke menu <strong>Issues</strong>, klik panah pada edisi tersebut, pilih <strong>Publish Issue</strong>, namun kali ini <em>jangan</em> centang opsi notifikasi (karena ini percobaan).</li>
+<li>Setelah terbit, lihat dampaknya di beranda publik. Terakhir, kembalikan edisi tersebut dengan melakukan <strong>Unpublish Issue</strong> di tab <strong>Back Issues</strong>.</li>
+</ol>
 <h2 id="checklist-bab-13"><a class="header" href="#checklist-bab-13">Checklist Bab 13</a></h2>
 <p>Gunakan daftar periksa berikut untuk mengelola edisi jurnal:</p>
 <ul>

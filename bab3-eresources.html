@@ -37,10 +37,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-4bcd7828.js";
+            window.path_to_searchindex_js = "searchindex-39e0f949.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-95e609ce.js"></script>
+        <script src="toc-9badc886.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -178,147 +178,165 @@
                     <main>
                         <h1 id="bab-3-pengelolaan-e-resources-dan-manajemen-referensi"><a class="header" href="#bab-3-pengelolaan-e-resources-dan-manajemen-referensi">Bab 3: Pengelolaan e-Resources dan Manajemen Referensi</a></h1>
 <blockquote>
-<p><em>Pernahkah Anda menemukan naskah dengan argumen yang sangat meyakinkan, namun referensi yang digunakan tidak relevan, berupa tautan rusak, atau bahkan bersumber dari blog pribadi? Bagaimana Anda, sebagai pengelola jurnal, dapat memastikan validitas dan konsistensi fondasi keilmuan naskah tersebut tanpa harus menghabiskan berjam-jam waktu penyuntingan manual?</em></p>
+<p><strong>Pemantik Bab</strong>
+Pernahkah Anda menemukan naskah dengan argumen yang sangat meyakinkan, namun setelah diperiksa, referensi yang digunakan tidak relevan, berupa tautan rusak (<em>broken links</em>), atau bersumber dari blog pribadi yang tidak melalui proses penelaahan sejawat (<em>peer-review</em>)? Bagi pengelola jurnal, situasi ini adalah alarm bahaya. Cacatnya sitasi bukan sekadar masalah estetika tata letak, melainkan indikasi rapuhnya validitas metodologis dan replikabilitas karya ilmiah.</p>
 </blockquote>
-<p>Penulisan ilmiah selalu berpijak pada referensi kepustakaan yang valid. Setiap sumber yang digunakan harus dikutip (<em>citation</em>) dan dicantumkan dalam daftar pustaka sesuai gaya sitasi yang berlaku. Untuk mempermudah pengelolaan referensi secara masif, penggunaan perangkat lunak manajemen referensi menjadi kebutuhan mutlak bagi pengelola jurnal dan penulis ilmiah.</p>
-<p>Bab ini membahas konsep dasar manajemen referensi dan panduan penggunaan <strong>Mendeley</strong> sebagai perangkat lunak pengelola referensi yang banyak digunakan oleh komunitas akademik.</p>
+<p>Bagaimana Anda dapat memastikan keandalan fondasi keilmuan naskah tersebut tanpa harus menghabiskan waktu berjam-jam untuk melakukan verifikasi manual satu per satu? Di sinilah pengelolaan sumber daya elektronik (<em>e-resources</em>) serta pemanfaatan perangkat lunak manajemen referensi yang terstandarisasi menjadi krusial.</p>
+<p>Penulisan ilmiah yang kredibel selalu berdiri di atas bahu pemikiran terdahulu. Setiap klaim, data, dan teori yang dirujuk wajib diakui melalui mekanisme sitasi (<em>citation</em>) dan didokumentasikan secara presisi dalam daftar pustaka berdasarkan gaya selingkung (<em>house style</em>) yang berlaku. Untuk mengelola data bibliografi secara masif dan meminimalkan kesalahan manusia, penggunaan perangkat lunak manajemen referensi (<em>Reference Management Software</em> atau RMS) telah bergeser dari sekadar alat bantu menjadi kebutuhan mutlak.</p>
+<p>Bab ini mengupas konsep dasar manajemen referensi, urgensi integritas akademik dalam sitasi, serta panduan pemanfaatan Mendeley sebagai RMS yang paling banyak diintegrasikan dalam ekosistem publikasi global, termasuk Open Journal Systems (OJS).</p>
 <h2 id="31-konsep-sitasi-dan-signifikansinya"><a class="header" href="#31-konsep-sitasi-dan-signifikansinya">3.1 Konsep Sitasi dan Signifikansinya</a></h2>
-<p>Sitasi atau kutipan bibliografi (<em>bibliographic citation</em>) adalah rujukan terhadap dokumen ilmiah seperti buku, artikel, halaman web, atau produk penerbitan lainnya yang memberikan rincian memadai untuk mengidentifikasi produk tersebut secara unik (MIT Libraries, 2009). Sitasi berfungsi untuk memberikan pengakuan terhadap karya sebelumnya dan merujuk pada kewenangan keilmuan tertentu guna mendukung argumen penulis.</p>
-<p>Tujuan utama penulisan sumber sitasi dan daftar pustaka meliputi:</p>
+<p>Sitasi atau kutipan bibliografi adalah pencatatan formal berbasis struktur tertentu yang merujuk pada dokumen ilmiah terkodifikasi, seperti buku, artikel jurnal, atau himpunan data (<em>dataset</em>). Sitasi memberikan rincian metadata yang memadai untuk mengidentifikasi dokumen tersebut secara unik (MIT Libraries, 2009).</p>
+<p>Di era digital, sitasi bukan lagi teks statis, melainkan data interaktif yang terhubung melalui pengenal persisten (<em>Persistent Identifiers</em> atau PID). Bentuk PID paling standar adalah <em>Digital Object Identifier</em> (DOI), yakni alamat permanen suatu artikel di internet sehingga tetap dapat diakses meskipun situs web penyedianya berubah.</p>
+<p>Penerapan sitasi yang akurat memiliki tiga fungsi fundamental:</p>
 <ol>
-<li><strong>Menghindari plagiarisme</strong>: Mencantumkan sumber kutipan secara singkat di akhir kalimat atau di dekat kalimat sitasi, serta menuliskan sumber lengkapnya di daftar pustaka.</li>
-<li><strong>Menghargai penulis sebelumnya</strong>: Mengakui secara eksplisit bahwa ide, argumen, atau analisis tertentu merupakan kontribusi intelektual orang lain.</li>
-<li><strong>Membantu penelusuran informasi</strong>: Memfasilitasi pembaca yang ingin mengetahui lebih dalam mengenai sumber kutipan dengan memberikan rincian lengkap pada daftar pustaka.</li>
+<li><strong>Pencegahan Plagiarisme dan Pelanggaran Etik</strong>: Sitasi menjadi batas yang jelas antara gagasan orisinal penulis dengan pemikiran peneliti terdahulu. Kegagalan menyitasi dengan benar dapat menjatuhkan sanksi akademik dan merusak reputasi jurnal.</li>
+<li><strong>Pengakuan Hak Intelektual</strong>: Penulisan sitasi menghargai kontribusi intelektual peneliti sebelumnya. Atribusi ini dikonversi menjadi metrik performa ilmiah, seperti <em>h-index</em> dan total jumlah kutipan.</li>
+<li><strong>Penyusunan Peta Jalan Informasi (<em>Citation Chaining</em>)</strong>: Daftar pustaka yang kredibel berfungsi sebagai navigasi bagi pembaca, peninjau, dan editor untuk menelusuri validitas data ke belakang maupun melacak perkembangan teori ke depan.</li>
 </ol>
+<blockquote>
 <p><strong>Sorotan Standar Global: Committee on Publication Ethics (COPE)</strong></p>
-<p>Committee on Publication Ethics (COPE) memberikan peringatan keras terhadap praktik manipulasi sitasi (<em>citation manipulation</em>), yaitu penggunaan referensi semata-mata untuk menggelembungkan tingkat sitasi seorang penulis atau metrik jurnal secara artifisial. Pengelola jurnal wajib memiliki kebijakan yang jelas terkait integritas sitasi—seperti membatasi <em>self-citation</em> yang tidak relevan—guna menjaga keandalan ekosistem publikasi akademik global.</p>
-<p><em>Sumber: https://publicationethics.org/</em></p>
+<p><em>Committee on Publication Ethics</em> (COPE) mengategorikan pelanggaran terhadap prinsip sitasi sebagai tindakan salah laku ilmiah (<em>scientific misconduct</em>). Praktik tidak etis ini dikenal sebagai manipulasi sitasi (<em>citation manipulation</em>), yaitu penyisipan referensi yang tidak memiliki relevansi ilmiah dengan isi artikel. Manifestasi manipulasi ini meliputi:</p>
+<ol>
+<li><strong>Sitasi Paksaan (<em>Coercive Citation</em>)</strong>: Editor jurnal memaksa penulis menambahkan referensi dari jurnal yang dipimpinnya demi menggelembungkan faktor dampak (<em>Impact Factor</em>).</li>
+<li><strong>Kartel Sitasi (<em>Citation Cartels</em>)</strong>: Kerja sama tidak etis antar-peneliti untuk saling menyitasi karya satu sama lain guna mendongkrak metrik personal.</li>
+<li><strong>Sitasi Mandiri Berlebihan (<em>Excessive Self-Citation</em>)</strong>: Sitasi berlebihan terhadap karya sendiri yang tidak relevan dengan substansi artikel.</li>
+</ol>
+<p>Pengelola jurnal wajib menyusun Kebijakan Etika Publikasi yang tegas terkait integritas sitasi ini guna memitigasi risiko pencabutan indeksasi oleh basis data reputasi global. (Sumber: <a href="https://publicationethics.org/">https://publicationethics.org/</a>)</p>
+</blockquote>
 <h2 id="32-perangkat-lunak-manajemen-referensi"><a class="header" href="#32-perangkat-lunak-manajemen-referensi">3.2 Perangkat Lunak Manajemen Referensi</a></h2>
-<p>Untuk mengelola sitasi dan daftar pustaka secara efisien serta terintegrasi dengan perangkat lunak pengolah kata (seperti Microsoft Word atau LibreOffice), penulis dapat memanfaatkan perangkat lunak manajemen referensi. Beberapa contoh perangkat lunak yang umum digunakan adalah:</p>
+<p>Memproses sitasi secara manual pada draf naskah yang memiliki banyak referensi sangat rentan terhadap ketidakberaturan format. RMS hadir sebagai solusi automasi untuk mengoleksi metadata, mengorganisasi berkas digital, serta melakukan injeksi sitasi secara langsung (<em>real-time</em>) ke dalam perangkat lunak pengolah kata.</p>
+<p>RMS bekerja dengan mengekstraksi dan mengekspor data bibliografi melalui format standar pertukaran data, antara lain format <code>.ris</code>, <code>.bib</code> (<em>BibTeX</em>), dan <code>.xml</code>.</p>
+<p>Berikut adalah perbandingan empat RMS yang dominan di ranah akademik global:</p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>Perangkat Lunak</th><th>Situs Web</th></tr>
+<tr><th style="text-align: left">Perangkat Lunak</th><th style="text-align: left">Keunggulan Utama</th><th style="text-align: left">Keterbatasan</th><th style="text-align: left">Relevansi Pengguna</th></tr>
 </thead>
 <tbody>
-<tr><td>Mendeley</td><td>www.mendeley.com</td></tr>
-<tr><td>Zotero</td><td>www.zotero.org</td></tr>
-<tr><td>EndNote</td><td>www.endnote.com</td></tr>
-<tr><td>RefWorks</td><td>www.refworks.com</td></tr>
+<tr><td style="text-align: left"><strong>Mendeley</strong></td><td style="text-align: left">Terintegrasi dengan ekosistem Elsevier, memiliki ekstraksi metadata PDF otomatis yang sangat akurat. Penyimpanan awan dasar gratis 2 GB.</td><td style="text-align: left">Fleksibilitas modifikasi gaya sitasi mandiri lebih terbatas pada versi terbaru dibandingkan versi klasiknya.</td><td style="text-align: left">Sangat direkomendasikan untuk jurnal berbasis OJS dan peneliti umum.</td></tr>
+<tr><td style="text-align: left"><strong>Zotero</strong></td><td style="text-align: left">Sangat andal menangkap metadata dari halaman web, didukung banyak fitur tambahan komunitas. Sumber terbuka dan gratis.</td><td style="text-align: left">Kapasitas penyimpanan awan bawaan gratis relatif kecil (300 MB).</td><td style="text-align: left">Ideal untuk riset multidisiplin dan tim dengan anggaran terbatas.</td></tr>
+<tr><td style="text-align: left"><strong>EndNote</strong></td><td style="text-align: left">Penyimpanan awan tidak terbatas (pada versi premium), fitur penyaringan duplikasi tingkat lanjut, integrasi optimal dengan Web of Science.</td><td style="text-align: left">Kurva pembelajaran cukup curam, biaya lisensi berbayar relatif mahal.</td><td style="text-align: left">Standar emas untuk institusi besar dan peneliti tinjauan sistematis.</td></tr>
+<tr><td style="text-align: left"><strong>RefWorks</strong></td><td style="text-align: left">Sepenuhnya berbasis web (<em>cloud-based</em>), memudahkan kolaborasi institusional tanpa instalasi aplikasi lokal.</td><td style="text-align: left">Ketergantungan penuh pada koneksi internet.</td><td style="text-align: left">Umumnya digunakan jika universitas melanggan paket layanannya.</td></tr>
 </tbody>
 </table>
 </div>
-<p>Bab ini berfokus pada <strong>Mendeley</strong>, karena perangkat lunak ini tersedia secara gratis, mendukung berbagai sistem operasi, dan memiliki ekosistem kolaborasi akademik yang luas.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Ilustrasi: Perangkat Lunak Manajemen Referensi"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Ilustrasi: Perangkat Lunak Manajemen Referensi"></span></label></p>
+<p>Bab ini berfokus pada <strong>Mendeley</strong> karena aksesibilitasnya yang gratis, ketersediaan lintas platform, serta adopsi yang sangat masif di kalangan peneliti dan pengelola jurnal di Indonesia.</p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Ilustrasi Perangkat Lunak Manajemen Referensi"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Ilustrasi Perangkat Lunak Manajemen Referensi"></span></label></p>
 <h2 id="33-pengenalan-mendeley"><a class="header" href="#33-pengenalan-mendeley">3.3 Pengenalan Mendeley</a></h2>
-<p>Mendeley adalah perangkat lunak manajemen referensi sekaligus jaringan sosial akademis. Perangkat lunak ini mengombinasikan aplikasi <em>desktop</em> dan situs web untuk mengelola, berbagi, serta mencari referensi dan kontak akademik.</p>
-<p>Keunggulan utama Mendeley:</p>
-<ul>
-<li>Karya ilmiah yang diunggah diurutkan secara otomatis berdasarkan penulis, judul, tahun, dan penerbit.</li>
-<li>Kemampuan pencarian teks penuh (<em>full-text search</em>) di seluruh koleksi referensi.</li>
-<li>Ekstraksi otomatis detail metadata (tipe, judul, penulis, tahun, volume, abstrak, URL) dari dokumen PDF.</li>
-<li>Sinkronisasi awan (<em>cloud synchronization</em>) yang memungkinkan akses data dari berbagai perangkat.</li>
-<li>Dukungan impor dari perangkat lunak referensi lain seperti EndNote dan Zotero.</li>
-</ul>
+<p>Mendeley telah bertransisi sepenuhnya dari arsitektur lokal lama menuju ekosistem terintegrasi baru yang berpusat pada <strong>Mendeley Reference Manager (MRM)</strong>. Ekosistem digital Mendeley saat ini terdiri atas tiga komponen interaktif utama:</p>
+<ol>
+<li><strong>Mendeley Reference Manager (MRM)</strong>: Aplikasi utama yang mensinkronkan basis data bibliografi lokal secara otomatis dengan peladen awan Mendeley.</li>
+<li><strong>Mendeley Web Importer (MWI)</strong>: Pengaya peramban (<em>browser extension</em>) yang berfungsi mengekstraksi metadata artikel ilmiah secara langsung dari situs web jurnal tanpa perlu mengunduh berkas PDF.</li>
+<li><strong>Mendeley Cite</strong>: Aplikasi pihak ketiga (<em>add-in</em>) yang dipasang pada Microsoft Word untuk mengelola sitasi secara langsung.</li>
+</ol>
+<p>Keunggulan arsitektur modern Mendeley meliputi ekstraksi metadata otomatis berbasis kecerdasan buatan, pencarian teks penuh di dalam dokumen PDF, dan sinkronisasi awan lintas platform (Windows, macOS, Linux, web).</p>
 <h2 id="34-instalasi-mendeley"><a class="header" href="#34-instalasi-mendeley">3.4 Instalasi Mendeley</a></h2>
-<p>Mendeley tersedia untuk sistem operasi Windows, macOS, dan Linux dan dapat diunduh melalui situs resminya.</p>
-<h3 id="langkah-1-pembuatan-akun"><a class="header" href="#langkah-1-pembuatan-akun">Langkah 1: Pembuatan Akun</a></h3>
+<p>Untuk membangun sistem manajemen referensi yang stabil, pengguna harus memasang ekosistem Mendeley secara berurutan.</p>
+<p><strong>Jalur Eksekusi Cepat: Instalasi Ekosistem Mendeley</strong></p>
 <ol>
-<li>Kunjungi www.mendeley.com.</li>
-<li>Klik <strong>Create a free account</strong> atau <strong>Register</strong>.</li>
-<li>Masukkan nama depan, nama belakang, dan alamat surel aktif.</li>
+<li><strong>Pembuatan Akun Elsevier</strong>: Kunjungi situs resmi Mendeley (<a href="https://www.mendeley.com">www.mendeley.com</a>). Klik tombol <strong>Create a free account</strong> di sudut kanan atas. Masukkan alamat surel aktif (disarankan menggunakan surel institusi <code>.ac.id</code>). Lengkapi nama depan, nama belakang, kata sandi, dan data profil akademik, lalu klik <strong>Create Account</strong>.</li>
+<li><strong>Mengunduh dan Memasang Mendeley Reference Manager</strong>: Akses menu <strong>Download</strong> pada situs Mendeley. Klik tombol unduh sesuai sistem operasi yang digunakan. Jalankan berkas instalasi dan ikuti instruksi <em>Setup Wizard</em> hingga selesai.</li>
+<li><strong>Pemasangan Mendeley Web Importer</strong>: Buka aplikasi MRM, akses menu <strong>Tools</strong>, lalu pilih <strong>Install Mendeley Web Importer</strong>. Anda akan diarahkan ke toko ekstensi peramban. Klik konfirmasi pemasangan. Ikon Mendeley akan muncul di sudut kanan atas peramban.</li>
+<li><strong>Pemasangan Mendeley Cite pada Microsoft Word</strong>: Buka aplikasi MRM, akses menu <strong>Tools</strong>, lalu pilih <strong>Install Mendeley Cite for Microsoft Word</strong>. Laman Microsoft AppSource akan terbuka. Klik <strong>Get it now</strong> dan selesaikan validasi akun Microsoft. Buka aplikasi Microsoft Word. Panel Mendeley Cite akan tersedia pada tab menu <strong>References</strong>.</li>
 </ol>
-<p>Catatan Teknis: Gunakan nama asli secara konsisten agar profil Anda mudah ditemukan oleh kolega atau peneliti lain dengan bidang keahlian serupa.</p>
-<h3 id="langkah-2-kelengkapan-profil"><a class="header" href="#langkah-2-kelengkapan-profil">Langkah 2: Kelengkapan Profil</a></h3>
+<blockquote>
+<p><strong>Troubleshooting: Mendeley Cite Tidak Muncul di Word</strong></p>
+<p><strong>Masalah</strong>: Anda sudah menginstal Mendeley Cite dari aplikasi MRM, tetapi saat membuka Microsoft Word, tab <strong>References</strong> tetap kosong dari ikon Mendeley.</p>
+<p><strong>Solusi Cepat</strong>: Ini sering terjadi karena sinkronisasi akun Microsoft. Pastikan Anda <em>login</em> ke aplikasi Word menggunakan akun Microsoft yang sama dengan saat mengunduhnya. Jika masih tidak muncul, klik menu <strong>Insert</strong> &gt; <strong>Get Add-ins</strong> &gt; klik tab <strong>My Add-ins</strong>, lalu klik <strong>Refresh</strong> di sudut kanan atas. Mendeley Cite akan muncul di sana.</p>
+</blockquote>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Proses Instalasi Mendeley"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Proses Instalasi Mendeley"></span></label></p>
+<h2 id="35-memasukkan-dan-memvalidasi-referensi"><a class="header" href="#35-memasukkan-dan-memvalidasi-referensi">3.5 Memasukkan dan Memvalidasi Referensi</a></h2>
+<p>Langkah awal terbaik adalah mengumpulkan berkas-berkas PDF artikel hasil unduhan dari basis data ilmiah terpercaya ke dalam satu folder khusus di penyimpanan lokal komputer.</p>
+<p><strong>Metode Memasukkan Dokumen ke Mendeley:</strong></p>
 <ol>
-<li>Lengkapi surel, nama depan, nama belakang, dan kata sandi (minimal tujuh karakter).</li>
-<li>Tentukan bidang studi (<em>Field of Study</em>) dan status akademik (<em>Academic Status</em>).</li>
-<li>Klik <strong>Create account</strong>.</li>
+<li><strong>Seret dan Lepas (<em>Drag and Drop</em>)</strong>: Seret berkas PDF dari File Explorer dan lepaskan di area panel konten utama aplikasi MRM.</li>
+<li><strong>Menambahkan Berkas Manual</strong>: Klik tombol <strong>Add new</strong> di sudut kiri atas MRM, pilih <strong>Files from computer</strong>, dan pilih dokumen yang diinginkan.</li>
+<li><strong>Entri Data Manual</strong>: Untuk dokumen non-digital, klik <strong>Add new</strong>, pilih <strong>Add manual entry</strong>, lalu masukkan parameter bibliografi secara mandiri.</li>
+<li><strong>Impor Berkas (<em>.ris/.bib</em>)</strong>: Untuk data dari basis data seperti Scopus, klik <strong>Add new</strong> lalu <strong>Import library</strong>, dan pilih format berkas pertukaran data yang sesuai.</li>
 </ol>
-<h3 id="langkah-3-mengunduh-mendeley-reference-manager"><a class="header" href="#langkah-3-mengunduh-mendeley-reference-manager">Langkah 3: Mengunduh Mendeley Reference Manager</a></h3>
-<p>Setelah akun dibuat, akses halaman unduhan:</p>
+<p><strong>Catatan Teknis: Melengkapi dan Memvalidasi Metadata</strong>
+Meskipun Mendeley mengekstraksi metadata secara otomatis, kesalahan dapat terjadi (misalnya judul tertulis kapital semua atau nama jurnal kosong). Untuk memperbaikinya:</p>
 <ol>
-<li>Klik menu <strong>Download</strong> di sudut kanan atas.</li>
-<li>Terdapat tiga komponen utama yang direkomendasikan untuk diunduh:
-<ul>
-<li><strong>Mendeley Reference Manager</strong>: Aplikasi utama untuk mengelola pustaka referensi.</li>
-<li><strong>Mendeley Web Importer</strong>: Ekstensi peramban untuk mengimpor referensi langsung dari situs jurnal.</li>
-<li><strong>Mendeley Citation Plugin</strong>: Pengaya (<em>add-in</em>) untuk Microsoft Word atau LibreOffice.</li>
-</ul>
-</li>
+<li>Klik pada artikel yang metadatanya tidak lengkap di panel tengah MRM.</li>
+<li>Pada panel informasi di sisi kanan, gulir ke bawah hingga menemukan kolom <strong>Catalog IDs</strong>.</li>
+<li>Cari nomor DOI dari artikel tersebut di internet, tempelkan ke kolom DOI di Mendeley.</li>
+<li>Klik ikon pencarian (kaca pembesar). Mendeley akan menarik data bibliografi yang valid dari lembaga registrasi seperti Crossref untuk menggantikan data yang rusak.</li>
 </ol>
-<h3 id="langkah-4-proses-instalasi"><a class="header" href="#langkah-4-proses-instalasi">Langkah 4: Proses Instalasi</a></h3>
-<ol>
-<li>Jalankan dokumen instalasi yang telah diunduh.</li>
-<li>Ikuti instruksi pada <em>Setup Wizard</em>, setujui <em>License Agreement</em>, dan pilih lokasi instalasi.</li>
-<li>Tunggu hingga proses instalasi selesai, lalu klik <strong>Finish</strong>.</li>
-</ol>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Proses instalasi Mendeley"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Proses instalasi Mendeley"></span></label></p>
-<h2 id="35-memulai-mendeley-dan-menambah-referensi"><a class="header" href="#35-memulai-mendeley-dan-menambah-referensi">3.5 Memulai Mendeley dan Menambah Referensi</a></h2>
-<p>Sebelum memulai, kumpulkan seluruh dokumen referensi dalam satu folder atau unduh referensi melalui basis data jurnal ilmiah terpercaya (seperti PubMed, EBSCO, atau platform jurnal OJS terkait) untuk mengoptimalkan otomatisasi metadata.</p>
-<h3 id="menambahkan-dokumen-referensi"><a class="header" href="#menambahkan-dokumen-referensi">Menambahkan Dokumen Referensi</a></h3>
-<p>Terdapat beberapa metode untuk menambahkan referensi ke dalam perpustakaan Mendeley:</p>
-<ol>
-<li><strong>Seret dan Lepas (Drag and Drop)</strong>: Seret dokumen PDF langsung dari komputer ke area <em>Content Pane</em> Mendeley.</li>
-<li><strong>Add Files / Add Folder</strong>: Gunakan fungsi <em>Add Document</em> di bilah alat (<em>toolbar</em>) atas untuk menelusuri dokumen.</li>
-<li><strong>Watch Folder</strong>: Melalui menu <strong>File</strong>, pilih <strong>Watch Folder</strong>, lalu tentukan direktori target. Mendeley akan secara otomatis memindai dan menambahkan dokumen baru yang masuk ke direktori tersebut.</li>
-<li><strong>Impor dari Perangkat Lunak Lain</strong>: Ekspor pangkalan data dari perangkat lunak lama (seperti EndNote) dalam format XML/RIS, kemudian gunakan opsi <em>Add Files</em> di Mendeley untuk mengimpornya.</li>
-</ol>
-<h3 id="melengkapi-metadata-referensi-secara-otomatis"><a class="header" href="#melengkapi-metadata-referensi-secara-otomatis">Melengkapi Metadata Referensi Secara Otomatis</a></h3>
-<p>Saat dokumen ditambahkan, Mendeley akan mencari informasi dari <em>CrossRef</em>, <em>PubMed</em>, atau <em>Google Scholar</em>. Apabila metadata tidak lengkap (biasanya ditandai di folder <em>Needs Review</em>), pengguna dapat melengkapinya secara manual dengan memasukkan kode identifikasi seperti DOI atau PMID pada panel <em>Catalog IDs</em>, lalu mengeklik ikon pencarian untuk menarik data bibliografi yang valid.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Menambah file ke Mendeley dengan Drag and Drop"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Menambah file ke Mendeley dengan Drag and Drop"></span></label></p>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Menambah Referensi ke Mendeley"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Menambah Referensi ke Mendeley"></span></label></p>
 <h2 id="36-pengelolaan-berkas-referensi"><a class="header" href="#36-pengelolaan-berkas-referensi">3.6 Pengelolaan Berkas Referensi</a></h2>
-<p>Untuk mencegah penumpukan dokumen yang tidak terorganisasi, manfaatkan fitur-fitur pengelolaan berikut:</p>
+<p>Mendeley menyediakan instrumen untuk menjaga kerapian pangkalan data pustaka Anda.</p>
 <ol>
-<li><strong>Menggabungkan Duplikasi (Merge)</strong>: Gunakan fitur <em>Filter by Authors/Tags/Publications</em> untuk menemukan duplikasi, lalu pindahkan entri yang keliru ke entri yang penulisannya benar.</li>
-<li><strong>Menandai Status Baca</strong>: Dokumen baru ditandai dengan bulatan hijau (belum dibaca). Tanda ini akan hilang secara otomatis saat dokumen PDF dibuka di Mendeley.</li>
-<li><strong>Pencarian Real-Time</strong>: Kolom pencarian di sudut kanan atas memungkinkan penyaringan dan penyorotan kata kunci langsung di dalam dokumen (<em>search as you type</em>).</li>
-<li><strong>Sorotan dan Catatan</strong>: Saat membaca dokumen PDF di Mendeley, gunakan fitur <em>Highlight Text</em> untuk menandai teks penting dan <em>Add Note</em> untuk menyisipkan catatan khusus.</li>
+<li><strong>Fitur Koleksi (<em>Collections</em>)</strong>: Buat koleksi baru pada panel kiri untuk mengelompokkan referensi berdasarkan edisi jurnal atau proyek naskah.</li>
+<li><strong>Tanda Khusus (<em>Tags</em>)</strong>: Sisipkan kata kunci spesifik pada kolom <em>Tags</em> untuk mempermudah penyaringan pencarian.</li>
+<li><strong>Penyaringan Duplikasi</strong>: Rutin periksa daftar penulis melalui fitur saringan (<em>Filter</em>) untuk memastikan tidak ada entri ganda untuk artikel yang sama. Hapus entri dengan metadata yang kurang lengkap.</li>
+<li><strong>Alat Penanda (<em>Highlighting</em> dan <em>Sticky Notes</em>)</strong>: Klik dua kali entri artikel untuk membuka pembaca PDF internal Mendeley. Gunakan alat penanda warna dan sisipkan catatan pada teks penting. Catatan ini tersimpan secara permanen.</li>
 </ol>
 <h2 id="37-memasukkan-sitasi-ke-microsoft-word"><a class="header" href="#37-memasukkan-sitasi-ke-microsoft-word">3.7 Memasukkan Sitasi ke Microsoft Word</a></h2>
-<h3 id="mengintegrasikan-ms-word-dengan-mendeley"><a class="header" href="#mengintegrasikan-ms-word-dengan-mendeley">Mengintegrasikan MS Word dengan Mendeley</a></h3>
+<p>Setelah pustaka referensi tersimpan rapi, proses penulisan sitasi dan pembuatan daftar pustaka dapat diotomatisasi melalui Microsoft Word.</p>
+<p><strong>Jalur Eksekusi Cepat: Prosedur Injeksi Sitasi</strong></p>
 <ol>
-<li>Pastikan Microsoft Word dalam keadaan tertutup.</li>
-<li>Di Mendeley, akses menu <strong>Tools</strong> dan pilih <strong>Install MS Word Plugin</strong>.</li>
-<li>Tunggu hingga muncul notifikasi keberhasilan instalasi.</li>
+<li>Buka naskah di Microsoft Word.</li>
+<li>Akses tab menu <strong>References</strong>, lalu klik ikon <strong>Mendeley Cite</strong>. Masuk menggunakan akun Elsevier Anda.</li>
+<li>Letakkan kursor tik pada teks yang membutuhkan rujukan.</li>
+<li>Cari kata kunci (nama penulis atau judul) di kolom pencarian panel Mendeley Cite.</li>
+<li>Centang kotak referensi yang sesuai, lalu klik <strong>Insert Citation</strong>. Kode sitasi dinamis akan tersemat.</li>
 </ol>
-<h3 id="cara-memasukkan-sitasi"><a class="header" href="#cara-memasukkan-sitasi">Cara Memasukkan Sitasi</a></h3>
+<p><strong>Jalur Eksekusi Cepat: Pengaturan Gaya Sitasi dan Pembuatan Daftar Pustaka</strong></p>
 <ol>
-<li>Posisikan kursor pada area teks di MS Word yang memerlukan referensi.</li>
-<li>Pilih menu <strong>Insert Citation</strong> (pada tab Mendeley atau References).</li>
-<li>Ketikkan judul, nama penulis, atau tahun publikasi di kotak pencarian.</li>
-<li>Pilih referensi yang tepat, lalu klik <strong>OK</strong>.</li>
+<li>Pada panel Mendeley Cite, buka tab <strong>Citation Settings</strong> dan klik <strong>Change citation style</strong>.</li>
+<li>Pilih gaya selingkung yang digunakan jurnal tujuan, misalnya <em>American Psychological Association</em> (APA) edisi ke-7 atau <em>IEEE</em>. Jika tidak tersedia, klik <strong>Search for another style</strong> untuk mencari dan mengunduhnya.</li>
+<li>Arahkan kursor ke bagian akhir dokumen tempat daftar pustaka akan diletakkan.</li>
+<li>Klik ikon tiga titik horizontal (<strong>More</strong>) pada panel Mendeley Cite, lalu pilih <strong>Insert Bibliography</strong>.</li>
+<li>Klik <strong>Continue</strong>. Daftar pustaka akan dibangkitkan secara otomatis dan akan diperbarui setiap kali terdapat penambahan sitasi di dalam teks.</li>
 </ol>
-<p>Alternatifnya, pengguna dapat mengeklik <strong>Go To Mendeley</strong>, menyeleksi artikel secara manual di aplikasi Mendeley, lalu mengeklik <strong>Send Citation to MS Word</strong>.</p>
-<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Insert Citation dari Mendeley di MS Word"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Insert Citation dari Mendeley di MS Word"></span></label></p>
-<h3 id="memilih-gaya-sitasi-dan-membuat-daftar-pustaka"><a class="header" href="#memilih-gaya-sitasi-dan-membuat-daftar-pustaka">Memilih Gaya Sitasi dan Membuat Daftar Pustaka</a></h3>
-<p>Penulis harus memilih gaya sitasi sesuai dengan panduan (<em>Author Guidelines</em>) jurnal yang dituju melalui menu <em>Style</em> di MS Word. Mendeley mendukung ratusan gaya sitasi seperti APA, IEEE, Chicago, dan MLA.</p>
-<p>Setelah seluruh sitasi disisipkan dalam dokumen, klik <strong>Insert Bibliography</strong>. Daftar pustaka akan dibangkitkan secara otomatis di bagian akhir dokumen dan akan beradaptasi setiap kali terdapat penambahan atau perubahan sitasi.</p>
-<p><strong>Catatan dari Lapangan</strong></p>
-<p>Beberapa pengelola jurnal sering menghadapi situasi di mana penulis mensitasi sumber yang ternyata tidak dapat dilacak atau diverifikasi keberadaannya secara daring (<em>unverifiable sources</em>). Pertanyaan yang kerap muncul dalam sesi pelatihan editorial adalah bagaimana editor dapat mengidentifikasi sitasi bermasalah ini secara efisien. Salah satu kesalahan yang paling umum dijumpai pada naskah tahap awal adalah kegagalan penulis memanfaatkan fitur sitasi otomatis, sehingga memicu inkonsistensi gaya sitasi (misalnya percampuran format APA dan IEEE) di dalam satu draf naskah.</p>
-<h2 id="38-sinkronisasi-dan-fitur-kolaborasi-grup"><a class="header" href="#38-sinkronisasi-dan-fitur-kolaborasi-grup">3.8 Sinkronisasi dan Fitur Kolaborasi (Grup)</a></h2>
-<p>Mendeley menyediakan fungsionalitas penyimpanan awan dan kolaborasi tim:</p>
-<ul>
-<li><strong>Sinkronisasi</strong>: Klik tombol <em>Synchronize</em> untuk menyelaraskan pangkalan data referensi luring dengan akun daring. Hal ini memungkinkan akses dari perangkat lain.</li>
-<li><strong>Pembuatan Grup</strong>: Mendeley mendukung pembuatan grup (<em>Private</em>, <em>Invite-only</em>, atau <em>Open</em>) untuk berbagi pustaka referensi dengan tim peneliti atau pengelola jurnal lainnya.</li>
-<li><strong>Berbagi Referensi</strong>: Anggota grup privat dapat saling mengunggah referensi, menyisipkan catatan, serta melakukan sorotan pada dokumen yang sama, dengan warna yang dibedakan untuk setiap pengguna.</li>
-</ul>
+<p><label class="checkbox-label"><input class="checkbox-img" type="checkbox"><img src="../img/elementor-placeholder-image.png" alt="Memasukkan Sitasi dengan Mendeley Cite"><span class="img-wrapper"><img src="../img/elementor-placeholder-image.png" alt="Memasukkan Sitasi dengan Mendeley Cite"></span></label></p>
+<blockquote>
+<p><strong>Catatan dari Lapangan: Mitigasi Masalah oleh Editor Jurnal</strong></p>
+<p>Editor sering mendapati draf naskah awal dengan sumber referensi yang tidak dapat dilacak. Hal ini dapat dimitigasi melalui <strong>Audit Sitasi Elektronik</strong>:</p>
+<ol>
+<li><strong>Periksa Kode Bidang Otomatis</strong>: Klik salah satu tanda sitasi dalam naskah. Jika teks tersebut berubah menjadi berlatar belakang abu-abu, berarti dokumen menggunakan kode bidang otomatis yang valid. Jika tidak, naskah diketik manual dan harus dikembalikan ke penulis.</li>
+<li><strong>Uji Keaktifan Pranala (Tautan)</strong>: Daftar pustaka yang baik menyertakan tautan DOI. Jika tautan diuji dan menghasilkan galat tidak ditemukan (<em>Error 404</em>), metadata referensi penulis bermasalah.</li>
+<li><strong>Identifikasi Percampuran Gaya Sitasi</strong>: Jika dalam satu daftar pustaka terdapat gaya penulisan yang bercampur (misalnya gaya APA berdampingan dengan gaya Vancouver), penulis kemungkinan melakukan penyalinan teks manual secara langsung dari internet ke dalam naskah mereka.</li>
+</ol>
+</blockquote>
+<h2 id="38-sinkronisasi-dan-fitur-kolaborasi"><a class="header" href="#38-sinkronisasi-dan-fitur-kolaborasi">3.8 Sinkronisasi dan Fitur Kolaborasi</a></h2>
+<p>Mendeley mendukung interaksi antarpelaku akademik melalui fitur kolaborasi.</p>
+<p><strong>Mekanisme Sinkronisasi Awan:</strong>
+Perubahan lokal pada MRM disinkronkan secara otomatis saat terhubung internet. Pengguna juga dapat menekan ikon lingkaran panah berputar (<strong>Synchronize</strong>) untuk menyelaraskan data secara manual guna memastikan salinan cadangan tersimpan di peladen awan.</p>
+<p><strong>Manajemen Grup Kolaboratif (<em>Mendeley Groups</em>):</strong>
+Fitur ini krusial bagi tim redaksi (kolaborasi antara Editor Utama dan Editor Bagian) atau penulis bersama.</p>
+<ol>
+<li>Pada panel kiri MRM, pilih menu <strong>Groups</strong>, lalu klik <strong>New Group</strong>.</li>
+<li>Grup pada Mendeley terbaru berjenis Grup Privat (<em>Private Groups</em>), yang membatasi anggota hingga 25 orang. Keunggulannya, anggota dapat saling berbagi berkas PDF teks penuh.</li>
+<li>Klik kanan pada nama grup, pilih <strong>Manage Group</strong>, dan undang anggota menggunakan alamat surel.</li>
+<li>Seluruh anggota dapat menambahkan referensi. Coretan penanda atau catatan pada PDF yang dibuat oleh seorang editor akan muncul di layar editor lain dengan warna ikon yang berbeda, memangkas waktu koordinasi editorial.</li>
+</ol>
 <h2 id="latihan-bab-3"><a class="header" href="#latihan-bab-3">Latihan Bab 3</a></h2>
-<p><strong>Latihan 3.1: Membangun Daftar Pustaka Otomatis</strong></p>
-<p>Anda menerima draf naskah tahap produksi yang memiliki lima kutipan langsung tanpa format sitasi standar, dan daftar pustakanya masih diketik secara manual.
-<strong>Tugas</strong>: Buatlah sebuah folder bernama “Latihan OJS” di Mendeley Reference Manager. Cari lima artikel ilmiah di internet yang relevan dengan topik naskah tersebut, masukkan ke dalam Mendeley, pastikan kelengkapan metadatanya (seperti DOI dan nama penulis), lalu gunakan Mendeley Cite (Word Plugin) untuk memasukkan sitasi. Bangkitkan daftar pustaka dalam format <em>American Psychological Association (APA) 7th Edition</em> secara otomatis ke dalam dokumen draf.</p>
-<p><strong>Panduan Fasilitator</strong>: Pastikan setiap peserta telah membuat akun Mendeley, mengunduh Mendeley Reference Manager, dan berhasil memasang <em>plugin</em> Mendeley Cite di Microsoft Word. Sediakan satu dokumen Word <em>dummy</em> berisi teks paragraf kosong yang membutuhkan sitasi agar peserta memiliki bahan praktik.</p>
+<p><strong>Skenario Simulasi: Membangun Daftar Pustaka Otomatis dan Memperbaiki Metadata</strong></p>
+<p>Anda adalah Editor Bagian yang menerima naskah dengan lima kutipan langsung tanpa format sitasi standar, dan daftar pustakanya masih diketik manual sehingga susunannya berantakan.</p>
+<p><strong>Tugas:</strong></p>
+<ol>
+<li>Buat folder koleksi bernama “Latihan OJS” di Mendeley Reference Manager.</li>
+<li>Cari lima artikel ilmiah di pangkalan data terbuka (misalnya Google Scholar atau DOAJ) terkait tata kelola jurnal. Unduh berkas PDF-nya.</li>
+<li>Masukkan kelima artikel ke folder Mendeley Anda.</li>
+<li>Lakukan validasi metadata. Jika ada data yang tidak lengkap, temukan nomor DOI artikel tersebut dan gunakan fitur pencarian pada bagian <em>Catalog IDs</em> untuk melengkapinya secara otomatis.</li>
+<li>Buka Microsoft Word dan siapkan paragraf kosong. Gunakan <em>Mendeley Cite</em> untuk menyisipkan kelima sitasi tersebut, dan atur gaya sitasi menjadi <em>American Psychological Association</em> (APA) edisi ke-7.</li>
+<li>Bangkitkan daftar pustaka di bagian bawah halaman menggunakan fitur <em>Insert Bibliography</em>.</li>
+</ol>
+<p><strong>Arahan Editorial (Untuk Fasilitator):</strong>
+Pastikan seluruh peserta telah mengaktifkan akun Elsevier, memasang <em>Mendeley Reference Manager</em>, dan memasang pengaya <em>Mendeley Cite</em> pada Microsoft Word sebelum latihan dimulai. Sediakan dokumen simulasi agar peserta dapat fokus pada penggunaan Mendeley alih-alih mengetik teks naskah.</p>
 <h2 id="checklist-bab-3"><a class="header" href="#checklist-bab-3">Checklist Bab 3</a></h2>
 <ul>
-<li><input disabled="" type="checkbox"> Konsep sitasi dan kepentingannya untuk mencegah plagiarisme telah dipahami.</li>
-<li><input disabled="" type="checkbox"> Akun Mendeley (atau pengelola referensi serupa) telah dibuat dan divalidasi.</li>
-<li><input disabled="" type="checkbox"> <em>Mendeley Reference Manager</em> dan <em>Word Plugin</em> telah berhasil diinstal.</li>
-<li><input disabled="" type="checkbox"> Dokumen referensi telah diunggah ke dalam pangkalan data dan metadata telah diverifikasi kelengkapannya.</li>
-<li><input disabled="" type="checkbox"> Fungsi penyisipan sitasi dan pembuatan daftar pustaka (<em>Insert Bibliography</em>) di Microsoft Word telah diuji coba.</li>
-<li><input disabled="" type="checkbox"> Gaya sitasi telah disesuaikan dengan standar yang ditentukan oleh jurnal tujuan.</li>
+<li><input disabled="" type="checkbox"> Konsep sitasi dan integritas data (mencegah manipulasi sitasi menurut panduan COPE) telah dipahami.</li>
+<li><input disabled="" type="checkbox"> Akun Elsevier telah dibuat dan diaktivasi menggunakan surel resmi.</li>
+<li><input disabled="" type="checkbox"> Mendeley Reference Manager (MRM), Mendeley Web Importer (MWI), dan Mendeley Cite telah dipasang dengan sukses.</li>
+<li><input disabled="" type="checkbox"> Dokumen referensi telah dimasukkan ke pangkalan data Mendeley dan kelengkapan metadatanya telah diverifikasi (melalui DOI/Crossref).</li>
+<li><input disabled="" type="checkbox"> Fitur penyisipan sitasi dan pembuatan daftar pustaka (<em>Insert Bibliography</em>) di Microsoft Word telah digunakan tanpa kendala teknis.</li>
+<li><input disabled="" type="checkbox"> Grup privat Mendeley telah dibuat atau dipahami fungsinya untuk kebutuhan kolaborasi tim editorial.</li>
+<li><input disabled="" type="checkbox"> Gaya sitasi telah disesuaikan secara konsisten dengan standar yang ditentukan oleh jurnal tujuan.</li>
 </ul>
 <h2 id="ringkasan-bab"><a class="header" href="#ringkasan-bab">Ringkasan Bab</a></h2>
-<p>Penggunaan perangkat lunak manajemen referensi seperti Mendeley sangat mempermudah pengorganisasian pustaka dan meminimalkan kesalahan manusia dalam penulisan sitasi. Ketelitian dalam melengkapi metadata referensi (seperti nama penulis, tahun, dan DOI) sejak awal akan menjamin bahwa daftar pustaka yang dihasilkan secara otomatis memenuhi standar keakuratan tinggi yang dituntut oleh penerbitan ilmiah.</p>
+<p>Penggunaan perangkat lunak manajemen referensi seperti Mendeley telah berevolusi menjadi standar kompetensi wajib bagi penulis dan dewan redaksi jurnal. Melalui ekosistem digitalnya yang mutakhir, Mendeley menawarkan solusi automasi yang memotong jalur birokrasi penulisan manual yang rentan terhadap kesalahan. Ketelitian dalam melengkapi keandalan metadata bibliografi sejak awal dokumen diunggah merupakan kunci utama keberhasilan sistem ini. Standardisasi proses sitasi ini tidak hanya menaikkan citra profesionalisme jurnal ilmiah, tetapi juga berkontribusi langsung dalam melindungi integritas dan keandalan rekam jejak publikasi akademik secara global.</p>
 
                     </main>
 

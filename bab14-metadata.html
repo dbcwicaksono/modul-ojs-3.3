@@ -37,10 +37,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-4bcd7828.js";
+            window.path_to_searchindex_js = "searchindex-39e0f949.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-95e609ce.js"></script>
+        <script src="toc-9badc886.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -177,6 +177,10 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="bab-14-optimalisasi-metadata-artikel"><a class="header" href="#bab-14-optimalisasi-metadata-artikel">Bab 14: Optimalisasi Metadata Artikel</a></h1>
+<blockquote>
+<p><strong>Pemantik Bab</strong>
+Pernahkah Anda mencari artikel di Google Scholar dan menemukan judulnya ditulis seluruhnya dengan huruf kapital, atau abstraknya terpotong oleh format aneh? Itulah malapetaka metadata. Metadata ibarat “KTP” bagi artikel jurnal Anda di jagat internet. Mesin pencari seperti Google atau pengindeks otomatis via OAI-PMH tidak peduli seberapa indah tata letak PDF Anda; mereka murni membaca metadata mentah yang Anda ketikkan. Kesalahan mengisi formulir metadata berarti menenggelamkan artikel Anda sendiri dari radar komunitas ilmiah global.</p>
+</blockquote>
 <p>Metadata adalah fondasi dari visibilitas dan kemampuan penemuan artikel (<em>discoverability</em>) di ekosistem penerbitan digital. Metadata yang lengkap, akurat, dan konsisten menentukan seberapa mudah artikel ilmiah dapat ditemukan, disitasi, dan diindeks oleh mesin pencari maupun basis data kepustakaan global.</p>
 <p>Pemeliharaan metadata merupakan tanggung jawab yang diemban bersama antara tim editor dan penulis. Kesalahan pencatatan metadata dapat menimbulkan dampak serius, mulai dari kegagalan distribusi DOI hingga penyematan sitasi yang keliru pada profil Google Scholar penulis.</p>
 <h2 id="141-pengertian-metadata-artikel"><a class="header" href="#141-pengertian-metadata-artikel">14.1 Pengertian Metadata Artikel</a></h2>
@@ -209,8 +213,13 @@
 <li><strong>JATS (Journal Article Tag Suite)</strong>: Standar format XML yang dirancang khusus untuk memodelkan artikel jurnal ilmiah. Format ini merupakan persyaratan utama untuk pengindeksan di PubMed Central dan sangat dianjurkan untuk Scopus (https://jats.nlm.nih.gov/).</li>
 </ul>
 <p>Selain itu, standar <strong>Directory of Open Access Journals (DOAJ)</strong> secara spesifik mengharuskan bahwa metadata artikel jurnal harus dapat diakses secara terbuka, terstruktur, dan disajikan di halaman awal (<em>landing page</em>) dari setiap artikel untuk memfasilitasi interoperabilitas dan perayapan mesin pencari (DOAJ, 2024, https://doaj.org/apply/guide/).</p>
-<p><strong>Studi Kasus:</strong> Sebuah jurnal kesehatan mengeluhkan mengapa sebagian besar artikel terbarunya tidak muncul di Google Scholar, meskipun edisi sebelumnya terindeks dengan baik. Setelah diselidiki, tim editor menemukan bahwa mereka salah menginput nama depan dan belakang penulis pada kolom yang terbalik, dan menyisipkan teks penuh (<em>full-text</em>) ke dalam kolom abstrak. Metadata yang buruk dan format yang tidak terstruktur ini menyebabkan algoritma Google Scholar menolak (<em>reject</em>) artikel tersebut karena dianggap gagal memenuhi standar <code>schema.org/ScholarlyArticle</code>. Kasus ini menegaskan bahwa validitas input metadata berdampak langsung pada kemampuan keterpaparan (<em>discoverability</em>) naskah.</p>
-<p>Catatan Kritis: Praktik mengubah metadata suatu artikel setelah tanggal publikasinya sangat tidak direkomendasikan. Perubahan modifikasi waktu rilis atau nama penulis dapat menimbulkan konflik pembaruan data pada Google Scholar dan sistem pengindeks lainnya. Tim editorial diwajibkan mengonfirmasi seluruh detail metadata kepada penulis jauh sebelum artikel mencapai tahap penerbitan.</p>
+<blockquote>
+<p><strong>Catatan dari Lapangan: Bencana Format Metadata</strong></p>
+<p><strong>Studi Kasus:</strong> Sebuah jurnal kesehatan mengeluhkan mengapa sebagian besar artikel terbarunya tidak muncul di Google Scholar. Setelah diselidiki, tim editor menemukan bahwa mereka salah menginput nama penulis pada kolom yang terbalik, menyisipkan teks penuh (<em>full-text</em>) ke dalam kolom abstrak, dan menuliskan daftar referensi tanpa jarak spasi enter. Metadata yang buruk dan format yang tidak terstruktur ini menyebabkan algoritma Google Scholar (<em>schema.org</em>) gagal mengurai data, sehingga menolak indeksasi secara massal. Kasus ini menegaskan bahwa validitas input metadata berdampak langsung pada kemampuan keterpaparan naskah.</p>
+</blockquote>
+<blockquote>
+<p><strong>Catatan Kritis</strong>: Praktik mengubah metadata suatu artikel <em>setelah</em> rilis publikasi (seperti mengubah judul atau menambah penulis) sangat tidak direkomendasikan karena akan memicu konflik pembaruan data di Crossref (DOI) dan Google Scholar. Lakukan validasi ketat <em>sebelum</em> tombol publikasi ditekan.</p>
+</blockquote>
 <h2 id="142-konfigurasi-awal-metadata-di-ojs-3"><a class="header" href="#142-konfigurasi-awal-metadata-di-ojs-3">14.2 Konfigurasi Awal Metadata di OJS 3</a></h2>
 <p>Sebelum setiap artikel dapat diisi metadatanya, pengelola jurnal diwajibkan menyelesaikan konfigurasi global pada pangkalan sistem:</p>
 <h3 id="a-identitas-dasar-jurnal-masthead"><a class="header" href="#a-identitas-dasar-jurnal-masthead">A. Identitas Dasar Jurnal (Masthead)</a></h3>
@@ -308,12 +317,29 @@ Otorisasi akun dan setoran (<em>deposit</em>) XML ke sistem Crossref dieksekusi 
 <li>Patenkan setiap perubahan melalui tombol <strong>Save</strong> sebelum berpindah tabulasi.</li>
 </ol>
 <h2 id="145-teknik-penyuntingan-metadata-pasca-terbit"><a class="header" href="#145-teknik-penyuntingan-metadata-pasca-terbit">14.5 Teknik Penyuntingan Metadata Pasca-Terbit</a></h2>
-<p>Ketentuan Prosedural OJS 3.3: Berbeda dari versi pendahulunya, sistem OJS modern memberikan perlindungan ketat pada artikel yang sudah diedarkan. Memodifikasi artikel yang telah rilis <strong>memerlukan intervensi prosedur penarikan atau unpublish</strong> secara sementara.</p>
-<p>Langkah Eksekusi:</p>
+<p><strong>Jalur Eksekusi Cepat: Merevisi Metadata Artikel yang Telah Terbit</strong></p>
 <ol>
 <li>Akses menu <strong>Issues</strong>, lanjutkan ke <strong>Back Issues</strong>.</li>
-<li>Masuk ke halaman edisi kolektif dan temukan judul artikel yang hendak disunting.</li>
-<li>Sistem membuka area kerja publikasi artikel, lakukan <em>unpublish</em>, koreksi metadatanya, lalu terbitkan ulang artikel dengan kehati-hatian maksimal terhadap rekam jejak DOI-nya.</li>
+<li>Masuk ke halaman edisi kolektif dan klik tautan <strong>Submission</strong> di sebelah judul artikel yang hendak disunting.</li>
+<li>Klik tombol <strong>Unpublish</strong> di pojok kanan atas untuk menariknya sementara.</li>
+<li>Beralih ke tab <strong>Publication</strong>, lakukan revisi pada isian metadata (misal: abstrak atau nama penulis).</li>
+<li>Klik <strong>Save</strong> lalu klik <strong>Schedule for Publication</strong> untuk memublikasikannya kembali.</li>
+</ol>
+<blockquote>
+<p><strong>Troubleshooting: Kegagalan Pengikatan DOI Pascarevisi</strong></p>
+<p><strong>Masalah</strong>: Anda baru saja merevisi metadata judul artikel yang telah diterbitkan. Namun, tautan DOI yang lama kini menampilkan halaman <em>error</em> atau informasi yang tidak sesuai di Crossref.</p>
+<p><strong>Solusi Cepat</strong>: Segera setelah Anda melakukan <em>Republish</em> artikel di OJS, Anda <strong>WAJIB</strong> masuk kembali ke menu <strong>Tools &gt; Import/Export &gt; Crossref XML Export Plugin</strong>, pilih artikel tersebut, dan lakukan klik tombol <strong>Deposit</strong> ulang. Hal ini akan memperbarui metadata baru ke basis data sentral Crossref, sehingga <em>link</em> DOI bekerja normal kembali.</p>
+</blockquote>
+<h2 id="latihan-bab-14"><a class="header" href="#latihan-bab-14">Latihan Bab 14</a></h2>
+<p><strong>Skenario Simulasi: Standarisasi Data Pengindeks</strong></p>
+<p>Anda menyadari bahwa seorang penulis mengirimkan naskah dengan judul yang seluruhnya diketik dengan tombol <em>Caps Lock</em> dan abstraknya memuat gambar. Ini akan merusak indeksasi metadata OAI-PMH.</p>
+<p><strong>Tugas Praktik:</strong></p>
+<ol>
+<li>Buka naskah tersebut yang saat ini berada di antrean mana pun.</li>
+<li>Klik tab <strong>Publication</strong> (pastikan naskah belum terbit, jika sudah terbit, ingatlah untuk menekan <strong>Unpublish</strong> terlebih dahulu).</li>
+<li>Buka sub-tab <strong>Title &amp; Abstract</strong>. Ubah penulisan judul menjadi format <em>Title Case</em> (Hanya Huruf Awal yang Kapital).</li>
+<li>Bersihkan abstrak dari semua format aneh atau <em>bullet points</em> rumit, jadikan satu paragraf bersih yang padat (maksimal 250 kata).</li>
+<li>Klik <strong>Save</strong>. Simulasi selesai. Metadata ini kini aman untuk dipanen (<em>harvested</em>) oleh Google Scholar dan DOAJ.</li>
 </ol>
 <h2 id="checklist-komprehensif-metadata-artikel"><a class="header" href="#checklist-komprehensif-metadata-artikel">Checklist Komprehensif Metadata Artikel</a></h2>
 <p>Patuhi daftar kontrol metadata di bawah ini sebagai prasyarat akhir sebelum naskah masuk antrean publikasi rilis:</p>
