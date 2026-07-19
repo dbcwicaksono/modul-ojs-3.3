@@ -1,5 +1,9 @@
 # Panduan Praktis Pengelolaan Jurnal OJS 3.3
 
+<div align="center">
+  <img src="./img/cover-buku-ojs-3.3.png" alt="Cover Buku Panduan OJS 3.3" style="max-width:100%; height:auto;" />
+</div>
+
 **Buku Panduan Komprehensif Manajemen Editorial dan Sistem Jurnal Elektronik**
 
 ---
