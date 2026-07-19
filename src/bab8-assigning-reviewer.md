@@ -1,126 +1,112 @@
-﻿# Bab 8: Menugaskan Peninjau (Assigning Reviewer)
+# Bab 8: Menugaskan Peninjau (*Assigning Reviewer*)
 
-Setelah naskah lolos dari tinjauan awal meja (*desk review*) dan pemeriksaan kemiripan (*similarity check*), tahap selanjutnya adalah mengirimkan naskah ke proses penelaahan sejawat (*peer review*). Bab ini memandu editor dalam memilih mitra bestari (*reviewer*) yang tepat, mengatur parameter penugasan, dan memantau jalannya proses penelaahan.
+> **Pemantik Bab**
+> Menemukan mitra bestari (*reviewer*) yang bersedia meluangkan waktunya secara sukarela, memiliki kepakaran yang tepat, dan mampu mengembalikan hasil evaluasi tepat waktu adalah salah satu tantangan paling berat dalam tata kelola jurnal. Fenomena "keletihan peninjau" (*reviewer fatigue*) kini diakui sebagai krisis sistemik global dalam penerbitan ilmiah, didorong oleh ledakan jumlah naskah yang tidak diimbangi ketersediaan pakar. Merespons krisis ini, beberapa editor yang panik mulai menggunakan alat kecerdasan buatan (AI) untuk mengirim ribuan undangan *review* acak kepada siapapun yang namanya muncul di internet (*spamming*). Praktik putus asa ini dikecam keras oleh DOAJ karena menghancurkan integritas (*quality control*) dari sistem *peer review*.
 
-## 8.1 Memindahkan Naskah ke Tahap Review
+Setelah naskah berhasil melewati saringan ketat pada tahap *Desk Review* dan bebas dari indikasi plagiasi, proses beralih ke jantung dari sistem penerbitan keilmuan: Penelaahan Sejawat (*Peer Review*). Bab ini akan memandu Anda dalam menavigasi pangkalan data pakar OJS 3.3, memilih kandidat secara etis, memitigasi krisis kelelahan peninjau, mengatur batas waktu yang rasional, serta memantau jalannya proses penelaahan.
 
-Sebelum menugaskan mitra bestari, pastikan naskah telah siap secara teknis dan substantif untuk ditinjau.
+## 8.1 Editor Bagian Sebagai Garda Terdepan
 
-Prosedur Teknis:
-1. **Evaluasi pra-review**: Periksa kelengkapan dokumen kiriman dan fungsikan fitur *Pre-review Discussions* jika terdapat aspek yang perlu diklarifikasi dengan penulis.
-2. Klik tombol **"Send to Review"** di panel kanan halaman naskah.
-3. Sistem akan menampilkan daftar seluruh komponen naskah. Editor harus memilih dokumen yang akan dikirimkan kepada mitra bestari.
+Pada tahap ini, **Editor Bagian (*Section Editor*)** mengambil alih kendali penuh operasional. Sebagaimana dijelaskan pada **Bab 1: Gambaran Umum Alur Kerja Editorial OJS**, Editor Bagian adalah spesialis yang ditugaskan khusus oleh Editor Kepala untuk mengelola lalu lintas naskah pada rumpun ilmu tertentu. 
 
-Perhatian Kritis untuk Penelaahan Nirnama Ganda (*Double-Blind Review*): Sebelum mengklik konfirmasi pengiriman, editor wajib memastikan bahwa dokumen yang dipilih telah melalui proses anonimisasi (*blinding*). Hapus seluruh identitas penulis dari properti dokumen dan badan naskah. Dilarang keras mengirimkan dokumen yang masih memuat nama atau afiliasi penulis kepada mitra bestari.
+Untuk mencegah beban informasi berlebih (*information overload*), dasbor OJS 3.3 secara otomatis membatasi pandangan Editor Bagian. Mereka hanya akan melihat naskah-naskah yang didelegasikan ke dalam tab **My Queue** mereka. Dengan demikian, Editor Bagian dapat memusatkan seluruh atensinya pada pencarian mitra bestari yang paling mumpuni tanpa terganggu oleh tumpukan naskah dari disiplin ilmu lain.
 
-4. Setelah dikonfirmasi, status naskah secara otomatis berpindah dari tahap *Submission* ke tahap **Review (Round 1)**.
+## 8.2 Memastikan Keamanan Dokumen (*Blinding*)
 
-![Jendela pemilihan file untuk Send to Review](../img/elementor-placeholder-image.png)
+Langkah absolut pertama sebelum menugaskan peninjau adalah memindahkan naskah ke tahap *Review*. Saat editor mengklik **Send to Review** pada tahap *Submission*, sebuah jendela konfirmasi pengiriman berkas akan muncul.
 
-## 8.2 Antarmuka Section Editor dan Editor Kepala
+**Perhatian Kritis untuk Penelaahan Nirnama Ganda (*Double-Blind Review*):**
+Editor Bagian wajib memverifikasi bahwa berkas yang dipilih bersih dari segala metadata personal penulis. Menyerahkan naskah yang masih memuat identitas penulis kepada mitra bestari adalah bentuk pelanggaran etika editorial yang fatal dan dapat menggugurkan prinsip objektivitas akademis. Jika berkas belum bersih, editor harus membatalkan tindakan ini, membersihkan dokumen secara luring, mengunggah ulang, lalu mengulangi proses pengiriman ke tahap penelaahan.
 
-OJS 3.3 menerapkan pembagian tampilan berbasis peran yang spesifik untuk mencegah terjadinya beban informasi berlebih (*information overload*). Beban informasi berlebih adalah kondisi di mana editor dihadapkan pada volume data yang terlalu besar sehingga menghambat efisiensi pengambilan keputusan.
+## 8.3 Strategi Pemilihan Mitra Bestari
 
-| Peran | Tampilan Dasbor | Tab Akses Utama |
-|-------|----------------|-------------------|
-| **Editor Kepala** | Kontrol menyeluruh atas semua naskah. | My Queue, **Unassigned**, **All Active**, Archives |
-| **Section Editor** | Terfokus pada penugasan spesifik. | Hanya **My Queue** (naskah yang menjadi tanggung jawabnya) |
+Untuk mengundang peninjau, klik tombol **Add Reviewer** di panel *Reviewers*. OJS 3.3 tidak sekadar menampilkan daftar nama, melainkan menyediakan metrik kecerdasan historis untuk memandu keputusan Editor Bagian:
 
-Sistem navigasi terfokus ini memungkinkan Section Editor bekerja lebih efisien tanpa terganggu oleh data naskah di luar tanggung jawabnya.
+| Parameter Pencarian | Signifikansi Keputusan Editorial |
+|---------------------|----------------------------------|
+| **Minat Meninjau (*Reviewing Interests*)** | Parameter utama. Filter ini memastikan naskah ditugaskan kepada pakar dengan kepakaran spesifik (*subject matter expert*) yang selaras dengan teori naskah. |
+| **Jumlah Tinjauan Selesai** | Mengindikasikan loyalitas dan keandalan peninjau terhadap jurnal Anda. |
+| **Rata-rata Waktu (*Average Days*)** | Kunci prediksi ketepatan waktu. Mengetahui apakah seorang pakar biasanya mengembalikan ulasan dalam 2 minggu atau 2 bulan. |
+| **Tinjauan Aktif (*Active Reviews*)** | Metrik vital untuk mencegah *reviewer fatigue*. Jangan menugaskan pakar yang sedang menelaah lebih dari dua naskah secara bersamaan. |
 
-## 8.3 Memilih Mitra Bestari yang Tepat
+> **Sorotan Standar Global: Mencegah Konflik Kepentingan (COPE)**
+> 
+> *Committee on Publication Ethics* (COPE) menetapkan aturan ketat terkait kemandirian dan objektivitas (*independence and objectivity*) dalam penelaahan sejawat. Editor Bagian dilarang keras menugaskan mitra bestari yang memiliki konflik kepentingan (*conflict of interest*) dengan penulis. Bentuk konflik ini meliputi: memiliki afiliasi dengan institusi yang sama, memiliki hubungan keluarga, atau pernah menjadi rekan kerja dalam proyek publikasi/hibah selama tiga tahun terakhir. Jika jurnal tidak memiliki pakar eksternal yang independen di dalam pangkalan data, editor wajib melakukan rekrutmen peninjau baru sebelum mengeksekusi penugasan.
+> 
+> *Sumber: [https://publicationethics.org/](https://publicationethics.org/)*
 
-Klik tombol **"Add Reviewer"** di panel *Reviewers* untuk mengakses basis data mitra bestari. OJS 3.3 menyediakan parameter pencarian mendalam untuk mendukung pengambilan keputusan berbasis rekam jejak:
+> **Catatan Kritis: Bahaya Spam Undangan AI (Peringatan DOAJ)**
+> 
+> *Directory of Open Access Journals* (DOAJ) secara khusus menyoroti ancaman baru terhadap integritas jurnal terbuka, yaitu penggunaan perangkat kecerdasan buatan (AI) oleh editor untuk meraup (*scraping*) dan mengirimkan undangan peninjauan secara massal kepada ribuan orang yang tidak relevan. Tindakan kepanikan ini diambil oleh editor untuk memitigasi *reviewer fatigue*, namun hasilnya justru fatal. DOAJ secara tegas menyatakan bahwa praktik undangan *spam* ini merusak kualitas ulasan dan dapat menjadi alasan pencabutan jurnal dari pangkalan data indeks DOAJ. Editor harus memperluas jejaring secara organik dan selektif.
 
-| Parameter Pencarian | Keterangan |
-|---------------------|-----------|
-| **Jumlah Tinjauan** | Total penugasan penelaahan yang pernah diselesaikan oleh mitra bestari di jurnal ini. |
-| **Rata-rata Waktu** | Kecepatan historis penyelesaian tugas (dalam hitungan hari atau minggu). |
-| **Tinjauan Aktif** | Jumlah naskah yang sedang ditangani oleh mitra bestari saat ini. Angka tinggi berisiko memicu *reviewer fatigue*. |
-| **Waktu Sejak Tinjauan Terakhir** | Kapan terakhir kali mitra bestari berpartisipasi, yang berguna untuk menilai tingkat keaktifan. |
-| **Minat Meninjau** | Bidang keahlian mitra bestari yang didaftarkan. Sesuaikan kolom ini dengan topik naskah. |
+## 8.4 Pengaturan Parameter Undangan Penelaahan
 
-Keletihan mitra bestari (*reviewer fatigue*) adalah fenomena menurunnya kualitas dan kecepatan penelaahan akibat beban tugas peninjauan yang berlebihan dan dilakukan secara terus-menerus. Editor harus menjaga keseimbangan beban kerja mitra bestari.
+**Jalur Eksekusi Cepat: Menugaskan Mitra Bestari**
+1. Pada tahap *Review*, klik tombol **Add Reviewer**.
+2. Gunakan saringan pencarian berdasarkan kepakaran (*Reviewing Interests*).
+3. Klik tombol **Select Reviewer** pada nama pakar yang dipilih.
+4. Pada panel konfigurasi surel, tambahkan sapaan personal atau instruksi khusus.
+5. Atur tanggal *Response Due Date* (Batas Konfirmasi) dan *Review Due Date* (Batas Pengumpulan).
+6. Centang formulir penilaian (*Review Form*) yang tepat jika tersedia.
+7. Klik **Add Reviewer** di bagian bawah panel untuk mengeksekusi pengiriman undangan.
 
-![Panel pemilihan reviewer dengan parameter pencarian](../img/elementor-placeholder-image.png)
+> **Troubleshooting: Peninjau Diundang Tetapi Tidak Merespons**
+> 
+> **Masalah**: Anda sudah mengirim undangan 10 hari yang lalu, tetapi status peninjau masih belum menerima atau menolak tugas tersebut.
+> 
+> **Solusi Cepat**: Buka panel ulasan peninjau tersebut. Jangan biarkan naskah menggantung terlalu lama. Klik **Send Reminder** jika Anda masih bersedia menunggunya. Jika Anda membutuhkan proses cepat, klik **Unassign Reviewer** untuk mencabut undangan tersebut dan langsung menugaskan peninjau alternatif.
 
-### Etika Pemilihan Mitra Bestari (Standar COPE)
+Setelah mitra bestari dipilih, Editor Bagian dihadapkan pada panel konfigurasi penugasan yang lebih terperinci.
 
-Pemilihan mitra bestari harus dilandasi objektivitas keahlian. Panduan Committee on Publication Ethics (COPE) menekankan bahwa editor tidak boleh menugaskan mitra bestari yang diketahui memiliki konflik kepentingan (*conflict of interest*) dengan penulis naskah (COPE, 2017). Konflik kepentingan meliputi hubungan keluarga, hubungan kerja (afiliasi institusi yang sama), atau kolaborasi publikasi dalam tiga tahun terakhir.
+### 1. Templat Surel Otomatis dan Kustomisasi
+OJS menyediakan templat surel undangan yang menggunakan variabel (*placeholders*) untuk menarik data secara dinamis, seperti nama peninjau (`{$reviewerName}`) dan abstrak naskah (`{$abstract}`). Editor Bagian disarankan untuk menambahkan sapaan personal atau instruksi spesifik di dalam badan surel untuk meningkatkan probabilitas kesediaan mitra bestari. Undangan yang terasa sangat mekanis (robotik) lebih sering diabaikan oleh para pakar.
 
-**Studi Kasus:** Sebuah jurnal naskah biologi kelautan membutuhkan mitra bestari khusus. Editor menemukan lima pakar di sistem, tetapi setelah ditelusuri, kelima pakar tersebut bekerja di institusi yang sama dengan penulis atau pernah menjadi rekan penulis makalah di tahun sebelumnya. Mengingat asas *double-blind review* dan potensi konflik kepentingan, editor dilarang keras menugaskan mereka. Sebagai gantinya, editor wajib mencari calon peninjau dari institusi atau negara lain, lalu mendaftarkan mereka ke dalam basis data OJS sebagai mitra bestari baru sebelum menugaskannya.
+### 2. Standar Kalibrasi Waktu Evaluasi
+*Directory of Open Access Journals* (DOAJ) mensyaratkan durasi waktu yang masuk akal dan wajar untuk menjaga mutu ulasan. Terdapat dua tenggat waktu yang harus dikonfigurasi:
 
-## 8.4 Mengatur Parameter Penugasan
+- **Batas Konfirmasi (*Response Due Date*)**: Waktu yang diberikan bagi pakar untuk membalas undangan (Menerima atau Menolak). Standar ideal: **3 hingga 7 hari**.
+- **Batas Pengumpulan (*Review Due Date*)**: Waktu maksimal untuk mengumpulkan hasil ulasan mendalam. Standar ideal industri akademik: **4 minggu (28 hari)** sejak undangan diterima.
 
-Setelah memilih kandidat, sistem akan menampilkan formulir penugasan untuk mengatur detail evaluasi.
+### 3. Pemilihan Formulir Penilaian (*Review Form*)
+Apabila jurnal memiliki instrumen penilaian terstruktur (misalnya pembobotan khusus untuk metodologi), Editor Bagian harus mengaitkan penugasan ini dengan formulir penilaian dari menu tarik-turun (*drop-down*). Fitur ini memperjelas indikator evaluasi bagi mitra bestari dibandingkan hanya memberikan kotak teks kosong.
 
-### Templat Surel Undangan
+> **Catatan dari Lapangan: Kesenjangan Kuota Mitra Bestari**
+> 
+> Syarat validitas *peer review* yang diakui secara universal menuntut naskah ditinjau sekurang-kurangnya oleh **dua orang pakar independen**. Sering kali, editor hanya mengirimkan undangan kepada dua orang. Ketika salah satu menolak (atau mengabaikan) undangan, proses naskah tersebut akan lumpuh berhari-hari. Praktik manajerial terbaik bagi Editor Bagian adalah menugaskan tiga atau bahkan empat kandidat di awal. Begitu dua mitra bestari menyatakan kesediaannya, editor dapat segera membatalkan penugasan kandidat lainnya dengan mengirimkan surel apresiasi.
 
-OJS menyediakan draf surel undangan otomatis yang menggunakan *Placeholders* untuk menarik metadata naskah secara dinamis:
+## 8.5 Pemantauan dan Intervensi Pengingat (*Reminders*)
 
-| Placeholder | Data yang Diambil |
-|-------------|-------------------|
-| `{$reviewerName}` | Nama mitra bestari |
-| `{$submissionTitle}` | Judul naskah |
-| `{$abstract}` | Abstrak naskah |
-| `{$reviewDueDate}` | Tanggal batas akhir ulasan |
-| `{$journalName}` | Nama jurnal |
+Begitu tombol konfirmasi penugasan ditekan, sistem bergerak memindahkan nama peninjau ke panel pemantauan. Editor Bagian dapat melacak riwayat tindakan peninjau secara langsung, mulai dari waktu surel dibaca hingga keputusan menerima tugas.
 
-Editor dapat menyesuaikan atau menambahkan instruksi khusus pada badan surel sebelum dikirimkan.
+Jika *Response Due Date* semakin dekat namun peninjau belum merespons, editor dapat melakukan intervensi dengan menekan tautan **Send Reminder** yang akan mengirimkan notifikasi peringatan. Jika langkah ini tidak berhasil, editor dapat menggunakan fitur **Notify** (lambang pesan) untuk menghubungi peninjau secara lebih kasual atau segera membatalkan penugasan (*Unassign*) untuk beralih ke kandidat berikutnya.
 
-### Standar Waktu Peninjauan
+## Latihan Bab 8
 
-Standar Directory of Open Access Journals (DOAJ) mensyaratkan durasi waktu yang wajar dan transparan dalam penelaahan sejawat. DOAJ menetapkan standar kelayakan minimal proses evaluasi editorial adalah 4 minggu, dengan standar kelaziman jurnal internasional berkisar di 8 minggu. Pengelola jurnal harus mempertimbangkan durasi ini saat mengatur parameter penugasan:
+**Skenario Simulasi: Mengeksekusi Penugasan Mitra Bestari**
 
-| Tanggal Parameter | Keterangan |
-|---------|-----------|
-| **Response Due Date** | Batas waktu konfirmasi kesediaan (menerima atau menolak undangan). Idealnya diatur 3 hingga 7 hari. |
-| **Review Due Date** | Batas akhir pengumpulan hasil ulasan lengkap. Idealnya diatur 4 minggu (28 hari) dari tanggal penugasan. |
+Sebagai Editor Bagian, Anda telah meloloskan sebuah naskah bertopik *Artificial Intelligence* pada tahap prakajian. Naskah tersebut harus ditinjau, namun Anda sadar bahwa para pakar di bidang tersebut sangat sibuk.
 
-### Formulir Penilaian
+**Tugas Praktik:**
+1. Di tahap *Submission*, klik *Send to Review*. Pastikan dokumen naskah telah bersih dari identitas penulis.
+2. Buka tahap *Review*. Klik **Add Reviewer**.
+3. Gunakan saringan (*filter*) untuk mencari pakar dengan kata kunci "Artificial Intelligence". Temukan kandidat yang memiliki nilai beban kerja terendah (angka nol pada *Active Reviews*).
+4. Konfigurasikan tanggal *Response Due Date* menjadi 5 hari dari hari ini, dan *Review Due Date* menjadi 21 hari.
+5. Tambahkan satu kalimat sapaan personal ("Kami sangat menghargai kepakaran Anda di bidang AI...") pada templat surel undangan otomatis. 
+6. Eksekusi pengiriman undangan.
+7. Lakukan simulasi pengiriman pengingat (*reminder*) kepada kandidat tersebut.
 
-Apabila pengelola jurnal menggunakan instrumen penilaian terstruktur, editor harus memilih formulir penilaian dari menu tarik-turun (*drop-down*). Pengaturan formulir khusus ini merupakan wewenang Manajer Jurnal (*Journal Manager*) melalui menu pengaturan sistem.
-
-![Formulir penugasan reviewer dengan parameter lengkap](../img/elementor-placeholder-image.png)
-
-## 8.5 Konfirmasi dan Pemantauan Penugasan
-
-Setelah parameter ditetapkan dan tombol **"Add Reviewer"** dieksekusi, sistem beroperasi secara otomatis untuk:
-1. Mengirimkan surel undangan formal kepada mitra bestari.
-2. Memasukkan nama mitra bestari ke dalam daftar pantauan di panel *Reviewers*.
-
-Editor beralih ke fase pemantauan. Melalui dasbor OJS, editor memonitor:
-- Status keterbacaan surel undangan oleh mitra bestari.
-- Keputusan penerimaan atau penolakan penugasan.
-- Perkembangan pengunggahan hasil ulasan.
-- Kebutuhan intervensi pengingat (*reminder*).
-
-![Panel pemantauan reviewer: status dan tanggal](../img/elementor-placeholder-image.png)
-
-### Pengiriman Pengingat (Reminder)
-
-Jika mitra bestari belum memberikan respons menjelang tanggal batas konfirmasi (*Response Due Date*), editor dapat menempuh dua cara:
-- Menggunakan tombol **"Send Reminder"** yang tersedia di sebelah nama mitra bestari, atau
-- Menggunakan fitur diskusi surel (*Notify*) untuk berkomunikasi secara lebih personal.
-
-## 8.6 Mengelola Kelengkapan Peninjauan
-
-Standar akademik kelayakan sebuah naskah umumnya mensyaratkan keterlibatan sekurang-kurangnya dua orang mitra bestari independen. Editor harus mengulangi langkah penugasan untuk melengkapi kuota peninjauan.
-
-Praktik Terbaik:
-- Tugaskan mitra bestari yang berasal dari latar belakang institusi atau geografis yang berbeda guna menghindari bias.
-- Apabila mitra bestari utama menolak undangan, segera cari kandidat alternatif untuk mencegah penundaan durasi editorial.
-- Jurnal bereputasi sering kali mengundang tiga kandidat di awal untuk mengantisipasi penolakan atau keterlambatan peninjauan.
+**Arahan Editorial (Untuk Fasilitator):** 
+Pastikan pangkalan data jurnal percobaan telah diisi oleh beberapa akun *dummy* yang berperan sebagai peninjau dengan berbagai minat menelaah (*reviewing interests*), agar fitur saringan pencarian dapat dioperasikan secara realistis oleh peserta.
 
 ## Checklist Bab 8
 
-- [ ] Seluruh dokumen naskah yang dikirimkan telah dibersihkan dari properti metadata personal (*blinding*).
-- [ ] Kandidat mitra bestari telah dipilih berdasarkan kesesuaian kepakaran (minat meninjau).
-- [ ] Verifikasi ketidakadaan konflik kepentingan antara mitra bestari dan penulis telah dipastikan.
-- [ ] Batas waktu konfirmasi (*Response Due Date*) dan penyelesaian ulasan (*Review Due Date*) telah diatur dengan rentang waktu wajar (standar DOAJ: minimal 4 minggu).
-- [ ] Templat surel undangan penelaahan telah disesuaikan dengan kebutuhan naskah.
-- [ ] Minimal dua mitra bestari independen telah berhasil ditugaskan untuk naskah.
+- [ ] Memahami pembagian peran strategis di mana Editor Bagian (*Section Editor*) menjadi komandan utama pada tahap *Review*.
+- [ ] Memastikan pembersihan identitas personal penulis pada dokumen sebelum dipindahkan dari tahap *Submission* ke *Review*.
+- [ ] Mampu menganalisis metrik riwayat mitra bestari (*Average Days*, *Active Reviews*) untuk mencegah *reviewer fatigue*.
+- [ ] Mampu memitigasi potensi konflik kepentingan (sesuai standar COPE) dalam pemilihan pakar.
+- [ ] Mengonfigurasi batas waktu konfirmasi dan evaluasi dengan standar kalibrasi yang rasional.
+- [ ] Menguasai prosedur pelacakan status (*monitoring*) dan pengiriman peringatan (*reminder*) kepada mitra bestari yang pasif.
 
 ## Ringkasan Bab
 
-Manajemen penugasan penelaahan sejawat yang disiplin merupakan pilar penjaga mutu akademik jurnal. Dengan memanfaatkan basis data OJS, parameter pencarian berbasis metrik historis, serta pengaturan tanggal batas waktu sesuai standar DOAJ, editor dapat menjalankan alur *peer review* yang efisien. Pemahaman terhadap fenomena keletihan peninjau (*reviewer fatigue*) serta ketegasan dalam menegakkan aturan tanpa konflik kepentingan (*conflict of interest*) adalah ciri khas pengelolaan jurnal yang berintegritas.
+Tahap penelaahan sejawat adalah mekanisme penjaga mutu (*quality control*) tertinggi dalam penerbitan ilmiah, dan pelaksanaannya sangat bergantung pada kecekatan Editor Bagian. Dengan memanfaatkan integrasi pangkalan data OJS, mulai dari analisis metrik historis peninjau, pemanfaatan templat surel dinamis terotomatisasi, hingga pemantauan berbasis batas waktu yang akurat, editor dapat mengurangi inefisiensi alur kerja secara substansial. Kemampuan editor untuk memitigasi kelelahan mitra bestari dan menegakkan batasan etis mengenai konflik kepentingan akan secara langsung menentukan integritas dan kredibilitas keilmuan jurnal di mata komunitas akademik global.

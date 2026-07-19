@@ -1,59 +1,56 @@
 # Glosarium
 
-Glosarium ini memuat daftar istilah-istilah penting yang digunakan di seluruh bab dalam buku panduan ini, beserta padanan bahasa Indonesia, definisi singkat, dan sumber rujukannya.
+Bagian ini memuat definisi ringkas dari istilah-istilah teknis dan konsep yang kerap digunakan di dalam sistem OJS 3.3 maupun ekosistem penerbitan ilmiah secara umum. 
 
-**Activity Log (Jejak Audit / Rekam Jejak Aktivitas)**
-> Rekaman otomatis dan kronologis yang mencatat setiap aktivitas sistem (seperti pengunggahan fail, keputusan editor, atau pengiriman surel) yang tidak dapat diubah, berfungsi memastikan transparansi dan akuntabilitas proses editorial.
-> *Sumber: PKP Docs (2023)*
+- **A**
+  - **Article Processing Charge (APC)**: Biaya pemrosesan artikel yang dibebankan kepada penulis (atau institusinya) untuk mendanai biaya manajerial penerbitan akses terbuka. Jurnal harus transparan mengenai ada atau tidaknya APC.
+  - **Assign (Penugasan)**: Tindakan mengikatkan (*assign*) seorang peran spesifik (misalnya Reviewer atau Copyeditor) ke sebuah naskah agar mereka memiliki akses dan wewenang untuk menindaklanjuti naskah tersebut di dasbor OJS.
 
-**Author (Penulis)**
-> Pengguna yang mengirimkan naskah penelitian orisinal ke jurnal untuk dipublikasikan. Penulis bertanggung jawab atas integritas konten dan revisi berdasarkan umpan balik editorial.
-> *Sumber: COPE (2017)*
+- **B**
+  - **Back Issues**: Edisi jurnal yang telah diterbitkan dan dapat diakses oleh pembaca awam.
+  - **Blind Review**: Metode peninjauan di mana identitas penulis disembunyikan dari peninjau, atau sebaliknya. Di OJS, metode utama yang digunakan adalah *Double-Blind Peer Review* (kedua belah pihak saling tidak tahu).
 
-**Copyediting (Penyuntingan Naskah)**
-> Proses pemeriksaan dan perbaikan naskah yang telah diterima (*accepted*) untuk menyempurnakan tata bahasa, kejelasan kalimat, dan memastikan kesesuaian naskah dengan gaya selingkung (*house style*) jurnal.
-> *Sumber: PKP Docs (2023)*
+- **C**
+  - **Copyediting**: Tahap penyuntingan naskah pasca-penerimaan (*accept submission*). Fokus tahap ini bukan mengubah keilmuan, melainkan memperbaiki tata bahasa, kejelasan, keakuratan referensi, dan gaya selingkung.
+  - **Current Issue**: Edisi paling mutakhir yang dijadikan sebagai sorotan utama di halaman depan (*landing page*) jurnal.
 
-**Desk Review (Tinjauan Awal Meja)**
-> Tahap penyaringan pertama yang dilakukan oleh editor untuk menilai kesesuaian naskah dengan ruang lingkup jurnal dan standar kelengkapan administratif sebelum naskah dikirim ke tahap penelaahan sejawat.
-> *Sumber: DOAJ (2024)*
+- **D**
+  - **Declined Submission**: Status keputusan editorial (*Editorial Decision*) yang menolak sebuah naskah secara final. 
+  - **Digital Object Identifier (DOI)**: Tautan permanen yang dialokasikan khusus untuk mengenali objek digital secara unik di internet. OJS memiliki modul untuk mendepositkan DOI secara langsung ke sistem Crossref.
+  - **DOAJ (Directory of Open Access Journals)**: Direktori independen bertaraf global yang mengindeks jurnal berkualitas tinggi dan akses terbuka, sekaligus menetapkan standar *Best Practices* transparansi jurnal.
 
-**Digital Object Identifier / DOI (Pengidentifikasi Objek Digital)**
-> Tautan alfanumerik unik dan permanen yang digunakan untuk mengidentifikasi konten dan menyediakan tautan konsisten ke lokasi artikel di internet, yang dikelola secara global oleh lembaga registrasi seperti Crossref.
-> *Sumber: Crossref (2024)*
+- **E**
+  - **Editorial Board**: Dewan redaksi atau komite keahlian yang bertugas mengawasi kelayakan fokus cakupan dan keilmuan jurnal.
+  - **e-Resources (Sumber Daya Elektronik)**: Segala bentuk koleksi perpustakaan, pangkalan data (seperti Scopus atau PubMed), dan basis jurnal yang tersedia secara digital.
 
-**Double-Blind Review (Penelaahan Sejawat Nirnama Ganda)**
-> Format penelaahan sejawat di mana identitas penulis disembunyikan dari peninjau, dan identitas peninjau disembunyikan dari penulis, dengan tujuan menjamin objektivitas evaluasi akademik.
-> *Sumber: DOAJ (2024)*
+- **F**
+  - **Future Issues**: Wadah edisi yang sedang dipersiapkan oleh editor, berisi sekumpulan naskah yang siap rilis, namun status penerbitannya masih tertunda dan belum dapat diakses publik.
 
-**Galley (Naskah Cetak Coba / Format Siap Terbit)**
-> Bentuk final dari sebuah artikel yang telah ditata letaknya secara profesional ke dalam format portabel (seperti PDF, HTML, atau XML JATS) dan disiapkan untuk publikasi ke pembaca.
-> *Sumber: PKP Docs (2023)*
+- **G**
+  - **Galley**: Format final artikel ilmiah (PDF, HTML, atau XML JATS) yang siap untuk diterbitkan kepada publik. Dibuat pada tahap *Production*.
 
-**Metadata**
-> Struktur informasi mendetail yang mendeskripsikan atribut sebuah artikel ilmiah (termasuk judul, abstrak, nama penulis, afiliasi, dan kata kunci) agar dapat dibaca, dikategorisasi, dan diindeks oleh sistem komputer.
-> *Sumber: Riley (2017); Basuki (2000)*
+- **M**
+  - **Metadata**: Data terstruktur yang mendeskripsikan suatu artikel, meliputi judul, abstrak, nama kontributor, kata kunci, daftar referensi, hingga nomor pendanaan.
+  - **Metadata Harvesting**: Proses pengumpulan metadata secara otomatis yang dilakukan oleh agregator eksternal menggunakan sistem protokol komunikasi OAI-PMH.
 
-**Open Access (Akses Terbuka)**
-> Model ketersediaan literatur ilmiah secara gratis di internet publik yang memungkinkan pengguna untuk membaca, mengunduh, dan mendistribusikan artikel tanpa hambatan finansial, hukum, atau teknis, selain yang terkait langsung dengan koneksi internet.
-> *Sumber: Budapest Open Access Initiative (2002)*
+- **O**
+  - **OAI-PMH (Open Archives Initiative Protocol for Metadata Harvesting)**: Mekanisme teknis baku yang digunakan OJS untuk mendistribusikan metadata naskah kepada sistem perayap pengindeks akademis secara massal.
+  - **ORCID (Open Researcher and Contributor ID)**: Sistem nomor identifikasi presisten bagi seorang peneliti guna mencegah ambiguitas nama akademisi.
 
-**Peer Review (Penelaahan Sejawat)**
-> Proses validasi independen terhadap sebuah naskah ilmiah oleh para ahli atau pakar di bidang yang sama, sebelum karya tersebut diputuskan layak atau tidak untuk diterbitkan.
-> *Sumber: COPE (2017)*
+- **P**
+  - **Production**: Tahap paling akhir sebelum naskah masuk ke wadah edisi; pada tahap ini editor tidak lagi menyunting teks, melainkan membuat desain (*layout*) visual naskah.
+  - **Proofreading**: Koreksi pasca-produksi untuk memeriksa apakah terdapat kesalahan pada *Galley* akhir (seperti salah penomoran halaman atau ketidaksejajaran margin) sebelum artikel dilepas ke publik.
 
-**Plagiat / Plagiarisme**
-> Tindakan menyajikan atau mengutip karya, ide, teks, atau data milik orang lain dan mengakuinya sebagai karya sendiri tanpa memberikan penghargaan atau kutipan referensi yang selayaknya.
-> *Sumber: Permendiknas No. 17 Tahun 2010*
+- **R**
+  - **Resubmit for Review**: Keputusan editorial yang mensyaratkan penulis merevisi naskah secara menyeluruh dan mengulang proses pendaftaran dari awal atau putaran peninjauan babak baru.
+  - **Revisions Required**: Keputusan editorial yang menerima naskah bersyarat; penulis diwajibkan melakukan revisi tanpa harus memulai putaran ulasan baru.
 
-**Reviewer / Mitra Bestari (Peninjau)**
-> Pakar independen yang ditunjuk oleh editor untuk mengevaluasi kualitas konten naskah secara objektif, menjamin integritas ilmiah, dan memberikan rekomendasi mengenai kelayakan terbit naskah tersebut.
-> *Sumber: COPE (2017)*
+- **S**
+  - **Submission**: Entitas yang mewakili kiriman naskah mentah dari penulis, sekaligus nama dari tahap (*stage*) pertama dalam alur kerja editorial OJS.
+  - **Similarity Check**: Pengecekan perangkat lunak (seperti Turnitin atau iThenticate) untuk mendeteksi tingkat kemiripan naskah guna mencegah plagiasi.
 
-**Section Editor (Editor Bagian)**
-> Anggota dewan editorial yang diberikan wewenang untuk mengelola alur kerja naskah pada ruang lingkup spesifik, mulai dari menugaskan peninjau hingga merumuskan rekomendasi keputusan akhir kepada Editor Kepala.
-> *Sumber: PKP Docs (2023)*
+- **T**
+  - **Table of Contents (TOC)**: Daftar susunan artikel yang menentukan urutan tampil naskah di dalam suatu terbitan (*Issue*).
 
-**Similarity Check (Pemeriksaan Kemiripan)**
-> Prosedur pembandingan teks naskah baru terhadap pangkalan data publikasi global menggunakan perangkat lunak khusus (seperti Turnitin atau iThenticate) guna mendeteksi indikasi duplikasi teks atau plagiarisme.
-> *Sumber: Lukman, Istadi, & Wiryawan (2020)*
+- **U**
+  - **Unpublish**: Fitur pembatalan publikasi yang menarik kembali sebuah naskah atau edisi penuh dari halaman beranda pembaca publik, mengembalikannya ke status *Future Issues*.

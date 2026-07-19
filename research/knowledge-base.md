@@ -431,6 +431,140 @@ Dokumen ini diisi secara kumulatif oleh agen peneliti. Setiap entri baru **ditam
 
 > [Parafrase] Banyak jurnal mengalami masalah saat mengekspor referensi mereka ke pihak ketiga karena penulisan daftar pustaka dilakukan secara manual (*hardcoded*) dan formatnya acak-acakan. Ketika skrip pemanen (*parser*) dari Crossref atau DOAJ mencoba membaca teks biasa tersebut, mereka gagal mengenali bagian mana yang merupakan nama penulis, judul, nama jurnal, atau volume. Inilah alasan mengapa penggunaan *Reference Manager* dan penataan metadata OJS yang disiplin amat ditekankan. Referensi yang terstruktur rapi dengan separator yang benar (titik, koma, huruf miring) memungkinkan parser mengekstrak data meta dengan presisi tinggi, memastikan pengakuan kutipan (*citation credit*) yang akurat bagi penulis yang disitasi.
 
+### KB-031 — Rasio Penolakan Awal (Desk Rejection Rates) secara Global
+
+- **Kategori**: statistik, standar
+- **Keywords**: desk rejection rate, rasio penolakan awal, persentase penolakan, editorial triage, jurnal OA
+- **Relevansi Bab**: Bab 6
+- **Sumber**: Berbagai Analisis Penerbitan Akademik
+- **Diambil**: 2026-07-19
+
+> [Parafrase] Secara umum dalam industri penerbitan akademik, rasio penolakan awal (*desk rejection rate*) berkisar antara 30% hingga 70% dari total naskah yang masuk. Pada jurnal papan atas atau yang sangat selektif, angka ini kerap melampaui 90%. Tidak ada standar baku mengenai rasio yang "benar", karena hal ini sangat bergantung pada tingkat keketatan jurnal, ruang lingkup disiplin ilmu (ilmu sosial sering kali memiliki rasio penolakan yang lebih tinggi daripada biomedis), dan tujuan spesifik jurnal (apakah mengejar *sound science* atau *novelty* tinggi). *Desk rejection* dianggap sebagai alat triase editorial (*editorial triage*) yang vital, bukan semata-akhir penilaian saintifik.
+
+---
+
+### KB-032 — Alasan Utama Desk Rejection
+
+- **Kategori**: kasus, praktik-terbaik
+- **Keywords**: alasan penolakan awal, desk rejection reasons, aims and scope, guidelines
+- **Relevansi Bab**: Bab 6
+- **Sumber**: Laporan Editorial Jurnal Global
+- **Diambil**: 2026-07-19
+
+> [Parafrase] Meskipun kebijakan tiap jurnal bervariasi, lima alasan paling dominan penyebab naskah ditolak pada tahap awal (*desk rejected*) adalah: (1) Ketidaksesuaian dengan cakupan dan fokus jurnal (*Mismatch with Aims and Scope*); (2) Kurangnya kebaruan atau kontribusi signifikan (*Weak Novelty*); (3) Ketidakpatuhan fatal terhadap pedoman penulis, seperti format atau panjang naskah; (4) Kualitas teknis yang sangat buruk, mencakup tata bahasa yang tidak dapat dipahami atau ketiadaan standar pelaporan; (5) Pelanggaran etika atau administrasi, seperti tidak adanya deklarasi konflik kepentingan, hilangnya persetujuan etik (untuk riset manusia/hewan), atau tingkat kemiripan (plagiasi) yang melampaui batas toleransi.
+
+---
+
+### KB-033 — Reviewer Fatigue (Kelelahan Mitra Bestari) dan Panduan COPE/DOAJ
+
+- **Kategori**: standar, definisi, praktik-terbaik
+- **Keywords**: reviewer fatigue, kelelahan mitra bestari, COPE, DOAJ, spamming AI
+- **Relevansi Bab**: Bab 8
+- **Sumber**: COPE Guidelines, DOAJ Blog
+- **Diambil**: 2026-07-19
+
+> [Parafrase] *Reviewer fatigue* (kelelahan mitra bestari) merupakan krisis sistemik dalam penerbitan ilmiah akibat ketidakseimbangan antara ledakan jumlah naskah dan ketersediaan pakar. Meskipun COPE tidak memiliki satu kebijakan tunggal khusus untuk ini, pedoman etika mereka mendorong editor untuk mengurangi beban *reviewer* melalui perluasan jejaring pakar, penyederhanaan formulir ulasan, dan menghindari permintaan *review* yang tidak perlu (menyaring lebih ketat di fase *desk review*). Sementara itu, DOAJ menyoroti *reviewer fatigue* sebagai ancaman langsung terhadap integritas jurnal terbuka. DOAJ secara khusus memperingatkan praktik editor yang panik lalu menggunakan AI untuk mengirim undangan *review* secara massal (*spamming*) kepada orang acak tanpa penyaringan kualifikasi, karena hal ini merusak kualitas ulasan dan dapat menjadi alasan pencabutan indeksasi.
+
+### KB-034 — Panduan Etik COPE untuk Mitra Bestari (Peer Reviewers)
+
+- **Kategori**: standar, praktik-terbaik
+- **Keywords**: COPE ethical guidelines, peer reviewer, constructive report, objektivitas, kerahasiaan
+- **Relevansi Bab**: Bab 9
+- **Sumber**: COPE Guidelines, Laporan Institusi (UNM, NIH, BRIN)
+- **Diambil**: 2026-07-19
+
+> [Parafrase] *Committee on Publication Ethics* (COPE) menetapkan prinsip utama dalam penelaahan sejawat: objektivitas, spesifik, dan profesional. Tiga pilar utama bagi seorang mitra bestari adalah: (1) **Nada Profesional & Objektif**: Hindari komentar merendahkan, personal, atau bermusuhan. Kedepankan kerendahan hati. (2) **Umpan Balik Berbasis Bukti**: Jangan sekadar mengklaim "ini tidak baru" tanpa menyertakan referensi spesifik. Jelaskan alasan logis di balik setiap kritik agar editor dan penulis paham. Jangan mengubah gaya penulisan naskah (memaksa preferensi *style* sendiri). (3) **Kerahasiaan & Etika**: Naskah adalah dokumen rahasia. Jangan didiskusikan dengan pihak ketiga tanpa izin. Jika ada kecurigaan plagiasi atau fabrikasi data, laporkan diam-diam secara langsung kepada editor, jangan melakukan investigasi mandiri.
+
+---
+
+### KB-035 — Prinsip Transparansi Keputusan Editorial (Editorial Decisions)
+
+- **Kategori**: standar
+- **Keywords**: COPE editorial decisions, transparency, consistency
+- **Relevansi Bab**: Bab 10
+- **Sumber**: COPE Best Practice Guidelines for Journal Editors
+- **Diambil**: 2026-07-19
+
+> [Parafrase] Keputusan editorial (Menerima, Menolak, atau Meminta Revisi) harus murni didasarkan pada signifikansi, orisinalitas, kejelasan, validitas metodologi, dan relevansi naskah terhadap ruang lingkup jurnal. COPE menekankan bahwa editor tidak boleh membatalkan keputusan editor sebelumnya (misalnya keputusan "Diterima" oleh editor lama) kecuali ditemukan pelanggaran serius seperti *misconduct*. Keputusan "Major Revision" atau "Minor Revision" secara internal ditentukan oleh kebijakan tiap jurnal, namun prosedur tersebut (bagaimana keputusan diambil) harus transparan dan dipublikasikan bagi penulis.
+
+---
+
+### KB-036 — Mekanisme Banding Terhadap Keputusan Editorial (Appeals)
+
+- **Kategori**: standar, prosedur
+- **Keywords**: appeals against editorial decision, prosedur banding, penolakan naskah
+- **Relevansi Bab**: Bab 10
+- **Sumber**: COPE Guidelines, Laporan Publisher Global
+- **Diambil**: 2026-07-19
+
+> [Parafrase] COPE merekomendasikan secara eksplisit agar setiap jurnal memiliki **mekanisme banding yang dinyatakan secara publik** bagi penulis yang keberatan dengan keputusan *Reject* (penolakan). Prosedur banding harus transparan, objektif, dan bebas dari konflik kepentingan. Umumnya, banding diajukan kepada Editor Kepala (*Editor-in-Chief*) atau editor independen lainnya, disertai sanggahan teknis/argumen dari penulis. Editor dapat melibatkan penelaah baru (*additional expert review*) jika diperlukan. Namun, untuk menjaga efisiensi manajerial, jurnal juga harus menetapkan batasan kapan sebuah keputusan editorial dianggap final (*finality of decision*).
+
+### KB-037 — Alur Kerja Copyediting di OJS 3.3
+
+- **Kategori**: praktik-terbaik, referensi-teknis
+- **Keywords**: copyediting, OJS 3.3, copyeditor, file upload, alur kerja editorial, discussions
+- **Relevansi Bab**: Bab 11
+- **Sumber**: PKP Docs / Learning OJS 3.3 — https://docs.pkp.sfu.ca/learning-ojs/en/editorial-workflow#copyediting
+- **Diambil**: 2026-07-19
+
+> [Parafrase] Tahap *Copyediting* adalah tahap ketiga dalam alur kerja editorial OJS 3.3, yang diinisiasi setelah editor menerima naskah dari tahap ulasan (*Review*). Pada tahap ini, editor menugaskan *Copyeditor* (penyunting naskah) melalui panel *Participants* untuk memeriksa tata bahasa, kejelasan, dan konsistensi gaya selingkung. Proses kerja berpusat pada panel "Copyedited" di mana *Copyeditor* dapat mengunduh draf, memperbaikinya (biasanya menggunakan fitur *Track Changes* di Word), lalu mengunggah versi bersih ke dalam sistem. Komunikasi antara editor, penulis, dan copyeditor dikelola melalui fitur "Copyediting Discussions" untuk menghindari pertukaran surel di luar sistem. Setelah editor menyetujui versi akhir copyediting, naskah dikirim ke tahap *Production*.
+
+*Catatan konteks*: Sangat relevan untuk Bab 11 dalam membedakan tugas Editor (manajerial) dan Copyeditor (substansi bahasa).
+
+---
+
+### KB-038 — Alur Kerja Production dan Pembuatan Galley di OJS 3.3
+
+- **Kategori**: praktik-terbaik, referensi-teknis
+- **Keywords**: production, galley, layout editor, OJS 3.3, PDF, HTML, XML, proofreading
+- **Relevansi Bab**: Bab 12
+- **Sumber**: PKP Docs / Learning OJS 3.3 — https://docs.pkp.sfu.ca/learning-ojs/en/editorial-workflow#production
+- **Diambil**: 2026-07-19
+
+> [Parafrase] Tahap *Production* (Produksi) adalah garis akhir persiapan naskah sebelum diterbitkan. Di tahap ini, editor menugaskan seorang *Layout Editor* (Penata Letak) untuk mengubah naskah versi *Copyedited* menjadi format terbitan akhir yang siap dibaca publik, disebut "Galley" (contoh format: PDF, HTML, XML JATS). *Galley* yang telah diformat kemudian diunggah ke bagian "Publication Formats". Praktik terbaik mensyaratkan tahap *Proofreading* (koreksi cetak coba) di mana *Galley* tersebut dikirimkan kembali kepada penulis atau *Proofreader* khusus via fitur *Discussions* untuk memastikan tidak ada kesalahan tata letak (seperti gambar terpotong atau rumus rusak). Jika ada revisi, Layout Editor memperbarui berkas menggunakan fitur "Create New Version".
+
+*Catatan konteks*: Penting untuk Bab 12 guna menegaskan bahwa OJS tidak secara otomatis membuat PDF; Layout Editor yang harus mendesain dan mengunggahnya secara manual.
+
+### KB-039 — Manajemen Edisi (Issue Management) di OJS 3.3
+
+- **Kategori**: praktik-terbaik, referensi-teknis
+- **Keywords**: issue management, create issue, publish issue, future issues, back issues, OJS 3.3
+- **Relevansi Bab**: Bab 13
+- **Sumber**: PKP Docs / Learning OJS 3.3 — https://docs.pkp.sfu.ca/learning-ojs/en/editorial-workflow#issue-management
+- **Diambil**: 2026-07-19
+
+> [Parafrase] Pengelolaan edisi di OJS 3.3 dipusatkan pada menu "Issues" di panel dasbor sebelah kiri. Editor membuat kerangka edisi (*issue shell*) dengan mengeklik "Create Issue" pada tab "Future Issues", lalu melengkapi metadata seperti Volume, Nomor, Tahun, dan Judul edisi. Naskah yang telah selesai di tahap *Production* dijadwalkan masuk ke kerangka edisi ini. Artikel tidak akan terbit secara publik sampai editor menekan tombol "Publish Issue". Setelah diterbitkan, edisi tersebut otomatis berpindah dari tab "Future Issues" ke tab "Back Issues" dan dapat diakses oleh publik.
+
+*Catatan konteks*: OJS menggunakan sistem publikasi berbasis wadah (*issue*), bukan sekadar publikasi per artikel, meskipun model *continuous publishing* dimungkinkan jika jurnal memublikasikan edisi tersebut sejak awal dan menambahkannya seiring waktu.
+
+---
+
+### KB-040 — Distribusi Metadata dan OAI-PMH di OJS 3.3
+
+- **Kategori**: referensi-teknis, standar
+- **Keywords**: metadata, OAI-PMH, Dublin Core, JATS, indexing, harvester
+- **Relevansi Bab**: Bab 14
+- **Sumber**: PKP Doxygen & EIFL — https://docs.pkp.sfu.ca/
+- **Diambil**: 2026-07-19
+
+> [Parafrase] OJS 3.3 menggunakan protokol standar OAI-PMH (Open Archives Initiative Protocol for Metadata Harvesting) sebagai tulang punggung untuk mendistribusikan metadata artikel ke pengindeks dan agregator eksternal. Secara bawaan, OAI-PMH di OJS mengekspor metadata dalam format Dublin Core. Kualitas metadata yang dimasukkan pada tahap publikasi (seperti pendanaan, lisensi, dan kata kunci) sangat memengaruhi seberapa baik mesin telusur akademis membaca artikel. Praktik terbaik menuntut jurnal untuk memastikan tautan *endpoint* OAI-PMH mereka aktif dan valid agar layanan pemanen (*harvester*) seperti Dimensions, BASE, dan mesin pengindeks lainnya dapat secara otomatis menarik data tanpa intervensi manual.
+
+*Catatan konteks*: Penting untuk Bab 14 guna menjelaskan ke pembaca bahwa SEO akademik bergantung pada kualitas pengisian form metadata di OJS, bukan sekadar di PDF.
+
+---
+
+### KB-041 — Diseminasi dan Komunikasi Pengguna di OJS 3.3
+
+- **Kategori**: praktik-terbaik, fitur
+- **Keywords**: dissemination, announcements, social media plugins, user communication
+- **Relevansi Bab**: Bab 15
+- **Sumber**: PKP Docs / Learning OJS 3.3
+- **Diambil**: 2026-07-19
+
+> [Parafrase] Strategi diseminasi konten di OJS 3.3 didukung oleh fitur "Announcements" (Pengumuman) bawaan sistem yang memungkinkan editor menyebarkan berita, panggilan makalah (*call for papers*), atau informasi rilis edisi baru langsung ke beranda jurnal. Fitur ini secara otomatis dapat memicu notifikasi surel ke pengguna yang terdaftar. Selain itu, peningkatan visibilitas sangat disarankan melalui aktivasi *plugin* berbagi media sosial (seperti *AddThis* atau *Share* plugins) yang terintegrasi di halaman artikel. PKP merekomendasikan sinergi antara platform OJS dan saluran eksternal jurnal (media sosial institusi, nawala) untuk melacak impak penyebaran publikasi.
+
+*Catatan konteks*: Fondasi untuk Bab 15 yang sepenuhnya baru, mengajarkan editor untuk tidak pasif setelah memublikasikan edisi.
+
 ---
 
 ## Log Topik yang Sudah Diteliti
@@ -445,3 +579,7 @@ Dokumen ini diisi secara kumulatif oleh agen peneliti. Setiap entri baru **ditam
 | 2026-07-18 | Perbedaan Hak Cipta vs Hak Penerbitan, Lisensi Creative Commons, Kepemilikan Artikel BOAI | 3 (KB-019 s.d. KB-021) | Agen Peneliti Web (Antigravity) |
 | 2026-07-18 | Syarat DOAJ halaman About (Transparansi APC & Etika Publikasi), Praktik Terbaik Author Guidelines (Template sederhana vs layout), Masalah umum naskah penulis (line breaks, gambar, tabel) | 4 (KB-022 s.d. KB-025) | Agen Peneliti Web (Antigravity) |
 | 2026-07-18 | Controlled Vocabularies vs Author Keywords, Ekstraksi referensi OJS 3.3, Praktik gaya selingkung (Citation Styles), Crossref Reference Linking, Standarisasi parsing metadata pustaka | 5 (KB-026 s.d. KB-030) | Agen Peneliti Web (Antigravity) |
+| 2026-07-19 | Desk rejection rates, alasan utama desk rejection, Reviewer fatigue, standar COPE dan DOAJ terkait undangan review spam AI | 3 (KB-031 s.d. KB-033) | Antigravity Utama |
+| 2026-07-19 | Panduan etika COPE untuk mitra bestari (objektivitas, rahasia), Prinsip transparansi keputusan editorial, Prosedur mekanisme banding (Appeals) COPE | 3 (KB-034 s.d. KB-036) | Antigravity Utama |
+| 2026-07-19 | Alur Kerja Copyediting OJS 3.3, Tugas Copyeditor, Alur Kerja Production, Galley, Tugas Layout Editor | 2 (KB-037 s.d. KB-038) | Antigravity Utama |
+| 2026-07-19 | Manajemen Edisi OJS 3.3, OAI-PMH & Metadata Distribution, Fitur Announcements & Diseminasi Media Sosial | 3 (KB-039 s.d. KB-041) | Antigravity Utama |

@@ -1,8 +1,9 @@
-﻿# Bab 1: Gambaran Umum Alur Kerja Editorial OJS
+# Bab 1: Gambaran Umum Alur Kerja Editorial OJS
 
-> *Penerbitan jurnal ilmiah elektronik memerlukan sistem tata kelola yang terstandardisasi. Bab ini menguraikan struktur operasional, evolusi sistem, dan empat fase alur kerja utama pada platform Open Journal Systems (OJS).*
+> **Pemantik Bab**
+> Di era digital, menerbitkan jurnal ilmiah elektronik bukan lagi sekadar mengunggah file PDF ke sebuah situs web. Jurnal membutuhkan sistem tata kelola yang terstandardisasi, transparan, dan mampu merekam jejak audit (*audit trail*). Bab ini akan membawa Anda memahami struktur operasional, evolusi sistem, dan empat fase alur kerja utama pada platform Open Journal Systems (OJS) 3.3.
 
-Open Journal Systems (OJS) versi 3.3 adalah perangkat lunak sumber terbuka (*open-source*) yang dirancang secara modular untuk memfasilitasi pengelola jurnal dalam mengatur proses editorial secara sistematis. Memahami alur kerja OJS 3.3 berperan penting dalam memastikan proses penerbitan berjalan dengan transparan, terdokumentasi, dan memenuhi standar integritas akademik.
+Untuk memulai perjalanan Anda sebagai pengelola jurnal yang profesional, kita perlu memahami terlebih dahulu filosofi sistem yang akan Anda kendalikan setiap harinya. Open Journal Systems (OJS) versi 3.3 adalah perangkat lunak sumber terbuka (*open-source*) yang dirancang secara modular untuk memfasilitasi pengelola jurnal dalam mengatur proses editorial secara sistematis. Memahami alur kerja ini berperan mutlak dalam memastikan proses penerbitan memenuhi standar integritas akademik global.
 
 ## 1.1 Fondasi, Evolusi, dan Lanskap Kontemporer OJS
 
@@ -35,9 +36,11 @@ Hingga tahun 2025, OJS digunakan oleh lebih dari 58.000 jurnal di 156 negara (PK
 
 Adopsi massal OJS di Indonesia didorong oleh kebijakan Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi (Kemendikbudristek). Untuk memenuhi syarat akreditasi di portal ARJUNA (Akreditasi Jurnal Nasional) dan sistem pemeringkatan SINTA, pengelola jurnal diwajibkan menggunakan sistem manajemen jurnal elektronik. OJS memenuhi kriteria verifikasi asesor karena kemampuannya merekam riwayat penelaahan (*peer review*) secara transparan.
 
-**Catatan dari Lapangan**
+**Catatan dari Lapangan: Bencana Administrasi Akreditasi**
 
-Pada implementasi awal, pengelola baru kerap mengalami kesulitan dalam mengoperasikan antarmuka OJS yang memiliki banyak fitur. Hal ini sering memicu pengelola untuk beralih menggunakan aplikasi pesan instan pihak ketiga (seperti WhatsApp) atau surel pribadi guna berkoordinasi dengan penulis dan pengulas. Praktik komunikasi di luar sistem ini menimbulkan risiko manajerial yang tinggi, yaitu hilangnya riwayat jejak audit (*audit trail*). Saat menjalani evaluasi akreditasi, pengelola jurnal tidak akan dapat melampirkan bukti validitas proses penelaahan naskah apabila riwayat komunikasi tersebut tidak terekam di dalam sistem OJS.
+Sebuah kasus nyata yang sangat sering terjadi di kalangan pengelola jurnal kampus di Indonesia: Saat awal merintis jurnal, karena merasa antarmuka OJS terlalu kompleks, editor tingkat pertama (*desk editor*) memilih menggunakan WhatsApp untuk menagih naskah dari penulis, dan menggunakan email pribadi (seperti Gmail) untuk mengirim hasil revisi dari pengulas (*reviewer*). Selama satu tahun pertama, jurnal berhasil terbit. 
+
+Bencana terjadi pada tahun kedua ketika mereka mengajukan akreditasi ke portal ARJUNA. Asesor meminta bukti korespondensi *blind review*. Karena semua komunikasi terjadi di WhatsApp dan email pribadi, sistem OJS mencatat naskah tersebut "langsung diterbitkan tanpa review" (*bypass*). Akibat ketiadaan jejak audit (*audit trail*) di dalam OJS, jurnal tersebut dinyatakan gugur akreditasi dengan dugaan "publikasi predator". Kasus ini menegaskan bahwa penggunaan fitur komunikasi internal OJS bersifat mutlak.
 
 ## 1.3 Sistem Manajemen Peran pada Ekosistem OJS
 
@@ -99,9 +102,18 @@ Buku panduan ini menguraikan tahapan manajemen jurnal secara sekuensial berdasar
 | Bab 13 | Manajemen Metadata | Visibilitas |
 | Bab 14 | Diseminasi Eksternal | Pasca-Publikasi |
 
-## 1.7 Persiapan Praktik
+## 1.7 Persiapan Praktik dan Antisipasi Kendala
 
-Untuk memaksimalkan pembelajaran, pengelola disarankan untuk melakukan uji coba pada jurnal simulasi (jurnal percobaan). Latihan pada jurnal simulasi memungkinkan Anda untuk menguji alur kerja lintas peran tanpa berisiko mengubah data atau pengaturan pada sistem jurnal yang berstatus produksi (aktif).
+Untuk memaksimalkan pembelajaran buku ini, pengelola disarankan untuk melakukan uji coba pada jurnal simulasi (jurnal percobaan). Latihan ini memungkinkan Anda menguji tombol-tombol krusial (seperti **Decline Submission** atau **Send to Review**) tanpa berisiko menghapus data pada sistem jurnal yang aktif.
+
+> **Troubleshooting: Kendala Login dan Navigasi Awal**
+> 
+> **Masalah**: Pengelola baru sering kali mengeluh, *"Saya sudah berhasil login, tapi layar saya kosong dan saya tidak bisa melihat menu editorial apapun!"*
+> 
+> **Solusi Cepat**: 
+> 1. Periksa peran (*Roles*) akun Anda. Dalam OJS, sebuah akun bisa saja terdaftar hanya sebagai **Reader** atau **Author**. Jika peran Anda bukan **Journal Manager** atau **Journal Editor**, dasbor editorial di sisi kiri layar tidak akan muncul.
+> 2. Minta admin IT kampus atau **Site Administrator** untuk masuk ke menu **Users & Roles**, mencari nama Anda, dan mencentang peran **Journal Manager** pada profil akun Anda.
+> 3. Setelah itu, *logout* dan *login* kembali. Menu navigasi kiri sekarang akan terlihat sepenuhnya.
 
 Referensi panduan teknis resmi dapat diakses melalui **PKP Docs** (https://docs.pkp.sfu.ca) dan modul pelatihan daring di **PKP School** (https://pkpschool.sfu.ca).
 
@@ -127,4 +139,4 @@ Tinjau tiga jenis naskah di bawah ini. Tentukan tahapan alur kerja mana saja (da
 
 ## Ringkasan Bab
 
-Open Journal Systems (OJS) berfungsi sebagai infrastruktur digital komprehensif yang dirancang untuk mendukung penerbitan ilmiah profesional dan dapat diaudit. Dengan memahami arsitektur sistem—yang terbagi dalam fase Pengajuan, Penelaahan, Penyuntingan, dan Produksi—pengelola jurnal dapat memetakan pembagian tugas secara spesifik antarperan. Kepastian alur kerja di dalam OJS menjamin tersedianya jejak audit secara otomatis, memastikan bahwa jurnal mematuhi etika publikasi internasional, serta memenuhi syarat standar akreditasi dan indeksasi global.
+Open Journal Systems (OJS) berfungsi sebagai infrastruktur digital komprehensif yang dirancang untuk mendukung penerbitan ilmiah profesional dan dapat diaudit. Dengan memahami arsitektur sistem, yang terbagi dalam fase Pengajuan, Penelaahan, Penyuntingan, dan Produksi, pengelola jurnal dapat memetakan pembagian tugas secara spesifik antarperan. Kepastian alur kerja di dalam OJS menjamin tersedianya jejak audit secara otomatis, memastikan bahwa jurnal mematuhi etika publikasi internasional, serta memenuhi syarat standar akreditasi dan indeksasi global.

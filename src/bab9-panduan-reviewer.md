@@ -1,209 +1,103 @@
-﻿# Bab 9: Panduan untuk Peninjau (Reviewer)
+# Bab 9: Panduan untuk Peninjau (Reviewer)
 
-Bab ini membahas alur kerja penelaahan sejawat dari sudut pandang reviewer atau mitra bestari. Untuk konteks bagaimana editor menugaskan reviewer, lihat **Bab 7: Menugaskan Peninjau**. Untuk panduan editor dalam merespons hasil ulasan, lihat **Bab 9: Merespons Hasil Ulasan**.
+> **Pemantik Bab**
+> Menjadi mitra bestari (*reviewer*) adalah pengabdian sunyi di jantung sains. Tidak ada tepuk tangan atau honorarium, namun tanpa mereka, ilmu pengetahuan akan dibanjiri oleh klaim palsu dan riset yang cacat. Bagaimana rasanya ketika Anda menerima naskah yang secara fundamental salah, namun Anda harus menyampaikannya tanpa menghancurkan semangat penulisnya? Bagaimana Anda memastikan bahwa ego akademis Anda tidak menutupi objektivitas penilaian? Menjadi peninjau bukan sekadar mencari kesalahan, melainkan memandu penulis menuju versi terbaik dari karya mereka.
 
-## Penelaahan Sejawat dalam Publikasi Ilmiah
+Bab ini membahas alur kerja penelaahan sejawat secara spesifik dari sudut pandang mitra bestari. Panduan ini dirancang tidak hanya untuk memahami tombol-tombol antarmuka OJS, tetapi juga untuk meresapi etika komunikasi saintifik. (Untuk konteks bagaimana editor menugaskan peninjau, silakan rujuk **Bab 8: Menugaskan Peninjau**. Untuk panduan editor merespons hasil ulasan, rujuk **Bab 10: Keputusan Editorial**).
 
-Penelaahan sejawat (*peer review*) adalah proses evaluasi suatu karya ilmiah oleh para ahli yang memiliki kompetensi di bidang yang sama sebelum karya tersebut diterbitkan. Menurut Committee on Publication Ethics (COPE), peer review merupakan metode utama yang digunakan komunitas ilmiah untuk memvalidasi penelitian dan memastikan integritas rekam jejak ilmiah (COPE, 2017, https://publicationethics.org/files/cope-ethical-guidelines-peer-reviewers-v2.pdf).
+## 9.1 Peran Vital dalam Ekosistem Jurnal
 
-Reviewer berkontribusi pada ekosistem ilmiah melalui tiga fungsi utama:
-1. Menjaga standar kualitas artikel yang dipublikasikan.
-2. Memberikan umpan balik konstruktif yang membantu penulis memperbaiki naskah.
-3. Membantu editor mengambil keputusan editorial yang tepat dan berdasar.
+Mitra bestari adalah pakar independen yang bertugas membedah kualitas metodologi dan orisinalitas naskah. *Directory of Open Access Journals* (DOAJ) mensyaratkan setiap jurnal yang terindeks untuk secara gamblang memublikasikan jenis penelaahan sejawat yang digunakan (misalnya *double-blind review*), serta memastikan seluruh naskah penelitian melalui proses evaluasi oleh sekurang-kurangnya dua peninjau independen.
 
----
+Dalam mekanisme *double-blind review*, sistem jurnal mengisolasi identitas penulis dari peninjau dan sebaliknya. Tembok pembatas ini dibangun secara sengaja untuk membunuh bias institusional, bias gender, dan bias reputasi, sehingga sebuah karya murni dinilai berdasarkan kekuatan argumennya semata.
 
-## 9.1 Peran Reviewer dalam Ekosistem Jurnal
+## 9.2 Menerima Undangan dan Merespons Panggilan
 
-Reviewer adalah pakar di bidangnya yang bertugas mengevaluasi kualitas konten naskah secara objektif dan independen guna menjamin integritas ilmiah naskah (COPE, 2017). Directory of Open Access Journals (DOAJ) mensyaratkan setiap jurnal yang terindeks harus secara jelas memublikasikan jenis penelaahan sejawat yang digunakan (misalnya *blind review* atau *double-blind review*), serta memastikan seluruh naskah penelitian melalui proses evaluasi sejawat oleh sekurang-kurangnya dua peninjau independen (DOAJ, 2024, https://doaj.org/apply/guide/).
+Alur kerja bermula ketika sebuah notifikasi otomatis dari Editor Bagian mendarat di kotak masuk surel Anda. Undangan tersebut biasanya menyertakan judul naskah, abstrak singkat, serta tautan aman untuk masuk ke dalam sistem jurnal.
 
-Dalam proses *double-blind review*, identitas penulis dirahasiakan dari reviewer dan identitas reviewer dirahasiakan dari penulis. Mekanisme ini dirancang untuk menjamin independensi penilaian dari pengaruh sosial atau institusional.
+### Tampilan Dasbor Peninjau
 
----
+Ketika Anda masuk (*login*) ke dalam OJS 3.3, dasbor Anda secara spesifik dirancang untuk bebas dari distraksi. Anda hanya akan melihat naskah-naskah yang ditugaskan kepada Anda secara pribadi. Perhatikan indikator lonceng notifikasi di pojok kanan atas, yang menandakan jumlah tenggat waktu yang menuntut atensi segera Anda.
 
-## 9.2 Menerima Undangan dan Login ke Sistem
+## 9.3 Langkah 1: Merespons Permintaan (Request)
 
-### Memulai dari Email Undangan
+Tahap pertama adalah panel *Request*. Di sinilah Anda dihadapkan pada persimpangan untuk menerima atau menolak penugasan. Sebelum menekan tombol konfirmasi, OJS mewajibkan Anda untuk meninjau tenggat waktu (*Response Due Date* dan *Review Due Date*) dan menyetujui pernyataan etika.
 
-Alur kerja reviewer dimulai saat menerima email undangan otomatis dari Section Editor. Email ini berisi:
-- Judul naskah yang akan ditinjau.
-- Tautan untuk menerima atau menolak undangan.
-- Tanggal batas konfirmasi (*Response Due Date*) dan tanggal batas pengiriman ulasan (*Review Due Date*).
+Hal paling krusial pada tahap ini adalah deklarasi Kepentingan Bersaing (*Competing Interests*). Pengungkapan ini merupakan standar mutlak dalam etika publikasi internasional.
 
-### Login ke Dasbor Reviewer
+> **Sorotan Standar Global: Deklarasi Konflik Kepentingan (COPE)**
+> 
+> *Committee on Publication Ethics* (COPE) mewajibkan mitra bestari untuk segera menolak penugasan apabila mereka mendeteksi adanya konflik kepentingan. Hal ini mencakup hubungan finansial, hubungan kekerabatan, riwayat kolaborasi proyek dalam tiga tahun terakhir, atau bahkan rasa persaingan akademik yang kuat dengan penulis (jika Anda kebetulan mengenali identitas penulis dari gaya bahasanya). Menutupi konflik kepentingan adalah bentuk manipulasi akademik yang mencederai kredibilitas jurnal dan reputasi Anda sendiri sebagai pakar.
 
-1. Kunjungi situs jurnal dan klik **Login**.
-2. Masukkan *username* dan *password*.
-3. Jika lupa kata sandi, gunakan fitur **"Forgot your password"**.
+## 9.4 Langkah 2: Mengkaji Pedoman Jurnal (Guidelines)
 
-Catatan: Jika lupa *username* atau alamat email yang terdaftar, hubungi editor jurnal secara langsung.
+Setelah menerima penugasan, sistem akan mengarahkan Anda pada tab *Guidelines*. Banyak peninjau pemula sering melewatkan tab ini. Padahal, tab ini memuat rubrik penilaian spesifik yang dikehendaki oleh dewan redaksi. Setiap jurnal memiliki kriteria yang unik, sebagian mungkin menekankan pada ketajaman metodologi kuantitatif, sementara yang lain lebih menghargai kontribusi diskursif terhadap literatur lokal. Membaca panduan ini menghindarkan Anda dari memberikan ulasan yang tidak relevan dengan ruang lingkup jurnal.
 
-### Tampilan Dasbor Reviewer
+## 9.5 Langkah 3: Eksekusi Penelaahan (Download & Review)
 
-Dasbor reviewer menampilkan naskah-naskah yang ditugaskan kepada reviewer yang sedang login. Perhatikan dua indikator berikut:
+Tahap ini adalah esensi dari pekerjaan Anda. Anda akan mengunduh berkas naskah asli pada panel *Review Files*. Setelah menelaah dokumen tersebut secara luring, Anda akan kembali ke sistem untuk menyusun laporan konstruktif.
 
-| Indikator | Arti |
-|-----------|------|
-| Angka notifikasi pada ikon lonceng | Jumlah tugas tertunda yang memerlukan perhatian. |
-| Tanda peringatan (*warning sign*) | Sistem menunggu respons segera: apakah reviewer bersedia atau tidak untuk melakukan peninjauan. |
+OJS menyediakan dua ruang umpan balik yang terpisah secara fundamental:
 
-![Dasbor reviewer dengan indikator notifikasi](../img/elementor-placeholder-image.png)
+1. **Komentar untuk Penulis dan Editor**: Ini adalah mimbar utama Anda. Masukan teknis, perbaikan struktur, dan kritik metodologi diletakkan di sini. Penulis akan membaca setiap kata yang Anda tulis di kotak ini.
+2. **Komentar Khusus untuk Editor**: Ruang privat. Pesan di kotak ini tidak akan pernah sampai ke mata penulis. Gunakan ruang ini untuk menyampaikan kelemahan fatal naskah yang mungkin terlalu sensitif jika disampaikan langsung, atau untuk menyampaikan keraguan Anda terhadap dugaan plagiarisme.
 
----
+> **Catatan dari Lapangan: Anatomi Ulasan Konstruktif**
+> 
+> Pedoman etika COPE menekankan bahwa ulasan harus objektif dan spesifik. Daripada menulis komentar merendahkan seperti "Penulis sama sekali tidak menguasai literatur terbaru", tuliskanlah "Naskah ini perlu mengintegrasikan temuan terkini dari Smith (2023) mengenai dinamika fluida untuk memperkuat klaim di Bab 2". Berikan argumen berbasis bukti, dan jangan pernah mencoba memaksa penulis untuk menulis ulang naskah mengikuti gaya personal Anda. Kritik yang tajam harus selalu dibalut dengan kerendahan hati akademik.
 
-## 9.3 Langkah 1: Menerima atau Menolak Permintaan Review
+### Mengelola Anotasi Berkas (File Upload)
 
-Setelah membuka tugas dari dasbor, reviewer masuk ke tahap **Request**. Tahap ini menyajikan:
+Jika Anda terbiasa menggunakan fitur *Track Changes* di Microsoft Word, Anda dapat mengunggah kembali dokumen yang penuh dengan coretan revisi tersebut. Namun, berhati-hatilah. Microsoft Word secara diam-diam menanamkan nama Anda di dalam metadata dokumen (pada identitas *Author* di properti fail). Anda **wajib** membersihkan identitas (*Inspect Document* lalu *Remove Personal Information*) sebelum mengunggahnya ke OJS. Kegagalan melakukan ini akan merusak mekanisme *double-blind review* secara seketika.
 
-- **Detail Artikel**: judul dan abstrak naskah sebagai dasar penilaian kesesuaian keahlian.
-- **Jenis Tinjauan**: ditampilkan secara eksplisit (misalnya: *Double Blind*) sehingga reviewer mengetahui tingkat anonimitas yang diterapkan.
-- **Jadwal Peninjauan**:
-  - *Response Due Date*: batas waktu konfirmasi kesediaan.
-  - *Review Due Date*: batas waktu pengiriman hasil ulasan lengkap.
+**Jalur Eksekusi Cepat: Mengirimkan Ulasan**
+1. Buka tab *Review*, gulir ke Langkah 3 (*Download & Review*).
+2. Tuliskan ulasan terperinci di kotak **Komentar untuk Penulis dan Editor**.
+3. (Opsional) Tuliskan keraguan atau catatan rahasia di kotak **Komentar Khusus untuk Editor**.
+4. (Opsional) Unggah dokumen yang telah Anda coret (*Track Changes*) dan pastikan sudah bersih dari metadata personal.
+5. Pada kotak tarik-turun rekomendasi, pilih keputusan akhir Anda (misal: *Revisions Required*).
+6. Lanjutkan ke Langkah 4 (*Completion*) dan klik **Submit Review**.
 
-Sebelum menerima penugasan, reviewer wajib:
-1. Mengisi bagian **kepentingan bersaing** (*competing interests*): apakah terdapat hubungan dengan penulis atau topik yang dapat memengaruhi objektivitas penilaian.
-2. Menyetujui pernyataan privasi data.
+> **Troubleshooting: Terlanjur Menekan Tombol Submit Review**
+> 
+> **Masalah**: Anda secara tidak sengaja menekan tombol **Submit Review** sebelum melampirkan berkas coretan perbaikan (*annotated file*).
+> 
+> **Solusi Cepat**: Sistem OJS tidak mengizinkan peninjau membatalkan atau mengubah ulasan yang sudah terkirim secara final. Anda harus segera menghubungi narahubung utama jurnal (*Principal Contact* atau *Editor*) melalui surel eksternal dan melampirkan fail ulasan Anda, meminta mereka mengunggahnya secara manual ke dasbor pengelola atas nama Anda.
 
-Klik **"Accept Review"** untuk melanjutkan, atau **"Decline Review"** jika tidak dapat atau tidak bersedia meninjau.
+### Merumuskan Rekomendasi Final
 
-Pengungkapan kepentingan bersaing adalah standar etika publikasi yang berlaku secara internasional. Apabila terdapat konflik kepentingan, reviewer sebaiknya menolak penugasan agar integritas proses penelaahan terjaga. Panduan COPE menyatakan bahwa reviewer harus mengungkapkan kepada editor setiap hubungan yang berpotensi menimbulkan konflik kepentingan (COPE, 2017, https://publicationethics.org/files/cope-ethical-guidelines-peer-reviewers-v2.pdf).
+Di ujung panel, Anda harus menjatuhkan rekomendasi akhir dari menu tarik-turun:
+- **Accept Submission**: Sempurna, tanpa revisi (sangat langka).
+- **Revisions Required**: Perlu perbaikan minor dan editor dapat memeriksanya sendiri.
+- **Resubmit for Review**: Perbaikan mayor diperlukan, dan Anda bersedia (atau sistem mengharuskan) naskah ini dikembalikan kepada Anda untuk putaran kedua.
+- **Decline Submission**: Cacat fatal pada metodologi atau tidak ada unsur kebaruan sama sekali.
 
-**Studi Kasus:** Seorang mitra bestari menyetujui tugas meninjau naskah dalam format *double-blind review*. Di pertengahan proses membaca naskah, ia mengenali gagasan spesifik, gaya penulisan, dan metode yang digunakan, sehingga ia menyadari bahwa naskah tersebut kemungkinan besar ditulis oleh mantan mahasiswanya. Dalam situasi ini, mitra bestari tersebut diwajibkan untuk segera menghentikan peninjauan dan menghubungi editor melalui fitur *Add Discussion* untuk mendeklarasikan potensi konflik kepentingan, dan membiarkan editor memutuskan apakah ia harus melanjutkan atau mundur dari penugasan tersebut.
+## 9.6 Langkah 4: Penyelesaian (Completion)
 
-![Halaman permintaan review: informasi naskah dan jadwal](../img/elementor-placeholder-image.png)
+Tahap penutup. Tinjau kembali bahasa dan diksi Anda di dalam kotak komentar. Pastikan tidak ada frasa yang merendahkan, lalu tekan *Submit Review*. Begitu tombol ini ditekan, Anda tidak dapat lagi mengubah keputusan maupun menarik kembali komentar Anda. Tugas Anda selesai, dan naskah tersebut akan ditarik dari antrean aktif di dasbor Anda.
 
----
+## Latihan Bab 9
 
-## 9.4 Langkah 2: Membaca Pedoman Peninjau
+**Skenario Simulasi: Menjadi Mitra Bestari Konstruktif**
 
-Setelah menerima undangan, reviewer masuk ke tahap **Guidelines**. Bagian ini memuat instruksi khusus yang disusun oleh pengelola jurnal, yang mencakup:
+Anda menerima undangan penelaahan. Saat membaca abstrak, Anda yakin naskah ini adalah replikasi metodologi usang yang sudah dipatahkan lima tahun lalu. Anda merasa kesal karena penulis membuang waktu Anda.
 
-- Kriteria penilaian yang diharapkan.
-- Standar kualitas yang berlaku di jurnal tersebut.
-- Format atau templat ulasan jika tersedia.
-- Kebijakan anonimitas dan etika peer review yang berlaku.
-
-Pedoman ini perlu dibaca secara saksama karena setiap jurnal dapat memiliki standar dan kriteria penilaian yang berbeda.
-
----
-
-## 9.5 Langkah 3: Mengunduh File, Menilai, dan Memberikan Komentar
-
-Tahap ini adalah inti dari proses penelaahan. Di sini evaluasi substantif terhadap naskah dilakukan.
-
-### Mengunduh dan Membaca Naskah
-
-Klik tautan naskah di bagian **"Review Files"** untuk mengunduh dokumen. Baca naskah secara menyeluruh sebelum mulai menulis komentar.
-
-### Formulir Tinjauan
-
-Bagian formulir tinjauan bersifat kondisional:
-- Jika pengelola jurnal telah mengonfigurasi formulir penilaian khusus, formulir tersebut akan muncul di sini.
-- Jika tidak ada formulir khusus, reviewer menggunakan kotak komentar teks bebas.
-
-### Dua Jenis Kotak Komentar
-
-| Jenis Komentar | Pihak yang Dapat Membaca | Panduan Pengisian |
-|---|---|---|
-| **Komentar untuk Penulis dan Editor** | Penulis dan Editor | Masukan teknis tentang naskah. Jangan cantumkan nama atau identitas apa pun di bagian ini. |
-| **Komentar khusus untuk Editor** | Editor saja | Penilaian menyeluruh yang mungkin terlalu sensitif untuk dikomunikasikan langsung kepada penulis, seperti penilaian tentang kelayakan naskah secara keseluruhan. |
-
-Panduan penulisan komentar yang efektif:
-- Berikan komentar yang spesifik dan konstruktif. Jelaskan mengapa suatu bagian perlu diperbaiki dan bagaimana cara memperbaikinya.
-- Strukturkan komentar: mulai dari poin utama, kemudian detail yang lebih kecil.
-- Jaga profesionalisme dalam penyampaian, termasuk saat menyampaikan penilaian yang kritis.
-
-### Menggunakan Fitur Diskusi
-
-Gunakan tombol **"Add Discussion"** untuk menyampaikan pertanyaan atau catatan kepada editor di luar konteks formulir penilaian formal, misalnya jika reviewer menemukan dugaan plagiat atau menyadari adanya konflik kepentingan yang perlu dilaporkan.
-
----
-
-### Mengunggah File dengan Koreksi
-
-Reviewer dapat mengunggah file naskah yang telah dikoreksi menggunakan fitur *Track Changes* di Microsoft Word atau perangkat sejenis.
-
-Catatan Teknis: Sebelum mengunggah file koreksi, hapus terlebih dahulu metadata identitas dari file tersebut untuk menjaga anonimitas. Di Microsoft Word, caranya adalah:
-1. Klik **File**, pilih **Info**, kemudian **Check for Issues**, lalu **Inspect Document**.
-2. Centang **Document Properties and Personal Information**.
-3. Klik **Inspect**, kemudian **Remove All**.
-
-Kegagalan menghapus metadata identitas dari file yang diunggah dapat membatalkan integritas proses *double-blind review*.
-
-![Unggah file koreksi dari reviewer](../img/elementor-placeholder-image.png)
-
----
-
-### Memberikan Rekomendasi Final
-
-Setelah selesai menilai, pilih satu rekomendasi final di bagian bawah halaman sebelum melanjutkan ke Langkah 4:
-
-| Rekomendasi | Deskripsi |
-|-------------|-----------|
-| **Accept Submission** | Naskah diterima tanpa revisi. Ini adalah kondisi yang jarang terjadi. |
-| **Revisions Required** | Diperlukan perbaikan minor. Tidak perlu melalui proses review ulang. |
-| **Resubmit for Review** | Diperlukan perubahan besar. Naskah harus melalui putaran review kedua. |
-| **Resubmit Elsewhere** | Naskah berkualitas namun tidak sesuai dengan fokus dan ruang lingkup jurnal ini. |
-| **Decline Submission** | Naskah tidak layak terbit karena tidak memenuhi standar kualitas. |
-| **See Comments** | Keputusan diserahkan sepenuhnya kepada editor berdasarkan komentar yang telah diberikan. |
-
----
-
-## 9.6 Langkah 4: Penyelesaian dan Konfirmasi Akhir
-
-1. Tinjau kembali seluruh komentar dan rekomendasi yang telah diisi.
-2. Klik **"Submit Review"**.
-3. Sistem menampilkan jendela konfirmasi.
-
-Perhatian: Setelah konfirmasi disetujui, komentar dan rekomendasi tidak dapat lagi diubah. Pastikan semua isian sudah benar sebelum mengonfirmasi.
-
-Setelah konfirmasi:
-- Sistem menampilkan pesan konfirmasi selesai.
-- Editor mendapatkan notifikasi bahwa tugas reviewer telah selesai.
-- Naskah hilang dari daftar tugas aktif di dasbor reviewer.
-
-![Halaman konfirmasi selesai review](../img/elementor-placeholder-image.png)
-
----
-
-## 9.7 Etika Peer Review
-
-Prinsip-prinsip etika berikut berlaku bagi reviewer berdasarkan panduan COPE Ethical Guidelines for Peer Reviewers (COPE, 2017, https://publicationethics.org/files/cope-ethical-guidelines-peer-reviewers-v2.pdf):
-
-1. **Kerahasiaan**: Isi naskah yang sedang ditinjau adalah informasi rahasia. Reviewer tidak diperbolehkan mendiskusikan naskah dengan pihak lain tanpa izin editor. Naskah yang ditugaskan tidak boleh digunakan untuk kepentingan pribadi sebelum diterbitkan.
-
-2. **Objektivitas**: Penilaian harus didasarkan pada kualitas ilmiah naskah, bukan pada asal institusi, negara, atau asumsi tentang identitas penulis. Komentar yang bersifat pribadi atau menyerang penulis tidak dapat dibenarkan.
-
-3. **Ketepatan waktu**: Reviewer harus menghormati batas waktu yang ditetapkan (*Review Due Date*). Apabila reviewer tidak dapat menyelesaikan ulasan tepat waktu, editor harus segera diberitahu agar dapat mengambil tindakan yang diperlukan.
-
-4. **Pengungkapan konflik kepentingan**: Reviewer harus mengungkapkan kepada editor setiap hubungan atau situasi yang dapat menimbulkan konflik kepentingan, baik sebelum maupun setelah menerima penugasan. Jika konflik kepentingan ditemukan setelah penugasan diterima, reviewer harus segera melaporkannya kepada editor.
-
-5. **Integritas**: Reviewer wajib melaporkan kepada editor jika menemukan dugaan plagiat, ketidakakuratan data, atau pelanggaran etika lain dalam naskah yang sedang ditinjau.
-
-6. **Larangan penggunaan naskah untuk kepentingan pribadi**: Reviewer dilarang mengutip, menggunakan, atau mendistribusikan ide, data, atau temuan dari naskah yang sedang ditinjau sebelum naskah tersebut diterbitkan.
-
----
+**Tugas Praktik:**
+1. Masuk ke dalam antarmuka OJS menggunakan akun *Reviewer* (fasilitator akan menyediakan akun uji coba).
+2. Terima penugasan dan masuk ke tab *Review*.
+3. Susun dua paragraf ulasan di kotak "Komentar untuk Penulis". Paragraf pertama mengapresiasi upaya penulis secara profesional. Paragraf kedua menjelaskan secara spesifik literatur mana yang telah mematahkan metode tersebut, menggunakan nada yang objektif (tanpa elemen merendahkan).
+4. Di kotak "Komentar Khusus untuk Editor", tuliskan rekomendasi jujur Anda bahwa naskah ini harus ditolak (*Decline Submission*) karena secara keilmuan sudah usang.
+5. Kirim ulasan Anda dan perhatikan bagaimana tugas tersebut hilang dari dasbor Anda.
 
 ## Checklist Bab 9
 
-- [ ] Email undangan sudah dibaca dan jadwal peninjauan sudah dicatat.
-- [ ] Tidak ada konflik kepentingan, atau konflik kepentingan sudah dilaporkan kepada editor.
-- [ ] Pedoman peninjau (*Reviewer Guidelines*) jurnal sudah dibaca.
-- [ ] Naskah sudah diunduh dan dibaca secara menyeluruh sebelum menulis komentar.
-- [ ] Komentar untuk penulis sudah ditulis secara spesifik dan konstruktif, tanpa mencantumkan identitas.
-- [ ] Komentar khusus untuk editor sudah diisi jika diperlukan.
-- [ ] File koreksi sudah diunggah (jika ada) dengan metadata identitas yang sudah dihapus.
-- [ ] Satu rekomendasi final sudah dipilih.
-- [ ] Seluruh isian sudah diperiksa kembali sebelum konfirmasi akhir.
-
----
+- [ ] Memahami kewajiban etis untuk mendeklarasikan konflik kepentingan sekecil apa pun sebelum menerima tugas.
+- [ ] Membaca *Reviewer Guidelines* khusus milik jurnal untuk menyelaraskan ekspektasi penilaian.
+- [ ] Mampu membedakan dengan tegas fungsi "Komentar untuk Penulis" dan "Komentar Khusus untuk Editor".
+- [ ] Menyusun ulasan yang objektif, berbasis bukti referensi, dan menghindari serangan personal (sesuai standar COPE).
+- [ ] Memastikan berkas revisi yang diunggah (*Track Changes*) telah bersih dari riwayat metadata personal (*blinded*).
+- [ ] Memahami signifikansi dari setiap opsi rekomendasi final sebelum menekan penyelesaian (*Completion*).
 
 ## Ringkasan Bab
 
-| Langkah | Aksi Reviewer |
-|---------|---------------|
-| 1 - Request | Baca detail naskah, isi pernyataan kepentingan bersaing, terima atau tolak undangan. |
-| 2 - Guidelines | Baca pedoman penilaian jurnal secara saksama. |
-| 3 - Review | Unduh naskah, isi komentar untuk penulis dan komentar khusus editor, unggah file koreksi jika ada, pilih rekomendasi final. |
-| 4 - Completion | Tinjau ulang seluruh isian, kirim ulasan, konfirmasi. |
+Peran mitra bestari adalah fondasi dari integritas sains global. Antarmuka OJS memfasilitasi peran ini melalui alur kerja empat tahap yang sangat terstruktur: merespons undangan dengan deklarasi etis, mengkalibrasi standar melalui pedoman jurnal, mengeksekusi penilaian melalui umpan balik ganda (publik dan privat), serta mengunci rekomendasi final. Menguasai alur ini secara teknis belumlah cukup tanpa diiringi oleh kepatuhan terhadap pedoman etika COPE. Penelaah yang berkualitas adalah mereka yang mampu memberikan kritik paling tajam namun menyampaikannya dalam bahasa yang paling membangun.

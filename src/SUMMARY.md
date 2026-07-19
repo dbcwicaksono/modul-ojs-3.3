@@ -1,6 +1,7 @@
 # Daftar Isi
 
-[Pengantar](./README.md)
+[Sampul & Prakata](./README.md)
+[Cara Menggunakan Buku Ini](./cara-menggunakan.md)
 
 ---
 
@@ -34,20 +35,15 @@
 - [Bab 11: Penyuntingan Naskah (Copyediting)](./bab11-copyediting.md)
 - [Bab 12: Produksi, Tata Letak & Galley](./bab12-produksi.md)
 - [Bab 13: Manajemen Edisi (Issue) & Pasca Penerbitan](./bab13-manajemen-edisi.md)
-
----
-
-# Bagian V: Visibilitas & Indeksasi
-
 - [Bab 14: Optimalisasi Metadata Artikel](./bab14-metadata.md)
-
----
-
-# Bagian VI: Diseminasi dan Peningkatan Visibilitas Jurnal
-
 - [Bab 15: Diseminasi dan Peningkatan Visibilitas Jurnal](./bab15-diseminasi.md)
 
 ---
 
+# Aparatus Belakang
+
 - [Glosarium](./glosarium.md)
 - [Daftar Pustaka Terpadu](./daftar-pustaka.md)
+- [Indeks Subjek](./indeks-subjek.md)
+- [Lampiran](./lampiran.md)
+- [Tentang Penulis](./tentang-penulis.md)

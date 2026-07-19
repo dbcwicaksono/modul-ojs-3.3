@@ -1,6 +1,7 @@
 # Bab 4: Analisis Subjek dan Bibliografi
 
-> *Salah satu masalah paling persisten dalam publikasi ilmiah adalah daftar pustaka yang ditulis secara acak atau tidak mengikuti standar baku. Daftar pustaka yang berantakan bukan sekadar masalah estetika, melainkan hambatan serius yang menyebabkan mesin pengindeks gagal mengenali sitasi dan memutus jejaring metrik artikel tersebut.*
+> **Pemantik Bab**
+> Salah satu masalah paling persisten dalam publikasi ilmiah adalah daftar pustaka yang ditulis secara acak atau tidak mengikuti standar baku. Daftar pustaka yang berantakan bukan sekadar masalah estetika, melainkan hambatan serius yang menyebabkan mesin pengindeks gagal mengenali sitasi dan memutus jejaring metrik artikel tersebut.
 
 Bibliografi merupakan komponen fundamental dalam penulisan ilmiah. Tanpa bibliografi yang benar, integritas sebuah karya ilmiah menjadi diragukan. Bab ini membahas konsep dasar bibliografi, fungsinya, serta berbagai gaya penulisan sitasi yang umum digunakan dalam penerbitan jurnal ilmiah.
 

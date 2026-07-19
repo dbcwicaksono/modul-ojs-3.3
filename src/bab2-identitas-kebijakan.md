@@ -1,17 +1,28 @@
 # Bab 2: Pengaturan Identitas dan Kebijakan Dasar Jurnal
 
-> *Banyak jurnal ditolak indeksasi DOAJ dan SINTA bukan karena kualitas artikelnya buruk, melainkan karena informasi identitas, fokus, dan kebijakan akses terbukanya dibiarkan ambigu. Tanpa kebijakan yang jelas di tahap awal ini, pengelola jurnal, penulis, dan pembaca akan terjebak dalam masalah kepemilikan dan hak distribusi di kemudian hari.*
+> **Pemantik Bab**
+> Banyak jurnal ditolak secara tragis oleh indeksator bergengsi seperti DOAJ dan SINTA bukan karena kualitas artikelnya buruk, melainkan karena halaman identitas, fokus, dan kebijakan akses terbukanya dibiarkan kosong atau ambigu. Tanpa kebijakan yang tegas di tahap awal ini, pengelola jurnal, penulis, dan pembaca akan terjebak dalam masalah kepemilikan hukum di kemudian hari.
 
-Bab ini secara khusus disusun bagi pengelola jurnal yang kerap menghadapi kesulitan teknis maupun konseptual dalam mendefinisikan kebijakan jurnal mereka di OJS 3.3. Mengisi pengaturan jurnal bukanlah sekadar formalitas administratif, melainkan proses mendeklarasikan standar keilmuan dan etika kepada komunitas akademik global.
+Untuk menghindari jebakan fatal tersebut, bab ini secara khusus disusun bagi pengelola jurnal yang kerap kebingungan menerjemahkan SK ISSN ke dalam formulir digital. Mengisi pengaturan jurnal bukanlah sekadar formalitas mengeklik tombol **Save**; ini adalah proses mendeklarasikan konstitusi keilmuan jurnal Anda kepada dunia. Mari kita mulai proses eksekusinya.
 
 ## 2.1 Elemen Identitas Utama Jurnal (Journal Identity)
 
-Identitas jurnal adalah wajah pertama yang dilihat oleh pembaca, penulis, dan lembaga pengindeks. Pengaturan ini dapat diakses pada OJS 3.3 melalui menu **Settings > Journal > Masthead**. Elemen yang wajib dikonfigurasi meliputi:
+Identitas jurnal adalah wajah pertama yang dilihat oleh pembaca dan mesin pengindeks. Berbeda dengan profil media sosial yang bisa diubah sesuka hati, identitas jurnal harus berpegang teguh pada dokumen legalitas.
 
-*   **Nama Jurnal**: Nama yang dicantumkan di OJS harus persis sama dengan kepanjangan nama yang terdaftar di surat keputusan (SK) ISSN. **Catatan Kritis**: Pengelola jurnal di Indonesia sering keliru menjadikan singkatan/akronim (misal: "Jurnal ABCD") sebagai nama utama jurnal. Padahal, portal ISSN memiliki kolom tersendiri untuk akronim. Gunakan nama lengkap sebagai nama utama, karena Pusat Nasional ISSN kini semakin ketat menertibkan kekeliruan ini.
-*   **Singkatan dan Inisial**: Masukkan akronim resmi jurnal Anda di sini. Gunakan inisial yang konsisten, karena OJS akan menggunakannya sebagai pengenal tautan situs.
-*   **Penerbit (Publisher)**: Tuliskan nama institusi, fakultas, atau himpunan profesi yang secara legal menaungi jurnal tersebut.
-*   **ISSN**: Cantumkan e-ISSN (elektronik) dan p-ISSN (cetak) jika ada. Jurnal diperkenankan hanya memiliki e-ISSN jika pengelola memang murni menerbitkan jurnal secara daring (*online*). Namun, berhati-hatilah karena beberapa perguruan tinggi di Indonesia masih mewajibkan penyerahan versi cetak fisik untuk syarat administrasi atau akreditasi internal.
+**Jalur Eksekusi Cepat: Mengisi Masthead**
+1. Masuk ke dasbor OJS sebagai **Journal Manager**.
+2. Pada panel kiri, navigasikan ke menu **Settings** > **Journal** > **Masthead**.
+3. Isi kolom **Journal name** agar persis sama dengan nama yang terdaftar di SK ISSN (jangan gunakan akronim di kolom ini).
+4. Masukkan akronim di kolom **Journal initials** (contoh: JAB).
+5. Pada bagian **Publisher**, tuliskan nama fakultas atau himpunan profesi penjamin mutu jurnal.
+6. Cantumkan e-ISSN di kolom yang disediakan.
+7. Klik tombol **Save** di sudut kanan bawah.
+
+> **Troubleshooting: Tombol Save Tidak Merespons**
+> 
+> **Masalah**: Anda sudah mengeklik tombol **Save**, namun layar tidak memuat ulang (*loading*) dan perubahan tidak tersimpan.
+> 
+> **Solusi Cepat**: Ini hampir selalu terjadi karena Anda lupa mengisi kolom yang ditandai dengan bintang merah (*asterisk*). OJS versi 3.3 terkadang tidak memberikan peringatan eror mencolok jika isian wajib pada tab bahasa lain (jika jurnal Anda dwibahasa) dibiarkan kosong. Gulir (*scroll*) ke atas, cari ikon bendera bahasa (misal: Indonesia dan English), dan pastikan kolom "Nama Jurnal" di kedua tab bahasa tersebut sudah terisi.
 
 ## 2.2 Fokus dan Ruang Lingkup (*Focus and Scope*)
 
@@ -83,7 +94,7 @@ Halaman *About* adalah brosur digital jurnal Anda. Pengunjung, termasuk asesor a
 
 ## 2.6 Panduan Penulis (*Author Guidelines*) dan *Template* Naskah
 
-Banyak pengelola jurnal membuat kesalahan dengan mengira bahwa *Author Guidelines* yang baik adalah yang memaksa penulis mengirim naskah dalam format tata letak (*layout*) final jurnal—lengkap dengan dua kolom, format kolom yang rumit, dan *header/footer* khusus.
+Banyak pengelola jurnal membuat kesalahan dengan mengira bahwa *Author Guidelines* yang baik adalah yang memaksa penulis mengirim naskah dalam format tata letak (*layout*) final jurnal, lengkap dengan dua kolom, format kolom yang rumit, dan *header/footer* khusus.
 
 **Mengapa Template Penulis Harus Sangat Sederhana?**
 Memaksa penulis menggunakan *template final layout* justru akan **menyusahkan tim editorial Anda sendiri**. Proses penyuntingan naskah tahap awal (*Copyediting*) berfokus pada perbaikan substansi, ejaan, dan konsistensi tata bahasa; bukan pada desain visual. 

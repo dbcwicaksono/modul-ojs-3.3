@@ -1,121 +1,95 @@
-﻿# Bab 7: Pemeriksaan Plagiasi (Similarity Check)
+# Bab 7: Pemeriksaan Kemiripan (*Similarity Check*)
 
-Salah satu tugas fundamental tim editor jurnal adalah memastikan bahwa setiap naskah yang dikirimkan penulis merupakan karya orisinal. Oleh karena itu, sebelum naskah dikirimkan ke mitra bestari (*reviewer*), editor perlu melakukan pemeriksaan kemiripan naskah (*similarity check*) terhadap sumber-sumber lain yang telah beredar luas.
+> **Pemantik Bab**
+> Laporan Turnitin baru saja keluar. Angka kemiripan (similarity index) pada layar menunjukkan 35%, jauh di atas batas toleransi jurnal Anda yang sebesar 20%. Tanpa berpikir panjang, Anda langsung menekan tombol penolakan (Decline Submission) dengan alasan plagiarisme fatal. Namun keesokan harinya, penulis memprotes keras: "Semua teks yang disorot merah oleh Turnitin adalah rumus matematika standar, nama institusi, dan daftar pustaka!" Anda memeriksa ulang laporannya dan menyadari bahwa sang penulis benar. Anda baru saja menolak naskah orisinal karena membaca laporan mesin secara mentah tanpa intervensi akal budi editorial.
 
-## 7.1 Definisi Pemeriksaan Kemiripan
+Salah satu tugas fundamental tim editorial adalah memastikan setiap naskah yang terbit merupakan karya orisinal. Pada alur kerja OJS, pemeriksaan kemiripan (*similarity check*) merupakan tahap krusial yang menjembatani fase *Desk Review* dengan *Peer Review*. Bab ini akan memandu Anda untuk tidak sekadar bergantung pada persentase angka, melainkan menafsirkan laporan kemiripan secara operasional.
 
-Pemeriksaan kemiripan (*similarity check*) adalah pembandingan terhadap naskah untuk mengetahui tingkat kesamaannya terhadap naskah atau teks lain yang sudah dipublikasikan, menggunakan perangkat lunak deteksi plagiasi. Tujuannya adalah memastikan naskah yang masuk terbebas dari unsur-unsur plagiat atau duplikasi sebelum diproses secara akademik.
+## 7.1 Miskonsepsi Angka Kemiripan dan Plagiarisme
 
-## 7.2 Memahami Plagiarisme
+Dalam diskusi pengelolaan jurnal, sering kali istilah "pemeriksaan plagiasi" digunakan secara serampangan untuk merujuk pada perangkat lunak seperti Turnitin atau iThenticate. Secara konseptual, penamaan tersebut tidak akurat. Perangkat lunak mesin pencari **tidak dirancang untuk mendeteksi plagiarisme**, melainkan hanya mendeteksi **kemiripan teks (*text similarity*)**.
 
-### Definisi Teoritis
+Plagiarisme, berdasarkan Permendiknas No. 17 Tahun 2010 maupun standar akademik global, adalah niat atau kelalaian untuk mengambil gagasan orang lain tanpa pengakuan yang sah. Mesin tidak dapat mengukur niat, mesin hanya mencocokkan deretan karakter. Oleh karena itu, persentase kemiripan yang tinggi (misalnya 40%) tidak selalu berarti plagiarisme jika yang terdeteksi adalah lampiran kuesioner baku, sedangkan persentase rendah (misalnya 5%) bisa jadi merupakan pencurian gagasan radikal apabila satu paragraf sentral disalin tanpa atribusi sitasi. Intervensi manusia (*human judgment*) adalah satu-satunya penentu apakah sebuah kemiripan teks dapat diklasifikasikan sebagai plagiasi akademik.
 
-Secara sederhana, plagiarisme adalah tindakan mengambil karya orang lain dan mengakuinya sebagai karya sendiri. Beberapa definisi yang perlu diketahui oleh pengelola jurnal:
+## 7.2 Membaca Laporan Kemiripan dengan Bijak
 
-- **Permendiknas No. 17 Tahun 2010**: Perbuatan sengaja atau tidak sengaja dalam memperoleh kredit atau nilai suatu karya ilmiah dengan mengutip sebagian atau seluruh karya pihak lain tanpa menyatakan sumber secara tepat dan memadai.
-- **Harris (2014: 81)**: *"Plagiarism occurs when an information source is not properly credited"*, yang bermakna plagiarisme terjadi apabila sumber informasi tidak dikutip secara benar.
-- **Menurut Lukman, Istadi, & Wiryawan (2020)**: Plagiasi adalah tindakan menggunakan bahasa, ide, dan material milik orang lain tanpa menyebutkan sumber asalnya.
-- **Fenton & Gralla (2020: 112)**: *Plagiarism* merupakan tindakan menyajikan, memberikan, atau mengirim tulisan, ide, maupun kata-kata tanpa memberikan kredit atau pengakuan darimana sumber tersebut diambil.
-- **Purdue OWL (2020)**: Plagiarisme adalah menggunakan gagasan atau kata-kata orang lain tanpa menuliskan sumbernya atau memberi pengakuan kepada pemilik gagasan.
+Ketika Editor Bagian menerima naskah, perangkat lunak kemiripan harus dikonfigurasi secara cermat sebelum laporannya dianalisis. Analisis yang bijak menuntut editor untuk mampu membedakan tiga fenomena pembentuk persentase laporan:
 
-Berdasarkan definisi tersebut, dapat disimpulkan bahwa plagiarisme adalah tindakan menyajikan karya orang lain, baik berupa gagasan, data, informasi, kata, frasa, maupun kalimat, dan mengakuinya sebagai karya sendiri secara sengaja maupun tidak sengaja, tanpa mencantumkan sumber dengan kaidah yang benar.
+1.  **Positif Palsu (*False Positive*)**: Ini adalah pemicu utama inflasi angka kemiripan. Kutipan langsung yang sudah diapit tanda kutip ganda, frasa umum akademik ("Penelitian ini bertujuan untuk..."), nama kementerian atau institusi resmi, hingga keseluruhan daftar pustaka sering kali ditandai merah oleh mesin. Editor wajib menggunakan fitur penyaringan (*filter/exclude*) pada perangkat lunak untuk menyingkirkan kutipan langsung (*quotes*) dan bibliografi sebelum membaca angka akhir.
+2.  **Plagiasi Diri (*Self-Plagiarism/Text Recycling*)**: Fenomena di mana penulis menggunakan kembali teks dari karya mereka sendiri yang telah terbit sebelumnya. Meski terkesan tidak merugikan pihak lain, praktik ini dilarang keras karena melanggar premis "orisionalitas kebaruan" (*novelty*) dari sebuah naskah riset. Jika mesin mendeteksi kemiripan dominan yang merujuk pada tesis mahasiswa atau prosiding konferensi penulis itu sendiri yang sudah diterbitkan, naskah tersebut bermasalah.
+3.  **Plagiasi Aktual (*Direct/Mosaic Plagiarism*)**: Pencurian murni di mana blok kalimat dari karya peneliti lain digabungkan tanpa teknik parafrasa yang baik dan tanpa pencantuman sitasi yang memadai.
 
-### Empat Kategori Plagiat
+> **Catatan dari Lapangan: Jebakan Bagian Metodologi**
+> 
+> Beberapa editor jurnal keperawatan dan ilmu eksakta kerap berdebat sengit dengan penulis mengenai indikasi kemiripan pada bagian Metodologi. Dalam riset klinis atau uji laboratorium, prosedur eksperimental dan spesifikasi alat ukur adalah hal yang sangat baku. Menuntut penulis untuk memarafrase nama reagen kimia atau prosedur standar operasi alat medis demi mengejar angka kemiripan 0% adalah tindakan yang keliru dan berisiko merusak akurasi sains. Kebijaksanaan editorial harus diterapkan: kemiripan yang terkonsentrasi hanya di bab metodologi standar jauh lebih dapat ditoleransi dibandingkan kemiripan yang ditemukan di bab Kesimpulan atau Temuan Penelitian.
 
-| Kategori | Penjelasan |
-|---------|-----------|
-| **Direct Plagiarism** | Menyalin setiap kata dari karya orang lain tanpa tanda kutip dan tanpa menyebutkan sumber. Bentuk ini adalah yang paling serius dan tidak etis. |
-| **Self-Plagiarism** | Menggunakan materi yang sudah pernah dipublikasikan sebelumnya oleh penulis yang sama tanpa pengungkapan yang tepat. |
-| **Mosaic Plagiarism** | Menggunakan frasa dari sumber lain tanpa tanda kutip atau menggunakan sinonim dengan struktur kalimat dan arti yang persis sama dengan naskah aslinya. |
-| **Accidental Plagiarism** | Ketidaksengajaan akibat lupa mencantumkan sumber, kesalahan mencantumkan sumber, atau melakukan parafrasa tanpa menyertakan referensi. Walaupun tidak disengaja, hal ini tetap diperlakukan sama dalam sanksi editorial. |
+## 7.3 Spektrum Toleransi Indeks Kemiripan
 
-## 7.3 Ketentuan Tingkat Kemiripan yang Dapat Diterima
+Sering kali muncul pertanyaan di forum pengelola jurnal: *"Berapa batas maksimal persentase Turnitin yang diizinkan?"*
 
-Meskipun belum terdapat panduan baku internasional yang seragam, buku rujukan Lukman, Istadi, & Wiryawan (2020) menyatakan bahwa persentase total kemiripan naskah yang dapat diterima secara internasional berada di rentang **15 hingga 20 persen**. Di Indonesia, Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi menetapkan toleransi persentase plagiasi hingga maksimal **25 persen**. Persentase kemiripan ini dinilai secara selektif dengan mengecualikan (*exclude*) kutipan langsung dan daftar pustaka.
+Secara global, tidak ada konvensi angka baku tunggal. Namun di Indonesia, Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi menjadikan angka **25%** sebagai batas wajar toleransi administratif maksimal. Jurnal internasional bereputasi umumnya mematok ambang batas yang lebih ketat, berkisar di angka **15% hingga 20%**. 
 
-Catatan Kritis: Walaupun total persentase masih berada di bawah ambang batas toleransi, apabila kemiripan terhadap satu sumber tunggal tergolong terlampau dominan secara berurutan dalam satu paragraf penuh, naskah tersebut pada dasarnya tetap terindikasi pelanggaran etika dan dapat ditolak (Lukman, Istadi, & Wiryawan, 2020: 29–30).
+**Prinsip Sumber Dominan Tertunggal**
+Ketentuan persentase total tidak boleh dibaca secara terisolasi. Jika sebuah naskah menghasilkan total skor 18% (berada di bawah ambang batas aman jurnal Anda), namun 15% di antaranya berasal dari penyalinan mentah dari **satu sumber tunggal**, naskah tersebut hakikatnya memuat pelanggaran etika yang berat. Sebaliknya, skor total 22% yang tersusun dari akumulasi 1% kemiripan yang tersebar di 22 sumber berbeda jauh lebih sehat karena umumnya merepresentasikan kelemahan memarafrasa, bukan pencurian substansial. 
 
-## 7.4 Perangkat Lunak Pemeriksaan Gratis
+## 7.4 Ekosistem Perangkat Lunak Pemeriksa
 
-Terdapat beberapa perangkat lunak daring gratis yang dapat dimanfaatkan untuk memeriksa kemiripan secara cepat.
+Pengelola jurnal harus membekali infrastruktur redaksinya dengan mesin pemindai yang memadai. Layanan berbayar profesional, seperti **Turnitin** dan saudara kandungnya **iThenticate**, merupakan standar emas (*gold standard*) di ranah penerbitan ilmiah karena memiliki hak akses eksklusif ke pangkalan data luring jurnal-jurnal berlangganan berbayar sedunia. iThenticate khususnya dirancang lebih spesifik untuk ekosistem editorial (sebagai penapis dokumen siap terbit), berbeda dengan Turnitin yang lebih berorientasi pada ekosistem penugasan kelas perkuliahan.
 
-### A. Duplichecker
+Bagi jurnal independen yang masih beroperasi tanpa dukungan finansial universitas, perangkat lunak gratis sering menjadi pelarian. Aplikasi semacam Duplichecker atau SmallSEOTools memang memberikan kemudahan akses, namun editor harus menyadari kelemahan absolutnya: batasan analisis yang hanya memindai hingga 1.000 kata per sesi dan algoritma yang hanya meraba arsip internet terbuka (*open web*). Tulisan yang menyalin naskah jurnal terkemuka berbayar tidak akan terdeteksi oleh perangkat gratis ini. Untuk jurnal yang merencanakan eskalasi akreditasi ke SINTA tingkat atas atau indeksasi Scopus, penganggaran lisensi premium bukan lagi pilihan, melainkan keharusan untuk mitigasi etika (*ethical mitigation*).
 
-Situs Web: https://www.duplichecker.com
+> **Sorotan Standar Global: Diagram Alir COPE untuk Kasus Plagiarisme**
+> 
+> *Committee on Publication Ethics* (COPE) menyediakan kerangka kerja definitif mengenai apa yang harus dilakukan editor jika menemukan indikasi plagiarisme yang tinggi sebelum publikasi. Prosedur utamanya melarang editor untuk menolak naskah secara diam-diam. Editor diwajibkan untuk mengumpulkan bukti laporan kemiripan, menghubungi seluruh penulis secara formal untuk meminta penjelasan, dan menahan alur naskah. Jika penjelasan penulis tidak memuaskan atau mereka mengakui kesalahan, barulah naskah ditolak dan editor mempertimbangkan untuk memberitahu institusi afiliasi penulis apabila pelanggarannya masif.
+> 
+> *Sumber: [https://publicationethics.org/guidance/Flowcharts](https://publicationethics.org/guidance/Flowcharts)*
 
-Prosedur penggunaan:
-1. Akses halaman situs web Duplichecker.
-2. Salin dan tempel teks yang akan diperiksa ke dalam kolom utama.
-3. Centang kotak verifikasi CAPTCHA.
-4. Klik tombol *Check Plagiarism*.
-5. Tunggu proses analisis data selesai.
-6. Evaluasi persentase kemiripan yang dilaporkan.
+## 7.5 Integrasi Pemeriksaan dalam OJS
 
-![Langkah pengecekan kemiripan dengan Duplichecker](../img/elementor-placeholder-image.png)
+Pemeriksaan kemiripan bukanlah modul bawaan pabrik dari instalasi dasar OJS 3.3. Secara konvensional, editor mengunduh naskah penulis dari panel *Submission Files*, mengunggahnya secara manual ke platform Turnitin/iThenticate, mengunduh hasil PDF-nya, lalu melampirkannya kembali ke dalam sistem OJS.
 
-![Hasil pemeriksaan kemiripan dengan Duplichecker](../img/elementor-placeholder-image.png)
+**Jalur Eksekusi Cepat: Melampirkan Laporan Kemiripan Secara Manual**
+1. Unduh laporan kemiripan berformat PDF dari Turnitin atau iThenticate.
+2. Buka naskah di OJS, masuk ke panel **Submission Files**.
+3. Klik tautan **Upload File**.
+4. Pilih komponen dokumen (misalnya **Other** atau buat komponen khusus **Similarity Report** jika admin Anda telah menambahkannya).
+5. Unggah berkas PDF tersebut dan klik **Save**.
+6. (Opsional) Buka panel **Pre-review Discussions**, buat pesan baru untuk penulis jika angka kemiripan perlu diturunkan, lalu lampirkan fail PDF tadi agar penulis bisa melihat bagian mana saja yang perlu diparafrasa.
 
-Perhatian: Duplichecker versi gratis memiliki keterbatasan dalam akurasi algoritma. Hasil laporannya sering kali menghasilkan persentase yang lebih rendah dari indeks sebenarnya dan terbatas pada 1.000 kata per pemeriksaan.
+> **Troubleshooting: Turnitin Menyorot Seluruh Daftar Pustaka**
+> 
+> **Masalah**: Anda melihat skor kemiripan mencapai 40%, tetapi setelah dibuka, 30%-nya adalah blok warna merah menyala pada bagian Daftar Pustaka (Referensi) di akhir naskah.
+> 
+> **Solusi Cepat**: Ini adalah *false positive* klasik. Jangan tolak naskah tersebut. Buka laporan Turnitin Anda, cari ikon **Filter** (berbentuk corong), lalu centang opsi **Exclude Bibliography** dan **Exclude Quotes**. Klik **Apply Changes**. Angka kemiripan akan langsung turun drastis menampilkan persentase riil dari isi naskah sesungguhnya.
 
-### B. SmallSEOTools
+Untuk memangkas birokrasi manual ini, PKP menyediakan dukungan *plugin* integrasi API (*Application Programming Interface*). Jika jurnal Anda memiliki administrator sistem yang andal dan lisensi layanan yang valid, *plugin* iThenticate dapat dihubungkan langsung ke OJS. Dengan aktivasi ini, persentase kemiripan naskah baru akan muncul secara otomatis di sebelah nama dokumen.
 
-Situs Web: https://smallseotools.com/plagiarism-checker
+## Latihan Bab 7
 
-SmallSEOTools memiliki basis deteksi yang relatif lebih andal dibandingkan Duplichecker. Aplikasi ini menampilkan tautan sumber-sumber yang diidentifikasi memiliki kalimat yang identik beserta porsi persentasenya.
+**Skenario Simulasi: Membedah Laporan Palsu**
 
-![Hasil pemeriksaan kemiripan dengan SmallSEOTools](../img/elementor-placeholder-image.png)
+Sebuah naskah kajian teologi kontemporer diserahkan ke sistem Anda. Laporan Turnitin menunjukkan indeks kemiripan sebesar **31%** (di atas ambang batas wajar). Sebagai Editor Bagian, Anda menelusuri rincian laporan tersebut:
+- 15% kemiripan berasal dari kutipan langsung ayat-ayat kitab suci yang terjemahannya baku.
+- 5% kemiripan berasal dari blok panjang daftar pustaka.
+- 11% kemiripan berasal dari tiga blog mahasiswa berbeda yang kalimat-kalimatnya tersebar sporadis pada bab pengantar.
 
-## 7.5 Perbandingan Alat Pemeriksa Gratis
+**Tugas Praktik:**
+1. Berdasarkan teori yang telah dijabarkan di atas, apakah Anda akan langsung menekan tombol *Decline Submission*? Mengapa?
+2. Buka jurnal simulasi OJS Anda. Temukan naskah acak di menu *Submission*.
+3. Gunakan fitur *Pre-review Discussions*. Simulasikan penulisan pesan profesional kepada penulis fiktif tersebut untuk meminta mereka melakukan perbaikan struktur bahasa (parafrasa) agar sisa kemiripan sebesar 11% dapat ditekan.
+4. Lampirkan berkas (fiktif) PDF laporan kemiripan ke dalam ruang diskusi tersebut.
 
-| No. | Perangkat Lunak | Evaluasi Skor | Sepenuhnya Gratis | Keterbatasan Utama |
-|:---:|:---|:---:|:---:|:---|
-| 1 | **Scribbr** | ★★★★★ (4.7) | Tidak | Akses versi gratis tidak memuat laporan mendetail. |
-| 2 | Quetext | ★★★☆☆ (3.3) | Sebagian | Hanya memberikan uji coba terbatas (2.500 kata). |
-| 3 | Grammarly | ★★★☆☆ (3.2) | Tidak | Versi tidak berbayar tidak menyediakan analisis kalimat rinci. |
-| 4 | Unicheck | ★★★☆☆ (3.0) | Tidak | Uji coba terbatas untuk 200 kata. |
-| 5 | Small SEO Tools | ★☆☆☆☆ (1.7) | Tidak | Dibatasi 1.000 kata per pemindaian. |
-| 6 | DupliChecker | ★☆☆☆☆ (1.7) | Tidak | Dibatasi 1.000 kata per pemindaian. |
-
-*Rujukan Data: scribbr.com/plagiarism/best-free-plagiarism-checker*
-
-## 7.6 Layanan Pemeriksaan Berbayar Profesional
-
-Bagi pengelolaan jurnal tingkat universitas yang profesional, penyediaan lisensi perangkat lunak berbayar sangat diutamakan:
-
-| Layanan | Keterangan |
-|---------|-----------|
-| **Turnitin** | Merupakan standar industri yang diadopsi luas oleh perguruan tinggi global. Memiliki basis data dokumen akademik yang sangat ekstensif. |
-| **iThenticate** | Didesain khusus untuk kebutuhan editor jurnal ilmiah dan lembaga riset, membedakannya dari Turnitin yang condong digunakan pada tingkat mahasiswa. |
-
-Arahan Editorial: Apabila jurnal menargetkan indeksasi bereputasi seperti Scopus atau Web of Science, berlangganan layanan seperti iThenticate menjadi investasi krusial dalam mitigasi risiko plagiarisme pascaterbit.
-
-## 7.7 Panduan Praktis untuk Tim Editor Jurnal
-
-Untuk menjaga integritas ilmiah, tim editorial dianjurkan mengimplementasikan langkah-langkah berikut:
-
-1. Formulasikan dan publikasikan kebijakan jurnal yang lugas mengenai aturan orisinalitas serta kepengarangan di situs web OJS.
-2. Sediakan dokumen prosedur operasional standar (*Standard Operating Procedure*) untuk penanganan temuan plagiasi.
-3. Minta mitra bestari untuk proaktif mengidentifikasi tanda-tanda plagiat empiris, meliputi duplikasi struktur kalimat yang ganjil, inkonsistensi penyajian data gambar, hingga keberadaan gagasan sentral tanpa pengutipan selayaknya.
-4. Rujuk pedoman Committee on Publication Ethics (COPE) yang memuat diagram alur penanganan sengketa etika akademik di situs publicationethics.org.
-
-## 7.8 Panduan Pencegahan Plagiarisme bagi Penulis
-
-Penulis dituntut memahami bahwa plagiat adalah pelanggaran etika yang mendatangkan sanksi pencabutan dokumen (*retraction*). Langkah pencegahan esensial meliputi:
-
-1. Gunakan tanda kutip ganda pada saat mengadopsi teks rujukan sama persis tanpa memarafrasakannya.
-2. Cantumkan seluruh referensi secara terperinci pada daftar pustaka.
-3. Selalu sematkan sitasi dalam teks (*in-text citation*) seketika gagasan sumber diintegrasikan ke dalam naskah.
-4. Jangan mengirimkan naskah yang identik ke lebih dari satu jurnal secara bersamaan, karena hal ini diklasifikasikan sebagai plagiasi diri (*self-plagiarism*).
-5. Kembangkan budaya pencatatan rujukan berbasis *reference manager* agar silsilah sumber ide tidak terputus atau terlupakan saat naskah ditulis.
+**Arahan Editorial (Untuk Fasilitator):** 
+Pandu peserta untuk memahami konsep *Exclude Quotes* dan *Exclude Bibliography*. Tanamkan pola pikir bahwa editor bukan sekadar hakim angka kalkulator, melainkan analis substansi. Latih cara menegur penulis melalui OJS dengan bahasa yang konstruktif dan tidak menuduh.
 
 ## Checklist Bab 7
 
-- [ ] Batas toleransi plagiarisme jurnal telah ditetapkan secara eksplisit dalam kebijakan (*mis. maks 25%*).
-- [ ] Perangkat lunak pemeriksa kemiripan (*similarity checker*) telah ditentukan penggunaannya (gratis atau lisensi universitas).
-- [ ] Prosedur standar pemindaian dokumen setelah tinjauan awal meja (*desk review*) telah dilaksanakan pada seluruh naskah yang masuk.
-- [ ] Editor telah memahami cara menafsirkan laporan kemiripan dengan benar (mengecualikan kutipan langsung dan daftar pustaka).
-- [ ] Diagram alur penanganan pelanggaran dari COPE telah diadopsi sebagai referensi mitigasi etika jurnal.
+- [ ] Ambang batas toleransi indeks kemiripan (*similarity index*) telah ditetapkan dan dicantumkan secara transparan pada menu Kebijakan Jurnal (*Journal Policies*) di situs web.
+- [ ] Editor telah menguasai pengaturan penyaringan laporan perangkat lunak (mengecualikan bibliografi dan blok kutipan langsung) untuk mengeliminasi positif palsu.
+- [ ] Proses *Desk Review* tidak akan meloloskan naskah ke tahap penelaahan sebelum bukti empiris laporan kemiripan selesai dianalisis secara manual oleh editor.
+- [ ] Bukti laporan (*similarity report*) PDF telah didokumentasikan ke dalam *Submission Files* naskah sebagai bagian dari kelengkapan jejak audit jurnal.
+- [ ] Diagram alur penanganan sengketa dari COPE telah diintegrasikan sebagai rujukan mitigasi insiden jika ditemukan kecurangan berat.
 
 ## Ringkasan Bab
 
-Pemeriksaan kemiripan (*similarity check*) bertindak sebagai lapisan pelindung lini depan bagi kredibilitas sebuah jurnal. Integrasi prosedur deteksi sebelum mengalihkan naskah ke penelaah sejawat membantu menjaga standar kualitas, menghindarkan mitra bestari dari keharusan mengevaluasi dokumen yang cacat etika, dan mencegah potensi penarikan publikasi di kemudian hari.
+Laporan kemiripan naskah adalah instrumen mitigasi risiko, bukan palu hakim pemutus nasib. Perangkat lunak canggih seperti Turnitin mendeteksi kecocokan karakter numerik dan linguistik, namun kecerdasan editoriallah yang menentukan batas antara kelaziman saintifik dan pencurian akademik. Dengan memahami anatomi *false positive*, menyadari jebakan kelemahan perangkat lunak gratis, serta menjadikan diagram alir COPE sebagai kompas navigasi insiden, pengelola jurnal tidak hanya menghindarkan terbitannya dari skandal penarikan (*retraction*), tetapi juga membangun kultur keilmuan yang adil dan beradab.

@@ -65,8 +65,8 @@ modul-ojs-3/
 ### Ringkasan Cepat (Perbarui Setiap Sesi)
 
 - **Sesi terakhir**: 2026-07-19
-- **Dikerjakan**: Menyunting dan memperkaya **Bab 4 (Bibliografi & Referensi)**. Menambahkan Pemantik Bab tentang dampak daftar pustaka acak terhadap indeksasi, Sorotan Standar Global (Ekstraksi Referensi OJS 3.3, Crossref Reference Linking, Controlled Vocabularies vs Author Keywords), Catatan dari Lapangan (keluhan editor terkait gagalnya parser pada *hardcoded citations*), dan Latihan Bab 4 (Analisis Ekstraksi Referensi & Audit Kata Kunci).
-- **Berikutnya**: Melanjutkan ke Bab 5 (Submission Penulis) atau bab lain sesuai urutan prioritas.
+- **Dikerjakan**: Melakukan riset dan penulisan untuk Bagian IV: Pasca-Review, Produksi, dan Penerbitan, yaitu Bab 11 (Copyediting) dan Bab 12 (Produksi & Galley). Menambahkan elemen bergaya *How-To* modern seperti **Jalur Eksekusi Cepat**, **Troubleshooting**, **Pemantik Bab**, **Catatan dari Lapangan**, dan **Latihan**. Em-dash telah dihilangkan sepenuhnya. Penambahan KB-037 dan KB-038 ke dalam knowledge-base.
+- **Berikutnya**: Menyelesaikan Bab 13 (Manajemen Edisi) dan Bab 14 (Optimalisasi Metadata), lalu melangkah ke aparatus tambahan buku (Bab 15, Glosarium, dll).
 
 ### Tahap 1: Pembersihan Gaya Bahasa [SELESAI — 2026-07-17]
 
@@ -85,19 +85,19 @@ Legenda status: `[ ]` Belum | `[R]` Riset selesai | `[/]` Sedang dikerjakan | `[
 | Baru | Cara Menggunakan Buku Ini | `[ ]` | `[ ]` | — |
 | **Bab 1** | Gambaran Umum OJS | `[R]` KB-001~010 | `[x]` | 2026-07-18 |
 | **Bab 2** | Identitas & Kebijakan Jurnal | `[R]` KB-017~023 | `[ ]` | 2026-07-18 |
-| **Bab 3** | E-Resources & Penelusuran | `[x]` | `[x]` | 2026-07-18 |
+| **Bab 3** | E-Resources & Penelusuran | `[x]` | `[x]` | 2026-07-19 |
 | **Bab 4** | Bibliografi & Referensi | `[R]` KB-026~030 | `[x]` | 2026-07-19 |
-| **Bab 5** | Submission (Penulis) | `[R]` KB-024~025 | `[ ]` | 2026-07-18 |
-| **Bab 6** | Merespons Naskah (Desk Review) | `[ ]` | `[ ]` | — |
-| **Bab 7** | Similarity Check | `[ ]` | `[ ]` | — |
-| **Bab 8** | Assigning Reviewer | `[ ]` | `[ ]` | — |
-| **Bab 9** | Panduan Reviewer | `[ ]` | `[ ]` | — |
-| **Bab 10** | Keputusan Editorial | `[R]` KB-024 | `[ ]` | 2026-07-18 |
-| **Bab 11** | Copyediting | `[R]` KB-024~025 | `[ ]` | 2026-07-18 |
-| **Bab 12** | Produksi & Galley | `[R]` KB-024 | `[ ]` | 2026-07-18 |
-| **Bab 13** | Manajemen Edisi | `[ ]` | `[ ]` | — |
-| **Bab 14** | Optimalisasi Metadata | `[ ]` | `[ ]` | — |
-| **Bab 15** | Diseminasi (BARU) | `[ ]` | `[ ]` | — |
+| **Bab 5** | Submission (Penulis) | `[R]` KB-024~025 | `[x]` | 2026-07-19 |
+| **Bab 6** | Merespons Naskah (Desk Review) | `[ ]` | `[x]` | 2026-07-19 |
+| **Bab 7** | Similarity Check | `[ ]` | `[x]` | 2026-07-19 |
+| **Bab 8** | Assigning Reviewer | `[ ]` | `[x]` | 2026-07-19 |
+| **Bab 9** | Panduan Reviewer | `[x]` | `[x]` | 2026-07-19 |
+| **Bab 10** | Keputusan Editorial | `[x]` | `[x]` | 2026-07-19 |
+| **Bab 11** | Copyediting | `[R]` KB-024~025, 037 | `[x]` | 2026-07-19 |
+| **Bab 12** | Produksi & Galley | `[R]` KB-024, 038 | `[x]` | 2026-07-19 |
+| **Bab 13** | Manajemen Edisi | `[R]` KB-039 | `[x]` | 2026-07-19 |
+| **Bab 14** | Optimalisasi Metadata | `[R]` KB-040 | `[x]` | 2026-07-19 |
+| **Bab 15** | Diseminasi (BARU) | `[R]` KB-041 | `[x]` | 2026-07-19 |
 | Back | Glosarium | `[ ]` | `[ ]` | — |
 | Back | Daftar Pustaka Terpadu | `[ ]` | `[ ]` | — |
 | Back | Indeks Subjek (BARU) | `[ ]` | `[ ]` | — |
@@ -125,8 +125,8 @@ Legenda status: `[ ]` Belum | `[R]` Riset selesai | `[/]` Sedang dikerjakan | `[
 | Bab 4 | Controlled Vocabularies vs Author Keywords; Ekstraksi Referensi OJS 3.3; Gaya Selingkung (APA, IEEE, Vancouver); Crossref Reference Linking; Standarisasi Parsing Pustaka | KB-026 s.d. KB-030 | *(semua sub-topik belum diteliti)* | 2026-07-18 |
 | Bab 5 | Praktik terbaik Author Guidelines (Template sederhana vs Layout); Masalah umum naskah penulis (line breaks, resolusi gambar, tabel kompleks) | KB-024, KB-025 | *(semua sub-topik belum diteliti)* | 2026-07-18 |
 | Bab 10 | Praktik terbaik Author Guidelines (Template sederhana vs Layout) | KB-024 | *(semua sub-topik belum diteliti)* | 2026-07-18 |
-| Bab 11 | Praktik terbaik Author Guidelines (Template sederhana vs Layout); Masalah umum naskah penulis (line breaks, resolusi gambar, tabel kompleks) | KB-024, KB-025 | *(semua sub-topik belum diteliti)* | 2026-07-18 |
-| Bab 12 | Praktik terbaik Author Guidelines (Template sederhana vs Layout) | KB-024 | *(semua sub-topik belum diteliti)* | 2026-07-18 |
+| Bab 11 | Praktik terbaik Author Guidelines; Masalah umum naskah penulis; Alur Kerja Copyediting OJS 3.3, Tugas Copyeditor | KB-024, KB-025, KB-037 | *(semua sub-topik belum diteliti)* | 2026-07-19 |
+| Bab 12 | Praktik terbaik Author Guidelines; Alur Kerja Production, Galley, Tugas Layout Editor | KB-024, KB-038 | *(semua sub-topik belum diteliti)* | 2026-07-19 |
 | Bab lainnya | *(belum ada riset)* | — | *(semua sub-topik belum diteliti)* | — |
 
 
@@ -147,6 +147,11 @@ Legenda status: `[ ]` Belum | `[R]` Riset selesai | `[/]` Sedang dikerjakan | `[
 11. **Setiap bab dapat dibaca secara mandiri**.
 12. **Setiap bab harus memiliki checklist** di bagian akhir sebelum Ringkasan.
 13. **Referensi dari sumber daring** wajib disertai tautan langsung yang dapat diklik.
+14. **Kepadatan Kasus Riil**: Jangan menyederhanakan paragraf teknis dengan menghilangkan isi, melainkan perkaya dengan contoh kasus nyata di lapangan.
+15. **Kotak Troubleshooting**: Sediakan kotak *Troubleshooting* pada instruksi teknis yang rawan kegagalan.
+16. **Pemisahan Visual Teori vs Teknis**: Gunakan paragraf naratif untuk penjelasan konsep/teori. Namun untuk instruksi operasional antarmuka, gunakan daftar bernomor (1, 2, 3) yang terisolasi secara visual (misal: "Jalur Eksekusi Cepat").
+17. **Jembatan Transisi (*Bridging*)**: Wajib ada kalimat penyambung yang rasional dan mulus dari *Pemantik Bab* ke materi inti teknis.
+18. **Konsistensi Terminologi UI**: Label antarmuka (UI) wajib menggunakan istilah bahasa Inggris aslinya dan bercetak tebal (misal: **Send to Review**, **Settings**).
 
 ---
 

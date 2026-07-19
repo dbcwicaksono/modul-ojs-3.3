@@ -1,201 +1,107 @@
-﻿# Bab 6: Merespons Kiriman Naskah Baru
+# Bab 6: Merespons Kiriman Naskah Baru (Desk Review)
 
-Bab ini membahas peran editor dalam mengelola naskah yang masuk ke sistem OJS 3.3, mulai dari navigasi dasbor editorial, pemeriksaan awal naskah, penugasan editor bagian, hingga pengambilan keputusan editorial pertama. Untuk pembahasan tentang proses pengiriman naskah dari sudut pandang penulis, lihat **Bab 4: Panduan Mengirimkan Artikel**.
+> **Pemantik Bab**
+> Bayangkan Anda mengelola jurnal yang menerima puluhan naskah setiap bulan. Jika setiap naskah tersebut, terlepas dari kualitas dan kesesuaian formatnya, langsung dikirimkan kepada mitra bestari (*reviewer*), apa yang akan terjadi? Waktu berharga para pakar akan terbuang untuk mengoreksi kesalahan dasar, dan pada akhirnya, mereka mungkin enggan membantu jurnal Anda di masa depan. 
 
-## Tinjauan Awal Meja (Desk Review)
+Kunci untuk menjaga efisiensi dan reputasi jurnal terletak pada garis pertahanan pertama: *Desk Review* (Tinjauan Awal Meja). Proses ini adalah penyaringan manajerial dan substansial awal sebelum sebuah naskah memasuki siklus penelaahan sejawat (*peer review*). Bab ini membahas secara teknis bagaimana Anda sebagai editor merespons naskah baru yang masuk ke dalam sistem Open Journal Systems (OJS) 3.3.
 
-Sebelum sebuah naskah dikirimkan ke proses penelaahan sejawat (*peer review*), editor terlebih dahulu melakukan tinjauan awal meja (*desk review*). Tinjauan ini adalah penilaian administratif dan kesesuaian ruang lingkup yang dilakukan oleh editor sebelum melibatkan reviewer. Tujuannya adalah menyaring naskah yang tidak memenuhi syarat minimum sehingga beban reviewer dapat dikelola secara efisien.
+## 6.1 Filosofi *Desk Review* dan Alur Penugasan Editorial
 
-Menurut panduan Directory of Open Access Journals (DOAJ), jurnal yang memenuhi syarat untuk terindeks harus memiliki proses editorial yang terdokumentasi dan dapat diverifikasi, termasuk proses tinjauan awal sebelum peer review (DOAJ, 2024, https://doaj.org/apply/guide/).
+Dalam ekosistem publikasi ilmiah, *desk review* sering kali disalahpahami sekadar sebagai pemeriksaan tata letak margin atau ukuran huruf. Padahal, secara filosofis, *desk review* adalah manifestasi dari kebijakan keilmuan jurnal (*scientific policy*). Di tahap inilah identitas, fokus, dan ruang lingkup jurnal dijaga ketat. Naskah yang memiliki tata bahasa sempurna sekalipun harus ditolak di meja redaksi apabila substansinya tidak bersinggungan dengan misi keilmuan jurnal.
 
-Tinjauan awal meja umumnya mencakup:
-1. Pemeriksaan kesesuaian topik dengan fokus dan ruang lingkup jurnal.
-2. Pemeriksaan kepatuhan terhadap panduan penulisan (*author guidelines*).
-3. Pemeriksaan kelengkapan administratif (jumlah penulis, afiliasi, pernyataan etika jika diperlukan).
-4. Pemeriksaan awal kemiripan naskah menggunakan perangkat lunak deteksi plagiasi (lihat **Bab 6: Pemeriksaan Plagiasi**).
+Untuk menjalankan fungsi ini, sistem manajemen peran pada OJS memisahkan tanggung jawab berdasarkan tingkat wewenang. Mekanisme ini membentuk sebuah alur kerja editorial yang hierarkis namun terintegrasi, melibatkan dua aktor sentral pada tahap pengajuan naskah (*submission*):
 
----
+1. **Editor Kepala (*Journal Editor/Editor-in-Chief*)**: Bertindak sebagai panglima redaksi. Tugas utamanya adalah memantau seluruh lalu lintas naskah baru yang terpusat pada sistem. Editor Kepala mengeksekusi *desk review* lapis pertama yang bersifat makro, yaitu menilai secara cepat apakah naskah tersebut secara prinsip sejalan dengan fokus dan cakupan keilmuan jurnal. Jika naskah tersebut lolos penilaian makro, Editor Kepala akan mendelegasikan naskah tersebut kepada Editor Bagian yang memiliki spesialisasi paling relevan.
+2. **Editor Bagian (*Section Editor*)**: Berperan sebagai spesialis garda depan. Begitu naskah didelegasikan, Editor Bagian melakukan *desk review* lapis kedua yang lebih mikroskopis dan eksploratif. Tugas mereka mencakup pembedahan anatomi naskah, mulai dari pemeriksaan tingkat kesamaan teks (*similarity rate*), kelayakan metodologi awal, hingga kesesuaian rujukan. Editor Bagian jugalah yang memegang kendali komunikasi teknis prakajian dengan penulis.
 
-## 6.1 Peran Editor dalam Tahap Submission
+Pembagian tugas ganda ini memastikan bahwa tidak ada satu individu pun yang menanggung beban administratif secara terpusat (*bottleneck*), sekaligus menjamin bahwa setiap naskah dievaluasi dengan lensa kepakaran yang presisi sejak hari pertama pengiriman. 
 
-Editor di OJS 3.3 tidak hanya memantau naskah, tetapi memiliki kemampuan teknis untuk:
-- Mengelola akun pengguna.
-- Masuk sebagai pengguna lain jika diperlukan (*login as*).
-- Mengambil keputusan editorial di setiap tahap alur kerja.
+Secara konseptual, alur pendelegasian ini dapat dibayangkan sebagai sebuah diagram alir (*flowchart*). Proses bermula saat Penulis mengunggah naskah awal ke dalam OJS. Sistem kemudian menempatkan naskah tersebut ke dalam wadah antrean umum. Dari sana, Editor Kepala melakukan penyortiran makro. Naskah yang menyimpang jauh langsung diputus dengan penolakan (*Desk Reject*), sedangkan naskah yang menjanjikan didistribusikan kepada Editor Bagian. Editor Bagian kemudian melakukan penyaringan berbasis rubrik standar dan berkomunikasi dengan penulis untuk melengkapi kekurangan minor. Pada akhirnya, Editor Bagian inilah yang mengambil keputusan apakah naskah tersebut valid untuk memasuki gerbang penelaahan sejawat (*Send to Review*).
 
-OJS 3.3 bersifat fleksibel. Jurnal dapat dikelola oleh editor tunggal yang menangani seluruh proses, atau oleh tim yang terdiri dari Editor Kepala (*Editor-in-Chief*), beberapa Section Editor, hingga staf pendukung.
+![Diagram Alir Pendelegasian Editorial di Tahap Submission](../img/elementor-placeholder-image.png)
 
----
+## 6.2 Merumuskan Rubrik Standar *Desk Review*
 
-## 6.2 Navigasi Dasbor Editorial
+Meskipun DOAJ mensyaratkan transparansi proses, banyak jurnal terjebak pada penilaian *desk review* yang sangat subjektif karena ketiadaan parameter yang baku. Ketiadaan standar ini sering memicu perdebatan internal dan ketidakpuasan penulis. Untuk menengahi hal ini, dewan redaksi harus memiliki Standar Operasional Prosedur (SOP) berupa **Rubrik Tinjauan Awal Meja** yang eksploratif namun terukur. Rubrik ini bukan seperangkat aturan kaku yang membunuh kebaruan gagasan, melainkan pedoman fleksibel untuk menilai kelayakan minimum.
 
-Dasbor editorial adalah antarmuka utama bagi editor untuk memantau seluruh aktivitas naskah. Terdapat empat tab utama yang perlu dipahami:
+Rubrik *desk review* yang komprehensif idealnya bertumpu pada empat pilar evaluasi:
 
-| Tab | Fungsi | Catatan |
-|-----|--------|---------|
-| **My Queue** | Naskah yang menjadi tanggung jawab langsung editor yang sedang login. | Periksa setiap hari untuk menjaga akuntabilitas kerja. |
-| **Unassigned** | Naskah masuk yang belum ditugaskan ke editor mana pun. | Area berisiko tinggi. Pantau secara rutin untuk mencegah naskah tidak tertangani. |
-| **All Active** | Seluruh naskah yang sedang diproses di semua tahap. | Digunakan Editor Kepala untuk memantau beban kerja tim secara keseluruhan. |
-| **Archives** | Naskah yang telah dipublikasikan atau ditolak. | Berfungsi sebagai rekam jejak permanen seluruh aktivitas editorial. |
+*   **Pilar Kesesuaian Cakupan (Substansi Makro)**: Evaluasi ini menuntut editor untuk membaca judul, abstrak, dan kesimpulan guna menentukan apakah masalah yang diangkat selaras dengan misi keilmuan jurnal. Ketidaksesuaian dengan cakupan (*Mismatch with Aims and Scope*) adalah penyebab nomor satu penolakan awal secara global. Jika jurnal Anda berfokus pada teknologi pendidikan berbasis kecerdasan buatan, naskah mengenai sejarah arsitektur sekolah tentu harus dieliminasi sejak awal, seberapapun cemerlangnya metodologi naskah tersebut.
+*   **Pilar Integritas Akademik dan Etika**: Editor memeriksa potensi pelanggaran etika saintifik. Ini mencakup eksekusi perangkat lunak uji kemiripan (*similarity check*) untuk mendeteksi indikasi plagiarisme, serta memastikan adanya formulir persetujuan etik (*ethical clearance*) jika riset melibatkan subjek manusia atau hewan uji. Pelanggaran di pilar ini bersifat fatal dan tidak dapat dikompromikan.
+*   **Pilar Anatomi dan Kebaruan Literatur**: Editor membedah struktur fundamental naskah (biasanya mengacu pada pola *Introduction, Methods, Results, and Discussion* atau IMRaD). Lebih jauh lagi, editor menelaah daftar pustaka untuk memastikan penulis merujuk pada literatur primer yang mutakhir. Kurangnya kebaruan atau kontribusi signifikan (*Weak Novelty*) adalah alasan kedua tertinggi naskah ditolak oleh jurnal bereputasi tinggi.
+*   **Pilar Kepatuhan Administratif (Formil)**: Penilaian terakhir menyangkut kepatuhan teknis penulis terhadap panduan gaya selingkung (*author guidelines*). Kualitas teknis yang sangat buruk, seperti tata bahasa yang tidak dapat dipahami atau ketiadaan standar pelaporan, sering kali menjadi penentu kegagalan naskah. Namun, untuk kekurangan minor (seperti tata letak tabel dasar), umumnya masih dapat ditoleransi melalui permintaan revisi awal kepada penulis sebelum naskah dilempar kepada mitra bestari.
 
-**Fitur Filter dan Pencarian:**
+> **Sorotan Standar Global: Transparansi Proses Tinjauan Awal (DOAJ)**
+> 
+> *Directory of Open Access Journals* (DOAJ) mensyaratkan agar setiap jurnal memiliki proses editorial yang terdokumentasi, konsisten, dan transparan. Meskipun *desk review* tidak melibatkan pakar eksternal, DOAJ mewajibkan jurnal untuk menyatakan kriteria penolakan awal secara eksplisit pada halaman kebijakan jurnal. Kriteria tersebut umumnya mencakup ketidaksesuaian topik, pelanggaran etika dasar, atau format yang menyimpang jauh dari panduan penulis. Ketidakjelasan dalam tahap ini sering menjadi alasan DOAJ menunda atau menolak indeksasi sebuah jurnal.
+> 
+> *Sumber: [https://doaj.org/apply/guide/](https://doaj.org/apply/guide/)*
 
-OJS 3.3 menyediakan filter untuk navigasi yang lebih efisien:
-- Pencarian berdasarkan nama penulis atau kata kunci judul.
-- Filter berdasarkan status terlambat (*overdue*).
-- Filter berdasarkan naskah belum lengkap (*incomplete*).
-- Filter berdasarkan tahap proses, bagian jurnal, atau jumlah hari sejak aktivitas terakhir (*Days since last activity*). Filter terakhir ini berguna untuk mengidentifikasi naskah yang tidak berkembang dalam waktu lama.
+## 6.3 Eksplorasi Dasbor dan Jejak Audit Permanen
 
-![Tampilan dasbor editorial OJS dengan empat tab utama](../img/elementor-placeholder-image.png)
+Dasbor editorial merupakan antarmuka komando yang mengorkestrasi seluruh pergerakan naskah. Saat masuk ke dalam sistem, editor tidak dihadapkan pada tumpukan fail digital yang membingungkan, melainkan pada empat tab navigasi strategis: *My Queue* (antrean tugas personal), *Unassigned* (naskah yatim yang menanti dialokasikan), *All Active* (pantauan makro seluruh proses), dan *Archives* (arsip naskah final). Membiasakan diri memantau tab *Unassigned* secara harian adalah ritual manajerial terpenting bagi seorang Editor Kepala guna memastikan roda redaksi berputar tanpa jeda.
 
----
+Ketika sebuah naskah dibuka melalui tombol *View*, editor akan memasuki halaman Rekam Naskah (*Submission Record*). Di sinilah integritas proses penerbitan dipertaruhkan. Sistem OJS memisahkan pencatatan menjadi dua dimensi utama. Dimensi pertama adalah *Activity Log*, yakni buku log otomatis yang mencatat setiap detik perubahan status, pergerakan dokumen, dan korespondensi surel. Log ini bersifat *immutable*, artinya tidak seorang pun, termasuk pengelola sistem, dapat menghapus atau memodifikasinya. Sifat permanen inilah yang menjadikan OJS sebagai platform terstandarisasi untuk akreditasi, karena seluruh rekam jejak audit (*audit trail*) tersaji secara transparan dan kronologis. Dimensi kedua adalah *Internal Notes*, sebuah ruang diskusi tertutup yang memungkinkan Editor Kepala dan Editor Bagian bertukar taktik atau catatan kaki kritis mengenai penulis tanpa diketahui oleh pihak luar.
 
-## 6.3 Membuka dan Memahami Rekam Naskah
+## 6.4 Rekayasa Pengelolaan Berkas Administratif
 
-Klik tombol **"View"** pada naskah untuk masuk ke halaman rekam naskah (*submission record*). Halaman ini berisi seluruh informasi dan aktivitas terkait naskah tersebut.
+Seluruh dokumen yang diunggah oleh penulis bermuara pada panel *Submission Files*. Dalam lanskap editorial modern, panel ini bukanlah sekadar repositori statis. Editor memiliki keleluasaan penuh untuk merekayasa tata kelola berkas demi memperlancar proses transisi ke tahap penelaahan sejawat. Melalui panel ini, editor dapat mengunduh paket naskah secara utuh untuk dianalisis di luar jaringan, maupun menambahkan dokumen pendukung esensial, seperti hasil pemindaian perangkat lunak anti-plagiasi atau formulir pernyataan konflik kepentingan, langsung ke dalam kantong rekam naskah.
 
-### Informasi di Header Rekam Naskah
+Lebih dari itu, pengelola jurnal menyadari bahwa kekacauan paling umum di tahap pengajuan bermula dari penamaan fail (*file naming*) yang sangat tidak beraturan oleh penulis. Menghadapi fail berjudul "revisi_terbaru_banget.docx" tentu akan menurunkan wibawa jurnal di mata penelaah eksternal. OJS memfasilitasi kebutuhan ini dengan mengizinkan editor mengubah dan menstandardisasi penamaan dokumen langsung dari dalam sistem. Standardisasi ini bukan sekadar urusan estetika, melainkan rekayasa prosedural yang menyelamatkan ratusan jam kerja yang berpotensi hilang akibat kebingungan melacak versi dokumen di fase produksi akhir.
 
-- **ID Naskah**: Pengenal unik setiap naskah dalam sistem.
-- **Nama Belakang Penulis**: Informasi cepat untuk identifikasi.
-- **Judul Naskah**: Judul lengkap artikel.
+## 6.5 Sentralisasi Komunikasi Prakajian
 
-### Activity Log dan Internal Notes
+Pada fase *desk review* berbasis rubrik, tidak jarang Editor Bagian menemukan naskah dengan landasan teori yang sangat kuat, namun tersandung masalah administratif sepele, misalnya, bagan penelitian yang disisipkan dalam resolusi sangat rendah atau halaman judul yang tidak mencantumkan afiliasi secara utuh. Alih-alih meresponsnya dengan keputusan penolakan (*Decline Submission*) yang dapat membunuh potensi karya intelektual, editor dibekali dengan fitur komunikasi taktis bernama *Pre-review Discussions*.
 
-Penting untuk membedakan dua fitur ini:
+Ruang diskusi ini dirancang untuk mendesentralisasi percakapan dari layanan surel pribadi pihak ketiga, menarik semuanya masuk ke dalam radar pengawasan sistem jurnal. Dengan memanfaatkan panel ini, editor dapat mengirimkan instruksi revisi ringan kepada penulis dan meminta mereka mengunggah dokumen perbaikan. Sentralisasi percakapan ini memberikan jaminan bahwa seluruh proses negosiasi administratif tercatat resmi ke dalam buku log jurnal. Menggunakan aplikasi pesan instan atau surel pribadi di luar lingkungan OJS bukan hanya tindakan tidak profesional, tetapi juga menghancurkan rantai jejak audit yang sangat dijunjung tinggi oleh asesor akreditasi.
 
-| Fitur | Fungsi | Sifat |
-|-------|--------|-------|
-| **Activity Log** | Rekaman otomatis setiap tindakan sistem: unggah file, keputusan editor, pengiriman email, dan lainnya. | Tidak dapat diubah (*immutable*). Berfungsi sebagai jejak audit (*audit trail*) seluruh aktivitas sistem. |
-| **Notes** (tab internal) | Catatan manual antar-editor untuk hal-hal strategis terkait naskah yang tidak perlu diketahui penulis. | Dapat ditambah dan diedit oleh editor. |
+## 6.6 Konfirmasi Tiga Jalan Keputusan Awal
 
-*Jejak audit* (*audit trail*) adalah rekaman kronologis yang tidak dapat diubah dari seluruh aktivitas yang terjadi dalam sistem. Fungsinya adalah memastikan akuntabilitas dan transparansi proses editorial.
+Puncak dari fase *desk review* ditandai dengan intervensi editorial pada panel eksekusi keputusan (*Decision Wizard*). Di titik ini, Editor Bagian, setelah membedah naskah berdasarkan empat pilar evaluasi, dihadapkan pada percabangan tiga jalan keputusan yang akan menentukan nasib dokumen ilmiah tersebut. Keputusan ini membutuhkan pertimbangan yang matang, ketegasan manajerial, dan kehati-hatian operasional.
 
-### Submission Library
+Jalan pertama adalah keputusan *Send to Review*, yang merupakan jembatan emas menuju siklus penelaahan sejawat. Naskah yang mengambil jalan ini telah dinyatakan memenuhi kualifikasi rubrik kelayakan minimum. Hal krusial yang menuntut atensi penuh pada tahap ini adalah sterilisasi dokumen. Mengingat jurnal keilmuan secara luas menerapkan kaidah penelaahan nirnama ganda (*double-blind review*), editor memikul beban tanggung jawab untuk memastikan bahwa tidak ada sepercik pun identitas afiliasi maupun nama penulis yang tertinggal di dalam berkas dokumen. Menyerahkan naskah yang masih memuat identitas penulis kepada mitra bestari adalah kecelakaan etis yang akan merusak pilar objektivitas kajian ilmiah.
 
-Submission Library adalah tempat berbagi dokumen pendukung, seperti formulir etik penelitian atau data tambahan, secara langsung antara editor dan penulis tanpa melalui prosedur unggah formal.
+Jalan kedua adalah *Accept and Skip Review*, sebuah jalan pintas prosedural yang diciptakan khusus untuk menampung komoditas tulisan non-riset empiris. Editorial, resensi buku, surat pembaca, atau laporan pimpinan dewan redaksi tidak mensyaratkan validasi metode layaknya sebuah riset murni. Oleh sebab itu, jalur khusus ini mengizinkan naskah-naskah berkarakter khas tersebut untuk melompat langsung ke meja penyuntingan naskah (*Copyediting*) tanpa perlu mengganggu waktu berharga dari pangkalan data penelaah eksternal.
 
-![Halaman detail rekam naskah](../img/elementor-placeholder-image.png)
+Jalan terakhir adalah palu godam **Decline Submission**. Eksekusi keputusan ini harus tetap didampingi oleh notifikasi formal yang menjelaskan secara rasional mengapa naskah tersebut tidak dapat diproses lebih lanjut, guna menjaga marwah jurnal sembari tetap memberikan umpan balik konstruktif bagi penulisnya.
 
----
+**Jalur Eksekusi Cepat: Menolak Naskah Awal (Decline Submission)**
+1. Dari tab **Unassigned**, klik tombol **View** pada naskah terkait.
+2. Di pojok kanan atas, klik tombol **Decline Submission**.
+3. Sebuah kotak dialog surel akan terbuka. OJS akan memuat templat bawaan penolakan. Edit templat tersebut untuk memberikan alasan spesifik (misal: "Topik naskah berada di luar *Focus and Scope* kami").
+4. Jangan centang **Skip email** jika Anda ingin penulis mengetahui alasan penolakannya (sangat dianjurkan).
+5. Klik **Record Editorial Decision**. Naskah akan langsung berpindah ke tab **Archives**.
 
-## 6.4 Manajemen File Kiriman
+> **Troubleshooting: Penulis Mengirim Revisi Melalui WhatsApp**
+> 
+> **Masalah**: Penulis sudah terlanjur mengirimkan berkas naskah yang sudah diperbaiki ke WhatsApp pribadi Anda, padahal seharusnya mereka mengunggahnya ke ruang *Pre-review Discussions*.
+> 
+> **Solusi Cepat**: Jangan biarkan naskah tersebut mengendap di ponsel Anda! Segera pindahkan (unggah ulang) naskah tersebut ke dalam sistem OJS sendiri. Buka panel *Pre-review Discussions* terkait, klik **Add Message**, ketikkan catatan seperti "Mengunggah revisi yang dikirimkan penulis via WhatsApp pada tanggal X", lalu lampirkan (*Upload File*) naskah tersebut. Ini menyelamatkan jejak audit (*audit trail*) jurnal Anda.
 
-Area **"Submission Files"** menampilkan seluruh berkas digital yang diunggah penulis, beserta keterangan komponen naskahnya (*Article Text*, *Research Materials*, dan lainnya).
+## Latihan Bab 6
 
-Tindakan yang dapat dilakukan editor pada area ini:
+**Skenario Simulasi: Mengeksekusi Tinjauan Awal Meja**
 
-1. **Mengunduh**: Klik judul file untuk mengunduhnya ke perangkat lokal.
-2. **Expansion Arrow**: Klik panah kecil di sebelah nama file untuk mengakses log aktivitas spesifik file tersebut beserta catatan internal terkait.
-3. **Mengedit nama file** atau menghapus file yang tidak relevan.
-4. **Upload File**: Menambahkan dokumen baru yang diperlukan untuk proses editorial.
-5. **Download All Files**: Mengunduh seluruh paket dokumen sekaligus untuk peninjauan secara *offline*.
+Anda adalah seorang Editor Kepala. Di tab *Unassigned* pagi ini, terdapat sebuah naskah riset menjanjikan. Namun, saat Anda mengunduh berkasnya, penulis memasukkan nama lengkap dan afiliasinya langsung di dalam isi naskah, yang melanggar kebijakan *double-blind review* jurnal Anda.
 
-![Area Submission Files dengan berbagai opsi manajemen](../img/elementor-placeholder-image.png)
+**Tugas Praktik:**
+1. Masuk (*login*) ke sistem jurnal percobaan OJS Anda. Buka naskah tersebut dari tab *Unassigned*.
+2. Gunakan fitur **Pre-review Discussions** untuk mengirimkan pesan teguran halus kepada penulis, meminta mereka mengunggah ulang versi anonim (*blinded version*) dari naskah tersebut.
+3. Setelah simulasi penulis mengunggah versi baru, tugaskan seorang **Section Editor** dari daftar *Participants* dengan tingkat wewenang "Hanya Rekomendasi".
+4. Tinggalkan instruksi internal pada tab **Notes** untuk Section Editor tersebut mengenai fokus penelaahan yang Anda harapkan.
 
----
-
-## 6.5 Fitur Diskusi Pre-Review
-
-Fitur **Pre-review Discussions** adalah sarana komunikasi editorial yang terpusat dan tercatat dalam sistem. Fitur ini digunakan untuk meminta klarifikasi atau perbaikan administratif dari penulis sebelum naskah dikirimkan ke tahap penelaahan sejawat.
-
-Seluruh komunikasi yang dilakukan melalui fitur ini tersimpan secara permanen di sistem sebagai bagian dari jejak audit. Penggunaan email eksternal untuk komunikasi editorial tidak dianjurkan karena tidak tercatat dalam sistem dan tidak dapat diverifikasi.
-
-**Prosedur penggunaan:**
-
-1. Klik **"Add Discussion"** di panel *Pre-review Discussions*.
-2. Pilih partisipan: penulis, editor lain, atau keduanya.
-3. Masukkan subjek dan isi pesan. File dapat dilampirkan di sini.
-4. Klik **"OK"**.
-
-Editor juga dapat menggunakan fitur **"Notify"** pada daftar *Participants* di panel kanan untuk mengirim pesan menggunakan templat email yang tersedia dalam sistem.
-
-![Fitur Pre-review Discussions di halaman submission](../img/elementor-placeholder-image.png)
-
----
-
-## 6.6 Tiga Keputusan Editorial pada Tahap Submission
-
-Setelah tinjauan awal meja selesai, editor mengambil satu dari tiga keputusan melalui **Decision Wizard** di panel sebelah kanan:
-
-### A. Send to Review
-
-Naskah dinyatakan memenuhi syarat awal dan dipindahkan ke tahap penelaahan sejawat (*peer review*).
-
-Catatan Penting untuk Proses Double-Blind Review: Saat memilih file yang akan dikirim ke reviewer, pastikan file yang mengandung identitas penulis tidak disertakan (hapus tanda centang). Hal ini menjaga integritas proses *double-blind review* di mana reviewer tidak mengetahui identitas penulis.
-
-![Jendela Send to Review: pemilihan file yang akan dikirim ke reviewer](../img/elementor-placeholder-image.png)
-
-### B. Accept and Skip Review
-
-Digunakan untuk kiriman yang tidak memerlukan proses peer review formal, seperti:
-- Komentar editorial
-- Pengumuman
-- Resensi buku
-
-Naskah langsung masuk ke tahap Copyediting tanpa melalui tahap Review.
-
-### C. Decline Submission
-
-Naskah ditolak karena tidak sesuai standar atau ruang lingkup jurnal.
-
-Pada opsi ini, editor dapat memilih untuk mengirimkan notifikasi kepada penulis atau hanya merekam keputusan secara internal. Jika terjadi kesalahan dalam pengambilan keputusan, gunakan fitur **"Change Decision"** untuk membatalkan status penolakan.
-
-![Panel keputusan editorial](../img/elementor-placeholder-image.png)
-
----
-
-## 6.7 Penugasan Editor Bagian (Section Editor)
-
-Pada jurnal yang menggunakan model tim editorial, Editor Kepala dapat menugaskan **Section Editor** melalui tombol **"Assign"** di panel *Participants*.
-
-Terdapat tiga tingkat wewenang yang harus ditentukan saat penugasan:
-
-| Tingkat Wewenang | Deskripsi |
-|---|---|
-| **Hanya Rekomendasi** | Section Editor hanya dapat memberikan saran kepada Editor Kepala, tidak dapat mengambil keputusan final atau menghubungi penulis secara mandiri. |
-| **Wewenang Penuh** | Section Editor memiliki kendali penuh atas alur naskah, termasuk pengambilan keputusan editorial. |
-| **Pembatasan Metadata** | Hak akses Section Editor untuk mengubah metadata naskah dapat dibatasi. Pembatasan ini penting untuk menjaga integritas data bibliografi. |
-
-Setelah penugasan dikonfirmasi, sistem secara otomatis mengirimkan email pemberitahuan kepada Section Editor yang ditugaskan.
-
-![Jendela penugasan Section Editor dengan pilihan perizinan](../img/elementor-placeholder-image.png)
-
----
-
-## 6.8 Memindahkan Naskah ke Tahap Review
-
-Setelah keputusan "Send to Review" dikonfirmasi, naskah berpindah dari status *Submission* ke **Review (Round 1)**. File yang dipilih akan tercantum secara otomatis di panel *Review Files* pada tahap Review.
-
-Pada tahap ini, editor juga dapat menggunakan fitur diskusi untuk mengklarifikasi hal-hal kepada penulis sebelum proses review dimulai, serta memeriksa kembali kelengkapan file naskah.
-
-Panduan lengkap tentang proses penugasan reviewer dibahas di **Bab 7: Menugaskan Peninjau**.
-
----
+**Arahan Editorial (Untuk Fasilitator):** 
+Pastikan setiap peserta memiliki hak akses sebagai Editor Kepala. Simulasikan pengiriman balasan dari sisi penulis (*author*) agar peserta memahami bagaimana notifikasi diskusi terpusat berfungsi secara interaktif dalam satu antarmuka dasbor.
 
 ## Checklist Bab 6
 
-Gunakan daftar berikut sebagai panduan sebelum memindahkan naskah ke tahap berikutnya:
-
-- [ ] Tab **Unassigned** sudah diperiksa dan tidak ada naskah yang terbengkalai.
-- [ ] Rekam naskah sudah dibuka dan *Activity Log* sudah dipelajari.
-- [ ] File kiriman sudah diunduh dan diperiksa.
-- [ ] Pemeriksaan kemiripan (*similarity check*) sudah dilakukan (lihat Bab 6).
-- [ ] **Pre-review Discussions** sudah digunakan untuk komunikasi dengan penulis jika diperlukan.
-- [ ] Section Editor sudah ditugaskan dengan tingkat wewenang yang tepat (jika menggunakan model tim).
-- [ ] Keputusan editorial sudah diambil: *Send to Review*, *Accept and Skip Review*, atau *Decline Submission*.
-- [ ] File sudah dipastikan tidak mengandung identitas penulis sebelum dikirim ke reviewer (untuk *double-blind review*).
-
----
+- [ ] Memahami filosofi *desk review* sebagai implementasi kebijakan keilmuan jurnal, bukan sekadar tinjauan format tata letak.
+- [ ] Menguasai empat pilar rubrik tinjauan awal: Kesesuaian Cakupan, Integritas Etik, Anatomi Literatur, dan Kepatuhan Administratif.
+- [ ] Mampu menganalisis anatomi rekam naskah dan membedakan signifikansi *Activity Log* yang permanen dengan fleksibilitas catatan internal.
+- [ ] Mampu merekayasa tata kelola berkas, termasuk menstandardisasi nomenklatur penamaan dokumen kiriman penulis.
+- [ ] Menggunakan platform komunikasi *Pre-review Discussions* untuk melengkapi kekurangan minor tanpa merusak rantai jejak audit.
+- [ ] Memahami secara mendalam landasan filosofis di balik tiga keputusan awal (*Send to Review*, *Accept and Skip Review*, dan *Decline Submission*).
 
 ## Ringkasan Bab
 
-| Langkah | Aksi Editor |
-|---------|-------------|
-| 1 | Pantau tab **Unassigned** secara rutin. |
-| 2 | Buka rekam naskah dan pelajari *Activity Log*. |
-| 3 | Unduh dan periksa file kiriman. |
-| 4 | Gunakan **Pre-review Discussions** untuk komunikasi dengan penulis. |
-| 5 | Tugaskan **Section Editor** dengan wewenang yang tepat (jika ada). |
-| 6 | Ambil keputusan: *Send to Review*, *Accept and Skip Review*, atau *Decline Submission*. |
-| 7 | Pastikan file sudah dianonimkan sebelum dikirim ke reviewer. |
+Fase pengajuan naskah (*submission*) sejatinya adalah jantung pertahanan integritas sebuah jurnal ilmiah. *Desk review* bukan sekadar stasiun transit dokumen, melainkan saringan kualitatif pertama yang membedakan jurnal profesional dari sekadar mesin penerbitan mekanis. Dengan mendelegasikan wewenang secara hierarkis antara Editor Kepala dan Editor Bagian, serta berpegang teguh pada empat pilar rubrik tinjauan standar, dewan redaksi dapat mendiagnosis potensi dan risiko sebuah naskah sejak hari pertama. Kepiawaian editor dalam mengeksplorasi utilitas rekam jejak dasbor, menyentralisasi negosiasi dokumen melalui saluran prakajian resmi, dan mengeksekusi tiga jalur keputusan secara etis adalah pondasi krusial yang akan menjamin efektivitas serta kredibilitas siklus penelaahan sejawat pada tahap berikutnya.

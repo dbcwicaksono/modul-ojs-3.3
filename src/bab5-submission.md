@@ -1,6 +1,9 @@
-﻿# Bab 5: Panduan Mengirimkan Artikel (Submission)
+# Bab 5: Panduan Mengirimkan Artikel (Submission)
 
-Bab ini memandu penulis melalui proses pengiriman artikel ke jurnal yang menggunakan platform OJS 3.3. Proses pengiriman naskah (*submission*) di OJS dirancang dalam lima langkah berurutan untuk memastikan seluruh informasi penting dan metadata terdokumentasi dengan baik sejak tahap paling awal.
+> **Pemantik Bab**
+> Sebagai penulis, kesan pertama Anda terhadap sebuah jurnal sering kali dimulai dari kejelasan halaman pengirimannya. Proses pengiriman naskah (*submission*) yang terstruktur tidak hanya memudahkan editor, tetapi juga mencerminkan profesionalisme tata kelola jurnal secara keseluruhan.
+
+Sebagai panduan teknis operasional, bab ini akan memandu penulis melalui proses pengiriman artikel ke jurnal yang menggunakan platform OJS 3.3. Proses pengiriman naskah (*submission*) di OJS dirancang dalam lima langkah berurutan untuk memastikan seluruh informasi penting terdokumentasi dengan baik.
 
 ## 5.1 Persiapan Pra-Pengiriman
 
@@ -12,24 +15,30 @@ Sebelum mengunggah berkas, penulis disarankan melakukan riset mendalam terhadap 
 | **Copyright Policy** | Pahami kebijakan hak cipta dan lisensi yang akan diterapkan pada naskah setelah diterbitkan. |
 | **Author Guidelines** | Periksa persyaratan teknis terkait gaya selingkung, gaya sitasi, format dokumen, dan ketentuan panjang naskah. |
 
-Catatan Teknis: Penulis dapat merujuk pada direktori internasional seperti Directory of Open Access Journals (DOAJ) untuk mengevaluasi reputasi dan kebijakan transparansi jurnal target. Jurnal yang baik selalu mempublikasikan panduan penulis yang komprehensif dan biaya pemrosesan artikel secara transparan (DOAJ, 2024).
+**Sorotan Standar Global: Transparansi DOAJ**
+
+Berdasarkan *Principles of Transparency and Best Practice in Scholarly Publishing*, setiap jurnal wajib memberikan informasi yang sangat jelas mengenai Biaya Pemrosesan Artikel (APC) atau ketiadaan biaya tersebut di tempat yang mudah ditemukan sebelum penulis melakukan *submission*. Selain itu, kebijakan etika publikasi juga harus dinyatakan secara eksplisit agar penulis memahami standar integritas jurnal sejak awal. Penulis disarankan merujuk pada direktori seperti DOAJ untuk mengevaluasi kepatuhan jurnal target terhadap standar ini.
+
+*Sumber: DOAJ & COPE (2024, https://doaj.org/apply/transparency/)*
 
 ## 5.2 Registrasi dan Login Akun
 
 Untuk mengirimkan naskah, penulis diwajibkan memiliki akun pengguna yang terdaftar pada jurnal tujuan.
 
-### Membuat Akun Baru
+### Jalur Eksekusi Cepat: Membuat Akun Baru
 
 1. Kunjungi situs web jurnal dan akses menu **Register**.
-2. Lengkapi formulir registrasi dengan informasi berikut:
-   - Nama lengkap (sesuai format identitas publikasi)
-   - Institusi afiliasi
-   - Negara asal
-   - Alamat surel aktif
+2. Lengkapi formulir registrasi dengan informasi dasar (Nama, Afiliasi, Negara, Email).
 3. Setujui pernyataan privasi (*Privacy Statement*).
 4. Aktifkan opsi untuk menerima notifikasi (*Agreed to get notifications*) agar penulis selalu mendapatkan pembaruan otomatis mengenai status naskah.
-5. (Opsional) Masukkan minat bidang keahlian di kolom **Reviewing Interests**. Pengisian kolom ini membuka peluang bagi pengguna untuk diundang sebagai mitra bestari di masa mendatang.
+5. (Opsional) Masukkan minat bidang keahlian di kolom **Reviewing Interests**. Pengisian ini membuka peluang untuk diundang sebagai mitra bestari.
 6. Periksa surel masuk untuk menyelesaikan proses validasi akun.
+
+> **Troubleshooting: Email Registrasi Tidak Masuk**
+>
+> **Masalah**: Anda sudah mengeklik tombol **Register**, namun email aktivasi atau notifikasi pendaftaran tidak masuk ke kotak masuk (*Inbox*).
+>
+> **Solusi Cepat**: Selalu periksa folder **Spam** atau **Junk** Anda terlebih dahulu. Sering kali, jika jurnal belum memiliki konfigurasi SMTP yang sempurna, email dari sistem OJS akan ditandai sebagai spam oleh penyedia layanan surel seperti Gmail atau Yahoo. Jika tidak ada di folder mana pun, hubungi narahubung teknis jurnal (*Principal Contact*) untuk mengaktivasi akun Anda secara manual dari sisi admin.
 
 ![Formulir registrasi akun OJS](../img/elementor-placeholder-image.png)
 
@@ -57,21 +66,22 @@ Pada langkah pertama, penulis mengatur elemen administratif dasar naskah:
 
 ![Langkah 1: Start pemilihn section dan checklist](../img/elementor-placeholder-image.png)
 
-### Langkah 2: Upload Submission (Mengunggah Dokumen)
+### Jalur Eksekusi Cepat: Mengunggah Dokumen (Langkah 2)
 
-Unggah dokumen naskah menggunakan salah satu metode yang tersedia (klik tombol **Add File**, klik tautan **Upload File**, atau gunakan fungsi seret dan lepas).
+1. Unggah dokumen naskah dengan mengeklik tombol **Add File** atau tautan **Upload File**.
+2. Tunggu hingga proses unggah selesai 100%.
+3. Pilih komponen dokumen yang paling tepat dari menu tarik-turun (*dropdown*), misalnya **Article Text** untuk naskah utama, atau **Research Materials** untuk kuesioner tambahan.
+4. Klik **Save and Continue**.
 
-Setelah berkas terunggah, pilih komponen dokumen yang paling tepat dari menu tarik-turun:
+> **Troubleshooting: Gagal Unggah Berkas**
+>
+> **Masalah**: Saat mengeklik tautan pengunggahan, muncul peringatan galat atau proses unggah terhenti (*stuck*).
+>
+> **Solusi Cepat**: Hal ini biasanya disebabkan oleh ukuran berkas (PDF/Word) yang terlalu besar dan melampaui batas (*upload limit*) peladen OJS jurnal (umumnya dibatasi 2MB - 10MB). Solusinya, kompresi gambar-gambar di dalam dokumen Word Anda terlebih dahulu sebelum mengunggah, atau unggah lampiran gambar besar di sistem eksternal (seperti Google Drive) dan letakkan tautannya di dalam naskah.
 
-| Komponen Dokumen | Peruntukan |
-|---|---|
-| **Article Text** | Naskah utama artikel, mencakup pendahuluan hingga kesimpulan. |
-| **Research Materials** | Materi pendukung seperti instrumen penelitian, kuesioner, atau kumpulan data sekunder. |
-| **Transcripts** | Transkrip wawancara mentah. |
-| **Source Text** | Teks dokumen sumber asli, khusus untuk naskah terjemahan. |
-| **Other** | Dokumen pendukung lain yang tidak termasuk dalam kategori di atas. |
+**Catatan dari Lapangan**
 
-Perhatian: Ketepatan klasifikasi komponen berkas sangat membantu editor dalam memilah dokumen saat mendistribusikan naskah kepada mitra bestari.
+Beberapa pengelola jurnal sering menghadapi situasi di mana penulis mengunggah naskah dengan masalah pemformatan dasar yang menyulitkan proses penyuntingan lanjutan. Kesalahan yang paling umum dijumpai meliputi penggunaan tombol *Enter* berulang kali untuk memisahkan baris, penyisipan gambar dengan resolusi sangat rendah (di bawah 300 dpi), dan pembuatan tabel kompleks yang direkayasa sedemikian rupa sehingga tidak dapat diedit ulang. Selain itu, praktik terbaik bagi jurnal adalah menyediakan *template* naskah awal yang sangat sederhana saat *submission*, bukan *template layout* dengan format yang rumit, guna memudahkan kerja *copyeditor* tanpa merusak desain akhir dokumen (Berbagai Panduan Penerbitan, 2026).
 
 ![Langkah 2: Upload file naskah ke OJS](../img/elementor-placeholder-image.png)
 
@@ -136,6 +146,14 @@ Setelah naskah berhasil dikirim, editor akan melaksanakan tinjauan awal meja (*d
 | **Decline Submission** | Naskah ditolak pada tahap awal karena tidak sesuai dengan fokus jurnal, tidak mengikuti panduan format dasar, atau terdeteksi memiliki tingkat plagiarisme yang tinggi. |
 
 Sistem secara otomatis akan mengirimkan surel pemberitahuan untuk setiap perubahan status editorial. Penulis juga dianjurkan memantau status perkembangan naskah secara berkala melalui dasbor OJS.
+
+## Latihan Bab 5
+
+**Latihan 5.1: Simulasi Pengiriman Naskah**
+
+Gunakan akun percobaan dengan peran "Author" di instalasi OJS lokal Anda. Lakukan simulasi pengiriman naskah menggunakan dokumen naskah contoh. Pastikan Anda mengunggah naskah pada komponen "Article Text", memasukkan setidaknya dua nama kontributor tambahan beserta afiliasi dan surel mereka, serta melengkapi isian judul dan abstrak. Evaluasi apakah sistem berhasil menyimpan metadata dengan benar pada akhir Langkah 5.
+
+**Panduan Fasilitator**: Siapkan beberapa berkas teks (*dummy text*) dan bagikan kepada peserta pelatihan. Minta peserta untuk bertukar peran: satu peserta melakukan pengiriman naskah (*submission*), sementara peserta lain yang bertindak sebagai editor memeriksa kelengkapan metadata naskah tersebut di dasbor editorial.
 
 ## Checklist Bab 5
 

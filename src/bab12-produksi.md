@@ -1,4 +1,7 @@
-﻿# Bab 12: Produksi, Tata Letak, dan Galley
+# Bab 12: Produksi, Tata Letak, dan Galley
+
+> **Pemantik Bab**
+> Banyak penulis berasumsi bahwa begitu naskah diterima, pihak jurnal hanya tinggal menekan satu tombol ajaib dan artikel langsung tayang di internet. Kenyataannya, tahap Produksi adalah bengkel kerja visual yang menentukan apakah jurnal Anda terlihat amatiran atau profesional. Naskah mentah harus didesain tata letaknya, diekspor ke format PDF resolusi tinggi, atau bahkan dipecah menjadi kode XML agar mesin pencari akademik bisa memanen metadata dengan sempurna. Kesalahan pada tahap ini akan tertanam selamanya di internet.
 
 Tahap **Produksi** adalah fase keempat dan terakhir dalam alur kerja editorial OJS 3.3. Pada tahap ini, naskah yang telah melalui proses penyuntingan dikonversi menjadi format publikasi resmi yang disebut **Galley**, kemudian dijadwalkan ke dalam edisi (*issue*) tertentu.
 
@@ -17,13 +20,14 @@ Catatan Teknis: OJS 3.3 memberikan fleksibilitas peran. Apabila tim pengelola te
 
 ## 12.2 Penugasan Tim Produksi
 
-Langkah pertama pada tahap produksi adalah menunjuk personel pelaksana:
+Langkah pertama pada tahap produksi adalah menunjuk personel pelaksana.
 
-1. Navigasi ke panel **"Participants"** di halaman naskah pada tab *Production*.
-2. Klik tombol **"Assign"**.
-3. Pilih peran yang ditugaskan, misalnya *Layout Editor* atau *Proofreader*.
+**Jalur Eksekusi Cepat: Menugaskan Layout Editor**
+1. Navigasi ke panel **Participants** di halaman naskah pada tab *Production*.
+2. Klik tombol **Assign**.
+3. Pilih peran yang ditugaskan, misalnya **Layout Editor** atau **Proofreader**.
 4. Cari dan pilih staf yang tersedia dari daftar pengguna.
-5. Sistem akan membuka draf surel notifikasi. Sesuaikan isi surel jika diperlukan, kemudian klik **"OK"**.
+5. Sistem akan membuka draf surel notifikasi. Sesuaikan isi surel jika diperlukan, kemudian klik **OK**.
 
 ![Panel Participants di tahap Production](../img/elementor-placeholder-image.png)
 
@@ -47,30 +51,34 @@ Pembuatan galley umumnya menggunakan beberapa perangkat lunak, seperti:
 
 Pentingnya Format XML JATS: *Journal Article Tag Suite* (JATS) adalah format standar internasional untuk mendeskripsikan konten ilmiah. Penyediaan galley dalam format XML JATS merupakan persyaratan penting bagi jurnal yang ingin terindeks di pangkalan data bergengsi seperti PubMed Central dan sangat direkomendasikan untuk indeksasi Scopus. XML JATS memastikan bahwa metadata dan konten teks artikel terstruktur dengan sempurna sehingga dapat dibaca dan diekstraksi oleh mesin pengindeks.
 
-**Studi Kasus**: Banyak jurnal di Indonesia mengalami peningkatan jumlah pembaca (*readership*) dan sitasi yang signifikan setelah beralih dari sekadar menyajikan PDF menjadi juga menyediakan versi HTML dan XML artikelnya. Versi HTML dan XML membuat artikel jauh lebih mudah ditemukan oleh mesin pencari dan lebih nyaman dibaca di perangkat seluler, sehingga meningkatkan visibilitas secara drastis.
+> **Catatan dari Lapangan: Mengapa HTML dan XML Begitu Penting?**
+> 
+> Banyak jurnal di Indonesia mengalami peningkatan jumlah pembaca (*readership*) dan sitasi yang signifikan setelah beralih dari sekadar menyajikan PDF menjadi juga menyediakan versi HTML dan XML artikelnya. Versi HTML dan XML membuat artikel jauh lebih mudah ditemukan oleh mesin pencari dan sangat nyaman dibaca di perangkat seluler, sehingga meningkatkan visibilitas secara drastis.
 
-### Cara Mengunggah Galley
+**Jalur Eksekusi Cepat: Mengunggah Galley**
+1. Di halaman naskah pada tahap *Production*, klik tombol **Add Galley** di bagian *Galleys*.
+2. Isi label galley secara jelas (misalnya "PDF" atau "HTML").
+3. Pilih bahasa yang sesuai untuk dokumen galley tersebut.
+4. Klik **Save**, lalu pada antarmuka selanjutnya pilih komponen berkas (misal: *Article Text*) dan unggah berkas galley.
+5. Selesaikan proses unggah.
 
-1. Di halaman naskah pada tahap *Production*, klik **"Add Galley"** di bagian *Galleys*.
-2. Isi label galley (misalnya "PDF" atau "HTML").
-3. Pilih bahasa dari dokumen galley tersebut.
-4. Klik **"Save"**, lalu unggah berkas galley yang telah disiapkan.
+> **Troubleshooting: Salah Mengunggah Versi Galley**
+> 
+> **Masalah**: Sebagai Layout Editor, Anda baru sadar bahwa fail PDF yang diunggah masih memiliki kesalahan pemotongan (typo pada tabel) setelah fail tersebut tayang.
+> 
+> **Solusi Cepat**: Jangan panik, jangan menghapus *Galley* tersebut karena akan merusak tautan akses URL yang mungkin sudah disalin oleh pembaca. Klik ikon panah kecil (*chevron*) di sebelah kiri nama *Galley* tersebut, pilih opsi **Edit**, lalu unggah fail PDF pengganti yang sudah diperbaiki menggunakan opsi *Change File*. Sistem akan menimpa fail lama di belakang layar tanpa mengubah tautan publik.
 
 ![Tampilan unggah Galley di tahap Production](../img/elementor-placeholder-image.png)
 
 ## 12.4 Diskusi Produksi dan Proofreading
 
-Fungsikan fitur **"Production Discussions"** sebagai pusat komunikasi utama selama tahap ini.
+Fungsikan fitur **Production Discussions** sebagai pusat komunikasi utama selama tahap ini.
 
-Prosedur proofreading oleh penulis dilakukan sebagai berikut:
+**Jalur Eksekusi Cepat: Mengeksekusi Proofreading**
 1. Editor mengunggah berkas galley ke area diskusi produksi.
-2. Editor memulai diskusi dengan penulis (*Add Discussion*, dan memilih penulis sebagai partisipan).
-3. Penulis akan menerima surel notifikasi.
-4. Penulis mengunduh berkas galley dan memeriksa beberapa hal teknis:
-   - Apakah tata letak halaman dan tipografi sudah sesuai?
-   - Apakah terdapat kesalahan ketik atau pemotongan kata yang tidak tepat?
-   - Apakah gambar, grafik, dan tabel disajikan dengan jelas?
-5. Penulis menyampaikan konfirmasi atau daftar koreksi melalui fitur diskusi.
+2. Editor mengklik **Add Discussion**, lalu memilih penulis (atau *Proofreader*) sebagai partisipan.
+3. Tulis arahan untuk melakukan *proofreading* akhir.
+4. Penulis mengunduh berkas galley, melakukan pengecekan, lalu membalas di utas diskusi tersebut beserta daftar revisinya.
 
 Seluruh komunikasi harus dilakukan melalui fitur diskusi produksi OJS, bukan melalui surel eksternal pribadi. Praktik ini memastikan seluruh proses revisi tercatat dalam sistem dan dapat diakses oleh tim editorial lainnya.
 
@@ -94,14 +102,32 @@ Sebelum naskah dijadwalkan untuk terbit, pastikan semua metadata sudah terverifi
 
 ## 12.6 Menjadwalkan Naskah ke Dalam Issue
 
-Setelah galley dan metadata siap, naskah siap dijadwalkan:
+Setelah galley dan metadata siap, naskah harus dijadwalkan untuk publikasi.
 
-1. Di tab **Publication**, akses submenu **"Issue"**.
-2. Pilih edisi yang telah dibuat sebagai target penerbitan (*Future Issue*).
-3. Masukkan nomor halaman artikel pada kolom yang tersedia.
-4. Klik **"Schedule for Publication"**.
+**Jalur Eksekusi Cepat: Menjadwalkan Publikasi**
+1. Di tab **Publication**, akses submenu **Issue**.
+2. Pilih edisi yang telah dibuat sebagai target penerbitan dari menu tarik-turun (*drop-down*) *Future Issue*.
+3. Masukkan nomor halaman artikel pada kolom *Pages* yang tersedia.
+4. Pergi ke pojok kanan atas, lalu klik tombol **Schedule for Publication**.
+5. Konfirmasi pop-up akhir.
 
 Naskah kini telah dijadwalkan dan akan dipublikasikan secara daring bersamaan dengan diterbitkannya edisi terkait.
+
+![Penjadwalan naskah ke dalam Future Issue](../img/elementor-placeholder-image.png)
+
+## Latihan Bab 12
+
+**Skenario Simulasi: Memproduksi Galley Final**
+
+Sebagai Editor, Anda telah menyetujui versi *Copyedited* dan kini bersiap menyajikan artikel ini ke publik. Anda akan berperan merangkap sebagai *Layout Editor*.
+
+**Tugas Praktik:**
+1. Masuk ke halaman naskah dan navigasikan ke tab **Production**.
+2. Anggap saja Anda sudah merancang desain akhir PDF secara luring (*offline*). Klik **Add Galley**, ketik "PDF" pada label.
+3. Unggah fail berformat PDF sebagai komponen *Article Text*.
+4. Lakukan verifikasi di tab **Publication**, periksa kesesuaian judul, penulis, daftar referensi, dan DOI.
+5. Masuk ke submenu **Issue**, pilih edisi percobaan (misal: "Vol 1 No 1 2026"), masukkan rentang halaman (misal: "1-12").
+6. Klik **Schedule for Publication**. Pergi ke beranda publik jurnal Anda dan pastikan artikel tersebut telah terdaftar (jika edisi tersebut sudah dalam status terbit).
 
 ![Penjadwalan naskah ke dalam Future Issue](../img/elementor-placeholder-image.png)
 

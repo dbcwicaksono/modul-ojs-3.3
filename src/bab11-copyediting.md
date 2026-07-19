@@ -1,4 +1,7 @@
-﻿# Bab 11: Penyuntingan Naskah (Copyediting)
+# Bab 11: Penyuntingan Naskah (Copyediting)
+
+> **Pemantik Bab**
+> Naskah yang brilian secara sains sering kali hancur lebur secara tata bahasa. Banyak jurnal terjebak pada ilusi bahwa tahap *Copyediting* hanyalah sekadar memperbaiki salah ketik (*typo*). Faktanya, tahap ini adalah benteng pertahanan terakhir untuk memastikan bahwa argumen penulis dapat dipahami dengan jernih oleh pembaca global, bebas dari ambiguitas, dan patuh mutlak pada gaya selingkung (*house style*). Tanpa *copyediting* yang ketat, reputasi keilmuan jurnal Anda akan dipertaruhkan oleh buruknya struktur kalimat.
 
 Tahap **Copyediting** adalah fase ketiga dalam alur kerja editorial OJS 3.3, yang dimulai tepat setelah naskah dinyatakan diterima (*Accepted*) pada akhir tahap penelaahan sejawat. Tahap ini merupakan jembatan antara konten yang telah disetujui secara substansi dengan proses produksi tata letak.
 
@@ -20,40 +23,33 @@ Kolaborasi yang transparan antar-aktor sangat penting di tahap ini:
 
 Langkah pertama editor setelah naskah masuk ke tahap *copyediting* adalah menugaskan penyunting.
 
-Prosedur penugasan:
+**Jalur Eksekusi Cepat: Menugaskan Penyunting**
 1. Masuk ke dasbor submisi dan klik tab **Copyediting**.
-2. Di panel *Participants* pada sisi kanan, klik tombol **"Assign"**.
+2. Di panel *Participants* pada sisi kanan, klik tombol **Assign**.
 3. Pada jendela yang muncul, pilih peran **Copyeditor** dari menu tarik-turun (*drop-down*).
-4. Klik **"Search"** untuk menampilkan daftar staf yang tersedia.
+4. Klik **Search** untuk menampilkan daftar staf yang tersedia.
 5. Pilih penyunting yang ditugaskan.
 6. Sistem membuka draf surel notifikasi otomatis. Editor dapat menyesuaikan pesannya jika diperlukan.
-7. Klik **"OK"**. Penyunting tersebut kini memiliki hak akses resmi ke naskah pada tahap ini.
+7. Klik **OK**. Penyunting tersebut kini memiliki hak akses resmi ke naskah pada tahap ini.
 
 ![Panel Participants: menugaskan Copyeditor](../img/elementor-placeholder-image.png)
 
 ## 11.3 Alur Kerja Teknis Penyuntingan Naskah
 
-OJS 3.3 memfasilitasi pertukaran dokumen secara sistematis guna mencegah tumpang tindih versi dokumen:
+OJS 3.3 memfasilitasi pertukaran dokumen secara sistematis guna mencegah tumpang tindih versi dokumen. Penyuntingan dilakukan menggunakan perangkat lunak pengolah kata untuk memperbaiki tata bahasa, konsistensi istilah teknis, format, serta akurasi format rujukan.
 
-### 1. Mengakses Naskah Sumber
+**Jalur Eksekusi Cepat: Mengunggah Hasil Suntingan**
+1. Penyunting mengunduh dokumen dari area **Draft Files** atau grid *Copyediting*.
+2. Lakukan penyuntingan menggunakan pengolah kata (misal: fitur *Track Changes*).
+3. Setelah selesai, klik tautan **Upload File** di dalam panel **Copyediting**.
+4. Berikan label dokumen yang jelas (misalnya "Copyedited Version").
+5. Selesaikan proses unggah.
 
-Penyunting mengunduh dokumen dari area **Draft Files** atau grid *Copyediting*. Dokumen ini merupakan versi bersih yang disetujui pada akhir tahap penelaahan sejawat.
-
-### 2. Penyuntingan Dokumen
-
-Penyuntingan dilakukan menggunakan perangkat lunak pengolah kata untuk memperbaiki:
-- Tata bahasa dan ejaan.
-- Konsistensi istilah teknis.
-- Format dan gaya penulisan sesuai dengan gaya selingkung jurnal.
-- Kelengkapan dan akurasi format rujukan, termasuk validasi tautan DOI.
-
-### 3. Mengunggah Hasil Suntingan
-
-Penyunting menggunakan fitur **"Add Discussion"** atau **"Upload File"** di dalam panel diskusi untuk mengunggah naskah yang telah disunting.
-
-Catatan Teknis: Saat mengunggah, berikan label dokumen dengan nama yang jelas, misalnya "Copyedited Version", untuk membedakannya dari draf awal. Pelabelan yang tepat mencegah kebingungan manajemen berkas pada tahap produksi.
-
-![Area Draft Files dan Upload di tahap Copyediting](../img/elementor-placeholder-image.png)
+> **Troubleshooting: Penulis Merusak Pemformatan Dasar**
+>
+> **Masalah**: Anda (sebagai *Copyeditor*) mengunduh naskah penulis, tetapi menemukan bahwa penulis menggunakan tombol `Enter` berulang kali untuk pindah halaman, spasi ganda manual, dan menyajikan tabel berupa tangkapan layar (*screenshot*) gambar statis.
+>
+> **Solusi Cepat**: Jangan merapikan kekacauan itu secara manual karena akan menghabiskan waktu berjam-jam. Gunakan fitur *Search and Replace* di pengolah kata Anda untuk membersihkan spasi ganda atau pemisah baris manual. Untuk tabel gambar, segera hubungi penulis melalui fitur **Copyediting Discussions**, kembalikan fail tersebut, dan minta mereka mengirimkan fail sumber tabel yang teksnya dapat disunting. "Boring is better" pada tahap naskah mentah (KB-024).
 
 ## 11.4 Komunikasi dan Kolaborasi Melalui Fitur Diskusi
 
@@ -65,12 +61,12 @@ Fitur **Copyediting Discussions** berfungsi sebagai alat dokumentasi formal dala
 | **Persetujuan Penulis** | Editor atau penyunting diwajibkan memulai diskusi dengan penulis untuk meminta tinjauan atas hasil suntingan. Penulis meninjau dokumen dan memberikan persetujuan secara sistem tercatat. |
 | **Catatan Persetujuan** | Diskusi berfungsi sebagai catatan formal bahwa penulis menyetujui seluruh modifikasi bahasa sebelum dokumen dikunci untuk proses tata letak. |
 
-Cara memulai diskusi dengan penulis:
-1. Di panel *Copyediting Discussions*, klik **"Add Discussion"**.
+**Jalur Eksekusi Cepat: Meminta Persetujuan Penulis**
+1. Di panel *Copyediting Discussions*, klik tautan **Add Discussion**.
 2. Pilih penulis sebagai partisipan diskusi.
 3. Tuliskan subjek diskusi (misalnya, "Mohon tinjau hasil penyuntingan") beserta pesannya.
 4. Lampirkan dokumen hasil suntingan.
-5. Klik **"OK"**.
+5. Klik **OK**.
 6. Penulis akan mendapat surel notifikasi dan dapat merespons langsung melalui sistem OJS.
 
 ![Fitur diskusi Copyediting: komunikasi editor dan penulis](../img/elementor-placeholder-image.png)
@@ -80,10 +76,9 @@ Cara memulai diskusi dengan penulis:
 Tahap *Copyediting* dinyatakan selesai ketika editor mengonfirmasi bahwa naskah telah disunting dengan baik dan disetujui oleh penulis.
 
 Langkah transisi:
-1. Klik tombol **"Send to Production"**.
+1. Klik tombol **Send to Production**.
 2. Pada jendela yang muncul, editor wajib mencentang dokumen dari daftar grid *Copyediting* yang akan ditetapkan sebagai versi akhir (*final version*).
-3. OJS dapat memunculkan jendela untuk mengirimkan surel pemberitahuan kepada penulis bahwa tahap penyuntingan telah selesai.
-4. Klik konfirmasi transisi.
+3. Klik konfirmasi transisi.
 
 Setelah langkah ini:
 - Status alur kerja berubah menjadi tahap **Production**.
@@ -98,6 +93,19 @@ Terdapat beberapa aspek penting untuk memastikan tahap penyuntingan berjalan efe
 - **Konsistensi Metadata**: Selama penyuntingan, selalu pastikan nama penulis, institusi afiliasi, dan judul dalam dokumen naskah sama persis dengan metadata yang diinput ke dalam sistem OJS. Ketidaksesuaian metadata merupakan salah satu penyebab utama kesalahan pada tahap penerbitan.
 - **Penerapan Templat**: Praktik yang baik adalah mengarahkan penyunting untuk menerapkan templat (*template*) jurnal sejak tahap ini, untuk meringankan beban kerja penyusun tata letak.
 - **Validasi Referensi**: Pastikan semua tautan DOI dalam daftar rujukan aktif dan akurat. Validasi dapat dilakukan melalui alat pencarian standar seperti Crossref.
+
+## Latihan Bab 11
+
+**Skenario Simulasi: Memfinalisasi Teks dan Meminta Tinjauan Penulis**
+
+Anda bertugas sebagai *Copyeditor* untuk sebuah naskah yang baru saja diterima. Naskah tersebut harus diperiksa gaya selingkungnya dan dimintakan persetujuan penulis sebelum dilanjutkan ke tahap *Production*.
+
+**Tugas Praktik:**
+1. Masuk sebagai *Copyeditor* dan navigasikan ke naskah di tahap **Copyediting**.
+2. Unduh berkas di area **Draft Files**, lalu simulasikan penambahan *Track Changes* sederhana di pengolah kata Anda.
+3. Unggah kembali dokumen tersebut melalui tautan **Upload File**. Beri nama dokumen secara deskriptif.
+4. Klik **Add Discussion** pada panel *Copyediting Discussions*, tambahkan penulis sebagai partisipan, dan tulis surel permintaan persetujuan. Lampirkan berkas yang baru saja Anda unggah.
+5. (Simulasi Editor): Klik **Send to Production** dan centang berkas final untuk diteruskan.
 
 ## Checklist Bab 11
 

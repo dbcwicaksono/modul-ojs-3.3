@@ -86,6 +86,11 @@ Dua agen sudah dikonfigurasi. Untuk menggunakannya di sesi baru, baca file konfi
 8. **Keakuratan Fakta**: Setiap klaim normatif/definitif wajib bersumber (Nama, Tahun, URL).
 9. **Istilah Asing**: Ditulis miring (*italic*) pada kemunculan pertama.
 10. **Tautan Langsung**: Semua referensi daring disertai tautan (*link*) yang dapat diklik.
+11. **Kepadatan Kasus Riil**: Jangan menyederhanakan paragraf teknis dengan menghilangkan isi, melainkan perkaya dengan contoh kasus nyata di lapangan.
+12. **Kotak Troubleshooting**: Sediakan kotak *Troubleshooting* pada instruksi teknis yang rawan kegagalan.
+13. **Pemisahan Visual Teori vs Teknis**: Gunakan paragraf naratif untuk penjelasan konsep/teori. Namun untuk instruksi operasional antarmuka, gunakan daftar bernomor (1, 2, 3) yang terisolasi secara visual (misal: "Jalur Eksekusi Cepat").
+14. **Jembatan Transisi (*Bridging*)**: Wajib ada kalimat penyambung yang rasional dan mulus dari *Pemantik Bab* ke materi inti teknis.
+15. **Konsistensi Terminologi UI**: Label antarmuka (UI) wajib menggunakan istilah bahasa Inggris aslinya dan bercetak tebal (misal: **Send to Review**, **Settings**).
 
 ---
 
@@ -101,3 +106,14 @@ Dua agen sudah dikonfigurasi. Untuk menggunakannya di sesi baru, baca file konfi
 | Config penulis | `.agents/skills/ojs-setup/references/writer-config.md` | System prompt agen penulis |
 | Implementation plan | `C:\Users\LENOVO\.gemini\antigravity\brain\52194a1c-5c65-4a49-b4e1-47c1b97a7630\implementation_plan.md` | Rencana lengkap transformasi buku |
 | Bank pertanyaan | `C:\Users\LENOVO\.gemini\antigravity\brain\52194a1c-5c65-4a49-b4e1-47c1b97a7630\pertanyaan-lapangan.md` | Pertanyaan per bab untuk catatan lapangan |
+
+---
+
+## Protokol Pencegahan Kelalaian (Safety Locks)
+
+Merespons kelalaian operasional yang pernah terjadi, agen **DIWAJIBKAN** mematuhi "Safety Locks" berikut sebagai pengunci perilaku agar tidak mengulangi kesalahan prosedural:
+
+1. **Safety Lock 1: Anti-Bypass Riset**. Agen DILARANG KERAS menulis konten baru yang menuntut kedalaman konseptual (misal: merumuskan rubrik, membedah standar) murni dari memori internal tanpa riset terverifikasi. Jika pengguna meminta pengembangan komprehensif, agen **WAJIB** mengeksekusi agen `ojs-web-researcher` (atau instrumen pencarian) untuk memperkaya `knowledge-base.md` sebelum menyunting draf bab.
+2. **Safety Lock 2: Verifikasi Perintah Ambigu**. Jika pengguna memberi persetujuan singkat seperti "lanjutkan", "oke", atau "teruskan", agen DILARANG melompat otomatis ke tugas di bab berikutnya. Agen harus memastikan bahwa instruksi penyempurnaan di tugas saat ini sudah benar-benar dieksekusi tuntas. Jika ragu, selalu tanyakan maksud spesifik pengguna.
+3. **Safety Lock 3: Checkpoint Pra-Penyimpanan (*No Em-Dash*)**. Sebelum melaporkan penyelesaian bab, agen WAJIB melakukan inspeksi mandiri untuk memastikan ketiadaan *em-dash* (—) dan simbol terlarang lainnya pada draf hasil revisi.
+4. **Safety Lock 4: Jeda Evaluatif**. Ketika dihadapkan pada kekecewaan atau instruksi perombakan masif dari pengguna, agen tidak boleh merespons secara reaktif dengan langsung menimpa file. Agen wajib berhenti (*pause*), menyajikan draf rencana perbaikan, dan meminta persetujuan eksekusi.

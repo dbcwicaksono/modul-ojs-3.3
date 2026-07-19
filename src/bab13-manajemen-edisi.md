@@ -1,4 +1,7 @@
-﻿# Bab 13: Manajemen Edisi dan Pasca Penerbitan
+# Bab 13: Manajemen Edisi dan Pasca Penerbitan
+
+> **Pemantik Bab**
+> Anda memiliki sepuluh artikel matang yang siap rilis. Namun, sistem OJS tidak bekerja seperti blog biasa di mana setiap artikel diterbitkan satu per satu; OJS menggunakan konsep "wadah" yang disebut Edisi (*Issue*). Menjadwalkan artikel tanpa memasukkannya ke dalam edisi ibarat menumpuk barang di gudang tanpa etalase. Bab ini memandu Anda merakit etalase tersebut, menerbitkannya, hingga menangani krisis jika terjadi kesalahan pascapublikasi yang mengharuskan Anda menarik kembali edisi (*unpublish*).
 
 Manajemen edisi adalah tahap puncak dari seluruh rangkaian alur kerja editorial di OJS 3.3. Setelah naskah melewati tahap *Submission*, *Review*, *Copyediting*, dan *Production*, langkah terakhir adalah menggabungkan artikel-artikel yang telah siap ke dalam sebuah edisi dan menerbitkannya kepada publik.
 
@@ -19,18 +22,18 @@ Untuk mengelola edisi, navigasikan ke menu sisi kiri dan pilih **"Issues"**. Hal
 
 Sebelum naskah dapat dijadwalkan, editor harus membuat wadah edisi terlebih dahulu.
 
-1. Klik tab **"Future Issues"**.
-2. Klik tombol **"Create Issue"**.
-3. Isi formulir pembuatan edisi:
+**Jalur Eksekusi Cepat: Membuat Edisi**
+1. Klik tab **Future Issues**.
+2. Klik tombol **Create Issue**.
+3. Isi formulir identifikasi (Volume, Nomor, Tahun).
+4. (Opsional) Tambahkan judul khusus, deskripsi, atau unggah **Cover Image**.
+5. Klik **Save**. Edisi kini siap untuk menerima naskah yang dijadwalkan.
 
-| Komponen | Instruksi |
-|----------|-----------|
-| **Identifikasi** | Masukkan rentang Volume, Nomor, dan Tahun. Jika jurnal tidak menggunakan salah satu komponen ini, biarkan kolom kosong dan hapus centang pada opsi tersebut. |
-| **Deskripsi** | Tambahkan narasi pengantar atau editorial edisi (opsional). |
-| **Cover Image** | Unggah gambar sampul khusus untuk edisi ini jika diperlukan. |
-| **URL Path** | Opsi untuk membuat tautan khusus, misalnya `v1n1-2025`. |
-
-4. Klik **"Save"**. Edisi kini siap untuk menerima naskah yang dijadwalkan.
+> **Troubleshooting: Penomoran Edisi Tidak Urut**
+>
+> **Masalah**: Anda secara tidak sengaja membuat dua edisi dengan Volume dan Nomor yang sama (misal: Vol 1 No 1), dan sistem OJS menjadi bingung saat menampilkan edisi berjalan (*Current Issue*).
+>
+> **Solusi Cepat**: OJS mengizinkan duplikasi penomoran jika tidak menggunakan *URL Path* khusus. Untuk memperbaikinya, masuk ke **Future Issues**, klik ikon panah di edisi yang salah, pilih **Edit**, dan ubah nomornya. Pastikan Anda memeriksa ulang penomoran halaman (*Pages*) di setiap artikel di dalam edisi tersebut.
 
 ![Formulir Create Issue](../img/elementor-placeholder-image.png)
 
@@ -54,11 +57,12 @@ Catatan Penting: Selalu lakukan verifikasi akhir pada metadata edisi sebelum men
 
 Setelah seluruh naskah dalam edisi siap dan metadata tervalidasi:
 
+**Jalur Eksekusi Cepat: Memublikasikan Edisi**
 1. Pada tab **Future Issues**, temukan edisi yang dimaksud.
-2. Klik ikon panah dan pilih **"Publish Issue"**.
-3. Jendela konfirmasi akan muncul dengan opsi **Notify Users**. Centang opsi ini untuk mengirimkan surel pemberitahuan otomatis kepada seluruh pengguna terdaftar bahwa edisi terbaru telah terbit. Ini merupakan strategi dasar untuk meningkatkan jumlah pembaca.
-4. Klik **"Confirm"** untuk menyelesaikan proses publikasi.
-5. Edisi berpindah dari tab *Future Issues* ke tab **Back Issues** dan seketika tampil di halaman publik jurnal.
+2. Klik ikon panah dan pilih **Publish Issue**.
+3. Centang opsi **Notify Users** pada pop-up konfirmasi (wajib untuk visibilitas).
+4. Klik **Confirm** untuk menyelesaikan proses publikasi.
+5. Edisi otomatis berpindah ke tab **Back Issues** dan langsung tampil di halaman publik jurnal.
 
 ![Jendela konfirmasi Publish Issue dengan opsi Notify Users](../img/elementor-placeholder-image.png)
 
@@ -75,13 +79,14 @@ Fitur ini berguna apabila jurnal menerbitkan edisi khusus (*special issue*) dan 
 
 ### Unpublish Issue (Membatalkan Publikasi)
 
-Apabila ditemukan kesalahan fatal, editor dapat menarik edisi dari publikasi:
+Apabila ditemukan kesalahan fatal, editor dapat menarik edisi dari publikasi.
 
-1. Di tab *Back Issues*, klik ikon panah pada edisi terkait.
-2. Pilih **"Unpublish Issue"**.
+**Jalur Eksekusi Cepat: Membatalkan Publikasi Edisi**
+1. Di tab **Back Issues**, klik ikon panah pada edisi terkait.
+2. Pilih **Unpublish Issue**.
 3. Edisi kembali menjadi *Future Issue* dan tidak lagi tampil di halaman publik.
 
-Perhatian: Fitur ini harus digunakan dengan sangat hati-hati. Membatalkan publikasi pada edisi yang sudah terbit lama dapat merusak tautan eksternal seperti *Digital Object Identifier* (DOI) yang sudah didaftarkan dan memengaruhi metrik sitasi.
+> **Catatan Kritis**: Fitur *Unpublish* harus digunakan dengan sangat hati-hati. Membatalkan publikasi pada edisi yang sudah terbit lama dapat merusak tautan eksternal (termasuk DOI) dan menghilangkan akses pembaca secara tiba-tiba. Lakukan hanya dalam keadaan darurat absolut (misal: pelanggaran etika publikasi massal).
 
 ### Mengedit Metadata Artikel yang Terbit
 
@@ -116,7 +121,20 @@ Jika jurnal telah menjadi anggota Crossref, proses registrasi DOI dapat dilakuka
 
 ![Proses deposit DOI ke Crossref](../img/elementor-placeholder-image.png)
 
-Catatan: Untuk materi mengenai strategi promosi dan peningkatan visibilitas artikel secara eksternal (melalui media sosial atau repositori), lihat **Bab 14: Diseminasi dan Peningkatan Visibilitas Jurnal**.
+Catatan: Untuk materi mengenai strategi promosi dan peningkatan visibilitas artikel secara eksternal (melalui media sosial atau repositori), lihat **Bab 15: Diseminasi dan Peningkatan Visibilitas Jurnal**.
+
+## Latihan Bab 13
+
+**Skenario Simulasi: Membangun Etalase Publikasi**
+
+Jurnal Anda bersiap untuk menerbitkan edisi perdana. Anda ditugaskan untuk membuat wadah edisinya dan memublikasikannya secara *dummy*.
+
+**Tugas Praktik:**
+1. Masuk ke dasbor utama dan navigasikan ke menu **Issues**.
+2. Pada tab **Future Issues**, buat edisi baru dengan klik **Create Issue**. Isi dengan Volume 1, Nomor 1, Tahun ini.
+3. Setelah tersimpan, jadwalkan satu naskah uji coba dari tahap *Production* ke dalam edisi tersebut.
+4. Kembali ke menu **Issues**, klik panah pada edisi tersebut, pilih **Publish Issue**, namun kali ini *jangan* centang opsi notifikasi (karena ini percobaan).
+5. Setelah terbit, lihat dampaknya di beranda publik. Terakhir, kembalikan edisi tersebut dengan melakukan **Unpublish Issue** di tab **Back Issues**.
 
 ## Checklist Bab 13
 

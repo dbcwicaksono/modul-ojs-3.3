@@ -1,4 +1,7 @@
-﻿# Bab 15: Diseminasi dan Peningkatan Visibilitas Jurnal
+# Bab 15: Diseminasi dan Peningkatan Visibilitas Jurnal
+
+> **Pemantik Bab**
+> Banyak editor merasa tugasnya selesai ketika tombol *Publish Issue* ditekan, lalu duduk manis menunggu datangnya sitasi. Kenyataannya, ribuan jurnal baru terbit setiap harinya. Tanpa dorongan diseminasi aktif dari editor, artikel brilian di dalam OJS Anda hanya akan menjadi kuburan digital yang tidak pernah dikunjungi. Bab ini membongkar mitos pasivitas penerbitan, memandu Anda menggunakan fitur bawaan seperti *Announcements*, hingga memanfaatkan jejaring sosial agar jurnal Anda memenangi perebutan atensi akademis.
 
 Penerbitan suatu edisi jurnal bukanlah akhir dari tanggung jawab tim editorial, melainkan awal dari fase krusial berikutnya: diseminasi. Diseminasi adalah upaya proaktif untuk menyebarluaskan hasil penelitian agar dapat diakses, dibaca, dan disitasi oleh komunitas akademik yang lebih luas. Tanpa strategi diseminasi yang efektif, artikel berkualitas tinggi sekalipun berisiko tidak mendapatkan pengakuan dan dampak (*impact*) yang sepadan.
 
@@ -41,12 +44,21 @@ Penggunaan platform seperti X (sebelumnya Twitter), LinkedIn, atau Facebook dapa
 
 ## 15.4 Menggunakan Fitur Announcements di OJS
 
-OJS 3.3 menyediakan fitur pengumuman (*Announcements*) yang sangat efektif untuk notifikasi internal pembaca setia jurnal.
+OJS 3.3 menyediakan fitur pengumuman (*Announcements*) yang sangat efektif untuk notifikasi internal pembaca setia jurnal langsung dari beranda.
 
-Cara memanfaatkannya:
-1. Aktifkan fitur ini melalui menu **Settings** > **Website** > **Setup** > **Announcements**.
-2. Buat pengumuman setiap kali ada terbitan edisi (*issue*) baru, panggilan untuk naskah (*Call for Papers*), atau pencapaian indeksasi.
-3. Pengumuman ini akan terpampang di beranda depan jurnal dan dapat didistribusikan melalui sindikasi umpan RSS (*RSS feed*).
+**Jalur Eksekusi Cepat: Membuat Pengumuman Edisi Baru**
+1. Pastikan fitur pengumuman telah diaktifkan via **Settings > Website > Setup > Announcements**.
+2. Masuk ke dasbor, navigasikan ke **Announcements** di menu panel sebelah kiri.
+3. Klik tombol **Add Announcement**.
+4. Isi kolom *Title* (misal: "Volume 2 Nomor 1 Telah Terbit!") dan *Short Description*.
+5. Centang opsi **Send an email to all registered users** agar sistem mengirim *blast* surel otomatis.
+6. Klik **Save**.
+
+> **Troubleshooting: Surel Pengumuman Tidak Terkirim**
+>
+> **Masalah**: Anda sudah mencentang opsi kirim surel massal, tetapi penulis atau pembaca melapor tidak pernah menerimanya.
+>
+> **Solusi Cepat**: Ini hampir selalu terjadi karena konfigurasi SMTP (pengaturan surel) di dalam file konfigurasi server (`config.inc.php`) jurnal Anda bermasalah atau mengalami limitasi *spam* dari penyedia *hosting*. Hubungi pengelola IT jurnal Anda untuk memeriksa kredensial SMTP dan pastikan pengiriman massal tidak diblokir oleh peladen (*server*).
 
 ![Fitur Pengumuman di beranda OJS](../img/elementor-placeholder-image.png)
 
@@ -57,14 +69,25 @@ Tujuan akhir dari visibilitas adalah peningkatan sitasi atau dampak riset. Prakt
 - **Edukasi Penulis**: Kirimkan surel kepada penulis sesaat setelah artikel mereka diterbitkan. Ucapkan selamat dan berikan instruksi singkat tentang cara mereka dapat mempromosikan artikelnya sendiri menggunakan tautan DOI.
 - **Konsistensi DOI**: Pastikan bahwa pengutipan referensi di jurnal Anda selalu mencantumkan tautan DOI yang aktif. Hal ini membantu menumbuhkan ekosistem sitasi silang (*cross-referencing*) yang sehat (Crossref, 2024).
 
-## 15.6 Studi Kasus: Meningkatkan Sitasi Setelah Memperbaiki Visibilitas
+## 15.6 Meningkatkan Sitasi Setelah Memperbaiki Visibilitas
 
-**Studi Kasus:** Sebuah jurnal ilmu sosial yang beroperasi di Indonesia mengalami stagnasi jumlah sitasi selama tiga tahun berturut-turut meskipun kualitas artikel yang diterbitkan sangat baik. Tim editorial kemudian mengimplementasikan tiga intervensi:
-1. Mereka memperbaiki kelengkapan metadata XML JATS untuk memenuhi standar DOAJ.
-2. Mereka mewajibkan seluruh penulis untuk mendaftarkan ID ORCID.
-3. Tim editorial secara rutin mencuitkan (*tweet*) ringkasan bergambar dari setiap artikel unggulan dengan menyematkan DOI.
+> **Catatan dari Lapangan: Dari Stagnan ke SINTA Atas**
+>
+> **Studi Kasus:** Sebuah jurnal ilmu sosial mengalami stagnasi jumlah sitasi selama tiga tahun berturut-turut. Tim editorial lalu mengimplementasikan intervensi: mereka mewajibkan penulis mendaftarkan ID ORCID, mereka memperbaiki metadata DOI, dan rutin membagikan tautan artikel via Twitter institusi. Hasilnya, dalam kurun 18 bulan, metrik kutipan di Google Scholar melonjak hingga 300% karena mesin pengindeks mudah merayapi data, dan penyebaran melalui jejaring sosial membangun ketertarikan nyata dari rekan akademisi.
 
-Hasilnya, dalam kurun waktu 18 bulan, jurnal tersebut berhasil lolos akreditasi SINTA tingkat atas, dan metrik kutipannya di Google Scholar melonjak hingga 300% berkat kombinasi keterbacaan oleh mesin pengindeks dan penyebaran aktif melalui jejaring akademisi.
+## Latihan Bab 15
+
+**Skenario Simulasi: Memanggil Naskah (Call for Papers)**
+
+Anda membutuhkan naskah berkualitas untuk edisi khusus tahun depan. Anda memutuskan menggunakan fitur *Announcements*.
+
+**Tugas Praktik:**
+1. Masuk ke dasbor OJS, pergi ke **Settings > Website**, dan pastikan menu *Announcements* dalam keadaan aktif.
+2. Pergi ke menu **Announcements** di panel utama.
+3. Buat draf pengumuman baru dengan judul "Call for Papers: Edisi Khusus Kecerdasan Buatan".
+4. Tulis instruksi singkat di deskripsi beserta tenggat waktunya.
+5. Simpan pengumuman tersebut (jangan centang pengiriman surel massal untuk keperluan latihan ini).
+6. Buka halaman publik beranda jurnal Anda dan verifikasi apakah pengumuman tersebut muncul di sana.
 
 ## Checklist Bab 15
 
