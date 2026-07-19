@@ -3,6 +3,7 @@
 **Buku Panduan Komprehensif Manajemen Editorial dan Sistem Jurnal Elektronik**
 
 ---
+<div style="page-break-before: always;"></div>
 
 ## Prakata
 
@@ -20,6 +21,7 @@ Buku ini disusun secara sistematis menjadi lima bagian utama:
 Gunakan buku ini tidak sekadar untuk dibaca dari halaman pertama hingga akhir, namun sebagai referensi darurat ketika Anda menghadapi tantangan di lapangan.
 
 ---
+<div style="page-break-before: always;"></div>
 
 ## Daftar Isi Terpadu
 
